@@ -1,0 +1,235 @@
+{
+  "created_date": "2026-10-27",
+  "axis": "Language Understanding",
+  "benchmark_ids": [
+    11,
+    12,
+    29,
+    38,
+    39,
+    40,
+    41,
+    42,
+    59
+  ],
+  "status": "raw sources downloaded; not normalized, deduplicated, decontaminated, or trained",
+  "head": {
+    "type": "linear",
+    "bias": false,
+    "max_options": 255,
+    "normalization": "masked softmax over valid option slots",
+    "training_loss": "cross_entropy"
+  },
+  "leaderboard_snapshot": {
+    "generated_utc": "2026-10-26T15:30:58Z",
+    "edition": "0.4.1",
+    "metric": "public category.skill times 100; not accuracy or private combined score",
+    "leader": {
+      "name": "baselabs mammoth-1 (27B)",
+      "score": 76.11
+    },
+    "small_reference": {
+      "name": "Jeffan-4B-2010",
+      "score": 69.78
+    },
+    "source_url": "https://huggingface.co/spaces/multimodalart/jev-decision-index/resolve/main/data/index.json",
+    "local_snapshot": "../2026-10-27/raw/leaderboard-index-current.json"
+  },
+  "sources": [
+    {
+      "benchmark": "ANLI",
+      "source": "facebook/anli",
+      "revision": "8e4813d81f46d313dac7892e1c28076917cfcdf9",
+      "train_count": 162865,
+      "unit": "premise-hypothesis pairs",
+      "license_note": "CC BY-NC 4.0; see upstream card",
+      "assets": [
+        {
+          "local_file": "anli-train-r1.parquet",
+          "url": "https://huggingface.co/datasets/facebook/anli/resolve/8e4813d81f46d313dac7892e1c28076917cfcdf9/plain_text/train_r1-00000-of-00001.parquet",
+          "bytes": 3140120,
+          "sha256": "de2d038ae67f1fb1872073490b9e7685e9114d5f278ddd4631905fe0a4ecbcff",
+          "train_selector": "all records in this train-only file"
+        },
+        {
+          "local_file": "anli-train-r2.parquet",
+          "url": "https://huggingface.co/datasets/facebook/anli/resolve/8e4813d81f46d313dac7892e1c28076917cfcdf9/plain_text/train_r2-00000-of-00001.parquet",
+          "bytes": 6527557,
+          "sha256": "209f4a15bf77224c62ffbde5f150fda928a7e2f5175366f4cacc3c7588aab13d",
+          "train_selector": "all records in this train-only file"
+        },
+        {
+          "local_file": "anli-train-r3.parquet",
+          "url": "https://huggingface.co/datasets/facebook/anli/resolve/8e4813d81f46d313dac7892e1c28076917cfcdf9/plain_text/train_r3-00000-of-00001.parquet",
+          "bytes": 14333467,
+          "sha256": "c1d3f614d673888ac56b9ab62324e21583c98a11c4fef84e938d0f8fc414b29a",
+          "train_selector": "all records in this train-only file"
+        }
+      ]
+    },
+    {
+      "benchmark": "HellaSwag",
+      "source": "Rowan/hellaswag",
+      "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+      "train_count": 39905,
+      "unit": "questions",
+      "assets": [
+        {
+          "local_file": "hellaswag-train.parquet",
+          "url": "https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/data/train-00000-of-00001.parquet",
+          "bytes": 24365524,
+          "sha256": "cacb12587faa63d7f723a72d61d12bfa94b140446f5a6a0a2e1c6906ab88bf02",
+          "train_selector": "all records in this train-only file"
+        }
+      ],
+      "holdout_note": "Leaderboard uses validation; exclude validation from training"
+    },
+    {
+      "benchmark": "ContractNLI",
+      "source": "stanfordnlp/contract-nli",
+      "train_documents": 423,
+      "train_count": 7191,
+      "unit": "17 decisions per contract",
+      "license_note": "Read contract-nli/LICENSE and contract-nli/TERMS in archive",
+      "assets": [
+        {
+          "local_file": "contract-nli.zip",
+          "url": "https://stanfordnlp.github.io/contract-nli/resources/contract-nli.zip",
+          "bytes": 65362913,
+          "sha256": "e03fc77bbf8b53e2976a250e81d8a294bc3d5e5fb014521e477dee9340d6287b",
+          "train_selector": "archive member contract-nli/train.json only; exclude dev.json and test.json"
+        }
+      ],
+      "conversion_note": "Use full contract text, not gold-selected evidence"
+    },
+    {
+      "benchmark": "ACOS",
+      "source": "NUSTM/ACOS",
+      "revision": "45d179a3dcc6a3dedd848d81b16f2552454805fe",
+      "train_count": 4464,
+      "unit": "reviews; expansion to binary aspect-sentiment questions changes row count",
+      "assets": [
+        {
+          "local_file": "acos-laptop-train.tsv",
+          "url": "https://raw.githubusercontent.com/NUSTM/ACOS/45d179a3dcc6a3dedd848d81b16f2552454805fe/data/Laptop-ACOS/laptop_quad_train.tsv",
+          "bytes": 359454,
+          "sha256": "75572e18961f15d6624c037cf4ccc8964744b59a6be4249132229a4dbd967320",
+          "train_selector": "all records"
+        },
+        {
+          "local_file": "acos-restaurant-train.tsv",
+          "url": "https://raw.githubusercontent.com/NUSTM/ACOS/45d179a3dcc6a3dedd848d81b16f2552454805fe/data/Restaurant-ACOS/rest16_quad_train.tsv",
+          "bytes": 179810,
+          "sha256": "91ced9328d5992d3715ec70d7cc08a6ccd9dea79136ffdd70556fe54b217edda",
+          "train_selector": "all records"
+        }
+      ],
+      "conversion_note": "Include negative aspect-sentiment combinations; do not expose gold spans"
+    },
+    {
+      "benchmark": "iSarcasmEval",
+      "source": "iabufarha/iSarcasmEval",
+      "revision": "dfc708b53bde1bb571abfb5692f63231c2232195",
+      "train_count": 3468,
+      "unit": "English tweets",
+      "headline_track": "A-En",
+      "assets": [
+        {
+          "local_file": "isarcasm-train-en.csv",
+          "url": "https://raw.githubusercontent.com/iabufarha/iSarcasmEval/dfc708b53bde1bb571abfb5692f63231c2232195/train/train.En.csv",
+          "bytes": 491395,
+          "sha256": "fde737b69caffbcf81ebe79858ad16ac21881573c308343cd5219c4f7a800ae7",
+          "train_selector": "all records; tweet input, sarcastic target; exclude rephrase from input"
+        }
+      ],
+      "optional_assets": [
+        {
+          "local_file": "isarcasm-train-ar.csv",
+          "url": "https://raw.githubusercontent.com/iabufarha/iSarcasmEval/dfc708b53bde1bb571abfb5692f63231c2232195/train/train.Ar.csv",
+          "bytes": 519147,
+          "sha256": "7a13a6ee8082c7a2f0bfd0d0e2b8bd06549ccb1feff7c013afdd509d473672f0",
+          "train_selector": "optional Arabic training pool, 3102 tweets"
+        }
+      ]
+    },
+    {
+      "benchmark": "VAST",
+      "source": "emilyallaway/zero-shot-stance",
+      "revision": "e7c4775182b184730f350995f8260579c9e066fe",
+      "train_count": 13477,
+      "unit": "text-topic stance records",
+      "assets": [
+        {
+          "local_file": "vast-train.csv",
+          "url": "https://raw.githubusercontent.com/emilyallaway/zero-shot-stance/e7c4775182b184730f350995f8260579c9e066fe/data/VAST/vast_train.csv",
+          "bytes": 30142407,
+          "sha256": "b2f0d69a73231b8ef22f10e4df7d759cf228505ce5252506068da6aa7fe42109",
+          "train_selector": "all records"
+        }
+      ]
+    },
+    {
+      "benchmark": "NLI4CT",
+      "source": "ai-systems/Task-2-SemEval-2024",
+      "revision": "7f32fa6c7db43e577f22e9fc6c28eef1cc6d223e",
+      "train_count": 1700,
+      "unit": "statements",
+      "assets": [
+        {
+          "local_file": "nli4ct-training_data.zip",
+          "url": "https://raw.githubusercontent.com/ai-systems/Task-2-SemEval-2024/7f32fa6c7db43e577f22e9fc6c28eef1cc6d223e/training_data.zip",
+          "bytes": 2323461,
+          "sha256": "ed3d9819cfebd2d1d5d70fd786323c904b341470f8dc173af39946f70a0e5b9f",
+          "train_selector": "train.json labels only; join referenced CT json documents; exclude dev.json labels"
+        }
+      ],
+      "conversion_note": "Preserve relevant full trial sections; do not include gold evidence indices"
+    },
+    {
+      "benchmark": "RAGTruth",
+      "source": "ParticleMedia/RAGTruth",
+      "revision": "c103204b9ce28d6bbad859304bf30de72b8ed8fe",
+      "train_count": 15090,
+      "unit": "responses",
+      "assets": [
+        {
+          "local_file": "ragtruth-response.jsonl",
+          "url": "https://raw.githubusercontent.com/ParticleMedia/RAGTruth/c103204b9ce28d6bbad859304bf30de72b8ed8fe/dataset/response.jsonl",
+          "bytes": 21458735,
+          "sha256": "e4c2e4ac24fff676d8984cc61c35d791612fadc58015335d97dd632375e18073",
+          "train_selector": "split == train only; exclude 2700 test responses"
+        },
+        {
+          "local_file": "ragtruth-source-info.jsonl",
+          "url": "https://raw.githubusercontent.com/ParticleMedia/RAGTruth/c103204b9ce28d6bbad859304bf30de72b8ed8fe/dataset/source_info.jsonl",
+          "bytes": 15117971,
+          "sha256": "0dffc26ea9f3c1c3d7c7e8336b56ef1646e3cec876edffcca3c9c624d12d578b",
+          "train_selector": "join on source_id for selected train responses"
+        }
+      ],
+      "conversion_note": "Input original prompt and response; hallucinated = len(labels) > 0",
+      "license_note": "MIT annotations/code; contexts include non-commercial and no-redistribution sources; local use only, do not republish raw contexts"
+    },
+    {
+      "benchmark": "FinEntity",
+      "source": "pyRis/SEntFiN",
+      "source_role": "independent entity-sentiment proxy; not official FinEntity train",
+      "revision": "eba43610fe3cb57a3e5773cd6c037da1f8992ad5",
+      "candidate_pool_headlines": 10753,
+      "candidate_pool_entity_labels": 14404,
+      "train_count": null,
+      "assets": [
+        {
+          "local_file": "sentfin.csv",
+          "url": "https://raw.githubusercontent.com/pyRis/SEntFiN/eba43610fe3cb57a3e5773cd6c037da1f8992ad5/SEntFiN.csv",
+          "bytes": 1118162,
+          "sha256": "570af7ba58f724f3fcc414dd5ba80da5b1a3b342134d76c6ebdf53a32c54a92f",
+          "train_selector": "No official split. Group by Title, reserve validation, decontaminate, then expand Decisions into entity-specific questions."
+        }
+      ],
+      "license_note": "Author repository MIT LICENSE",
+      "conversion_note": "13 malformed Python dictionary literals due to entity apostrophes; use explicit sentiment-boundary parsing or repair with count validation",
+      "holdout_note": "Original FinEntity full unsplit corpus is leaderboard evaluation-only; do not train it"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+import random
+from datasets import ClassLabel, DatasetDict, Dataset, Features, Value
+from sorcery import dict_of
+import string
+from .preprocess import classification_prompt
+
+# Tasks whose labels do not work as named classes: regression scores, multi-label
+# lists, or opaque label sets. Their soft views (SoftLabeling) are fine.
+improper_labels = ['glue/stsb', 'sick/relatedness', 'sts-companion', 'stsb_multi_mt', 'acceptability-prediction',
+                    'chaos-mnli-ambiguity', 'oasst1_dense_flat', 'oasst2_dense_flat']  # regression
+improper_labels += ['lex_glue/eurlex']  # multi-label over 100 concepts
+improper_labels += ['icl-symbol-tuning-instruct', 'zero-shot-label-nli']  # already recasts
+
+def render_options(options):
+    options = [f'"{x}"' for x in options]
+    return f"{', '.join(options[:-1])} or {options[-1]}"
+
+def render_classification(text,options,answer,question=None):
+    if question:
+        inputs = f'{question} With no explanation, answer with either {render_options(options)}.\n{text}'
+    else:
+        example = 'text_A→text_B' if text.startswith('text_A:') else 'the following'
+        inputs = f'With no explanation, label {example} with either {render_options(options)}.\n{text}'
+    targets = f"{answer}."
+    return dict_of(inputs,targets)
+
+def render_token_classification(tokens,options,labels):
+    prefix = f'With no explanation, label each line with {render_options(options)} preceded by ":".\n'
+    inputs = prefix+"\n".join(tokens)
+    targets = "\n".join([':'.join(x) for x in zip(tokens,labels)])
+    return dict_of(inputs,targets)
+
+def render_multiple_choice(prompt, options, labels):
+    inputs=(prompt+'\n' if prompt else '')
+    letters = string.ascii_uppercase[:len(options)]
+    inputs=f'With no explanation, chose the best option from {render_options(letters)}. {inputs}'    
+    for letter, option in zip(letters, options):
+        inputs+=f'\n{letter}: {option}'
+    targets = f'{letters[labels]}.'
+    return dict_of(inputs, targets) 
+
+def negative_sample_options(y, labels,N=4, rng=random):
+    """The gold label and N-1 sampled negatives, in ontology order so the gold slot carries no signal."""
+    if len(labels)<N:
+        return list(labels)
+    chosen = {y, *rng.sample([x for x in labels if x!=y], N-1)}
+    return [x for x in labels if x in chosen]
+
+def shuffle_choices(x, rng=random, visual=False):
+    if not visual:
+        # Preserve the established text recast, including its option slots.
+        choices = sorted(k for k in x if 'choice' in k)
+        texts = [x[c] for c in choices]
+        correct = texts[x['labels']]
+        rng.shuffle(texts)
+        x.update(zip(choices, texts))
+        x['labels'] = texts.index(correct)
+        return x
+    choices = sorted((k for k in x if k.startswith('choice')), key=lambda k: int(k[6:]))
+    texts = [x[c] for c in choices]
+    gold = x['labels']
+    order = [i for i, text in enumerate(texts) if text is not None]
+    rng.shuffle(order)
+    for c in choices:
+        del x[c]
+    x.update({f'choice{i}': texts[j] for i, j in enumerate(order)})
+    x['labels'] = order.index(gold)
+    return x
+
+
+def recast_dataset_classification_to_mc(dataset,sep="[SEP]",N=4):
+
+    def recast_split(d,N=N):
+        labels = d.features['labels']
+        df=d.to_pandas()
+        df['inputs'] = df.sentence1
+        if "sentence2" in df:
+            df['inputs'] +=sep + df.sentence2
+
+        N=min(N, len(labels.names))
+        df['choices']=df.apply(lambda x:negative_sample_options(labels.int2str(x['labels']), labels.names,N,
+            rng=random.Random(x.name)),axis=1)  # per-row RNG: reproducible     
+        df['labels']=df.apply(lambda x:x['choices'].index(labels.int2str(x['labels'])),axis=1)
+
+        for i in range(N):
+            df[f'choice{i}']= "This example is " + df.choices.map(lambda x:x[i])
+
+        choices = [f'choice{i}' for i in range(N)]
+        return Dataset.from_pandas(df[['inputs',*choices,'labels']],preserve_index=False)
+
+    return DatasetDict({k: recast_split(v) for k,v in dataset.items()})
+
+
+def recast_instruct(dataset, question=None, seed=0, options=False):
+    """Sampling and shuffling use one RNG per example, seeded by (seed, split, row index):
+    reproducible, and independent of the global ``random`` state. ``options=True`` keeps
+    an ``options`` column: every answer offered in the prompt, formatted like ``targets``
+    (empty for token classification), e.g. for preference pairs."""
+    features = dataset['train'].features
+    labels = features['labels']
+
+    visual = "images" in features
+    if visual:
+        from .preprocess import disable_image_decoding
+        dataset = disable_image_decoding(dataset)
+    if "sentence1" in features or (visual and "inputs" in features):
+        task_type='Classification'
+    if "choice0" in features:
+        task_type = "MultipleChoice"
+    if "tokens" in features:
+        task_type = "TokenClassification"
+
+    def recast_MultipleChoice(x, rng):
+        x=shuffle_choices(x, rng, visual=visual)
+        if question:
+            x['inputs'] = f"{x['inputs']}\n{question}" if x['inputs'] else question
+        choices = sorted((k for k in x if k.startswith('choice')), key=lambda k: int(k[6:]))
+        if not visual and all([x[c] in x['inputs'] for c in choices]):
+            return {"inputs":x['inputs'], 'targets': x[f"choice{x['labels']}"].strip()+".",
+                    'options': [x[c].strip()+"." for c in choices]}
+        else:
+            rendered = render_multiple_choice(x['inputs'],[x[c] for c in choices],x['labels'])
+            return {**rendered, 'options': [f"{letter}." for letter in string.ascii_uppercase[:len(choices)]]}
+
+    def recast_TokenClassification(x, rng):
+        distractors = list(labels.feature.names)
+        x_labels = [labels.feature.int2str(y) for y in x['labels']]
+        labels_set= list(dict.fromkeys(x_labels))  # first-seen order, independent of PYTHONHASHSEED
+        options=list(dict.fromkeys(labels_set+distractors))[:max(len(labels_set),10)]
+        return {**render_token_classification(x['tokens'],options,x_labels), 'options': []}
+
+    def recast_Classification(x, rng):
+        text, row_question = classification_prompt(x, question)
+        answer=labels.int2str(x['labels']).strip()
+        options= negative_sample_options(answer, labels._int2str, rng=rng)
+        return {**render_classification(text, options, answer, row_question), 'options': [f"{o}." for o in options]}
+        
+    recast = eval(f"recast_{task_type}")
+    # same repair of mojibake and escaped HTML as the Jev recast
+    def convert(x, i, split):
+        row = recast(x, random.Random(f"{seed}/{split}/{i}"))
+        return {"inputs": clean_text(row["inputs"]), "targets": clean_text(row["targets"]),
+                "options": [clean_text(o) for o in row["options"]]}
+    dataset = DatasetDict({split: rows.map(convert, with_indices=True, fn_kwargs={"split": split})
+                           for split, rows in dataset.items()})
+    kept = ['inputs', 'targets'] + (['images'] if visual else []) + (['metadata'] if 'metadata' in features else []) + (['options'] if options else [])
+    dataset = dataset.remove_columns([k for k in dataset['train'].column_names if k not in kept])
+    if visual:
+        dataset = dataset.cast_column('images', features['images'])
+    return dataset
+
+
+def recast_label_nli(dataset, task, seed=0):
+    """Classification as NLI for zero-shot classification: the text as premise and "This example is
+    <label>." as hypothesis, entailed by the gold label and contradicted by another label of the task.
+    ``positive`` and ``negative`` keep both hypotheses (triplets). One RNG per example, as in instruct."""
+    labels = dataset['train'].features['labels']
+    names = [name.strip() for name in labels.names]
+
+    def convert(x, i, split):
+        rng = random.Random(f"{seed}/{split}/{i}")
+        gold = names[x['labels']]
+        negative = rng.choice([name for name in names if name != gold])
+        entailed = rng.random() < .5
+        premise = clean_text(x['sentence1'] + (f"\n{x['sentence2']}" if x.get('sentence2') else ""))
+        positive, negative = f"This example is {gold}.", f"This example is {negative}."
+        return {'premise': premise, 'hypothesis': positive if entailed else negative, 'positive': positive,
+                'negative': negative, 'labels': 0 if entailed else 2, 'task': task}
+
+    text = Value('string')
+    features = Features({'premise': text, 'hypothesis': text, 'positive': text, 'negative': text,
+                         'labels': ClassLabel(names=['entailment', 'neutral', 'contradiction']), 'task': text})
+    out = DatasetDict()
+    for split, rows in dataset.items():
+        rows = rows.filter(lambda y, x: y is not None and 0 <= y < len(names) and bool(x),
+                           input_columns=['labels', 'sentence1'])
+        out[split] = rows.map(convert, with_indices=True, fn_kwargs={'split': split},
+                              remove_columns=rows.column_names, features=features)
+    return out
+
+from .jev.recast import clean_text, recast_jev, render_typed_decision, render_typed_decision_group

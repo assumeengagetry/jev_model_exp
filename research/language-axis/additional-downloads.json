@@ -1,0 +1,38 @@
+[
+  {
+    "file": "anli-train-r1.parquet",
+    "url": "https://huggingface.co/datasets/facebook/anli/resolve/8e4813d81f46d313dac7892e1c28076917cfcdf9/plain_text/train_r1-00000-of-00001.parquet",
+    "bytes": 3140120,
+    "sha256": "de2d038ae67f1fb1872073490b9e7685e9114d5f278ddd4631905fe0a4ecbcff"
+  },
+  {
+    "file": "anli-train-r3.parquet",
+    "url": "https://huggingface.co/datasets/facebook/anli/resolve/8e4813d81f46d313dac7892e1c28076917cfcdf9/plain_text/train_r3-00000-of-00001.parquet",
+    "bytes": 14333467,
+    "sha256": "c1d3f614d673888ac56b9ab62324e21583c98a11c4fef84e938d0f8fc414b29a"
+  },
+  {
+    "file": "isarcasm-train-ar.csv",
+    "url": "https://raw.githubusercontent.com/iabufarha/iSarcasmEval/dfc708b53bde1bb571abfb5692f63231c2232195/train/train.Ar.csv",
+    "bytes": 519147,
+    "sha256": "7a13a6ee8082c7a2f0bfd0d0e2b8bd06549ccb1feff7c013afdd509d473672f0"
+  },
+  {
+    "file": "anli-train-r2.parquet",
+    "url": "https://huggingface.co/datasets/facebook/anli/resolve/8e4813d81f46d313dac7892e1c28076917cfcdf9/plain_text/train_r2-00000-of-00001.parquet",
+    "bytes": 6527557,
+    "sha256": "209f4a15bf77224c62ffbde5f150fda928a7e2f5175366f4cacc3c7588aab13d"
+  },
+  {
+    "file": "hellaswag-train.parquet",
+    "url": "https://huggingface.co/datasets/Rowan/hellaswag/resolve/218ec52e09a7e7462a5400043bb9a69a41d06b76/data/train-00000-of-00001.parquet",
+    "bytes": 24365524,
+    "sha256": "cacb12587faa63d7f723a72d61d12bfa94b140446f5a6a0a2e1c6906ab88bf02"
+  },
+  {
+    "file": "ragtruth-source-info.jsonl",
+    "url": "https://raw.githubusercontent.com/ParticleMedia/RAGTruth/c103204b9ce28d6bbad859304bf30de72b8ed8fe/dataset/source_info.jsonl",
+    "bytes": 15117971,
+    "sha256": "0dffc26ea9f3c1c3d7c7e8336b56ef1646e3cec876edffcca3c9c624d12d578b"
+  }
+]

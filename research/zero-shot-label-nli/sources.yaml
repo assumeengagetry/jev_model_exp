@@ -1,0 +1,4112 @@
+tasksource_commit: 92445bb60ed495188208ab587606b6b6f273bccc
+sources:
+  AES2-essay-scoring:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: tasksource/AES2-essay-scoring
+    revisions:
+      tasksource/AES2-essay-scoring: 663439c1ae103e912ff7d01c503a8429ea1cbc03
+    license: cc-by-nc-4.0
+    license_use: non-commercial
+    card_licenses:
+      tasksource/AES2-essay-scoring:
+      - cc-by-nc-4.0
+  AmbigNQ-clarifying-question:
+    rows:
+      train: 9000
+      validation: 100
+      test: 100
+    dataset: erbacher/AmbigNQ-clarifying-question
+    revisions:
+      erbacher/AmbigNQ-clarifying-question: 7da61aae0739327c83ae26c8630b5ca125c0d802
+    license: unspecified
+    license_use: unspecified
+  BeaverTails:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: PKU-Alignment/BeaverTails
+    revisions:
+      PKU-Alignment/BeaverTails: 8401fe609d288129cc684a9b3be6a93e41cfe678
+    license: cc-by-nc-4.0
+    license_use: non-commercial
+    card_licenses:
+      PKU-Alignment/BeaverTails:
+      - cc-by-nc-4.0
+  CONDAQA:
+    rows:
+      train: 5724
+      validation: 100
+      test: 100
+    dataset: lasha-nlp/CONDAQA
+    revisions:
+      lasha-nlp/CONDAQA: 3c9caa2f2f6960711e7f4d2e800581def2b6c183
+    license: apache-2.0, Apache License 2.0 (DPI)
+    license_use: commercial
+    card_licenses:
+      lasha-nlp/CONDAQA:
+      - apache-2.0
+    dpi_licenses:
+    - Apache License 2.0
+  CREAK:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: amydeng2000/CREAK
+    revisions:
+      amydeng2000/CREAK: cceb4696560317e920d6512b906263bb425883a1
+    license: CC BY-SA 4.0 (DPI)
+    license_use: commercial
+    dpi_licenses:
+    - CC BY-SA 4.0
+  FLD.v2/default:
+    rows:
+      train: 9998
+      validation: 100
+      test: 100
+    dataset: hitachi-nlp/FLD.v2
+    config: default
+    revisions:
+      hitachi-nlp/FLD.v2: 7ead9a0429604efb473e96d4dc279bc3453ce995
+    license: unspecified
+    license_use: unspecified
+  FLD.v2/star:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: hitachi-nlp/FLD.v2
+    config: star
+    revisions:
+      hitachi-nlp/FLD.v2: 7ead9a0429604efb473e96d4dc279bc3453ce995
+    license: unspecified
+    license_use: unspecified
+  HatemojiBuild:
+    rows:
+      train: 4728
+      validation: 100
+      test: 100
+    dataset: HannahRoseKirk/HatemojiBuild
+    revisions:
+      HannahRoseKirk/HatemojiBuild: 17509b6678c3206ce7bfa43107fdadf53f3d06f7
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      HannahRoseKirk/HatemojiBuild:
+      - cc-by-4.0
+  HelpSteer3/preference_strength:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: nvidia/HelpSteer3
+    config: preference
+    revisions:
+      nvidia/HelpSteer3: f6d145777bcbde96137596340fab89793acd1031
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      nvidia/HelpSteer3: &id001
+      - cc-by-4.0
+  HelpSteer3/principle:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: nvidia/HelpSteer3
+    config: principle
+    revisions:
+      nvidia/HelpSteer3: f6d145777bcbde96137596340fab89793acd1031
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      nvidia/HelpSteer3: *id001
+  I2D2:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/I2D2
+    revisions:
+      tasksource/I2D2: 37f168f76da1cbc0fead701e96006892ed723549
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      tasksource/I2D2:
+      - apache-2.0
+  MOH:
+    rows:
+      train: 1192
+      validation: 100
+      test: 100
+    dataset: tasksource/MOH
+    revisions:
+      tasksource/MOH: 8991746993241cb05c6e57f0270b969e78597dfb
+    license: unspecified
+    license_use: unspecified
+  PARARULE-Plus:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: qbao775/PARARULE-Plus
+    revisions:
+      qbao775/PARARULE-Plus: b69a66cba535e646cc3ace12b4eb672be78b44af
+    license: mit
+    license_use: commercial
+    card_licenses:
+      qbao775/PARARULE-Plus:
+      - mit
+  Prompt-injection-dataset/full:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: neuralchemy/Prompt-injection-dataset
+    config: full
+    revisions:
+      neuralchemy/Prompt-injection-dataset: 7d70432dfcf47a821612cbf9d34e9d9e3ad20e75
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      neuralchemy/Prompt-injection-dataset:
+      - apache-2.0
+  PromptShield:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: hendzh/PromptShield
+    revisions:
+      hendzh/PromptShield: a5234cb1f5cdb256600cab64b8c961195b5e8404
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      hendzh/PromptShield:
+      - apache-2.0
+  Sarcasm_News_Headline:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: raquiba/Sarcasm_News_Headline
+    revisions:
+      raquiba/Sarcasm_News_Headline: 643ceefc17441e56cff66f57c03b13615545d42b
+    license: unspecified
+    license_use: unspecified
+  ShellRisk-Bench:
+    rows:
+      train: 1824
+      validation: 100
+      test: 100
+    dataset: kontext-security/ShellRisk-Bench
+    revisions:
+      kontext-security/ShellRisk-Bench: 437467862139b4e9cdd5322024ef3434a67c7ec8
+    license: other
+    license_use: unspecified
+    card_licenses:
+      kontext-security/ShellRisk-Bench:
+      - other
+  Touche23-ValueEval:
+    rows:
+      train: 5393
+      validation: 100
+      test: 100
+    source_urls:
+    - https://zenodo.org/records/7879430/files/arguments-test.tsv
+    - https://zenodo.org/records/7879430/files/arguments-training.tsv
+    - https://zenodo.org/records/7879430/files/arguments-validation.tsv
+    originals:
+    - webis/Touche23-ValueEval
+    revisions: {}
+    license: cc-by-4.0, CC BY 4.0 (DPI)
+    license_use: commercial
+    card_licenses:
+      webis/Touche23-ValueEval:
+      - cc-by-4.0
+    dpi_licenses:
+    - CC BY 4.0
+  TroFi:
+    rows:
+      train: 1594
+      validation: 100
+      test: 100
+    data_files_from:
+    - tasksource/TroFi
+    revisions:
+      tasksource/TroFi: 69e6baed2fe03e9618f4785cc985fcd15676c834
+    license: gpl, Custom (DPI)
+    license_use: commercial
+    card_licenses:
+      tasksource/TroFi:
+      - gpl
+    dpi_licenses:
+    - Custom
+  TuringBench:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    data_files_from:
+    - jana4/turingbench-humanized
+    originals:
+    - turingbench/TuringBench
+    revisions:
+      jana4/turingbench-humanized: a71e2e319c2ad2c95a5e501f240f9e012b57af9f
+    license: apache-2.0, Apache License 2.0 (DPI)
+    license_use: commercial
+    card_licenses:
+      turingbench/TuringBench:
+      - apache-2.0
+    dpi_licenses:
+    - Apache License 2.0
+  VUAC:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/VUAC
+    revisions:
+      tasksource/VUAC: 1a7b7766b2f6830b7471e38c337eee7c7236a2e7
+    license: unspecified
+    license_use: unspecified
+  ade_corpus_v2/Ade_corpus_v2_classification:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: ade-benchmark-corpus/ade_corpus_v2
+    config: Ade_corpus_v2_classification
+    revisions:
+      ade-benchmark-corpus/ade_corpus_v2: 4ba01c71687dd7c996597042449448ea312126cf
+    license: unspecified
+    license_use: unspecified
+  ag_news:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: fancyzhx/ag_news
+    revisions:
+      fancyzhx/ag_news: eb185aade064a813bc0b7f42de02595523103ca4
+    license: unspecified
+    license_use: unspecified
+  agent_action_safety:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    data_files_from:
+    - karanxa/agent-action-safety-dataset
+    revisions:
+      karanxa/agent-action-safety-dataset: 2371a8dfd029c92f7830446e5316fd1239380ebe
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      karanxa/agent-action-safety-dataset:
+      - apache-2.0
+  amazon_counterfactual/en:
+    rows:
+      train: 3060
+      validation: 100
+      test: 100
+    dataset: mteb/amazon_counterfactual
+    config: en
+    revisions:
+      mteb/amazon_counterfactual: b9867e02b01002698f60c07fb8efdce8c5020ee8
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      mteb/amazon_counterfactual:
+      - cc-by-4.0
+  amazon_polarity/amazon_polarity:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: fancyzhx/amazon_polarity
+    config: amazon_polarity
+    revisions:
+      fancyzhx/amazon_polarity: 9d9c45c18f8c3cf1b23a3c27917b60cbf28f3289
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      fancyzhx/amazon_polarity:
+      - apache-2.0
+  ambient:
+    rows:
+      train: 28
+      validation: 50
+      test: 100
+    dataset: tasksource/ambient
+    revisions:
+      tasksource/ambient: a0fe7523056a2c2d05830b54a35d39c84f1c7577
+    license: unspecified
+    license_use: unspecified
+  antique:
+    rows:
+      train: 10000
+      test: 100
+    dataset: tasksource/antique
+    revision: 64ee082b79eef22a6c8f80b76e10b4d88c4308b0
+    originals:
+    - irds/antique
+    - irds/antique_test
+    - irds/antique_train
+    revisions:
+      tasksource/antique: 64ee082b79eef22a6c8f80b76e10b4d88c4308b0
+    license: other, research-only (original ANTIQUE distribution) (original source)
+    license_use: non-commercial
+    card_licenses:
+      tasksource/antique:
+      - other
+    source_license_evidence:
+      license: research-only (original ANTIQUE distribution)
+      scope: original Yahoo answer collection and relevance judgments; no inferred software license
+      url: https://ciir.cs.umass.edu/downloads/Antique/readme.txt
+  apt:
+    rows:
+      train: 3371
+      validation: 100
+      test: 100
+    dataset: tasksource/apt
+    revisions:
+      tasksource/apt: f6c07f66d3eccebd36418885ce10aff295d436dd
+    license: unspecified
+    license_use: unspecified
+  args_me:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: webis/args_me
+    revision: refs/convert/parquet
+    revisions:
+      webis/args_me: 76eaf89b76de143ca1584505c3202c79453e31ee
+    license: cc-by-4.0, CC BY 4.0 (DPI)
+    license_use: commercial
+    card_licenses:
+      webis/args_me:
+      - cc-by-4.0
+    dpi_licenses:
+    - CC BY 4.0
+  argument-feedback:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: tasksource/argument-feedback
+    revisions:
+      tasksource/argument-feedback: c311c9daa03298b47139f395e06fc942805f9305
+    license: unspecified
+    license_use: unspecified
+  auditor_review:
+    rows:
+      train: 3489
+      validation: 100
+      test: 100
+    dataset: demo-org/auditor_review
+    revisions:
+      demo-org/auditor_review: 22e9451042c750f5dec39e243d34f4efea1f3cda
+    license: unspecified
+    license_use: unspecified
+  avicenna:
+    rows:
+      train: 4320
+      validation: 100
+      test: 100
+    dataset: tasksource/avicenna
+    revisions:
+      tasksource/avicenna: 909ba9cda08a332f629239a4461296462f01766b
+    license: cc
+    license_use: unspecified
+    card_licenses:
+      tasksource/avicenna:
+      - cc
+  banking77:
+    rows:
+      train: 9002
+      validation: 100
+      test: 100
+    dataset: legacy-datasets/banking77
+    originals:
+    - PolyAI/banking77
+    revisions:
+      legacy-datasets/banking77: f54121560de48f2852f90be299010d1d6dc612ec
+    license: cc-by-4.0, CC BY 4.0 (DPI)
+    license_use: commercial
+    card_licenses:
+      legacy-datasets/banking77:
+      - cc-by-4.0
+      PolyAI/banking77:
+      - cc-by-4.0
+    dpi_licenses:
+    - CC BY 4.0
+  biored/relation:
+    rows:
+      train: 3828
+      validation: 100
+      test: 100
+    dataset: gyorilab/BioRED
+    revision: a61e98e5d360fadfa5a4aaeb9fb44bf8b4f06a94
+    revisions:
+      gyorilab/BioRED: a61e98e5d360fadfa5a4aaeb9fb44bf8b4f06a94
+    license: unspecified
+    license_use: unspecified
+  blog_authorship_corpus/age:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: tasksource/blog_authorship_corpus
+    originals:
+    - barilan/blog_authorship_corpus
+    revisions:
+      tasksource/blog_authorship_corpus: 8d658f137b1844d28b533f67888a6d244f6cc28a
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      tasksource/blog_authorship_corpus: &id002
+      - apache-2.0
+  blog_authorship_corpus/gender:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: tasksource/blog_authorship_corpus
+    originals:
+    - barilan/blog_authorship_corpus
+    revisions:
+      tasksource/blog_authorship_corpus: 8d658f137b1844d28b533f67888a6d244f6cc28a
+    license: apache-2.0, Custom (DPI)
+    license_use: commercial
+    card_licenses:
+      tasksource/blog_authorship_corpus: *id002
+    dpi_licenses:
+    - Custom
+  boolq-natural-perturbations:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: tasksource/boolq-natural-perturbations
+    revisions:
+      tasksource/boolq-natural-perturbations: c635332543e161f56b25e92519e8433f792747b0
+    license: unspecified
+    license_use: unspecified
+  causal-news:
+    rows:
+      train: 3069
+      validation: 100
+    dataset: thagen/CNCv2
+    config: causality detection
+    revision: 467414788436d05da02d17188a3c0e30b0f41b4c
+    revisions:
+      thagen/CNCv2: 467414788436d05da02d17188a3c0e30b0f41b4c
+    license: cc0-1.0
+    license_use: commercial
+    card_licenses:
+      thagen/CNCv2:
+      - cc0-1.0
+  cebab/ambiance:
+    rows:
+      train: 8360
+      validation: 100
+      test: 100
+    dataset: EleutherAI/CEBaB
+    revision: d1e1c91387a2fcd3f987e125c23f2c3895aea549
+    originals:
+    - CEBaB/CEBaB
+    revisions:
+      EleutherAI/CEBaB: d1e1c91387a2fcd3f987e125c23f2c3895aea549
+    license: cc-by-4.0, cc-by-4.0 (original source)
+    license_use: commercial
+    card_licenses:
+      EleutherAI/CEBaB: &id003
+      - cc-by-4.0
+    source_license_evidence: &id004
+      license: cc-by-4.0
+      checked: '2026-10-13'
+      scope: original corpus and human-written counterfactual edits
+      url: https://github.com/CEBaBing/CEBaB/blob/gh-pages/cebab_datasheet.md#distribution
+  cebab/food:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: EleutherAI/CEBaB
+    revision: d1e1c91387a2fcd3f987e125c23f2c3895aea549
+    originals:
+    - CEBaB/CEBaB
+    revisions:
+      EleutherAI/CEBaB: d1e1c91387a2fcd3f987e125c23f2c3895aea549
+    license: cc-by-4.0, cc-by-4.0 (original source)
+    license_use: commercial
+    card_licenses:
+      EleutherAI/CEBaB: *id003
+    source_license_evidence: *id004
+  cebab/noise:
+    rows:
+      train: 7591
+      validation: 100
+      test: 100
+    dataset: EleutherAI/CEBaB
+    revision: d1e1c91387a2fcd3f987e125c23f2c3895aea549
+    originals:
+    - CEBaB/CEBaB
+    revisions:
+      EleutherAI/CEBaB: d1e1c91387a2fcd3f987e125c23f2c3895aea549
+    license: cc-by-4.0, cc-by-4.0 (original source)
+    license_use: commercial
+    card_licenses:
+      EleutherAI/CEBaB: *id003
+    source_license_evidence: *id004
+  cebab/rating:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: EleutherAI/CEBaB
+    revision: d1e1c91387a2fcd3f987e125c23f2c3895aea549
+    originals:
+    - CEBaB/CEBaB
+    revisions:
+      EleutherAI/CEBaB: d1e1c91387a2fcd3f987e125c23f2c3895aea549
+    license: cc-by-4.0, cc-by-4.0 (original source)
+    license_use: commercial
+    card_licenses:
+      EleutherAI/CEBaB: *id003
+    source_license_evidence: *id004
+  cebab/service:
+    rows:
+      train: 9415
+      validation: 100
+      test: 100
+    dataset: EleutherAI/CEBaB
+    revision: d1e1c91387a2fcd3f987e125c23f2c3895aea549
+    originals:
+    - CEBaB/CEBaB
+    revisions:
+      EleutherAI/CEBaB: d1e1c91387a2fcd3f987e125c23f2c3895aea549
+    license: cc-by-4.0, cc-by-4.0 (original source)
+    license_use: commercial
+    card_licenses:
+      EleutherAI/CEBaB: *id003
+    source_license_evidence: *id004
+  chemprot/chemprot_full_source:
+    rows:
+      train: 6436
+      validation: 100
+      test: 100
+    dataset: bigbio/chemprot
+    config: chemprot_full_source
+    revisions:
+      bigbio/chemprot: 25efb1a752ba3775795742f07502f6dd214a18eb
+    license: other
+    license_use: unspecified
+    card_licenses:
+      bigbio/chemprot:
+      - other
+  circa:
+    rows:
+      train: 9761
+      validation: 50
+      test: 50
+    dataset: google-research-datasets/circa
+    revisions:
+      google-research-datasets/circa: faa1b5a78dd926a899bcd4da289c2e3abe8061a9
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      google-research-datasets/circa:
+      - cc-by-4.0
+  citation_intent:
+    rows:
+      train: 1688
+      validation: 100
+      test: 100
+    dataset: zapsdcn/citation_intent
+    revisions:
+      zapsdcn/citation_intent: f5e62b86ee701ba2ea2a5d95be12cd7633b6f6f9
+    license: unspecified
+    license_use: unspecified
+  civil_comments/insult:
+    rows:
+      train: 2764
+      validation: 100
+      test: 100
+    dataset: google/civil_comments
+    revisions:
+      google/civil_comments: f2970eb3a55777454c94069077cc8d9b5866312d
+    license: cc0-1.0
+    license_use: commercial
+    card_licenses:
+      google/civil_comments: &id005
+      - cc0-1.0
+  civil_comments/toxicity:
+    rows:
+      train: 4116
+      validation: 100
+      test: 100
+    dataset: google/civil_comments
+    revisions:
+      google/civil_comments: f2970eb3a55777454c94069077cc8d9b5866312d
+    license: cc0-1.0
+    license_use: commercial
+    card_licenses:
+      google/civil_comments: *id005
+  clcd-english:
+    rows:
+      train: 9000
+      validation: 100
+      test: 100
+    dataset: tasksource/clcd-english
+    revisions:
+      tasksource/clcd-english: 2fa911a56b9c5f19cb84a2934136e8745c7a0f25
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      tasksource/clcd-english:
+      - apache-2.0
+  clinc_oos/plus:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: clinc/clinc_oos
+    config: plus
+    revisions:
+      clinc/clinc_oos: 155b9c710419136e17307b80d0a13e68cd46b4ec
+    license: cc-by-3.0
+    license_use: commercial
+    card_licenses:
+      clinc/clinc_oos:
+      - cc-by-3.0
+  clutrr:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/clutrr
+    originals:
+    - CLUTRR/v1
+    revisions:
+      tasksource/clutrr: 3f0016e8d7bb5887f97bbf17dbe31c6860d4c56d
+    license: unspecified
+    license_use: unspecified
+  code_x_glue_cc_defect_detection:
+    rows:
+      train: 9998
+      validation: 100
+      test: 100
+    dataset: google/code_x_glue_cc_defect_detection
+    revisions:
+      google/code_x_glue_cc_defect_detection: 69bd48c03223c2104342acd9a807caf61ac3efb8
+    license: c-uda
+    license_use: unspecified
+    card_licenses:
+      google/code_x_glue_cc_defect_detection:
+      - c-uda
+  com2sense:
+    rows:
+      train: 1608
+      validation: 100
+      test: 100
+    dataset: tasksource/com2sense
+    revisions:
+      tasksource/com2sense: 99d1b25627a0b38202d5744c0c71baeef7b648e2
+    license: unspecified
+    license_use: unspecified
+  commonsense_qa_2.0:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: tasksource/commonsense_qa_2.0
+    revisions:
+      tasksource/commonsense_qa_2.0: 23ff83b18ed76882f3af1a403a7c464b72efcd86
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      tasksource/commonsense_qa_2.0:
+      - cc-by-4.0
+  conceptrules_v2:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/conceptrules_v2
+    revisions:
+      tasksource/conceptrules_v2: aa3a377d68c5863840db744c79700cff309e3a91
+    license: mit, Custom (DPI)
+    license_use: commercial
+    card_licenses:
+      tasksource/conceptrules_v2:
+      - mit
+    dpi_licenses:
+    - Custom
+  counterfactually-augmented-imdb:
+    rows:
+      train: 1707
+      validation: 100
+      test: 100
+    dataset: tasksource/counterfactually-augmented-imdb
+    revisions:
+      tasksource/counterfactually-augmented-imdb: fd42efb815508d02beb7d478eae41a8a2e7100a3
+    license: unspecified
+    license_use: unspecified
+  crowdflower/airline-sentiment:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: tasksource/crowdflower
+    config: airline-sentiment
+    revisions:
+      tasksource/crowdflower: 9380af0a5ae3863a8f1fa7350572aa9709f2f1ce
+    license: unspecified
+    license_use: unspecified
+  crowdflower/corporate-messaging:
+    rows:
+      train: 2806
+      validation: 50
+      test: 50
+    dataset: tasksource/crowdflower
+    config: corporate-messaging
+    revisions:
+      tasksource/crowdflower: 9380af0a5ae3863a8f1fa7350572aa9709f2f1ce
+    license: unspecified
+    license_use: unspecified
+  crowdflower/political-media-audience:
+    rows:
+      train: 800
+      validation: 50
+      test: 50
+    dataset: tasksource/crowdflower
+    config: political-media-audience
+    revisions:
+      tasksource/crowdflower: 9380af0a5ae3863a8f1fa7350572aa9709f2f1ce
+    license: unspecified
+    license_use: unspecified
+  crowdflower/political-media-bias:
+    rows:
+      train: 1000
+      validation: 50
+      test: 50
+    dataset: tasksource/crowdflower
+    config: political-media-bias
+    revisions:
+      tasksource/crowdflower: 9380af0a5ae3863a8f1fa7350572aa9709f2f1ce
+    license: unspecified
+    license_use: unspecified
+  crowdflower/political-media-message:
+    rows:
+      train: 1000
+      validation: 50
+      test: 50
+    dataset: tasksource/crowdflower
+    config: political-media-message
+    revisions:
+      tasksource/crowdflower: 9380af0a5ae3863a8f1fa7350572aa9709f2f1ce
+    license: unspecified
+    license_use: unspecified
+  cuad/answerability:
+    rows:
+      train: 8599
+      test: 89
+    dataset: theatticusproject/cuad-qa
+    revision: d9c4ee0250ae2eb97bdb5b50773ab14ea62d0631
+    revisions:
+      theatticusproject/cuad-qa: d9c4ee0250ae2eb97bdb5b50773ab14ea62d0631
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      theatticusproject/cuad-qa:
+      - cc-by-4.0
+  cycic_classification:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: tasksource/cycic_classification
+    revisions:
+      tasksource/cycic_classification: ad7eb0d2022e36d762903851ef3ac1d612da96be
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      tasksource/cycic_classification:
+      - apache-2.0
+  dbpedia_14/dbpedia_14:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: fancyzhx/dbpedia_14
+    config: dbpedia_14
+    revisions:
+      fancyzhx/dbpedia_14: 9abd46cf7fc8b4c64290f26993c540b92aa145ac
+    license: cc-by-sa-3.0
+    license_use: commercial
+    card_licenses:
+      fancyzhx/dbpedia_14:
+      - cc-by-sa-3.0
+  ddi/relation:
+    rows:
+      train: 5744
+      test: 100
+    dataset: OpenMed/DDI-Corpus-Processed
+    revision: f97e24e60366180e77423ccd9c4643e34f59c1c8
+    revisions:
+      OpenMed/DDI-Corpus-Processed: f97e24e60366180e77423ccd9c4643e34f59c1c8
+    license: cc-by-nc-4.0
+    license_use: non-commercial
+    card_licenses:
+      OpenMed/DDI-Corpus-Processed:
+      - cc-by-nc-4.0
+  defeasible-nli/atomic:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/defeasible-nli
+    config: atomic
+    revisions:
+      tasksource/defeasible-nli: 7c4a57df9d8de5c36d4e9caa977907b5e8469c4f
+    license: apache-2.0, MIT License (DPI)
+    license_use: commercial
+    card_licenses:
+      tasksource/defeasible-nli: &id006
+      - apache-2.0
+    dpi_licenses:
+    - MIT License
+  defeasible-nli/snli:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/defeasible-nli
+    config: snli
+    revisions:
+      tasksource/defeasible-nli: 7c4a57df9d8de5c36d4e9caa977907b5e8469c4f
+    license: apache-2.0, MIT License (DPI)
+    license_use: commercial
+    card_licenses:
+      tasksource/defeasible-nli: *id006
+    dpi_licenses:
+    - MIT License
+  defeasible-nli/social:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/defeasible-nli
+    config: social
+    revisions:
+      tasksource/defeasible-nli: 7c4a57df9d8de5c36d4e9caa977907b5e8469c4f
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      tasksource/defeasible-nli: *id006
+  discovery/discovery:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: sileod/discovery
+    config: discovery
+    revisions:
+      sileod/discovery: a2812b4a716bb4fb560a7af36bbf711bba8bbf61
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      sileod/discovery:
+      - apache-2.0
+  disrpt/eng.dep.scidtb.rels:
+    rows:
+      train: 6060
+      validation: 100
+      test: 100
+    dataset: multilingual-discourse-hub/disrpt
+    config: eng.dep.scidtb.rels
+    revisions:
+      multilingual-discourse-hub/disrpt: 5302f26cdde7bb3a61d1c09c94a09b22e5d544cb
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      multilingual-discourse-hub/disrpt:
+      - apache-2.0
+  dnd_style_intents:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: neurae/dnd_style_intents
+    revisions:
+      neurae/dnd_style_intents: f070d66ac5646ad079ad5ac30a4ab88d1497bc61
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      neurae/dnd_style_intents:
+      - apache-2.0
+  docred:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    data_files_from:
+    - YufeiHFUT/DocRED_origin
+    originals:
+    - thunlp/docred
+    revisions:
+      YufeiHFUT/DocRED_origin: 7789aa772293f66a80ff2cb722289583e6881da1
+    license: mit
+    license_use: commercial
+    card_licenses:
+      thunlp/docred:
+      - mit
+  dynahate:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: tasksource/dynahate
+    originals:
+    - aps/dynahate
+    revisions:
+      tasksource/dynahate: 4580954ed9b2ac378d7c2614416097ab0a50f436
+    license: gpl
+    license_use: commercial
+    card_licenses:
+      tasksource/dynahate:
+      - gpl
+  dynasent/dynabench.dynasent.r1.all/r1:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/dynasent
+    config: r1
+    revisions:
+      tasksource/dynasent: 9d3a175e519f7eb3e4a105317eace574a4fb42a4
+    license: CC BY 4.0 (DPI)
+    license_use: commercial
+    dpi_licenses:
+    - CC BY 4.0
+  dynasent/dynabench.dynasent.r2.all/r2:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/dynasent
+    config: r2
+    revisions:
+      tasksource/dynasent: 9d3a175e519f7eb3e4a105317eace574a4fb42a4
+    license: CC BY 4.0 (DPI)
+    license_use: commercial
+    dpi_licenses:
+    - CC BY 4.0
+  edos:
+    rows:
+      train: 9740
+      validation: 100
+      test: 100
+    dataset: tasksource/edos
+    revision: af629562a8a56cb6501c30d7da5de13610982e24
+    revisions:
+      tasksource/edos: af629562a8a56cb6501c30d7da5de13610982e24
+    license: cc0-1.0
+    license_use: commercial
+    card_licenses:
+      tasksource/edos:
+      - cc0-1.0
+  emo/emo2019:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: oneonlee/cleansed_emocontext
+    originals:
+    - SemEvalWorkshop/emo
+    revisions:
+      oneonlee/cleansed_emocontext: d96a144ecefc8600c28e711bbbb318f4fb8f5dbd
+    license: mpl-2.0
+    license_use: commercial
+    card_licenses:
+      oneonlee/cleansed_emocontext:
+      - mpl-2.0
+  empathetic-dialogues/emotion:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: facebook/empathetic_dialogues
+    revision: d5b57ae707b0b9a384af8ed50c043c608d597ca7
+    revisions:
+      facebook/empathetic_dialogues: d5b57ae707b0b9a384af8ed50c043c608d597ca7
+    license: cc-by-nc-4.0
+    license_use: non-commercial
+    card_licenses:
+      facebook/empathetic_dialogues:
+      - cc-by-nc-4.0
+  english-grading/cohesion:
+    rows:
+      train: 3519
+      validation: 50
+      test: 50
+    dataset: tasksource/english-grading
+    revisions:
+      tasksource/english-grading: 4019f491c8ed7dc328c3cc334287983f72d7ac80
+    license: unspecified
+    license_use: unspecified
+  english-grading/conventions:
+    rows:
+      train: 3519
+      validation: 50
+      test: 50
+    dataset: tasksource/english-grading
+    revisions:
+      tasksource/english-grading: 4019f491c8ed7dc328c3cc334287983f72d7ac80
+    license: unspecified
+    license_use: unspecified
+  english-grading/grammar:
+    rows:
+      train: 3519
+      validation: 50
+      test: 50
+    dataset: tasksource/english-grading
+    revisions:
+      tasksource/english-grading: 4019f491c8ed7dc328c3cc334287983f72d7ac80
+    license: unspecified
+    license_use: unspecified
+  english-grading/phraseology:
+    rows:
+      train: 3519
+      validation: 50
+      test: 50
+    dataset: tasksource/english-grading
+    revisions:
+      tasksource/english-grading: 4019f491c8ed7dc328c3cc334287983f72d7ac80
+    license: unspecified
+    license_use: unspecified
+  english-grading/syntax:
+    rows:
+      train: 3519
+      validation: 50
+      test: 50
+    dataset: tasksource/english-grading
+    revisions:
+      tasksource/english-grading: 4019f491c8ed7dc328c3cc334287983f72d7ac80
+    license: unspecified
+    license_use: unspecified
+  english-grading/vocabulary:
+    rows:
+      train: 3519
+      validation: 50
+      test: 50
+    dataset: tasksource/english-grading
+    revisions:
+      tasksource/english-grading: 4019f491c8ed7dc328c3cc334287983f72d7ac80
+    license: unspecified
+    license_use: unspecified
+  esci:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/esci
+    revisions:
+      tasksource/esci: 8113b17a5d4099e20243282c926f1bc1a08a4d13
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      tasksource/esci:
+      - apache-2.0
+  esconv/strategy:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/esconv
+    revision: 5384809beecd0d30a98efd60a3ab6d2e6595780f
+    originals:
+    - thu-coai/esconv
+    revisions:
+      tasksource/esconv: 5384809beecd0d30a98efd60a3ab6d2e6595780f
+    license: cc-by-nc-4.0, cc-by-nc-4.0 (original source)
+    license_use: non-commercial
+    card_licenses:
+      tasksource/esconv:
+      - cc-by-nc-4.0
+      thu-coai/esconv:
+      - cc-by-nc-4.0
+    source_license_evidence:
+      license: cc-by-nc-4.0
+      license_use: non-commercial
+      checked: '2026-10-15'
+      scope: ESConv native dialogues and human strategy annotations
+      url: https://huggingface.co/datasets/thu-coai/esconv
+  ethics/commonsense:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    config: commonsense
+    data_files_from:
+    - hendrycks/ethics
+    revisions:
+      hendrycks/ethics: b8b47c589f8bee77175b8648e5497278b68da48a
+    license: mit
+    license_use: commercial
+    card_licenses:
+      hendrycks/ethics: &id007
+      - mit
+  ethics/deontology:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    config: deontology
+    data_files_from:
+    - hendrycks/ethics
+    revisions:
+      hendrycks/ethics: b8b47c589f8bee77175b8648e5497278b68da48a
+    license: mit
+    license_use: commercial
+    card_licenses:
+      hendrycks/ethics: *id007
+  ethics/justice:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    config: justice
+    data_files_from:
+    - hendrycks/ethics
+    revisions:
+      hendrycks/ethics: b8b47c589f8bee77175b8648e5497278b68da48a
+    license: mit
+    license_use: commercial
+    card_licenses:
+      hendrycks/ethics: *id007
+  ethics/virtue:
+    rows:
+      train: 3428
+      validation: 100
+      test: 100
+    dataset: hendrycks/ethics
+    config: default
+    revision: refs/convert/parquet
+    revisions:
+      hendrycks/ethics: 6deab74c03e30f13540266e373ce31f8466169f8
+    license: mit
+    license_use: commercial
+    card_licenses:
+      hendrycks/ethics: *id007
+  ethos/binary:
+    rows:
+      train: 898
+      validation: 50
+      test: 50
+    dataset: SetFit/ethos_binary
+    revisions:
+      SetFit/ethos_binary: 3e20849175072aa95845981f27938ebeb4eb93e0
+    license: unspecified
+    license_use: unspecified
+  ethos/multilabel:
+    rows:
+      train: 1000
+      validation: 50
+      test: 50
+    dataset: tasksource/ethos
+    config: multilabel
+    originals:
+    - iamollas/ethos
+    revisions:
+      tasksource/ethos: d342083f742b826582e1692e26efebdd05f6215b
+    license: agpl-3.0
+    license_use: commercial
+    card_licenses:
+      iamollas/ethos:
+      - agpl-3.0
+  evidence-inference:
+    rows:
+      train: 10000
+      validation: 100
+      test: 98
+    dataset: tasksource/evidence-inference
+    revision: f078c91c3b95b50feae0411ebce7be138fae0acd
+    revisions:
+      tasksource/evidence-inference: f078c91c3b95b50feae0411ebce7be138fae0acd
+    license: other
+    license_use: unspecified
+    card_licenses:
+      tasksource/evidence-inference:
+      - other
+  fabsa/sentiment:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: jordiclive/FABSA
+    revision: 40abb500cd7688529cb831c8c2c2a90d06264379
+    revisions:
+      jordiclive/FABSA: 40abb500cd7688529cb831c8c2c2a90d06264379
+    license: unspecified
+    license_use: unspecified
+  faithdial/grounding:
+    rows:
+      train: 8564
+      validation: 100
+      test: 100
+    dataset: McGill-NLP/FaithDial
+    revision: f0a79cdf1fbbdd06ce1850cdff81266e29cb6ae0
+    revisions:
+      McGill-NLP/FaithDial: f0a79cdf1fbbdd06ce1850cdff81266e29cb6ae0
+    license: mit, mit (original source)
+    license_use: commercial
+    card_licenses:
+      McGill-NLP/FaithDial:
+      - mit
+    source_license_evidence:
+      license: mit
+      license_use: commercial
+      checked: '2026-10-15'
+      scope: FaithDial human response-grounding annotations and rewrites
+      url: https://huggingface.co/datasets/McGill-NLP/FaithDial#licensing-information
+  feasibilityQA:
+    rows:
+      train: 1000
+      validation: 50
+      test: 50
+    dataset: tasksource/feasibilityQA
+    revisions:
+      tasksource/feasibilityQA: 9cdcbcc2105ae92681409f2c9d36786f623870ba
+    license: mit
+    license_use: commercial
+    card_licenses:
+      tasksource/feasibilityQA:
+      - mit
+  fever-evidence-related:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: mwong/fever-evidence-related
+    revisions:
+      mwong/fever-evidence-related: 14aba009b5fcd97b1a9ee6f3e3b0da0e308cf7cb
+    license: cc-by-sa-3.0, gpl-3.0, CC BY-SA 4.0 (DPI)
+    license_use: commercial
+    card_licenses:
+      mwong/fever-evidence-related:
+      - cc-by-sa-3.0
+      - gpl-3.0
+    dpi_licenses:
+    - CC BY-SA 4.0
+  few_rel/default:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/few_rel
+    config: default
+    revisions:
+      tasksource/few_rel: 20d46e38affb8d604bed38da7b81933734a03bcb
+    license: unspecified
+    license_use: unspecified
+  financial_phrasebank/sentences_allagree:
+    rows:
+      train: 2037
+      validation: 50
+      test: 50
+    dataset: ghbacct/financial-phrasebank-all-agree-classification
+    originals:
+    - takala/financial_phrasebank
+    revisions:
+      ghbacct/financial-phrasebank-all-agree-classification: 6f2f42aa4964d88052aa5988d90d0ac76496d89c
+    license: cc-by-nc-sa-3.0
+    license_use: non-commercial
+    card_licenses:
+      takala/financial_phrasebank:
+      - cc-by-nc-sa-3.0
+  fnc1/stance:
+    rows:
+      train: 10000
+      test: 100
+    dataset: tasksource/fnc1
+    revision: 4effe53583062803a710231955bec178b31c9635
+    revisions:
+      tasksource/fnc1: 4effe53583062803a710231955bec178b31c9635
+    license: other
+    license_use: unspecified
+    card_licenses:
+      tasksource/fnc1:
+      - other
+  fool-me-twice:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/fool-me-twice
+    revisions:
+      tasksource/fool-me-twice: c7bc95f5e7693dcfa1e03517d14e37d959072f32
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      tasksource/fool-me-twice:
+      - apache-2.0
+  gap:
+    rows:
+      train: 2000
+      validation: 100
+      test: 100
+    dataset: coref-data/gap_raw
+    revision: b3cb9f80cfade3374e73ecea63da8957eb125b3c
+    revisions:
+      coref-data/gap_raw: b3cb9f80cfade3374e73ecea63da8957eb125b3c
+    license: apache-2.0, apache-2.0 (original source)
+    license_use: commercial
+    card_licenses:
+      coref-data/gap_raw:
+      - apache-2.0
+    source_license_evidence:
+      license: apache-2.0
+      license_use: commercial
+      checked: '2026-10-15'
+      scope: GAP dataset release; Wikipedia snippets retain their source attribution requirements
+      url: https://github.com/google-research-datasets/gap-coreference/blob/master/LICENSE
+  github-issue-similarity:
+    rows:
+      train: 9913
+      validation: 98
+      test: 98
+    dataset: WhereIsAI/github-issue-similarity
+    revisions:
+      WhereIsAI/github-issue-similarity: 9d058e4cfbc11d782186a1dbb5031a6509b895e1
+    license: mit
+    license_use: commercial
+    card_licenses:
+      WhereIsAI/github-issue-similarity:
+      - mit
+  glue/cola:
+    rows:
+      train: 8551
+      validation: 50
+      test: 50
+    dataset: nyu-mll/glue
+    config: cola
+    revisions:
+      nyu-mll/glue: bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+    license: other
+    license_use: unspecified
+    card_licenses:
+      nyu-mll/glue: &id008
+      - other
+  glue/mrpc:
+    rows:
+      train: 3668
+      validation: 100
+      test: 100
+    dataset: nyu-mll/glue
+    config: mrpc
+    revisions:
+      nyu-mll/glue: bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+    license: other
+    license_use: unspecified
+    card_licenses:
+      nyu-mll/glue: *id008
+  glue/qqp:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: nyu-mll/glue
+    config: qqp
+    revisions:
+      nyu-mll/glue: bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+    license: other
+    license_use: unspecified
+    card_licenses:
+      nyu-mll/glue: *id008
+  glue/sst2:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: nyu-mll/glue
+    config: sst2
+    revisions:
+      nyu-mll/glue: bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c
+    license: other
+    license_use: unspecified
+    card_licenses:
+      nyu-mll/glue: *id008
+  go_emotions/simplified:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: google-research-datasets/go_emotions
+    config: simplified
+    revisions:
+      google-research-datasets/go_emotions: add492243ff905527e67aeb8b80c082af02207c3
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      google-research-datasets/go_emotions:
+      - apache-2.0
+  hate_speech18:
+    rows:
+      train: 4328
+      validation: 50
+      test: 50
+    dataset: tasksource/hate_speech18
+    originals:
+    - odegiber/hate_speech18
+    revisions:
+      tasksource/hate_speech18: fe76c6b6b37795fa740f052797552399ec46071a
+    license: cc-by-sa-3.0, CC BY-SA 3.0 (DPI)
+    license_use: commercial
+    card_licenses:
+      odegiber/hate_speech18:
+      - cc-by-sa-3.0
+    dpi_licenses:
+    - CC BY-SA 3.0
+  hate_speech_offensive:
+    rows:
+      train: 8908
+      validation: 50
+      test: 50
+    dataset: tdavidson/hate_speech_offensive
+    revisions:
+      tdavidson/hate_speech_offensive: adc5fb774614827695774f2dbe0ea8122f6a92b4
+    license: unspecified
+    license_use: unspecified
+  hatexplain/majority:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: Hate-speech-CNERG/hatexplain
+    revision: b0e5676acc1d0dcb31d6ce8e93e7e94109044ed6
+    revisions:
+      Hate-speech-CNERG/hatexplain: b0e5676acc1d0dcb31d6ce8e93e7e94109044ed6
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      Hate-speech-CNERG/hatexplain:
+      - cc-by-4.0
+  headline_cause/en_simple:
+    rows:
+      train: 4332
+      validation: 100
+      test: 100
+    data_files_from:
+    - IlyaGusev/headline_cause
+    revisions:
+      IlyaGusev/headline_cause: 68c78423fe4653638a87ec91140488bb3cb97061
+    license: cc0-1.0
+    license_use: commercial
+    card_licenses:
+      IlyaGusev/headline_cause:
+      - cc0-1.0
+  health_fact:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: marcov/health_fact_promptsource
+    originals:
+    - ImperialCollegeLondon/health_fact
+    revisions:
+      marcov/health_fact_promptsource: 74201b761bbd6f1274cfdb4e54ef65eba14eb21d
+    license: mit
+    license_use: commercial
+    card_licenses:
+      ImperialCollegeLondon/health_fact:
+      - mit
+  hope_edi/english:
+    rows:
+      train: 3552
+      validation: 100
+      test: 100
+    source_urls:
+    - https://drive.google.com/uc?id=1pvpPA97kybx5IyotR9HNuqP4T5ktEtr4&export=download&confirm=t
+    - https://drive.google.com/uc?id=1ydsOTvBZXKqcRvXawOuePrJ99slOEbkk&export=download&confirm=t
+    originals:
+    - dravidianlangtech/hope_edi
+    revisions: {}
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      dravidianlangtech/hope_edi:
+      - cc-by-4.0
+  hotpotqa/supporting-fact:
+    rows:
+      train: 2072
+      validation: 100
+    dataset: hotpotqa/hotpot_qa
+    config: distractor
+    revision: 1908d6afbbead072334abe2965f91bd2709910ab
+    revisions:
+      hotpotqa/hotpot_qa: 1908d6afbbead072334abe2965f91bd2709910ab
+    license: cc-by-sa-4.0
+    license_use: commercial
+    card_licenses:
+      hotpotqa/hotpot_qa:
+      - cc-by-sa-4.0
+  hover:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: Dzeniks/hover
+    revisions:
+      Dzeniks/hover: 8cacc890b6a6bb80e163bab3bdb67db147df58c9
+    license: mit
+    license_use: commercial
+    card_licenses:
+      Dzeniks/hover:
+      - mit
+  humicroedit/subtask-1:
+    rows:
+      train: 9652
+      validation: 100
+      test: 100
+    dataset: tasksource/humicroedit
+    config: subtask-1
+    originals:
+    - SemEvalWorkshop/humicroedit
+    revisions:
+      tasksource/humicroedit: f5a16e65b0854032ab9b4c82ca182a6381b83bd5
+    license: unspecified
+    license_use: unspecified
+  humicroedit/subtask-2:
+    rows:
+      train: 9381
+      validation: 100
+      test: 100
+    dataset: tasksource/humicroedit
+    config: subtask-2
+    originals:
+    - SemEvalWorkshop/humicroedit
+    revisions:
+      tasksource/humicroedit: f5a16e65b0854032ab9b4c82ca182a6381b83bd5
+    license: unspecified
+    license_use: unspecified
+  hyperpartisan_news:
+    rows:
+      train: 516
+      validation: 63
+      test: 65
+    dataset: zapsdcn/hyperpartisan_news
+    revisions:
+      zapsdcn/hyperpartisan_news: f8b596df1cf34dc96e5f340948de26cdd03f6197
+    license: CC BY 4.0 (DPI)
+    license_use: commercial
+    dpi_licenses:
+    - CC BY 4.0
+  imdb:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: stanfordnlp/imdb
+    revisions:
+      stanfordnlp/imdb: e6281661ce1c48d982bc483cf8a173c1bbeb5d31
+    license: other
+    license_use: unspecified
+    card_licenses:
+      stanfordnlp/imdb:
+      - other
+  implicit-hate-stg1:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: tasksource/implicit-hate-stg1
+    revisions:
+      tasksource/implicit-hate-stg1: 02f0834f16f2c0bbf38654378f29c26402e47d15
+    license: Request Form (DPI)
+    license_use: non-commercial
+    dpi_licenses:
+    - Request Form
+  insincere-questions:
+    rows:
+      train: 2532
+      validation: 100
+      test: 100
+    dataset: SetFit/insincere-questions
+    revisions:
+      SetFit/insincere-questions: cbc6d860e837a83dc17bc59ef1575825a979e19f
+    license: unspecified
+    license_use: unspecified
+  isarcasm/intended:
+    rows:
+      train: 3448
+      test: 100
+    dataset: viethq1906/isarcasm_2022_taskA_En
+    revision: 5f0b1c17c4f023b9bd7ea2159d12879a46b02d90
+    revisions:
+      viethq1906/isarcasm_2022_taskA_En: 5f0b1c17c4f023b9bd7ea2159d12879a46b02d90
+    license: unspecified
+    license_use: unspecified
+  it-support-tickets:
+    rows:
+      train: 1414
+      validation: 100
+      test: 100
+    dataset: tasksource/it-support-tickets
+    revisions:
+      tasksource/it-support-tickets: e0bbdcb96c84feaa394aaae9c48f8ba4b818451b
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      tasksource/it-support-tickets:
+      - cc-by-4.0
+  jigsaw_toxicity:
+    rows:
+      train: 3788
+      validation: 50
+      test: 50
+    dataset: tasksource/jigsaw_toxicity
+    revisions:
+      tasksource/jigsaw_toxicity: d72c9a21492fe5db98cebb029f4fb0ec20e78e30
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      tasksource/jigsaw_toxicity:
+      - apache-2.0
+  joci:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: pietrolesci/joci
+    revisions:
+      pietrolesci/joci: 8371e5cf43c3564daa1314ecf6086b58fcbf2178
+    license: unspecified
+    license_use: unspecified
+  language-identification:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: papluca/language-identification
+    revisions:
+      papluca/language-identification: aa56583bf2bc52b0565770607d6fc3faebecf9e2
+    license: CC BY-NC 4.0 (DPI), CC BY-SA 4.0 (DPI), Custom (DPI)
+    license_use: non-commercial
+    dpi_licenses:
+    - CC BY-NC 4.0
+    - CC BY-SA 4.0
+    - Custom
+  lex_glue/ledgar:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: coastalcph/lex_glue
+    config: ledgar
+    revisions:
+      coastalcph/lex_glue: c23fdff1a6bf74e0e1a71cb86f1e781d37da888c
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      coastalcph/lex_glue: &id009
+      - cc-by-4.0
+  lex_glue/scotus:
+    rows:
+      train: 4891
+      validation: 96
+      test: 98
+    dataset: coastalcph/lex_glue
+    config: scotus
+    revisions:
+      coastalcph/lex_glue: c23fdff1a6bf74e0e1a71cb86f1e781d37da888c
+    license: cc-by-4.0, Custom (DPI)
+    license_use: commercial
+    card_licenses:
+      coastalcph/lex_glue: *id009
+    dpi_licenses:
+    - Custom
+  lex_glue/unfair_tos:
+    rows:
+      train: 2268
+      validation: 100
+      test: 100
+    dataset: coastalcph/lex_glue
+    config: unfair_tos
+    revisions:
+      coastalcph/lex_glue: c23fdff1a6bf74e0e1a71cb86f1e781d37da888c
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      coastalcph/lex_glue: *id009
+  lexical_relation_classification/BLESS:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    config: BLESS
+    data_files_from:
+    - relbert/lexical_relation_classification
+    revisions:
+      relbert/lexical_relation_classification: 9862d1e870fe6dba4922d3d326c9c8b90a2ecad5
+    license: other, CC BY-NC 4.0 (DPI)
+    license_use: non-commercial
+    card_licenses:
+      relbert/lexical_relation_classification: &id010
+      - other
+    dpi_licenses:
+    - CC BY-NC 4.0
+  lexical_relation_classification/CogALexV:
+    rows:
+      train: 2748
+      validation: 100
+      test: 100
+    data_files_from:
+    - relbert/lexical_relation_classification
+    revisions:
+      relbert/lexical_relation_classification: 9862d1e870fe6dba4922d3d326c9c8b90a2ecad5
+    license: other, CC BY-NC 4.0 (DPI)
+    license_use: non-commercial
+    card_licenses:
+      relbert/lexical_relation_classification: *id010
+    dpi_licenses:
+    - CC BY-NC 4.0
+  lexical_relation_classification/K&H+N:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    config: K&H+N
+    data_files_from:
+    - relbert/lexical_relation_classification
+    revisions:
+      relbert/lexical_relation_classification: 9862d1e870fe6dba4922d3d326c9c8b90a2ecad5
+    license: other, CC BY-NC 4.0 (DPI)
+    license_use: non-commercial
+    card_licenses:
+      relbert/lexical_relation_classification: *id010
+    dpi_licenses:
+    - CC BY-NC 4.0
+  lexical_relation_classification/ROOT09:
+    rows:
+      train: 8933
+      validation: 100
+      test: 100
+    config: ROOT09
+    data_files_from:
+    - relbert/lexical_relation_classification
+    revisions:
+      relbert/lexical_relation_classification: 9862d1e870fe6dba4922d3d326c9c8b90a2ecad5
+    license: other, CC BY-NC 4.0 (DPI)
+    license_use: non-commercial
+    card_licenses:
+      relbert/lexical_relation_classification: *id010
+    dpi_licenses:
+    - CC BY-NC 4.0
+  liar:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/liar
+    originals:
+    - ucsbai/liar
+    revisions:
+      tasksource/liar: 12602911d75b54886b161919af881baad2fc55cc
+    license: unspecified
+    license_use: unspecified
+  linguisticprobing/bigram_shift:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/linguisticprobing
+    config: bigram_shift
+    revisions:
+      tasksource/linguisticprobing: 8be281199cd049af3d30cdeb982ec713b5c8a510
+    license: unspecified
+    license_use: unspecified
+  linguisticprobing/coordination_inversion:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/linguisticprobing
+    config: coordination_inversion
+    revisions:
+      tasksource/linguisticprobing: 8be281199cd049af3d30cdeb982ec713b5c8a510
+    license: unspecified
+    license_use: unspecified
+  linguisticprobing/obj_number:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/linguisticprobing
+    config: obj_number
+    revisions:
+      tasksource/linguisticprobing: 8be281199cd049af3d30cdeb982ec713b5c8a510
+    license: unspecified
+    license_use: unspecified
+  linguisticprobing/odd_man_out:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/linguisticprobing
+    config: odd_man_out
+    revisions:
+      tasksource/linguisticprobing: 8be281199cd049af3d30cdeb982ec713b5c8a510
+    license: unspecified
+    license_use: unspecified
+  linguisticprobing/past_present:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/linguisticprobing
+    config: past_present
+    revisions:
+      tasksource/linguisticprobing: 8be281199cd049af3d30cdeb982ec713b5c8a510
+    license: unspecified
+    license_use: unspecified
+  linguisticprobing/subj_number:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/linguisticprobing
+    config: subj_number
+    revisions:
+      tasksource/linguisticprobing: 8be281199cd049af3d30cdeb982ec713b5c8a510
+    license: unspecified
+    license_use: unspecified
+  linguisticprobing/top_constituents:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/linguisticprobing
+    config: top_constituents
+    revisions:
+      tasksource/linguisticprobing: 8be281199cd049af3d30cdeb982ec713b5c8a510
+    license: unspecified
+    license_use: unspecified
+  logical-fallacy:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: tasksource/logical-fallacy
+    revisions:
+      tasksource/logical-fallacy: 37e9b0537a86e72e9eaf6ee8c9a27d872a944103
+    license: unspecified
+    license_use: unspecified
+  magpie/idiomatic:
+    rows:
+      train: 5409
+      validation: 100
+      test: 100
+    dataset: idioms-collaboration/magpie
+    revision: 57bbec065c99f38e33a138427bc66a2f04db9fbd
+    revisions:
+      idioms-collaboration/magpie: 57bbec065c99f38e33a138427bc66a2f04db9fbd
+    license: mit, cc-by-4.0 (original source)
+    license_use: commercial
+    card_licenses:
+      idioms-collaboration/magpie:
+      - mit
+    source_license_evidence:
+      license: cc-by-4.0
+      scope: original MAGPIE corpus; Hub card incorrectly says MIT
+      url: https://github.com/hslh/magpie-corpus/blob/master/LICENSE
+  mams/atsa:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: NEUDM/mams
+    revision: 292cd37d971c53c08ebbefd969aaf33466f31bb3
+    revisions:
+      NEUDM/mams: 292cd37d971c53c08ebbefd969aaf33466f31bb3
+    license: apache-2.0 (original source)
+    license_use: commercial
+    source_license_evidence:
+      license: apache-2.0
+      checked: '2026-10-13'
+      scope: original MAMS dataset and code repository
+      url: https://github.com/siat-nlp/MAMS-for-ABSA/blob/cddcdb0f423b3fdb2c76b70744737abed3a00d17/LICENSE
+  matres/temporal:
+    rows:
+      train: 10000
+      test: 100
+    dataset: tasksource/matres
+    revision: ca3d16c3b7a971c1a4dfa3483fb87b21d9b6c21e
+    revisions:
+      tasksource/matres: ca3d16c3b7a971c1a4dfa3483fb87b21d9b6c21e
+    license: unspecified
+    license_use: unspecified
+  maud/antitrust-efforts:
+    rows:
+      train: 294
+      validation: 78
+      test: 62
+    dataset: theatticusproject/maud
+    revision: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    revisions:
+      theatticusproject/maud: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      theatticusproject/maud: &id011
+      - cc-by-4.0
+  maud/bringdown-timing:
+    rows:
+      train: 220
+      validation: 53
+      test: 60
+    dataset: theatticusproject/maud
+    revision: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    revisions:
+      theatticusproject/maud: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      theatticusproject/maud: *id011
+  maud/consideration:
+    rows:
+      train: 224
+      validation: 55
+      test: 61
+    dataset: theatticusproject/maud
+    revision: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    revisions:
+      theatticusproject/maud: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      theatticusproject/maud: *id011
+  maud/ordinary-course-consent:
+    rows:
+      train: 80
+      validation: 52
+      test: 62
+    dataset: theatticusproject/maud
+    revision: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    revisions:
+      theatticusproject/maud: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      theatticusproject/maud: *id011
+  maud/ordinary-course-efforts:
+    rows:
+      train: 215
+      validation: 52
+      test: 67
+    dataset: theatticusproject/maud
+    revision: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    revisions:
+      theatticusproject/maud: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      theatticusproject/maud: *id011
+  maud/specific-performance:
+    rows:
+      train: 48
+      validation: 52
+      test: 64
+    dataset: theatticusproject/maud
+    revision: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    revisions:
+      theatticusproject/maud: 37d5c3b95d18dcd8404cc5ce3fd5069be062392f
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      theatticusproject/maud: *id011
+  maven-arg/role:
+    rows:
+      train: 10000
+      validation: 100
+    dataset: mneb/maven-arg
+    revision: f7f8764f69c13d2dc823a92e0dfd2649b207f3db
+    revisions:
+      mneb/maven-arg: f7f8764f69c13d2dc823a92e0dfd2649b207f3db
+    license: unspecified
+    license_use: unspecified
+  maven-ere/causal:
+    rows:
+      train: 10000
+      validation: 100
+    dataset: Nofing/Maven-ERE-span
+    revision: 4dc3ead8e8d90fdee3fbef71727f159b2fc48236
+    revisions:
+      Nofing/Maven-ERE-span: 4dc3ead8e8d90fdee3fbef71727f159b2fc48236
+    license: unspecified
+    license_use: unspecified
+  maven/event:
+    rows:
+      train: 10000
+      validation: 100
+    dataset: mneb/maven
+    revision: c66136ce40fd2fa2efc245bbdbcf45f148d0c2bc
+    revisions:
+      mneb/maven: c66136ce40fd2fa2efc245bbdbcf45f148d0c2bc
+    license: unspecified
+    license_use: unspecified
+  mc_taco:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: marcov/mc_taco_promptsource
+    originals:
+    - CogComp/mc_taco
+    revisions:
+      marcov/mc_taco_promptsource: 92e0f27f97779ee70055ca6a0ee5bd126e37c9f5
+    license: unspecified
+    license_use: unspecified
+  medical_questions_pairs:
+    rows:
+      train: 2743
+      validation: 50
+      test: 50
+    dataset: curaihealth/medical_questions_pairs
+    revisions:
+      curaihealth/medical_questions_pairs: d91d9da9b2a843fc09ab9d48568d2a93bf58bd0d
+    license: unspecified
+    license_use: unspecified
+  mind2web/action:
+    rows:
+      train: 3268
+      validation: 88
+      test: 78
+    dataset: tasksource/mind2web-dom
+    config: action
+    revision: 90e03a996737ec06e16401ee800f99b53535f556
+    originals:
+    - osunlp/Mind2Web
+    revisions:
+      tasksource/mind2web-dom: 90e03a996737ec06e16401ee800f99b53535f556
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      tasksource/mind2web-dom:
+      - cc-by-4.0
+      osunlp/Mind2Web:
+      - cc-by-4.0
+  missing-item-prediction/contrastive:
+    rows:
+      train: 4200
+      validation: 99
+      test: 99
+    dataset: sileod/missing-item-prediction
+    config: contrastive
+    revisions:
+      sileod/missing-item-prediction: 43cae8630455fc6f3e4ef72cf08c18c35923a38f
+    license: unspecified
+    license_use: unspecified
+  multidogo/airline/intent:
+    rows:
+      train: 8849
+      validation: 89
+      test: 86
+    dataset: jpcorb20/multidogo
+    config: airline
+    revision: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    revisions:
+      jpcorb20/multidogo: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    license: other, cdla-permissive-1.0 (original source)
+    license_use: commercial
+    card_licenses:
+      jpcorb20/multidogo: &id012
+      - other
+    source_license_evidence: &id013
+      license: cdla-permissive-1.0
+      scope: original dataset distribution
+      url: https://github.com/awslabs/multi-domain-goal-oriented-dialogues-dataset/blob/master/LICENSE.txt
+  multidogo/fastfood/intent:
+    rows:
+      train: 8931
+      validation: 89
+      test: 88
+    dataset: jpcorb20/multidogo
+    config: fastfood
+    revision: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    revisions:
+      jpcorb20/multidogo: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    license: other, cdla-permissive-1.0 (original source)
+    license_use: commercial
+    card_licenses:
+      jpcorb20/multidogo: *id012
+    source_license_evidence: *id013
+  multidogo/finance/intent:
+    rows:
+      train: 8930
+      validation: 87
+      test: 96
+    dataset: jpcorb20/multidogo
+    config: finance
+    revision: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    revisions:
+      jpcorb20/multidogo: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    license: other, cdla-permissive-1.0 (original source)
+    license_use: commercial
+    card_licenses:
+      jpcorb20/multidogo: *id012
+    source_license_evidence: *id013
+  multidogo/insurance/intent:
+    rows:
+      train: 8849
+      validation: 88
+      test: 89
+    dataset: jpcorb20/multidogo
+    config: insurance
+    revision: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    revisions:
+      jpcorb20/multidogo: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    license: other, cdla-permissive-1.0 (original source)
+    license_use: commercial
+    card_licenses:
+      jpcorb20/multidogo: *id012
+    source_license_evidence: *id013
+  multidogo/media/intent:
+    rows:
+      train: 8584
+      validation: 90
+      test: 93
+    dataset: jpcorb20/multidogo
+    config: media
+    revision: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    revisions:
+      jpcorb20/multidogo: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    license: other, cdla-permissive-1.0 (original source)
+    license_use: commercial
+    card_licenses:
+      jpcorb20/multidogo: *id012
+    source_license_evidence: *id013
+  multidogo/software/intent:
+    rows:
+      train: 8785
+      validation: 87
+      test: 93
+    dataset: jpcorb20/multidogo
+    config: software
+    revision: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    revisions:
+      jpcorb20/multidogo: 503eee0894f308dbd1d74c1b4ecf4cfc99dd43f9
+    license: other, cdla-permissive-1.0 (original source)
+    license_use: commercial
+    card_licenses:
+      jpcorb20/multidogo: *id012
+    source_license_evidence: *id013
+  multiwoz22/dialogue-act:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: pfb30/multi_woz_v22
+    config: v2.2
+    revision: a65d2d3261c42a309b634179c186628bf35d9298
+    revisions:
+      pfb30/multi_woz_v22: a65d2d3261c42a309b634179c186628bf35d9298
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      pfb30/multi_woz_v22:
+      - apache-2.0
+  natural-language-satisfiability:
+    rows:
+      train: 7200
+      validation: 50
+      test: 50
+    dataset: tasksource/natural-language-satisfiability
+    revisions:
+      tasksource/natural-language-satisfiability: b67c5f9682739d40d4aec2104f58bcf46828d5c4
+    license: unspecified
+    license_use: unspecified
+  newsmtsc:
+    rows:
+      train: 8669
+      validation: 100
+      test: 100
+    dataset: fhamborg/news_sentiment_newsmtsc
+    revision: 57315609fae7eacbab81bf6ab3f24d036857f26e
+    revisions:
+      fhamborg/news_sentiment_newsmtsc: 57315609fae7eacbab81bf6ab3f24d036857f26e
+    license: mit, MIT License (DPI)
+    license_use: commercial
+    card_licenses:
+      fhamborg/news_sentiment_newsmtsc:
+      - mit
+    dpi_licenses:
+    - MIT License
+  nlgraph:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: tasksource/nlgraph
+    revisions:
+      tasksource/nlgraph: e8a405c296cf9c3be1c995d9460bf1e4ab04b9b6
+    license: unspecified
+    license_use: unspecified
+  numer_sense:
+    rows:
+      train: 8320
+      validation: 100
+      test: 100
+    dataset: tasksource/numer_sense
+    originals:
+    - INK-USC/numer_sense
+    revisions:
+      tasksource/numer_sense: 4aa1b6b0cc62d746de5d5f09345adeddcc7a7fe5
+    license: mit
+    license_use: commercial
+    card_licenses:
+      INK-USC/numer_sense:
+      - mit
+  olid/offensive:
+    rows:
+      train: 10000
+      test: 100
+    dataset: christophsonntag/OLID
+    revision: 738a82a7b014ff63cb7b830544081daefd0c27aa
+    revisions:
+      christophsonntag/OLID: 738a82a7b014ff63cb7b830544081daefd0c27aa
+    license: unspecified
+    license_use: unspecified
+  open_question_type:
+    rows:
+      train: 3866
+      validation: 100
+      test: 100
+    dataset: Korea-MES/open_question_type
+    originals:
+    - launch/open_question_type
+    revisions:
+      Korea-MES/open_question_type: c7c4ae81ed8d4ccb4af90c65c3a7442d8c0872b6
+    license: cc-by-4.0, CC BY 4.0 (DPI), Custom (DPI)
+    license_use: commercial
+    card_licenses:
+      launch/open_question_type:
+      - cc-by-4.0
+    dpi_licenses:
+    - CC BY 4.0
+    - Custom
+  parade:
+    rows:
+      train: 7550
+      validation: 100
+      test: 100
+    dataset: tasksource/parade
+    revisions:
+      tasksource/parade: 466978f31aebf4d052287f32ea3ae393f178f386
+    license: unspecified
+    license_use: unspecified
+  patent-classification/abstract:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: ccdv/patent-classification
+    config: abstract
+    revision: 17bd94cd6594bac1b82a697e811fb7cf34a7af35
+    revisions:
+      ccdv/patent-classification: 17bd94cd6594bac1b82a697e811fb7cf34a7af35
+    license: unspecified
+    license_use: unspecified
+  patent-phrase-similarity:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/patent-phrase-similarity
+    revisions:
+      tasksource/patent-phrase-similarity: ff1868796e44ac9ec02e870b447fde6c5bf2d6e4
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      tasksource/patent-phrase-similarity:
+      - cc-by-4.0
+  paws/labeled_final:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: google-research-datasets/paws
+    config: labeled_final
+    revisions:
+      google-research-datasets/paws: 161ece9501cf0a11f3e48bd356eaa82de46d6a09
+    license: other
+    license_use: unspecified
+    card_licenses:
+      google-research-datasets/paws: &id014
+      - other
+  paws/labeled_swap:
+    rows:
+      train: 3976
+      validation: 50
+      test: 50
+    dataset: google-research-datasets/paws
+    config: labeled_swap
+    revisions:
+      google-research-datasets/paws: 161ece9501cf0a11f3e48bd356eaa82de46d6a09
+    license: other
+    license_use: unspecified
+    card_licenses:
+      google-research-datasets/paws: *id014
+  perspectrum/stance:
+    rows:
+      train: 2939
+      validation: 100
+      test: 100
+    dataset: tasksource/perspectrum
+    revision: 721184de6ed05314fba04c6b706863fff4a5b647
+    revisions:
+      tasksource/perspectrum: 721184de6ed05314fba04c6b706863fff4a5b647
+    license: cc-by-sa-4.0, cc-by-sa-4.0 (original source)
+    license_use: commercial
+    card_licenses:
+      tasksource/perspectrum:
+      - cc-by-sa-4.0
+    source_license_evidence:
+      license: cc-by-sa-4.0
+      scope: original dataset distribution
+      url: https://github.com/CogComp/perspectrum/blob/master/data/dataset/license.txt
+  persuasion:
+    rows:
+      train: 3545
+      validation: 50
+      test: 50
+    dataset: Anthropic/persuasion
+    revisions:
+      Anthropic/persuasion: b520c793895e7bea0090816551e9f395f9256082
+    license: cc-by-nc-sa-4.0
+    license_use: non-commercial
+    card_licenses:
+      Anthropic/persuasion:
+      - cc-by-nc-sa-4.0
+  phrase_similarity:
+    rows:
+      train: 7004
+      validation: 100
+      test: 100
+    dataset: Deehan1866/processed_phrase_similarity
+    originals:
+    - PiC/phrase_similarity
+    revisions:
+      Deehan1866/processed_phrase_similarity: 865a41b453ea07d9a9e453b0c6f8dee966f6ec35
+    license: cc-by-nc-4.0, CC BY-NC 4.0 (DPI)
+    license_use: non-commercial
+    card_licenses:
+      PiC/phrase_similarity:
+      - cc-by-nc-4.0
+    dpi_licenses:
+    - CC BY-NC 4.0
+  poem_sentiment:
+    rows:
+      train: 892
+      validation: 100
+      test: 100
+    dataset: google-research-datasets/poem_sentiment
+    revisions:
+      google-research-datasets/poem_sentiment: 685b95a2787a869b7bae6c4480810f57fe23b48e
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      google-research-datasets/poem_sentiment:
+      - cc-by-4.0
+  pragmeval/emergent:
+    rows:
+      train: 2076
+      validation: 100
+      test: 100
+    dataset: sileod/pragmeval
+    config: emergent
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/emobank-dominance:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: sileod/pragmeval
+    config: emobank-dominance
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/gum:
+    rows:
+      train: 1700
+      validation: 100
+      test: 100
+    dataset: sileod/pragmeval
+    config: gum
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/pdtb:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: sileod/pragmeval
+    config: pdtb
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/persuasiveness-claimtype:
+    rows:
+      train: 160
+      validation: 20
+      test: 19
+    dataset: sileod/pragmeval
+    config: persuasiveness-claimtype
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/persuasiveness-eloquence:
+    rows:
+      train: 725
+      validation: 91
+      test: 90
+    dataset: sileod/pragmeval
+    config: persuasiveness-eloquence
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/persuasiveness-premisetype:
+    rows:
+      train: 566
+      validation: 71
+      test: 70
+    dataset: sileod/pragmeval
+    config: persuasiveness-premisetype
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/persuasiveness-relevance:
+    rows:
+      train: 725
+      validation: 91
+      test: 90
+    dataset: sileod/pragmeval
+    config: persuasiveness-relevance
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/persuasiveness-specificity:
+    rows:
+      train: 504
+      validation: 62
+      test: 62
+    dataset: sileod/pragmeval
+    config: persuasiveness-specificity
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/persuasiveness-strength:
+    rows:
+      train: 371
+      validation: 46
+      test: 46
+    dataset: sileod/pragmeval
+    config: persuasiveness-strength
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/sarcasm:
+    rows:
+      train: 3754
+      validation: 100
+      test: 100
+    dataset: sileod/pragmeval
+    config: sarcasm
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/squinky-formality:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: sileod/pragmeval
+    config: squinky-formality
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/squinky-implicature:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: sileod/pragmeval
+    config: squinky-implicature
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/squinky-informativeness:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: sileod/pragmeval
+    config: squinky-informativeness
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/stac:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: sileod/pragmeval
+    config: stac
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/switchboard:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: sileod/pragmeval
+    config: switchboard
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  pragmeval/verifiability:
+    rows:
+      train: 5712
+      validation: 100
+      test: 100
+    dataset: sileod/pragmeval
+    config: verifiability
+    revisions:
+      sileod/pragmeval: 6c03cf8c90a477f7ff7fd3e94d8ef41770862463
+    license: unspecified
+    license_use: unspecified
+  preco/coreference:
+    rows:
+      train: 10000
+      validation: 100
+    dataset: coref-data/preco_raw
+    revision: 02c8ffedb9d0b49168809a572ff553c2f6f9f7ca
+    revisions:
+      coref-data/preco_raw: 02c8ffedb9d0b49168809a572ff553c2f6f9f7ca
+    license: research purposes (annotations)
+    license_use: non-commercial
+    license_review:
+      checked: '2026-10-11'
+      license_use: non-commercial
+      status: partial
+      annotations:
+        license: research purposes
+        scope: original dataset distribution
+      url: https://preschool-lab.github.io/PreCo/
+      unresolved: Research-use statement is not a standard redistribution license.
+  privacy-200k-Mistral-Large-3:
+    rows:
+      train: 9996
+      validation: 100
+      test: 100
+    dataset: gabrielloiseau/privacy-200k-Mistral-Large-3
+    revisions:
+      gabrielloiseau/privacy-200k-Mistral-Large-3: 976c4c5335a15610af62aab216f764d84a3f42ca
+    license: unspecified
+    license_use: unspecified
+  probability_words_nli/reasoning_1hop:
+    rows:
+      train: 4000
+      validation: 100
+      test: 100
+    dataset: sileod/probability_words_nli
+    config: reasoning_1hop
+    revisions:
+      sileod/probability_words_nli: 13f0d51cd27f634b6711469aa355d5a583cbdef2
+    license: Apache License 2.0 (DPI), CC BY-SA 4.0 (DPI)
+    license_use: commercial
+    dpi_licenses:
+    - Apache License 2.0
+    - CC BY-SA 4.0
+  probability_words_nli/reasoning_2hop:
+    rows:
+      train: 4000
+      validation: 100
+      test: 100
+    dataset: sileod/probability_words_nli
+    config: reasoning_2hop
+    revisions:
+      sileod/probability_words_nli: 13f0d51cd27f634b6711469aa355d5a583cbdef2
+    license: Apache License 2.0 (DPI), CC BY-SA 4.0 (DPI)
+    license_use: commercial
+    dpi_licenses:
+    - Apache License 2.0
+    - CC BY-SA 4.0
+  prompt-injection-dataset:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: S-Labs/prompt-injection-dataset
+    revisions:
+      S-Labs/prompt-injection-dataset: 002a9dd18514abd021869823d6b0429b38606d99
+    license: mit
+    license_use: commercial
+    card_licenses:
+      S-Labs/prompt-injection-dataset:
+      - mit
+  prompt-injections:
+    rows:
+      train: 491
+      validation: 55
+      test: 100
+    dataset: deepset/prompt-injections
+    revisions:
+      deepset/prompt-injections: 4f61ecb038e9c3fb77e21034b22511b523772cdd
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      deepset/prompt-injections:
+      - apache-2.0
+  proofwriter:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/proofwriter
+    revisions:
+      tasksource/proofwriter: ee4d22d49b8486786cbc01c0b6f6f6266e56f3bd
+    license: unspecified
+    license_use: unspecified
+  prosocial-dialog/safety:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: allenai/prosocial-dialog
+    revision: d77d7ad3c624c51030f2f32c83e892b3d620b3d4
+    revisions:
+      allenai/prosocial-dialog: d77d7ad3c624c51030f2f32c83e892b3d620b3d4
+    license: cc-by-4.0, cc-by-4.0 (original source)
+    license_use: commercial
+    card_licenses:
+      allenai/prosocial-dialog:
+      - cc-by-4.0
+    source_license_evidence:
+      license: cc-by-4.0
+      license_use: commercial
+      checked: '2026-10-15'
+      scope: Human safety judgments and responses; potentially unsafe inputs generated with GPT-3
+      url: https://huggingface.co/datasets/allenai/prosocial-dialog
+  pubmed-rct/role:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/pubmed-rct
+    revision: bc06b7e877baa17e239b0a197146b77c976e1097
+    originals:
+    - zj88zj/PubMed_200k_RCT
+    revisions:
+      tasksource/pubmed-rct: bc06b7e877baa17e239b0a197146b77c976e1097
+    license: other
+    license_use: unspecified
+    card_licenses:
+      tasksource/pubmed-rct:
+      - other
+  quac/answerability:
+    rows:
+      train: 6780
+      validation: 100
+    dataset: allenai/quac
+    config: plain_text
+    revision: 768addbf2099da8efabd67d3a669f6483b813c1b
+    revisions:
+      allenai/quac: 768addbf2099da8efabd67d3a669f6483b813c1b
+    license: mit
+    license_use: commercial
+    card_licenses:
+      allenai/quac:
+      - mit
+  ragtruth/grounding:
+    rows:
+      train: 10000
+      test: 100
+    dataset: wandb/RAGTruth-processed
+    revision: eb4f4b9d1b68eb7092d3e1a61c0cd82d9808737b
+    revisions:
+      wandb/RAGTruth-processed: eb4f4b9d1b68eb7092d3e1a61c0cd82d9808737b
+    license: mit (original source)
+    license_use: commercial
+    source_license_evidence:
+      license: mit
+      license_use: commercial
+      checked: '2026-10-15'
+      scope: RAGTruth human hallucination-span annotations over model-generated responses
+      url: https://github.com/ParticleMedia/RAGTruth/blob/main/LICENSE
+  record/candidate:
+    rows:
+      train: 4756
+      validation: 100
+    dataset: aps/super_glue
+    config: record
+    revision: 3de24cf8022e94f4ee4b9d55a6f539891524d646
+    revisions:
+      aps/super_glue: 3de24cf8022e94f4ee4b9d55a6f539891524d646
+    license: other
+    license_use: unspecified
+    card_licenses:
+      aps/super_glue: &id021
+      - other
+  redial/preference:
+    rows:
+      train: 4712
+      test: 100
+    dataset: community-datasets/re_dial
+    revision: eb588549012bdebd7283d5cb0ca86057f62d6832
+    revisions:
+      community-datasets/re_dial: eb588549012bdebd7283d5cb0ca86057f62d6832
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      community-datasets/re_dial:
+      - cc-by-4.0
+  regset:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/regset
+    revisions:
+      tasksource/regset: bf80aaccff64dfe968a95c97560b45dc199a2ca0
+    license: unspecified
+    license_use: unspecified
+  robust_nli_li_ts:
+    rows:
+      train: 1000
+      validation: 50
+      test: 50
+    dataset: pietrolesci/robust_nli_li_ts
+    revisions:
+      pietrolesci/robust_nli_li_ts: 8ede2d7bf4531a7b210c793fe7b9e483b871c8f5
+    license: OANC (DPI)
+    license_use: commercial
+    dpi_licenses:
+    - OANC
+  rotten_tomatoes:
+    rows:
+      train: 8530
+      validation: 100
+      test: 100
+    dataset: cornell-movie-review-data/rotten_tomatoes
+    revisions:
+      cornell-movie-review-data/rotten_tomatoes: aa13bc287fa6fcab6daf52f0dfb9994269ffea28
+    license: unspecified
+    license_use: unspecified
+  rumoureval_2019/RumourEval2019:
+    rows:
+      train: 4877
+      validation: 100
+      test: 100
+    data_files_from:
+    - strombergnlp/rumoureval_2019
+    revisions:
+      strombergnlp/rumoureval_2019: c9c0c7279d591d2fa4d692501d85f4e46d4b0572
+    license: cc-by-4.0, CC BY 4.0 (DPI), Custom (DPI)
+    license_use: commercial
+    card_licenses:
+      strombergnlp/rumoureval_2019:
+      - cc-by-4.0
+    dpi_licenses:
+    - CC BY 4.0
+    - Custom
+  safe-guard-prompt-injection:
+    rows:
+      train: 7412
+      validation: 100
+      test: 100
+    dataset: xTRam1/safe-guard-prompt-injection
+    revisions:
+      xTRam1/safe-guard-prompt-injection: a3a877d608f37b7d20d9945671902df895ecdb46
+    license: unspecified
+    license_use: unspecified
+  sbic/intent:
+    rows:
+      train: 8647
+      validation: 100
+      test: 100
+    dataset: tasksource/sbic
+    revision: 44f66509c77a4ed86ea178bca707c4ff488a2512
+    originals:
+    - allenai/social_bias_frames
+    revisions:
+      tasksource/sbic: 44f66509c77a4ed86ea178bca707c4ff488a2512
+    license: cc-by-4.0, cc-by-4.0 (original source)
+    license_use: commercial
+    card_licenses:
+      tasksource/sbic: &id015
+      - cc-by-4.0
+      allenai/social_bias_frames: &id016
+      - cc-by-4.0
+    source_license_evidence: &id017
+      license: cc-by-4.0
+      license_use: commercial
+      checked: '2026-10-15'
+      scope: SBIC human annotations; original social-media posts retain their source terms
+      url: https://huggingface.co/datasets/allenai/social_bias_frames#licensing-information
+  sbic/offensiveness:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/sbic
+    revision: 44f66509c77a4ed86ea178bca707c4ff488a2512
+    originals:
+    - allenai/social_bias_frames
+    revisions:
+      tasksource/sbic: 44f66509c77a4ed86ea178bca707c4ff488a2512
+    license: cc-by-4.0, cc-by-4.0 (original source)
+    license_use: commercial
+    card_licenses:
+      tasksource/sbic: *id015
+      allenai/social_bias_frames: *id016
+    source_license_evidence: *id017
+  schema-guided/intent:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: google-research-datasets/schema_guided_dstc8
+    config: dialogues
+    revision: a8029ad8c12e13cdbfefc2f649e245fa135bc98a
+    revisions:
+      google-research-datasets/schema_guided_dstc8: a8029ad8c12e13cdbfefc2f649e245fa135bc98a
+    license: cc-by-sa-4.0
+    license_use: commercial
+    card_licenses:
+      google-research-datasets/schema_guided_dstc8:
+      - cc-by-sa-4.0
+  scicite:
+    rows:
+      train: 8243
+      validation: 100
+      test: 100
+    dataset: tasksource/scicite
+    originals:
+    - allenai/scicite
+    revisions:
+      tasksource/scicite: 6b569c1b7045f187cccc94c38af91faa755178ae
+    license: unspecified
+    license_use: unspecified
+  scientific-exaggeration-detection:
+    rows:
+      train: 90
+      validation: 10
+      test: 100
+    dataset: copenlu/scientific-exaggeration-detection
+    revisions:
+      copenlu/scientific-exaggeration-detection: 544352335e47b53a991ed4157a396453fdb25d49
+    license: gpl-3.0
+    license_use: commercial
+    card_licenses:
+      copenlu/scientific-exaggeration-detection:
+      - gpl-3.0
+  scifact_entailment:
+    rows:
+      train: 919
+      validation: 100
+      test: 100
+    dataset: tasksource/scifact_entailment
+    originals:
+    - allenai/scifact_entailment
+    revisions:
+      tasksource/scifact_entailment: 9b857550c1dfb8ec9a7a5bb26538017d8f01394a
+    license: cc-by-nc-2.0
+    license_use: non-commercial
+    card_licenses:
+      allenai/scifact_entailment:
+      - cc-by-nc-2.0
+  sciie:
+    rows:
+      train: 3219
+      validation: 100
+      test: 100
+    dataset: zapsdcn/sciie
+    revisions:
+      zapsdcn/sciie: 5a2b849f75005cec88e20e461bbabcf4a73e90f2
+    license: unspecified
+    license_use: unspecified
+  scruples:
+    rows:
+      train: 8728
+      validation: 100
+      test: 100
+    dataset: tasksource/scruples
+    revisions:
+      tasksource/scruples: 121b03f7820133d4ec4b42b776158968b787e3fd
+    license: apache-2.0, Custom (DPI)
+    license_use: commercial
+    card_licenses:
+      tasksource/scruples:
+      - apache-2.0
+    dpi_licenses:
+    - Custom
+  seahorse_summarization_evaluation:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    dataset: tasksource/seahorse_summarization_evaluation
+    revisions:
+      tasksource/seahorse_summarization_evaluation: c641c22879b601fb2edaa0a3f0edf3a68e5f5d23
+    license: cc
+    license_use: unspecified
+    card_licenses:
+      tasksource/seahorse_summarization_evaluation:
+      - cc
+  sem_eval_2010_task_8:
+    rows:
+      train: 7200
+      validation: 100
+      test: 100
+    dataset: SemEvalWorkshop/sem_eval_2010_task_8
+    revisions:
+      SemEvalWorkshop/sem_eval_2010_task_8: d58325907b9bf84a7c81f81fe5372791d911c10c
+    license: CC0 1.0 (DPI)
+    license_use: commercial
+    dpi_licenses:
+    - CC0 1.0
+  semeval2014-absa/laptops:
+    rows:
+      train: 2357
+      test: 100
+    dataset: alexcadillon/SemEval2014Task4
+    config: laptops
+    revision: ed389216928315d393473721fb832cde529ee42e
+    revisions:
+      alexcadillon/SemEval2014Task4: ed389216928315d393473721fb832cde529ee42e
+    license: unspecified
+    license_use: unspecified
+  semeval2014-absa/restaurants:
+    rows:
+      train: 3692
+      test: 100
+    dataset: alexcadillon/SemEval2014Task4
+    config: restaurants
+    revision: ed389216928315d393473721fb832cde529ee42e
+    revisions:
+      alexcadillon/SemEval2014Task4: ed389216928315d393473721fb832cde529ee42e
+    license: unspecified
+    license_use: unspecified
+  sentfin:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/sentfin
+    revision: dbd1d5665ff8d64254459a89a3a542c7728a3268
+    revisions:
+      tasksource/sentfin: dbd1d5665ff8d64254459a89a3a542c7728a3268
+    license: mit
+    license_use: commercial
+    card_licenses:
+      tasksource/sentfin:
+      - mit
+  sentihood/sentiment:
+    rows:
+      train: 3370
+      validation: 100
+      test: 100
+    dataset: bhavnicksm/sentihood
+    revision: fc4fb9e46f37bfe9ba27571358897924e8258bdc
+    revisions:
+      bhavnicksm/sentihood: fc4fb9e46f37bfe9ba27571358897924e8258bdc
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      bhavnicksm/sentihood:
+      - cc-by-4.0
+  sharc:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/sharc
+    originals:
+    - nikhilweee/sharc_modified
+    revisions:
+      tasksource/sharc: fa4605de8281290c69af9dea6118b37d072c2b59
+    license: unspecified
+    license_use: unspecified
+  shell-safety-v2:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tomngdev/shell-safety-v2
+    revisions:
+      tomngdev/shell-safety-v2: fee89770c315d525ef2ee42adee6ef9725a7621e
+    license: mit
+    license_use: commercial
+    card_licenses:
+      tomngdev/shell-safety-v2:
+      - mit
+  silicone/dyda_da:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/silicone
+    config: dyda_da
+    originals:
+    - eusip/silicone
+    revisions:
+      tasksource/silicone: f634992b5ceef4132625e4a3a6b1200399e4b311
+    license: cc-by-sa-4.0, CC BY-NC-SA 4.0 (DPI)
+    license_use: non-commercial
+    card_licenses:
+      eusip/silicone: &id018
+      - cc-by-sa-4.0
+    dpi_licenses:
+    - CC BY-NC-SA 4.0
+  silicone/maptask:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/silicone
+    config: maptask
+    originals:
+    - eusip/silicone
+    revisions:
+      tasksource/silicone: f634992b5ceef4132625e4a3a6b1200399e4b311
+    license: cc-by-sa-4.0, CC BY 4.0 (DPI)
+    license_use: commercial
+    card_licenses:
+      eusip/silicone: *id018
+    dpi_licenses:
+    - CC BY 4.0
+  silicone/oasis:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/silicone
+    config: oasis
+    originals:
+    - eusip/silicone
+    revisions:
+      tasksource/silicone: f634992b5ceef4132625e4a3a6b1200399e4b311
+    license: cc-by-sa-4.0, CC BY-NC-SA 4.0 (DPI)
+    license_use: non-commercial
+    card_licenses:
+      eusip/silicone: *id018
+    dpi_licenses:
+    - CC BY-NC-SA 4.0
+  silicone/sem:
+    rows:
+      train: 4264
+      validation: 100
+      test: 100
+    dataset: tasksource/silicone
+    config: sem
+    originals:
+    - eusip/silicone
+    revisions:
+      tasksource/silicone: f634992b5ceef4132625e4a3a6b1200399e4b311
+    license: cc-by-sa-4.0, CC BY-NC-SA 4.0 (DPI)
+    license_use: non-commercial
+    card_licenses:
+      eusip/silicone: *id018
+    dpi_licenses:
+    - CC BY-NC-SA 4.0
+  slurp/intent:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/slurp
+    revision: 6192bea66efc90860640842d5478504982826164
+    revisions:
+      tasksource/slurp: 6192bea66efc90860640842d5478504982826164
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      tasksource/slurp: &id019
+      - cc-by-4.0
+  slurp/slot-type:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/slurp
+    revision: 6192bea66efc90860640842d5478504982826164
+    revisions:
+      tasksource/slurp: 6192bea66efc90860640842d5478504982826164
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      tasksource/slurp: *id019
+  sms_spam:
+    rows:
+      train: 2716
+      validation: 50
+      test: 50
+    dataset: ucirvine/sms_spam
+    revisions:
+      ucirvine/sms_spam: cae486f927c250fe1d4a5b55f11357964ed1646c
+    license: CC BY 4.0 (DPI)
+    license_use: commercial
+    dpi_licenses:
+    - CC BY 4.0
+  snips_built_in_intents:
+    rows:
+      train: 295
+      validation: 16
+      test: 17
+    dataset: sonos-nlu-benchmark/snips_built_in_intents
+    revisions:
+      sonos-nlu-benchmark/snips_built_in_intents: 7a3f9329f396a746c867f370c7ab210dff9c789b
+    license: cc0-1.0, CC0 1.0 (DPI)
+    license_use: commercial
+    card_licenses:
+      sonos-nlu-benchmark/snips_built_in_intents:
+      - cc0-1.0
+    dpi_licenses:
+    - CC0 1.0
+  spartqa-yn:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/spartqa-yn
+    revisions:
+      tasksource/spartqa-yn: 150c819e88bba1859b8a763fd40d3a15033adc58
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      tasksource/spartqa-yn:
+      - apache-2.0
+  squad-v2/answerability:
+    rows:
+      train: 10000
+      validation: 100
+    dataset: rajpurkar/squad_v2
+    revision: 3ffb306f725f7d2ce8394bc1873b24868140c412
+    revisions:
+      rajpurkar/squad_v2: 3ffb306f725f7d2ce8394bc1873b24868140c412
+    license: cc-by-sa-4.0
+    license_use: commercial
+    card_licenses:
+      rajpurkar/squad_v2:
+      - cc-by-sa-4.0
+  sst5:
+    rows:
+      train: 8531
+      validation: 100
+      test: 100
+    dataset: SetFit/sst5
+    revision: e51bdcd8cd3a30da231967c1a249ba59361279a3
+    revisions:
+      SetFit/sst5: e51bdcd8cd3a30da231967c1a249ba59361279a3
+    license: unspecified
+    license_use: unspecified
+  stackoverflow-questions:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: pacovaldez/stackoverflow-questions
+    revisions:
+      pacovaldez/stackoverflow-questions: 869802e52b4dfa074d8a8e255ce85580711cdc25
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      pacovaldez/stackoverflow-questions:
+      - apache-2.0
+  starcon:
+    rows:
+      train: 1351
+      validation: 50
+      test: 50
+    dataset: tasksource/starcon
+    revisions:
+      tasksource/starcon: ce9b8e062e9dc0ce6df29337bb9e0b610744ef63
+    license: CC0 1.0 (DPI)
+    license_use: commercial
+    dpi_licenses:
+    - CC0 1.0
+  stepgame:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/stepgame
+    revisions:
+      tasksource/stepgame: 3ba235d4a7056cf8b062a57aa489f7bc14bff229
+    license: mit
+    license_use: commercial
+    card_licenses:
+      tasksource/stepgame:
+      - mit
+  strategy-qa:
+    rows:
+      train: 1000
+      validation: 50
+      test: 50
+    dataset: tasksource/strategy-qa
+    revisions:
+      tasksource/strategy-qa: f0e71799fcfdee70d1618765168904370cfec189
+    license: unspecified
+    license_use: unspecified
+  streusle/noun:
+    rows:
+      train: 7235
+      validation: 100
+      test: 100
+    dataset: tasksource/streusle
+    revision: 12db34cd5f2ece8e64a7b39a37243d378dd1a906
+    revisions:
+      tasksource/streusle: 12db34cd5f2ece8e64a7b39a37243d378dd1a906
+    license: cc-by-sa-4.0
+    license_use: commercial
+    card_licenses:
+      tasksource/streusle: &id020
+      - cc-by-sa-4.0
+  streusle/verb:
+    rows:
+      train: 6360
+      validation: 100
+      test: 100
+    dataset: tasksource/streusle
+    revision: 12db34cd5f2ece8e64a7b39a37243d378dd1a906
+    revisions:
+      tasksource/streusle: 12db34cd5f2ece8e64a7b39a37243d378dd1a906
+    license: cc-by-sa-4.0
+    license_use: commercial
+    card_licenses:
+      tasksource/streusle: *id020
+  subjectivity:
+    rows:
+      train: 731
+      validation: 99
+      test: 100
+    dataset: tasksource/subjectivity
+    revisions:
+      tasksource/subjectivity: 0474129486413a7654eab313d2c03532625fa9ae
+    license: mit
+    license_use: commercial
+    card_licenses:
+      tasksource/subjectivity:
+      - mit
+  super_glue/boolq:
+    rows:
+      train: 1000
+      validation: 50
+      test: 50
+    dataset: aps/super_glue
+    config: boolq
+    revisions:
+      aps/super_glue: 3de24cf8022e94f4ee4b9d55a6f539891524d646
+    license: other
+    license_use: unspecified
+    card_licenses:
+      aps/super_glue: *id021
+  super_glue/boolq_passage:
+    rows:
+      train: 1000
+      validation: 50
+      test: 50
+    dataset: aps/super_glue
+    config: boolq
+    revisions:
+      aps/super_glue: 3de24cf8022e94f4ee4b9d55a6f539891524d646
+    license: other
+    license_use: unspecified
+    card_licenses:
+      aps/super_glue: *id021
+  super_glue/multirc:
+    rows:
+      train: 10000
+      validation: 50
+      test: 50
+    dataset: aps/super_glue
+    config: multirc
+    revisions:
+      aps/super_glue: 3de24cf8022e94f4ee4b9d55a6f539891524d646
+    license: other
+    license_use: unspecified
+    card_licenses:
+      aps/super_glue: *id021
+  super_glue/wic:
+    rows:
+      train: 5428
+      validation: 50
+      test: 50
+    dataset: aps/super_glue
+    config: wic
+    revisions:
+      aps/super_glue: 3de24cf8022e94f4ee4b9d55a6f539891524d646
+    license: other
+    license_use: unspecified
+    card_licenses:
+      aps/super_glue: *id021
+  tab/identifier:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: doshimit3015/text-anonymization-benchmark
+    revision: e33fd0a4502d6b2c9e980aa8899fa23df38c9153
+    revisions:
+      doshimit3015/text-anonymization-benchmark: e33fd0a4502d6b2c9e980aa8899fa23df38c9153
+    license: mit, mit (original source)
+    license_use: commercial
+    card_licenses:
+      doshimit3015/text-anonymization-benchmark:
+      - mit
+    source_license_evidence:
+      license: mit
+      checked: '2026-10-13'
+      scope: original TAB corpus distribution
+      url: https://github.com/NorskRegnesentral/text-anonymization-benchmark/blob/master/LICENSE.txt
+  topv2/intent:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: WillHeld/top_v2
+    revision: 5e382a8497d4dd28842cc0bfa85387f965ac9d8d
+    revisions:
+      WillHeld/top_v2: 5e382a8497d4dd28842cc0bfa85387f965ac9d8d
+    license: unspecified
+    license_use: unspecified
+  topv2/slot-type:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: WillHeld/top_v2
+    revision: 5e382a8497d4dd28842cc0bfa85387f965ac9d8d
+    revisions:
+      WillHeld/top_v2: 5e382a8497d4dd28842cc0bfa85387f965ac9d8d
+    license: unspecified
+    license_use: unspecified
+  toxic-chat/toxicchat0124/jailbreaking:
+    rows:
+      train: 396
+      validation: 100
+      test: 100
+    dataset: lmsys/toxic-chat
+    config: toxicchat0124
+    revisions:
+      lmsys/toxic-chat: 29df8e4dba60e1f4af4b4075c0705c5b313548a8
+    license: cc-by-nc-4.0, CC BY-NC 4.0 (DPI), OpenAI (DPI)
+    license_use: non-commercial
+    card_licenses:
+      lmsys/toxic-chat: &id022
+      - cc-by-nc-4.0
+    dpi_licenses:
+    - CC BY-NC 4.0
+    - OpenAI
+  toxic-chat/toxicchat0124/toxicity:
+    rows:
+      train: 1404
+      validation: 100
+      test: 100
+    dataset: lmsys/toxic-chat
+    config: toxicchat0124
+    revisions:
+      lmsys/toxic-chat: 29df8e4dba60e1f4af4b4075c0705c5b313548a8
+    license: cc-by-nc-4.0, CC BY-NC 4.0 (DPI), OpenAI (DPI)
+    license_use: non-commercial
+    card_licenses:
+      lmsys/toxic-chat: *id022
+    dpi_licenses:
+    - CC BY-NC 4.0
+    - OpenAI
+  toxic_conversations:
+    rows:
+      train: 3176
+      validation: 100
+      test: 100
+    dataset: SetFit/toxic_conversations
+    revisions:
+      SetFit/toxic_conversations: 3953bb49397ac2ee228986b2f3080b20cbce1365
+    license: unspecified
+    license_use: unspecified
+  toxigen-data/annotated:
+    rows:
+      train: 6308
+      validation: 100
+      test: 100
+    dataset: skg/toxigen-data
+    config: annotated
+    revisions:
+      skg/toxigen-data: ea082a8973a287097b17973343576e0c8da8eb3b
+    license: unspecified
+    license_use: unspecified
+  trec:
+    rows:
+      train: 4906
+      validation: 100
+      test: 100
+    dataset: tasksource/trec
+    originals:
+    - CogComp/trec
+    revisions:
+      tasksource/trec: 80bf1cfddf30edbce5595236718c98e1ade0ee52
+    license: unspecified
+    license_use: unspecified
+  tweet_eval/emoji:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: cardiffnlp/tweet_eval
+    config: emoji
+    revisions:
+      cardiffnlp/tweet_eval: b3a375baf0f409c77e6bc7aa35102b7b3534f8be
+    license: unspecified
+    license_use: unspecified
+  tweet_eval/emotion:
+    rows:
+      train: 3257
+      validation: 100
+      test: 100
+    dataset: cardiffnlp/tweet_eval
+    config: emotion
+    revisions:
+      cardiffnlp/tweet_eval: b3a375baf0f409c77e6bc7aa35102b7b3534f8be
+    license: unspecified
+    license_use: unspecified
+  tweet_eval/hate:
+    rows:
+      train: 8993
+      validation: 100
+      test: 100
+    dataset: cardiffnlp/tweet_eval
+    config: hate
+    revisions:
+      cardiffnlp/tweet_eval: b3a375baf0f409c77e6bc7aa35102b7b3534f8be
+    license: unspecified
+    license_use: unspecified
+  tweet_eval/irony:
+    rows:
+      train: 2862
+      validation: 100
+      test: 100
+    dataset: cardiffnlp/tweet_eval
+    config: irony
+    revisions:
+      cardiffnlp/tweet_eval: b3a375baf0f409c77e6bc7aa35102b7b3534f8be
+    license: unspecified
+    license_use: unspecified
+  tweet_eval/offensive:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: cardiffnlp/tweet_eval
+    config: offensive
+    revisions:
+      cardiffnlp/tweet_eval: b3a375baf0f409c77e6bc7aa35102b7b3534f8be
+    license: unspecified
+    license_use: unspecified
+  tweet_eval/sentiment:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: cardiffnlp/tweet_eval
+    config: sentiment
+    revisions:
+      cardiffnlp/tweet_eval: b3a375baf0f409c77e6bc7aa35102b7b3534f8be
+    license: unspecified
+    license_use: unspecified
+  tweet_eval/stance_abortion:
+    rows:
+      train: 587
+      validation: 66
+      test: 100
+    dataset: cardiffnlp/tweet_eval
+    config: stance_abortion
+    revisions:
+      cardiffnlp/tweet_eval: b3a375baf0f409c77e6bc7aa35102b7b3534f8be
+    license: unspecified
+    license_use: unspecified
+  tweet_eval/stance_atheism:
+    rows:
+      train: 461
+      validation: 52
+      test: 100
+    dataset: cardiffnlp/tweet_eval
+    config: stance_atheism
+    revisions:
+      cardiffnlp/tweet_eval: b3a375baf0f409c77e6bc7aa35102b7b3534f8be
+    license: unspecified
+    license_use: unspecified
+  tweet_eval/stance_climate:
+    rows:
+      train: 355
+      validation: 40
+      test: 100
+    dataset: cardiffnlp/tweet_eval
+    config: stance_climate
+    revisions:
+      cardiffnlp/tweet_eval: b3a375baf0f409c77e6bc7aa35102b7b3534f8be
+    license: unspecified
+    license_use: unspecified
+  tweet_eval/stance_feminist:
+    rows:
+      train: 597
+      validation: 67
+      test: 100
+    dataset: cardiffnlp/tweet_eval
+    config: stance_feminist
+    revisions:
+      cardiffnlp/tweet_eval: b3a375baf0f409c77e6bc7aa35102b7b3534f8be
+    license: unspecified
+    license_use: unspecified
+  tweet_eval/stance_hillary:
+    rows:
+      train: 620
+      validation: 69
+      test: 100
+    dataset: cardiffnlp/tweet_eval
+    config: stance_hillary
+    revisions:
+      cardiffnlp/tweet_eval: b3a375baf0f409c77e6bc7aa35102b7b3534f8be
+    license: unspecified
+    license_use: unspecified
+  tweets_hate_speech_detection:
+    rows:
+      train: 2904
+      validation: 50
+      test: 50
+    dataset: tweets-hate-speech-detection/tweets_hate_speech_detection
+    revisions:
+      tweets-hate-speech-detection/tweets_hate_speech_detection: da252d58de3c59dd9086481b1b2fbb2ea37491ab
+    license: gpl-3.0
+    license_use: commercial
+    card_licenses:
+      tweets-hate-speech-detection/tweets_hate_speech_detection:
+      - gpl-3.0
+  twentyquestions:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/twentyquestions
+    revisions:
+      tasksource/twentyquestions: 1a32ab90a6fa1a6ac03e5a2fb494a00f08ef5cad
+    license: unspecified
+    license_use: unspecified
+  twitter-financial-news-sentiment:
+    rows:
+      train: 9543
+      validation: 100
+      test: 100
+    dataset: zeroshot/twitter-financial-news-sentiment
+    revisions:
+      zeroshot/twitter-financial-news-sentiment: ccbe24de388e287beb92dd393a335c376b350ac3
+    license: mit
+    license_use: commercial
+    card_licenses:
+      zeroshot/twitter-financial-news-sentiment:
+      - mit
+  utilitarianism:
+    rows:
+      train: 1000
+      validation: 100
+      test: 100
+    data_files_from:
+    - hendrycks/ethics
+    revisions:
+      hendrycks/ethics: b8b47c589f8bee77175b8648e5497278b68da48a
+    license: mit
+    license_use: commercial
+    card_licenses:
+      hendrycks/ethics: *id007
+  vitaminc:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tals/vitaminc
+    revisions:
+      tals/vitaminc: be6febb761b0b2807687e61e0b5282e459df2fa0
+    license: cc-by-sa-3.0
+    license_use: commercial
+    card_licenses:
+      tals/vitaminc:
+      - cc-by-sa-3.0
+  wands:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: tasksource/wands
+    revision: 96a856e9d45eb0e5847a07a026d07f2b13092733
+    originals:
+    - napsternxg/wands
+    revisions:
+      tasksource/wands: 96a856e9d45eb0e5847a07a026d07f2b13092733
+    license: mit
+    license_use: commercial
+    card_licenses:
+      tasksource/wands:
+      - mit
+      napsternxg/wands:
+      - mit
+  webinstruct/binary:
+    rows:
+      train: 9326
+      validation: 100
+      test: 50
+    dataset: tasksource/webinstruct
+    config: binary
+    originals:
+    - TIGER-Lab/WebInstruct-verified
+    revisions:
+      tasksource/webinstruct: 05e8b528d68c628c1af682d47bdb53f85535876a
+    license: apache-2.0
+    license_use: commercial
+    card_licenses:
+      tasksource/webinstruct:
+      - apache-2.0
+      TIGER-Lab/WebInstruct-verified:
+      - apache-2.0
+  weblinx/action:
+    rows:
+      train: 9760
+      validation: 100
+      test: 100
+    dataset: McGill-NLP/WebLINX
+    config: chat
+    revision: a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13
+    revisions:
+      McGill-NLP/WebLINX: a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13
+    license: cc-by-nc-sa-4.0
+    license_use: non-commercial
+    card_licenses:
+      McGill-NLP/WebLINX:
+      - cc-by-nc-sa-4.0
+  websrc/yesno:
+    rows:
+      train: 1000
+      validation: 100
+    dataset: tasksource/websrc
+    config: yesno
+    revision: afdf231cddb18341070f84d3634d36372d9f6297
+    originals:
+    - X-LANCE/WebSRC_v1.0
+    revisions:
+      tasksource/websrc: afdf231cddb18341070f84d3634d36372d9f6297
+    license: cc-by-4.0
+    license_use: commercial
+    card_licenses:
+      tasksource/websrc:
+      - cc-by-4.0
+      X-LANCE/WebSRC_v1.0:
+      - cc-by-4.0
+  wice:
+    rows:
+      train: 3466
+      validation: 100
+      test: 100
+    dataset: tasksource/wice
+    revisions:
+      tasksource/wice: 49055086c199701ee46260f687f4fa4f836fb751
+    license: cc-by-sa-4.0
+    license_use: commercial
+    card_licenses:
+      tasksource/wice:
+      - cc-by-sa-4.0
+  wiki_qa:
+    rows:
+      train: 2048
+      validation: 100
+      test: 100
+    dataset: microsoft/wiki_qa
+    revisions:
+      microsoft/wiki_qa: 3f104672b5de699878fe7907afc486f0de325eb5
+    license: other
+    license_use: unspecified
+    card_licenses:
+      microsoft/wiki_qa: &id023
+      - other
+  wikiqa:
+    rows:
+      train: 2048
+      validation: 100
+      test: 100
+    dataset: microsoft/wiki_qa
+    revision: 3f104672b5de699878fe7907afc486f0de325eb5
+    revisions:
+      microsoft/wiki_qa: 3f104672b5de699878fe7907afc486f0de325eb5
+    license: other, Microsoft Research WikiQA license (research and technology development only) (original source)
+    license_use: non-commercial
+    card_licenses:
+      microsoft/wiki_qa: *id023
+    source_license_evidence:
+      license: Microsoft Research WikiQA license (research and technology development only)
+      scope: dataset and derivatives; retain original terms and modification notices
+      url: https://huggingface.co/datasets/microsoft/wiki_qa#licensing-information
+  wikisql/aggregation:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: Salesforce/wikisql
+    revision: 48cfb60afd0d5f9d2231ca90f76edf9f975181bc
+    revisions:
+      Salesforce/wikisql: 48cfb60afd0d5f9d2231ca90f76edf9f975181bc
+    license: unspecified
+    license_use: unspecified
+  wikisql/operator:
+    rows:
+      train: 6360
+      validation: 100
+      test: 100
+    dataset: Salesforce/wikisql
+    revision: 48cfb60afd0d5f9d2231ca90f76edf9f975181bc
+    revisions:
+      Salesforce/wikisql: 48cfb60afd0d5f9d2231ca90f76edf9f975181bc
+    license: unspecified
+    license_use: unspecified
+  wildguardmix-cleaned/prompt_harm:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: bogdanminko/wildguardmix-cleaned
+    originals:
+    - allenai/wildguardmix
+    revisions:
+      bogdanminko/wildguardmix-cleaned: 84d0712cbbd8939724fd180bdf4327c124a4921c
+    license: odc-by
+    license_use: commercial
+    card_licenses:
+      allenai/wildguardmix: &id024
+      - odc-by
+  wildguardmix-cleaned/response_harm:
+    rows:
+      train: 8476
+      validation: 100
+      test: 100
+    dataset: bogdanminko/wildguardmix-cleaned
+    originals:
+    - allenai/wildguardmix
+    revisions:
+      bogdanminko/wildguardmix-cleaned: 84d0712cbbd8939724fd180bdf4327c124a4921c
+    license: odc-by
+    license_use: commercial
+    card_licenses:
+      allenai/wildguardmix: *id024
+  wildguardmix-cleaned/response_refusal:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: bogdanminko/wildguardmix-cleaned
+    originals:
+    - allenai/wildguardmix
+    revisions:
+      bogdanminko/wildguardmix-cleaned: 84d0712cbbd8939724fd180bdf4327c124a4921c
+    license: odc-by
+    license_use: commercial
+    card_licenses:
+      allenai/wildguardmix: *id024
+  winowhy:
+    rows:
+      train: 2578
+      validation: 50
+      test: 50
+    dataset: tasksource/winowhy
+    revisions:
+      tasksource/winowhy: b7732098d32396fb9f690e9d50cb7f1758861305
+    license: mit
+    license_use: commercial
+    card_licenses:
+      tasksource/winowhy:
+      - mit
+  yahoo_answers_topics:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: community-datasets/yahoo_answers_topics
+    revisions:
+      community-datasets/yahoo_answers_topics: 6652a1e7c94f7260a0bfd0c9092dd48e2d536ea1
+    license: unspecified
+    license_use: unspecified
+  yelp_review_full/yelp_review_full:
+    rows:
+      train: 10000
+      validation: 100
+      test: 100
+    dataset: Yelp/yelp_review_full
+    config: yelp_review_full
+    revisions:
+      Yelp/yelp_review_full: c1f9ee939b7d05667af864ee1cb066393154bf85
+    license: other
+    license_use: unspecified
+    card_licenses:
+      Yelp/yelp_review_full:
+      - other
+datasets:
+- Anthropic/persuasion
+- CEBaB/CEBaB
+- CLUTRR/v1
+- CogComp/mc_taco
+- CogComp/trec
+- Deehan1866/processed_phrase_similarity
+- Dzeniks/hover
+- EleutherAI/CEBaB
+- HannahRoseKirk/HatemojiBuild
+- Hate-speech-CNERG/hatexplain
+- INK-USC/numer_sense
+- ImperialCollegeLondon/health_fact
+- Korea-MES/open_question_type
+- McGill-NLP/FaithDial
+- McGill-NLP/WebLINX
+- NEUDM/mams
+- Nofing/Maven-ERE-span
+- OpenMed/DDI-Corpus-Processed
+- PKU-Alignment/BeaverTails
+- PiC/phrase_similarity
+- PolyAI/banking77
+- S-Labs/prompt-injection-dataset
+- Salesforce/wikisql
+- SemEvalWorkshop/emo
+- SemEvalWorkshop/humicroedit
+- SemEvalWorkshop/sem_eval_2010_task_8
+- SetFit/ethos_binary
+- SetFit/insincere-questions
+- SetFit/sst5
+- SetFit/toxic_conversations
+- TIGER-Lab/WebInstruct-verified
+- WhereIsAI/github-issue-similarity
+- WillHeld/top_v2
+- X-LANCE/WebSRC_v1.0
+- Yelp/yelp_review_full
+- ade-benchmark-corpus/ade_corpus_v2
+- alexcadillon/SemEval2014Task4
+- allenai/prosocial-dialog
+- allenai/quac
+- allenai/scicite
+- allenai/scifact_entailment
+- allenai/social_bias_frames
+- allenai/wildguardmix
+- amydeng2000/CREAK
+- aps/dynahate
+- aps/super_glue
+- barilan/blog_authorship_corpus
+- bhavnicksm/sentihood
+- bigbio/chemprot
+- bogdanminko/wildguardmix-cleaned
+- cardiffnlp/tweet_eval
+- ccdv/patent-classification
+- christophsonntag/OLID
+- clinc/clinc_oos
+- coastalcph/lex_glue
+- community-datasets/re_dial
+- community-datasets/yahoo_answers_topics
+- copenlu/scientific-exaggeration-detection
+- coref-data/gap_raw
+- coref-data/preco_raw
+- cornell-movie-review-data/rotten_tomatoes
+- curaihealth/medical_questions_pairs
+- deepset/prompt-injections
+- demo-org/auditor_review
+- doshimit3015/text-anonymization-benchmark
+- dravidianlangtech/hope_edi
+- erbacher/AmbigNQ-clarifying-question
+- eusip/silicone
+- facebook/empathetic_dialogues
+- fancyzhx/ag_news
+- fancyzhx/amazon_polarity
+- fancyzhx/dbpedia_14
+- fhamborg/news_sentiment_newsmtsc
+- gabrielloiseau/privacy-200k-Mistral-Large-3
+- ghbacct/financial-phrasebank-all-agree-classification
+- google-research-datasets/circa
+- google-research-datasets/go_emotions
+- google-research-datasets/paws
+- google-research-datasets/poem_sentiment
+- google-research-datasets/schema_guided_dstc8
+- google/civil_comments
+- google/code_x_glue_cc_defect_detection
+- gyorilab/BioRED
+- hendrycks/ethics
+- hendzh/PromptShield
+- hitachi-nlp/FLD.v2
+- hotpotqa/hotpot_qa
+- iamollas/ethos
+- idioms-collaboration/magpie
+- irds/antique
+- irds/antique_test
+- irds/antique_train
+- jordiclive/FABSA
+- jpcorb20/multidogo
+- kontext-security/ShellRisk-Bench
+- lasha-nlp/CONDAQA
+- launch/open_question_type
+- legacy-datasets/banking77
+- lmsys/toxic-chat
+- marcov/health_fact_promptsource
+- marcov/mc_taco_promptsource
+- microsoft/wiki_qa
+- mneb/maven
+- mneb/maven-arg
+- mteb/amazon_counterfactual
+- multilingual-discourse-hub/disrpt
+- mwong/fever-evidence-related
+- napsternxg/wands
+- neurae/dnd_style_intents
+- neuralchemy/Prompt-injection-dataset
+- nikhilweee/sharc_modified
+- nvidia/HelpSteer3
+- nyu-mll/glue
+- odegiber/hate_speech18
+- oneonlee/cleansed_emocontext
+- osunlp/Mind2Web
+- pacovaldez/stackoverflow-questions
+- papluca/language-identification
+- pfb30/multi_woz_v22
+- pietrolesci/joci
+- pietrolesci/robust_nli_li_ts
+- qbao775/PARARULE-Plus
+- rajpurkar/squad_v2
+- raquiba/Sarcasm_News_Headline
+- sileod/discovery
+- sileod/missing-item-prediction
+- sileod/pragmeval
+- sileod/probability_words_nli
+- skg/toxigen-data
+- sonos-nlu-benchmark/snips_built_in_intents
+- stanfordnlp/imdb
+- takala/financial_phrasebank
+- tals/vitaminc
+- tasksource/AES2-essay-scoring
+- tasksource/I2D2
+- tasksource/MOH
+- tasksource/VUAC
+- tasksource/ambient
+- tasksource/antique
+- tasksource/apt
+- tasksource/argument-feedback
+- tasksource/avicenna
+- tasksource/blog_authorship_corpus
+- tasksource/boolq-natural-perturbations
+- tasksource/clcd-english
+- tasksource/clutrr
+- tasksource/com2sense
+- tasksource/commonsense_qa_2.0
+- tasksource/conceptrules_v2
+- tasksource/counterfactually-augmented-imdb
+- tasksource/crowdflower
+- tasksource/cycic_classification
+- tasksource/defeasible-nli
+- tasksource/dynahate
+- tasksource/dynasent
+- tasksource/edos
+- tasksource/english-grading
+- tasksource/esci
+- tasksource/esconv
+- tasksource/ethos
+- tasksource/evidence-inference
+- tasksource/feasibilityQA
+- tasksource/few_rel
+- tasksource/fnc1
+- tasksource/fool-me-twice
+- tasksource/hate_speech18
+- tasksource/humicroedit
+- tasksource/implicit-hate-stg1
+- tasksource/it-support-tickets
+- tasksource/jigsaw_toxicity
+- tasksource/liar
+- tasksource/linguisticprobing
+- tasksource/logical-fallacy
+- tasksource/matres
+- tasksource/mind2web-dom
+- tasksource/natural-language-satisfiability
+- tasksource/nlgraph
+- tasksource/numer_sense
+- tasksource/parade
+- tasksource/patent-phrase-similarity
+- tasksource/perspectrum
+- tasksource/proofwriter
+- tasksource/pubmed-rct
+- tasksource/regset
+- tasksource/sbic
+- tasksource/scicite
+- tasksource/scifact_entailment
+- tasksource/scruples
+- tasksource/seahorse_summarization_evaluation
+- tasksource/sentfin
+- tasksource/sharc
+- tasksource/silicone
+- tasksource/slurp
+- tasksource/spartqa-yn
+- tasksource/starcon
+- tasksource/stepgame
+- tasksource/strategy-qa
+- tasksource/streusle
+- tasksource/subjectivity
+- tasksource/trec
+- tasksource/twentyquestions
+- tasksource/wands
+- tasksource/webinstruct
+- tasksource/websrc
+- tasksource/wice
+- tasksource/winowhy
+- tdavidson/hate_speech_offensive
+- thagen/CNCv2
+- theatticusproject/cuad-qa
+- theatticusproject/maud
+- thu-coai/esconv
+- thunlp/docred
+- tomngdev/shell-safety-v2
+- turingbench/TuringBench
+- tweets-hate-speech-detection/tweets_hate_speech_detection
+- ucirvine/sms_spam
+- ucsbai/liar
+- viethq1906/isarcasm_2022_taskA_En
+- wandb/RAGTruth-processed
+- webis/Touche23-ValueEval
+- webis/args_me
+- xTRam1/safe-guard-prompt-injection
+- zapsdcn/citation_intent
+- zapsdcn/hyperpartisan_news
+- zapsdcn/sciie
+- zeroshot/twitter-financial-news-sentiment
+- zj88zj/PubMed_200k_RCT

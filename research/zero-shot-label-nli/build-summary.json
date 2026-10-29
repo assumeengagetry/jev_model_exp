@@ -1,0 +1,8 @@
+{
+  "tasks": 294,
+  "rows": {
+    "train": 1899993,
+    "validation": 24971,
+    "test": 25440
+  }
+}
