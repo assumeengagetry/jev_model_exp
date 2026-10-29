@@ -1,0 +1,139 @@
+{
+  "state": "oom",
+  "time": "2026-10-29T09:26:12+00:00",
+  "kind": "threshold",
+  "length": 3072,
+  "checkpointing": false,
+  "microbatch": 16,
+  "repeat": 0,
+  "input": {
+    "pairs": 32,
+    "microbatch": 16,
+    "effective_batch": 32,
+    "accumulation": 2,
+    "length_min": 3072,
+    "length_max": 3072,
+    "length_mean": 3072.0,
+    "length_p50": 3072.0,
+    "length_p90": 3072.0,
+    "lengths": [
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072,
+      3072
+    ],
+    "nonpadding_tokens": 98304,
+    "padded_tokens": 98304,
+    "padding_fraction": 0.0,
+    "microbatches": [
+      {
+        "shape": [
+          16,
+          3072
+        ],
+        "actual_lengths": [
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072
+        ],
+        "nonpadding_tokens": 49152
+      },
+      {
+        "shape": [
+          16,
+          3072
+        ],
+        "actual_lengths": [
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072,
+          3072
+        ],
+        "nonpadding_tokens": 49152
+      }
+    ]
+  },
+  "pid": 286650,
+  "optimizer_updates": 0,
+  "environment": {
+    "gpu_name": "NVIDIA H800 NVL",
+    "gpu_total_GiB": 93.0870361328125,
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "transformers": "5.5.0",
+    "peft": "0.18.1",
+    "parameter_count": 606146560,
+    "trainable_parameter_count": 10094592,
+    "parameters_by_dtype": {
+      "torch.bfloat16": 596054016,
+      "torch.float32": 10092544
+    },
+    "allocator_config": "default",
+    "flash_sdp_enabled": true,
+    "mem_efficient_sdp_enabled": true,
+    "math_sdp_enabled": true
+  },
+  "ok": false,
+  "oom_at": {
+    "phase": "warmup",
+    "microbatch_index": 0,
+    "operation": "forward"
+  },
+  "error": "CUDA out of memory. Tried to allocate 384.00 MiB. GPU 0 has a total capacity of 93.09 GiB of which 240.31 MiB is free. Including non-PyTorch memory, this process has 92.84 GiB memory in use. Of the allocated memory 91.40 GiB is allocated by PyTorch, and 783.33 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+  "peak_allocated_GiB": 91.77820825576782,
+  "peak_reserved_GiB": 92.169921875,
+  "process_wall_seconds": 2.6807143995538354
+}

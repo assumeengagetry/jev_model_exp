@@ -1,0 +1,5 @@
+{
+  "cap": 1024,
+  "criterion": "weighted_macro_f1_loss<=0.005 with full prediction coverage",
+  "reference_macro_f1": 0.9063313923826392
+}

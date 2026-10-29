@@ -1,0 +1,110 @@
+[
+  {
+    "case": "BASE-17M",
+    "state": "complete",
+    "schedule": "/home/jovyan/assumeengage/research/lu-fastscreen-20261028T195840Z-capacity/runs/C_BASE_R32/schedule.npz",
+    "planned_presentations": 99718,
+    "planned_tokens": 17000000,
+    "positive_presentations": 45263,
+    "negative_presentations": 54455,
+    "positive_row_fraction": 0.45391002627409294,
+    "positive_token_fraction": 0.47164235294117646,
+    "by_pool": [
+      {
+        "pool": 0,
+        "positive_presentations": 19795,
+        "negative_presentations": 20498,
+        "positive_tokens": 1717173,
+        "negative_tokens": 1682827
+      },
+      {
+        "pool": 1,
+        "positive_presentations": 25468,
+        "negative_presentations": 33957,
+        "positive_tokens": 6300747,
+        "negative_tokens": 7299253
+      }
+    ]
+  },
+  {
+    "case": "R50-17M",
+    "state": "complete",
+    "schedule": "/home/jovyan/assumeengage/research/lu-fastscreen-20261028T195840Z-capacity/runs/C_R50_R32/schedule.npz",
+    "planned_presentations": 115964,
+    "planned_tokens": 17000000,
+    "positive_presentations": 46786,
+    "negative_presentations": 69178,
+    "positive_row_fraction": 0.40345279569521575,
+    "positive_token_fraction": 0.4316943529411765,
+    "by_pool": [
+      {
+        "pool": 0,
+        "positive_presentations": 19795,
+        "negative_presentations": 20498,
+        "positive_tokens": 1717173,
+        "negative_tokens": 1682827
+      },
+      {
+        "pool": 1,
+        "positive_presentations": 26991,
+        "negative_presentations": 48680,
+        "positive_tokens": 5621631,
+        "negative_tokens": 7978369
+      }
+    ]
+  },
+  {
+    "case": "BASE-20M",
+    "state": "complete",
+    "schedule": "/home/jovyan/assumeengage/research/lu-fastscreen-20261028T164315Z/runs/F_BASE/schedule.npz",
+    "planned_presentations": 116968,
+    "planned_tokens": 20000000,
+    "positive_presentations": 53263,
+    "negative_presentations": 63705,
+    "positive_row_fraction": 0.45536386020108066,
+    "positive_token_fraction": 0.47213415,
+    "by_pool": [
+      {
+        "pool": 0,
+        "positive_presentations": 23333,
+        "negative_presentations": 23882,
+        "positive_tokens": 2026540,
+        "negative_tokens": 1973460
+      },
+      {
+        "pool": 1,
+        "positive_presentations": 29930,
+        "negative_presentations": 39823,
+        "positive_tokens": 7416143,
+        "negative_tokens": 8583857
+      }
+    ]
+  },
+  {
+    "case": "HS30-20M-seed3408",
+    "state": "complete",
+    "schedule": "/home/jovyan/assumeengage/research/lu-fastscreen-20261028T175106Z/runs/F_HS30/schedule.npz",
+    "planned_presentations": 141383,
+    "planned_tokens": 20000000,
+    "positive_presentations": 57196,
+    "negative_presentations": 84187,
+    "positive_row_fraction": 0.40454651549337617,
+    "positive_token_fraction": 0.4288426,
+    "by_pool": [
+      {
+        "pool": 0,
+        "positive_presentations": 23613,
+        "negative_presentations": 24204,
+        "positive_tokens": 2025396,
+        "negative_tokens": 1974604
+      },
+      {
+        "pool": 1,
+        "positive_presentations": 33583,
+        "negative_presentations": 59983,
+        "positive_tokens": 6551456,
+        "negative_tokens": 9448544
+      }
+    ]
+  }
+]

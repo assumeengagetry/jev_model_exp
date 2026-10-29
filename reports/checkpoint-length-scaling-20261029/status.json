@@ -1,0 +1,8 @@
+{
+  "state": "complete",
+  "time": "2026-10-29T09:29:54+00:00",
+  "completed_cells": 40,
+  "wall_seconds": 637.1200503073633,
+  "gpu0_released": true,
+  "report": "/home/jovyan/assumeengage/reports/checkpoint-length-scaling-20261029/REPORT.md"
+}

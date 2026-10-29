@@ -1,0 +1,41 @@
+{
+  "profile": "4096-tail",
+  "microbatch": 64,
+  "effective_batch": 128,
+  "gradient_accumulation": 2,
+  "warmup_updates": 2,
+  "measured_updates": 6,
+  "backend": "transformers_sdpa_reference",
+  "precision": "bf16",
+  "checkpoint": "/home/jovyan/assumeengage/runs/language-baseline-20261027T061200Z/checkpoints/final",
+  "comparison": "fixed effective batch 128",
+  "data_policy": "Real cached 4096-token rows; tail capacity stress test, NOT representative of mean training length",
+  "state": "complete",
+  "samples_per_second": 6.793035917858957,
+  "nonpadding_tokens_per_second": 27824.27511955029,
+  "padded_tokens_per_second": 27824.27511955029,
+  "padding_fraction": 0.0,
+  "update_seconds": [
+    18.79960999172181,
+    18.83508297149092,
+    18.84132405463606,
+    18.852228861302137,
+    18.865947239100933,
+    18.862768347375095
+  ],
+  "median_update_seconds": 18.8467764579691,
+  "peak_allocated_gib": 39.92560815811157,
+  "peak_reserved_gib": 45.35546875,
+  "measured_nonpadding_tokens": 3145728,
+  "losses": [
+    0.35676249861717224,
+    0.3439715802669525,
+    0.3431703746318817,
+    0.3532615900039673,
+    0.39976707100868225,
+    0.33061669766902924
+  ],
+  "gpu": "NVIDIA H800 NVL",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0"
+}

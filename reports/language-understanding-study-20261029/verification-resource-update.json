@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-29T11:44:32.161387+00:00",
+  "source_measurements": 49,
+  "source_original_input_lengths": 64,
+  "runtime_trace_layers": 28,
+  "mask_parameters_checked_against_saved_trace": true,
+  "report_links_checked": 30,
+  "reservation_released_by_new_notice": true,
+  "existing_source_files_modified": false,
+  "GPU_rerun_or_optimizer_update": false,
+  "ratio_training_ready": false
+}

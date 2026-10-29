@@ -1,0 +1,154 @@
+{
+  "True": {
+    "checkpointing": true,
+    "terms": [
+      "1",
+      "B*L/16384",
+      "(B/16)*(L/1024)^2"
+    ],
+    "coefficients_GiB": [
+      1.243393978949402,
+      2.4119551115668303,
+      0.0
+    ],
+    "rmse_GiB": 0.015197559555334363,
+    "measured_cells": [
+      {
+        "microbatch": 8,
+        "length": 1024,
+        "memory_GiB": 2.4553585052490234,
+        "fitted_GiB": 2.4493715347328173
+      },
+      {
+        "microbatch": 8,
+        "length": 2048,
+        "memory_GiB": 3.6620922088623047,
+        "fitted_GiB": 3.655349090516232
+      },
+      {
+        "microbatch": 16,
+        "length": 256,
+        "memory_GiB": 1.85186767578125,
+        "fitted_GiB": 1.8463827568411095
+      },
+      {
+        "microbatch": 16,
+        "length": 512,
+        "memory_GiB": 2.455110549926758,
+        "fitted_GiB": 2.4493715347328173
+      },
+      {
+        "microbatch": 16,
+        "length": 1024,
+        "memory_GiB": 3.6615962982177734,
+        "fitted_GiB": 3.655349090516232
+      },
+      {
+        "microbatch": 16,
+        "length": 2048,
+        "memory_GiB": 6.074567794799805,
+        "fitted_GiB": 6.067304202083062
+      },
+      {
+        "microbatch": 16,
+        "length": 4096,
+        "memory_GiB": 10.900510787963867,
+        "fitted_GiB": 10.891214425216724
+      },
+      {
+        "microbatch": 16,
+        "length": 8192,
+        "memory_GiB": 20.552396774291992,
+        "fitted_GiB": 20.539034871484045
+      },
+      {
+        "microbatch": 32,
+        "length": 1024,
+        "memory_GiB": 6.036474227905273,
+        "fitted_GiB": 6.067304202083062
+      },
+      {
+        "microbatch": 32,
+        "length": 2048,
+        "memory_GiB": 10.861921310424805,
+        "fitted_GiB": 10.891214425216724
+      }
+    ]
+  },
+  "False": {
+    "checkpointing": false,
+    "terms": [
+      "1",
+      "B*L/16384",
+      "(B/16)*(L/1024)^2"
+    ],
+    "coefficients_GiB": [
+      1.2660042116820591,
+      31.291388638957734,
+      0.0
+    ],
+    "rmse_GiB": 0.011374985590852696,
+    "measured_cells": [
+      {
+        "microbatch": 8,
+        "length": 1024,
+        "memory_GiB": 16.913634777069092,
+        "fitted_GiB": 16.911698531160926
+      },
+      {
+        "microbatch": 8,
+        "length": 2048,
+        "memory_GiB": 32.56049299240112,
+        "fitted_GiB": 32.55739285063979
+      },
+      {
+        "microbatch": 16,
+        "length": 256,
+        "memory_GiB": 9.090081691741943,
+        "fitted_GiB": 9.088851371421493
+      },
+      {
+        "microbatch": 16,
+        "length": 512,
+        "memory_GiB": 16.913386821746826,
+        "fitted_GiB": 16.911698531160926
+      },
+      {
+        "microbatch": 16,
+        "length": 1024,
+        "memory_GiB": 32.55999708175659,
+        "fitted_GiB": 32.55739285063979
+      },
+      {
+        "microbatch": 16,
+        "length": 2048,
+        "memory_GiB": 63.85321760177612,
+        "fitted_GiB": 63.84878148959753
+      },
+      {
+        "microbatch": 16,
+        "length": 2560,
+        "memory_GiB": 79.50031614303589,
+        "fitted_GiB": 79.49447580907639
+      },
+      {
+        "microbatch": 16,
+        "length": 2816,
+        "memory_GiB": 87.32410955429077,
+        "fitted_GiB": 87.31732296881583
+      },
+      {
+        "microbatch": 16,
+        "length": 2944,
+        "memory_GiB": 91.23478555679321,
+        "fitted_GiB": 91.22874654868555
+      },
+      {
+        "microbatch": 32,
+        "length": 1024,
+        "memory_GiB": 63.815120220184326,
+        "fitted_GiB": 63.84878148959753
+      }
+    ]
+  }
+}

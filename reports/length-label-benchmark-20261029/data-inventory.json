@@ -1,0 +1,410 @@
+{
+  "labels": {
+    "0": "entailment/compatible",
+    "1": "contradiction/incompatible"
+  },
+  "combined": {
+    "rows": 117353,
+    "positive_rows": 48283,
+    "negative_rows": 69070,
+    "positive_row_fraction": 0.4114338789805118,
+    "positive_token_fraction": 0.46067047967959357,
+    "length_quantiles": {
+      "p50": 123.0,
+      "p90": 818.0,
+      "p95": 1066.0,
+      "p99": 1547.0,
+      "max": 2895.0
+    },
+    "coverage_at_cap": {
+      "128": 0.5494277947730352,
+      "256": 0.7841128901689773,
+      "512": 0.8205329220386356,
+      "1024": 0.943018073675151,
+      "2048": 0.9974947380978756,
+      "4096": 1.0
+    }
+  },
+  "pools": [
+    {
+      "source": "selected-D0",
+      "rows": 22909,
+      "length_quantiles": {
+        "p50": 47.0,
+        "p90": 183.0,
+        "p95": 282.59999999999854,
+        "p99": 671.0,
+        "max": 2895.0
+      },
+      "original_max": 2895,
+      "truncated_rows": 0,
+      "total_tokens": 1990135,
+      "positive_rows": 11561,
+      "negative_rows": 11348,
+      "positive_tokens": 1010418,
+      "negative_tokens": 979717,
+      "coverage_at_cap": {
+        "128": 0.8267493124972718,
+        "256": 0.9418132611637348,
+        "512": 0.9826269151861714,
+        "1024": 0.9969444323191758,
+        "2048": 0.9998253961325243,
+        "4096": 1.0
+      },
+      "buckets": [
+        {
+          "bucket": "<128",
+          "rows": 18915,
+          "positive_rows": 9554,
+          "negative_rows": 9361
+        },
+        {
+          "bucket": "128-255",
+          "rows": 2656,
+          "positive_rows": 1335,
+          "negative_rows": 1321
+        },
+        {
+          "bucket": "256-511",
+          "rows": 940,
+          "positive_rows": 464,
+          "negative_rows": 476
+        },
+        {
+          "bucket": "512-1023",
+          "rows": 328,
+          "positive_rows": 170,
+          "negative_rows": 158
+        },
+        {
+          "bucket": "1024-2047",
+          "rows": 66,
+          "positive_rows": 35,
+          "negative_rows": 31
+        },
+        {
+          "bucket": "2048-4095",
+          "rows": 4,
+          "positive_rows": 3,
+          "negative_rows": 1
+        },
+        {
+          "bucket": "4096-8191",
+          "rows": 0,
+          "positive_rows": 0,
+          "negative_rows": 0
+        },
+        {
+          "bucket": ">=8192",
+          "rows": 0,
+          "positive_rows": 0,
+          "negative_rows": 0
+        }
+      ],
+      "tasks": {
+        "Sarcasm_News_Headline": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "amazon_polarity/amazon_polarity": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "commonsense_qa_2.0": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "counterfactually-augmented-imdb": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "crowdflower/airline-sentiment": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "defeasible-nli/atomic": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "defeasible-nli/snli": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "defeasible-nli/social": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "fabsa/sentiment": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "faithdial/grounding": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "financial_phrasebank/sentences_allagree": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "fnc1/stance": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "glue/mrpc": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "glue/sst2": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "imdb": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "medical_questions_pairs": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "perspectrum/stance": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "poem_sentiment": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "pragmeval/sarcasm": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "probability_words_nli/reasoning_1hop": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "probability_words_nli/reasoning_2hop": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "robust_nli_li_ts": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "rotten_tomatoes": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "sentihood/sentiment": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "sst5": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "tweet_eval/irony": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "tweet_eval/sentiment": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "tweet_eval/stance_abortion": {
+          "rows": 586,
+          "positive_rows": 312,
+          "negative_rows": 274
+        },
+        "tweet_eval/stance_atheism": {
+          "rows": 461,
+          "positive_rows": 255,
+          "negative_rows": 206
+        },
+        "tweet_eval/stance_climate": {
+          "rows": 354,
+          "positive_rows": 199,
+          "negative_rows": 155
+        },
+        "tweet_eval/stance_feminist": {
+          "rows": 597,
+          "positive_rows": 319,
+          "negative_rows": 278
+        },
+        "tweet_eval/stance_hillary": {
+          "rows": 611,
+          "positive_rows": 326,
+          "negative_rows": 285
+        },
+        "twitter-financial-news-sentiment": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        },
+        "yelp_review_full/yelp_review_full": {
+          "rows": 700,
+          "positive_rows": 350,
+          "negative_rows": 350
+        }
+      }
+    },
+    {
+      "source": "selected-D2",
+      "rows": 94444,
+      "length_quantiles": {
+        "p50": 130.0,
+        "p90": 899.0,
+        "p95": 1126.0,
+        "p99": 1615.5699999999924,
+        "max": 2807.0
+      },
+      "original_max": 2807,
+      "truncated_rows": 0,
+      "total_tokens": 28858436,
+      "positive_rows": 36722,
+      "negative_rows": 57722,
+      "positive_tokens": 13200608,
+      "negative_tokens": 15657828,
+      "coverage_at_cap": {
+        "128": 0.4821587395705392,
+        "256": 0.7458599805175554,
+        "512": 0.7812142645377155,
+        "1024": 0.9299373173520816,
+        "2048": 0.9969293973148109,
+        "4096": 1.0
+      },
+      "buckets": [
+        {
+          "bucket": "<128",
+          "rows": 44398,
+          "positive_rows": 16307,
+          "negative_rows": 28091
+        },
+        {
+          "bucket": "128-255",
+          "rows": 26041,
+          "positive_rows": 8416,
+          "negative_rows": 17625
+        },
+        {
+          "bucket": "256-511",
+          "rows": 3311,
+          "positive_rows": 1655,
+          "negative_rows": 1656
+        },
+        {
+          "bucket": "512-1023",
+          "rows": 14057,
+          "positive_rows": 7023,
+          "negative_rows": 7034
+        },
+        {
+          "bucket": "1024-2047",
+          "rows": 6347,
+          "positive_rows": 3176,
+          "negative_rows": 3171
+        },
+        {
+          "bucket": "2048-4095",
+          "rows": 290,
+          "positive_rows": 145,
+          "negative_rows": 145
+        },
+        {
+          "bucket": "4096-8191",
+          "rows": 0,
+          "positive_rows": 0,
+          "negative_rows": 0
+        },
+        {
+          "bucket": ">=8192",
+          "rows": 0,
+          "positive_rows": 0,
+          "negative_rows": 0
+        }
+      ],
+      "tasks": {
+        "acos/Laptop-ACOS": {
+          "rows": 6992,
+          "positive_rows": 3496,
+          "negative_rows": 3496
+        },
+        "acos/Restaurant-ACOS": {
+          "rows": 7000,
+          "positive_rows": 3500,
+          "negative_rows": 3500
+        },
+        "anli_r1": {
+          "rows": 9000,
+          "positive_rows": 3000,
+          "negative_rows": 6000
+        },
+        "anli_r2": {
+          "rows": 9000,
+          "positive_rows": 3000,
+          "negative_rows": 6000
+        },
+        "anli_r3": {
+          "rows": 9000,
+          "positive_rows": 3000,
+          "negative_rows": 6000
+        },
+        "hellaswag": {
+          "rows": 24000,
+          "positive_rows": 6000,
+          "negative_rows": 18000
+        },
+        "isarcasm/intended-en": {
+          "rows": 5452,
+          "positive_rows": 2726,
+          "negative_rows": 2726
+        },
+        "ragtruth/Data2txt": {
+          "rows": 8000,
+          "positive_rows": 4000,
+          "negative_rows": 4000
+        },
+        "ragtruth/QA": {
+          "rows": 8000,
+          "positive_rows": 4000,
+          "negative_rows": 4000
+        },
+        "ragtruth/Summary": {
+          "rows": 8000,
+          "positive_rows": 4000,
+          "negative_rows": 4000
+        }
+      }
+    }
+  ],
+  "native_english_sarcasm_original_questions": {
+    "sarcastic": 664,
+    "not_sarcastic": 2062
+  }
+}

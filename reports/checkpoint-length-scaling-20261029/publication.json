@@ -1,0 +1,20 @@
+{
+  "state": "complete",
+  "time": "2026-10-29T09:51:15+00:00",
+  "measurement_cells": 49,
+  "attention_layer_calls": 56,
+  "report": "/home/jovyan/assumeengage/reports/checkpoint-length-scaling-20261029/RESEARCH-REPORT.md",
+  "gpu0_released": true,
+  "source_code_sha256": {
+    "diagnose_mixed.py": "807b270d7b26ab2d44c1ef11f8bcb8f63d1f71a0810a44d96b52b330152ae2b2",
+    "benchmark.py": "2a1cf7b2f679e13fd5d74012acfa7564c16f869fedd9abbf4716c329ada8541c",
+    "export_inputs.py": "b83aaaebc996650823dd3d8064ac1d7c6e0ba955d697f2b51ed23410dae6061d",
+    "diagnose_mask.py": "a9d9c4917c62921b611528b22ae3de77b358116877544da05ce90d07a6b60ba1",
+    "analyze_scaling.py": "cb69d610e8dc1b96abb9f97bb74cfd5f852cb51459a1e7b7b542ec034d23b7dc",
+    "publish_report.py": "756f83c2c609a8ef4015874a50c8e2ed203dec74403005aa77c059506e57f9e4",
+    "trace_attention.py": "26190f591b8743406ef2b7b9f0f4471101c6129ce7dfec303a21deb91cf56ce1",
+    "test_scaling.py": "cb5f81c142e955a917172c6e0d132179fe8fb8de02c646e1197eda87656bb7d5",
+    "estimate_memory.py": "83a0a39f70243e2f5b58e1bb94afee915b93a24cea539510a6ca0f851fddf657",
+    "test_benchmark.py": "3a6375d1f63c5da3970cd110d1d3d779818f5f95e754168252a2d12ec96bf061"
+  }
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420">
+<rect width="760" height="420" fill="white"/>
+<g font-family="sans-serif" font-size="13" fill="#222">
+<text x="75" y="25" font-size="17">Qwen3-0.6B LoRA r16 · microbatch16 · BF16</text>
+<line x1="75" x2="690" y1="350.0" y2="350.0" stroke="#ddd"/>
+<text x="65" y="355.0" text-anchor="end">0</text>
+<line x1="75" x2="690" y1="289.0" y2="289.0" stroke="#ddd"/>
+<text x="65" y="294.0" text-anchor="end">20</text>
+<line x1="75" x2="690" y1="228.0" y2="228.0" stroke="#ddd"/>
+<text x="65" y="233.0" text-anchor="end">40</text>
+<line x1="75" x2="690" y1="167.0" y2="167.0" stroke="#ddd"/>
+<text x="65" y="172.0" text-anchor="end">60</text>
+<line x1="75" x2="690" y1="106.0" y2="106.0" stroke="#ddd"/>
+<text x="65" y="111.0" text-anchor="end">80</text>
+<line x1="75" x2="690" y1="45.0" y2="45.0" stroke="#ddd"/>
+<text x="65" y="50.0" text-anchor="end">100</text>
+<text x="18" y="230" transform="rotate(-90 18 230)">Peak allocated (GiB)</text>
+<text x="75.0" y="375" text-anchor="middle">256</text>
+<text x="198.0" y="375" text-anchor="middle">512</text>
+<text x="321.0" y="375" text-anchor="middle">1024</text>
+<text x="444.0" y="375" text-anchor="middle">2048</text>
+<text x="567.0" y="375" text-anchor="middle">4096</text>
+<text x="690.0" y="375" text-anchor="middle">8192</text>
+<text x="382.5" y="402" text-anchor="middle">Exact sequence length (tokens)</text>
+<circle cx="75.0" cy="344.3518035888672" r="4" fill="#007a57"/>
+<circle cx="198.0" cy="342.5119128227234" r="4" fill="#007a57"/>
+<circle cx="321.0" cy="338.83213129043577" r="4" fill="#007a57"/>
+<circle cx="444.0" cy="331.4725682258606" r="4" fill="#007a57"/>
+<circle cx="567.0" cy="316.7534420967102" r="4" fill="#007a57"/>
+<circle cx="690.0" cy="287.3151898384094" r="4" fill="#007a57"/>
+<polyline points="75.0,344.3518035888672 198.0,342.5119128227234 321.0,338.83213129043577 444.0,331.4725682258606 567.0,316.7534420967102 690.0,287.3151898384094" fill="none" stroke="#007a57" stroke-width="2.5"/>
+<text x="105" y="70" fill="#007a57">Checkpoint On</text>
+<circle cx="75.0" cy="322.2752508401871" r="4" fill="#bc3c29"/>
+<circle cx="198.0" cy="298.4141701936722" r="4" fill="#bc3c29"/>
+<circle cx="321.0" cy="250.6920089006424" r="4" fill="#bc3c29"/>
+<circle cx="444.0" cy="155.2476863145828" r="4" fill="#bc3c29"/>
+<text x="567.0" y="63" text-anchor="middle" fill="#bc3c29">OOM</text>
+<text x="690.0" y="63" text-anchor="middle" fill="#bc3c29">OOM</text>
+<polyline points="75.0,322.2752508401871 198.0,298.4141701936722 321.0,250.6920089006424 444.0,155.2476863145828" fill="none" stroke="#bc3c29" stroke-width="2.5"/>
+<text x="105" y="94" fill="#bc3c29">Checkpoint Off</text>
+</g>
+</svg>

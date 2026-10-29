@@ -1,0 +1,68 @@
+{
+  "state": "complete",
+  "time": "2026-10-29T09:44:24+00:00",
+  "input_shape": [
+    2,
+    256
+  ],
+  "same_input_ids_both_controls": true,
+  "layer_calls_per_control": 28,
+  "captured": [
+    {
+      "control": "all_ones_control",
+      "enable_gqa": true,
+      "is_causal": true,
+      "k_shape": [
+        2,
+        8,
+        256,
+        128
+      ],
+      "mask_dtype": null,
+      "mask_shape": null,
+      "q_shape": [
+        2,
+        16,
+        256,
+        128
+      ],
+      "v_shape": [
+        2,
+        8,
+        256,
+        128
+      ]
+    },
+    {
+      "control": "real_padding_mask",
+      "enable_gqa": false,
+      "is_causal": false,
+      "k_shape": [
+        2,
+        16,
+        256,
+        128
+      ],
+      "mask_dtype": "torch.bool",
+      "mask_shape": [
+        2,
+        1,
+        256,
+        256
+      ],
+      "q_shape": [
+        2,
+        16,
+        256,
+        128
+      ],
+      "v_shape": [
+        2,
+        16,
+        256,
+        128
+      ]
+    }
+  ],
+  "optimizer_updates": 0
+}

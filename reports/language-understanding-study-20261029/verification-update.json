@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-29T10:45:59.752747+00:00",
+  "old_complete_Language_endpoints_preserved": 91,
+  "newly_referenced_dev_only_pilot_endpoints": 8,
+  "pilot_stopped_restarted_modified_or_rerun": false,
+  "length_GPU_diagnostic_repeated": false,
+  "integer_budget_cases_certified": 40,
+  "CPU_synthetic_tests_passed": 10,
+  "GPU_jobs_started_by_this_update": 0,
+  "archive_endpoint_count_checks": true,
+  "actual_step_label_replay_claimed": false,
+  "report_links_checked": 19,
+  "full_ratio_schedules_generated": false,
+  "ratio_training_ready": false
+}

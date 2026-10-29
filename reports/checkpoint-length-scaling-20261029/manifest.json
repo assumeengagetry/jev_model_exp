@@ -1,0 +1,265 @@
+{
+  "time": "2026-10-29T09:19:23+00:00",
+  "state": "prepared",
+  "checkpoint": "/home/jovyan/assumeengage/runs/language-baseline-20261027T061200Z/checkpoints/final",
+  "checkpoint_sha256": "0b0334c5e6ac7919a0a5d7d3ad88b201f7127c516073bf7933687d8ae69af554",
+  "model": "Qwen3-0.6B sequence classification, LoRA r16/alpha32 plus trained score head",
+  "attention": "causal, transformers SDPA, use_cache=False",
+  "precision": "BF16 autocast, loader-original parameter dtypes",
+  "main_microbatch": 16,
+  "effective_batch": 32,
+  "accumulation": 2,
+  "lengths": [
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192
+  ],
+  "independent_process_repeats": 2,
+  "warmup_effective_batches": 1,
+  "timed_effective_batches_per_repeat": 3,
+  "optimizer_updates": 0,
+  "weight_saves": 0,
+  "timing": "CPU collation, H2D, forward, CE loss, backward, gradient zeroing; synchronized; no optimizer steps",
+  "construction": "Same32 real raw-text long pairs at every cap; whole hypothesis, premise head/tail; each dense sequence exactly cap tokens, zero padding",
+  "source_tasks": {
+    "mind2web/action": 14,
+    "evidence-inference": 5,
+    "lex_glue/scotus": 11,
+    "missing-item-prediction/contrastive": 1,
+    "wice": 1
+  },
+  "sources": [
+    {
+      "row": 149,
+      "raw_index": 152,
+      "task": "mind2web/action",
+      "label": 1,
+      "original_length": 20354
+    },
+    {
+      "row": 428,
+      "raw_index": 435,
+      "task": "mind2web/action",
+      "label": 1,
+      "original_length": 25357
+    },
+    {
+      "row": 645,
+      "raw_index": 656,
+      "task": "evidence-inference",
+      "label": 1,
+      "original_length": 8376
+    },
+    {
+      "row": 679,
+      "raw_index": 690,
+      "task": "lex_glue/scotus",
+      "label": 1,
+      "original_length": 9886
+    },
+    {
+      "row": 707,
+      "raw_index": 718,
+      "task": "mind2web/action",
+      "label": 1,
+      "original_length": 30209
+    },
+    {
+      "row": 922,
+      "raw_index": 939,
+      "task": "evidence-inference",
+      "label": 0,
+      "original_length": 8746
+    },
+    {
+      "row": 956,
+      "raw_index": 973,
+      "task": "lex_glue/scotus",
+      "label": 0,
+      "original_length": 20098
+    },
+    {
+      "row": 984,
+      "raw_index": 1001,
+      "task": "mind2web/action",
+      "label": 0,
+      "original_length": 15795
+    },
+    {
+      "row": 1200,
+      "raw_index": 1222,
+      "task": "evidence-inference",
+      "label": 1,
+      "original_length": 10482
+    },
+    {
+      "row": 1260,
+      "raw_index": 1284,
+      "task": "mind2web/action",
+      "label": 0,
+      "original_length": 13992
+    },
+    {
+      "row": 1820,
+      "raw_index": 1850,
+      "task": "mind2web/action",
+      "label": 0,
+      "original_length": 21817
+    },
+    {
+      "row": 2073,
+      "raw_index": 2105,
+      "task": "lex_glue/scotus",
+      "label": 1,
+      "original_length": 9124
+    },
+    {
+      "row": 2346,
+      "raw_index": 2388,
+      "task": "lex_glue/scotus",
+      "label": 0,
+      "original_length": 12166
+    },
+    {
+      "row": 2627,
+      "raw_index": 2671,
+      "task": "lex_glue/scotus",
+      "label": 1,
+      "original_length": 13725
+    },
+    {
+      "row": 2654,
+      "raw_index": 2699,
+      "task": "mind2web/action",
+      "label": 1,
+      "original_length": 36174
+    },
+    {
+      "row": 2907,
+      "raw_index": 2954,
+      "task": "lex_glue/scotus",
+      "label": 1,
+      "original_length": 12858
+    },
+    {
+      "row": 2934,
+      "raw_index": 2982,
+      "task": "mind2web/action",
+      "label": 0,
+      "original_length": 21288
+    },
+    {
+      "row": 3149,
+      "raw_index": 3202,
+      "task": "evidence-inference",
+      "label": 0,
+      "original_length": 11971
+    },
+    {
+      "row": 3183,
+      "raw_index": 3236,
+      "task": "lex_glue/scotus",
+      "label": 1,
+      "original_length": 22684
+    },
+    {
+      "row": 3211,
+      "raw_index": 3264,
+      "task": "mind2web/action",
+      "label": 1,
+      "original_length": 18821
+    },
+    {
+      "row": 3461,
+      "raw_index": 3518,
+      "task": "lex_glue/scotus",
+      "label": 1,
+      "original_length": 10513
+    },
+    {
+      "row": 3490,
+      "raw_index": 3547,
+      "task": "missing-item-prediction/contrastive",
+      "label": 1,
+      "original_length": 14087
+    },
+    {
+      "row": 3737,
+      "raw_index": 3800,
+      "task": "lex_glue/scotus",
+      "label": 0,
+      "original_length": 9394
+    },
+    {
+      "row": 3765,
+      "raw_index": 3828,
+      "task": "mind2web/action",
+      "label": 1,
+      "original_length": 14931
+    },
+    {
+      "row": 4045,
+      "raw_index": 4110,
+      "task": "mind2web/action",
+      "label": 1,
+      "original_length": 11961
+    },
+    {
+      "row": 4260,
+      "raw_index": 4330,
+      "task": "evidence-inference",
+      "label": 0,
+      "original_length": 10905
+    },
+    {
+      "row": 4322,
+      "raw_index": 4392,
+      "task": "mind2web/action",
+      "label": 1,
+      "original_length": 23112
+    },
+    {
+      "row": 4571,
+      "raw_index": 4646,
+      "task": "lex_glue/scotus",
+      "label": 1,
+      "original_length": 23199
+    },
+    {
+      "row": 4599,
+      "raw_index": 4674,
+      "task": "mind2web/action",
+      "label": 1,
+      "original_length": 40062
+    },
+    {
+      "row": 4715,
+      "raw_index": 4792,
+      "task": "wice",
+      "label": 1,
+      "original_length": 10558
+    },
+    {
+      "row": 4849,
+      "raw_index": 4927,
+      "task": "lex_glue/scotus",
+      "label": 1,
+      "original_length": 18204
+    },
+    {
+      "row": 4877,
+      "raw_index": 4955,
+      "task": "mind2web/action",
+      "label": 0,
+      "original_length": 31289
+    }
+  ],
+  "source_pairs_sha256": "80f55ee04e751c77d6bf700bc7da1c639683d38cebcda01e73535a835196939f",
+  "loader_sha256": "621bfa30509ab4eb3800522ae5ad6fc3a5d25a7971a2eedb51e46039f2a883f0",
+  "additional": "Fresh-process replay of both original profiles; microbatch8/32 anchors at1024/2048; OOM refinement on128-token grid",
+  "gpu_requested": 0,
+  "total_timebox_minutes": 110
+}

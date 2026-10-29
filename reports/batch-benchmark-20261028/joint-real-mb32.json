@@ -1,0 +1,41 @@
+{
+  "profile": "joint-real",
+  "microbatch": 32,
+  "effective_batch": 128,
+  "gradient_accumulation": 4,
+  "warmup_updates": 2,
+  "measured_updates": 6,
+  "backend": "transformers_sdpa_reference",
+  "precision": "bf16",
+  "checkpoint": "/home/jovyan/assumeengage/runs/language-baseline-20261027T061200Z/checkpoints/final",
+  "comparison": "fixed effective batch 128",
+  "data_policy": "Identical deterministic real schedule windows for mb16/32/64/128; original row order retained; dynamic padding, no packing or new truncation",
+  "state": "complete",
+  "samples_per_second": 51.52317819515898,
+  "nonpadding_tokens_per_second": 10347.303270974662,
+  "padded_tokens_per_second": 16487.417022450874,
+  "padding_fraction": 0.372412109375,
+  "update_seconds": [
+    1.900872278958559,
+    1.5856870226562023,
+    1.0345127424225211,
+    8.047573698684573,
+    1.1731585897505283,
+    1.1641084412112832
+  ],
+  "median_update_seconds": 1.3794228062033653,
+  "peak_allocated_gib": 22.588205814361572,
+  "peak_reserved_gib": 24.4296875,
+  "measured_nonpadding_tokens": 154236,
+  "losses": [
+    0.5271016955375671,
+    0.593272253870964,
+    0.5428202077746391,
+    0.6172607988119125,
+    0.4933861643075943,
+    0.4531683996319771
+  ],
+  "gpu": "NVIDIA H800 NVL",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0"
+}

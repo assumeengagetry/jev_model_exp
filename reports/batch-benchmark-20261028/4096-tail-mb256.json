@@ -1,0 +1,15 @@
+{
+  "profile": "4096-tail",
+  "microbatch": 256,
+  "effective_batch": 256,
+  "gradient_accumulation": 1,
+  "warmup_updates": 2,
+  "measured_updates": 6,
+  "backend": "transformers_sdpa_reference",
+  "precision": "bf16",
+  "checkpoint": "/home/jovyan/assumeengage/runs/language-baseline-20261027T061200Z/checkpoints/final",
+  "comparison": "throughput/capacity only; effective batch differs",
+  "data_policy": "Real cached 4096-token rows; tail capacity stress test, NOT representative of mean training length",
+  "state": "oom",
+  "error": "CUDA out of memory. Tried to allocate 12.00 GiB. GPU 0 has a total capacity of 93.09 GiB of which 5.19 GiB is free. Including non-PyTorch memory, this process has 87.89 GiB memory in use. Of the allocated memory 49.21 GiB is allocated by PyTorch, and 38.01 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+}

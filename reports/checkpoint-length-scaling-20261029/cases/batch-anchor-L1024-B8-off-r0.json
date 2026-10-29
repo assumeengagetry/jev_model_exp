@@ -1,0 +1,164 @@
+{
+  "state": "complete",
+  "time": "2026-10-29T09:28:28+00:00",
+  "kind": "batch-anchor",
+  "length": 1024,
+  "checkpointing": false,
+  "microbatch": 8,
+  "repeat": 0,
+  "input": {
+    "pairs": 32,
+    "microbatch": 8,
+    "effective_batch": 32,
+    "accumulation": 4,
+    "length_min": 1024,
+    "length_max": 1024,
+    "length_mean": 1024.0,
+    "length_p50": 1024.0,
+    "length_p90": 1024.0,
+    "lengths": [
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024
+    ],
+    "nonpadding_tokens": 32768,
+    "padded_tokens": 32768,
+    "padding_fraction": 0.0,
+    "microbatches": [
+      {
+        "shape": [
+          8,
+          1024
+        ],
+        "actual_lengths": [
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024
+        ],
+        "nonpadding_tokens": 8192
+      },
+      {
+        "shape": [
+          8,
+          1024
+        ],
+        "actual_lengths": [
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024
+        ],
+        "nonpadding_tokens": 8192
+      },
+      {
+        "shape": [
+          8,
+          1024
+        ],
+        "actual_lengths": [
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024
+        ],
+        "nonpadding_tokens": 8192
+      },
+      {
+        "shape": [
+          8,
+          1024
+        ],
+        "actual_lengths": [
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024
+        ],
+        "nonpadding_tokens": 8192
+      }
+    ]
+  },
+  "pid": 287174,
+  "optimizer_updates": 0,
+  "environment": {
+    "gpu_name": "NVIDIA H800 NVL",
+    "gpu_total_GiB": 93.0870361328125,
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "transformers": "5.5.0",
+    "peft": "0.18.1",
+    "parameter_count": 606146560,
+    "trainable_parameter_count": 10094592,
+    "parameters_by_dtype": {
+      "torch.bfloat16": 596054016,
+      "torch.float32": 10092544
+    },
+    "allocator_config": "default",
+    "flash_sdp_enabled": true,
+    "mem_efficient_sdp_enabled": true,
+    "math_sdp_enabled": true
+  },
+  "baseline_allocated_GiB": 1.2103490829467773,
+  "ok": true,
+  "seconds": 2.4958062190562487,
+  "seconds_per_effective_batch": 0.8319354063520829,
+  "forward_seconds": 0.9659506912231446,
+  "backward_seconds": 1.4465268325805665,
+  "nonpadding_tokens_per_second": 39387.67330949763,
+  "padded_tokens_per_second": 39387.67330949763,
+  "peak_allocated_GiB": 16.913634777069092,
+  "peak_reserved_GiB": 17.04296875,
+  "losses": [
+    0.30831719376146793,
+    0.30831719376146793,
+    0.30831719376146793
+  ],
+  "checked_finite_gradients": true,
+  "process_wall_seconds": 6.161930942907929
+}

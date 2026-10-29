@@ -1,0 +1,151 @@
+{
+  "state": "complete",
+  "time": "2026-10-29T09:19:49+00:00",
+  "kind": "fixed",
+  "length": 256,
+  "checkpointing": false,
+  "microbatch": 16,
+  "repeat": 0,
+  "input": {
+    "pairs": 32,
+    "microbatch": 16,
+    "effective_batch": 32,
+    "accumulation": 2,
+    "length_min": 256,
+    "length_max": 256,
+    "length_mean": 256.0,
+    "length_p50": 256.0,
+    "length_p90": 256.0,
+    "lengths": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "nonpadding_tokens": 8192,
+    "padded_tokens": 8192,
+    "padding_fraction": 0.0,
+    "microbatches": [
+      {
+        "shape": [
+          16,
+          256
+        ],
+        "actual_lengths": [
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256
+        ],
+        "nonpadding_tokens": 4096
+      },
+      {
+        "shape": [
+          16,
+          256
+        ],
+        "actual_lengths": [
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256
+        ],
+        "nonpadding_tokens": 4096
+      }
+    ]
+  },
+  "pid": 285191,
+  "optimizer_updates": 0,
+  "environment": {
+    "gpu_name": "NVIDIA H800 NVL",
+    "gpu_total_GiB": 93.0870361328125,
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "transformers": "5.5.0",
+    "peft": "0.18.1",
+    "parameter_count": 606146560,
+    "trainable_parameter_count": 10094592,
+    "parameters_by_dtype": {
+      "torch.bfloat16": 596054016,
+      "torch.float32": 10092544
+    },
+    "allocator_config": "default",
+    "flash_sdp_enabled": true,
+    "mem_efficient_sdp_enabled": true,
+    "math_sdp_enabled": true
+  },
+  "baseline_allocated_GiB": 1.2103490829467773,
+  "ok": true,
+  "seconds": 0.7791935596615076,
+  "seconds_per_effective_batch": 0.25973118655383587,
+  "forward_seconds": 0.34005625534057615,
+  "backward_seconds": 0.4059008026123047,
+  "nonpadding_tokens_per_second": 31540.30175849522,
+  "padded_tokens_per_second": 31540.30175849522,
+  "peak_allocated_GiB": 9.090081691741943,
+  "peak_reserved_GiB": 9.16796875,
+  "losses": [
+    0.4288875460624695,
+    0.4288875460624695,
+    0.4288875460624695
+  ],
+  "checked_finite_gradients": true,
+  "attention_kernel_ops": [
+    "aten::_scaled_dot_product_cudnn_attention",
+    "aten::_scaled_dot_product_cudnn_attention_backward",
+    "aten::scaled_dot_product_attention"
+  ],
+  "process_wall_seconds": 9.398981519043446
+}

@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-29T09:04:08.819046+00:00",
+  "completed_endpoint_rows": 91,
+  "formal50M_continuations": 47,
+  "normal_fastscreen_endpoints": 39,
+  "engineering_endpoints": 4,
+  "unique_checkpoint_paths": 91,
+  "nine_benchmark_summary_rows_checked": true,
+  "report_links_checked": 13,
+  "training_or_model_inference_rerun": false,
+  "official_request_scoring_rerun": false,
+  "new_GPU_work_started": false,
+  "new_pair_ratio_CPU_only": true
+}
