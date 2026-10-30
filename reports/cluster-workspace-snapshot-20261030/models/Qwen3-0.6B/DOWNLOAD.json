@@ -1,0 +1,63 @@
+{
+  "repo": "Qwen/Qwen3-0.6B",
+  "source": "ModelScope",
+  "revision": "master",
+  "hash_verification": false,
+  "files": [
+    {
+      "file": ".gitattributes",
+      "bytes": 2127,
+      "status": "downloaded"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 11343,
+      "status": "downloaded"
+    },
+    {
+      "file": "README.md",
+      "bytes": 13965,
+      "status": "downloaded"
+    },
+    {
+      "file": "config.json",
+      "bytes": 726,
+      "status": "downloaded"
+    },
+    {
+      "file": "configuration.json",
+      "bytes": 73,
+      "status": "downloaded"
+    },
+    {
+      "file": "generation_config.json",
+      "bytes": 239,
+      "status": "downloaded"
+    },
+    {
+      "file": "merges.txt",
+      "bytes": 1671853,
+      "status": "downloaded"
+    },
+    {
+      "file": "model.safetensors",
+      "bytes": 1503300328,
+      "status": "downloaded"
+    },
+    {
+      "file": "tokenizer.json",
+      "bytes": 11422654,
+      "status": "downloaded"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "bytes": 9732,
+      "status": "downloaded"
+    },
+    {
+      "file": "vocab.json",
+      "bytes": 2776833,
+      "status": "downloaded"
+    }
+  ]
+}

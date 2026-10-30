@@ -1,0 +1,22 @@
+{
+  "name": "banking77",
+  "area": "retrieval",
+  "repo": "legacy-datasets/banking77",
+  "patterns": [
+    "data/train-*.parquet"
+  ],
+  "revision": "f54121560de48f2852f90be299010d1d6dc612ec",
+  "status": "downloaded",
+  "files": [
+    {
+      "path": "datasets/benchmarks-train/retrieval/banking77/data/train-00000-of-00001.parquet",
+      "bytes": 298170,
+      "status": "present"
+    },
+    {
+      "path": "datasets/benchmarks-train/retrieval/banking77/README.md",
+      "bytes": 14374,
+      "status": "present"
+    }
+  ]
+}

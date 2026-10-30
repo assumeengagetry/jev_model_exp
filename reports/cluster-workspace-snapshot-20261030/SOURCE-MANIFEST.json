@@ -1,0 +1,124 @@
+{
+  "captured_utc": "2026-10-30T10:19:23.615310+00:00",
+  "remote_host": "sh-09-gpu",
+  "remote_root": "/home/dev/assumeengage",
+  "scope": "Lightweight workspace documentation, environment versions and download/preparation receipts; no model weights or dataset content",
+  "observed_runs_empty": true,
+  "files": [
+    {
+      "path": "README.md",
+      "size": 3458,
+      "sha256": "65102a5edb7cbc3290a270d6d660252da5deee8a18db53b2c7f56c07434c43c6"
+    },
+    {
+      "path": "config/accelerate-4gpu.yaml",
+      "size": 294,
+      "sha256": "3a6a09d7a77665c3cdd2735aec0048aa925481ee0ce746fd00f4d99655648d31"
+    },
+    {
+      "path": "config/accelerate-single.yaml",
+      "size": 195,
+      "sha256": "a379399e39422cd748a7b8a007b86f0330dd2fb30e422e245db1b37aaa88cc82"
+    },
+    {
+      "path": "config/benchmark-extra-sources.json",
+      "size": 1540,
+      "sha256": "c464e5a0e38e9be3e03419e4ad7c0849d02d36671cbc260054003b49c804124a"
+    },
+    {
+      "path": "config/benchmark-hf-sources.json",
+      "size": 2121,
+      "sha256": "bebde3c5b2239336c65a91c48e30f906cf756ff819e9d7611250273e9f52c45c"
+    },
+    {
+      "path": "config/installed-packages.txt",
+      "size": 4046,
+      "sha256": "7391bde1451b78cd661fec31ef94c49259fcdc2502f7c1e9beaa77dbbf3a537c"
+    },
+    {
+      "path": "config/modelscope-benchmark-alternatives.json",
+      "size": 1163,
+      "sha256": "818ad68d7282e86014dd5b30cf4da8bf0da4144d815808b2b7d61686116f2cad"
+    },
+    {
+      "path": "config/modelscope-dataset-sources.json",
+      "size": 18438,
+      "sha256": "357e3976a7b04fb62571d7d2abff4629ab0d325785afa01332b5cdac571478d5"
+    },
+    {
+      "path": "config/requirements.txt",
+      "size": 516,
+      "sha256": "d99b2403c876759387954d9cf853ae67f71561af1e9d4debffffeb3cd232c677"
+    },
+    {
+      "path": "config/training-plan-five-specialists-2026-10-30.md",
+      "size": 11843,
+      "sha256": "b2128a4143b7069cdcb7aeee4c6918c44ee25cd849e77f21f400f122ff47ec67"
+    },
+    {
+      "path": "datasets/README.md",
+      "size": 2612,
+      "sha256": "7248cb7b1d2d3dba876e1d6e0e6cb2cd09b6aa57b9fe3ee3cbf95cf33c165f60"
+    },
+    {
+      "path": "datasets/benchmarks-train/EXTRACTED_TRAIN.json",
+      "size": 78561,
+      "sha256": "9feff6a387a4ebe383d698ca1a837e45c180d89d3e1efc856e34b4320ea5a5ff"
+    },
+    {
+      "path": "datasets/benchmarks-train/HF_DOWNLOADS.json",
+      "size": 6090,
+      "sha256": "6c24812f4e0730ba47741867c5064ab2db456820a46010f1f28630915072a8c1"
+    },
+    {
+      "path": "datasets/benchmarks-train/knowledge/arc/DOWNLOAD.json",
+      "size": 707,
+      "sha256": "4111670828b32d570d18be7e4a5ef3190c1cf473d3d54d95d27af2f7d28b6a52"
+    },
+    {
+      "path": "datasets/benchmarks-train/knowledge/arc/README.md",
+      "size": 9001,
+      "sha256": "4a293e352253d771604725c978adcea71ee6504e89ed40e1cb0024ecafa9b37e"
+    },
+    {
+      "path": "datasets/benchmarks-train/retrieval/banking77/DOWNLOAD.json",
+      "size": 529,
+      "sha256": "a4c587fea4f1e0b03b3a4015d422ac5599e6a5f879fd0a0fde8bcab9cfa2caf8"
+    },
+    {
+      "path": "datasets/benchmarks-train/retrieval/banking77/README.md",
+      "size": 14374,
+      "sha256": "a3515557cb51062eff114ddf8e15554e134094a8ef6dfd482654df606af4be1b"
+    },
+    {
+      "path": "datasets/benchmarks-train/retrieval/clinc150/DOWNLOAD.json",
+      "size": 516,
+      "sha256": "311ceaf3c5cdf264dc90c1b95c9f3a2bebc45ac9ed12e320c4d93b2a5f227fca"
+    },
+    {
+      "path": "datasets/benchmarks-train/retrieval/clinc150/README.md",
+      "size": 23960,
+      "sha256": "e28704a3c04f6b05c286ca2a8891bbf32c69c000dedfc5825d6e1713369b7a89"
+    },
+    {
+      "path": "datasets/tasksource-jev-typed-decisions/DOWNLOAD.json",
+      "size": 6052,
+      "sha256": "4f36e503f1dbc579236105e5f28e78d7586591fb713a29136311ed1124c5bc99"
+    },
+    {
+      "path": "datasets/tasksource-jev-typed-decisions/README.md",
+      "size": 12833,
+      "sha256": "f87aab321b7ce0a49390839dce7d8fabee0a6fcc58811ed108cfcf06a3b8ae45"
+    },
+    {
+      "path": "models/Qwen3-0.6B/DOWNLOAD.json",
+      "size": 1186,
+      "sha256": "f5259649a5edfe2e9e0a804974aa5693ba2d0bb86d8071bcf611ce6d3996067e"
+    },
+    {
+      "path": "models/Qwen3-0.6B/README.md",
+      "size": 13965,
+      "sha256": "1ab64a26fcb3b461423b89a433a8c858f1bf8d4086f979cbb3ff878d47cf20e9"
+    }
+  ]
+}

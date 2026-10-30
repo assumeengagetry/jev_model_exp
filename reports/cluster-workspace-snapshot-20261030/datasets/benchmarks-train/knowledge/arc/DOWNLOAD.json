@@ -1,0 +1,28 @@
+{
+  "name": "arc",
+  "area": "knowledge",
+  "repo": "allenai/ai2_arc",
+  "patterns": [
+    "ARC-Easy/train-*.parquet",
+    "ARC-Challenge/train-*.parquet"
+  ],
+  "revision": "210d026faf9955653af8916fad021475a3f00453",
+  "status": "downloaded",
+  "files": [
+    {
+      "path": "datasets/benchmarks-train/knowledge/arc/ARC-Challenge/train-00000-of-00001.parquet",
+      "bytes": 189909,
+      "status": "present"
+    },
+    {
+      "path": "datasets/benchmarks-train/knowledge/arc/ARC-Easy/train-00000-of-00001.parquet",
+      "bytes": 330598,
+      "status": "present"
+    },
+    {
+      "path": "datasets/benchmarks-train/knowledge/arc/README.md",
+      "bytes": 9001,
+      "status": "present"
+    }
+  ]
+}
