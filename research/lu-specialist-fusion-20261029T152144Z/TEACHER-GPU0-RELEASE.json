@@ -1,0 +1,16 @@
+{
+  "released": true,
+  "waiting_for": "lu-specialist-fusion-20261029T152144Z training and GPU evaluation naturally complete",
+  "teacher_gpu": 0,
+  "do_not_interrupt_existing_jobs": true,
+  "released_utc": "2026-10-29T16:56:58.790226+00:00",
+  "source": "/home/jovyan/assumeengage/research/lu-specialist-fusion-20261029T152144Z/evaluation-state.json",
+  "released_by": "fusion GPU-stage completion coordinator",
+  "release_basis": "Both B and C closed; all eight planned new weight-model GPU evaluations naturally exited or bounded-closed; no later fusion GPU stage exists.",
+  "all_fusion_GPU_stages_closed": true,
+  "no_further_fusion_GPU0_use": true,
+  "remaining_fusion_probability_ensemble_CPU_only": true,
+  "GPU0_compute_pids_observed_at_release": [],
+  "other_valid_processes_stopped": false,
+  "teacher_must_still_wait_for_weights_and_live_idle": true
+}

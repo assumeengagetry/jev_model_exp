@@ -2,6 +2,8 @@
 
 本说明只补充CPU准备，不修改batch/LR pilot、长度诊断或历史训练产物。
 
+**后续状态：首轮比例worker已实际接入该接口并完成训练/评测，14:58 UTC完成逐更新task×标签行数/token、源pair计数与D0 multiset核对。** 结果见`research/lu-pair-ratio-screen-20261029T133342Z/RATIO-REVIEW.json`。本说明末尾“尚未接入”仅保留CPU准备时刻身份，不适用于已完成的新比例轮；旧17M/20M归档数仍不是worker真实回放。
+
 ## 已有数值的分母
 
 | 来源 | 正pair出现次数占比 | 正token占比 | 证据范围 |

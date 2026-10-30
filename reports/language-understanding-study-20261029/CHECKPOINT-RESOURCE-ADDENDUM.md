@@ -77,4 +77,4 @@ Off降为micro8可跑，allocated49.94、reserved67.91 GiB。仅改`expandable_s
 
 GPU0完成/释放通知已收到，新资源测试预约解除；这不自动使尚未生成的比例采样表训练就绪。
 后续各比例候选继续共用模型、长度、batch/LR、真实padding mask与checkpointing设置，不把资源探针的开关变化混入比例因素。
-完整采样流、自然dev/test和实际worker曝光日志校验仍是启动条件。全部原始49单元见[all-measurements.csv](../checkpoint-length-scaling-20261029/all-measurements.csv)，本会话未改其产物。
+完整采样流、自然dev/test和实际worker曝光日志校验是启动条件。后续比例首轮已通过准备检查并完成训练/评测与实际曝光复核，见[比例研究增补](PAIR-RATIO-ADDENDUM.md)；没有重做本资源研究。全部原始49单元见[all-measurements.csv](../checkpoint-length-scaling-20261029/all-measurements.csv)，本会话未改其产物。

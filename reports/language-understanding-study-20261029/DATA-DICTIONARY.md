@@ -14,5 +14,10 @@
 - `collaboration-and-cpu-prep.json`单独保存协作长度诊断和本会话CPU比例准备；这些不是新增参评模型或比例训练效果，不能加入91个训练终点或宣称新最佳配方。
 - `pilot-and-length-update.json`及`pilot-dev-only-runs.csv`是后续收到的协作增补：8个r16/3M、仅dev评测的batch/LR终点与完整长度/归档曝光资料。它们不加入原91个完整Language终点；归档计划的比例不是逐step worker实际曝光。
 - `reference_training_exposure`是CPU初版字段名，在`cpu-preparation-v2.json`中明确限定为完整归档计划统计，另列端点行数/token核对。端点一致不自动证明逐step task/label顺序，未来实际曝光须由已提交更新日志记录。
+- `pair-ratio-runs.csv`另列后续已完成的4个pair重采样终点；`runs-through-pair-ratio.csv`在原91终点后追加这4行，共95个不同checkpoint。原`runs.csv`、`experiment-facts.json`和`APPENDIX.md`仍是91终点快照，不覆盖、不重写；`pre-pair-ratio-report.md`保存增补前的主报告。
+- `pair-ratio-update.json`保留本轮完整精度、4份训练/真实曝光/自然dev/完整Language聚合结果、复核与预注册条件逐项结果；不是旧JSON的静默替换。`pair-ratio-summary.csv`、`pair-ratio-task-metrics.csv`、`pair-ratio-native-metrics.csv`分别保留全局pair、逐task pair与原生指标，不混合分母。
+- `pair-ratio-exposure-by-task-label.csv`来自成功optimizer提交后的实际attention_mask回执。逐更新task×标签行数/token、源row出现次数及D0 multiset已复核；不声称逐microbatch内部顺序被重新前向验证。原题draw计呈现次数，unique候选题计去重ID，ACOS字段不是独立review。
+- 比例轮的95%区间为1000次、seed20261029的配对百分位bootstrap，按`(source,source_group)`聚类、按source分层；不按标签分层，不把67202对当独立样本。区间不覆盖训练seed、共享R0、选池或多重选择不确定性，bootstrap差值为正的比例不是经过校正的显著性检验。
+- `pair-ratio-timing.csv`中56.99分钟为正式执行配置/CPU预检到初报，不含先期CPU方案与采样/dev准备。从已落盘采样表完成到初报也至少154.71分钟，不能以正式执行wall声称完整准备到报告满足120分钟。训练和整轮评测分别为约24分钟、32.88分钟。
 
 所有原权重、逐请求预测、旧报告与失败记录保留在原实验目录。本报告及附件是新的整理版本，没有覆盖它们。

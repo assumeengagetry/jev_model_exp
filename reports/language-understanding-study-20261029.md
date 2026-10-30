@@ -1,7 +1,9 @@
 # Qwen3-0.6B Language Understanding 已完成实验报告
 
 **实验范围：2026-10-27—2026-10-29；结果整理日期：2026-10-29。**  
-**资料来源：本地已落盘的训练、验证与Decision Index 0.3评测记录。本文未追加训练、重跑推理或重算官方评分。**
+**资料来源：本地已落盘的训练、验证与Decision Index 0.3评测记录；含已完成的正负pair比例首轮增补。本次报告整理未追加训练、重跑推理或重算官方逐请求评分。**
+
+**后续版本增补：**下面的95终点主表保留截至正负比例首轮的快照。随后“每数据家族专用模型→融合”已新增9个完整评测方案（6个新训练、2个权重融合、1个虚拟概率集成），原95快照不改写；完整结果与计数边界见[融合首轮复核](../research/lu-specialist-fusion-20261029T152144Z/FUSION-REVIEW.md)。追加后为104个评测方案、103份实体checkpoint，不能将虚拟集成另计为训练模型。
 
 当前证据最完整的配方是在任务数据扩充、采样调整后使用因果注意力和rank32 LoRA：四个匹配续训seed的Language Skill为 **35.05±0.96**（均值±样本标准差）。它相对起始模型17.74提高17.31分，但这段变化包含数据、采样、容量和额外训练，不能归为单个因素的收益。
 
@@ -9,19 +11,20 @@
 
 ## 比较口径与已完成范围
 
-下表91个终点的公开能力评测均限定于Language Understanding九项，使用相同的本地Decision Index 0.3协议。每个参评终点完成31715个请求，已有记录均为100%覆盖、零unsupported、零错误。只完成该维度，不代表完成全维度榜单或获得线上排名。仅dev评测的其他短试另列，不与公开Language分数混合。
+下表95个终点的公开能力评测均限定于Language Understanding九项，使用相同的本地Decision Index 0.3协议。每个参评终点完成31715个请求，已有记录均为100%覆盖、零unsupported、零错误。只完成该维度，不代表完成全维度榜单或获得线上排名。仅dev评测的其他短试另列，不与公开Language分数混合。
 
 | 阶段 | 已完成参评终点 | 训练条件 | 主要用途 |
 |---|---:|---|---|
 | 起始分类模型 | 1 | tasksource原处理池，validation选择checkpoint | 建立起点 |
 | 长预算受控研究 | 47 | 每个终点从共同起点新增50M非padding token | 数据、注意力、采样和LoRA容量比较 |
 | 正常小池快筛 | 39 | 12个终点各20M，27个终点各17M | 单seed筛方向，少量有信号方向追加匹配seed |
+| 正负pair比例首轮 | 4 | 各19999954实际非padding token，新的自然展开匹配控制 | 单seed比较pair层重采样，CE权重均1 |
 | 首轮应急链路验证 | 4 | 各约0.97—1.00M | 工程修复后确认训练与全评测可完成，不用于方向取舍 |
-| **合计** | **91** | 其中87个属于正常研究比较，4个为应急端点 | 复用控制未重复计数 |
+| **合计** | **95** | 其中91个属于正常研究比较，4个为应急端点 | 复用控制未重复计数 |
 
-这些是91个参评终点，不是91次独立全流程训练。多个模型反复评测同一批31715请求，也不会增加独立测试样本数。逐终点完整分项和来源保存在[完整结果附录](language-understanding-study-20261029/APPENDIX.md)、[逐终点CSV](language-understanding-study-20261029/runs.csv)和[完整精度JSON](language-understanding-study-20261029/experiment-facts.json)。
+这些是95个参评终点，不是95次独立全流程训练。多个模型反复评测同一批31715请求，也不会增加独立测试样本数。原91终点的[附录](language-understanding-study-20261029/APPENDIX.md)、[CSV](language-understanding-study-20261029/runs.csv)和[完整精度JSON](language-understanding-study-20261029/experiment-facts.json)原样保留；新增4终点见[比例研究增补](language-understanding-study-20261029/PAIR-RATIO-ADDENDUM.md)，累计95终点见[合并CSV](language-understanding-study-20261029/runs-through-pair-ratio.csv)。
 
-后续收到的另行授权batch/LR短试已于08:00:08 UTC自然完成，另有8个仅dev评测的3M终点，未进行公开Language评测，因此不加入上表91个完整Language参评终点。其原报告保持不变，结果及范围见[协作增补](language-understanding-study-20261029/PILOT-AND-LENGTH-ADDENDUM.md)。
+后续收到的另行授权batch/LR短试已于08:00:08 UTC自然完成，另有8个仅dev评测的3M终点，未进行公开Language评测，因此不加入上表95个完整Language参评终点。其原报告保持不变，结果及范围见[协作增补](language-understanding-study-20261029/PILOT-AND-LENGTH-ADDENDUM.md)。
 
 **指标定义。** Language Skill是官方随机水平校正、分轨道和加权后的0—100分数，不是准确率。原生dev指标分别采用ANLI Macro-F1、HellaSwag accuracy、讽刺正类F1、ACOS每review F1和RAGTruth幻觉类F1。内部文本对accuracy只衡量二分类匹配能力。起始模型内部测试accuracy为82.40%，对应Language Skill仍为17.74，两者不能互换。
 
@@ -173,7 +176,7 @@ HellaSwag的30%目标池配额在两个20M续训seed的小dev上都提高了该�
 
 ## 新方向的已测内容与尚未测内容
 
-用户已将后续优先级转为输入长度及pair正负比例，本会话暂停alpha网格与原生数据准备，当前只做报告和CPU比例方案。
+用户已将后续优先级转为输入长度及pair正负比例，本会话暂停alpha网格与原生数据准备。协作长度与资源研究只读引用、不重复测试；本会话接续的正负pair比例首轮已完成训练、评测与CPU复核。
 
 协作会话已对固定的历史最高观察终点`LR32/seed3409`完成长度诊断：同一1667对支持上下文样本、同一标签与阈值，采用抽样权重还原88971对D0 validation＋D2 dev框架；另有3对超出40960上下文上限单列。D0使用原文恢复编码，D2使用未截断缓存。该框架含未进入小训练池的D0任务，属于pair分类诊断，不是Language九项评测。
 
@@ -188,7 +191,43 @@ HellaSwag的30%目标池配额在两个20M续训seed的小dev上都提高了该�
 
 按“总体Macro-F1下降不超过0.5个百分点”的工作定义，1024是本次支持总体的最短折中候选。不过原始长度1024—2047桶从full的86.200%降至1024的74.086%，下降12.114个百分点；2048在该桶保持86.200%。因此1024不能无条件用于全部长文本，2048是更保守的推理候选，仍未证明训练长度最优。详细逐类、逐桶与计时范围见协作[完整诊断报告](length-label-benchmark-20261029/BENCHMARK-REPORT.md)。本会话未重复GPU长度测试。上表差值现按未舍入JSON计算，替代先前由显示值相减得到的0.1819/0.0213，差异仅为末位舍入。
 
-正负比例尚无训练干预结果。静态小池的匹配pair占41.14%、token占46.07%；BASE-17M归档计划为45.39%/47.16%，BASE-20M归档计划为45.54%/47.21%。后两项由完整schedule复原，包含重复出现次数，尚未逐step回放worker，不能冒称实际逐行曝光；不同预算也不能合成一个比例。CPU已准备冻结task预算、D0流和原生类平衡，仅改变D2匹配pair暴露倍率的初版方案，CE权重均保持1。详见[CPU比例准备](length-label-benchmark-20261029/PAIR-RATIO-PREP.md)与[曝光记录要求](length-label-benchmark-20261029/EXPOSURE-ACCOUNTING-NOTE.md)。完整采样表与自然dev仍需冻结，不能预写最佳比例或训练收益。
+### 正负pair比例：提高匹配召回并未改善自然dev总体分类
+
+静态小池的匹配pair占41.14%、token占46.07%；旧17M/20M归档计划分别为45.39%/47.16%、45.54%/47.21%。这些归档数值仍只代表schedule复原，不能提升为历史worker的逐step真实回放。新的比例轮另行记录成功optimizer提交后的实际attention_mask、task与pair标签回执，并完成了逐更新计数复核。
+
+本轮固定共同r32起点、seed3407、输入长度、每(pool,task) token预算、D0样本multiset和原生SAR平衡策略，只在D2完整候选内重复正或负pair，**明确属于pair层重采样**。各组实际19999954非padding token，所有CE权重均[1,1]。自然dev为未重平衡的67202对：D0 Language validation原文2840对＋完整未截断D2 dev64362对；不是旧分层小面板或协作宽D0长度面板。
+
+| 训练条件 | 实际正pair比例 | 自然dev Macro-F1 | 匹配召回 | 不匹配召回 | Language Skill |
+|---|---:|---:|---:|---:|---:|
+| 不匹配重复两次 | 36.4618% | 90.8950% | 86.4084% | 95.0878% | 29.0525 |
+| 自然展开对照 | 45.5127% | 90.9691% | 89.2326% | 92.6062% | 29.4933 |
+| 匹配重复两次 | 55.3654% | 90.1462% | 92.0726% | 88.4193% | 31.2347 |
+| 匹配重复四次 | 64.1143% | 88.1054% | 94.6210% | 82.2238% | 30.6752 |
+
+提高匹配曝光使匹配召回上升，却牺牲不匹配召回。相对自然展开，匹配重复两次的Macro-F1下降0.8229个百分点，但Language Skill增加1.7413分；两类指标没有同步，公开最高分没有被用于推翻预注册的自然dev判断。三个处理均未共同满足pair收益与类别/任务保护线，不自动追加seed。自然展开仅在这四个单seed条件中Macro-F1最高，精确全局50:50未测试，不能宣布最佳比例。
+
+按(source, source_group)聚类、按source分层的1000次配对bootstrap中，不匹配重复两次的Macro-F1差值95%条件区间为[−0.3038,+0.1350]个百分点；匹配重复两次、四次分别为[−1.0758,−0.5700]、[−3.3162,−2.5003]。这些区间不包含训练seed、共享R0、选池或多重筛选不确定性。
+
+逐更新task×标签行数/token、实际源pair计数及D0 multiset均匹配计划，未完成原题draw和未提交累积均为0。但固定token预算下，四组完整候选题draw为19596／30276／20921／13059，唯一候选题覆盖为16474／22471／17741／11755，不能把draw数混称独立原题数或将效果完全归为类先验。原生SAR core约50%、全流约48.19%的讽刺draw，也不是上述pair正类比例或CE权重。
+
+正式执行到初报56.99分钟，训练各23.86—24.52分钟，整轮自然dev及公开评测32.88分钟。57分钟不含先前CPU设计与采样/dev准备；从已落盘的采样表生成完成到初报也至少154.71分钟，因此若将此前准备并入本轮，不能声称120分钟全流程达标。完整两类指标、九项分解、真实曝光、条件区间和计时边界见[比例研究增补](language-understanding-study-20261029/PAIR-RATIO-ADDENDUM.md)。CE权重的独立训练诊断尚未实施。
+
+### 每数据家族专用模型→融合：固定融合未超过相同总曝光的混合训练
+
+用户明确“每数据集训练模型”是为研究融合，不是继续采样网格。已仅用既有D2五族train，各训一个约3M专家：ANLI三轮同族、ACOS两域同族、RAGTruth三task同族，另有HellaSwag和英语讽刺。混合控制严格合并五专家训练流，实际14995340非padding token和源row出现次数均为五专家之和；共同expanded-R0-r32、seed、batch/LR/长度、真实mask与普通训练过的score保持不变。
+
+| 相同专家总训练曝光的比较 | Language Skill | 相对混合控制 | 自然dev Macro-F1 | 原生10任务dev宏均值 |
+|---|---:|---:|---:|---:|
+| 相同总曝光混合训练 | 31.0712 | 0 | 91.0788% | 0.515458 |
+| 五专家等权输出概率集成 | 20.6175 | −10.4537 | 89.6607% | 0.390353 |
+| 等权有效权重平均 | 20.3541 | −10.7171 | 84.2355% | 0.314876 |
+| 固定TIES，保留20%、缩放1 | 24.3858 | −6.6854 | 88.4939% | 0.367586 |
+
+这三个固定融合都没有超过混合控制，原生dev宏均值也均较低；不继续调权或稀疏率追逐公开分数。但它们的D0任务宏pair-F1均高于混合控制，属于迁移代理取舍，并非所有任务都同向。五族专用化也没有普遍成功：HellaSwag同族dev有优势，ANLI/ACOS/RAGTruth专家的同族均值低于混合控制，RAG专家仅27次更新。该单seed、短预算结果不能外推为高质量专家或其他融合方法均无效。
+
+两种权重融合在FP32计算相对共同R0的有效delta，包含已训练score，不直接平均LoRA A/B，再保存BF16单模型部署权重；没有全参数训练。概率集成复用五专家同请求的完整候选概率，仅CPU调用冻结官方计分函数，无额外GPU benchmark。9方案均完成31715请求，100%覆盖、零错误，首次准备至全部结果95.46分钟；两个独立四卡评测阶段各32.60/31.75分钟。GPU已显式交接Teacher，Student蒸馏仍只完成CPU准备、未训练。
+
+完整81项分数、模型路径、两类指标、曝光匹配、部署舍入限制与页面导入文件见[融合首轮复核](../research/lu-specialist-fusion-20261029T152144Z/FUSION-REVIEW.md)及[新增9方案CSV](../research/lu-specialist-fusion-20261029T152144Z/dashboard-runs.csv)。这些3M/15M结果不是历史50M配方或36.3303模型的等预算对照，旧模型没有重评。
 
 ## 实验设置、数据与证据索引
 
@@ -212,6 +251,7 @@ HellaSwag的30%目标池配额在两个20M续训seed的小dev上都提高了该�
 | 小池原小dev | 1476 pair，多数任务32题；ACOS每域1review | 小样本配方判断，宏均值会被单review变化影响 |
 | D2补充面板 | 5904 pair，每任务128题，ACOS每域4review；原生类别分层 | 与旧小dev源组不重叠，但同源、重复用于配方选择，不是独立测试 |
 | D0迁移代理 | 2006 pair，33个Language相关task | 缓存pair-CE准确率；不与Language Skill或原生F1混分 |
+| 比例轮自然dev | 67202 pair，D0原文2840＋完整D2 64362 | 未做标签/长度重采样；来源dev仍被复用，不是新独立测试 |
 
 早期dev曾发现训练正文/来源关联，历史文件保留；数据、采样选择采用另存的clean-dev复核。旧机器字段`independent_dev`不能直接证明面板独立。16份只读逐问题诊断已精确复现原聚合指标，属于诊断工作，不计为16个新训练模型。
 
@@ -229,7 +269,8 @@ HellaSwag的30%目标池配额在两个20M续训seed的小dev上都提高了该�
 | 资料 | 位置 |
 |---|---|
 | 逐终点完整结果与代号映射 | [APPENDIX.md](language-understanding-study-20261029/APPENDIX.md) |
-| 91个终点、seed、预算、9项Skill与checkpoint路径 | [runs.csv](language-understanding-study-20261029/runs.csv) |
+| 原91终点快照、seed、预算、9项Skill与checkpoint路径 | [runs.csv](language-understanding-study-20261029/runs.csv) |
+| 新增4个比例终点／累计95终点 | [pair-ratio-runs.csv](language-understanding-study-20261029/pair-ratio-runs.csv)／[runs-through-pair-ratio.csv](language-understanding-study-20261029/runs-through-pair-ratio.csv) |
 | 按面板分开的逐task dev指标 | [dev-metrics.csv](language-understanding-study-20261029/dev-metrics.csv) |
 | 每轮时间与准备超预算记录 | [round-timing.csv](language-understanding-study-20261029/round-timing.csv) |
 | 原始聚合文档、完整精度与补充判断 | [experiment-facts.json](language-understanding-study-20261029/experiment-facts.json) |
@@ -237,6 +278,8 @@ HellaSwag的30%目标池配额在两个20M续训seed的小dev上都提高了该�
 | 协作长度诊断及CPU比例准备的独立快照 | [collaboration-and-cpu-prep.json](language-understanding-study-20261029/collaboration-and-cpu-prep.json) |
 | 后续收到的完整长度/曝光报告与batch/LR短试 | [PILOT-AND-LENGTH-ADDENDUM.md](language-understanding-study-20261029/PILOT-AND-LENGTH-ADDENDUM.md) |
 | 具体长度、mask路径与checkpoint资源实测 | [CHECKPOINT-RESOURCE-ADDENDUM.md](language-understanding-study-20261029/CHECKPOINT-RESOURCE-ADDENDUM.md) |
+| pair比例完整报告与真实曝光/条件区间 | [PAIR-RATIO-ADDENDUM.md](language-understanding-study-20261029/PAIR-RATIO-ADDENDUM.md)／[pair-ratio-update.json](language-understanding-study-20261029/pair-ratio-update.json) |
+| 后续五族专用模型、混合控制与三种固定融合 | [FUSION-REVIEW.md](../research/lu-specialist-fusion-20261029T152144Z/FUSION-REVIEW.md)／[新增9方案与计数边界](../research/lu-specialist-fusion-20261029T152144Z/DASHBOARD-HANDOFF.json) |
 | 起始模型完整报告 | [language-baseline-20261027.md](language-baseline-20261027.md) |
 | 长预算对照 | `research/lu-replication-20261027/THREE-SEED-REVIEW.md`；`lu-d2-studies-20261027/STUDY-REVIEW.md` |
 | 比例、讽刺策略、联合与容量 | 对应`lu-token-mixtures`、`lu-sarcasm-sampling`、`lu-joint-confirmation`、`lu-lora-capacity`目录中的结果JSON |
@@ -244,4 +287,4 @@ HellaSwag的30%目标池配额在两个20M续训seed的小dev上都提高了该�
 
 本次整理重新核对了本地JSON数值、算术、终点路径存在性、覆盖/错误字段和重复缓存副本的一致性；没有加载模型权重、重算逐请求官方评分或再次hash大文件。逐请求输出、模型和历史日志仍在原目录，正文未访问的论文或线上成绩不作为新增验证来源。
 
-旧alpha网格与原生数据准备已暂停；已授权batch/LR小试自然完成，未被停止或重跑。本会话当前只做CPU比例准备，后续按协作PLAN在完整采样表和自然dev校验完成后接续，不重复长度诊断，也不覆盖pilot原产物。
+旧alpha/比例细扫与原生数据准备已暂停，已完成的batch/LR、长度与资源测试没有重跑。比例首轮的95终点表保留阶段快照；新增专用模型与融合9方案另列，16:57已完整结束、16:58通过只读验证。16:56:58 UTC确认融合GPU阶段均自然结束后已向Teacher写入显式GPU0释放，不再将15:00的旧空闲观察当作当前状态。Student仅CPU准备完成，等待Teacher真实标注ready；没有停止或覆盖任何其他有效任务。

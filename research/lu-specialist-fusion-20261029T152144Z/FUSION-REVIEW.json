@@ -1,0 +1,111 @@
+{
+  "time": "2026-10-29T17:03:11.909945+00:00",
+  "source": "/home/jovyan/assumeengage/research/lu-specialist-fusion-20261029T152144Z/fusion-report.json",
+  "verification": {
+    "time": "2026-10-29T16:58:52.793782+00:00",
+    "passed": true,
+    "complete_new_evaluation_schemes": 9,
+    "new_trained_models": 6,
+    "new_materialized_weight_fusions": 2,
+    "new_virtual_probability_ensemble": 1,
+    "distinct_new_weight_paths": 8,
+    "nine_benchmark_rows": 81,
+    "all_complete_requests_per_scheme": 31715,
+    "natural_dev_pairs_per_scheme": 67202,
+    "actual_mixed_exposure_equals_expert_sum": true,
+    "trained_score_in_effective_merge": true,
+    "CPU_ensemble_reused_expert_predictions": true,
+    "old_R0_or_historical_best_rebenchmark": false,
+    "evaluation_stages": [
+      {
+        "phase": "B",
+        "minutes": 32.603901000817615,
+        "within35": true
+      },
+      {
+        "phase": "C",
+        "minutes": 31.75349107583364,
+        "within35": true
+      }
+    ],
+    "report_links_checked": 7,
+    "elapsed_from_original_preparation_minutes": 95.4596956173579,
+    "all_schemes_within_initial120": true,
+    "no_model_load_or_GPU_work_in_verification": true
+  },
+  "all_three_fixed_fusions_below_matched_mixed_Language": true,
+  "all_three_fixed_fusions_below_matched_mixed_native_macro": true,
+  "all_three_fusions_higher_D0_task_macro_pair_F1": true,
+  "deltas_against_matched_mixed": [
+    {
+      "code": "PROBABILITY_MEAN",
+      "name": "五专家等权概率集成",
+      "Language_Skill_delta": -10.453722605869853,
+      "pair_Macro_F1_delta": -0.014181246841877937,
+      "native_10task_macro_delta": -0.12510416567890809,
+      "D0_task_macro_pair_F1_delta": 0.025163349723292705
+    },
+    {
+      "code": "LINEAR",
+      "name": "等权有效权重平均",
+      "Language_Skill_delta": -10.717091719137208,
+      "pair_Macro_F1_delta": -0.06843354019992254,
+      "native_10task_macro_delta": -0.200581184761496,
+      "D0_task_macro_pair_F1_delta": 0.022149514260346392
+    },
+    {
+      "code": "TIES",
+      "name": "固定TIES，保留20%",
+      "Language_Skill_delta": -6.685418291442897,
+      "pair_Macro_F1_delta": -0.025849415829274802,
+      "native_10task_macro_delta": -0.14787107174137853,
+      "D0_task_macro_pair_F1_delta": 0.013357928745503123
+    }
+  ],
+  "native_family_comparisons": [
+    {
+      "code": "ANLI",
+      "name": "ANLI专用模型",
+      "specialist_native_family_mean": 0.4171592555071127,
+      "mixed_same_family_mean": 0.4247765036513676,
+      "difference": -0.007617248144254907
+    },
+    {
+      "code": "HELLASWAG",
+      "name": "HellaSwag专用模型",
+      "specialist_native_family_mean": 0.6616643929058663,
+      "mixed_same_family_mean": 0.6384720327421555,
+      "difference": 0.023192360163710846
+    },
+    {
+      "code": "ACOS",
+      "name": "ACOS专用模型",
+      "specialist_native_family_mean": 0.3936751455755608,
+      "mixed_same_family_mean": 0.4054627161548856,
+      "difference": -0.01178757057932478
+    },
+    {
+      "code": "ISARCASM",
+      "name": "英语讽刺专用模型",
+      "specialist_native_family_mean": 0.39628482972136225,
+      "mixed_same_family_mean": 0.39344262295081966,
+      "difference": 0.002842206770542588
+    },
+    {
+      "code": "RAGTRUTH",
+      "name": "RAGTruth专用模型",
+      "specialist_native_family_mean": 0.30843618957195984,
+      "mixed_same_family_mean": 0.6791352816157802,
+      "difference": -0.37069909204382034
+    }
+  ],
+  "no_extra_training_inference_or_official_scoring": true,
+  "no_extra_seed_or_weight_density_grid": true,
+  "limits": [
+    "One continuation seed and shared R0; reused dev.",
+    "Equal total tokens/source-row counts, not equal per-model tokens or identical Adam/LR trajectories.",
+    "Only the preregistered equal weights and TIES density0.2/lambda1 were tested.",
+    "BF16 dense materialization is not bitwise equivalent to unmerged adapter execution.",
+    "Weak specialist performance and small update counts limit general conclusions about fusion."
+  ]
+}

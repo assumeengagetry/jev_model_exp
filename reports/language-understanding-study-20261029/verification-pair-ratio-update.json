@@ -1,0 +1,19 @@
+{
+  "time": "2026-10-29T15:11:47.697841+00:00",
+  "passed": true,
+  "old_snapshot_rows_unchanged_in_combined_table": 91,
+  "new_endpoints": 4,
+  "cumulative_distinct_endpoints": 95,
+  "dev_only_pilot_endpoints_separate": 8,
+  "summary_rows": 4,
+  "native_task_rows": 40,
+  "public_benchmark_rows": 36,
+  "exposure_rows": 352,
+  "report_links_checked": 49,
+  "pair_confusion_derived_metrics_checked": true,
+  "promotion_gate_recomputed": true,
+  "prior_CPU_preparation_timebox_limitation_explicit": true,
+  "GPU_claim_released_in_ledger": true,
+  "no_model_load_or_new_GPU_job": true,
+  "original91_CSV_JSON_APPENDIX_not_written": true
+}

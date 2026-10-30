@@ -1,0 +1,32 @@
+{
+  "time": "2026-10-29T16:58:52.793782+00:00",
+  "passed": true,
+  "complete_new_evaluation_schemes": 9,
+  "new_trained_models": 6,
+  "new_materialized_weight_fusions": 2,
+  "new_virtual_probability_ensemble": 1,
+  "distinct_new_weight_paths": 8,
+  "nine_benchmark_rows": 81,
+  "all_complete_requests_per_scheme": 31715,
+  "natural_dev_pairs_per_scheme": 67202,
+  "actual_mixed_exposure_equals_expert_sum": true,
+  "trained_score_in_effective_merge": true,
+  "CPU_ensemble_reused_expert_predictions": true,
+  "old_R0_or_historical_best_rebenchmark": false,
+  "evaluation_stages": [
+    {
+      "phase": "B",
+      "minutes": 32.603901000817615,
+      "within35": true
+    },
+    {
+      "phase": "C",
+      "minutes": 31.75349107583364,
+      "within35": true
+    }
+  ],
+  "report_links_checked": 7,
+  "elapsed_from_original_preparation_minutes": 95.4596956173579,
+  "all_schemes_within_initial120": true,
+  "no_model_load_or_GPU_work_in_verification": true
+}

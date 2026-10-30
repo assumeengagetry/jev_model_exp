@@ -39,7 +39,7 @@ batch改变还改变Adam/weight-decay的更新频次，这些结果不支持通�
 
 当前batch/LR pilot已完成且已有报告交付，不补跑、不替换旧产物。后续比例候选应共用一个冻结的模型起点、batch、LR、长度、task预算和自然dev/test。
 若根据pilot另选共同设置，需在本轮自然比例控制与所有比例候选上同时执行，不把LR/长度变化与比例变化并成一次因果比较。
-本会话仍只做CPU准备，完整训练采样表和worker真实曝光日志尚未部署，不声称比例研究已有结果。
+以上约束用于后续比例研究；当时仅CPU准备的状态已被已完成首轮更新。采样表与worker实际曝光日志已部署并复核，新增4个完整Language终点见[比例研究增补](PAIR-RATIO-ADDENDUM.md)，不改变本文件8个dev-only pilot的独立身份。
 
 完整数值与版本来源：[只读增补快照](pilot-and-length-update.json)、[8个dev-only端点训练账本](pilot-dev-only-runs.csv)。
 原始复核报告：[STUDY-REVIEW.md](../../research/lu-batch-lr-pilot-20261029/STUDY-REVIEW.md)。

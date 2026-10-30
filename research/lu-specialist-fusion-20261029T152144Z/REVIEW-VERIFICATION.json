@@ -1,0 +1,19 @@
+{
+  "time": "2026-10-29T17:07:59.918286+00:00",
+  "passed": true,
+  "old95_rows_preserved": 95,
+  "new_evaluation_schemes": 9,
+  "cumulative_evaluation_schemes_if_appended": 104,
+  "cumulative_distinct_physical_checkpoints": 103,
+  "new_virtual_probability_ensemble": 1,
+  "all_8_GPU_evaluators_exited_normally": true,
+  "no_interrupt_or_terminate_was_used": true,
+  "Teacher_GPU0_released": true,
+  "Teacher_release_utc": "2026-10-29T16:56:58.790226+00:00",
+  "formal_report_links_checked": 51,
+  "native_task_rows": 90,
+  "pair_diagnostic_rows": 9,
+  "no_new_GPU_job_or_official_score_recalculation": true,
+  "Teacher_label_ready_at_review": null,
+  "Student_GPU_training_started_by_this_verification": false
+}

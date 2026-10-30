@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LU Lab / 实验对比</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#"><span class="brand-mark">L.</span> LANGUAGE LAB <span class="version">0.6B / RESEARCH</span></a><span class="live"><i></i> 本地实验档案</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">EXPERIMENT EXPLORER · 2026</p><h1>看见每一次实验的<span>能力变化。</span></h1><p class="subtitle">从一个总分，展开到九项能力。比较数据、采样与模型配方，找到真正的变化。</p></div><div class="edition">DECISION INDEX 0.3<br><strong>Language Understanding</strong><span id="updated"></span></div></section>
+    <section class="stats" aria-label="实验概览"><article><span>完整评测终点</span><strong id="run-count">—</strong><small>每个终点 31,715 个请求</small></article><article><span>历史最高单次</span><strong id="best-score">—</strong><small>Language Skill / 100</small></article><article><span>r32 四seed均值</span><strong>35.05 <em>± 0.96</em></strong><small>当前已确认主线配方</small></article><article><span>下一实验主线</span><strong class="text-stat">融合 × 蒸馏</strong><small>数据专用模型与Teacher对照</small></article></section>
+    <nav class="tabs" aria-label="页面内容"><button class="tab active" data-tab="compare" aria-selected="true">雷达对比</button><button class="tab" data-tab="length" aria-selected="false">输入长度 benchmark</button><button class="tab" data-tab="roadmap" aria-selected="false">实验路线</button></nav>
+    <section id="compare" class="tab-panel">
+      <div class="workspace">
+        <aside class="panel experiment-picker"><div class="panel-heading"><div><p class="eyebrow">01 / SELECT</p><h2>选择实验</h2></div><span id="selected-count" class="count-pill" aria-live="polite">0 / 5</span></div>
+          <label class="search-label"><span>搜索实验</span><input id="search" type="search" placeholder="名称、代号、seed…" autocomplete="off"></label>
+          <div class="filter-grid"><label>结果粒度<select id="mode"><option value="group">同配方seed均值</option><option value="run">单次结果</option></select></label><label>实验阶段<select id="stage"><option value="all">全部阶段</option></select></label><label>新增token预算<select id="budget"><option value="all">全部预算</option><option value="50000000">50M</option><option value="20000000">约20M</option><option value="17000000">17M</option><option value="3000000">约3M</option></select></label><label>LoRA rank<select id="rank"><option value="all">全部rank</option><option value="16">16</option><option value="32">32</option><option value="64">64</option></select></label></div>
+          <div class="preset-label">快捷对比</div><div class="presets"><button data-preset="journey">主线进展</button><button data-preset="attention">因果 / 双向</button><button data-preset="capacity">LoRA容量</button><button data-preset="ratio">正负比例</button><button data-preset="fusion">专家 / 融合</button><button data-preset="distill">标签 / 蒸馏</button></div>
+          <div class="list-heading"><span id="visible-count"></span><button id="clear" class="text-button">清空选择</button></div><div id="experiments" class="experiment-list"></div><p id="selection-message" class="selection-message" role="status" aria-live="polite"></p>
+        </aside>
+        <section class="panel chart-panel"><div class="panel-heading"><div><p class="eyebrow">02 / COMPARE</p><h2>九项能力雷达</h2></div><button id="export-svg" class="outline-button">↓ 导出 SVG</button></div><p class="chart-caption">每条轴均为 Skill 0–100。悬停数据点查看具体数值。</p><div id="radar" class="radar" aria-live="polite"></div><div id="legend" class="legend"></div><div class="chart-footer"><span>坐标统一 · 0–100</span><span>实线为均值 / 单次实测</span></div></section>
+      </div>
+      <section class="panel detail-panel"><div class="panel-heading"><div><p class="eyebrow">03 / DETAILS</p><h2>分项与差值</h2></div><div class="table-actions"><label>差值参照<select id="reference"></select></label><button id="export-csv" class="outline-button">↓ 导出 CSV</button></div></div><div id="details" class="table-scroll"></div><p class="footnote">表中的总分读取官方Language计分结果；雷达图展示九项Skill，数据预算与seed信息保留在每个实验卡片中。</p></section>
+    </section>
+    <section id="length" class="tab-panel" hidden><div class="panel length-panel"><div class="panel-heading"><div><p class="eyebrow">LENGTH BENCHMARK / COMPLETED</p><h2>当前训练数据有多长？</h2></div><span class="status-tag">已完成</span></div><div id="length-summary" class="length-summary"></div><div id="coverage-chart"></div><h3>同checkpoint、同1667对dev：推理截断对照</h3><div id="length-table" class="table-scroll"></div><p class="callout">1024是偏速度的总体折中，2048更保守。原长1024–2047桶截至1024时，Macro-F1从86.20%降至74.09%。</p><p class="footnote">本页长度表为固定模型的推理诊断；资源阶梯另已测到8192 tokens，Checkpoint On的allocated峰值20.55 GiB。</p></div></section>
+    <section id="roadmap" class="tab-panel" hidden><div class="panel roadmap-panel"><p class="eyebrow">RESEARCH ROADMAP</p><h2>基础探索完成，接下来验证融合与蒸馏。</h2><div id="roadmap-list"></div><p class="callout">“每个数据集各训练一个模型”服务于模型融合研究。混合数据训练与数据采样消融已完成；数据专用模型、融合和Teacher蒸馏分别登记结果。</p></div></section>
+    <footer><span>LU LAB · 本地只读结果可视化</span><span>无需联网 / 无外部图表依赖 / 不启动训练</span></footer>
+  </main>
+</body>
+</html>
