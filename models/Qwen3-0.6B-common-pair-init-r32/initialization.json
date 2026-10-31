@@ -1,0 +1,17 @@
+{
+  "base_model": "/home/dev/assumeengage/models/Qwen3-0.6B",
+  "model_class": "Qwen3ForSequenceClassification",
+  "seed": 42,
+  "labels": [
+    "not_match",
+    "match"
+  ],
+  "precision": "bfloat16",
+  "lora_r": 32,
+  "lora_alpha": 64,
+  "classification_head_saved": true,
+  "attention": "causal SDPA",
+  "base_weights_duplicated": false,
+  "purpose": "actual common initialization for five specialists and MIXED_ALL",
+  "model_forward_or_smoke_test_run": false
+}

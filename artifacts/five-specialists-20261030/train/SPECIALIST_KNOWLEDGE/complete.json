@@ -1,0 +1,25 @@
+{
+  "model": "SPECIALIST_KNOWLEDGE",
+  "complete": true,
+  "pool_pairs": 3073453,
+  "pairs_seen": 3073453,
+  "epochs": 1,
+  "effective_tokens": 524419216,
+  "elapsed_seconds": 6905.358858302992,
+  "effective_tokens_per_second": 75943.80346641061,
+  "seen_domains": {
+    "knowledge": 3073453
+  },
+  "optimizer_steps": 24012,
+  "global_effective_batch": 128,
+  "common_initialization": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+  "precision": "bf16",
+  "attention": "causal_sdpa",
+  "micro_token_budget_final": 32768,
+  "oom_retries": 2,
+  "gradient_checkpointing": false,
+  "communication": "gloo_cpu_float32_adapter_gradients",
+  "peak_allocated_gb": 89.43026351928711,
+  "training_pair_cap": null,
+  "training_token_cap": null
+}
