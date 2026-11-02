@@ -1,13 +1,14 @@
 {
-  "pid": 3611809,
+  "pid": 3617344,
   "log": "/home/assumeengage/profiler/jev_model_exp/reports/cluster-followup-20261031/watcher.log",
   "state_file": "/home/assumeengage/profiler/jev_model_exp/reports/cluster-followup-20261031/state.json",
   "scp_session": "ses_e78d20bb6ffeeIq6l616oJr4f8",
   "execution_session": "ses_e749dc3c2ffev4nW5qgrukOIiC",
   "time": "2026-10-31T08:09:31.897874+00:00",
-  "previous_pid": 2765321,
+  "previous_pid": 3611809,
   "scope": "four-specialists-five-trained-ten-evaluated",
   "ssh_alias": "sh-10-gpu",
   "distillation_continuation_enabled": false,
-  "slerp_supplement_enabled": true
+  "slerp_supplement_enabled": true,
+  "readonly_hard_terminal_observation": true
 }
