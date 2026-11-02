@@ -308,7 +308,7 @@ Teacher 独立环境已就绪，资产记录累计取得约 **54.73／62.58 GB**
 
 在此基础上，按**物理 batch×补齐长度**拟合了当前配置的显存估算关系，并形成配置计算脚本。49 个资源测量单元仅做前后向、不更新权重，与包含 optimizer step 的 batch 吞吐实验分开解释；拟合不能不经测量就套用到其他模型或后端。
 
-![输入长度与激活重算的实测显存曲线](checkpoint-length-scaling-20261029/memory-scaling.svg)
+![输入长度与激活重算的实测显存曲线](jev-work-log-20261102-png/memory-scaling.png)
 
 ### 5. 多 seed 复验、任务保护与负结果研究
 
