@@ -87,6 +87,10 @@
     "slerp/merge/MERGE_SLERP_HIERARCHICAL": {
       "message_id": "msg_19bb0fcd7001CV7kaRAzDJj46n",
       "name": "MERGE_SLERP_HIERARCHICAL"
+    },
+    "distillation/TEACHER_READY": {
+      "message_id": "msg_19bc4314f001TUscxXCKBixhhA",
+      "name": "TEACHER_READY"
     }
   },
   "distillation_wakeup": "msg_198c05d6e001rCmKfxbWdrkRs4",
@@ -95,6 +99,6 @@
     "five:1793540309.6354365:evaluation exited 1; see /home/dev/assumeengage/logs/takeover-evaluation.log",
     "distillation:1793600425.7736452:teacher-assets stopped before completion; see /home/dev/assumeengage/logs/distillation-teacher-assets.log"
   ],
-  "last_observed_utc": "2026-11-02T10:14:07.266284+00:00",
+  "last_observed_utc": "2026-11-02T10:28:11.994758+00:00",
   "last_five_area_stage": "complete"
 }

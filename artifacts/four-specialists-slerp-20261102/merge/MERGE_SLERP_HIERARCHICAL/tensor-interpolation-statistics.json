@@ -1,0 +1,4356 @@
+{
+  "model.embed_tokens.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.0.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.0.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9882836937904358
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9975818991661072
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9964678287506104
+    }
+  },
+  "model.layers.0.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9869305491447449
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9966522455215454
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9959070086479187
+    }
+  },
+  "model.layers.0.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9803165197372437
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9949408173561096
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9937469363212585
+    }
+  },
+  "model.layers.0.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.0.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.0.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9869047999382019
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9960943460464478
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9956707954406738
+    }
+  },
+  "model.layers.0.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9890986680984497
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9971268773078918
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9965590238571167
+    }
+  },
+  "model.layers.0.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.0.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9853227138519287
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9953622221946716
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9951502084732056
+    }
+  },
+  "model.layers.0.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9864664077758789
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9961556792259216
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9956283569335938
+    }
+  },
+  "model.layers.1.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.1.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9861407279968262
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.996427595615387
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9956611394882202
+    }
+  },
+  "model.layers.1.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9905828237533569
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9973879456520081
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9970077276229858
+    }
+  },
+  "model.layers.1.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9795634746551514
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.993996262550354
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9932607412338257
+    }
+  },
+  "model.layers.1.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.1.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.1.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9822514057159424
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9959590435028076
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9944490194320679
+    }
+  },
+  "model.layers.1.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9865849614143372
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9968200922012329
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9958405494689941
+    }
+  },
+  "model.layers.1.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.1.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9835802912712097
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.995761513710022
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9947608709335327
+    }
+  },
+  "model.layers.1.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9847209453582764
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9959349036216736
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9950762987136841
+    }
+  },
+  "model.layers.10.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.10.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9881054162979126
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9967107772827148
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9962282776832581
+    }
+  },
+  "model.layers.10.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9835354089736938
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9958385229110718
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9948226809501648
+    }
+  },
+  "model.layers.10.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.980348527431488
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9944177865982056
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9936599731445312
+    }
+  },
+  "model.layers.10.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.10.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.10.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9803440570831299
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9941969513893127
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9934795498847961
+    }
+  },
+  "model.layers.10.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9882036447525024
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9963521957397461
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9961464405059814
+    }
+  },
+  "model.layers.10.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.10.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9833681583404541
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9951393604278564
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9945356845855713
+    }
+  },
+  "model.layers.10.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9836153388023376
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9956029057502747
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9946656823158264
+    }
+  },
+  "model.layers.11.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.11.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9876300096511841
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9968053102493286
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9961135983467102
+    }
+  },
+  "model.layers.11.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9818152785301208
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9951775670051575
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9942374229431152
+    }
+  },
+  "model.layers.11.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9833511710166931
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9951267838478088
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9945864081382751
+    }
+  },
+  "model.layers.11.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.11.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.11.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9807862639427185
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9941266775131226
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9935798048973083
+    }
+  },
+  "model.layers.11.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9887762069702148
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9965772032737732
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9963254332542419
+    }
+  },
+  "model.layers.11.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.11.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9887301921844482
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.996173620223999
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9962142705917358
+    }
+  },
+  "model.layers.11.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9863981008529663
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9960910081863403
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.99555504322052
+    }
+  },
+  "model.layers.12.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.12.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9857931733131409
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.99718177318573
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9957477450370789
+    }
+  },
+  "model.layers.12.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9783895611763
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9937965869903564
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.992943525314331
+    }
+  },
+  "model.layers.12.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9831331968307495
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9950509071350098
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9945218563079834
+    }
+  },
+  "model.layers.12.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.12.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.12.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9807705879211426
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9935435056686401
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9934679865837097
+    }
+  },
+  "model.layers.12.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9849766492843628
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9961013793945312
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9952214956283569
+    }
+  },
+  "model.layers.12.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.12.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.986121416091919
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9951735138893127
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9953805804252625
+    }
+  },
+  "model.layers.12.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9815058708190918
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.995893120765686
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9942905902862549
+    }
+  },
+  "model.layers.13.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.13.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9853354692459106
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9960362315177917
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.995327353477478
+    }
+  },
+  "model.layers.13.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9761576652526855
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9938262104988098
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9924192428588867
+    }
+  },
+  "model.layers.13.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9817060232162476
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9943074584007263
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9939535856246948
+    }
+  },
+  "model.layers.13.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.13.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.13.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9746872782707214
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9920780658721924
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9914896488189697
+    }
+  },
+  "model.layers.13.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9885850548744202
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9968305230140686
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9963486790657043
+    }
+  },
+  "model.layers.13.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.13.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9849563837051392
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9952042102813721
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.995001494884491
+    }
+  },
+  "model.layers.13.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9841574430465698
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9959931373596191
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.99495929479599
+    }
+  },
+  "model.layers.14.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.14.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9846987724304199
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.994436502456665
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9946871995925903
+    }
+  },
+  "model.layers.14.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9714053869247437
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9932094812393188
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9909709692001343
+    }
+  },
+  "model.layers.14.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9796302914619446
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9943528175354004
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9933276772499084
+    }
+  },
+  "model.layers.14.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.14.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.14.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9727743864059448
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9895039200782776
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9902780652046204
+    }
+  },
+  "model.layers.14.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9810264110565186
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9928715229034424
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.993407666683197
+    }
+  },
+  "model.layers.14.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.14.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9842352867126465
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9941924810409546
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.994521975517273
+    }
+  },
+  "model.layers.14.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9803637862205505
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9933923482894897
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.993349015712738
+    }
+  },
+  "model.layers.15.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.15.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9885810613632202
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.99718177318573
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9964271187782288
+    }
+  },
+  "model.layers.15.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9711167812347412
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9934771060943604
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9907456636428833
+    }
+  },
+  "model.layers.15.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9827519655227661
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9955427050590515
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9944779276847839
+    }
+  },
+  "model.layers.15.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.15.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.15.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9654025435447693
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9894047975540161
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9882299900054932
+    }
+  },
+  "model.layers.15.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.975633442401886
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.994601309299469
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.992340087890625
+    }
+  },
+  "model.layers.15.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.15.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9787442684173584
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.995044469833374
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9932723045349121
+    }
+  },
+  "model.layers.15.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9858933091163635
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9938962459564209
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9948232769966125
+    }
+  },
+  "model.layers.16.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.16.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9903357625007629
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9975377321243286
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.996957540512085
+    }
+  },
+  "model.layers.16.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9677584171295166
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9943169951438904
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9899241328239441
+    }
+  },
+  "model.layers.16.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.98521488904953
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9963089823722839
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9952923059463501
+    }
+  },
+  "model.layers.16.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.16.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.16.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9626572132110596
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9890809655189514
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9874587059020996
+    }
+  },
+  "model.layers.16.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9888927340507507
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9943626523017883
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9956908226013184
+    }
+  },
+  "model.layers.16.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.16.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9833096265792847
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9940243363380432
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9942399263381958
+    }
+  },
+  "model.layers.16.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9826818704605103
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9944990873336792
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9941011071205139
+    }
+  },
+  "model.layers.17.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.17.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9933183193206787
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9978199601173401
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9978256225585938
+    }
+  },
+  "model.layers.17.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9814997911453247
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9949511289596558
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9939723610877991
+    }
+  },
+  "model.layers.17.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9878666996955872
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9966245889663696
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9960824251174927
+    }
+  },
+  "model.layers.17.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.17.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.17.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9526801705360413
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9886674880981445
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9846653938293457
+    }
+  },
+  "model.layers.17.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9889444708824158
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9953404664993286
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9959786534309387
+    }
+  },
+  "model.layers.17.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.17.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9881235957145691
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9951866865158081
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9958217740058899
+    }
+  },
+  "model.layers.17.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9776252508163452
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9941109418869019
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9925804138183594
+    }
+  },
+  "model.layers.18.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.18.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9940159320831299
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9991011023521423
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9983152151107788
+    }
+  },
+  "model.layers.18.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9848406314849854
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9955549836158752
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9951213598251343
+    }
+  },
+  "model.layers.18.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9909447431564331
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9974937438964844
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9971176981925964
+    }
+  },
+  "model.layers.18.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.18.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.18.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.970414400100708
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9936524629592896
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9907082319259644
+    }
+  },
+  "model.layers.18.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9925848245620728
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9983298182487488
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.997744083404541
+    }
+  },
+  "model.layers.18.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.18.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9874075055122375
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9972580671310425
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9961548447608948
+    }
+  },
+  "model.layers.18.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9828517436981201
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9967964887619019
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9948371648788452
+    }
+  },
+  "model.layers.19.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.19.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9963082671165466
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9992464780807495
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9989268183708191
+    }
+  },
+  "model.layers.19.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9792658686637878
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9964483976364136
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9938299059867859
+    }
+  },
+  "model.layers.19.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9919670224189758
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9976804852485657
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9974368810653687
+    }
+  },
+  "model.layers.19.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.19.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.19.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9677361249923706
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9949478507041931
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9902618527412415
+    }
+  },
+  "model.layers.19.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9918982982635498
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9976906776428223
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.997402548789978
+    }
+  },
+  "model.layers.19.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.19.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9848995208740234
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9970009326934814
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.995436429977417
+    }
+  },
+  "model.layers.19.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9883060455322266
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9981185793876648
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9965233206748962
+    }
+  },
+  "model.layers.2.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.2.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9874990582466125
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.996701180934906
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9960682392120361
+    }
+  },
+  "model.layers.2.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.988060474395752
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9966164231300354
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9961733222007751
+    }
+  },
+  "model.layers.2.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9778409004211426
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.993851900100708
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.992848813533783
+    }
+  },
+  "model.layers.2.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.2.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.2.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9826244115829468
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9950037002563477
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9943735599517822
+    }
+  },
+  "model.layers.2.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.986794114112854
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9962781667709351
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9957500100135803
+    }
+  },
+  "model.layers.2.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.2.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9841793775558472
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9958192706108093
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9949300289154053
+    }
+  },
+  "model.layers.2.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.984771728515625
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9957002997398376
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9950924515724182
+    }
+  },
+  "model.layers.20.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.20.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9968906044960022
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9991806745529175
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9990783929824829
+    }
+  },
+  "model.layers.20.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9842090010643005
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9974814653396606
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9954156875610352
+    }
+  },
+  "model.layers.20.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9920845031738281
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9985120296478271
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9976860284805298
+    }
+  },
+  "model.layers.20.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.20.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.20.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9750456809997559
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9944127798080444
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9921458959579468
+    }
+  },
+  "model.layers.20.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9950451254844666
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9992462396621704
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9986100792884827
+    }
+  },
+  "model.layers.20.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.20.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9937697052955627
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9987568855285645
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9981832504272461
+    }
+  },
+  "model.layers.20.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9838902950286865
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.994536280632019
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9946243762969971
+    }
+  },
+  "model.layers.21.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.21.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9984934329986572
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9997759461402893
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9996212720870972
+    }
+  },
+  "model.layers.21.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9882739782333374
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9980726838111877
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9965987205505371
+    }
+  },
+  "model.layers.21.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9947717189788818
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9989437460899353
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9984619617462158
+    }
+  },
+  "model.layers.21.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.21.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.21.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9785398244857788
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9962265491485596
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9935688376426697
+    }
+  },
+  "model.layers.21.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9971317052841187
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9995315074920654
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.999193549156189
+    }
+  },
+  "model.layers.21.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.21.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9925189018249512
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9985546469688416
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9978223443031311
+    }
+  },
+  "model.layers.21.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9955030679702759
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9991083145141602
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9986755847930908
+    }
+  },
+  "model.layers.22.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.22.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9984238147735596
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9998485445976257
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9996180534362793
+    }
+  },
+  "model.layers.22.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9899758696556091
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9982025623321533
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9970651268959045
+    }
+  },
+  "model.layers.22.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9959059953689575
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9990860819816589
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9987940192222595
+    }
+  },
+  "model.layers.22.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.22.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.22.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9826695919036865
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.997546911239624
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9949735999107361
+    }
+  },
+  "model.layers.22.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9968880414962769
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9995522499084473
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9991303086280823
+    }
+  },
+  "model.layers.22.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.22.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9941291809082031
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9988864064216614
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9983102679252625
+    }
+  },
+  "model.layers.22.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9951143264770508
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9993340969085693
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.998593807220459
+    }
+  },
+  "model.layers.23.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.23.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9987279772758484
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9999146461486816
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9997093081474304
+    }
+  },
+  "model.layers.23.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9923998713493347
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9986451268196106
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.997804582118988
+    }
+  },
+  "model.layers.23.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9964492321014404
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9992147088050842
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9989718198776245
+    }
+  },
+  "model.layers.23.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.23.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.23.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9686561822891235
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9967214465141296
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9911004304885864
+    }
+  },
+  "model.layers.23.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9980229139328003
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.999591588973999
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9994290471076965
+    }
+  },
+  "model.layers.23.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.23.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9891960024833679
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9985941052436829
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9969963431358337
+    }
+  },
+  "model.layers.23.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9951159954071045
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9989676475524902
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9985475540161133
+    }
+  },
+  "model.layers.24.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.24.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9992629885673523
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.999934196472168
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9998492002487183
+    }
+  },
+  "model.layers.24.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.994210958480835
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.998736560344696
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9982767105102539
+    }
+  },
+  "model.layers.24.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9975576400756836
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9994175434112549
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9992913603782654
+    }
+  },
+  "model.layers.24.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.24.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.24.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9745287895202637
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9981978535652161
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9930622577667236
+    }
+  },
+  "model.layers.24.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9985952973365784
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9997578859329224
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9996128678321838
+    }
+  },
+  "model.layers.24.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.24.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9934133887290955
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9988265037536621
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9981236457824707
+    }
+  },
+  "model.layers.24.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9970117211341858
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9993816614151001
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9991111755371094
+    }
+  },
+  "model.layers.25.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.25.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9993634223937988
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9999650716781616
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9998832941055298
+    }
+  },
+  "model.layers.25.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9941732287406921
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9986238479614258
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9982631802558899
+    }
+  },
+  "model.layers.25.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.997766375541687
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9994308948516846
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9993579387664795
+    }
+  },
+  "model.layers.25.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.25.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.25.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.978334903717041
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9981006383895874
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.993807315826416
+    }
+  },
+  "model.layers.25.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9990044832229614
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9998081922531128
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9997314214706421
+    }
+  },
+  "model.layers.25.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.25.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9949662685394287
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9992769956588745
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9985775947570801
+    }
+  },
+  "model.layers.25.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9982928037643433
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9996678829193115
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9995220303535461
+    }
+  },
+  "model.layers.26.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.26.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9993208050727844
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9999957084655762
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9998928308486938
+    }
+  },
+  "model.layers.26.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9833875894546509
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.998895525932312
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9955765008926392
+    }
+  },
+  "model.layers.26.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9835234880447388
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9956668019294739
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9951804876327515
+    }
+  },
+  "model.layers.26.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.26.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.26.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9539814591407776
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9970895648002625
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9872042536735535
+    }
+  },
+  "model.layers.26.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9982755780220032
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9998434782028198
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9995653629302979
+    }
+  },
+  "model.layers.26.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.26.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9954096078872681
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.999447226524353
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9987425804138184
+    }
+  },
+  "model.layers.26.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9961514472961426
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9995417594909668
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9989016652107239
+    }
+  },
+  "model.layers.27.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.27.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "linear_collinear",
+      "cosine": 0.9995892643928528
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9999822974205017
+    }
+  },
+  "model.layers.27.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9806669354438782
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9991518259048462
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9949198961257935
+    }
+  },
+  "model.layers.27.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9221862554550171
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9958156943321228
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9810725450515747
+    }
+  },
+  "model.layers.27.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.27.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.27.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9694461226463318
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9986039400100708
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9919701814651489
+    }
+  },
+  "model.layers.27.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "linear_collinear",
+      "cosine": 0.9995967745780945
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9998223185539246
+    },
+    "final": {
+      "mode": "linear_collinear",
+      "cosine": 0.9998913407325745
+    }
+  },
+  "model.layers.27.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.27.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9968428611755371
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9995388388633728
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9991384744644165
+    }
+  },
+  "model.layers.27.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.997970700263977
+    },
+    "tools_arts": {
+      "mode": "linear_collinear",
+      "cosine": 0.9997756481170654
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9994640350341797
+    }
+  },
+  "model.layers.3.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.3.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9854134917259216
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9966017007827759
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9954949617385864
+    }
+  },
+  "model.layers.3.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9881204962730408
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.997003436088562
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9962968230247498
+    }
+  },
+  "model.layers.3.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9792543649673462
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9942190647125244
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9933224320411682
+    }
+  },
+  "model.layers.3.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.3.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.3.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9817929267883301
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.995280385017395
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9941877722740173
+    }
+  },
+  "model.layers.3.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9872268438339233
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9970699548721313
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9960498809814453
+    }
+  },
+  "model.layers.3.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.3.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9841751456260681
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9956765174865723
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9948722124099731
+    }
+  },
+  "model.layers.3.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9855918288230896
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9964420795440674
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9954661726951599
+    }
+  },
+  "model.layers.4.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.4.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9856431484222412
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9965531826019287
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9955524206161499
+    }
+  },
+  "model.layers.4.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9871130585670471
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9968565702438354
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9960013031959534
+    }
+  },
+  "model.layers.4.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9802137613296509
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.994351327419281
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9936572313308716
+    }
+  },
+  "model.layers.4.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.4.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.4.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9823089241981506
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9956928491592407
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9943984746932983
+    }
+  },
+  "model.layers.4.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9875617027282715
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9966812133789062
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9961166381835938
+    }
+  },
+  "model.layers.4.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.4.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9852455854415894
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9957104921340942
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9952182769775391
+    }
+  },
+  "model.layers.4.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9849885106086731
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9962343573570251
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9952923059463501
+    }
+  },
+  "model.layers.5.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.5.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.986583948135376
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9968966245651245
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.995883584022522
+    }
+  },
+  "model.layers.5.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9842891693115234
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9961932897567749
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9950941801071167
+    }
+  },
+  "model.layers.5.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9810059666633606
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9947447180747986
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9939218759536743
+    }
+  },
+  "model.layers.5.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.5.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.5.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9797816872596741
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.994607150554657
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9935234189033508
+    }
+  },
+  "model.layers.5.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9871763586997986
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9966559410095215
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.995964527130127
+    }
+  },
+  "model.layers.5.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.5.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9842827320098877
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9959311485290527
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9949980974197388
+    }
+  },
+  "model.layers.5.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9849269390106201
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9960265159606934
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9951600432395935
+    }
+  },
+  "model.layers.6.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.6.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9862439632415771
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9967488050460815
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9957707524299622
+    }
+  },
+  "model.layers.6.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9828803539276123
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9958109259605408
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9946494102478027
+    }
+  },
+  "model.layers.6.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9809584617614746
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9946038722991943
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9938609004020691
+    }
+  },
+  "model.layers.6.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.6.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.6.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9813263416290283
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9942931532859802
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9937692880630493
+    }
+  },
+  "model.layers.6.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9848337173461914
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9959914684295654
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9951518774032593
+    }
+  },
+  "model.layers.6.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.6.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9859214425086975
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9957327842712402
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9954079985618591
+    }
+  },
+  "model.layers.6.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9852967262268066
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9960074424743652
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9952583312988281
+    }
+  },
+  "model.layers.7.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.7.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9866642951965332
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9968335628509521
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9958798885345459
+    }
+  },
+  "model.layers.7.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9823932647705078
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9956933259963989
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9945058226585388
+    }
+  },
+  "model.layers.7.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9808607697486877
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9945952892303467
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.993817925453186
+    }
+  },
+  "model.layers.7.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.7.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.7.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9803334474563599
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9947267770767212
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9936055541038513
+    }
+  },
+  "model.layers.7.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9855250716209412
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.996107280254364
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9953570365905762
+    }
+  },
+  "model.layers.7.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.7.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.982549250125885
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.995257556438446
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9944370985031128
+    }
+  },
+  "model.layers.7.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9840717315673828
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9956167936325073
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9948707818984985
+    }
+  },
+  "model.layers.8.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.8.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9868108630180359
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9964714646339417
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.995843768119812
+    }
+  },
+  "model.layers.8.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9823610782623291
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.995338499546051
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9943926334381104
+    }
+  },
+  "model.layers.8.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9801895618438721
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.994552731513977
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9936671257019043
+    }
+  },
+  "model.layers.8.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.8.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.8.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9795078039169312
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9946001768112183
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9934340119361877
+    }
+  },
+  "model.layers.8.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9853507280349731
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.996544361114502
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9955113530158997
+    }
+  },
+  "model.layers.8.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.8.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9830936193466187
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9957156777381897
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9946447610855103
+    }
+  },
+  "model.layers.8.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9836422801017761
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9957022070884705
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9947811365127563
+    }
+  },
+  "model.layers.9.input_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.9.mlp.down_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9857972264289856
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9965332746505737
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9955880641937256
+    }
+  },
+  "model.layers.9.mlp.gate_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9824394583702087
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9955881237983704
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9944897890090942
+    }
+  },
+  "model.layers.9.mlp.up_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9804137945175171
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9945218563079834
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9937158823013306
+    }
+  },
+  "model.layers.9.post_attention_layernorm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.9.self_attn.k_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.9.self_attn.k_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9793485403060913
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9945272207260132
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9934360384941101
+    }
+  },
+  "model.layers.9.self_attn.o_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9884360432624817
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9964479207992554
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9961959719657898
+    }
+  },
+  "model.layers.9.self_attn.q_norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "model.layers.9.self_attn.q_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.9859786033630371
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9958025217056274
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9954408407211304
+    }
+  },
+  "model.layers.9.self_attn.v_proj.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.984337568283081
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9957883358001709
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9949443936347961
+    }
+  },
+  "model.norm.weight": {
+    "knowledge_retrieval": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "tools_arts": {
+      "mode": "identical",
+      "cosine": 1.0
+    },
+    "final": {
+      "mode": "identical",
+      "cosine": 1.0
+    }
+  },
+  "score.weight": {
+    "knowledge_retrieval": {
+      "mode": "spherical",
+      "cosine": 0.8906682133674622
+    },
+    "tools_arts": {
+      "mode": "spherical",
+      "cosine": 0.9837484359741211
+    },
+    "final": {
+      "mode": "spherical",
+      "cosine": 0.9669400453567505
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "observed_utc": "2026-11-02T10:14:10.614745+00:00",
+  "source_matches": {
+    "run-slerp-supplement.py": true,
+    "slerp-and-stage-snapshot.py": true
+  },
+  "pipeline": {
+    "stage": "running",
+    "updated_unix": 1793614447.7148077,
+    "owner": "four-specialist-slerp-supplement",
+    "model": "MERGE_SLERP_HIERARCHICAL",
+    "new_training_tokens": 0,
+    "phase": "public_evaluation",
+    "workers": {
+      "0": {
+        "pid": 133307,
+        "gpu": 1,
+        "starttime": "54366714"
+      },
+      "1": {
+        "pid": 133308,
+        "gpu": 2,
+        "starttime": "54366714"
+      },
+      "2": {
+        "pid": 133309,
+        "gpu": 3,
+        "starttime": "54366714"
+      }
+    },
+    "yielding_to_other_jobs": true,
+    "total_shards": 3
+  },
+  "owner": {
+    "pid": 133295,
+    "starttime": "54366169",
+    "script": "/home/dev/assumeengage/scripts/run-slerp-supplement.py"
+  },
+  "controller_alive": true,
+  "exclusive_lock_held": true,
+  "merge": {
+    "complete": true,
+    "model": "MERGE_SLERP_HIERARCHICAL",
+    "method": "hierarchical_slerp_per_tensor",
+    "specialists": [
+      "SPECIALIST_KNOWLEDGE",
+      "SPECIALIST_RETRIEVAL",
+      "SPECIALIST_TOOLS",
+      "SPECIALIST_ARTS"
+    ],
+    "tree": [
+      [
+        "knowledge",
+        "retrieval"
+      ],
+      [
+        "tools",
+        "arts"
+      ]
+    ],
+    "t_each_stage": 0.5,
+    "dot_threshold": 0.9995,
+    "classification_head_included": true,
+    "compute_dtype": "float32",
+    "storage_dtype": "bfloat16",
+    "new_training_tokens": 0,
+    "order_independent_multislerp": false,
+    "interpolation_modes": {
+      "identical": 342,
+      "spherical": 559,
+      "linear_collinear": 32
+    },
+    "bf16_comparison_to_average": {
+      "different_elements": 249095299,
+      "total_elements": 596051968,
+      "maximum_absolute_difference": 0.015625
+    },
+    "elapsed_seconds": 11.140666224993765,
+    "checkpoint": "/home/dev/assumeengage/runs/four-specialists-slerp-20261102/MERGE_SLERP_HIERARCHICAL/final",
+    "artifacts": [
+      "/home/dev/assumeengage/runs/four-specialists-slerp-20261102/MERGE_SLERP_HIERARCHICAL/final",
+      "/home/dev/assumeengage/runs/four-specialists-slerp-20261102/tensor-interpolation-statistics.json"
+    ]
+  },
+  "classification_head_header": {
+    "dtype": "BF16",
+    "shape": [
+      2,
+      1024
+    ],
+    "data_offsets": [
+      1192099840,
+      1192103936
+    ]
+  },
+  "model_bytes": 1192139280,
+  "formal_progress": [
+    {
+      "worker": 0,
+      "complete": false,
+      "model": "MERGE_SLERP_HIERARCHICAL",
+      "new_requests": 800,
+      "terminal_requests_in_shard": 800,
+      "seconds": 149.71802967402618,
+      "nonpadding_tokens": 10550420,
+      "micro_token_budget": 32768
+    },
+    {
+      "worker": 1,
+      "complete": false,
+      "model": "MERGE_SLERP_HIERARCHICAL",
+      "new_requests": 800,
+      "terminal_requests_in_shard": 800,
+      "seconds": 159.92956222291104,
+      "nonpadding_tokens": 11236602,
+      "micro_token_budget": 32768
+    },
+    {
+      "worker": 2,
+      "complete": false,
+      "model": "MERGE_SLERP_HIERARCHICAL",
+      "new_requests": 800,
+      "terminal_requests_in_shard": 800,
+      "seconds": 145.50353676301893,
+      "nonpadding_tokens": 10471993,
+      "micro_token_budget": 32768
+    }
+  ],
+  "worker_interrupt_handlers": {
+    "0": {
+      "pid": 133307,
+      "sigint_ignored": false,
+      "sigint_handler_installed": true
+    },
+    "1": {
+      "pid": 133308,
+      "sigint_ignored": false,
+      "sigint_handler_installed": true
+    },
+    "2": {
+      "pid": 133309,
+      "sigint_ignored": false,
+      "sigint_handler_installed": true
+    }
+  },
+  "original_hard_same_pid_starttime": true,
+  "original_evaluation_conditions": 10,
+  "existing_hard_active": true,
+  "existing_hard_terminal": false,
+  "complete": false,
+  "gpu_status": "0, 59313 MiB, 100 %\n1, 7111 MiB, 100 %\n2, 7071 MiB, 100 %\n3, 6587 MiB, 98 %"
+}
