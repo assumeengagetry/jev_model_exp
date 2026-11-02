@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Notify the user's SCP session and wake the execution session after all phases finish."""
+"""Notify SCP and resume only enabled phases; Teacher is now download-only."""
 import argparse
 from datetime import datetime, timezone
 import fcntl
@@ -14,6 +14,8 @@ EXECUTION = 'ses_e749dc3c2ffev4nW5qgrukOIiC'
 SCP = 'ses_e78d20bb6ffeeIq6l616oJr4f8'
 REMOTE = '/home/dev/assumeengage'
 PLAN = 'reports/next-experiments-plan-20261030/REPORT.md'
+# User update on 2026-11-02: Teacher side downloads then stops; do not revive KD.
+DISTILLATION_CONTINUATION_ENABLED = False
 
 
 def emit(event, **values):
@@ -50,7 +52,7 @@ def api_prompt(session, text, metadata):
 def snapshot():
     result = subprocess.run(['ssh', '-T', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=20',
                              '-o', 'StrictHostKeyChecking=yes', '-o', 'ClearAllForwardings=yes',
-                             'sh-09-gpu', 'python3 -B ' + REMOTE + '/scripts/five-area-stage-snapshot.py'],
+                             'sh-10-gpu', 'python3 -B ' + REMOTE + '/scripts/slerp-and-stage-snapshot.py'],
                             text=True, capture_output=True, timeout=45)
     if result.returncode:
         raise RuntimeError('Cluster stage snapshot failed, exit ' + str(result.returncode))
@@ -62,7 +64,7 @@ def cycle(state):
     fresh = [m for m in current['milestones'] if m['key'] not in state['sent']]
     if fresh:
         text = ('用户要求：每有阶段性成果，通知本session将成果scp回来。以下是新完成的阶段；'
-                '请现在用SSH别名sh-09-gpu将列出的已完成文件/目录拉回本地项目，按阶段整理。'
+                '请现在用SSH别名sh-10-gpu将列出的已完成文件/目录拉回本地项目，按阶段整理。'
                 '本次仅scp，不执行提交/推送，也不改集群的实验或运行进程。'
                 '公共基座已有的不用重复下载；共同初始化 models/Qwen3-0.6B-common-pair-init-r32 '
                 '可从 /home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32 拉取一次，供加载与后续分析。\n'
@@ -73,10 +75,10 @@ def cycle(state):
             state['sent'][item['key']] = {'message_id': receipt, 'name': item['name']}
         save(state)
         emit('scp_stage_notification_admitted', message_id=receipt, milestones=[m['key'] for m in fresh])
-    if current['five_area_complete'] and not state['distillation_wakeup']:
+    if DISTILLATION_CONTINUATION_ENABLED and current['five_area_complete'] and not state['distillation_wakeup']:
         text = ('用户已明确授权，并最新取消 Language 专家及其训练曝光：等四专科、四科 MIXED_ALL、五种融合和10条件统一五维评测全部结束后，'
                 '接着执行 ' + PLAN + ' 的Teacher蒸馏实验。集群完成标记和控制锁现已满足该条件。'
-                '请直接SSH sh-09-gpu接手，不等待第二次开训确认。先读这份报告及集群AGENTS.md，'
+                '请直接SSH sh-10-gpu接手，不等待第二次开训确认。先读这份报告及集群AGENTS.md，'
                 '默认以已训练MIXED_ALL为共同Student起点，复用完整有效四科训练池和token缓存。'
                 '务必先读 config/experiment-five-specialists.json、config/queued-distillation.json 和上一轮 ACTIVE_TRAINING_SCOPE.json；'
                 '只用 knowledge、retrieval、tools、arts，缓存中的 Language 保留但不得补标或训练；'
@@ -93,7 +95,9 @@ def cycle(state):
         state['distillation_wakeup'] = receipt
         save(state)
         emit('distillation_execution_wakeup_admitted', message_id=receipt)
-    pipelines = [('five', current.get('pipeline', {})), ('distillation', current.get('distillation_status', {}))]
+    pipelines = [('five', current.get('pipeline', {})), ('slerp', current.get('slerp_status', {}))]
+    if DISTILLATION_CONTINUATION_ENABLED:
+        pipelines.append(('distillation', current.get('distillation_status', {})))
     for label, pipeline in pipelines:
         if pipeline.get('stage') != 'blocked':
             continue
@@ -102,7 +106,13 @@ def cycle(state):
             continue
         text = ('已授权集群实验出现阻塞，请实际SSH接手修复并从现有进度继续，不缩减当前有效四科数据和训练预算；'
                 'Language 专家及其混合训练曝光已由用户取消，不得恢复；先读当前配置与 ACTIVE_TRAINING_SCOPE.json。'
-                '不动不属于本轮的任务。当前状态：\n' + json.dumps(pipeline, ensure_ascii=False, indent=2))
+                'SSH入口已更新为 sh-10-gpu。不动不属于本轮的任务。当前状态：\n' + json.dumps(pipeline, ensure_ascii=False, indent=2))
+        if label == 'slerp':
+            text = ('用户已授权四专家分层 SLERP 补测。请 SSH sh-10-gpu 接手 '
+                    '/home/dev/assumeengage/runs/four-specialists-slerp-20261102 的阻塞，'
+                    '复用已完成融合/评测分片；不重训专家、不恢复 Language、不修改原十条件或其他 KD 作业，'
+                    '只在空闲 GPU 推进本补测，保留让卡与断点续跑。当前状态：\n'
+                    + json.dumps(pipeline, ensure_ascii=False, indent=2))
         receipt = api_prompt(EXECUTION, text, {'sender': 'owned-experiment-blocked', 'phase': label})
         state['blocked_wakeups'].append(key)
         save(state)
@@ -110,7 +120,10 @@ def cycle(state):
     state['last_observed_utc'] = datetime.now(timezone.utc).isoformat()
     state['last_five_area_stage'] = current.get('pipeline', {}).get('stage')
     save(state)
-    return current['distillation_complete']
+    if not DISTILLATION_CONTINUATION_ENABLED:
+        return bool(current.get('slerp_complete') and 'distillation/TEACHER_READY' in state['sent']
+                    and current.get('existing_hard_terminal'))
+    return current['distillation_complete'] and (not current.get('slerp_status') or current.get('slerp_complete', False))
 
 
 def main():

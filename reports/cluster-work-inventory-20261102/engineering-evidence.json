@@ -1,0 +1,1592 @@
+{
+  "observed_utc": "2026-11-02T09:37:31.395107+00:00",
+  "read_only": true,
+  "private_ids_and_credentials_omitted": true,
+  "records": {
+    "backup/modelscope-20261031/SUMMARY.json": {
+      "endpoint": "[REDACTED]",
+      "updated_utc": "2026-11-01T04:22:11+00:00",
+      "scope": "large_asset_backup; small SCP assets recorded separately",
+      "initial_snapshot_complete": true,
+      "complete": false,
+      "pending_final_models": [
+        "SPECIALIST_LANGUAGE",
+        "MIXED_ALL",
+        "MERGE_AVERAGE",
+        "MERGE_TASK_ARITHMETIC",
+        "MERGE_TIES",
+        "MERGE_DARE_TASK_ARITHMETIC",
+        "MERGE_DARE_TIES"
+      ],
+      "verified_units": 25,
+      "verified_files": 1380,
+      "verified_bytes": 21534194843,
+      "note": "Only remotely verified stable assets are counted. Pending source models are not claimed complete.",
+      "units": [
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "completed_trained_model",
+          "status": "verified",
+          "files": 4,
+          "bytes": 80808657
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "completed_trained_model",
+          "status": "verified",
+          "files": 4,
+          "bytes": 80808657
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "initialization_and_tokenizer_not_final_student",
+          "status": "verified",
+          "files": 12,
+          "bytes": 96687227
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "adapter_base_dependency",
+          "status": "verified",
+          "files": 11,
+          "bytes": 1519208932
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "distillation_migration_dependency",
+          "status": "verified",
+          "files": 36,
+          "bytes": 2222727128
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "distillation_migration_dependency",
+          "status": "verified",
+          "files": 9,
+          "bytes": 5411645242
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "distillation_migration_dependency",
+          "status": "verified",
+          "files": 9,
+          "bytes": 2694863439
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "distillation_migration_dependency",
+          "status": "verified",
+          "files": 8,
+          "bytes": 814218730
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "distillation_migration_dependency",
+          "status": "verified",
+          "files": 26,
+          "bytes": 729332442
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "source_and_preparation_backup",
+          "status": "verified",
+          "files": 43,
+          "bytes": 164848935
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "source_and_preparation_backup",
+          "status": "verified",
+          "files": 6,
+          "bytes": 8529217
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "source_and_preparation_backup",
+          "status": "verified",
+          "files": 6,
+          "bytes": 1140954024
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "source_and_preparation_backup",
+          "status": "verified",
+          "files": 8,
+          "bytes": 329242
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "source_and_preparation_backup",
+          "status": "verified",
+          "files": 52,
+          "bytes": 2344994378
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "source_and_preparation_backup",
+          "status": "verified",
+          "files": 1036,
+          "bytes": 227923905
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "source_and_preparation_backup",
+          "status": "verified",
+          "files": 11,
+          "bytes": 321954284
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "source_and_preparation_backup",
+          "status": "verified",
+          "files": 55,
+          "bytes": 2056816689
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "stable_checkpoint_not_necessarily_final",
+          "status": "verified",
+          "files": 6,
+          "bytes": 242654376
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "stable_checkpoint_not_necessarily_final",
+          "status": "verified",
+          "files": 6,
+          "bytes": 242654377
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "stable_checkpoint_not_necessarily_final",
+          "status": "verified",
+          "files": 6,
+          "bytes": 242654446
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "stable_checkpoint_not_necessarily_final",
+          "status": "verified",
+          "files": 6,
+          "bytes": 242654446
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "stable_checkpoint_not_necessarily_final",
+          "status": "verified",
+          "files": 6,
+          "bytes": 242654378
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "stable_checkpoint_not_necessarily_final",
+          "status": "verified",
+          "files": 6,
+          "bytes": 242654378
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "completed_trained_model",
+          "status": "verified",
+          "files": 4,
+          "bytes": 80808657
+        },
+        {
+          "repo": "[REDACTED]",
+          "repo_type": "[REDACTED]",
+          "path_in_repo": "[REDACTED]",
+          "role": "completed_trained_model",
+          "status": "verified",
+          "files": 4,
+          "bytes": 80808657
+        }
+      ]
+    },
+    "backup/modelscope-20261031/FINAL-RECEIPT.json": {
+      "verified_utc": "2026-10-31T10:04:41+00:00",
+      "endpoint": "[REDACTED]",
+      "initial_snapshot_complete": true,
+      "phase": "watching_completed_source_models",
+      "repositories": "[REDACTED]",
+      "verified_units": 23,
+      "verified_unit_files": 1372,
+      "verified_unit_bytes": 21372577529,
+      "source_inventory_file_matches": 1368,
+      "source_inventory_missing_files": [
+        {
+          "path": "datasets/README.md",
+          "bytes": 2612,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmark-sources/arts/habermas.parquet.part",
+          "bytes": 197915995,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmark-sources/games/boxoban.tar.gz.part",
+          "bytes": 14942208,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmark-sources/games/chessbench-first-train-shard.bag.part",
+          "bytes": 263803391,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmark-sources/retrieval/sgd.tar.gz.part",
+          "bytes": 18006016,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/arts/newyorker/matching/train-00000-of-00002.parquet.part",
+          "bytes": 2822217,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/knowledge/gsm8k/main/train-00000-of-00001.parquet.part",
+          "bytes": 1798338,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/knowledge/mmlu/auxiliary_train/train-00000-of-00001.parquet.part",
+          "bytes": 4808246,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/knowledge/winogrande/winogrande_xl/train-00000-of-00001.parquet.part",
+          "bytes": 1882283,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/language/anli/plain_text/train_r1-00000-of-00001.parquet.part",
+          "bytes": 2159401,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/language/contractnli/contractnli_b/train.parquet.part",
+          "bytes": 2059651,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/language/hellaswag/data/train-00000-of-00001.parquet.part",
+          "bytes": 3296435,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/retrieval/esci/data/train-00000-of-00011-2d36455632bef8a2.parquet.part",
+          "bytes": 2017251,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/tools/apibank/training-data/lv1-api-train.json.part",
+          "bytes": 1619230,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/tools/toolret/ToolRet-Training-20w/train-00000-of-00006.parquet.part",
+          "bytes": 2439151,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/tools/toolret/ToolRet-Training-20w/train-00001-of-00006.parquet.part",
+          "bytes": 98304,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/tools/toolret/ToolRet-Training-20w/train-00002-of-00006.parquet.part",
+          "bytes": 270336,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/benchmarks-train/tools/when2call/train/when2call_train_pref.jsonl.part",
+          "bytes": 4884237,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/evaluation-only/decision-index-suite-0.3/added-rows.jsonl.gz.download.part",
+          "bytes": 640861,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/evaluation-only/decision-index-suite-0.3/selected-rows.jsonl.gz.download.part",
+          "bytes": 295758,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/data/test-00000-of-00001.parquet.part",
+          "bytes": 2329086,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/data/train-00000-of-00006.parquet.part",
+          "bytes": 2072665,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/data/train-00001-of-00006.parquet.part",
+          "bytes": 2821699,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/data/train-00002-of-00006.parquet.part",
+          "bytes": 4610804,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/data/train-00003-of-00006.parquet.part",
+          "bytes": 3186383,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/data/train-00004-of-00006.parquet.part",
+          "bytes": 1266286,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/data/train-00005-of-00006.parquet.part",
+          "bytes": 4677347,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/data/validation-00000-of-00001.parquet.part",
+          "bytes": 1792398,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00000-of-00013.parquet.part",
+          "bytes": 2662665,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00001-of-00013.parquet.part",
+          "bytes": 2574852,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00002-of-00013.parquet.part",
+          "bytes": 1525261,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00003-of-00013.parquet.part",
+          "bytes": 1225897,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00004-of-00013.parquet.part",
+          "bytes": 1689059,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00005-of-00013.parquet.part",
+          "bytes": 1164661,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00006-of-00013.parquet.part",
+          "bytes": 649557,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00007-of-00013.parquet.part",
+          "bytes": 282432,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00008-of-00013.parquet.part",
+          "bytes": 1579767,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00009-of-00013.parquet.part",
+          "bytes": 1179787,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00010-of-00013.parquet.part",
+          "bytes": 1482391,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00011-of-00013.parquet.part",
+          "bytes": 1958918,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/filtered-full/train-00012-of-00013.parquet.part",
+          "bytes": 1348695,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/test-00000-of-00001.parquet.part",
+          "bytes": 423525,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00000-of-00015.parquet.part",
+          "bytes": 1283051,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00001-of-00015.parquet.part",
+          "bytes": 1040137,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00002-of-00015.parquet.part",
+          "bytes": 908182,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00003-of-00015.parquet.part",
+          "bytes": 871611,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00004-of-00015.parquet.part",
+          "bytes": 553479,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00005-of-00015.parquet.part",
+          "bytes": 727201,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00006-of-00015.parquet.part",
+          "bytes": 776489,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00007-of-00015.parquet.part",
+          "bytes": 750115,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00008-of-00015.parquet.part",
+          "bytes": 1330805,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00009-of-00015.parquet.part",
+          "bytes": 815779,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00010-of-00015.parquet.part",
+          "bytes": 855032,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00011-of-00015.parquet.part",
+          "bytes": 1086080,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00012-of-00015.parquet.part",
+          "bytes": 541415,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00013-of-00015.parquet.part",
+          "bytes": 1418033,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-00014-of-00015.parquet.part",
+          "bytes": 1580260,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-append-517726f3090c-00000-of-00001.parquet.part",
+          "bytes": 1323523,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/train-append-567998ccbb99-00000-of-00001.parquet.part",
+          "bytes": 1080488,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/tasksource-jev-typed-decisions/full/validation-00000-of-00001.parquet.part",
+          "bytes": 818930,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/zero-shot-label-nli/data/train-00000-of-00005.parquet.xet.part",
+          "bytes": 0,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/zero-shot-label-nli/data/train-00001-of-00005.parquet.xet.part",
+          "bytes": 0,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/zero-shot-label-nli/data/train-00002-of-00005.parquet.xet.part",
+          "bytes": 0,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/zero-shot-label-nli/data/train-00003-of-00005.parquet.xet.part",
+          "bytes": 0,
+          "kind": "source_data"
+        },
+        {
+          "path": "datasets/zero-shot-label-nli/data/train-00004-of-00005.parquet.xet.part",
+          "bytes": 0,
+          "kind": "source_data"
+        },
+        {
+          "path": "runs/five-specialists-20261030/PIPELINE.json",
+          "bytes": 315,
+          "kind": "run_metadata"
+        },
+        {
+          "path": "runs/five-specialists-20261030/TAKEOVER.json",
+          "bytes": 222,
+          "kind": "run_metadata"
+        },
+        {
+          "path": "runs/five-specialists-20261030/SPECIALIST_ARTS/latest.json",
+          "bytes": 52,
+          "kind": "run_metadata"
+        },
+        {
+          "path": "runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/latest.json",
+          "bytes": 53,
+          "kind": "run_metadata"
+        },
+        {
+          "path": "runs/five-specialists-20261030/SPECIALIST_TOOLS/latest.json",
+          "bytes": 53,
+          "kind": "run_metadata"
+        }
+      ],
+      "source_inventory_size_mismatches": [],
+      "excluded_credential_pattern_files": "[REDACTED]",
+      "incremental_watch": {
+        "pid": 67837,
+        "alive": true,
+        "current_worker_mode": "watch",
+        "current_worker_pid": 67837,
+        "max_hours": 72
+      },
+      "pending_final_models": [
+        "SPECIALIST_LANGUAGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_ARTS",
+        "MIXED_ALL",
+        "MERGE_AVERAGE",
+        "MERGE_TASK_ARITHMETIC",
+        "MERGE_TIES",
+        "MERGE_DARE_TASK_ARITHMETIC",
+        "MERGE_DARE_TIES"
+      ]
+    },
+    "backup/modelscope-20261031/SMALL-ASSET-UPLOAD-RECEIPT.json": {
+      "verified_utc": "2026-10-31T10:16:43+00:00",
+      "dataset_repo": "[REDACTED]",
+      "private": true,
+      "supplementary_assets": [
+        {
+          "path": "support/scp-small-assets-20261031.tar.gz",
+          "bytes": 16363078
+        },
+        {
+          "path": "support/SCP-SMALL-ASSETS.json",
+          "bytes": 97047
+        },
+        {
+          "path": "RESTORE.md",
+          "bytes": 4939
+        }
+      ],
+      "source_file_count": 469,
+      "verified": true
+    },
+    "backup/modelscope-20261031/GUIDE-UPLOAD-RECEIPT.json": {
+      "verified": true,
+      "verified_utc": "2026-10-31T10:36:29+00:00",
+      "repo": "[REDACTED]",
+      "prefix": "support/a800",
+      "files": [
+        "REPORT.md",
+        "requirements-student.txt",
+        "requirements-teacher-hf.txt",
+        "figures/a800-gpu-allocation.png",
+        "figures/a800-gpu-allocation.svg"
+      ],
+      "bytes": 219855,
+      "restore_guide_updated_in_both_repos": "[REDACTED]"
+    },
+    "backup/modelscope-20261031/RESTORE-GUIDE-RECEIPT.json": {
+      "verified_utc": "2026-10-31T10:47:36+00:00",
+      "entries": [
+        {
+          "repo": "[REDACTED]",
+          "path": "RESTORE.md",
+          "bytes": 5884,
+          "verified": true
+        },
+        {
+          "repo": "[REDACTED]",
+          "path": "RESTORE.md",
+          "bytes": 5884,
+          "verified": true
+        }
+      ],
+      "restore_missing_only": true
+    },
+    "backup/modelscope-20261031/upload-state.json": {
+      "complete": false,
+      "initial_snapshot_complete": true,
+      "pending_final_models": [
+        "SPECIALIST_LANGUAGE",
+        "MIXED_ALL",
+        "MERGE_AVERAGE",
+        "MERGE_TASK_ARITHMETIC",
+        "MERGE_TIES",
+        "MERGE_DARE_TASK_ARITHMETIC",
+        "MERGE_DARE_TIES"
+      ],
+      "unit_count": 25,
+      "unit_statuses": {
+        "verified": 25
+      }
+    },
+    "runs/five-specialists-20261030/evaluation-recovery-20261101/resumed.json": {
+      "time_utc": "2026-11-01T09:00:28.467723+00:00",
+      "controller_pid": 98053,
+      "reason": "Route added benchmarks to native added scorer and apply edition metric overrides",
+      "saved_knowledge_requests": 110087,
+      "reuse_existing_training_merges_and_inference": true
+    },
+    "runs/five-specialists-20261030/evaluation-recovery-20261101/diskfull-20261101T134030Z/RECOVERY.json": {
+      "observed_beijing": "2026-11-01T21:40:31.731266+08:00",
+      "recovered_shards": [
+        {
+          "worker": 0,
+          "records_preserved": 27010,
+          "bytes": 26083136,
+          "original_inode": 725777585,
+          "new_inode": 721565721,
+          "original_backup": "/home/dev/assumeengage/runs/five-specialists-20261030/evaluation-recovery-20261101/diskfull-20261101T134030Z/part-0.jsonl",
+          "byte_for_byte_equal": true,
+          "readwrite_open": "ok"
+        },
+        {
+          "worker": 1,
+          "records_preserved": 27003,
+          "bytes": 26369846,
+          "original_inode": 731127739,
+          "new_inode": 721565725,
+          "original_backup": "/home/dev/assumeengage/runs/five-specialists-20261030/evaluation-recovery-20261101/diskfull-20261101T134030Z/part-1.jsonl",
+          "byte_for_byte_equal": true,
+          "readwrite_open": "ok"
+        }
+      ],
+      "completed_workers_preserved": [
+        2,
+        3
+      ]
+    },
+    "runs/five-specialists-20261030/ACTIVE_TRAINING_SCOPE.json": {
+      "updated_at_utc": "2026-10-31T15:50:02.573093+00:00",
+      "reason": "User explicitly cancelled Language specialist and its mixed/KD training exposure",
+      "active_training_domains": [
+        "knowledge",
+        "retrieval",
+        "tools",
+        "arts"
+      ],
+      "models": [
+        "SPECIALIST_KNOWLEDGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_TOOLS",
+        "SPECIALIST_ARTS",
+        "MIXED_ALL"
+      ],
+      "cancelled_models": [
+        "SPECIALIST_LANGUAGE"
+      ],
+      "domains": {
+        "knowledge": {
+          "pairs": 3073453,
+          "max_length": 4096,
+          "effective_training_tokens": 524419216,
+          "original_unclipped_tokens": 525144307,
+          "over4096": 198,
+          "over8192": 52,
+          "long_pairs_head_tail_clipped": 198,
+          "long_candidates_head_tail_clipped": 0,
+          "maximum_original_pair_length": 34870,
+          "dropped_for_length": 0
+        },
+        "retrieval": {
+          "pairs": 11047617,
+          "max_length": 4096,
+          "effective_training_tokens": 1571845691,
+          "original_unclipped_tokens": 1604862516,
+          "over4096": 8266,
+          "over8192": 1398,
+          "long_pairs_head_tail_clipped": 8266,
+          "long_candidates_head_tail_clipped": 0,
+          "maximum_original_pair_length": 38479,
+          "dropped_for_length": 0
+        },
+        "tools": {
+          "pairs": 1579715,
+          "max_length": 4096,
+          "effective_training_tokens": 689961711,
+          "original_unclipped_tokens": 689974380,
+          "over4096": 17,
+          "over8192": 0,
+          "long_pairs_head_tail_clipped": 17,
+          "long_candidates_head_tail_clipped": 0,
+          "maximum_original_pair_length": 6116,
+          "dropped_for_length": 0
+        },
+        "arts": {
+          "pairs": 2472921,
+          "max_length": 4096,
+          "effective_training_tokens": 1255826651,
+          "original_unclipped_tokens": 1257472846,
+          "over4096": 1970,
+          "over8192": 44,
+          "long_pairs_head_tail_clipped": 1970,
+          "long_candidates_head_tail_clipped": 1,
+          "maximum_original_pair_length": 26192,
+          "dropped_for_length": 0
+        }
+      },
+      "mixed_all_pairs": 18173706,
+      "mixed_all_effective_tokens": 4042053269,
+      "trained_models": 5,
+      "merge_methods": 5,
+      "evaluation_conditions": 10,
+      "public_evaluation": "Original five-area scope including Language; no metric redefinition",
+      "cache_policy": "Full original cache unchanged; pass active_training_domains to PairPool for MIXED_ALL and KD",
+      "backup_directory": "/home/dev/assumeengage/runs/five-specialists-20261030/scope-change-backup-20261031T155002Z"
+    },
+    "runs/five-specialists-20261030/TAKEOVER.json": {
+      "owner_pid": "[REDACTED]",
+      "controller_log": "/home/dev/assumeengage/logs/five-area-takeover-controller.log",
+      "time": "2026-10-31T03:57:00.713137+00:00",
+      "data_unchanged": true,
+      "six_model_sequence_unchanged": true
+    },
+    "scope_change_backup_files": [
+      "PIPELINE.json",
+      "run-five-area-takeover.py",
+      "pair_training_runtime.py",
+      "train-pair-model-takeover.py",
+      "merge-formal-models.py",
+      "run-formal-evaluation.py",
+      "five-area-stage-snapshot.py",
+      "experiment-five-specialists.json",
+      "queued-distillation.json",
+      "next-distillation-REPORT.md",
+      "training-plan-five-specialists-2026-10-30.md"
+    ]
+  },
+  "log_excerpts": {
+    "logs/apt-install.log": [
+      {
+        "line": 61,
+        "text": "7 upgraded, 70 newly installed, 0 to remove and 130 not upgraded."
+      },
+      {
+        "line": 527,
+        "text": "Setting up fish-common (3.3.1+ds-3) ..."
+      },
+      {
+        "line": 528,
+        "text": "Setting up tmux (3.2a-4ubuntu0.3) ..."
+      },
+      {
+        "line": 539,
+        "text": "Setting up aria2 (1.36.0-1) ..."
+      },
+      {
+        "line": 560,
+        "text": "Setting up fish (3.3.1+ds-3) ..."
+      }
+    ],
+    "logs/python-install-home.log": [
+      {
+        "line": 1,
+        "text": "Using Python 3.11.18 environment at: envs/jev"
+      },
+      {
+        "line": 10,
+        "text": "Installed 195 packages in 3.11s"
+      },
+      {
+        "line": 179,
+        "text": " + torch==2.9.1"
+      },
+      {
+        "line": 180,
+        "text": " + torchao==0.18.0"
+      },
+      {
+        "line": 185,
+        "text": " + transformers==4.57.6"
+      },
+      {
+        "line": 194,
+        "text": " + unsloth==2026.10.10"
+      }
+    ],
+    "logs/torchao-pin.log": [
+      {
+        "line": 3,
+        "text": "Downloading torchao (6.9MiB)"
+      },
+      {
+        "line": 4,
+        "text": " Downloaded torchao"
+      },
+      {
+        "line": 6,
+        "text": "Uninstalled 1 package in 111ms"
+      },
+      {
+        "line": 7,
+        "text": "Installed 1 package in 99ms"
+      },
+      {
+        "line": 8,
+        "text": " - torchao==0.18.0"
+      },
+      {
+        "line": 9,
+        "text": " + torchao==0.14.1"
+      }
+    ],
+    "logs/conda-relocate.log": [
+      {
+        "line": 9,
+        "text": "RuntimeError('EnforceUnusedAdapter called with url [URL omitted] command is using a remote connection in offline mode.\\n')"
+      },
+      {
+        "line": 10,
+        "text": "RuntimeError('EnforceUnusedAdapter called with url [URL omitted] command is using a remote connection in offline mode.\\n')"
+      },
+      {
+        "line": 11,
+        "text": "RuntimeError('EnforceUnusedAdapter called with url [URL omitted] command is using a remote connection in offline mode.\\n')"
+      },
+      {
+        "line": 12,
+        "text": "RuntimeError('EnforceUnusedAdapter called with url [URL omitted] command is using a remote connection in offline mode.\\n')"
+      },
+      {
+        "line": 13,
+        "text": "RuntimeError('EnforceUnusedAdapter called with url [URL omitted] command is using a remote connection in offline mode.\\n')"
+      },
+      {
+        "line": 14,
+        "text": "RuntimeError('EnforceUnusedAdapter called with url [URL omitted] command is using a remote connection in offline mode.\\n')"
+      },
+      {
+        "line": 15,
+        "text": "RuntimeError('EnforceUnusedAdapter called with url [URL omitted] command is using a remote connection in offline mode.\\n')"
+      },
+      {
+        "line": 16,
+        "text": "RuntimeError('EnforceUnusedAdapter called with url [URL omitted] command is using a remote connection in offline mode.\\n')"
+      },
+      {
+        "line": 17,
+        "text": "RuntimeError('EnforceUnusedAdapter called with url [URL omitted] command is using a remote connection in offline mode.\\n')"
+      },
+      {
+        "line": 21,
+        "text": "Packages: 26"
+      },
+      {
+        "line": 22,
+        "text": "Files: 18"
+      },
+      {
+        "line": 24,
+        "text": "Downloading and Extracting Packages: ...working... done"
+      }
+    ],
+    "logs/conda-relocate-online.log": [
+      {
+        "line": 4,
+        "text": "Packages: 26"
+      },
+      {
+        "line": 5,
+        "text": "Files: 18"
+      },
+      {
+        "line": 7,
+        "text": "Downloading and Extracting Packages: ...working... done"
+      },
+      {
+        "line": 9,
+        "text": "Downloading and Extracting Packages: ...working... done"
+      },
+      {
+        "line": 10,
+        "text": "Preparing transaction: ...working... done"
+      },
+      {
+        "line": 11,
+        "text": "Verifying transaction: ...working... done"
+      },
+      {
+        "line": 12,
+        "text": "Executing transaction: ...working... done"
+      }
+    ],
+    "logs/formal-SPECIALIST_KNOWLEDGE.log": [
+      {
+        "line": 649,
+        "text": "[2026-10-31 03:51:42] jev-gpu-dev-0:56923:57025 [3] misc/shmutils.cc:87 NCCL WARN Error: failed to extend /dev/shm/nccl-e81kxu to 33030532 bytes, error: No space left on device (28)"
+      },
+      {
+        "line": 652,
+        "text": "[2026-10-31 03:51:42] jev-gpu-dev-0:56923:57025 [3] misc/shmutils.cc:129 NCCL WARN Error while creating shared memory segment /dev/shm/nccl-e81kxu (size 33030528), error: No space left on device (28)"
+      },
+      {
+        "line": 654,
+        "text": "[2026-10-31 03:51:42] jev-gpu-dev-0:56921:57027 [1] misc/shmutils.cc:87 NCCL WARN Error: failed to extend /dev/shm/nccl-7J1N2u to 33030532 bytes, error: No space left on device (28)"
+      },
+      {
+        "line": 658,
+        "text": "[2026-10-31 03:51:42] jev-gpu-dev-0:56921:57027 [1] misc/shmutils.cc:129 NCCL WARN Error while creating shared memory segment /dev/shm/nccl-7J1N2u (size 33030528), error: No space left on device (28)"
+      },
+      {
+        "line": 698,
+        "text": "[rank2]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error."
+      },
+      {
+        "line": 700,
+        "text": "[rank2]: Error while creating shared memory segment /dev/shm/nccl-zRMzk2 (size 33030528), error: No space left on device (28)"
+      },
+      {
+        "line": 715,
+        "text": "[rank1]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error."
+      },
+      {
+        "line": 717,
+        "text": "[rank1]: Error while creating shared memory segment /dev/shm/nccl-7J1N2u (size 33030528), error: No space left on device (28)"
+      },
+      {
+        "line": 732,
+        "text": "[rank0]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error."
+      },
+      {
+        "line": 734,
+        "text": "[rank0]: Error while creating shared memory segment /dev/shm/nccl-DgJCmu (size 33030528), error: No space left on device (28)"
+      },
+      {
+        "line": 749,
+        "text": "[rank3]: ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error."
+      },
+      {
+        "line": 751,
+        "text": "[rank3]: Error while creating shared memory segment /dev/shm/nccl-e81kxu (size 33030528), error: No space left on device (28)"
+      }
+    ],
+    "logs/five-area-takeover-controller.log": [
+      {
+        "line": 63,
+        "text": "{\"stage\": \"reusing_completed_training\", \"updated_unix\": 1793540188.7486067, \"owner\": \"ssh-five-area-takeover\", \"model\": \"SPECIALIST_TOOLS\"}"
+      },
+      {
+        "line": 64,
+        "text": "{\"stage\": \"reusing_completed_training\", \"updated_unix\": 1793540188.7515285, \"owner\": \"ssh-five-area-takeover\", \"model\": \"SPECIALIST_ARTS\"}"
+      },
+      {
+        "line": 65,
+        "text": "{\"stage\": \"reusing_completed_training\", \"updated_unix\": 1793540188.752961, \"owner\": \"ssh-five-area-takeover\", \"model\": \"SPECIALIST_RETRIEVAL\"}"
+      },
+      {
+        "line": 66,
+        "text": "{\"stage\": \"reusing_completed_training\", \"updated_unix\": 1793540188.754405, \"owner\": \"ssh-five-area-takeover\", \"model\": \"MIXED_ALL\"}"
+      },
+      {
+        "line": 67,
+        "text": "{\"stage\": \"all_active_training_complete\", \"updated_unix\": 1793540188.7557776, \"owner\": \"ssh-five-area-takeover\", \"trained_models\": 5}"
+      },
+      {
+        "line": 87,
+        "text": "{\"stage\": \"reusing_completed_training\", \"updated_unix\": 1793540455.8795183, \"owner\": \"ssh-five-area-takeover\", \"model\": \"SPECIALIST_KNOWLEDGE\"}"
+      },
+      {
+        "line": 88,
+        "text": "{\"stage\": \"reusing_completed_training\", \"updated_unix\": 1793540455.8810463, \"owner\": \"ssh-five-area-takeover\", \"model\": \"SPECIALIST_TOOLS\"}"
+      },
+      {
+        "line": 89,
+        "text": "{\"stage\": \"reusing_completed_training\", \"updated_unix\": 1793540455.8816938, \"owner\": \"ssh-five-area-takeover\", \"model\": \"SPECIALIST_ARTS\"}"
+      },
+      {
+        "line": 90,
+        "text": "{\"stage\": \"reusing_completed_training\", \"updated_unix\": 1793540455.8826268, \"owner\": \"ssh-five-area-takeover\", \"model\": \"SPECIALIST_RETRIEVAL\"}"
+      },
+      {
+        "line": 91,
+        "text": "{\"stage\": \"reusing_completed_training\", \"updated_unix\": 1793540455.8837507, \"owner\": \"ssh-five-area-takeover\", \"model\": \"MIXED_ALL\"}"
+      },
+      {
+        "line": 92,
+        "text": "{\"stage\": \"all_active_training_complete\", \"updated_unix\": 1793540455.884855, \"owner\": \"ssh-five-area-takeover\", \"trained_models\": 5}"
+      },
+      {
+        "line": 95,
+        "text": "{\"stage\": \"complete\", \"updated_unix\": 1793564040.6187723, \"owner\": \"ssh-five-area-takeover\", \"trained_models\": 5, \"weight_merge_methods\": 5, \"primary_conditions\": 10}"
+      }
+    ],
+    "logs/download-frozen-evaluation-ranges-resume.log": [
+      {
+        "line": 71,
+        "text": "RANGE_PROGRESS selected-rows.jsonl.gz 1856 / 2176 failed 0"
+      },
+      {
+        "line": 72,
+        "text": "RANGE_PROGRESS selected-rows.jsonl.gz 1888 / 2176 failed 0"
+      },
+      {
+        "line": 73,
+        "text": "RANGE_PROGRESS selected-rows.jsonl.gz 1920 / 2176 failed 0"
+      },
+      {
+        "line": 74,
+        "text": "RANGE_PROGRESS selected-rows.jsonl.gz 1952 / 2176 failed 0"
+      },
+      {
+        "line": 75,
+        "text": "RANGE_PROGRESS selected-rows.jsonl.gz 1984 / 2176 failed 0"
+      },
+      {
+        "line": 76,
+        "text": "RANGE_PROGRESS selected-rows.jsonl.gz 2016 / 2176 failed 0"
+      },
+      {
+        "line": 77,
+        "text": "RANGE_PROGRESS selected-rows.jsonl.gz 2048 / 2176 failed 0"
+      },
+      {
+        "line": 78,
+        "text": "RANGE_PROGRESS selected-rows.jsonl.gz 2080 / 2176 failed 0"
+      },
+      {
+        "line": 79,
+        "text": "RANGE_PROGRESS selected-rows.jsonl.gz 2112 / 2176 failed 0"
+      },
+      {
+        "line": 80,
+        "text": "RANGE_PROGRESS selected-rows.jsonl.gz 2144 / 2176 failed 0"
+      },
+      {
+        "line": 81,
+        "text": "RANGE_PROGRESS selected-rows.jsonl.gz 2176 / 2176 failed 0"
+      },
+      {
+        "line": 83,
+        "text": "{\"name\": \"Locally staged Decision Index public evaluation inputs\", \"edition\": \"release-v3\", \"base_edition\": \"release-v2.1\", \"base_source_repo\": \"adi060/decision-index-suite-0.2\", \"base_source_revision\": \"ec174a4e7aa03e786a7e7e7e384db0f6c69a23e2\", \"gsm8k_source_repo\": \"openai/gsm8k\", \"gsm8k_source_revision\": \"740312add88f781978c0658806c59bc2815b9866\", \"gsm8k_method\": \"answer-groups-v1\", \"gsm8k_requests\": 2638, \"file_hash_validation\": false, \"payload_hash_fields_generated\": false, \"note\": \"Published frozen 0.2 base/added rows plus the official 0.3 GSM8K semantics. Deterministic option construction unchanged; byte-level parity is not claimed. No model tests or optional integrity hashes were run.\", \"role\": \"EVALUATION_ONLY_NEVER_TRAIN\", \"complete\": true}"
+      }
+    ],
+    "logs/private-transfer-start.log": [
+      {
+        "line": 1,
+        "http_status_codes": [
+          "402"
+        ],
+        "invalid_parameter_recorded": false
+      }
+    ],
+    "logs/private-transfer-start-static.log": [
+      {
+        "line": 1,
+        "http_status_codes": [
+          "400"
+        ],
+        "invalid_parameter_recorded": false
+      }
+    ],
+    "logs/private-transfer-cleanup.log": [
+      {
+        "line": 10,
+        "http_status_codes": [],
+        "invalid_parameter_recorded": false
+      },
+      {
+        "line": 12,
+        "http_status_codes": [
+          "400"
+        ],
+        "invalid_parameter_recorded": true
+      }
+    ],
+    "backup/modelscope-20261031/watch-upload.log": [
+      {
+        "line": 1226,
+        "event": "worker_stopped"
+      }
+    ]
+  },
+  "code": [
+    {
+      "path": "scripts/run-five-area-takeover.py",
+      "lines": 131,
+      "excerpts": [
+        {
+          "line": 2,
+          "excerpt": "\"\"\"Own the currently approved experiment, preserving any adopted training process.\"\"\""
+        },
+        {
+          "line": 17,
+          "excerpt": "def status(stage, **extra):"
+        },
+        {
+          "line": 26,
+          "excerpt": "def complete(path):"
+        },
+        {
+          "line": 33,
+          "excerpt": "def run(command, name):"
+        },
+        {
+          "line": 45,
+          "excerpt": "def process_identity(pid):"
+        },
+        {
+          "line": 57,
+          "excerpt": "def adopt_training(previous, name):"
+        },
+        {
+          "line": 72,
+          "excerpt": "           communication='gloo_cpu_adapter_gradient_sum')"
+        },
+        {
+          "line": 79,
+          "excerpt": "        raise RuntimeError(f'Adopted {name} exited without its full-epoch completion marker')"
+        },
+        {
+          "line": 83,
+          "excerpt": "def main():"
+        },
+        {
+          "line": 87,
+          "excerpt": "        fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)"
+        },
+        {
+          "line": 103,
+          "excerpt": "    os.environ['GLOO_SOCKET_IFNAME'] = 'lo'"
+        },
+        {
+          "line": 111,
+          "excerpt": "        if adopt_training(previous, name):"
+        }
+      ]
+    },
+    {
+      "path": "scripts/train-pair-model-takeover.py",
+      "lines": 179,
+      "excerpts": [
+        {
+          "line": 2,
+          "excerpt": "\"\"\"Full-epoch takeover trainer; CPU Gloo sums avoid this Pod's 64MiB NCCL IPC limit.\"\"\""
+        },
+        {
+          "line": 25,
+          "excerpt": "def main():"
+        },
+        {
+          "line": 32,
+          "excerpt": "    if world>1:dist.init_process_group('gloo',timeout=timedelta(minutes=60))"
+        },
+        {
+          "line": 44,
+          "excerpt": "    latest=out/'latest.json';checkpoint=None;state=None"
+        },
+        {
+          "line": 46,
+          "excerpt": "        checkpoint=out/json.loads(latest.read_text())['path']"
+        },
+        {
+          "line": 47,
+          "excerpt": "        state=torch.load(checkpoint/'training_state.pt',map_location='cpu',weights_only=True)"
+        },
+        {
+          "line": 48,
+          "excerpt": "        if state['model']!=args.model or state['pool_pairs']!=len(dataset):raise RuntimeError('Checkpoint/pool mismatch; existing checkpoint preserved')"
+        },
+        {
+          "line": 53,
+          "excerpt": "    model=PeftModel.from_pretrained(model,checkpoint or common,is_trainable=True)"
+        },
+        {
+          "line": 58,
+          "excerpt": "    if cfg['gradient_checkpointing']:"
+        },
+        {
+          "line": 59,
+          "excerpt": "        model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant':False})"
+        },
+        {
+          "line": 83,
+          "excerpt": "    host_gradients=torch.empty(int(offsets[-1]),device='cpu',dtype=torch.float32,pin_memory=True) if world>1 else None"
+        },
+        {
+          "line": 89,
+          "excerpt": "                              optimizer_steps=total_steps,resume_step=completed,world_size=world,"
+        },
+        {
+          "line": 91,
+          "excerpt": "                               communication='gloo_cpu_float32_adapter_gradients')),flush=True)"
+        },
+        {
+          "line": 93,
+          "excerpt": "    log_pairs=0;oom_retries=0;checkpointing=cfg['gradient_checkpointing']"
+        },
+        {
+          "line": 98,
+          "excerpt": "            folder=out/'checkpoints'/f'step-{step:09d}';folder.mkdir(parents=True,exist_ok=True)"
+        },
+        {
+          "line": 107,
+          "excerpt": "            (folder/'checkpoint.json').write_text(json.dumps(metadata))"
+        },
+        {
+          "line": 109,
+          "excerpt": "            old=sorted((out/'checkpoints').glob('step-*'))[:-2]"
+        },
+        {
+          "line": 111,
+          "excerpt": "                marker=path/'checkpoint.json'"
+        },
+        {
+          "line": 121,
+          "excerpt": "                              gradient_checkpointing=checkpointing,communication='gloo_cpu_float32_adapter_gradients',"
+        },
+        {
+          "line": 143,
+          "excerpt": "            if world>1:dist.all_reduce(failed,op=dist.ReduceOp.MAX)"
+        },
+        {
+          "line": 145,
+          "excerpt": "                gradients.zero_();oom_retries+=1"
+        },
+        {
+          "line": 147,
+          "excerpt": "                elif not checkpointing:"
+        },
+        {
+          "line": 148,
+          "excerpt": "                    model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant':False});checkpointing=True"
+        },
+        {
+          "line": 156,
+          "excerpt": "            dist.all_reduce(host_gradients,op=dist.ReduceOp.SUM)"
+        },
+        {
+          "line": 165,
+          "excerpt": "                dist.all_reduce(host_loss,op=dist.ReduceOp.SUM)"
+        }
+      ]
+    },
+    {
+      "path": "scripts/pair_training_runtime.py",
+      "lines": 123,
+      "excerpts": [
+        {
+          "line": 41,
+          "excerpt": "class PairPool:"
+        },
+        {
+          "line": 94,
+          "excerpt": "def assemble(store,state,candidate,max_length,eos):"
+        },
+        {
+          "line": 102,
+          "excerpt": "def collate(store,batch,pad,eos,device):"
+        },
+        {
+          "line": 106,
+          "excerpt": "    input_ids=torch.full((len(ids),width),pad,dtype=torch.long,pin_memory=True)"
+        },
+        {
+          "line": 107,
+          "excerpt": "    mask=torch.zeros((len(ids),width),dtype=torch.bool,pin_memory=True)"
+        },
+        {
+          "line": 110,
+          "excerpt": "    targets=torch.from_numpy(np.asarray(batch['target'],dtype=np.float32).copy()).pin_memory()"
+        }
+      ]
+    },
+    {
+      "path": "scripts/download-frozen-evaluation-ranges.py",
+      "lines": 163,
+      "excerpts": [
+        {
+          "line": 25,
+          "excerpt": "def download_file(name, size):"
+        },
+        {
+          "line": 47,
+          "excerpt": "                os.pwrite(fd, data, offset)"
+        },
+        {
+          "line": 77,
+          "excerpt": "                if response.getheader('content-range', '') != f'bytes {start}-{end}/{size}':"
+        },
+        {
+          "line": 87,
+          "excerpt": "                    written += os.pwrite(fd, block[written:], start + written)"
+        },
+        {
+          "line": 98,
+          "excerpt": "    def checkpoint():"
+        },
+        {
+          "line": 124,
+          "excerpt": "                    checkpoint()"
+        },
+        {
+          "line": 136,
+          "excerpt": "        checkpoint()"
+        },
+        {
+          "line": 146,
+          "excerpt": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "scripts/five-area-stage-snapshot.py",
+      "lines": 92,
+      "excerpts": [
+        {
+          "line": 15,
+          "excerpt": "def read(path):"
+        },
+        {
+          "line": 22,
+          "excerpt": "def completed(path):"
+        },
+        {
+          "line": 26,
+          "excerpt": "def main():"
+        },
+        {
+          "line": 78,
+          "excerpt": "                fcntl.flock(lock.fileno(), fcntl.LOCK_SH | fcntl.LOCK_NB)"
+        },
+        {
+          "line": 80,
+          "excerpt": "                fcntl.flock(lock.fileno(), fcntl.LOCK_UN)"
+        }
+      ]
+    },
+    {
+      "path": "scripts/watch-training-session.py",
+      "lines": 64,
+      "excerpts": [
+        {
+          "line": 21,
+          "excerpt": "def belongs(value):"
+        },
+        {
+          "line": 29,
+          "excerpt": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "backup/modelscope-20261031/upload_backup_watch.py",
+      "lines": 262,
+      "excerpts": [
+        {
+          "line": 35,
+          "excerpt": "IGNORE_DIRS = {\".git\", \".secrets\", \".cache\", \"__pycache__\", \".ipynb_checkpoints\"}"
+        },
+        {
+          "line": 41,
+          "excerpt": "def now():"
+        },
+        {
+          "line": 45,
+          "excerpt": "def atomic_json(path, value):"
+        },
+        {
+          "line": 52,
+          "excerpt": "class Backup:"
+        },
+        {
+          "line": 112,
+          "excerpt": "        if previous.get(\"status\") == \"verified\" and previous.get(\"source_files\") == expected:"
+        },
+        {
+          "line": 144,
+          "excerpt": "            record.update(status=\"verified\", verified_utc=now(), remote_files_checked=len(expected))"
+        },
+        {
+          "line": 146,
+          "excerpt": "            print(json.dumps({\"event\": \"verified\", \"unit\": relative, \"bytes\": record[\"bytes\"]}), flush=True)"
+        },
+        {
+          "line": 154,
+          "excerpt": "    def models(self, checkpoints=False):"
+        },
+        {
+          "line": 167,
+          "excerpt": "        if checkpoints and run.is_dir():"
+        },
+        {
+          "line": 168,
+          "excerpt": "            for folder in sorted(run.glob(\"*/checkpoints/*\")):"
+        },
+        {
+          "line": 173,
+          "excerpt": "                    self.upload(str(folder.relative_to(ROOT)), \"model\", \"stable_checkpoint_not_necessarily_final\")"
+        },
+        {
+          "line": 176,
+          "excerpt": "        verified = [v for v in self.state[\"units\"].values() if v.get(\"status\") == \"verified\"]"
+        },
+        {
+          "line": 177,
+          "excerpt": "        pending = [name for name in EXPECTED_MODELS if self.state[\"units\"].get(\"runs/five-specialists-20261030/\"+name+\"/final\",{}).get(\"status\")!=\"verified\"]"
+        },
+        {
+          "line": 181,
+          "excerpt": "            \"verified_units\": len(verified), \"verified_files\": sum(v[\"files\"] for v in verified),"
+        },
+        {
+          "line": 182,
+          "excerpt": "            \"verified_bytes\": sum(v[\"bytes\"] for v in verified),"
+        },
+        {
+          "line": 183,
+          "excerpt": "            \"note\": \"Only remotely verified stable assets are counted. Pending source models are not claimed complete.\","
+        },
+        {
+          "line": 206,
+          "excerpt": "        self.models(checkpoints=True)"
+        },
+        {
+          "line": 207,
+          "excerpt": "        self.save(initial_snapshot_complete=True, phase=\"initial_snapshot_verified\", current_unit=None)"
+        },
+        {
+          "line": 214,
+          "excerpt": "            self.models(checkpoints=False)"
+        },
+        {
+          "line": 222,
+          "excerpt": "            pending=[name for name in EXPECTED_MODELS if self.state[\"units\"].get(\"runs/five-specialists-20261030/\"+name+\"/final\",{}).get(\"status\")!=\"verified\"]"
+        },
+        {
+          "line": 225,
+          "excerpt": "                self.save(complete=True,phase=\"large_experiment_assets_verified\")"
+        },
+        {
+          "line": 234,
+          "excerpt": "def main():"
+        },
+        {
+          "line": 244,
+          "excerpt": "    fcntl.flock(process_lock, fcntl.LOCK_EX | (0 if args.wait_for_lock else fcntl.LOCK_NB))"
+        },
+        {
+          "line": 249,
+          "excerpt": "        backup.models(checkpoints=True)"
+        },
+        {
+          "line": 261,
+          "excerpt": "        print(json.dumps({\"event\":\"worker_stopped\",\"reason\":\"see sanitized upload-state.json\"}),flush=True)"
+        }
+      ]
+    },
+    {
+      "path": "scripts/locate-existing-training-cache.cjs",
+      "lines": 134,
+      "excerpts": [
+        {
+          "line": 12,
+          "excerpt": "async function main() {"
+        },
+        {
+          "line": 68,
+          "excerpt": "    // Invoke the explicit New Terminal action; do not toggle or type into an existing terminal."
+        },
+        {
+          "line": 76,
+          "excerpt": "    await page.keyboard.type(language.startsWith('zh') ? '终端: 新建终端' : 'Terminal: Create New Terminal');"
+        },
+        {
+          "line": 78,
+          "excerpt": "      .some(row => /Create New Terminal|新建终端/.test(row.textContent)), {timeout: 20000});"
+        },
+        {
+          "line": 80,
+          "excerpt": "      .find(row => /Create New Terminal|新建终端/.test(row.textContent)).click());"
+        },
+        {
+          "line": 81,
+          "excerpt": "    console.log('Requested a new helper terminal; management routes:', sockets);"
+        }
+      ]
+    }
+  ]
+}

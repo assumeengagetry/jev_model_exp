@@ -1,0 +1,1 @@
+{"time_utc": "2026-11-02T09:55:50.245756+00:00", "pid": 133064, "phase": "formal_cpu_merge", "ssh_alias": "sh-10-gpu", "tree": [["knowledge", "retrieval"], ["tools", "arts"]], "t_each_stage": 0.5, "existing_jobs_not_signalled": true}

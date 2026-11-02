@@ -83,6 +83,10 @@
     "five/final-report": {
       "message_id": "msg_198c05cef001viNy7gJ8ncCmwJ",
       "name": "四专科与融合总报告"
+    },
+    "slerp/merge/MERGE_SLERP_HIERARCHICAL": {
+      "message_id": "msg_19bb0fcd7001CV7kaRAzDJj46n",
+      "name": "MERGE_SLERP_HIERARCHICAL"
     }
   },
   "distillation_wakeup": "msg_198c05d6e001rCmKfxbWdrkRs4",
@@ -91,6 +95,6 @@
     "five:1793540309.6354365:evaluation exited 1; see /home/dev/assumeengage/logs/takeover-evaluation.log",
     "distillation:1793600425.7736452:teacher-assets stopped before completion; see /home/dev/assumeengage/logs/distillation-teacher-assets.log"
   ],
-  "last_observed_utc": "2026-11-02T06:27:04.013464+00:00",
+  "last_observed_utc": "2026-11-02T10:07:13.450547+00:00",
   "last_five_area_stage": "complete"
 }

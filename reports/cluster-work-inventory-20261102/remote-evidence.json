@@ -1,0 +1,1098 @@
+{
+  "observed_utc": "2026-11-02T09:24:49.972690+00:00",
+  "root": "/home/dev/assumeengage",
+  "read_only": true,
+  "credentials_and_urls_omitted": true,
+  "records": {
+    "runs/five-specialists-20261030/MIXED_ALL/complete.json": {
+      "model": "MIXED_ALL",
+      "complete": true,
+      "pool_pairs": 18173706,
+      "pairs_seen": 18173706,
+      "epochs": 1,
+      "effective_tokens": 4042053269,
+      "elapsed_seconds": 49231.093582249014,
+      "effective_tokens_per_second": 82103.66609563638,
+      "seen_domains": {
+        "knowledge": 3073453,
+        "retrieval": 11047617,
+        "arts": 2472921,
+        "tools": 1579715
+      },
+      "optimizer_steps": 141983,
+      "global_effective_batch": 128,
+      "common_initialization": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+      "precision": "bf16",
+      "attention": "causal_sdpa",
+      "micro_token_budget_final": 16384,
+      "oom_retries": 3,
+      "gradient_checkpointing": false,
+      "communication": "gloo_cpu_float32_adapter_gradients",
+      "peak_allocated_gb": 90.12568712234497,
+      "training_pair_cap": null,
+      "training_token_cap": null
+    },
+    "runs/five-specialists-20261030/SPECIALIST_ARTS/complete.json": {
+      "model": "SPECIALIST_ARTS",
+      "complete": true,
+      "pool_pairs": 2472921,
+      "pairs_seen": 2472921,
+      "epochs": 1,
+      "effective_tokens": 1255826651,
+      "elapsed_seconds": 11667.862554029969,
+      "effective_tokens_per_second": 107631.25166967702,
+      "seen_domains": {
+        "arts": 2472921
+      },
+      "optimizer_steps": 19320,
+      "global_effective_batch": 128,
+      "common_initialization": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+      "precision": "bf16",
+      "attention": "causal_sdpa",
+      "micro_token_budget_final": 32768,
+      "oom_retries": 2,
+      "gradient_checkpointing": false,
+      "communication": "gloo_cpu_float32_adapter_gradients",
+      "peak_allocated_gb": 87.9869966506958,
+      "training_pair_cap": null,
+      "training_token_cap": null
+    },
+    "runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/complete.json": {
+      "model": "SPECIALIST_KNOWLEDGE",
+      "complete": true,
+      "pool_pairs": 3073453,
+      "pairs_seen": 3073453,
+      "epochs": 1,
+      "effective_tokens": 524419216,
+      "elapsed_seconds": 6905.358858302992,
+      "effective_tokens_per_second": 75943.80346641061,
+      "seen_domains": {
+        "knowledge": 3073453
+      },
+      "optimizer_steps": 24012,
+      "global_effective_batch": 128,
+      "common_initialization": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+      "precision": "bf16",
+      "attention": "causal_sdpa",
+      "micro_token_budget_final": 32768,
+      "oom_retries": 2,
+      "gradient_checkpointing": false,
+      "communication": "gloo_cpu_float32_adapter_gradients",
+      "peak_allocated_gb": 89.43026351928711,
+      "training_pair_cap": null,
+      "training_token_cap": null
+    },
+    "runs/five-specialists-20261030/SPECIALIST_RETRIEVAL/complete.json": {
+      "model": "SPECIALIST_RETRIEVAL",
+      "complete": true,
+      "pool_pairs": 11047617,
+      "pairs_seen": 11047617,
+      "epochs": 1,
+      "effective_tokens": 1571845691,
+      "elapsed_seconds": 25035.408510850975,
+      "effective_tokens_per_second": 62784.9028434556,
+      "seen_domains": {
+        "retrieval": 11047617
+      },
+      "optimizer_steps": 86310,
+      "global_effective_batch": 128,
+      "common_initialization": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+      "precision": "bf16",
+      "attention": "causal_sdpa",
+      "micro_token_budget_final": 32768,
+      "oom_retries": 2,
+      "gradient_checkpointing": false,
+      "communication": "gloo_cpu_float32_adapter_gradients",
+      "peak_allocated_gb": 89.87568712234497,
+      "training_pair_cap": null,
+      "training_token_cap": null
+    },
+    "runs/five-specialists-20261030/SPECIALIST_TOOLS/complete.json": {
+      "model": "SPECIALIST_TOOLS",
+      "complete": true,
+      "pool_pairs": 1579715,
+      "pairs_seen": 1579715,
+      "epochs": 1,
+      "effective_tokens": 689961711,
+      "elapsed_seconds": 6270.488299846009,
+      "effective_tokens_per_second": 110033.17094411039,
+      "seen_domains": {
+        "tools": 1579715
+      },
+      "optimizer_steps": 12342,
+      "global_effective_batch": 128,
+      "common_initialization": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+      "precision": "bf16",
+      "attention": "causal_sdpa",
+      "micro_token_budget_final": 16384,
+      "oom_retries": 3,
+      "gradient_checkpointing": false,
+      "communication": "gloo_cpu_float32_adapter_gradients",
+      "peak_allocated_gb": 85.4526834487915,
+      "training_pair_cap": null,
+      "training_token_cap": null
+    },
+    "runs/five-specialists-20261030/evaluation/MERGE_AVERAGE/complete.json": {
+      "complete": true,
+      "model": "MERGE_AVERAGE",
+      "requests": 110087,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 110087
+      },
+      "public_score": 21.46,
+      "coverage": 1.0,
+      "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+      "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+    },
+    "runs/five-specialists-20261030/evaluation/MERGE_DARE_TASK_ARITHMETIC/complete.json": {
+      "complete": true,
+      "model": "MERGE_DARE_TASK_ARITHMETIC",
+      "requests": 110087,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 110087
+      },
+      "public_score": 6.58,
+      "coverage": 1.0,
+      "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+      "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+    },
+    "runs/five-specialists-20261030/evaluation/MERGE_DARE_TIES/complete.json": {
+      "complete": true,
+      "model": "MERGE_DARE_TIES",
+      "requests": 110087,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 110087
+      },
+      "public_score": 12.75,
+      "coverage": 1.0,
+      "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+      "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+    },
+    "runs/five-specialists-20261030/evaluation/MERGE_TASK_ARITHMETIC/complete.json": {
+      "complete": true,
+      "model": "MERGE_TASK_ARITHMETIC",
+      "requests": 110087,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 110087
+      },
+      "public_score": 12.75,
+      "coverage": 1.0,
+      "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+      "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+    },
+    "runs/five-specialists-20261030/evaluation/MERGE_TIES/complete.json": {
+      "complete": true,
+      "model": "MERGE_TIES",
+      "requests": 110087,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 110087
+      },
+      "public_score": 19.0,
+      "coverage": 1.0,
+      "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+      "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+    },
+    "runs/five-specialists-20261030/evaluation/MIXED_ALL/complete.json": {
+      "complete": true,
+      "model": "MIXED_ALL",
+      "requests": 110087,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 110087
+      },
+      "public_score": 22.82,
+      "coverage": 1.0,
+      "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+      "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+    },
+    "runs/five-specialists-20261030/evaluation/SPECIALIST_ARTS/complete.json": {
+      "complete": true,
+      "model": "SPECIALIST_ARTS",
+      "requests": 110087,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 110087
+      },
+      "public_score": 11.33,
+      "coverage": 1.0,
+      "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+      "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+    },
+    "runs/five-specialists-20261030/evaluation/SPECIALIST_KNOWLEDGE/complete.json": {
+      "complete": true,
+      "model": "SPECIALIST_KNOWLEDGE",
+      "requests": 110087,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 110087
+      },
+      "public_score": 17.83,
+      "coverage": 1.0,
+      "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+      "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+    },
+    "runs/five-specialists-20261030/evaluation/SPECIALIST_RETRIEVAL/complete.json": {
+      "complete": true,
+      "model": "SPECIALIST_RETRIEVAL",
+      "requests": 110087,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 110087
+      },
+      "public_score": 15.17,
+      "coverage": 1.0,
+      "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+      "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+    },
+    "runs/five-specialists-20261030/evaluation/SPECIALIST_TOOLS/complete.json": {
+      "complete": true,
+      "model": "SPECIALIST_TOOLS",
+      "requests": 110087,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 110087
+      },
+      "public_score": 11.03,
+      "coverage": 1.0,
+      "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+      "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+    },
+    "runs/five-specialists-20261030/merges/MERGE_AVERAGE/complete.json": {
+      "complete": true,
+      "model": "MERGE_AVERAGE",
+      "method": "simple_average",
+      "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_AVERAGE/final",
+      "checkpoint_kind": "dense_effective_sequence_classifier",
+      "specialists": [
+        "SPECIALIST_KNOWLEDGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_TOOLS",
+        "SPECIALIST_ARTS"
+      ],
+      "classification_head_included": true,
+      "compute_dtype": "float32",
+      "storage_dtype": "bfloat16",
+      "modified_tensor_count": 197,
+      "new_training_tokens": 0,
+      "parameters": {
+        "weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+      "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+    },
+    "runs/five-specialists-20261030/merges/MERGE_DARE_TASK_ARITHMETIC/complete.json": {
+      "complete": true,
+      "model": "MERGE_DARE_TASK_ARITHMETIC",
+      "method": "dare_task_arithmetic",
+      "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_DARE_TASK_ARITHMETIC/final",
+      "checkpoint_kind": "dense_effective_sequence_classifier",
+      "specialists": [
+        "SPECIALIST_KNOWLEDGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_TOOLS",
+        "SPECIALIST_ARTS"
+      ],
+      "classification_head_included": true,
+      "compute_dtype": "float32",
+      "storage_dtype": "bfloat16",
+      "modified_tensor_count": 197,
+      "new_training_tokens": 0,
+      "parameters": {
+        "keep_probability": 0.5,
+        "lambda": 1.0,
+        "seed": 42
+      },
+      "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+      "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+    },
+    "runs/five-specialists-20261030/merges/MERGE_DARE_TIES/complete.json": {
+      "complete": true,
+      "model": "MERGE_DARE_TIES",
+      "method": "dare_ties",
+      "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_DARE_TIES/final",
+      "checkpoint_kind": "dense_effective_sequence_classifier",
+      "specialists": [
+        "SPECIALIST_KNOWLEDGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_TOOLS",
+        "SPECIALIST_ARTS"
+      ],
+      "classification_head_included": true,
+      "compute_dtype": "float32",
+      "storage_dtype": "bfloat16",
+      "modified_tensor_count": 197,
+      "new_training_tokens": 0,
+      "parameters": {
+        "keep_probability": 0.5,
+        "density": 0.2,
+        "lambda": 1.0,
+        "seed": 42
+      },
+      "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+      "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+    },
+    "runs/five-specialists-20261030/merges/MERGE_TASK_ARITHMETIC/complete.json": {
+      "complete": true,
+      "model": "MERGE_TASK_ARITHMETIC",
+      "method": "task_arithmetic",
+      "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_TASK_ARITHMETIC/final",
+      "checkpoint_kind": "dense_effective_sequence_classifier",
+      "specialists": [
+        "SPECIALIST_KNOWLEDGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_TOOLS",
+        "SPECIALIST_ARTS"
+      ],
+      "classification_head_included": true,
+      "compute_dtype": "float32",
+      "storage_dtype": "bfloat16",
+      "modified_tensor_count": 197,
+      "new_training_tokens": 0,
+      "parameters": {
+        "lambda": 1.0
+      },
+      "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+      "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+    },
+    "runs/five-specialists-20261030/merges/MERGE_TIES/complete.json": {
+      "complete": true,
+      "model": "MERGE_TIES",
+      "method": "ties",
+      "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_TIES/final",
+      "checkpoint_kind": "dense_effective_sequence_classifier",
+      "specialists": [
+        "SPECIALIST_KNOWLEDGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_TOOLS",
+        "SPECIALIST_ARTS"
+      ],
+      "classification_head_included": true,
+      "compute_dtype": "float32",
+      "storage_dtype": "bfloat16",
+      "modified_tensor_count": 197,
+      "new_training_tokens": 0,
+      "parameters": {
+        "density": 0.2,
+        "lambda": 1.0
+      },
+      "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+      "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+    },
+    "runs/distillation-after-five-specialists-20261031/PIPELINE.json": {
+      "stage": "blocked",
+      "updated_unix": 1793608822.8960812,
+      "owner": "approved-four-domain-distillation",
+      "active_training_domains": [
+        "knowledge",
+        "retrieval",
+        "tools",
+        "arts"
+      ],
+      "pair_cap": null,
+      "token_cap": null,
+      "error": "teacher-assets stopped before completion; see /home/dev/assumeengage/logs/distillation-teacher-assets.log",
+      "jobs": {
+        "KD_HARD": {
+          "pid": 114583,
+          "starttime": "49467810",
+          "marker": "/home/dev/assumeengage/runs/distillation-after-five-specialists-20261031/KD_HARD/complete.json",
+          "adopted": true,
+          "ownership_file": "/home/dev/assumeengage/runs/distillation-after-five-specialists-20261031/KD_HARD/OWNER.json",
+          "gpus": "0",
+          "log": "/home/dev/assumeengage/logs/distillation-KD_HARD.log"
+        },
+        "teacher-assets": {
+          "pid": 128696,
+          "starttime": "53072453",
+          "marker": "/home/dev/assumeengage/runs/distillation-after-five-specialists-20261031/TEACHER_READY.json",
+          "log": "/home/dev/assumeengage/logs/distillation-teacher-assets.log",
+          "gpus": null,
+          "command": [
+            "/home/dev/assumeengage/envs/jev/bin/python",
+            "-u",
+            "/home/dev/assumeengage/scripts/prepare-knowline-teacher.py"
+          ]
+        }
+      }
+    },
+    "runs/distillation-after-five-specialists-20261031/KD_HARD/latest.json": {
+      "path": "checkpoints/step-000040000",
+      "step": 40000
+    },
+    "runs/distillation-after-five-specialists-20261031/teacher-assets/ASSET_PROGRESS.json": {
+      "complete": false,
+      "pid": 128696,
+      "updated_at": "2026-11-02T08:40:14.260569+00:00",
+      "stage": "blocked",
+      "repo": "PelaAI/KnowLine-31B-Gen1",
+      "model_path": "/home/dev/assumeengage/models/KnowLine-31B-Gen1",
+      "download_endpoint": "[URL omitted]",
+      "proxy_enabled": true,
+      "actual_model_path": "/tmp/assumeengage-distillation-20261101/KnowLine-31B-Gen1",
+      "files": [
+        {
+          "file": "config.json",
+          "bytes": 4634,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 4634
+        },
+        {
+          "file": "generation_config.json",
+          "bytes": 208,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 208
+        },
+        {
+          "file": "processor_config.json",
+          "bytes": 1689,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 1689
+        },
+        {
+          "file": "tokenizer.json",
+          "bytes": 32169626,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 32169626
+        },
+        {
+          "file": "tokenizer_config.json",
+          "bytes": 2095,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 2095
+        },
+        {
+          "file": "chat_template.jinja",
+          "bytes": 16934,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 16934
+        },
+        {
+          "file": "temperatures.json",
+          "bytes": 18,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 18
+        },
+        {
+          "file": "LICENSE",
+          "bytes": 11343,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 11343
+        },
+        {
+          "file": "README.md",
+          "bytes": 25112,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 25112
+        },
+        {
+          "file": "INFERENCE.md",
+          "bytes": 12549,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 12549
+        },
+        {
+          "file": "model.safetensors.index.json",
+          "bytes": 120208,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 120208
+        },
+        {
+          "file": "knowline_server.py",
+          "bytes": 62148,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 62148
+        },
+        {
+          "file": "knowline_layout.py",
+          "bytes": 12776,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 12776
+        },
+        {
+          "file": "knowline_engine.py",
+          "bytes": 7467,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 7467
+        },
+        {
+          "file": "README.zh.md",
+          "bytes": 24208,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 24208
+        },
+        {
+          "file": "serve_knowline.sh",
+          "bytes": 1952,
+          "kind": "metadata_or_native_source",
+          "status": "ready",
+          "downloaded_bytes": 1952
+        },
+        {
+          "file": "model-00001-of-00013.safetensors",
+          "bytes": 4928029602,
+          "kind": "weights",
+          "status": "ready",
+          "downloaded_bytes": 4928029602
+        },
+        {
+          "file": "model-00002-of-00013.safetensors",
+          "bytes": 4987782002,
+          "kind": "weights",
+          "status": "ready",
+          "downloaded_bytes": 4987782002
+        },
+        {
+          "file": "model-00003-of-00013.safetensors",
+          "bytes": 4899700746,
+          "kind": "weights",
+          "status": "ready",
+          "downloaded_bytes": 4899700746
+        },
+        {
+          "file": "model-00004-of-00013.safetensors",
+          "bytes": 4965774274,
+          "kind": "weights",
+          "status": "ready",
+          "downloaded_bytes": 4965774274
+        },
+        {
+          "file": "model-00005-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights",
+          "status": "ready",
+          "downloaded_bytes": 4899701570
+        },
+        {
+          "file": "model-00006-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights",
+          "status": "ready",
+          "downloaded_bytes": 4899701570
+        },
+        {
+          "file": "model-00007-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights",
+          "status": "ready",
+          "downloaded_bytes": 4899701570
+        },
+        {
+          "file": "model-00008-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights",
+          "status": "ready",
+          "downloaded_bytes": 4899701570
+        },
+        {
+          "file": "model-00009-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights",
+          "status": "retrying",
+          "downloaded_bytes": 4454350848,
+          "transport": "http-proxy-range",
+          "attempt": 24,
+          "error_type": "ProxyError",
+          "updated_at": "2026-11-02T08:40:14.237299+00:00"
+        },
+        {
+          "file": "model-00010-of-00013.safetensors",
+          "bytes": 4789600194,
+          "kind": "weights",
+          "status": "ready",
+          "downloaded_bytes": 4789600194
+        },
+        {
+          "file": "model-00011-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights",
+          "status": "retrying",
+          "downloaded_bytes": 3992977408,
+          "transport": "http-proxy-range",
+          "attempt": 24,
+          "error_type": "ProxyError",
+          "updated_at": "2026-11-02T08:40:14.253757+00:00"
+        },
+        {
+          "file": "model-00012-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights",
+          "status": "retrying",
+          "downloaded_bytes": 1241513984,
+          "transport": "http-proxy-range",
+          "attempt": 24,
+          "error_type": "ProxyError",
+          "updated_at": "2026-11-02T08:40:14.229649+00:00"
+        },
+        {
+          "file": "model-00013-of-00013.safetensors",
+          "bytes": 3677538544,
+          "kind": "weights",
+          "status": "retrying",
+          "downloaded_bytes": 838860800,
+          "transport": "http-proxy-range",
+          "attempt": 24,
+          "error_type": "ProxyError",
+          "updated_at": "2026-11-02T08:40:14.253509+00:00"
+        }
+      ],
+      "ready_files": 25,
+      "total_files": 29,
+      "downloaded_bytes": 54729869105,
+      "total_bytes": 62578809319,
+      "environment_ready": true,
+      "extra_file_hash_checks": false,
+      "error_type": "RuntimeError"
+    },
+    "runs/distillation-after-five-specialists-20261031/teacher-assets/ASSET_MANIFEST.json": {
+      "complete": false,
+      "repo": "PelaAI/KnowLine-31B-Gen1",
+      "revision": "8f052a8130e599b53e5324c34f0f5ff90696e1c6",
+      "created_at": "2026-11-01T20:25:47.276614+00:00",
+      "model_path": "/home/dev/assumeengage/models/KnowLine-31B-Gen1",
+      "actual_model_path": "/tmp/assumeengage-distillation-20261101/KnowLine-31B-Gen1",
+      "files": [
+        {
+          "file": "config.json",
+          "bytes": 4634,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "generation_config.json",
+          "bytes": 208,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "processor_config.json",
+          "bytes": 1689,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "tokenizer.json",
+          "bytes": 32169626,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "tokenizer_config.json",
+          "bytes": 2095,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "chat_template.jinja",
+          "bytes": 16934,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "temperatures.json",
+          "bytes": 18,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "LICENSE",
+          "bytes": 11343,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "README.md",
+          "bytes": 25112,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "INFERENCE.md",
+          "bytes": 12549,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "model.safetensors.index.json",
+          "bytes": 120208,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "knowline_server.py",
+          "bytes": 62148,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "knowline_layout.py",
+          "bytes": 12776,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "knowline_engine.py",
+          "bytes": 7467,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "README.zh.md",
+          "bytes": 24208,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "serve_knowline.sh",
+          "bytes": 1952,
+          "kind": "metadata_or_native_source"
+        },
+        {
+          "file": "model-00001-of-00013.safetensors",
+          "bytes": 4928029602,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00002-of-00013.safetensors",
+          "bytes": 4987782002,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00003-of-00013.safetensors",
+          "bytes": 4899700746,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00004-of-00013.safetensors",
+          "bytes": 4965774274,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00005-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00006-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00007-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00008-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00009-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00010-of-00013.safetensors",
+          "bytes": 4789600194,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00011-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00012-of-00013.safetensors",
+          "bytes": 4899701570,
+          "kind": "weights"
+        },
+        {
+          "file": "model-00013-of-00013.safetensors",
+          "bytes": 3677538544,
+          "kind": "weights"
+        }
+      ],
+      "extra_file_hash_checks": false,
+      "excluded": [
+        "SHA256SUMS",
+        ".gitattributes"
+      ],
+      "native_sources_executed": false,
+      "transport": "official hf_xet with verified-TLS DNS adapter; resumable HTTP fallback"
+    },
+    "runs/distillation-after-five-specialists-20261031/teacher-assets/ENVIRONMENT_READY.json": {
+      "python": "/home/dev/assumeengage/envs/knowline/bin/python",
+      "torch": "2.9.1+cu128",
+      "torch_file": "/home/dev/assumeengage/envs/jev/lib/python3.11/site-packages/torch/__init__.py",
+      "torch_cuda": "12.8",
+      "transformers": "5.12.1",
+      "transformers_file": "/home/dev/assumeengage/envs/knowline/lib/python3.11/site-packages/transformers/__init__.py",
+      "gemma4_class": "Gemma4ForConditionalGeneration",
+      "auto_class": "AutoModelForImageTextToText",
+      "packages": {
+        "transformers": "5.12.1",
+        "huggingface_hub": "1.33.0",
+        "tokenizers": "0.22.2",
+        "accelerate": "1.15.0",
+        "safetensors": "0.8.0"
+      },
+      "complete": true,
+      "prepared_at": "2026-11-02T06:26:31.031702+00:00",
+      "system_site_packages": true,
+      "native_sources_executed": false,
+      "model_loaded": false,
+      "gpu_process_started": false,
+      "student_environment_modified": false
+    },
+    "runs/distillation-after-five-specialists-20261031/source-switch-domestic-20261102/OFFICIAL_PROXY_SWITCH_RECEIPT.json": {
+      "observed_beijing": "2026-11-02T14:26:21.747425+08:00",
+      "endpoint": "[URL omitted]",
+      "proxy": "[URL omitted]",
+      "workers": 4,
+      "original_script_backup": "/home/dev/assumeengage/runs/distillation-after-five-specialists-20261031/source-switch-domestic-20261102/prepare-before-proxy-20261102T062621Z.py",
+      "hard_pid_unchanged": 114583,
+      "hard_starttime": "49467810",
+      "old_controller_alive": false,
+      "old_asset_alive": false,
+      "partials_preserved": {
+        "model-00004-of-00013.safetensors.http.part": 1586609072,
+        "model-00005-of-00013.safetensors.http.part": 971539457,
+        "model-00006-of-00013.safetensors.http.part": 940613722,
+        "model-00010-of-00013.safetensors.http.part": 721420288,
+        "model-00012-of-00013.safetensors.http.part": 964689920,
+        "model-00011-of-00013.safetensors.http.part": 545259520,
+        "model-00013-of-00013.safetensors.http.part": 830472192
+      },
+      "completed_weight_files_preserved": [
+        "model-00001-of-00013.safetensors",
+        "model-00002-of-00013.safetensors",
+        "model-00003-of-00013.safetensors"
+      ],
+      "extra_tests_run": false,
+      "new_controller_pid": 128695
+    },
+    "runs/distillation-after-five-specialists-20261031/source-switch-domestic-20261102/RANGE_COMMIT_FIX_RECEIPT.json": {
+      "observed_beijing": "2026-11-02T11:43:54.362509+08:00",
+      "fix": "commit a range only after its complete response is validated",
+      "endpoint": "[URL omitted]",
+      "original_script_backup": "/home/dev/assumeengage/runs/distillation-after-five-specialists-20261031/source-switch-domestic-20261102/prepare-before-range-commit-20261102T034354Z.py",
+      "hard_pid_unchanged": 114583,
+      "hard_starttime": "49467810",
+      "old_controller_pid": 124710,
+      "old_asset_pid": 124711,
+      "partials_preserved": {
+        "model-00002-of-00013.safetensors.http.part": 1443449933,
+        "model-00003-of-00013.safetensors.http.part": 1220525505,
+        "model-00001-of-00013.safetensors.http.part": 1477202261,
+        "model-00004-of-00013.safetensors.http.part": 26327984,
+        "model-00005-of-00013.safetensors.http.part": 23626753,
+        "model-00006-of-00013.safetensors.http.part": 26255450
+      },
+      "extra_tests_run": false,
+      "new_controller_pid": 124990
+    },
+    "runs/distillation-after-five-specialists-20261031/source-switch-domestic-20261102/SWITCH_RECEIPT.json": {
+      "observed_beijing": "2026-11-02T11:33:36.588336+08:00",
+      "endpoint": "[URL omitted]",
+      "proxy_used": false,
+      "old_controller_pid": 115779,
+      "old_teacher_preparer_pid": 115004,
+      "hard_pid_unchanged": 114583,
+      "hard_starttime": "49467810",
+      "original_script_backup": "/home/dev/assumeengage/runs/distillation-after-five-specialists-20261031/source-switch-domestic-20261102/prepare-original-20261102T033336Z.py",
+      "existing_partial_bytes": {
+        "model-00002-of-00013.safetensors.http.part": 401427533,
+        "model-00003-of-00013.safetensors.http.part": 390708673,
+        "model-00001-of-00013.safetensors.http.part": 370823509,
+        "model-00004-of-00013.safetensors.http.part": 26327984,
+        "model-00005-of-00013.safetensors.http.part": 23626753,
+        "model-00006-of-00013.safetensors.http.part": 26255450
+      },
+      "downloaded_partials_deleted": false,
+      "new_controller_pid": 124710,
+      "verification": {
+        "observed_beijing": "2026-11-02T11:36:24.788246+08:00",
+        "endpoint": "[URL omitted]",
+        "downloaded_bytes": 1904589557,
+        "total_bytes": 62578809319,
+        "progress_age_seconds": 8.8,
+        "increase_since_switch_bytes": 684982272,
+        "per_existing_partial_increase": {
+          "model-00002-of-00013.safetensors.http.part": 301989888,
+          "model-00003-of-00013.safetensors.http.part": 114425856,
+          "model-00001-of-00013.safetensors.http.part": 268566528,
+          "model-00004-of-00013.safetensors.http.part": 0,
+          "model-00005-of-00013.safetensors.http.part": 0,
+          "model-00006-of-00013.safetensors.http.part": 0
+        },
+        "hard_original_process_alive": true,
+        "asset_pid": 124711,
+        "component_errors": [],
+        "active_mirror_receipts": [
+          {
+            "file": "model-00001-of-00013.safetensors",
+            "status": "downloading",
+            "attempt": 1,
+            "downloaded_bytes": 617894229
+          },
+          {
+            "file": "model-00002-of-00013.safetensors",
+            "status": "downloading",
+            "attempt": 1,
+            "downloaded_bytes": 686640205
+          },
+          {
+            "file": "model-00003-of-00013.safetensors",
+            "status": "downloading",
+            "attempt": 3,
+            "downloaded_bytes": 491371969
+          }
+        ]
+      }
+    },
+    "hard_latest_progress": {
+      "event": "formal_optimizer_progress",
+      "model": "KD_HARD",
+      "step": 43440,
+      "total_steps": 141983,
+      "pairs_seen": 5560320,
+      "effective_tokens": 1236846499,
+      "loss": 0.13741209634754342,
+      "learning_rate": 4.0662351497087246e-05,
+      "effective_tokens_per_second": 29193.443892224237,
+      "elapsed_seconds": 46728.56164487993
+    },
+    "hard_log_mtime_utc": "2026-11-02T09:24:41.823453+00:00",
+    "teacher_ready_exists": false,
+    "teacher_labels_ready_exists": false,
+    "hard_complete_exists": false,
+    "teacher_files": [
+      {
+        "name": "INFERENCE.md",
+        "bytes": 12549
+      },
+      {
+        "name": "LICENSE",
+        "bytes": 11343
+      },
+      {
+        "name": "README.md",
+        "bytes": 25112
+      },
+      {
+        "name": "README.zh.md",
+        "bytes": 24208
+      },
+      {
+        "name": "chat_template.jinja",
+        "bytes": 16934
+      },
+      {
+        "name": "config.json",
+        "bytes": 4634
+      },
+      {
+        "name": "generation_config.json",
+        "bytes": 208
+      },
+      {
+        "name": "knowline_engine.py",
+        "bytes": 7467
+      },
+      {
+        "name": "knowline_layout.py",
+        "bytes": 12776
+      },
+      {
+        "name": "knowline_server.py",
+        "bytes": 62148
+      },
+      {
+        "name": "model-00001-of-00013.safetensors",
+        "bytes": 4928029602
+      },
+      {
+        "name": "model-00002-of-00013.safetensors",
+        "bytes": 4987782002
+      },
+      {
+        "name": "model-00003-of-00013.safetensors",
+        "bytes": 4899700746
+      },
+      {
+        "name": "model-00004-of-00013.safetensors",
+        "bytes": 4965774274
+      },
+      {
+        "name": "model-00005-of-00013.safetensors",
+        "bytes": 4899701570
+      },
+      {
+        "name": "model-00006-of-00013.safetensors",
+        "bytes": 4899701570
+      },
+      {
+        "name": "model-00007-of-00013.safetensors",
+        "bytes": 4899701570
+      },
+      {
+        "name": "model-00008-of-00013.safetensors",
+        "bytes": 4899701570
+      },
+      {
+        "name": "model-00009-of-00013.safetensors.http.part",
+        "bytes": 4454350848
+      },
+      {
+        "name": "model-00010-of-00013.safetensors",
+        "bytes": 4789600194
+      },
+      {
+        "name": "model-00011-of-00013.safetensors.http.part",
+        "bytes": 3992977408
+      },
+      {
+        "name": "model-00012-of-00013.safetensors.http.part",
+        "bytes": 1241513984
+      },
+      {
+        "name": "model-00013-of-00013.safetensors.http.part",
+        "bytes": 838860800
+      },
+      {
+        "name": "model.safetensors.index.json",
+        "bytes": 120208
+      },
+      {
+        "name": "processor_config.json",
+        "bytes": 1689
+      },
+      {
+        "name": "serve_knowline.sh",
+        "bytes": 1952
+      },
+      {
+        "name": "temperatures.json",
+        "bytes": 18
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 32169626
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 2095
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "completed": [
+    "BASELINE",
+    "KD_HARD",
+    "KD_HYBRID",
+    "KD_SOFT"
+  ],
+  "remaining": [],
+  "model_inference_repeated": false
+}

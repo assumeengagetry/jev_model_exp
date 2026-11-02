@@ -1,0 +1,538 @@
+{
+  "observed_utc": "2026-11-02T09:30:06.129262+00:00",
+  "read_only": true,
+  "records": [
+    {
+      "path": "scripts/run-formal-evaluation.py",
+      "lines": 410,
+      "selected_read_only_excerpts": [
+        {
+          "line": 33,
+          "excerpt": "def done(path):"
+        },
+        {
+          "line": 40,
+          "excerpt": "def atomic_json(path, data):"
+        },
+        {
+          "line": 47,
+          "excerpt": "class EvaluationTokens:"
+        },
+        {
+          "line": 61,
+          "excerpt": "def prior_results(path):"
+        },
+        {
+          "line": 78,
+          "excerpt": "            if value['status'] in ('ok', 'unsupported'):"
+        },
+        {
+          "line": 84,
+          "excerpt": "def load_classifier(checkpoint):"
+        },
+        {
+          "line": 101,
+          "excerpt": "def padded_inputs(tokens, states, candidates, chosen, pad, eos):"
+        },
+        {
+          "line": 115,
+          "excerpt": "def margins_for_request(model, tokenizer, tokens, states, candidates, token_budget):"
+        },
+        {
+          "line": 154,
+          "excerpt": "def answers_for_request(table, start, end, scores):"
+        },
+        {
+          "line": 180,
+          "excerpt": "def worker(args):"
+        },
+        {
+          "line": 225,
+          "excerpt": "                      'status': 'unsupported' if scores is None else 'ok'}"
+        },
+        {
+          "line": 227,
+          "excerpt": "                record['reason'] = 'Whole candidate request exceeds model context or single-pair GPU memory; not truncated'"
+        },
+        {
+          "line": 249,
+          "excerpt": "def score_model(name, folder):"
+        },
+        {
+          "line": 302,
+          "excerpt": "def radar(records, path, title):"
+        },
+        {
+          "line": 330,
+          "excerpt": "def final_report(records):"
+        },
+        {
+          "line": 364,
+          "excerpt": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "scripts/run-distillation-evaluation.py",
+      "lines": 173,
+      "selected_read_only_excerpts": [
+        {
+          "line": 27,
+          "excerpt": "def done(path):"
+        },
+        {
+          "line": 31,
+          "excerpt": "def axes(scores):"
+        },
+        {
+          "line": 35,
+          "excerpt": "def heatmap(records, baseline, path):"
+        },
+        {
+          "line": 62,
+          "excerpt": "def bars(records, path):"
+        },
+        {
+          "line": 81,
+          "excerpt": "def report(records):"
+        },
+        {
+          "line": 144,
+          "excerpt": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "scripts/label-knowline-pairs.py",
+      "lines": 752,
+      "selected_read_only_excerpts": [
+        {
+          "line": 14,
+          "excerpt": "preserved and rejected, never silently restarted."
+        },
+        {
+          "line": 56,
+          "excerpt": "def utc_now():"
+        },
+        {
+          "line": 60,
+          "excerpt": "def emit(event, **fields):"
+        },
+        {
+          "line": 64,
+          "excerpt": "def read_json(path):"
+        },
+        {
+          "line": 69,
+          "excerpt": "def fsync_directory(path):"
+        },
+        {
+          "line": 77,
+          "excerpt": "def atomic_json(path, payload):"
+        },
+        {
+          "line": 91,
+          "excerpt": "def locked(path, blocking=False):"
+        },
+        {
+          "line": 104,
+          "excerpt": "def require_equal(actual, expected, description):"
+        },
+        {
+          "line": 106,
+          "excerpt": "        raise RuntimeError(f'{description} mismatch; existing artifacts preserved')"
+        },
+        {
+          "line": 109,
+          "excerpt": "def durable_array(array, path):"
+        },
+        {
+          "line": 115,
+          "excerpt": "def open_array(path, length, mode='r'):"
+        },
+        {
+          "line": 118,
+          "excerpt": "        raise RuntimeError(f'Wrong probability shape/dtype in {path}; existing file preserved')"
+        },
+        {
+          "line": 122,
+          "excerpt": "def create_nan_array(path, length):"
+        },
+        {
+          "line": 125,
+          "excerpt": "        raise RuntimeError(f'Refusing to replace existing probability array {path}')"
+        },
+        {
+          "line": 136,
+          "excerpt": "def rank_length(total, rank, workers):"
+        },
+        {
+          "line": 140,
+          "excerpt": "def local_domain_spans(pool, rank, workers):"
+        },
+        {
+          "line": 153,
+          "excerpt": "def scan_probabilities(array, spans, allow_pending):"
+        },
+        {
+          "line": 163,
+          "excerpt": "                raise RuntimeError('Invalid Teacher probability; no repair or hard-label fallback is allowed')"
+        },
+        {
+          "line": 165,
+          "excerpt": "                raise RuntimeError('Teacher probability array is incomplete; completion refused')"
+        },
+        {
+          "line": 177,
+          "excerpt": "def load_configuration(workers):"
+        },
+        {
+          "line": 184,
+          "excerpt": "    require_equal(cfg['teacher_read_twice'], True, 'Native read-twice setting')"
+        },
+        {
+          "line": 185,
+          "excerpt": "    require_equal(cfg['teacher_twice_max_tokens'], 3000, 'Native read-twice cutoff')"
+        },
+        {
+          "line": 201,
+          "excerpt": "                  cfg['effective_student_tokens'], 'Actual four-domain Student token exposure')"
+        },
+        {
+          "line": 208,
+          "excerpt": "def common_identity(cfg, pool, workers):"
+        },
+        {
+          "line": 222,
+          "excerpt": "        'global_index_mapping': 'global_index = rank + local_index * workers',"
+        },
+        {
+          "line": 231,
+          "excerpt": "            'clipping': 'native prefix/suffix head-tail clipping, identical to Student training',"
+        },
+        {
+          "line": 249,
+          "excerpt": "            'layout': {'read_twice': True, 'twice_max_tokens': 3000, 'header': False,"
+        },
+        {
+          "line": 254,
+          "excerpt": "            'independent_bernoulli': True,"
+        },
+        {
+          "line": 256,
+          "excerpt": "            'folded_temperature_retained': True,"
+        },
+        {
+          "line": 266,
+          "excerpt": "def ensure_common_metadata(labels, identity, merge=False):"
+        },
+        {
+          "line": 274,
+          "excerpt": "                raise RuntimeError('Missing label metadata alongside existing artifacts; preserved, not adopted')"
+        },
+        {
+          "line": 278,
+          "excerpt": "def worker_identity(identity, rank):"
+        },
+        {
+          "line": 283,
+          "excerpt": "def worker_paths(labels, rank):"
+        },
+        {
+          "line": 293,
+          "excerpt": "def pending_blocks(array):"
+        },
+        {
+          "line": 301,
+          "excerpt": "class Renderer:"
+        },
+        {
+          "line": 321,
+          "excerpt": "        self.layout = knowline_layout.Layout(read_twice=True, twice_max_tokens=3000)"
+        },
+        {
+          "line": 378,
+          "excerpt": "                             student_tokens=int(batch['length'][i]), read_twice=twice[i]))"
+        },
+        {
+          "line": 389,
+          "excerpt": "def microbatches(rows, max_pairs, max_padded_tokens):"
+        },
+        {
+          "line": 404,
+          "excerpt": "def infer_once(model, rows, pad_token_id, label_ids):"
+        },
+        {
+          "line": 421,
+          "excerpt": "        raise RuntimeError('Non-finite actual A/B logits; refusing synthetic labels')"
+        },
+        {
+          "line": 430,
+          "excerpt": "def infer_with_splitting(model, rows, pad, label_ids, metrics, rank):"
+        },
+        {
+          "line": 458,
+          "excerpt": "def install_interrupt_handler():"
+        },
+        {
+          "line": 464,
+          "excerpt": "def run_worker(cfg, pool, root, labels, identity, rank, workers):"
+        },
+        {
+          "line": 474,
+          "excerpt": "                raise RuntimeError(f'Worker {rank} artifacts lack ownership metadata; preserved')"
+        },
+        {
+          "line": 478,
+          "excerpt": "                raise RuntimeError('Worker array is missing alongside previous progress; preserved')"
+        },
+        {
+          "line": 484,
+          "excerpt": "            raise RuntimeError('Finite probabilities lack tokenizer/label provenance; preserved')"
+        },
+        {
+          "line": 504,
+          "excerpt": "                       teacher_padded_tokens=0, read_twice_pairs=0, read_once_pairs=0,"
+        },
+        {
+          "line": 571,
+          "excerpt": "                                raise RuntimeError('Duplicate local assignment detected; refusing overwrite')"
+        },
+        {
+          "line": 588,
+          "excerpt": "                                metrics['read_twice_pairs' if row['read_twice'] else 'read_once_pairs'] += 1"
+        },
+        {
+          "line": 619,
+          "excerpt": "def run_merge(cfg, pool, root, labels, identity, workers):"
+        },
+        {
+          "line": 668,
+          "excerpt": "                raise RuntimeError('Merge artifacts lack matching merge metadata; preserved')"
+        },
+        {
+          "line": 674,
+          "excerpt": "                raise RuntimeError('Labels READY marker has no merged array; preserved, not trusted')"
+        },
+        {
+          "line": 689,
+          "excerpt": "                        raise RuntimeError('Existing merged array disagrees with canonical worker strides; preserved')"
+        },
+        {
+          "line": 698,
+          "excerpt": "            emit('teacher_merge_progress', rank=rank, workers=workers, pairs_copied_or_checked=copied,"
+        },
+        {
+          "line": 731,
+          "excerpt": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "scripts/train-four-domain-kd.py",
+      "lines": 258,
+      "selected_read_only_excerpts": [
+        {
+          "line": 27,
+          "excerpt": "def process_identity(pid):"
+        },
+        {
+          "line": 36,
+          "excerpt": "def claim_arm(cfg,arm,out,world):"
+        },
+        {
+          "line": 46,
+          "excerpt": "                raise RuntimeError('Existing arm ownership belongs to another continuation; preserved')"
+        },
+        {
+          "line": 59,
+          "excerpt": "                'lock_holder_pid':os.getpid(),'lock_mode':'worker_owned',"
+        },
+        {
+          "line": 67,
+          "excerpt": "def main():"
+        },
+        {
+          "line": 84,
+          "excerpt": "    if len(dataset)!=cfg['pairs']:raise RuntimeError('Four-domain exposure differs from the approved scope')"
+        },
+        {
+          "line": 91,
+          "excerpt": "            raise RuntimeError('Teacher probability domain order or Student parent mismatch')"
+        },
+        {
+          "line": 94,
+          "excerpt": "            raise RuntimeError('Teacher probability / pool index or dtype mismatch')"
+        },
+        {
+          "line": 99,
+          "excerpt": "        if previous.get('pairs_seen')!=len(dataset):raise RuntimeError('Existing result belongs to a different pool; preserved')"
+        },
+        {
+          "line": 100,
+          "excerpt": "        if previous.get('student_parent')!=cfg['student_parent']:raise RuntimeError('Existing result has a different Student parent; preserved')"
+        },
+        {
+          "line": 109,
+          "excerpt": "            raise RuntimeError('Checkpoint / pool / common Student parent mismatch; preserved')"
+        },
+        {
+          "line": 200,
+          "excerpt": "                raise RuntimeError('Teacher probabilities must be complete and finite; no pairs dropped')"
+        },
+        {
+          "line": 228,
+          "excerpt": "                else:raise RuntimeError('Actual full training is blocked by memory even at one long sample; no pairs dropped')"
+        }
+      ]
+    },
+    {
+      "path": "scripts/run-four-domain-distillation.py",
+      "lines": 237,
+      "selected_read_only_excerpts": [
+        {
+          "line": 19,
+          "excerpt": "def read(path):"
+        },
+        {
+          "line": 26,
+          "excerpt": "def done(path):"
+        },
+        {
+          "line": 30,
+          "excerpt": "def atomic(path, data):"
+        },
+        {
+          "line": 36,
+          "excerpt": "def status(stage, **extra):"
+        },
+        {
+          "line": 44,
+          "excerpt": "def identity(pid):"
+        },
+        {
+          "line": 55,
+          "excerpt": "def alive(job):"
+        },
+        {
+          "line": 60,
+          "excerpt": "def adopt_arm(jobs, name, marker):"
+        },
+        {
+          "line": 92,
+          "excerpt": "def launch(jobs, name, command, marker, gpus=None, adopt_script=None):"
+        },
+        {
+          "line": 130,
+          "excerpt": "def check(jobs):"
+        },
+        {
+          "line": 140,
+          "excerpt": "def trainer(arm, gpus):"
+        },
+        {
+          "line": 149,
+          "excerpt": "def main():"
+        }
+      ]
+    },
+    {
+      "path": "scripts/prepare-knowline-teacher.py",
+      "lines": 624,
+      "selected_read_only_excerpts": [
+        {
+          "line": 50,
+          "excerpt": "def now():"
+        },
+        {
+          "line": 54,
+          "excerpt": "def emit(message):"
+        },
+        {
+          "line": 58,
+          "excerpt": "def write_json(path, value):"
+        },
+        {
+          "line": 65,
+          "excerpt": "def load_json(path):"
+        },
+        {
+          "line": 69,
+          "excerpt": "def configure():"
+        },
+        {
+          "line": 88,
+          "excerpt": "def request(url, **kwargs):"
+        },
+        {
+          "line": 93,
+          "excerpt": "def setup_paths():"
+        },
+        {
+          "line": 113,
+          "excerpt": "def file_status(row):"
+        },
+        {
+          "line": 134,
+          "excerpt": "def progress(manifest, stage, **extra):"
+        },
+        {
+          "line": 153,
+          "excerpt": "def pinned_manifest():"
+        },
+        {
+          "line": 207,
+          "excerpt": "def asset_url(manifest, name):"
+        },
+        {
+          "line": 211,
+          "excerpt": "def download_domestic(url, partial, size):"
+        },
+        {
+          "line": 265,
+          "excerpt": "def file_receipt(row, **values):"
+        },
+        {
+          "line": 270,
+          "excerpt": "def download_http(manifest, row):"
+        },
+        {
+          "line": 300,
+          "excerpt": "def download_xet(manifest, row):"
+        },
+        {
+          "line": 371,
+          "excerpt": "def download_weight(manifest, row):"
+        },
+        {
+          "line": 415,
+          "excerpt": "def prepare_environment():"
+        },
+        {
+          "line": 438,
+          "excerpt": "    preserved = []"
+        },
+        {
+          "line": 442,
+          "excerpt": "            preserved.append(name + '==' + dist.version)"
+        },
+        {
+          "line": 443,
+          "excerpt": "    constraints.write_text('\\n'.join(sorted(set(preserved))) + '\\n')"
+        },
+        {
+          "line": 495,
+          "excerpt": "def complete_receipt(manifest, runtime):"
+        },
+        {
+          "line": 525,
+          "excerpt": "            'read_twice': True, 'twice_max_tokens': 3000,"
+        },
+        {
+          "line": 545,
+          "excerpt": "def main():"
+        }
+      ]
+    }
+  ]
+}

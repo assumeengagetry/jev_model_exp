@@ -1,0 +1,12 @@
+{
+  "kind": "data",
+  "repo_id": "engageassume/knowline-teacher-labeled-pairs-20261102",
+  "repo_type": "dataset",
+  "url": "https://huggingface.co/datasets/engageassume/knowline-teacher-labeled-pairs-20261102",
+  "private": true,
+  "commit_url": "https://huggingface.co/datasets/engageassume/knowline-teacher-labeled-pairs-20261102/commit/3a4253dc71117a1012a068fffc9a8cc729b6819d",
+  "remote_files": 83,
+  "remote_bytes": 310181341,
+  "elapsed_seconds": 79.1998519897461,
+  "complete": true
+}

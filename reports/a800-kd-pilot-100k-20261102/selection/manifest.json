@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "scope": "quick_idea_pilot",
+  "training_pairs": 100000,
+  "training": "train-manifest.json",
+  "evaluation": "evaluation.json",
+  "no_new_teacher_calls": true
+}

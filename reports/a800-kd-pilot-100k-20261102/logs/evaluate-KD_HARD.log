@@ -1,0 +1,56 @@
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 14235.88it/s]
+[1mQwen3ForSequenceClassification LOAD REPORT[0m from: /data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B
+Key            | Status     | 
+---------------+------------+-
+lm_head.weight | UNEXPECTED | 
+score.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+`use_return_dict` is deprecated! Use `return_dict` instead!
+{"model": "KD_HARD", "worker": 0, "new_requests": 200, "terminal_requests_in_shard": 200, "seconds": 72.9457534365356, "nonpadding_tokens": 2650608, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 400, "terminal_requests_in_shard": 400, "seconds": 1631.7336441352963, "nonpadding_tokens": 49575568, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 600, "terminal_requests_in_shard": 600, "seconds": 1665.6050386875868, "nonpadding_tokens": 50591091, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 800, "terminal_requests_in_shard": 800, "seconds": 1890.7051873579621, "nonpadding_tokens": 60469476, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 1000, "terminal_requests_in_shard": 1000, "seconds": 2127.261388402432, "nonpadding_tokens": 69496859, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 1200, "terminal_requests_in_shard": 1200, "seconds": 2136.023955721408, "nonpadding_tokens": 69574166, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 1400, "terminal_requests_in_shard": 1400, "seconds": 2144.8498608618975, "nonpadding_tokens": 69649978, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 1600, "terminal_requests_in_shard": 1600, "seconds": 2153.7250691466033, "nonpadding_tokens": 69725142, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 1800, "terminal_requests_in_shard": 1800, "seconds": 2162.5958737395704, "nonpadding_tokens": 69796035, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 2000, "terminal_requests_in_shard": 2000, "seconds": 2778.1605641171336, "nonpadding_tokens": 96070410, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 2200, "terminal_requests_in_shard": 2200, "seconds": 3034.380467392504, "nonpadding_tokens": 106919951, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 2400, "terminal_requests_in_shard": 2400, "seconds": 3043.1695280373096, "nonpadding_tokens": 106990134, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 2600, "terminal_requests_in_shard": 2600, "seconds": 3056.0066565982997, "nonpadding_tokens": 107342250, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 2800, "terminal_requests_in_shard": 2800, "seconds": 3074.1090028733015, "nonpadding_tokens": 108169255, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 3000, "terminal_requests_in_shard": 3000, "seconds": 3191.118270818144, "nonpadding_tokens": 113151421, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 3200, "terminal_requests_in_shard": 3200, "seconds": 3277.6391104459763, "nonpadding_tokens": 116332871, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 3400, "terminal_requests_in_shard": 3400, "seconds": 3336.3478318974376, "nonpadding_tokens": 119216959, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 3600, "terminal_requests_in_shard": 3600, "seconds": 3394.6764207929373, "nonpadding_tokens": 122079745, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 3800, "terminal_requests_in_shard": 3800, "seconds": 3419.898002207279, "nonpadding_tokens": 123142549, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 4000, "terminal_requests_in_shard": 4000, "seconds": 3428.8600620552897, "nonpadding_tokens": 123178762, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 4200, "terminal_requests_in_shard": 4200, "seconds": 3438.090477257967, "nonpadding_tokens": 123313384, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 4400, "terminal_requests_in_shard": 4400, "seconds": 3447.2765126004815, "nonpadding_tokens": 123447600, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 4600, "terminal_requests_in_shard": 4600, "seconds": 3457.739492852241, "nonpadding_tokens": 123648299, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 4800, "terminal_requests_in_shard": 4800, "seconds": 3469.7939322069287, "nonpadding_tokens": 124063356, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 5000, "terminal_requests_in_shard": 5000, "seconds": 3478.9760209545493, "nonpadding_tokens": 124234350, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 5200, "terminal_requests_in_shard": 5200, "seconds": 3491.9686863720417, "nonpadding_tokens": 124669639, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 5400, "terminal_requests_in_shard": 5400, "seconds": 3501.56533799693, "nonpadding_tokens": 124918348, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 5600, "terminal_requests_in_shard": 5600, "seconds": 3512.479711998254, "nonpadding_tokens": 125247354, "micro_token_budget": 32768}
+{"model": "KD_HARD", "worker": 0, "new_requests": 5800, "terminal_requests_in_shard": 5800, "seconds": 3524.745279621333, "nonpadding_tokens": 125623671, "micro_token_budget": 32768}
+Traceback (most recent call last):
+  File "/data/run01/scwb721/jev-kd-20261101/pilots/idea-100k-20261102/code/evaluate_student.py", line 77, in <module>
+    main()
+  File "/data/run01/scwb721/jev-kd-20261101/pilots/idea-100k-20261102/code/evaluate_student.py", line 57, in main
+    scores = formal.score_model(args.name, folder)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/run01/scwb721/jev-kd-20261101/workspace/scripts/run-formal-evaluation.py", line 267, in score_model
+    summary = benchmark_summary(suite, results, engine=name, rows=rows)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/run01/scwb721/jev-kd-20261101/workspace/src/decision-index-main/decision_index/scoring/report.py", line 197, in benchmark_summary
+    v = score(complete, results) if complete else {}
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/run01/scwb721/jev-kd-20261101/workspace/src/decision-index-main/decision_index/scoring/report.py", line 71, in score
+    assert gold is not None, "Null gold may only be handled by ranking scorer"
+           ^^^^^^^^^^^^^^^^
+AssertionError: Null gold may only be handled by ranking scorer

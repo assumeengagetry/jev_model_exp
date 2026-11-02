@@ -1,0 +1,70 @@
+{
+  "observed_utc": "2026-11-02T09:43:51.090501+00:00",
+  "read_only": true,
+  "training": [
+    {
+      "model": "SPECIALIST_KNOWLEDGE",
+      "complete": true,
+      "pairs_equal_pool": true,
+      "pairs_seen": 3073453,
+      "tokens": 524419216,
+      "steps": 24012,
+      "elapsed_seconds": 6905.358858302992,
+      "oom_retries": 2,
+      "checkpoint_state_files": 2
+    },
+    {
+      "model": "SPECIALIST_RETRIEVAL",
+      "complete": true,
+      "pairs_equal_pool": true,
+      "pairs_seen": 11047617,
+      "tokens": 1571845691,
+      "steps": 86310,
+      "elapsed_seconds": 25035.408510850975,
+      "oom_retries": 2,
+      "checkpoint_state_files": 2
+    },
+    {
+      "model": "SPECIALIST_TOOLS",
+      "complete": true,
+      "pairs_equal_pool": true,
+      "pairs_seen": 1579715,
+      "tokens": 689961711,
+      "steps": 12342,
+      "elapsed_seconds": 6270.488299846009,
+      "oom_retries": 3,
+      "checkpoint_state_files": 2
+    },
+    {
+      "model": "SPECIALIST_ARTS",
+      "complete": true,
+      "pairs_equal_pool": true,
+      "pairs_seen": 2472921,
+      "tokens": 1255826651,
+      "steps": 19320,
+      "elapsed_seconds": 11667.862554029969,
+      "oom_retries": 2,
+      "checkpoint_state_files": 2
+    },
+    {
+      "model": "MIXED_ALL",
+      "complete": true,
+      "pairs_equal_pool": true,
+      "pairs_seen": 18173706,
+      "tokens": 4042053269,
+      "steps": 141983,
+      "elapsed_seconds": 49231.093582249014,
+      "oom_retries": 3,
+      "checkpoint_state_files": 2
+    }
+  ],
+  "evaluation_condition_count": 10,
+  "all_evaluations_complete": true,
+  "checkpoint_state_files": 10,
+  "backup_recorded_private_flags": [
+    true,
+    true
+  ],
+  "cloud_was_not_queried": true,
+  "no_new_tests_or_hashes": true
+}

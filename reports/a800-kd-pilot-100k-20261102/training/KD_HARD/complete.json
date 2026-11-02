@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "model": "KD_HARD",
+  "parent": "/data/run01/scwb721/jev-kd-20261101/workspace/runs/five-specialists-20261030/MIXED_ALL/final",
+  "domains": [
+    "knowledge",
+    "retrieval",
+    "tools",
+    "arts"
+  ],
+  "pool_pairs": 100000,
+  "pairs_seen": 100000,
+  "epochs": 1,
+  "optimizer_steps": 782,
+  "effective_batch": 128,
+  "learning_rate": 5e-05,
+  "warmup_ratio": 0.03,
+  "weight_decay": 0.01,
+  "optimizer": "AdamW_fused",
+  "scheduler": "cosine",
+  "precision": "BF16",
+  "temperature": 1,
+  "loss": "CE",
+  "effective_tokens": 22871000,
+  "elapsed_seconds": 1239.3999676667154,
+  "effective_tokens_per_second": 18453.284328429316,
+  "pairs_per_second": 80.68420413811953,
+  "attention": "sdpa",
+  "micro_token_budget": 32768,
+  "gradient_checkpointing": false,
+  "peak_allocated_GiB": 74.74320363998413
+}

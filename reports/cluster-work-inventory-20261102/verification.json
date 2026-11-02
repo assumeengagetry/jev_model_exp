@@ -1,0 +1,27 @@
+{
+  "verified_utc": "2026-11-02T09:44:28.804369+00:00",
+  "documentation_checks_passed": true,
+  "ledger_rows_by_category": {
+    "R": 30,
+    "T": 8,
+    "E": 8,
+    "K": 20,
+    "D": 43,
+    "G": 25,
+    "V": 10
+  },
+  "ledger_rows_are_not_additive_independent_experiments": true,
+  "historical_language_conditions": 104,
+  "new_full_conditions": 10,
+  "local_links_checked": 23,
+  "native_conversion_entries": 21,
+  "supplement_conversion_entries": 15,
+  "registered_source_entries": 983,
+  "typed_task_entries": 648,
+  "training_completed_models": 5,
+  "training_tokens_sum": 8084106538,
+  "training_oom_retries_sum": 12,
+  "backup_receipts_only_not_live_cloud_validation": true,
+  "no_model_training_inference_tests_or_hashes_run": true,
+  "remote_access_read_only": true
+}

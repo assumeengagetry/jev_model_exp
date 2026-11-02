@@ -1,0 +1,260 @@
+{
+  "local_directory": "/home/assumeengage/profiler/jev_model_exp/reports/a800-kd-pilot-100k-20261102",
+  "source_pilot": "/data/run01/scwb721/jev-kd-20261101/pilots/idea-100k-20261102",
+  "files": 62,
+  "uncompressed_bytes": 39877835,
+  "downloaded_archive_bytes": 10723931,
+  "checkpoints_included": false,
+  "training_dataset_included": false,
+  "duplicate_part_jsonl_included": false,
+  "inventory": [
+    {
+      "path": "REPORT.md",
+      "bytes": 3258
+    },
+    {
+      "path": "benchmark-deltas-heatmap.png",
+      "bytes": 459047
+    },
+    {
+      "path": "benchmark-deltas-heatmap.svg",
+      "bytes": 229122
+    },
+    {
+      "path": "differences.json",
+      "bytes": 6423
+    },
+    {
+      "path": "evaluation/BASELINE/added-reports.json",
+      "bytes": 2581
+    },
+    {
+      "path": "evaluation/BASELINE/benchmark-summary.json",
+      "bytes": 32482
+    },
+    {
+      "path": "evaluation/BASELINE/complete.json",
+      "bytes": 558
+    },
+    {
+      "path": "evaluation/BASELINE/results.jsonl",
+      "bytes": 9236431
+    },
+    {
+      "path": "evaluation/BASELINE/scores.json",
+      "bytes": 10141
+    },
+    {
+      "path": "evaluation/BASELINE/worker-0-complete.json",
+      "bytes": 142
+    },
+    {
+      "path": "evaluation/KD_HARD/added-reports.json",
+      "bytes": 2584
+    },
+    {
+      "path": "evaluation/KD_HARD/benchmark-summary.json",
+      "bytes": 32508
+    },
+    {
+      "path": "evaluation/KD_HARD/complete.json",
+      "bytes": 557
+    },
+    {
+      "path": "evaluation/KD_HARD/results.jsonl",
+      "bytes": 9254459
+    },
+    {
+      "path": "evaluation/KD_HARD/scores.json",
+      "bytes": 10145
+    },
+    {
+      "path": "evaluation/KD_HARD/worker-0-complete.json",
+      "bytes": 142
+    },
+    {
+      "path": "evaluation/KD_HYBRID/added-reports.json",
+      "bytes": 2594
+    },
+    {
+      "path": "evaluation/KD_HYBRID/benchmark-summary.json",
+      "bytes": 32509
+    },
+    {
+      "path": "evaluation/KD_HYBRID/complete.json",
+      "bytes": 559
+    },
+    {
+      "path": "evaluation/KD_HYBRID/results.jsonl",
+      "bytes": 9188372
+    },
+    {
+      "path": "evaluation/KD_HYBRID/scores.json",
+      "bytes": 10141
+    },
+    {
+      "path": "evaluation/KD_HYBRID/worker-0-complete.json",
+      "bytes": 143
+    },
+    {
+      "path": "evaluation/KD_SOFT/added-reports.json",
+      "bytes": 2571
+    },
+    {
+      "path": "evaluation/KD_SOFT/benchmark-summary.json",
+      "bytes": 32500
+    },
+    {
+      "path": "evaluation/KD_SOFT/complete.json",
+      "bytes": 556
+    },
+    {
+      "path": "evaluation/KD_SOFT/results.jsonl",
+      "bytes": 9175112
+    },
+    {
+      "path": "evaluation/KD_SOFT/scores.json",
+      "bytes": 10136
+    },
+    {
+      "path": "evaluation/KD_SOFT/worker-0-complete.json",
+      "bytes": 143
+    },
+    {
+      "path": "four-model-five-area-radar.png",
+      "bytes": 185581
+    },
+    {
+      "path": "four-model-five-area-radar.svg",
+      "bytes": 42764
+    },
+    {
+      "path": "four-model-five-area.csv",
+      "bytes": 335
+    },
+    {
+      "path": "huggingface/data-final-remote-receipt.json",
+      "bytes": 301
+    },
+    {
+      "path": "huggingface/data-upload-receipt.json",
+      "bytes": 493
+    },
+    {
+      "path": "huggingface/models-final-remote-receipt.json",
+      "bytes": 417
+    },
+    {
+      "path": "huggingface/models-upload-receipt.json",
+      "bytes": 483
+    },
+    {
+      "path": "huggingface/supplement-upload-receipt.json",
+      "bytes": 589
+    },
+    {
+      "path": "huggingface/targets.json",
+      "bytes": 474
+    },
+    {
+      "path": "logs/evaluate-BASELINE.log",
+      "bytes": 7203
+    },
+    {
+      "path": "logs/evaluate-KD_HARD.log",
+      "bytes": 7175
+    },
+    {
+      "path": "logs/evaluate-KD_HYBRID.log",
+      "bytes": 7230
+    },
+    {
+      "path": "logs/evaluate-KD_SOFT.log",
+      "bytes": 7173
+    },
+    {
+      "path": "logs/evaluation-launcher.log",
+      "bytes": 1554
+    },
+    {
+      "path": "logs/train-KD_HARD.log",
+      "bytes": 5305
+    },
+    {
+      "path": "logs/train-KD_HYBRID.log",
+      "bytes": 5472
+    },
+    {
+      "path": "logs/train-KD_SOFT.log",
+      "bytes": 5466
+    },
+    {
+      "path": "logs/training-launcher.log",
+      "bytes": 440
+    },
+    {
+      "path": "native-benchmark-metrics.csv",
+      "bytes": 9872
+    },
+    {
+      "path": "run-records/pilot-complete.json",
+      "bytes": 7089
+    },
+    {
+      "path": "run-records/scoring-repair-status.json",
+      "bytes": 143
+    },
+    {
+      "path": "run-records/shared-order.npy",
+      "bytes": 400128
+    },
+    {
+      "path": "run-records/training-exit-codes.json",
+      "bytes": 44
+    },
+    {
+      "path": "selection/evaluation.json",
+      "bytes": 585061
+    },
+    {
+      "path": "selection/manifest.json",
+      "bytes": 186
+    },
+    {
+      "path": "selection/train-manifest.json",
+      "bytes": 54086
+    },
+    {
+      "path": "selection/train_indices.npy",
+      "bytes": 800128
+    },
+    {
+      "path": "timing-throughput.json",
+      "bytes": 3034
+    },
+    {
+      "path": "training/KD_HARD/complete.json",
+      "bytes": 833
+    },
+    {
+      "path": "training/KD_HARD/progress.json",
+      "bytes": 376
+    },
+    {
+      "path": "training/KD_HYBRID/complete.json",
+      "bytes": 847
+    },
+    {
+      "path": "training/KD_HYBRID/progress.json",
+      "bytes": 392
+    },
+    {
+      "path": "training/KD_SOFT/complete.json",
+      "bytes": 851
+    },
+    {
+      "path": "training/KD_SOFT/progress.json",
+      "bytes": 394
+    }
+  ]
+}

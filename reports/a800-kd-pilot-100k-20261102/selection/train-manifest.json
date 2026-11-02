@@ -1,0 +1,2355 @@
+{
+  "complete": true,
+  "scope": "quick_idea_pilot",
+  "pairs": 100000,
+  "full_pool_pairs": 18173706,
+  "seed": 42,
+  "parent": "/data/run01/scwb721/jev-kd-20261101/workspace/runs/five-specialists-20261030/MIXED_ALL/final",
+  "teacher": "PelaAI/KnowLine-31B-Gen1",
+  "domains": {
+    "knowledge": {
+      "full_pool_pairs": 3073453,
+      "eligible_labeled_pairs": 409716,
+      "selected_pairs": 16912,
+      "labeled_sources": 121,
+      "strata": [
+        {
+          "source_id": 294,
+          "original_label_bin": 0,
+          "available": 1817,
+          "selected": 75
+        },
+        {
+          "source_id": 294,
+          "original_label_bin": 1,
+          "available": 945,
+          "selected": 39
+        },
+        {
+          "source_id": 295,
+          "original_label_bin": 0,
+          "available": 2754,
+          "selected": 113
+        },
+        {
+          "source_id": 295,
+          "original_label_bin": 1,
+          "available": 1014,
+          "selected": 42
+        },
+        {
+          "source_id": 296,
+          "original_label_bin": 0,
+          "available": 6108,
+          "selected": 250
+        },
+        {
+          "source_id": 296,
+          "original_label_bin": 1,
+          "available": 2096,
+          "selected": 86
+        },
+        {
+          "source_id": 297,
+          "original_label_bin": 0,
+          "available": 3560,
+          "selected": 146
+        },
+        {
+          "source_id": 297,
+          "original_label_bin": 1,
+          "available": 2678,
+          "selected": 110
+        },
+        {
+          "source_id": 298,
+          "original_label_bin": 0,
+          "available": 777,
+          "selected": 33
+        },
+        {
+          "source_id": 298,
+          "original_label_bin": 1,
+          "available": 267,
+          "selected": 12
+        },
+        {
+          "source_id": 299,
+          "original_label_bin": 0,
+          "available": 1551,
+          "selected": 64
+        },
+        {
+          "source_id": 299,
+          "original_label_bin": 1,
+          "available": 528,
+          "selected": 22
+        },
+        {
+          "source_id": 300,
+          "original_label_bin": 0,
+          "available": 712,
+          "selected": 30
+        },
+        {
+          "source_id": 300,
+          "original_label_bin": 1,
+          "available": 700,
+          "selected": 29
+        },
+        {
+          "source_id": 301,
+          "original_label_bin": 0,
+          "available": 344,
+          "selected": 15
+        },
+        {
+          "source_id": 301,
+          "original_label_bin": 1,
+          "available": 344,
+          "selected": 15
+        },
+        {
+          "source_id": 302,
+          "original_label_bin": 0,
+          "available": 74,
+          "selected": 4
+        },
+        {
+          "source_id": 302,
+          "original_label_bin": 1,
+          "available": 69,
+          "selected": 4
+        },
+        {
+          "source_id": 303,
+          "original_label_bin": 0,
+          "available": 59,
+          "selected": 3
+        },
+        {
+          "source_id": 303,
+          "original_label_bin": 1,
+          "available": 58,
+          "selected": 3
+        },
+        {
+          "source_id": 304,
+          "original_label_bin": 0,
+          "available": 66,
+          "selected": 4
+        },
+        {
+          "source_id": 304,
+          "original_label_bin": 1,
+          "available": 66,
+          "selected": 4
+        },
+        {
+          "source_id": 305,
+          "original_label_bin": 0,
+          "available": 63,
+          "selected": 4
+        },
+        {
+          "source_id": 305,
+          "original_label_bin": 1,
+          "available": 63,
+          "selected": 4
+        },
+        {
+          "source_id": 306,
+          "original_label_bin": 0,
+          "available": 62,
+          "selected": 3
+        },
+        {
+          "source_id": 306,
+          "original_label_bin": 1,
+          "available": 57,
+          "selected": 3
+        },
+        {
+          "source_id": 307,
+          "original_label_bin": 0,
+          "available": 68,
+          "selected": 4
+        },
+        {
+          "source_id": 307,
+          "original_label_bin": 1,
+          "available": 68,
+          "selected": 4
+        },
+        {
+          "source_id": 308,
+          "original_label_bin": 0,
+          "available": 65,
+          "selected": 4
+        },
+        {
+          "source_id": 308,
+          "original_label_bin": 1,
+          "available": 65,
+          "selected": 4
+        },
+        {
+          "source_id": 309,
+          "original_label_bin": 0,
+          "available": 81,
+          "selected": 4
+        },
+        {
+          "source_id": 309,
+          "original_label_bin": 1,
+          "available": 75,
+          "selected": 4
+        },
+        {
+          "source_id": 310,
+          "original_label_bin": 0,
+          "available": 54,
+          "selected": 3
+        },
+        {
+          "source_id": 310,
+          "original_label_bin": 1,
+          "available": 53,
+          "selected": 3
+        },
+        {
+          "source_id": 311,
+          "original_label_bin": 0,
+          "available": 53,
+          "selected": 3
+        },
+        {
+          "source_id": 311,
+          "original_label_bin": 1,
+          "available": 53,
+          "selected": 3
+        },
+        {
+          "source_id": 312,
+          "original_label_bin": 0,
+          "available": 76,
+          "selected": 4
+        },
+        {
+          "source_id": 312,
+          "original_label_bin": 1,
+          "available": 75,
+          "selected": 4
+        },
+        {
+          "source_id": 313,
+          "original_label_bin": 0,
+          "available": 79,
+          "selected": 4
+        },
+        {
+          "source_id": 313,
+          "original_label_bin": 1,
+          "available": 74,
+          "selected": 4
+        },
+        {
+          "source_id": 314,
+          "original_label_bin": 0,
+          "available": 66,
+          "selected": 4
+        },
+        {
+          "source_id": 314,
+          "original_label_bin": 1,
+          "available": 63,
+          "selected": 4
+        },
+        {
+          "source_id": 315,
+          "original_label_bin": 0,
+          "available": 56,
+          "selected": 3
+        },
+        {
+          "source_id": 315,
+          "original_label_bin": 1,
+          "available": 55,
+          "selected": 3
+        },
+        {
+          "source_id": 316,
+          "original_label_bin": 0,
+          "available": 72,
+          "selected": 4
+        },
+        {
+          "source_id": 316,
+          "original_label_bin": 1,
+          "available": 68,
+          "selected": 4
+        },
+        {
+          "source_id": 317,
+          "original_label_bin": 0,
+          "available": 70,
+          "selected": 4
+        },
+        {
+          "source_id": 317,
+          "original_label_bin": 1,
+          "available": 66,
+          "selected": 4
+        },
+        {
+          "source_id": 318,
+          "original_label_bin": 0,
+          "available": 76,
+          "selected": 4
+        },
+        {
+          "source_id": 318,
+          "original_label_bin": 1,
+          "available": 74,
+          "selected": 4
+        },
+        {
+          "source_id": 319,
+          "original_label_bin": 0,
+          "available": 64,
+          "selected": 4
+        },
+        {
+          "source_id": 319,
+          "original_label_bin": 1,
+          "available": 61,
+          "selected": 3
+        },
+        {
+          "source_id": 320,
+          "original_label_bin": 0,
+          "available": 79,
+          "selected": 4
+        },
+        {
+          "source_id": 320,
+          "original_label_bin": 1,
+          "available": 76,
+          "selected": 4
+        },
+        {
+          "source_id": 321,
+          "original_label_bin": 0,
+          "available": 187,
+          "selected": 9
+        },
+        {
+          "source_id": 321,
+          "original_label_bin": 1,
+          "available": 188,
+          "selected": 9
+        },
+        {
+          "source_id": 322,
+          "original_label_bin": 0,
+          "available": 773,
+          "selected": 32
+        },
+        {
+          "source_id": 322,
+          "original_label_bin": 1,
+          "available": 750,
+          "selected": 31
+        },
+        {
+          "source_id": 323,
+          "original_label_bin": 0,
+          "available": 16628,
+          "selected": 678
+        },
+        {
+          "source_id": 323,
+          "original_label_bin": 1,
+          "available": 1106,
+          "selected": 46
+        },
+        {
+          "source_id": 324,
+          "original_label_bin": 0,
+          "available": 855,
+          "selected": 36
+        },
+        {
+          "source_id": 324,
+          "original_label_bin": 1,
+          "available": 816,
+          "selected": 34
+        },
+        {
+          "source_id": 325,
+          "original_label_bin": 0,
+          "available": 8470,
+          "selected": 346
+        },
+        {
+          "source_id": 325,
+          "original_label_bin": 1,
+          "available": 2013,
+          "selected": 83
+        },
+        {
+          "source_id": 326,
+          "original_label_bin": 0,
+          "available": 835,
+          "selected": 35
+        },
+        {
+          "source_id": 326,
+          "original_label_bin": 1,
+          "available": 809,
+          "selected": 34
+        },
+        {
+          "source_id": 327,
+          "original_label_bin": 0,
+          "available": 7888,
+          "selected": 322
+        },
+        {
+          "source_id": 327,
+          "original_label_bin": 1,
+          "available": 2747,
+          "selected": 113
+        },
+        {
+          "source_id": 328,
+          "original_label_bin": 0,
+          "available": 446,
+          "selected": 19
+        },
+        {
+          "source_id": 328,
+          "original_label_bin": 1,
+          "available": 423,
+          "selected": 18
+        },
+        {
+          "source_id": 329,
+          "original_label_bin": 0,
+          "available": 256,
+          "selected": 11
+        },
+        {
+          "source_id": 329,
+          "original_label_bin": 1,
+          "available": 252,
+          "selected": 11
+        },
+        {
+          "source_id": 330,
+          "original_label_bin": 0,
+          "available": 273,
+          "selected": 12
+        },
+        {
+          "source_id": 330,
+          "original_label_bin": 1,
+          "available": 265,
+          "selected": 12
+        },
+        {
+          "source_id": 331,
+          "original_label_bin": 0,
+          "available": 276,
+          "selected": 12
+        },
+        {
+          "source_id": 331,
+          "original_label_bin": 1,
+          "available": 267,
+          "selected": 12
+        },
+        {
+          "source_id": 332,
+          "original_label_bin": 0,
+          "available": 266,
+          "selected": 12
+        },
+        {
+          "source_id": 332,
+          "original_label_bin": 1,
+          "available": 259,
+          "selected": 11
+        },
+        {
+          "source_id": 333,
+          "original_label_bin": 0,
+          "available": 789,
+          "selected": 33
+        },
+        {
+          "source_id": 333,
+          "original_label_bin": 1,
+          "available": 766,
+          "selected": 32
+        },
+        {
+          "source_id": 334,
+          "original_label_bin": 0,
+          "available": 1780,
+          "selected": 73
+        },
+        {
+          "source_id": 334,
+          "original_label_bin": 1,
+          "available": 1780,
+          "selected": 73
+        },
+        {
+          "source_id": 335,
+          "original_label_bin": 0,
+          "available": 491,
+          "selected": 21
+        },
+        {
+          "source_id": 335,
+          "original_label_bin": 1,
+          "available": 256,
+          "selected": 11
+        },
+        {
+          "source_id": 336,
+          "original_label_bin": 0,
+          "available": 2238,
+          "selected": 92
+        },
+        {
+          "source_id": 336,
+          "original_label_bin": 1,
+          "available": 581,
+          "selected": 25
+        },
+        {
+          "source_id": 337,
+          "original_label_bin": 0,
+          "available": 933,
+          "selected": 39
+        },
+        {
+          "source_id": 337,
+          "original_label_bin": 1,
+          "available": 895,
+          "selected": 37
+        },
+        {
+          "source_id": 338,
+          "original_label_bin": 0,
+          "available": 6355,
+          "selected": 260
+        },
+        {
+          "source_id": 338,
+          "original_label_bin": 1,
+          "available": 606,
+          "selected": 26
+        },
+        {
+          "source_id": 339,
+          "original_label_bin": 0,
+          "available": 4394,
+          "selected": 180
+        },
+        {
+          "source_id": 339,
+          "original_label_bin": 1,
+          "available": 1512,
+          "selected": 62
+        },
+        {
+          "source_id": 340,
+          "original_label_bin": 0,
+          "available": 1252,
+          "selected": 52
+        },
+        {
+          "source_id": 340,
+          "original_label_bin": 1,
+          "available": 1204,
+          "selected": 50
+        },
+        {
+          "source_id": 341,
+          "original_label_bin": 0,
+          "available": 150,
+          "selected": 7
+        },
+        {
+          "source_id": 341,
+          "original_label_bin": 1,
+          "available": 39,
+          "selected": 3
+        },
+        {
+          "source_id": 342,
+          "original_label_bin": 0,
+          "available": 10887,
+          "selected": 444
+        },
+        {
+          "source_id": 342,
+          "original_label_bin": 1,
+          "available": 2803,
+          "selected": 115
+        },
+        {
+          "source_id": 343,
+          "original_label_bin": 0,
+          "available": 752,
+          "selected": 32
+        },
+        {
+          "source_id": 343,
+          "original_label_bin": 1,
+          "available": 722,
+          "selected": 30
+        },
+        {
+          "source_id": 344,
+          "original_label_bin": 0,
+          "available": 8099,
+          "selected": 331
+        },
+        {
+          "source_id": 344,
+          "original_label_bin": 1,
+          "available": 2789,
+          "selected": 114
+        },
+        {
+          "source_id": 345,
+          "original_label_bin": 0,
+          "available": 12,
+          "selected": 1
+        },
+        {
+          "source_id": 345,
+          "original_label_bin": 1,
+          "available": 12,
+          "selected": 1
+        },
+        {
+          "source_id": 346,
+          "original_label_bin": 0,
+          "available": 13,
+          "selected": 1
+        },
+        {
+          "source_id": 346,
+          "original_label_bin": 1,
+          "available": 13,
+          "selected": 1
+        },
+        {
+          "source_id": 347,
+          "original_label_bin": 0,
+          "available": 14,
+          "selected": 2
+        },
+        {
+          "source_id": 347,
+          "original_label_bin": 1,
+          "available": 14,
+          "selected": 2
+        },
+        {
+          "source_id": 348,
+          "original_label_bin": 0,
+          "available": 15,
+          "selected": 2
+        },
+        {
+          "source_id": 348,
+          "original_label_bin": 1,
+          "available": 15,
+          "selected": 2
+        },
+        {
+          "source_id": 349,
+          "original_label_bin": 0,
+          "available": 14,
+          "selected": 2
+        },
+        {
+          "source_id": 349,
+          "original_label_bin": 1,
+          "available": 14,
+          "selected": 2
+        },
+        {
+          "source_id": 350,
+          "original_label_bin": 0,
+          "available": 12,
+          "selected": 1
+        },
+        {
+          "source_id": 350,
+          "original_label_bin": 1,
+          "available": 12,
+          "selected": 1
+        },
+        {
+          "source_id": 351,
+          "original_label_bin": 0,
+          "available": 10,
+          "selected": 1
+        },
+        {
+          "source_id": 351,
+          "original_label_bin": 1,
+          "available": 10,
+          "selected": 1
+        },
+        {
+          "source_id": 352,
+          "original_label_bin": 0,
+          "available": 13,
+          "selected": 1
+        },
+        {
+          "source_id": 352,
+          "original_label_bin": 1,
+          "available": 13,
+          "selected": 1
+        },
+        {
+          "source_id": 353,
+          "original_label_bin": 0,
+          "available": 15,
+          "selected": 2
+        },
+        {
+          "source_id": 353,
+          "original_label_bin": 1,
+          "available": 15,
+          "selected": 2
+        },
+        {
+          "source_id": 354,
+          "original_label_bin": 0,
+          "available": 17,
+          "selected": 2
+        },
+        {
+          "source_id": 354,
+          "original_label_bin": 1,
+          "available": 17,
+          "selected": 2
+        },
+        {
+          "source_id": 355,
+          "original_label_bin": 0,
+          "available": 10,
+          "selected": 1
+        },
+        {
+          "source_id": 355,
+          "original_label_bin": 1,
+          "available": 10,
+          "selected": 1
+        },
+        {
+          "source_id": 356,
+          "original_label_bin": 0,
+          "available": 7,
+          "selected": 1
+        },
+        {
+          "source_id": 356,
+          "original_label_bin": 1,
+          "available": 7,
+          "selected": 1
+        },
+        {
+          "source_id": 357,
+          "original_label_bin": 0,
+          "available": 15,
+          "selected": 2
+        },
+        {
+          "source_id": 357,
+          "original_label_bin": 1,
+          "available": 16,
+          "selected": 2
+        },
+        {
+          "source_id": 358,
+          "original_label_bin": 0,
+          "available": 16,
+          "selected": 2
+        },
+        {
+          "source_id": 358,
+          "original_label_bin": 1,
+          "available": 16,
+          "selected": 2
+        },
+        {
+          "source_id": 359,
+          "original_label_bin": 0,
+          "available": 14,
+          "selected": 2
+        },
+        {
+          "source_id": 359,
+          "original_label_bin": 1,
+          "available": 14,
+          "selected": 2
+        },
+        {
+          "source_id": 360,
+          "original_label_bin": 0,
+          "available": 13,
+          "selected": 1
+        },
+        {
+          "source_id": 360,
+          "original_label_bin": 1,
+          "available": 13,
+          "selected": 1
+        },
+        {
+          "source_id": 361,
+          "original_label_bin": 0,
+          "available": 13,
+          "selected": 1
+        },
+        {
+          "source_id": 361,
+          "original_label_bin": 1,
+          "available": 14,
+          "selected": 2
+        },
+        {
+          "source_id": 362,
+          "original_label_bin": 0,
+          "available": 18,
+          "selected": 2
+        },
+        {
+          "source_id": 362,
+          "original_label_bin": 1,
+          "available": 17,
+          "selected": 2
+        },
+        {
+          "source_id": 363,
+          "original_label_bin": 0,
+          "available": 18,
+          "selected": 2
+        },
+        {
+          "source_id": 363,
+          "original_label_bin": 1,
+          "available": 17,
+          "selected": 2
+        },
+        {
+          "source_id": 364,
+          "original_label_bin": 0,
+          "available": 9,
+          "selected": 1
+        },
+        {
+          "source_id": 364,
+          "original_label_bin": 1,
+          "available": 9,
+          "selected": 1
+        },
+        {
+          "source_id": 365,
+          "original_label_bin": 0,
+          "available": 11,
+          "selected": 1
+        },
+        {
+          "source_id": 365,
+          "original_label_bin": 1,
+          "available": 11,
+          "selected": 1
+        },
+        {
+          "source_id": 366,
+          "original_label_bin": 0,
+          "available": 338,
+          "selected": 15
+        },
+        {
+          "source_id": 366,
+          "original_label_bin": 1,
+          "available": 86,
+          "selected": 4
+        },
+        {
+          "source_id": 367,
+          "original_label_bin": 0,
+          "available": 354,
+          "selected": 15
+        },
+        {
+          "source_id": 367,
+          "original_label_bin": 1,
+          "available": 93,
+          "selected": 5
+        },
+        {
+          "source_id": 368,
+          "original_label_bin": 0,
+          "available": 391,
+          "selected": 17
+        },
+        {
+          "source_id": 368,
+          "original_label_bin": 1,
+          "available": 92,
+          "selected": 5
+        },
+        {
+          "source_id": 369,
+          "original_label_bin": 0,
+          "available": 360,
+          "selected": 16
+        },
+        {
+          "source_id": 369,
+          "original_label_bin": 1,
+          "available": 93,
+          "selected": 5
+        },
+        {
+          "source_id": 370,
+          "original_label_bin": 0,
+          "available": 430,
+          "selected": 18
+        },
+        {
+          "source_id": 370,
+          "original_label_bin": 1,
+          "available": 112,
+          "selected": 5
+        },
+        {
+          "source_id": 371,
+          "original_label_bin": 0,
+          "available": 281,
+          "selected": 12
+        },
+        {
+          "source_id": 371,
+          "original_label_bin": 1,
+          "available": 74,
+          "selected": 4
+        },
+        {
+          "source_id": 372,
+          "original_label_bin": 0,
+          "available": 418,
+          "selected": 18
+        },
+        {
+          "source_id": 372,
+          "original_label_bin": 1,
+          "available": 109,
+          "selected": 5
+        },
+        {
+          "source_id": 373,
+          "original_label_bin": 0,
+          "available": 327,
+          "selected": 14
+        },
+        {
+          "source_id": 373,
+          "original_label_bin": 1,
+          "available": 84,
+          "selected": 4
+        },
+        {
+          "source_id": 374,
+          "original_label_bin": 0,
+          "available": 369,
+          "selected": 16
+        },
+        {
+          "source_id": 374,
+          "original_label_bin": 1,
+          "available": 96,
+          "selected": 5
+        },
+        {
+          "source_id": 375,
+          "original_label_bin": 0,
+          "available": 324,
+          "selected": 14
+        },
+        {
+          "source_id": 375,
+          "original_label_bin": 1,
+          "available": 84,
+          "selected": 4
+        },
+        {
+          "source_id": 376,
+          "original_label_bin": 0,
+          "available": 412,
+          "selected": 18
+        },
+        {
+          "source_id": 376,
+          "original_label_bin": 1,
+          "available": 106,
+          "selected": 5
+        },
+        {
+          "source_id": 377,
+          "original_label_bin": 0,
+          "available": 398,
+          "selected": 17
+        },
+        {
+          "source_id": 377,
+          "original_label_bin": 1,
+          "available": 104,
+          "selected": 5
+        },
+        {
+          "source_id": 378,
+          "original_label_bin": 0,
+          "available": 389,
+          "selected": 17
+        },
+        {
+          "source_id": 378,
+          "original_label_bin": 1,
+          "available": 98,
+          "selected": 5
+        },
+        {
+          "source_id": 379,
+          "original_label_bin": 0,
+          "available": 312,
+          "selected": 14
+        },
+        {
+          "source_id": 379,
+          "original_label_bin": 1,
+          "available": 81,
+          "selected": 4
+        },
+        {
+          "source_id": 380,
+          "original_label_bin": 0,
+          "available": 337,
+          "selected": 15
+        },
+        {
+          "source_id": 380,
+          "original_label_bin": 1,
+          "available": 85,
+          "selected": 4
+        },
+        {
+          "source_id": 381,
+          "original_label_bin": 0,
+          "available": 368,
+          "selected": 16
+        },
+        {
+          "source_id": 381,
+          "original_label_bin": 1,
+          "available": 95,
+          "selected": 5
+        },
+        {
+          "source_id": 382,
+          "original_label_bin": 0,
+          "available": 346,
+          "selected": 15
+        },
+        {
+          "source_id": 382,
+          "original_label_bin": 1,
+          "available": 334,
+          "selected": 15
+        },
+        {
+          "source_id": 383,
+          "original_label_bin": 0,
+          "available": 307,
+          "selected": 13
+        },
+        {
+          "source_id": 383,
+          "original_label_bin": 1,
+          "available": 298,
+          "selected": 13
+        },
+        {
+          "source_id": 384,
+          "original_label_bin": 0,
+          "available": 1828,
+          "selected": 75
+        },
+        {
+          "source_id": 384,
+          "original_label_bin": 1,
+          "available": 952,
+          "selected": 40
+        },
+        {
+          "source_id": 385,
+          "original_label_bin": 0,
+          "available": 993,
+          "selected": 41
+        },
+        {
+          "source_id": 385,
+          "original_label_bin": 1,
+          "available": 343,
+          "selected": 15
+        },
+        {
+          "source_id": 386,
+          "original_label_bin": 0,
+          "available": 3070,
+          "selected": 126
+        },
+        {
+          "source_id": 386,
+          "original_label_bin": 1,
+          "available": 1064,
+          "selected": 44
+        },
+        {
+          "source_id": 387,
+          "original_label_bin": 0,
+          "available": 2008,
+          "selected": 83
+        },
+        {
+          "source_id": 387,
+          "original_label_bin": 1,
+          "available": 2008,
+          "selected": 83
+        },
+        {
+          "source_id": 388,
+          "original_label_bin": 0,
+          "available": 9905,
+          "selected": 404
+        },
+        {
+          "source_id": 388,
+          "original_label_bin": 1,
+          "available": 3409,
+          "selected": 140
+        },
+        {
+          "source_id": 389,
+          "original_label_bin": 0,
+          "available": 2576,
+          "selected": 106
+        },
+        {
+          "source_id": 389,
+          "original_label_bin": 1,
+          "available": 2576,
+          "selected": 106
+        },
+        {
+          "source_id": 390,
+          "original_label_bin": 0,
+          "available": 5615,
+          "selected": 230
+        },
+        {
+          "source_id": 390,
+          "original_label_bin": 1,
+          "available": 2878,
+          "selected": 118
+        },
+        {
+          "source_id": 391,
+          "original_label_bin": 0,
+          "available": 2867,
+          "selected": 118
+        },
+        {
+          "source_id": 391,
+          "original_label_bin": 1,
+          "available": 1484,
+          "selected": 61
+        },
+        {
+          "source_id": 392,
+          "original_label_bin": 0,
+          "available": 570,
+          "selected": 24
+        },
+        {
+          "source_id": 392,
+          "original_label_bin": 1,
+          "available": 545,
+          "selected": 23
+        },
+        {
+          "source_id": 393,
+          "original_label_bin": 0,
+          "available": 191,
+          "selected": 9
+        },
+        {
+          "source_id": 393,
+          "original_label_bin": 1,
+          "available": 191,
+          "selected": 9
+        },
+        {
+          "source_id": 394,
+          "original_label_bin": 0,
+          "available": 3699,
+          "selected": 152
+        },
+        {
+          "source_id": 394,
+          "original_label_bin": 1,
+          "available": 1273,
+          "selected": 53
+        },
+        {
+          "source_id": 395,
+          "original_label_bin": 0,
+          "available": 908,
+          "selected": 38
+        },
+        {
+          "source_id": 395,
+          "original_label_bin": 1,
+          "available": 856,
+          "selected": 36
+        },
+        {
+          "source_id": 396,
+          "original_label_bin": 0,
+          "available": 5530,
+          "selected": 226
+        },
+        {
+          "source_id": 396,
+          "original_label_bin": 1,
+          "available": 2829,
+          "selected": 116
+        },
+        {
+          "source_id": 397,
+          "original_label_bin": 0,
+          "available": 22124,
+          "selected": 902
+        },
+        {
+          "source_id": 397,
+          "original_label_bin": 1,
+          "available": 3285,
+          "selected": 135
+        },
+        {
+          "source_id": 398,
+          "original_label_bin": 0,
+          "available": 9410,
+          "selected": 384
+        },
+        {
+          "source_id": 398,
+          "original_label_bin": 1,
+          "available": 1395,
+          "selected": 58
+        },
+        {
+          "source_id": 399,
+          "original_label_bin": 0,
+          "available": 7949,
+          "selected": 325
+        },
+        {
+          "source_id": 399,
+          "original_label_bin": 1,
+          "available": 708,
+          "selected": 30
+        },
+        {
+          "source_id": 400,
+          "original_label_bin": 0,
+          "available": 349,
+          "selected": 15
+        },
+        {
+          "source_id": 400,
+          "original_label_bin": 1,
+          "available": 339,
+          "selected": 15
+        },
+        {
+          "source_id": 401,
+          "original_label_bin": 0,
+          "available": 2014,
+          "selected": 83
+        },
+        {
+          "source_id": 401,
+          "original_label_bin": 1,
+          "available": 1037,
+          "selected": 43
+        },
+        {
+          "source_id": 402,
+          "original_label_bin": 0,
+          "available": 408,
+          "selected": 18
+        },
+        {
+          "source_id": 402,
+          "original_label_bin": 1,
+          "available": 397,
+          "selected": 17
+        },
+        {
+          "source_id": 403,
+          "original_label_bin": 0,
+          "available": 2914,
+          "selected": 120
+        },
+        {
+          "source_id": 403,
+          "original_label_bin": 1,
+          "available": 1030,
+          "selected": 43
+        },
+        {
+          "source_id": 404,
+          "original_label_bin": 0,
+          "available": 3044,
+          "selected": 125
+        },
+        {
+          "source_id": 404,
+          "original_label_bin": 1,
+          "available": 1052,
+          "selected": 44
+        },
+        {
+          "source_id": 405,
+          "original_label_bin": 0,
+          "available": 15721,
+          "selected": 641
+        },
+        {
+          "source_id": 405,
+          "original_label_bin": 1,
+          "available": 4336,
+          "selected": 177
+        },
+        {
+          "source_id": 406,
+          "original_label_bin": 0,
+          "available": 952,
+          "selected": 40
+        },
+        {
+          "source_id": 406,
+          "original_label_bin": 1,
+          "available": 906,
+          "selected": 38
+        },
+        {
+          "source_id": 407,
+          "original_label_bin": 0,
+          "available": 211,
+          "selected": 10
+        },
+        {
+          "source_id": 407,
+          "original_label_bin": 1,
+          "available": 203,
+          "selected": 9
+        },
+        {
+          "source_id": 408,
+          "original_label_bin": 0,
+          "available": 445,
+          "selected": 19
+        },
+        {
+          "source_id": 408,
+          "original_label_bin": 1,
+          "available": 431,
+          "selected": 18
+        },
+        {
+          "source_id": 409,
+          "original_label_bin": 0,
+          "available": 110,
+          "selected": 5
+        },
+        {
+          "source_id": 409,
+          "original_label_bin": 1,
+          "available": 110,
+          "selected": 5
+        },
+        {
+          "source_id": 441,
+          "original_label_bin": 0,
+          "available": 13109,
+          "selected": 535
+        },
+        {
+          "source_id": 441,
+          "original_label_bin": 1,
+          "available": 2410,
+          "selected": 99
+        },
+        {
+          "source_id": 723,
+          "original_label_bin": 0,
+          "available": 12335,
+          "selected": 503
+        },
+        {
+          "source_id": 723,
+          "original_label_bin": 1,
+          "available": 1243,
+          "selected": 52
+        },
+        {
+          "source_id": 743,
+          "original_label_bin": 0,
+          "available": 8622,
+          "selected": 352
+        },
+        {
+          "source_id": 743,
+          "original_label_bin": 1,
+          "available": 4311,
+          "selected": 176
+        },
+        {
+          "source_id": 792,
+          "original_label_bin": 0,
+          "available": 55036,
+          "selected": 2241
+        },
+        {
+          "source_id": 792,
+          "original_label_bin": 1,
+          "available": 3088,
+          "selected": 127
+        },
+        {
+          "source_id": 804,
+          "original_label_bin": 0,
+          "available": 27475,
+          "selected": 1119
+        },
+        {
+          "source_id": 804,
+          "original_label_bin": 1,
+          "available": 4058,
+          "selected": 166
+        }
+      ]
+    },
+    "retrieval": {
+      "full_pool_pairs": 11047617,
+      "eligible_labeled_pairs": 1025620,
+      "selected_pairs": 60789,
+      "labeled_sources": 39,
+      "strata": [
+        {
+          "source_id": 673,
+          "original_label_bin": 0,
+          "available": 146686,
+          "selected": 8685
+        },
+        {
+          "source_id": 673,
+          "original_label_bin": 1,
+          "available": 1376,
+          "selected": 82
+        },
+        {
+          "source_id": 694,
+          "original_label_bin": 0,
+          "available": 309245,
+          "selected": 18308
+        },
+        {
+          "source_id": 694,
+          "original_label_bin": 1,
+          "available": 1383,
+          "selected": 83
+        },
+        {
+          "source_id": 750,
+          "original_label_bin": 0,
+          "available": 11436,
+          "selected": 678
+        },
+        {
+          "source_id": 750,
+          "original_label_bin": 1,
+          "available": 4275,
+          "selected": 254
+        },
+        {
+          "source_id": 778,
+          "original_label_bin": 0,
+          "available": 57469,
+          "selected": 3403
+        },
+        {
+          "source_id": 778,
+          "original_label_bin": 1,
+          "available": 1390,
+          "selected": 83
+        },
+        {
+          "source_id": 816,
+          "original_label_bin": 0,
+          "available": 15117,
+          "selected": 896
+        },
+        {
+          "source_id": 816,
+          "original_label_bin": 1,
+          "available": 2140,
+          "selected": 128
+        },
+        {
+          "source_id": 883,
+          "original_label_bin": 0,
+          "available": 22163,
+          "selected": 1313
+        },
+        {
+          "source_id": 883,
+          "original_label_bin": 1,
+          "available": 3117,
+          "selected": 185
+        },
+        {
+          "source_id": 884,
+          "original_label_bin": 0,
+          "available": 2916,
+          "selected": 174
+        },
+        {
+          "source_id": 884,
+          "original_label_bin": 1,
+          "available": 1038,
+          "selected": 62
+        },
+        {
+          "source_id": 885,
+          "original_label_bin": 0,
+          "available": 93087,
+          "selected": 5512
+        },
+        {
+          "source_id": 885,
+          "original_label_bin": 1,
+          "available": 1287,
+          "selected": 77
+        },
+        {
+          "source_id": 886,
+          "original_label_bin": 0,
+          "available": 1338,
+          "selected": 80
+        },
+        {
+          "source_id": 886,
+          "original_label_bin": 1,
+          "available": 299,
+          "selected": 19
+        },
+        {
+          "source_id": 887,
+          "original_label_bin": 0,
+          "available": 194004,
+          "selected": 11486
+        },
+        {
+          "source_id": 887,
+          "original_label_bin": 1,
+          "available": 1347,
+          "selected": 81
+        },
+        {
+          "source_id": 888,
+          "original_label_bin": 0,
+          "available": 7694,
+          "selected": 456
+        },
+        {
+          "source_id": 888,
+          "original_label_bin": 1,
+          "available": 662,
+          "selected": 40
+        },
+        {
+          "source_id": 889,
+          "original_label_bin": 0,
+          "available": 17594,
+          "selected": 1042
+        },
+        {
+          "source_id": 889,
+          "original_label_bin": 1,
+          "available": 1232,
+          "selected": 74
+        },
+        {
+          "source_id": 890,
+          "original_label_bin": 0,
+          "available": 1708,
+          "selected": 102
+        },
+        {
+          "source_id": 890,
+          "original_label_bin": 1,
+          "available": 617,
+          "selected": 37
+        },
+        {
+          "source_id": 891,
+          "original_label_bin": 0,
+          "available": 862,
+          "selected": 52
+        },
+        {
+          "source_id": 891,
+          "original_label_bin": 1,
+          "available": 825,
+          "selected": 50
+        },
+        {
+          "source_id": 892,
+          "original_label_bin": 0,
+          "available": 153,
+          "selected": 10
+        },
+        {
+          "source_id": 892,
+          "original_label_bin": 1,
+          "available": 55,
+          "selected": 4
+        },
+        {
+          "source_id": 893,
+          "original_label_bin": 0,
+          "available": 341,
+          "selected": 21
+        },
+        {
+          "source_id": 893,
+          "original_label_bin": 1,
+          "available": 78,
+          "selected": 6
+        },
+        {
+          "source_id": 894,
+          "original_label_bin": 0,
+          "available": 264,
+          "selected": 17
+        },
+        {
+          "source_id": 894,
+          "original_label_bin": 1,
+          "available": 72,
+          "selected": 5
+        },
+        {
+          "source_id": 895,
+          "original_label_bin": 0,
+          "available": 347,
+          "selected": 21
+        },
+        {
+          "source_id": 895,
+          "original_label_bin": 1,
+          "available": 67,
+          "selected": 5
+        },
+        {
+          "source_id": 896,
+          "original_label_bin": 0,
+          "available": 225,
+          "selected": 14
+        },
+        {
+          "source_id": 896,
+          "original_label_bin": 1,
+          "available": 45,
+          "selected": 4
+        },
+        {
+          "source_id": 897,
+          "original_label_bin": 0,
+          "available": 230,
+          "selected": 15
+        },
+        {
+          "source_id": 897,
+          "original_label_bin": 1,
+          "available": 88,
+          "selected": 6
+        },
+        {
+          "source_id": 898,
+          "original_label_bin": 0,
+          "available": 294,
+          "selected": 18
+        },
+        {
+          "source_id": 898,
+          "original_label_bin": 1,
+          "available": 79,
+          "selected": 6
+        },
+        {
+          "source_id": 899,
+          "original_label_bin": 0,
+          "available": 231,
+          "selected": 15
+        },
+        {
+          "source_id": 899,
+          "original_label_bin": 1,
+          "available": 64,
+          "selected": 5
+        },
+        {
+          "source_id": 900,
+          "original_label_bin": 0,
+          "available": 221,
+          "selected": 14
+        },
+        {
+          "source_id": 900,
+          "original_label_bin": 1,
+          "available": 60,
+          "selected": 5
+        },
+        {
+          "source_id": 901,
+          "original_label_bin": 0,
+          "available": 225,
+          "selected": 14
+        },
+        {
+          "source_id": 901,
+          "original_label_bin": 1,
+          "available": 48,
+          "selected": 4
+        },
+        {
+          "source_id": 902,
+          "original_label_bin": 0,
+          "available": 192,
+          "selected": 12
+        },
+        {
+          "source_id": 902,
+          "original_label_bin": 1,
+          "available": 70,
+          "selected": 5
+        },
+        {
+          "source_id": 903,
+          "original_label_bin": 0,
+          "available": 363,
+          "selected": 22
+        },
+        {
+          "source_id": 903,
+          "original_label_bin": 1,
+          "available": 66,
+          "selected": 5
+        },
+        {
+          "source_id": 904,
+          "original_label_bin": 0,
+          "available": 574,
+          "selected": 35
+        },
+        {
+          "source_id": 904,
+          "original_label_bin": 1,
+          "available": 104,
+          "selected": 7
+        },
+        {
+          "source_id": 905,
+          "original_label_bin": 0,
+          "available": 377,
+          "selected": 23
+        },
+        {
+          "source_id": 905,
+          "original_label_bin": 1,
+          "available": 83,
+          "selected": 6
+        },
+        {
+          "source_id": 906,
+          "original_label_bin": 0,
+          "available": 212,
+          "selected": 13
+        },
+        {
+          "source_id": 906,
+          "original_label_bin": 1,
+          "available": 58,
+          "selected": 4
+        },
+        {
+          "source_id": 907,
+          "original_label_bin": 0,
+          "available": 239,
+          "selected": 15
+        },
+        {
+          "source_id": 907,
+          "original_label_bin": 1,
+          "available": 63,
+          "selected": 5
+        },
+        {
+          "source_id": 908,
+          "original_label_bin": 0,
+          "available": 76825,
+          "selected": 4549
+        },
+        {
+          "source_id": 908,
+          "original_label_bin": 1,
+          "available": 1368,
+          "selected": 82
+        },
+        {
+          "source_id": 909,
+          "original_label_bin": 0,
+          "available": 761,
+          "selected": 46
+        },
+        {
+          "source_id": 909,
+          "original_label_bin": 1,
+          "available": 730,
+          "selected": 44
+        },
+        {
+          "source_id": 910,
+          "original_label_bin": 0,
+          "available": 9705,
+          "selected": 575
+        },
+        {
+          "source_id": 910,
+          "original_label_bin": 1,
+          "available": 1184,
+          "selected": 71
+        },
+        {
+          "source_id": 911,
+          "original_label_bin": 0,
+          "available": 19116,
+          "selected": 1133
+        },
+        {
+          "source_id": 911,
+          "original_label_bin": 1,
+          "available": 4152,
+          "selected": 247
+        },
+        {
+          "source_id": 912,
+          "original_label_bin": 0,
+          "available": 686,
+          "selected": 42
+        },
+        {
+          "source_id": 912,
+          "original_label_bin": 1,
+          "available": 362,
+          "selected": 22
+        },
+        {
+          "source_id": 913,
+          "original_label_bin": 0,
+          "available": 707,
+          "selected": 43
+        },
+        {
+          "source_id": 913,
+          "original_label_bin": 1,
+          "available": 377,
+          "selected": 23
+        },
+        {
+          "source_id": 914,
+          "original_label_bin": 0,
+          "available": 577,
+          "selected": 35
+        },
+        {
+          "source_id": 914,
+          "original_label_bin": 1,
+          "available": 74,
+          "selected": 5
+        },
+        {
+          "source_id": 915,
+          "original_label_bin": 0,
+          "available": 617,
+          "selected": 37
+        },
+        {
+          "source_id": 915,
+          "original_label_bin": 1,
+          "available": 323,
+          "selected": 20
+        },
+        {
+          "source_id": 916,
+          "original_label_bin": 0,
+          "available": 82,
+          "selected": 6
+        },
+        {
+          "source_id": 916,
+          "original_label_bin": 1,
+          "available": 79,
+          "selected": 6
+        }
+      ]
+    },
+    "tools": {
+      "full_pool_pairs": 1579715,
+      "eligible_labeled_pairs": 107849,
+      "selected_pairs": 8692,
+      "labeled_sources": 5,
+      "strata": [
+        {
+          "source_id": 742,
+          "original_label_bin": 0,
+          "available": 10350,
+          "selected": 834
+        },
+        {
+          "source_id": 742,
+          "original_label_bin": 1,
+          "available": 4274,
+          "selected": 345
+        },
+        {
+          "source_id": 779,
+          "original_label_bin": 0,
+          "available": 19121,
+          "selected": 1540
+        },
+        {
+          "source_id": 779,
+          "original_label_bin": 1,
+          "available": 4150,
+          "selected": 335
+        },
+        {
+          "source_id": 807,
+          "original_label_bin": 0,
+          "available": 9835,
+          "selected": 793
+        },
+        {
+          "source_id": 807,
+          "original_label_bin": 1,
+          "available": 4215,
+          "selected": 340
+        },
+        {
+          "source_id": 813,
+          "original_label_bin": 0,
+          "available": 10985,
+          "selected": 885
+        },
+        {
+          "source_id": 813,
+          "original_label_bin": 1,
+          "available": 4155,
+          "selected": 336
+        },
+        {
+          "source_id": 917,
+          "original_label_bin": 0,
+          "available": 36579,
+          "selected": 2946
+        },
+        {
+          "source_id": 917,
+          "original_label_bin": 1,
+          "available": 4185,
+          "selected": 338
+        }
+      ]
+    },
+    "arts": {
+      "full_pool_pairs": 2472921,
+      "eligible_labeled_pairs": 273122,
+      "selected_pairs": 13607,
+      "labeled_sources": 27,
+      "strata": [
+        {
+          "source_id": 755,
+          "original_label_bin": 0,
+          "available": 6965,
+          "selected": 347
+        },
+        {
+          "source_id": 755,
+          "original_label_bin": 1,
+          "available": 6965,
+          "selected": 347
+        },
+        {
+          "source_id": 768,
+          "original_label_bin": 0,
+          "available": 9769,
+          "selected": 486
+        },
+        {
+          "source_id": 768,
+          "original_label_bin": 1,
+          "available": 9907,
+          "selected": 493
+        },
+        {
+          "source_id": 918,
+          "original_label_bin": 0,
+          "available": 668,
+          "selected": 34
+        },
+        {
+          "source_id": 918,
+          "original_label_bin": 1,
+          "available": 176,
+          "selected": 10
+        },
+        {
+          "source_id": 919,
+          "original_label_bin": 0,
+          "available": 770,
+          "selected": 39
+        },
+        {
+          "source_id": 919,
+          "original_label_bin": 1,
+          "available": 208,
+          "selected": 11
+        },
+        {
+          "source_id": 920,
+          "original_label_bin": 0,
+          "available": 745,
+          "selected": 38
+        },
+        {
+          "source_id": 920,
+          "original_label_bin": 1,
+          "available": 201,
+          "selected": 11
+        },
+        {
+          "source_id": 921,
+          "original_label_bin": 0,
+          "available": 679,
+          "selected": 35
+        },
+        {
+          "source_id": 921,
+          "original_label_bin": 1,
+          "available": 180,
+          "selected": 10
+        },
+        {
+          "source_id": 922,
+          "original_label_bin": 0,
+          "available": 699,
+          "selected": 36
+        },
+        {
+          "source_id": 922,
+          "original_label_bin": 1,
+          "available": 185,
+          "selected": 10
+        },
+        {
+          "source_id": 923,
+          "original_label_bin": 0,
+          "available": 917,
+          "selected": 46
+        },
+        {
+          "source_id": 923,
+          "original_label_bin": 1,
+          "available": 245,
+          "selected": 13
+        },
+        {
+          "source_id": 924,
+          "original_label_bin": 0,
+          "available": 1008,
+          "selected": 51
+        },
+        {
+          "source_id": 924,
+          "original_label_bin": 1,
+          "available": 268,
+          "selected": 14
+        },
+        {
+          "source_id": 925,
+          "original_label_bin": 0,
+          "available": 992,
+          "selected": 50
+        },
+        {
+          "source_id": 925,
+          "original_label_bin": 1,
+          "available": 257,
+          "selected": 14
+        },
+        {
+          "source_id": 926,
+          "original_label_bin": 0,
+          "available": 1045,
+          "selected": 53
+        },
+        {
+          "source_id": 926,
+          "original_label_bin": 1,
+          "available": 279,
+          "selected": 15
+        },
+        {
+          "source_id": 927,
+          "original_label_bin": 0,
+          "available": 1029,
+          "selected": 52
+        },
+        {
+          "source_id": 927,
+          "original_label_bin": 1,
+          "available": 265,
+          "selected": 14
+        },
+        {
+          "source_id": 928,
+          "original_label_bin": 0,
+          "available": 671,
+          "selected": 34
+        },
+        {
+          "source_id": 928,
+          "original_label_bin": 1,
+          "available": 671,
+          "selected": 34
+        },
+        {
+          "source_id": 929,
+          "original_label_bin": 0,
+          "available": 1469,
+          "selected": 74
+        },
+        {
+          "source_id": 929,
+          "original_label_bin": 1,
+          "available": 395,
+          "selected": 21
+        },
+        {
+          "source_id": 930,
+          "original_label_bin": 0,
+          "available": 1999,
+          "selected": 100
+        },
+        {
+          "source_id": 930,
+          "original_label_bin": 1,
+          "available": 1999,
+          "selected": 100
+        },
+        {
+          "source_id": 931,
+          "original_label_bin": 0,
+          "available": 1985,
+          "selected": 99
+        },
+        {
+          "source_id": 931,
+          "original_label_bin": 1,
+          "available": 354,
+          "selected": 18
+        },
+        {
+          "source_id": 932,
+          "original_label_bin": 0,
+          "available": 430,
+          "selected": 22
+        },
+        {
+          "source_id": 932,
+          "original_label_bin": 1,
+          "available": 419,
+          "selected": 22
+        },
+        {
+          "source_id": 933,
+          "original_label_bin": 0,
+          "available": 2572,
+          "selected": 129
+        },
+        {
+          "source_id": 933,
+          "original_label_bin": 1,
+          "available": 2572,
+          "selected": 129
+        },
+        {
+          "source_id": 934,
+          "original_label_bin": 0,
+          "available": 1314,
+          "selected": 66
+        },
+        {
+          "source_id": 934,
+          "original_label_bin": 1,
+          "available": 1314,
+          "selected": 66
+        },
+        {
+          "source_id": 935,
+          "original_label_bin": 0,
+          "available": 1342,
+          "selected": 68
+        },
+        {
+          "source_id": 935,
+          "original_label_bin": 1,
+          "available": 1342,
+          "selected": 68
+        },
+        {
+          "source_id": 936,
+          "original_label_bin": 0,
+          "available": 1400,
+          "selected": 70
+        },
+        {
+          "source_id": 936,
+          "original_label_bin": 1,
+          "available": 1400,
+          "selected": 70
+        },
+        {
+          "source_id": 937,
+          "original_label_bin": 0,
+          "available": 1395,
+          "selected": 70
+        },
+        {
+          "source_id": 937,
+          "original_label_bin": 1,
+          "available": 1395,
+          "selected": 70
+        },
+        {
+          "source_id": 938,
+          "original_label_bin": 0,
+          "available": 699,
+          "selected": 36
+        },
+        {
+          "source_id": 938,
+          "original_label_bin": 1,
+          "available": 241,
+          "selected": 13
+        },
+        {
+          "source_id": 939,
+          "original_label_bin": 0,
+          "available": 581,
+          "selected": 30
+        },
+        {
+          "source_id": 939,
+          "original_label_bin": 1,
+          "available": 303,
+          "selected": 16
+        },
+        {
+          "source_id": 940,
+          "original_label_bin": 0,
+          "available": 7452,
+          "selected": 371
+        },
+        {
+          "source_id": 940,
+          "original_label_bin": 1,
+          "available": 1903,
+          "selected": 95
+        },
+        {
+          "source_id": 941,
+          "original_label_bin": 0,
+          "available": 737,
+          "selected": 37
+        },
+        {
+          "source_id": 941,
+          "original_label_bin": 1,
+          "available": 264,
+          "selected": 14
+        },
+        {
+          "source_id": 944,
+          "original_label_bin": 0,
+          "available": 95041,
+          "selected": 4718
+        },
+        {
+          "source_id": 944,
+          "original_label_bin": 1,
+          "available": 95041,
+          "selected": 4718
+        }
+      ]
+    }
+  },
+  "effective_training_tokens": 22871000,
+  "sampling": "Full-pool domain proportions; source/original-label-bin stratification within completed-cache rows",
+  "limitation": "Only already-labeled source coverage is represented; not a uniform sample of every full-pool source",
+  "selected_by_teacher_confidence": false,
+  "teacher_probabilities_transformed": false,
+  "epochs": 1,
+  "effective_batch": 128,
+  "created_unix": 1793604513.503518
+}

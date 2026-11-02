@@ -1,0 +1,12 @@
+{
+  "kind": "models",
+  "repo_id": "engageassume/qwen3-06b-knowline-kd-pilot-100k-20261102",
+  "repo_type": "model",
+  "url": "https://huggingface.co/engageassume/qwen3-06b-knowline-kd-pilot-100k-20261102",
+  "private": true,
+  "commit_url": "https://huggingface.co/engageassume/qwen3-06b-knowline-kd-pilot-100k-20261102/commit/b846fd963bc02b3572de9e4d3baf34713e424bd1",
+  "remote_files": 32,
+  "remote_bytes": 373383614,
+  "elapsed_seconds": 109.88132238388062,
+  "complete": true
+}

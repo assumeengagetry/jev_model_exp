@@ -1,0 +1,15 @@
+{
+  "event": "continuation_progress",
+  "model": "KD_SOFT",
+  "step": 782,
+  "total_steps": 782,
+  "pairs_seen": 100000,
+  "effective_tokens": 22871000,
+  "loss": 0.046137028257720744,
+  "ce": 0.21359885905797665,
+  "kl": 0.046137028257720744,
+  "learning_rate": 0.0,
+  "elapsed_seconds": 1243.3808683864772,
+  "tokens_per_second": 18083.646026094793,
+  "pairs_per_second": 79.46484213560359
+}
