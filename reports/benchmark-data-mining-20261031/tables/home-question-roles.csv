@@ -1,0 +1,1591 @@
+benchmark_id,role,label,description,count
+9,post_0,k_5cf8035f,true,1
+9,target_member:main_bedroom_plug,k_a289c7c5,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_a405d380,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_1e890fcf,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_c1945b8d,"no, this device is not in the justified target set",1
+9,resolution,k_fe7c8a2a,block under household policy,1
+9,target_member:patio_light,k_0de9a5e1,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_57c27998,"no, this device is not in the justified target set",1
+9,state_read,k_6c98cbdd,patio_light.power is false,1
+9,target_member:den_plug,k_f11c88b5,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_b8340d5a,"yes, this device is in the justified target set",1
+9,target_member:garage_light,k_11208aad,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_aed6f0fe,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_550990b2,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_387621b4,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_34cb9e06,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_eff82495,"no, this device is not in the justified target set",1
+9,outcome,k_f453876f,no device property changes,1
+9,target_member:kitchen_light,k_cab4245b,"no, this device is not in the justified target set",1
+9,state_read,k_2ba9e574,patio_plug.power is true,1
+9,target_member:den_speaker,k_6a636e93,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_6e7e3ed7,"yes, this device is in the justified target set",1
+9,target_member:patio_light,k_ef0cacf8,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_3b872a8e,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_48b6584d,"no, this device is not in the justified target set",1
+9,resolution,k_da0dae72,execute now,1
+9,target_member:kitchen_plug,k_9e1b50d9,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_991c76f1,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_f0337bdb,"no, this device is not in the justified target set",1
+9,post_0,k_81f765a6,true,1
+9,target_member:den_plug,k_430a145f,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_5a455558,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_5c7dc9cc,"no, this device is not in the justified target set",1
+9,outcome,k_b0b7cffa,den_light.power becomes false; den_light.brightness becomes 40; den_light.power becomes true,1
+9,post_1,k_4ce6c6f8,40,1
+9,target_member:patio_plug,k_1dfe3853,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_96b7b210,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_6a4c706a,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_ccc08b2b,"yes, this device is in the justified target set",1
+9,resolution,k_d033d7b0,execute now,1
+9,target_member:garage_lock,k_83688a23,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_f39bf900,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_c6f3d8a6,"no, this device is not in the justified target set",1
+9,post_1,k_bbd9508b,false,1
+9,target_member:kitchen_plug,k_6f54ca61,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_05deae8e,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_b7e3a689,"yes, this device is in the justified target set",1
+9,post_0,k_fad93c6e,false,1
+9,target_member:garage_light,k_8a0464d4,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_9ad66aac,"yes, this device is in the justified target set",1
+9,target_member:kitchen_island_light,k_2922000f,"yes, this device is in the justified target set",1
+9,target_member:garage_plug,k_b8c922e9,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_5c081dd5,"yes, this device is in the justified target set",1
+9,state_read,k_c0992f9f,kitchen_island_light.power is false,1
+9,target_member:den_speaker,k_40752fc4,"yes, this device is in the justified target set",1
+9,outcome,k_c3006f71,den_light.power becomes false; kitchen_thermostat.power becomes false,1
+9,target_member:kitchen_island_light,k_abdc5ba1,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_2e0a7d08,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_c233b7ec,"no, this device is not in the justified target set",1
+9,outcome,k_9c358e2b,no device property changes,1
+9,target_member:patio_plug,k_f00c7097,"no, this device is not in the justified target set",1
+9,state_read,k_b132cd51,kitchen_thermostat.power is true,1
+9,target_member:garage_light,k_fde7457a,"no, this device is not in the justified target set",1
+9,resolution,k_83a27253,answer a state query,1
+9,target_member:den_light,k_5cad5d92,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_955946d1,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_d618f7a1,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_d53588c4,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_f9b55281,"yes, this device is in the justified target set",1
+9,target_member:kitchen_light,k_e66f0fa4,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_f375c524,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_55d7083c,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_19aceb6a,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_e5b443f9,"no, this device is not in the justified target set",1
+9,outcome,k_f0b2b2a0,kitchen_plug.power becomes false,1
+9,target_member:kitchen_light,k_640ccbd2,"no, this device is not in the justified target set",1
+9,post_0,k_8160324b,false,1
+9,target_member:garage_plug,k_f085e461,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_8a827bae,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_1c2e4b66,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_b67f20a2,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_1b976e73,"yes, this device is in the justified target set",1
+9,target_member:kitchen_thermostat,k_5a9e0680,"no, this device is not in the justified target set",1
+9,resolution,k_7aeb2f79,execute now,1
+9,state_read,k_6e605ec3,den_speaker.power is false,1
+9,target_member:den_speaker,k_584f9b4f,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_b7e4544d,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_56129fa2,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_272a22e5,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_bd6db324,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_7d2f6926,"no, this device is not in the justified target set",1
+9,resolution,k_f4d8d8f3,make no change because already satisfied,1
+9,target_member:den_plug,k_483be932,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_cb6f3ab5,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_8d808405,"no, this device is not in the justified target set",1
+9,state_read,k_84489133,garage_lock.locked is true,1
+9,target_member:garage_light,k_60758020,"no, this device is not in the justified target set",1
+9,post_0,k_62d3e397,false,1
+9,target_member:patio_plug,k_12423f4c,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_9faf75f1,"yes, this device is in the justified target set",1
+9,target_member:main_bedroom_plug,k_1ed20b99,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_a8f12c0f,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_21e8da97,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_7fa8fe9d,"no, this device is not in the justified target set",1
+9,outcome,k_268b06c4,no device property changes,1
+9,target_member:garage_plug,k_266c7178,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_32b83e47,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_b56ccd95,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_1fa0a1eb,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_8c2e754e,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_d2e97dae,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_fc704836,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_2b62baa1,"yes, this device is in the justified target set",1
+9,target_member:patio_light,k_6780a029,"no, this device is not in the justified target set",1
+9,post_1,k_5257af2a,true,1
+9,target_member:kitchen_light,k_eb9a95c1,"no, this device is not in the justified target set",1
+9,resolution,k_594f0c93,execute now,1
+9,target_member:den_light,k_3ee4b14b,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_1879c61d,"no, this device is not in the justified target set",1
+9,outcome,k_6b4d9f81,den_plug.power becomes true; den_speaker.power becomes true,1
+9,target_member:den_plug,k_a2328b9d,"yes, this device is in the justified target set",1
+9,target_member:kitchen_thermostat,k_67ff08ca,"no, this device is not in the justified target set",1
+9,post_0,k_10457e57,true,1
+9,state_read,k_13c7841b,kitchen_light.power is false,1
+9,target_member:garage_plug,k_8270a4b0,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_52c2fef2,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_c150d0d4,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_076b1dbf,"yes, this device is in the justified target set",1
+9,target_member:main_bedroom_light,k_c606aecf,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_254d1a0e,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_0a756695,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_ebf885e0,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_8d59999b,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_d3c419f6,"no, this device is not in the justified target set",1
+9,state_read,k_305bc58a,kitchen_plug.power is true,1
+9,outcome,k_64e40229,no device property changes,1
+9,target_member:den_light,k_33028ced,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_f2a574dc,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_895bc974,"no, this device is not in the justified target set",1
+9,resolution,k_dc2b2adf,ask a clarifying question,1
+9,target_member:den_plug,k_04a36764,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_203eba57,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_dc2a9001,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_8c7fa53e,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_d0152535,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_444f2da3,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_347cccf8,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_ef7d3246,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_49357457,"no, this device is not in the justified target set",1
+9,post_0,k_a3dc15b5,false,1
+9,target_member:kitchen_light,k_8ca2e620,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_bf4ef734,"no, this device is not in the justified target set",1
+9,resolution,k_577ddd98,make no change because already satisfied,1
+9,target_member:kitchen_plug,k_2494c25a,"no, this device is not in the justified target set",1
+9,outcome,k_cbd97108,no device property changes,1
+9,target_member:kitchen_thermostat,k_6d4e2465,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_bd58113d,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_c1b1e0d3,"yes, this device is in the justified target set",1
+9,state_read,k_17da5f49,den_light.power is true,1
+9,target_member:garage_lock,k_c3340830,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_942c6dd7,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_bfa05db0,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_399feaf4,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_4440abad,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_a26aff2c,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_afab3e43,"no, this device is not in the justified target set",1
+9,resolution,k_bc30f2ce,reject as unsupported,1
+9,target_member:kitchen_light,k_d703a20b,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_a3e931e8,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_b9a20832,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_fa4d2935,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_473e188f,"no, this device is not in the justified target set",1
+9,state_read,k_91cda360,den_plug.power is false,1
+9,target_member:den_plug,k_80823272,"no, this device is not in the justified target set",1
+9,post_0,k_7d8832b2,21,1
+9,target_member:main_bedroom_plug,k_abc08a92,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_57f00815,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_5b5e9e0e,"no, this device is not in the justified target set",1
+9,outcome,k_55e2ef2d,no device property changes,1
+9,target_member:kitchen_thermostat,k_dc4d961d,"yes, this device is in the justified target set",1
+9,target_member:kitchen_island_light,k_c991f008,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_c0d3e6df,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_e77ccf04,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_0916dc10,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_31f58b28,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_2b1b4b75,"no, this device is not in the justified target set",1
+9,outcome,k_0bdeb2b1,no device property changes,1
+9,state_read,k_c77d1ef8,porch_plug.power is false,1
+9,target_member:guest_room_plug,k_cb7fad56,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_7fc99319,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_b3e13296,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_690b41c0,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_62b86ab3,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_00f7040b,"no, this device is not in the justified target set",1
+9,resolution,k_5d12454a,ask a clarifying question,1
+9,target_member:galley_island_light,k_6c8cdd6f,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_b327cb09,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_41d186d3,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_e62738bc,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_d8348ffe,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_7018d6d9,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_ad7c6b13,"yes, this device is in the justified target set",1
+9,target_member:porch_plug,k_7f3f734e,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_d53641fb,"no, this device is not in the justified target set",1
+9,outcome,k_c16a8132,no device property changes,1
+9,target_member:study_plug,k_48883df0,"no, this device is not in the justified target set",1
+9,resolution,k_b9be08e8,make no change because already satisfied,1
+9,target_member:study_lock,k_4580e382,"no, this device is not in the justified target set",1
+9,post_0,k_b9485793,false,1
+9,target_member:galley_island_light,k_ae2c5a12,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_c3873766,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_a352dcb8,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_79259e10,"no, this device is not in the justified target set",1
+9,state_read,k_79a1c199,galley_island_light.power is true,1
+9,target_member:galley_plug,k_6045b445,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_685f2a99,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_7457471c,"no, this device is not in the justified target set",1
+9,post_0,k_62c056d9,21,1
+9,target_member:porch_light,k_f6c534db,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_97296170,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_c9035ef6,"no, this device is not in the justified target set",1
+9,outcome,k_e3a851d1,no device property changes,1
+9,target_member:galley_light,k_6cc6eefd,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_85f29208,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_8a38b5bb,"no, this device is not in the justified target set",1
+9,resolution,k_ef2003fa,reject as unsupported,1
+9,target_member:study_light,k_11761a8c,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_31e41494,"yes, this device is in the justified target set",1
+9,target_member:lounge_plug,k_be766af6,"no, this device is not in the justified target set",1
+9,state_read,k_11cb3dce,galley_thermostat.power is true,1
+9,target_member:guest_room_light,k_05739737,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_1fd0789d,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_2191ae22,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_8732c3fa,"no, this device is not in the justified target set",1
+9,state_read,k_3fefd2c0,lounge_speaker.power is false,1
+9,target_member:study_plug,k_53cd23c1,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_b85f9d07,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_82aeb352,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_f015574b,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_153408e3,"yes, this device is in the justified target set",1
+9,resolution,k_0d484df0,block under household policy,1
+9,target_member:guest_room_light,k_0d2056d3,"no, this device is not in the justified target set",1
+9,post_1,k_b3c70ff0,true,1
+9,target_member:galley_island_light,k_24d6b31c,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_7f73b38b,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_03ad2a9a,"no, this device is not in the justified target set",1
+9,post_0,k_e7fc2e5b,false,1
+9,outcome,k_3164c027,no device property changes,1
+9,target_member:galley_light,k_68644621,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_70d66d58,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_dc8f2554,"yes, this device is in the justified target set",1
+9,target_member:galley_thermostat,k_2e3bf210,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_43efbe68,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_6b457591,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_5dc404ff,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_941d4d0a,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_b0bd83ce,"no, this device is not in the justified target set",1
+9,state_read,k_617cb58e,study_lock.locked is false,1
+9,target_member:guest_room_light,k_d2b6e040,"no, this device is not in the justified target set",1
+9,post_0,k_544e3c65,false,1
+9,target_member:study_plug,k_9f9f8fea,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_8336ce56,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_8dfda736,"yes, this device is in the justified target set",1
+9,target_member:lounge_light,k_b5df57b8,"no, this device is not in the justified target set",1
+9,resolution,k_8e5b92a2,schedule for later,1
+9,target_member:lounge_plug,k_6154f6d5,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_df101ecb,"no, this device is not in the justified target set",1
+9,outcome,k_d7dd2893,a future schedule is added; device properties do not change yet,1
+9,target_member:galley_plug,k_01891cdc,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_71ffe993,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_542889a6,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_4ad61cec,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_19d49498,"no, this device is not in the justified target set",1
+9,outcome,k_5bf57b7f,an automation rule is saved; device properties do not change immediately,1
+9,resolution,k_75952508,save an automation rule,1
+9,target_member:guest_room_light,k_08d4a2d1,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_c959cbf5,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_6f1f1c9f,"no, this device is not in the justified target set",1
+9,state_read,k_a24dcb8d,galley_light.power is true,1
+9,target_member:galley_plug,k_131fc403,"no, this device is not in the justified target set",1
+9,post_0,k_370cff1e,21,1
+9,target_member:porch_plug,k_72769606,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_eb52c828,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_41abe07f,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_84bd1489,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_1f88087b,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_7b14469c,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_57f7c83a,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_8b3b490d,"yes, this device is in the justified target set",1
+9,target_member:galley_plug,k_93fc9a45,"yes, this device is in the justified target set",1
+9,target_member:guest_room_plug,k_af98f8dd,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_b86be7be,"no, this device is not in the justified target set",1
+9,outcome,k_90c122e5,no device property changes,1
+9,post_0,k_27907d87,false,1
+9,target_member:galley_thermostat,k_25155682,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_6189d344,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_4d3f41f6,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_bc70d632,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_a686b734,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_22ea630d,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_b2165529,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_d787f4bf,"no, this device is not in the justified target set",1
+9,state_read,k_7da570e3,galley_plug.power is false,1
+9,target_member:lounge_plug,k_2562e199,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_96383163,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_108241e4,"no, this device is not in the justified target set",1
+9,resolution,k_e497b101,make no change because already satisfied,1
+9,outcome,k_09cf0d8b,lounge_plug.power becomes false,1
+9,target_member:galley_light,k_3f6f0ade,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_2345f53d,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_caa674b3,"no, this device is not in the justified target set",1
+9,post_0,k_95cfe66f,false,1
+9,target_member:study_lock,k_efa1e732,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_0365aa3a,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_b62d9d57,"yes, this device is in the justified target set",1
+9,target_member:porch_light,k_faa0afc2,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_a811afab,"no, this device is not in the justified target set",1
+9,state_read,k_c2f00dbd,lounge_light.power is false,1
+9,resolution,k_97cde69b,execute now,1
+9,target_member:galley_island_light,k_53a2f048,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_e526ba82,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_43296b7e,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_348d0cb1,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_4e393c4e,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_70f7eda5,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_3cd1871c,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_abe3bd9a,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_cab1f32f,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_570edc5a,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_918928bc,"no, this device is not in the justified target set",1
+9,outcome,k_0b4044de,no device property changes,1
+9,resolution,k_8ad5d136,ask a clarifying question,1
+9,target_member:study_lock,k_5eb3bfae,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_92dc3987,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_2fb554b3,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_063eab48,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_de565e68,"no, this device is not in the justified target set",1
+9,state_read,k_03322462,lounge_plug.power is true,1
+9,target_member:study_light,k_92d67ea1,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_52c5434f,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_843c616b,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_7b458472,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_f724c755,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_284ef3fa,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_2f335971,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_66628865,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_3ea520c4,"yes, this device is in the justified target set",1
+9,target_member:galley_plug,k_7dea8f5b,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_e48361fa,"no, this device is not in the justified target set",1
+9,outcome,k_07c4633d,lounge_light.brightness becomes 55,1
+9,target_member:porch_plug,k_ff320d85,"no, this device is not in the justified target set",1
+9,resolution,k_c1de51ca,execute now,1
+9,target_member:lounge_speaker,k_4e8ffa11,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_73a36951,"no, this device is not in the justified target set",1
+9,state_read,k_70415370,guest_room_light.power is true,1
+9,post_0,k_5769f468,55,1
+9,target_member:porch_light,k_a9a43746,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_570354fb,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_157e0e89,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_1eaca50b,"no, this device is not in the justified target set",1
+9,outcome,k_f2605861,no device property changes,1
+9,target_member:deck_light,k_b0be3aa2,"no, this device is not in the justified target set",1
+9,state_read,k_cf2eb105,kitchen_island_light.power is false,1
+9,target_member:workshop_plug,k_4b1c7b50,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_e387793b,"no, this device is not in the justified target set",1
+9,resolution,k_3133c935,make no change because already satisfied,1
+9,target_member:kitchen_thermostat,k_f7fab638,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_32725d8e,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_0201aca3,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_609ad7b6,"no, this device is not in the justified target set",1
+9,post_0,k_f6555223,false,1
+9,target_member:nursery_plug,k_6a28c506,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_2aeb8ae3,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_06e5d31a,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_c4bed7bc,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_ee9b7b4d,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_8982b237,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_49518539,"yes, this device is in the justified target set",1
+9,target_member:nursery_light,k_190c1ab0,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_9af34eda,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_d9587952,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_c172d309,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_3df2f031,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_ed756b10,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_2043b60a,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_0325d9ec,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_01b3dc31,"no, this device is not in the justified target set",1
+9,state_read,k_0799c9c3,kitchen_thermostat.power is true,1
+9,target_member:kitchen_plug,k_9e51332a,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_12d1b6f8,"no, this device is not in the justified target set",1
+9,outcome,k_751c108a,no device property changes,1
+9,target_member:family_room_light,k_56cd7748,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_75481610,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_f39f0b83,"no, this device is not in the justified target set",1
+9,resolution,k_f5c79380,ask a clarifying question,1
+9,target_member:nursery_plug,k_daa70c29,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_43a4891b,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_ecec69df,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_445c47a5,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_0f0734a0,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_b0f11f88,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_da5fd04b,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_45e2ef8e,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_156edf73,"no, this device is not in the justified target set",1
+9,post_0,k_a7873d8f,55,1
+9,state_read,k_705c75a9,family_room_speaker.power is false,1
+9,resolution,k_9082964f,execute now,1
+9,target_member:family_room_plug,k_ce331817,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_66ed855a,"no, this device is not in the justified target set",1
+9,outcome,k_0da39fa8,family_room_light.brightness becomes 55,1
+9,target_member:deck_light,k_5eaee689,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_02efc031,"yes, this device is in the justified target set",1
+9,target_member:workshop_lock,k_1585d439,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_e8350b8c,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_7d898d6b,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_3c1b3e63,"no, this device is not in the justified target set",1
+9,outcome,k_30da3b34,no device property changes,1
+9,target_member:workshop_plug,k_fe9f1b7f,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_42d3b657,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_826a3650,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_2a7b7ce5,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_de565c05,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_2c9d4ba0,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_5db21364,"no, this device is not in the justified target set",1
+9,state_read,k_834932ad,workshop_lock.locked is true,1
+9,resolution,k_187289ca,ask a clarifying question,1
+9,target_member:kitchen_island_light,k_935e81c1,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_5b7777d5,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_966cf266,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_3a4fb5c5,"no, this device is not in the justified target set",1
+9,post_1,k_a44b1c6b,false,1
+9,post_0,k_c5ec11d8,false,1
+9,state_read,k_b0ad0123,kitchen_light.power is false,1
+9,target_member:workshop_lock,k_c5cc5706,"no, this device is not in the justified target set",1
+9,outcome,k_0f69b585,kitchen_plug.power becomes false,1
+9,target_member:kitchen_island_light,k_8071af96,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_fdfea955,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_c2c25048,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_a7161991,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_debb292e,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_de0aa141,"no, this device is not in the justified target set",1
+9,resolution,k_76f9152a,execute now,1
+9,target_member:kitchen_light,k_fc04453d,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_780e3185,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_382d4784,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_73b6f0ac,"yes, this device is in the justified target set",1
+9,target_member:family_room_plug,k_b3fb9dd9,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_5c708ab9,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_fdbe5754,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_a6ef331d,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_3b4ea20b,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_35634e68,"yes, this device is in the justified target set",1
+9,resolution,k_5de812ec,make no change because already satisfied,1
+9,target_member:kitchen_plug,k_f5700aab,"yes, this device is in the justified target set",1
+9,target_member:deck_plug,k_8b97e179,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_abfd7b89,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_abb2df87,"no, this device is not in the justified target set",1
+9,state_read,k_075a66eb,kitchen_plug.power is true,1
+9,target_member:workshop_light,k_90cab845,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_7718acc7,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_2cefa6a9,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_5673985c,"no, this device is not in the justified target set",1
+9,outcome,k_459e22fb,no device property changes,1
+9,target_member:nursery_plug,k_0a00c490,"no, this device is not in the justified target set",1
+9,post_0,k_be3d6877,true,1
+9,post_1,k_5f81628c,false,1
+9,target_member:deck_light,k_b541ac67,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_888a7fcf,"no, this device is not in the justified target set",1
+9,resolution,k_3373175d,block under household policy,1
+9,target_member:family_room_light,k_d248d3ee,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_9ea3f703,"no, this device is not in the justified target set",1
+9,state_read,k_070dcf92,family_room_light.power is true,1
+9,target_member:kitchen_island_light,k_414d7602,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_21e67dfd,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_c11c46f9,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_47a64507,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_98fdb9ee,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_1a50854f,"no, this device is not in the justified target set",1
+9,outcome,k_72663671,no device property changes,1
+9,target_member:workshop_light,k_757dc7e3,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_e600b9a4,"yes, this device is in the justified target set",1
+9,target_member:deck_light,k_e2db784e,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_73de01e7,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_192e2370,"no, this device is not in the justified target set",1
+9,post_0,k_0f27102e,true,1
+9,target_member:kitchen_thermostat,k_0d38647f,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_bf26728e,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_59992ae0,"no, this device is not in the justified target set",1
+9,outcome,k_088b4d91,family_room_light.power becomes false; family_room_light.brightness becomes 40; family_room_light.power becomes true,1
+9,target_member:kitchen_island_light,k_6ed2a86b,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_b2ce0655,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_60b2b215,"no, this device is not in the justified target set",1
+9,state_read,k_058bdb2e,family_room_plug.power is false,1
+9,target_member:family_room_plug,k_b316ff7b,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_fc3539df,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_c03a6f90,"no, this device is not in the justified target set",1
+9,post_0,k_5741ff3c,true,1
+9,target_member:deck_plug,k_51286732,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_72b6144b,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_fc4fe2b8,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_68b02b2f,"yes, this device is in the justified target set",1
+9,target_member:nursery_plug,k_5d5f656a,"no, this device is not in the justified target set",1
+9,resolution,k_be9b1f60,execute now,1
+9,target_member:kitchen_plug,k_67007461,"no, this device is not in the justified target set",1
+9,post_1,k_203c4aa3,40,1
+9,post_1,k_928fe7e1,false,1
+9,target_member:nursery_plug,k_d2a141c5,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_f9a13911,"yes, this device is in the justified target set",1
+9,outcome,k_149245a3,family_room_light.power becomes false; kitchen_thermostat.power becomes false,1
+9,target_member:kitchen_plug,k_adbdfae1,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_7de7e229,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_acdb5576,"yes, this device is in the justified target set",1
+9,target_member:kitchen_island_light,k_21ba3f09,"yes, this device is in the justified target set",1
+9,target_member:deck_light,k_68a27073,"no, this device is not in the justified target set",1
+9,post_0,k_649fde13,false,1
+9,target_member:workshop_plug,k_1bb73694,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_f142bad6,"yes, this device is in the justified target set",1
+9,state_read,k_e6f4caf2,nursery_light.power is false,1
+9,resolution,k_c3d4b096,execute now,1
+9,target_member:family_room_speaker,k_b57bbd26,"yes, this device is in the justified target set",1
+9,target_member:family_room_plug,k_fde69a96,"yes, this device is in the justified target set",1
+9,target_member:workshop_lock,k_ba0323d9,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_15410935,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_316c7033,"no, this device is not in the justified target set",1
+9,resolution,k_650fed69,answer a state query,1
+9,target_member:family_room_speaker,k_a6447393,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_58da7380,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_27cb6184,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_648db7c9,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_c5d2c8c1,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_a48e70ce,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_a588caee,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_088fa830,"no, this device is not in the justified target set",1
+9,outcome,k_90e1517d,no device property changes,1
+9,target_member:kitchen_light,k_7bc4c693,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_1f1c600e,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_e6ec57b1,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_539959cf,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_505e6127,"yes, this device is in the justified target set",1
+9,target_member:kitchen_island_light,k_fb880c13,"no, this device is not in the justified target set",1
+9,state_read,k_42d7403b,nursery_plug.power is true,1
+9,state_read,k_95f07429,breakfast_nook_thermostat.power is true,1
+9,post_1,k_e3a2894c,40,1
+9,target_member:mudroom_light,k_1dbb3180,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_c8ff1099,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_eac36b6e,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_3afa6517,"no, this device is not in the justified target set",1
+9,post_0,k_d2237713,true,1
+9,target_member:sitting_room_plug,k_b77e8496,"no, this device is not in the justified target set",1
+9,resolution,k_90fc731e,execute now,1
+9,target_member:office_light,k_8668a1cb,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_7930e4b1,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_dac35f71,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_04d19f2a,"no, this device is not in the justified target set",1
+9,outcome,k_6ab7c7cf,sitting_room_light.brightness becomes 40; sitting_room_light.power becomes true,1
+9,target_member:breakfast_nook_plug,k_ce72f1f7,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_c0b13861,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_beb0fcd0,"yes, this device is in the justified target set",1
+9,target_member:breakfast_nook_light,k_e9aa1b93,"no, this device is not in the justified target set",1
+9,target_member:bedroom_light,k_60b55850,"no, this device is not in the justified target set",1
+9,outcome,k_ad660146,breakfast_nook_light.power becomes false; sitting_room_plug.power becomes false; breakfast_nook_island_light.power becom,1
+9,target_member:sitting_room_speaker,k_34d45f57,"yes, this device is in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_db1c7219,"yes, this device is in the justified target set",1
+9,target_member:breakfast_nook_plug,k_5b087815,"no, this device is not in the justified target set",1
+9,post_1,k_d5ad29f3,false,1
+9,target_member:office_light,k_77f4a3ee,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_b7511eb8,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_43963af6,"yes, this device is in the justified target set",1
+9,target_member:sitting_room_plug,k_633a1dbe,"yes, this device is in the justified target set",1
+9,target_member:office_lock,k_46926cb3,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_eeb5de43,"no, this device is not in the justified target set",1
+9,resolution,k_a1507935,execute now,1
+9,target_member:bedroom_light,k_3e886f2e,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_1134cb7d,"yes, this device is in the justified target set",1
+9,target_member:bedroom_plug,k_a9dcfbcf,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_5eb76798,"no, this device is not in the justified target set",1
+9,state_read,k_73f66b6b,sitting_room_speaker.power is false,1
+9,target_member:breakfast_nook_island_light,k_a7174418,"yes, this device is in the justified target set",1
+9,post_0,k_6b4bb14a,false,1
+9,target_member:office_plug,k_966844c0,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_a90c6dff,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_67dfee6c,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_8670b83b,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_21035294,"no, this device is not in the justified target set",1
+9,state_read,k_b7194372,office_lock.locked is false,1
+9,resolution,k_e240801f,answer a state query,1
+9,target_member:bedroom_plug,k_e6158110,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_ed2fc29f,"yes, this device is in the justified target set",1
+9,target_member:bedroom_light,k_bcccf4bb,"no, this device is not in the justified target set",1
+9,outcome,k_41b43417,no device property changes,1
+9,target_member:mudroom_light,k_1cafcbe6,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_f3fdf1ab,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_3a4d5225,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_1f30e41e,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_8dc64bab,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_3fdcc395,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_5f00892c,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_87b80a46,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_35e30f08,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_35ee5018,"no, this device is not in the justified target set",1
+9,post_0,k_555137e1,true,1
+9,state_read,k_7517a955,breakfast_nook_light.power is true,1
+9,target_member:office_lock,k_7413efb8,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_8324b4af,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_4b1354b9,"no, this device is not in the justified target set",1
+9,outcome,k_cf8db3b7,breakfast_nook_plug.power becomes true,1
+9,target_member:bedroom_light,k_8e6178b7,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_4ec1820b,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_60cfc98d,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_08527554,"no, this device is not in the justified target set",1
+9,resolution,k_b4cdf696,execute now,1
+9,target_member:breakfast_nook_island_light,k_988fa31f,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_3d3b3d76,"yes, this device is in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_3ec49d31,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_962f95ff,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_262ca437,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_63b6af38,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_be58d550,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_0be8523d,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_9ca54747,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_384c6bb2,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_1ddc5912,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_b2601083,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_5e523bf1,"no, this device is not in the justified target set",1
+9,outcome,k_44723a1d,breakfast_nook_island_light.power becomes false,1
+9,post_0,k_bb1a5111,false,1
+9,target_member:office_lock,k_5106e954,"no, this device is not in the justified target set",1
+9,target_member:bedroom_light,k_12dc0e78,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_aca9e952,"yes, this device is in the justified target set",1
+9,resolution,k_374b2528,execute now,1
+9,target_member:office_light,k_07b45e61,"no, this device is not in the justified target set",1
+9,state_read,k_cbcc182c,breakfast_nook_plug.power is false,1
+9,outcome,k_8573c9a2,breakfast_nook_plug.power becomes true; sitting_room_speaker.power becomes true,1
+9,target_member:breakfast_nook_thermostat,k_37dc0aec,"no, this device is not in the justified target set",1
+9,target_member:bedroom_light,k_e22690c1,"no, this device is not in the justified target set",1
+9,resolution,k_e5f3d2ee,execute now,1
+9,target_member:bedroom_plug,k_1a364448,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_d2ffb280,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_53c343b6,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_2891cb09,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_0011b827,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_ab10afe9,"yes, this device is in the justified target set",1
+9,target_member:mudroom_plug,k_262f19f3,"no, this device is not in the justified target set",1
+9,post_1,k_93685882,true,1
+9,target_member:sitting_room_light,k_0ca6d508,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_39b6adc6,"yes, this device is in the justified target set",1
+9,target_member:breakfast_nook_plug,k_00ae6dbb,"yes, this device is in the justified target set",1
+9,state_read,k_6490113b,sitting_room_light.power is false,1
+9,post_0,k_abdd0a5b,true,1
+9,target_member:breakfast_nook_light,k_c958bdde,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_1f86da3a,"no, this device is not in the justified target set",1
+9,state_read,k_9939feda,sitting_room_plug.power is true,1
+9,target_member:sitting_room_plug,k_a11ffcc1,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_c3fa9c19,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_8ea74ec1,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_482476a0,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_bfbeb396,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_19c7cd19,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_4e91cf83,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_a57f3dd3,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_4c74fa25,"no, this device is not in the justified target set",1
+9,outcome,k_622f8f66,no device property changes,1
+9,target_member:mudroom_light,k_353f6cb5,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_58eeac4c,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_021108a9,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_e5c35d7a,"no, this device is not in the justified target set",1
+9,resolution,k_ab097874,ask a clarifying question,1
+9,target_member:bedroom_light,k_29f9be80,"no, this device is not in the justified target set",1
+9,post_0,k_6cb31d71,false,1
+9,target_member:office_plug,k_c6c4bd8d,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_f71e00d3,"yes, this device is in the justified target set",1
+9,target_member:mudroom_light,k_91a85c48,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_4eee63ce,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_cee8a6ed,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_17094c7b,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_286ef9a8,"no, this device is not in the justified target set",1
+9,state_read,k_62e31435,bedroom_light.power is true,1
+9,target_member:breakfast_nook_island_light,k_c4f5c1b2,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_ea9b9d88,"no, this device is not in the justified target set",1
+9,resolution,k_faa3ca94,make no change because already satisfied,1
+9,target_member:sitting_room_light,k_44ed3662,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_d922ffe5,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_4921b741,"no, this device is not in the justified target set",1
+9,outcome,k_64e8db5c,no device property changes,1
+9,target_member:bedroom_light,k_c9eddc42,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_547cb112,"no, this device is not in the justified target set",1
+9,target_member:bedroom_light,k_dddb5604,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_b0d9586d,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_8e3cca40,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_b71dbef6,"no, this device is not in the justified target set",1
+9,resolution,k_83321f2a,reject as unsupported,1
+9,target_member:breakfast_nook_island_light,k_1fd233fc,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_babd1eb3,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_0a8bc4f0,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_79047512,"no, this device is not in the justified target set",1
+9,post_0,k_39a97f5b,21,1
+9,target_member:sitting_room_plug,k_907f204a,"no, this device is not in the justified target set",1
+9,outcome,k_447571a0,no device property changes,1
+9,state_read,k_1ba200f5,bedroom_plug.power is false,1
+9,target_member:breakfast_nook_thermostat,k_af63f5a8,"yes, this device is in the justified target set",1
+9,target_member:breakfast_nook_plug,k_e7a776dd,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_ca3b4477,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_65c55759,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_4bd378f8,"no, this device is not in the justified target set",1
+9,outcome,k_21450339,no device property changes,1
+9,post_1,k_e02c9e03,true,1
+9,target_member:breakfast_nook_thermostat,k_30e53363,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_79b70d49,"yes, this device is in the justified target set",1
+9,target_member:office_plug,k_6b98298b,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_1f6f9bbf,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_b5767db5,"yes, this device is in the justified target set",1
+9,target_member:bedroom_light,k_5e4b34bc,"no, this device is not in the justified target set",1
+9,post_0,k_5dfd485c,false,1
+9,target_member:sitting_room_speaker,k_3a0b83fe,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_9bd4a791,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_2becdf79,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_919ef999,"no, this device is not in the justified target set",1
+9,state_read,k_e5f980e6,office_light.power is false,1
+9,target_member:bedroom_plug,k_fe59b7e1,"no, this device is not in the justified target set",1
+9,resolution,k_3658a1a4,block under household policy,1
+9,target_member:office_light,k_3da05b13,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_9e0b4506,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_7827d86b,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_e8f51dde,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_a516da6b,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_622a3e2c,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_f19d6b30,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_166d7c2e,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_7bfe2142,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_31f390da,"no, this device is not in the justified target set",1
+9,post_0,k_ecd3fe1e,false,1
+9,target_member:kitchen_light,k_a833866f,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_6d7706f4,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_1e6d3e93,"yes, this device is in the justified target set",1
+9,target_member:kitchen_thermostat,k_223a854f,"no, this device is not in the justified target set",1
+9,state_read,k_e9328095,main_bedroom_light.power is false,1
+9,target_member:kitchen_island_light,k_4b024ccd,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_6a69f013,"no, this device is not in the justified target set",1
+9,outcome,k_eb928b01,no device property changes,1
+9,target_member:main_bedroom_plug,k_e6cb3b9a,"no, this device is not in the justified target set",1
+9,resolution,k_22ff627e,make no change because already satisfied,1
+9,outcome,k_dd101df6,no device property changes,1
+9,target_member:garage_light,k_c6bd60c3,"no, this device is not in the justified target set",1
+9,state_read,k_cf395d1a,main_bedroom_plug.power is true,1
+9,resolution,k_d0e4ae15,ask a clarifying question,1
+9,target_member:main_bedroom_light,k_b236b559,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_f6bfff42,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_6d52a092,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_01366648,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_830e600c,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_dd4d4941,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_c8a24d45,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_f1e01525,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_3b2581fc,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_b28aafea,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_6787f915,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_9c2ca436,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_94612796,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_a70dbf89,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_ea4365fc,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_691b9b79,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_47551654,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_7cf72d78,"yes, this device is in the justified target set",1
+9,target_member:garage_lock,k_992643a0,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_33b07456,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_1d9cf5c1,"no, this device is not in the justified target set",1
+9,post_0,k_6176c470,55,1
+9,outcome,k_87fb0059,den_light.brightness becomes 55,1
+9,target_member:kitchen_island_light,k_bf69ca7b,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_a7856214,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_eaa28881,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_0b299df3,"no, this device is not in the justified target set",1
+9,resolution,k_28224afb,execute now,1
+9,target_member:den_plug,k_54720ad3,"no, this device is not in the justified target set",1
+9,state_read,k_119df276,garage_light.power is true,1
+9,target_member:kitchen_thermostat,k_9e347430,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_18fba100,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_0998a783,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_47446aa5,"no, this device is not in the justified target set",1
+9,state_read,k_a559a936,garage_plug.power is false,1
+9,resolution,k_d6d7d81a,ask a clarifying question,1
+9,target_member:kitchen_plug,k_bee95c1f,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_5abb8ede,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_dbd2d620,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_eefeb9a6,"no, this device is not in the justified target set",1
+9,outcome,k_f6bcca3f,no device property changes,1
+9,target_member:main_bedroom_light,k_c17f0aec,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_dc86fea4,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_ee02f9ae,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_82f616f3,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_7a9440db,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_401dcde9,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_be8e8cc2,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_4f87d2e1,"yes, this device is in the justified target set",1
+9,target_member:galley_light,k_c276c822,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_b7e6b320,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_7810930c,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_176ea464,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_69e660ed,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_2fadd849,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_b2df8db4,"no, this device is not in the justified target set",1
+9,post_0,k_f3c73e4c,true,1
+9,target_member:galley_island_light,k_e13c5e09,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_c1c75e72,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_14f983b7,"no, this device is not in the justified target set",1
+9,post_1,k_a042710f,40,1
+9,target_member:study_lock,k_6c964727,"no, this device is not in the justified target set",1
+9,state_read,k_93f36dcf,guest_room_plug.power is false,1
+9,resolution,k_c7a2c5d6,execute now,1
+9,outcome,k_cbce6b49,lounge_light.brightness becomes 40; lounge_light.power becomes true,1
+9,target_member:galley_thermostat,k_2cf12a9f,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_5537d721,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_ce2f748a,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_4fff5ad0,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_e4a94691,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_3274861d,"yes, this device is in the justified target set",1
+9,resolution,k_d5ac4a94,execute now,1
+9,state_read,k_7c569f47,study_light.power is false,1
+9,target_member:guest_room_light,k_2e4ca992,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_799c5aa3,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_c877ca04,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_a1d92957,"no, this device is not in the justified target set",1
+9,outcome,k_396e1c95,galley_light.power becomes false; lounge_plug.power becomes false; galley_island_light.power becomes false; galley_therm,1
+9,post_1,k_9ef61e1f,false,1
+9,target_member:lounge_speaker,k_242450b5,"yes, this device is in the justified target set",1
+9,post_0,k_ab2b098c,false,1
+9,target_member:lounge_light,k_8b8d2d8f,"yes, this device is in the justified target set",1
+9,target_member:lounge_plug,k_84379c71,"yes, this device is in the justified target set",1
+9,target_member:galley_thermostat,k_298dbe53,"yes, this device is in the justified target set",1
+9,target_member:study_plug,k_b2e8585e,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_62707e21,"yes, this device is in the justified target set",1
+9,target_member:lounge_light,k_541be5b4,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_9dacfef2,"no, this device is not in the justified target set",1
+9,outcome,k_ecef265a,no device property changes,1
+9,target_member:galley_plug,k_ea39469c,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_2b56da9d,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_a8a279c3,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_d73ed7f5,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_2bebd394,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_1ee463ca,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_f41434a1,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_bc4880a8,"yes, this device is in the justified target set",1
+9,target_member:lounge_speaker,k_2ed0cb94,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_71843931,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_26aa53ce,"no, this device is not in the justified target set",1
+9,state_read,k_7411008f,study_plug.power is true,1
+9,resolution,k_f1de6fd4,answer a state query,1
+9,target_member:study_lock,k_100b1303,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_9266f931,"yes, this device is in the justified target set",1
+9,target_member:lounge_speaker,k_5f2c730e,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_d423d57f,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_577370a2,"no, this device is not in the justified target set",1
+9,post_0,k_8ab3e4cb,true,1
+9,resolution,k_7f4de1bc,execute now,1
+9,target_member:galley_light,k_531614bf,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_23215a98,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_73977bda,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_1a94d9e7,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_2544064b,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_6b71861e,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_9962dd83,"no, this device is not in the justified target set",1
+9,outcome,k_c4e04d05,galley_plug.power becomes true,1
+9,state_read,k_f44abb5b,porch_light.power is true,1
+9,target_member:porch_plug,k_d06eaf34,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_7eb1f02e,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_c4bb61d7,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_b3a9598d,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_73d7f469,"yes, this device is in the justified target set",1
+9,target_member:family_room_plug,k_98388cb9,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_3fdc0bf9,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_e63c21bb,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_92bff581,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_a54a8214,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_6c64304c,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_9b67294d,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_37d762e2,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_9ec2026b,"no, this device is not in the justified target set",1
+9,state_read,k_adaf7858,workshop_light.power is true,1
+9,target_member:nursery_plug,k_623b3866,"no, this device is not in the justified target set",1
+9,outcome,k_4bc39299,no device property changes,1
+9,post_0,k_e1bf830a,false,1
+9,resolution,k_d437ddd2,make no change because already satisfied,1
+9,target_member:workshop_light,k_3c58d81e,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_da262132,"no, this device is not in the justified target set",1
+9,outcome,k_71308a9e,no device property changes,1
+9,state_read,k_aaea51ff,workshop_plug.power is false,1
+9,post_0,k_421bb5bb,21,1
+9,target_member:family_room_plug,k_6c7a7d38,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_38c10ccf,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_63c3f4f1,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_b9a61e5e,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_ce656c82,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_b6725793,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_6e09b83f,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_a83b7589,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_d1da5524,"yes, this device is in the justified target set",1
+9,target_member:family_room_light,k_f43346a0,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_85fa5558,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_ddcdfca1,"no, this device is not in the justified target set",1
+9,resolution,k_f6842e41,reject as unsupported,1
+9,target_member:kitchen_light,k_aaa9ddd9,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_ce664771,"no, this device is not in the justified target set",1
+9,post_0,k_23bee56e,true,1
+9,post_1,k_5c302893,false,1
+9,target_member:workshop_lock,k_35bada47,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_559c77bd,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_e0fd6158,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_8bebd24c,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_0f00b6da,"yes, this device is in the justified target set",1
+9,target_member:nursery_plug,k_2bbcba93,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_108ce5b4,"yes, this device is in the justified target set",1
+9,target_member:workshop_light,k_81897a6e,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_9fd4f6c9,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_d2b73b86,"no, this device is not in the justified target set",1
+9,resolution,k_9e82c04c,block under household policy,1
+9,target_member:nursery_light,k_7f95ce98,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_44288aca,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_52acc172,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_0f785412,"no, this device is not in the justified target set",1
+9,state_read,k_72fc5d71,deck_light.power is false,1
+9,outcome,k_24fa4c60,no device property changes,1
+9,target_member:nursery_plug,k_3a4d9e44,"yes, this device is in the justified target set",1
+9,target_member:kitchen_plug,k_a022c0f5,"no, this device is not in the justified target set",1
+9,resolution,k_77ddd1e8,schedule for later,1
+9,target_member:family_room_plug,k_ea730898,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_9ae316a0,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_2a593148,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_31ed8665,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_29b8dd44,"no, this device is not in the justified target set",1
+9,state_read,k_d7577d87,deck_plug.power is true,1
+9,target_member:family_room_speaker,k_a720f270,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_2654fa67,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_e394dbc9,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_4e79d641,"no, this device is not in the justified target set",1
+9,outcome,k_51e42f65,a future schedule is added; device properties do not change yet,1
+9,target_member:kitchen_thermostat,k_5a985b70,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_49791af9,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_d7ddfeb3,"no, this device is not in the justified target set",1
+9,post_0,k_dbd197fa,true,1
+9,target_member:bedroom_light,k_791a6ca9,"no, this device is not in the justified target set",1
+9,outcome,k_8f8a5394,no device property changes,1
+9,target_member:mudroom_plug,k_03d59448,"no, this device is not in the justified target set",1
+9,state_read,k_0ca61376,office_plug.power is true,1
+9,target_member:breakfast_nook_island_light,k_43dbbdab,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_6c0aac4c,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_85c71bf7,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_aed33d95,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_b802c966,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_47b9e316,"no, this device is not in the justified target set",1
+9,resolution,k_243c5365,ask a clarifying question,1
+9,target_member:mudroom_light,k_502bccff,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_eab3db86,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_d9747905,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_81cac8fa,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_25ee471a,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_f1e97384,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_d0aee1f0,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_cc2731ef,"no, this device is not in the justified target set",1
+9,state_read,k_3778a35c,mudroom_light.power is true,1
+9,target_member:breakfast_nook_thermostat,k_334b7063,"no, this device is not in the justified target set",1
+9,outcome,k_7c43e2e5,sitting_room_light.brightness becomes 55,1
+9,resolution,k_855de3b1,execute now,1
+9,target_member:breakfast_nook_plug,k_4cae6ae7,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_1a37dd20,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_6bc21522,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_1d40eae0,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_d73a12ad,"no, this device is not in the justified target set",1
+9,target_member:bedroom_light,k_6cd6dfb7,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_865c94f6,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_38394ab5,"no, this device is not in the justified target set",1
+9,post_0,k_12410db0,55,1
+9,target_member:office_light,k_e8296d26,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_c7784af8,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_74f2605b,"yes, this device is in the justified target set",1
+9,target_member:mudroom_plug,k_8d81aa5e,"no, this device is not in the justified target set",1
+9,target_member:bedroom_light,k_7d302e44,"no, this device is not in the justified target set",1
+9,outcome,k_39c059b9,no device property changes,1
+9,target_member:office_light,k_6be52344,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_2dfe17b4,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_f6cf34af,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_1013b43f,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_e4f6c964,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_47ef9560,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_d60ea7a6,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_4a4e42d9,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_1b3e8b2e,"no, this device is not in the justified target set",1
+9,state_read,k_1313e8f7,mudroom_plug.power is false,1
+9,resolution,k_8303f5d5,ask a clarifying question,1
+9,target_member:office_plug,k_bdf39b4e,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_e2df5992,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_38bd4698,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_5e563085,"no, this device is not in the justified target set",1
+9,post_1,k_9e94f7fd,false,1
+9,target_member:sitting_room_light,k_f414ef16,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_663fd4d6,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_0f6e8d35,"no, this device is not in the justified target set",1
+9,resolution,k_9e94496f,execute now,1
+9,target_member:mudroom_plug,k_2ac521cf,"no, this device is not in the justified target set",1
+9,state_read,k_5cd7c8bf,breakfast_nook_island_light.power is true,1
+9,target_member:bedroom_plug,k_a5263402,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_fa432878,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_85ee67b8,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_3bfc91ce,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_118cb47a,"yes, this device is in the justified target set",1
+9,post_0,k_e28c9c63,false,1
+9,target_member:breakfast_nook_thermostat,k_17b4751b,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_acb4463b,"no, this device is not in the justified target set",1
+9,outcome,k_d8a0565c,breakfast_nook_plug.power becomes true; breakfast_nook_plug.power becomes false,1
+9,target_member:breakfast_nook_light,k_0ecbe97e,"no, this device is not in the justified target set",1
+9,target_member:bedroom_light,k_360b7bef,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_f223fc78,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_0f6cda31,"yes, this device is in the justified target set",1
+9,target_member:kitchen_thermostat,k_decfbade,"yes, this device is in the justified target set",1
+9,target_member:kitchen_island_light,k_ec4f2893,"yes, this device is in the justified target set",1
+9,target_member:den_speaker,k_74aec8a7,"yes, this device is in the justified target set",1
+9,state_read,k_95227785,patio_light.power is false,1
+9,target_member:patio_plug,k_def2f0a3,"no, this device is not in the justified target set",1
+9,post_1,k_89fa9d90,false,1
+9,target_member:main_bedroom_plug,k_dea3f4c1,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_1b8af0e3,"yes, this device is in the justified target set",1
+9,resolution,k_a9b2a315,execute now,1
+9,target_member:kitchen_plug,k_4e448010,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_fb9bc1d0,"yes, this device is in the justified target set",1
+9,outcome,k_e71c9941,den_light.power becomes false; kitchen_thermostat.power becomes false,1
+9,target_member:main_bedroom_light,k_c92e8fcf,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_f107c786,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_175817e2,"no, this device is not in the justified target set",1
+9,post_0,k_a6318865,false,1
+9,target_member:garage_light,k_38503681,"no, this device is not in the justified target set",1
+9,resolution,k_4e7a1a9b,answer a state query,1
+9,target_member:garage_light,k_baec0523,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_e914b783,"no, this device is not in the justified target set",1
+9,state_read,k_c0985dd7,patio_plug.power is true,1
+9,target_member:garage_plug,k_68b3be75,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_ca6cc5ef,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_690516f8,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_ebf79b69,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_172a283b,"no, this device is not in the justified target set",1
+9,outcome,k_0f5b63ca,no device property changes,1
+9,target_member:patio_light,k_cf57ca23,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_d0a16cd3,"yes, this device is in the justified target set",1
+9,target_member:den_light,k_6e534c07,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_744d4d07,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_cb33dd10,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_be2b534a,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_390d9df2,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_b0657b42,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_5b641836,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_a20ccb5a,"no, this device is not in the justified target set",1
+9,outcome,k_1bf3768f,kitchen_plug.power becomes false,1
+9,state_read,k_974790da,kitchen_island_light.power is false,1
+9,target_member:kitchen_island_light,k_10b5db02,"no, this device is not in the justified target set",1
+9,resolution,k_c09286c0,execute now,1
+9,target_member:garage_plug,k_bc46e685,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_dfd286ac,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_aa3408e1,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_07891860,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_a5ae83f6,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_b1821789,"yes, this device is in the justified target set",1
+9,post_0,k_7eb2ce51,false,1
+9,target_member:kitchen_thermostat,k_4cf7cf61,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_df87d1dd,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_614d337b,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_20dfaac5,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_03a0b2c1,"no, this device is not in the justified target set",1
+9,state_read,k_56d8bf37,kitchen_thermostat.power is true,1
+9,outcome,k_2776126c,no device property changes,1
+9,resolution,k_b644aea8,make no change because already satisfied,1
+9,target_member:kitchen_island_light,k_010fab70,"yes, this device is in the justified target set",1
+9,target_member:kitchen_thermostat,k_42a4c4aa,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_e7fedb37,"no, this device is not in the justified target set",1
+9,post_0,k_388f258e,false,1
+9,target_member:patio_light,k_cf728253,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_7f8f5282,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_9ee49049,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_34dccf4a,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_87369beb,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_3d238c9f,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_c29258bc,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_ee447f70,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_39e9c0fb,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_ea6db8ca,"no, this device is not in the justified target set",1
+9,post_0,k_af25ee1c,21,1
+9,target_member:study_lock,k_a7ae67af,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_9880e8a7,"yes, this device is in the justified target set",1
+9,target_member:lounge_plug,k_f8c684ae,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_fc7aa90c,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_9352fc40,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_be7ece41,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_f2f88e93,"no, this device is not in the justified target set",1
+9,resolution,k_7df6bfbb,reject as unsupported,1
+9,target_member:study_light,k_efef2cd0,"no, this device is not in the justified target set",1
+9,outcome,k_9d1e8680,no device property changes,1
+9,target_member:galley_island_light,k_ec340a99,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_9af93b89,"no, this device is not in the justified target set",1
+9,state_read,k_0ecf48cd,porch_plug.power is false,1
+9,target_member:study_plug,k_16fd5236,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_76f0e714,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_ed5fb76c,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_d5b48118,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_c6d8eca8,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_2df01e6f,"no, this device is not in the justified target set",1
+9,resolution,k_e16ad2e2,block under household policy,1
+9,target_member:porch_plug,k_4efaf6c5,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_9593a45f,"no, this device is not in the justified target set",1
+9,state_read,k_f7a7de61,galley_island_light.power is true,1
+9,post_0,k_2dd8cae8,false,1
+9,target_member:study_light,k_865f5460,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_2a7876dc,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_2530fe21,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_f61228f2,"yes, this device is in the justified target set",1
+9,target_member:study_plug,k_704e7b46,"no, this device is not in the justified target set",1
+9,post_1,k_fa6de2d6,true,1
+9,outcome,k_64c66cc2,no device property changes,1
+9,target_member:galley_light,k_a42a7549,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_61d10c37,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_cc0ef0a8,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_e2c8c659,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_4f2fe6a1,"yes, this device is in the justified target set",1
+9,target_member:guest_room_plug,k_ca61befd,"yes, this device is in the justified target set",1
+9,target_member:galley_plug,k_26a55e1d,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_b478bb1e,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_b94e24f2,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_6c3a0bef,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_37a6acab,"no, this device is not in the justified target set",1
+9,post_0,k_e2cdb612,false,1
+9,resolution,k_16e4ccd5,schedule for later,1
+9,target_member:guest_room_light,k_ab2be69d,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_7c0d0240,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_6686ed83,"no, this device is not in the justified target set",1
+9,outcome,k_bb630755,a future schedule is added; device properties do not change yet,1
+9,target_member:lounge_light,k_0998141b,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_fa70489b,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_5347674a,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_398ec3d8,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_aaa834f4,"no, this device is not in the justified target set",1
+9,state_read,k_a8904368,galley_thermostat.power is true,1
+9,target_member:porch_plug,k_a6ec3815,"no, this device is not in the justified target set",1
+9,outcome,k_1297cfd4,an automation rule is saved; device properties do not change immediately,1
+9,target_member:lounge_light,k_a7fed094,"no, this device is not in the justified target set",1
+9,resolution,k_4f17ae27,save an automation rule,1
+9,target_member:galley_light,k_4f2e10ba,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_4d5fb5d0,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_31f1a197,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_11f98b6c,"yes, this device is in the justified target set",1
+9,target_member:lounge_speaker,k_eb72039c,"no, this device is not in the justified target set",1
+9,state_read,k_8c13d389,lounge_speaker.power is false,1
+9,target_member:study_light,k_791a350c,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_7c05c99c,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_6a92c058,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_0e9d7d02,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_b105880d,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_4798b278,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_70cb9e3e,"no, this device is not in the justified target set",1
+9,post_0,k_df5648fb,21,1
+9,target_member:family_room_light,k_5e342786,"yes, this device is in the justified target set",1
+9,target_member:kitchen_island_light,k_e228572a,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_fae990fd,"no, this device is not in the justified target set",1
+9,resolution,k_1e4bb651,execute now,1
+9,target_member:kitchen_thermostat,k_61eada07,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_88f54196,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_e45e6897,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_a8f57502,"no, this device is not in the justified target set",1
+9,outcome,k_7468fd6c,family_room_light.brightness becomes 55,1
+9,target_member:deck_plug,k_40f925e2,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_7bb53788,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_c76f48e8,"no, this device is not in the justified target set",1
+9,state_read,k_a5f3a8d2,kitchen_island_light.power is false,1
+9,target_member:kitchen_plug,k_fc18a277,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_4a3ad36e,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_e4f49cd4,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_574d4489,"no, this device is not in the justified target set",1
+9,post_0,k_dc6bc7ff,55,1
+9,outcome,k_4cc002ba,no device property changes,1
+9,target_member:workshop_lock,k_1b9956ca,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_4a2d5da1,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_daaed310,"no, this device is not in the justified target set",1
+9,state_read,k_a37b04c9,kitchen_thermostat.power is true,1
+9,target_member:kitchen_island_light,k_41a5d455,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_e7f750a3,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_1ce3905e,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_38c5f4e0,"no, this device is not in the justified target set",1
+9,resolution,k_3fdc88ae,ask a clarifying question,1
+9,target_member:kitchen_light,k_4858a0b0,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_1d876cfe,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_75aaed40,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_d10a6981,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_1d196925,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_bf3fa7db,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_5eded771,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_01c4373f,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_3fa9328b,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_e30fe2a7,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_4ae035ba,"no, this device is not in the justified target set",1
+9,post_1,k_ecd08281,false,1
+9,target_member:workshop_lock,k_2652f410,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_b232cdb4,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_20c87bc4,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_04f43530,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_a7214e36,"yes, this device is in the justified target set",1
+9,target_member:workshop_light,k_12d28bb0,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_9d292783,"no, this device is not in the justified target set",1
+9,outcome,k_14eb6202,kitchen_plug.power becomes false,1
+9,state_read,k_1604b3d5,family_room_speaker.power is false,1
+9,target_member:nursery_light,k_5f93a5d1,"no, this device is not in the justified target set",1
+9,resolution,k_489a79f7,execute now,1
+9,target_member:family_room_speaker,k_d09efe4e,"no, this device is not in the justified target set",1
+9,post_0,k_f02a6958,false,1
+9,target_member:family_room_plug,k_071ac57d,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_fcbe7e98,"no, this device is not in the justified target set",1
+9,state_read,k_27d4506e,workshop_lock.locked is true,1
+9,resolution,k_8def8a04,make no change because already satisfied,1
+9,target_member:kitchen_thermostat,k_3cf9f02a,"no, this device is not in the justified target set",1
+9,outcome,k_904eaac3,no device property changes,1
+9,post_1,k_73d069a3,false,1
+9,target_member:workshop_lock,k_1368214b,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_7c121e07,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_5cffaf7f,"yes, this device is in the justified target set",1
+9,target_member:kitchen_island_light,k_773d25b9,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_6afff336,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_83e4c366,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_ba09ff61,"yes, this device is in the justified target set",1
+9,target_member:kitchen_light,k_8bbcb854,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_378fb9bd,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_120bec87,"no, this device is not in the justified target set",1
+9,post_0,k_14f372c9,true,1
+9,target_member:workshop_plug,k_6eec350d,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_09fa7895,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_2d84f8b4,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_5baf6427,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_6e0bb364,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_eee7252b,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_a6b851fb,"no, this device is not in the justified target set",1
+9,outcome,k_f753abc6,no device property changes,1
+9,target_member:breakfast_nook_thermostat,k_3f7471dc,"yes, this device is in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_c09602f4,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_45f036f0,"no, this device is not in the justified target set",1
+9,state_read,k_f07f628e,breakfast_nook_thermostat.power is true,1
+9,target_member:sitting_room_light,k_d06d7f0a,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_610e99af,"no, this device is not in the justified target set",1
+9,resolution,k_4b696723,answer a state query,1
+9,target_member:bedroom_light,k_cd131a7b,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_a4e0d47b,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_0d9573a7,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_af36436c,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_e4d16490,"yes, this device is in the justified target set",1
+9,target_member:sitting_room_plug,k_76b4adef,"no, this device is not in the justified target set",1
+9,resolution,k_9b57385e,execute now,1
+9,target_member:breakfast_nook_thermostat,k_ec46d1b7,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_e2634fef,"no, this device is not in the justified target set",1
+9,outcome,k_41c1406d,breakfast_nook_plug.power becomes true,1
+9,post_0,k_ea070a07,true,1
+9,target_member:office_plug,k_008242ee,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_130a11c1,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_3277e4cd,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_e890bb3e,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_a6c0dc15,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_f9446be3,"no, this device is not in the justified target set",1
+9,state_read,k_2aa12461,sitting_room_speaker.power is false,1
+9,target_member:bedroom_light,k_222146f0,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_73043edf,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_1c38ec95,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_947db101,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_be07e6e9,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_48938cdc,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_1150d1dd,"no, this device is not in the justified target set",1
+9,state_read,k_6370c888,office_lock.locked is false,1
+9,target_member:sitting_room_light,k_fb00ad74,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_62fc33d5,"no, this device is not in the justified target set",1
+9,outcome,k_17082093,breakfast_nook_island_light.power becomes false,1
+9,target_member:sitting_room_plug,k_8c41bd66,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_07786227,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_d9a5b2d2,"no, this device is not in the justified target set",1
+9,post_0,k_71019fb3,false,1
+9,target_member:breakfast_nook_thermostat,k_99554d37,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_2149eb4c,"yes, this device is in the justified target set",1
+9,target_member:office_lock,k_3bdb4753,"no, this device is not in the justified target set",1
+9,target_member:bedroom_light,k_08cb964f,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_84ed4762,"no, this device is not in the justified target set",1
+9,resolution,k_01f0d2af,execute now,1
+9,target_member:breakfast_nook_plug,k_c37dcfa5,"no, this device is not in the justified target set",1
+9,state_read,k_9e03cb53,breakfast_nook_light.power is true,1
+9,post_1,k_7022a35b,true,1
+9,target_member:bedroom_plug,k_2cbc888c,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_f744ddb1,"yes, this device is in the justified target set",1
+9,target_member:sitting_room_plug,k_3e5aba29,"yes, this device is in the justified target set",1
+9,target_member:sitting_room_light,k_c4317eb6,"no, this device is not in the justified target set",1
+9,outcome,k_65db6cdc,breakfast_nook_plug.power becomes true; sitting_room_speaker.power becomes true,1
+9,post_0,k_4cd20621,true,1
+9,target_member:office_lock,k_20296ed2,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_a1f90ccb,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_75a005d8,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_a7ae0c2f,"no, this device is not in the justified target set",1
+9,target_member:bedroom_light,k_3bc39d2b,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_cdbf6835,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_7fd7e769,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_078fe289,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_28077d69,"no, this device is not in the justified target set",1
+9,resolution,k_457b4ba0,execute now,1
+9,target_member:sitting_room_speaker,k_c8232afe,"yes, this device is in the justified target set",1
+9,target_member:patio_light,k_39deffa7,"no, this device is not in the justified target set",1
+9,outcome,k_59e8a905,no device property changes,1
+9,target_member:den_plug,k_f56bd22a,"yes, this device is in the justified target set",1
+9,target_member:kitchen_light,k_7b19bdc9,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_de683cdf,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_111a38fc,"no, this device is not in the justified target set",1
+9,resolution,k_e6954dc6,block under household policy,1
+9,target_member:garage_lock,k_1c8eb052,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_eacb239f,"no, this device is not in the justified target set",1
+9,state_read,k_413a5017,den_speaker.power is false,1
+9,target_member:den_light,k_36bb2135,"no, this device is not in the justified target set",1
+9,post_1,k_9481cd8d,false,1
+9,post_0,k_dc0c01ba,true,1
+9,target_member:main_bedroom_plug,k_7f476f74,"no, this device is not in the justified target set",1
+9,target_member:patio_plug,k_5a19b1b1,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_b322d04e,"yes, this device is in the justified target set",1
+9,target_member:kitchen_island_light,k_d3c1c29d,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_0d57de09,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_11762932,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_7440a324,"no, this device is not in the justified target set",1
+9,state_read,k_02f14ecc,garage_lock.locked is true,1
+9,target_member:den_speaker,k_f46b08c3,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_75776429,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_49efd6b7,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_0ae58eb3,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_a3f280c8,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_09ead31e,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_e22bf5e5,"no, this device is not in the justified target set",1
+9,outcome,k_3b711ff7,a future schedule is added; device properties do not change yet,1
+9,post_0,k_a5f48b8f,true,1
+9,target_member:patio_plug,k_270192e5,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_e58550a1,"no, this device is not in the justified target set",1
+9,resolution,k_4fa8ccd2,schedule for later,1
+9,target_member:main_bedroom_plug,k_eb552688,"yes, this device is in the justified target set",1
+9,target_member:kitchen_light,k_506eb3b7,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_7a167257,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_d2d91ebe,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_c172513a,"no, this device is not in the justified target set",1
+9,target_member:garage_light,k_285648ba,"no, this device is not in the justified target set",1
+9,target_member:patio_light,k_0c885bd9,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_8610e31f,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_d52cd69f,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_ccbccb35,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_4a58ff1a,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_aa4b7aea,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_314da5ae,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_b96994e1,"yes, this device is in the justified target set",1
+9,target_member:den_light,k_6db24054,"no, this device is not in the justified target set",1
+9,outcome,k_770c2258,an automation rule is saved; device properties do not change immediately,1
+9,target_member:kitchen_plug,k_edfcbfa7,"no, this device is not in the justified target set",1
+9,post_0,k_14a81583,21,1
+9,target_member:kitchen_light,k_39b299ef,"no, this device is not in the justified target set",1
+9,resolution,k_9c2311f8,save an automation rule,1
+9,target_member:patio_plug,k_030215f5,"no, this device is not in the justified target set",1
+9,state_read,k_837a3331,kitchen_light.power is false,1
+9,target_member:patio_light,k_4b3b6593,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_ec2ed9fc,"no, this device is not in the justified target set",1
+9,target_member:den_plug,k_7ab65c0b,"no, this device is not in the justified target set",1
+9,target_member:garage_plug,k_cf8de2d9,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_light,k_c8a17fd0,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_0da5d59a,"no, this device is not in the justified target set",1
+9,target_member:den_speaker,k_28104b16,"no, this device is not in the justified target set",1
+9,post_0,k_7e32c800,false,1
+9,target_member:patio_plug,k_71f6d297,"no, this device is not in the justified target set",1
+9,target_member:garage_lock,k_aa3afbc3,"no, this device is not in the justified target set",1
+9,target_member:den_light,k_abe7a6ea,"no, this device is not in the justified target set",1
+9,outcome,k_c1a4763a,kitchen_plug.power becomes false,1
+9,state_read,k_00861b07,kitchen_plug.power is true,1
+9,target_member:kitchen_plug,k_16a5ca2c,"yes, this device is in the justified target set",1
+9,target_member:garage_light,k_9035ad79,"no, this device is not in the justified target set",1
+9,target_member:main_bedroom_plug,k_f2f36439,"no, this device is not in the justified target set",1
+9,resolution,k_dea141d3,execute now,1
+9,target_member:kitchen_island_light,k_2ef7dc64,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_8e90c8f6,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_0a20f424,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_7c152456,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_6b31eae8,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_df547b1e,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_3ddd5507,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_f115ca0f,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_56f9707c,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_adbe6fd5,"no, this device is not in the justified target set",1
+9,state_read,k_9fa0e448,study_lock.locked is false,1
+9,target_member:porch_plug,k_0432c1cc,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_e2cb8396,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_836729c7,"no, this device is not in the justified target set",1
+9,outcome,k_ef975283,no device property changes,1
+9,target_member:lounge_light,k_8b35c0e4,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_a8b57198,"no, this device is not in the justified target set",1
+9,resolution,k_f5693393,ask a clarifying question,1
+9,post_1,k_737f9842,false,1
+9,target_member:galley_light,k_7cc2755c,"no, this device is not in the justified target set",1
+9,target_member:study_lock,k_32830a2b,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_28b96cbb,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_15655372,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_acdd8aa0,"no, this device is not in the justified target set",1
+9,target_member:lounge_speaker,k_77c40c11,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_d5c39f39,"no, this device is not in the justified target set",1
+9,post_0,k_a7bf0f1c,false,1
+9,target_member:galley_thermostat,k_d84e5dab,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_13b17ca6,"yes, this device is in the justified target set",1
+9,resolution,k_131c0f82,execute now,1
+9,target_member:guest_room_plug,k_fda5bf21,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_a653f563,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_539431dc,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_93997749,"no, this device is not in the justified target set",1
+9,outcome,k_5054abb1,galley_plug.power becomes true; galley_plug.power becomes false,1
+9,state_read,k_05adcfc6,galley_light.power is true,1
+9,target_member:lounge_light,k_2c222ebf,"no, this device is not in the justified target set",1
+9,target_member:study_light,k_413d452b,"no, this device is not in the justified target set",1
+9,target_member:galley_light,k_486d39bb,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_6c8ce967,"no, this device is not in the justified target set",1
+9,post_0,k_808dbf9a,true,1
+9,target_member:guest_room_light,k_902ecec6,"no, this device is not in the justified target set",1
+9,resolution,k_2c0dfc2a,execute available parts now,1
+9,target_member:study_lock,k_c18a89a4,"no, this device is not in the justified target set",1
+9,outcome,k_a57e7931,galley_plug.power becomes true,1
+9,target_member:galley_island_light,k_ca748602,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_186c5111,"yes, this device is in the justified target set",1
+9,target_member:lounge_plug,k_783b306a,"yes, this device is in the justified target set",1
+9,target_member:porch_light,k_021567e3,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_34164862,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_884df527,"no, this device is not in the justified target set",1
+9,target_member:guest_room_plug,k_1f690991,"no, this device is not in the justified target set",1
+9,post_1,k_c14f3d94,true,1
+9,state_read,k_920f204e,galley_plug.power is false,1
+9,target_member:lounge_speaker,k_71e25a6e,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_2e9068e7,"no, this device is not in the justified target set",1
+9,target_member:galley_thermostat,k_a8986176,"no, this device is not in the justified target set",1
+9,target_member:galley_island_light,k_f40ecec3,"no, this device is not in the justified target set",1
+9,target_member:galley_plug,k_9323d5bd,"no, this device is not in the justified target set",1
+9,post_0,k_e90f885c,false,1
+9,target_member:lounge_speaker,k_fc69b037,"no, this device is not in the justified target set",1
+9,target_member:guest_room_light,k_aa2c02cf,"no, this device is not in the justified target set",1
+9,target_member:lounge_light,k_30cc8a17,"no, this device is not in the justified target set",1
+9,target_member:porch_light,k_f40e79a5,"no, this device is not in the justified target set",1
+9,outcome,k_c3244fa7,no device property changes,1
+9,target_member:guest_room_plug,k_8f098e70,"no, this device is not in the justified target set",1
+9,target_member:study_plug,k_1ec3942a,"no, this device is not in the justified target set",1
+9,target_member:porch_plug,k_27142df3,"no, this device is not in the justified target set",1
+9,target_member:lounge_plug,k_58cda6cd,"no, this device is not in the justified target set",1
+9,state_read,k_b9f458e1,lounge_light.power is false,1
+9,target_member:study_light,k_8928f5a8,"no, this device is not in the justified target set",1
+9,resolution,k_c85b39db,block under household policy,1
+9,target_member:study_lock,k_5a8994d7,"yes, this device is in the justified target set",1
+9,target_member:galley_light,k_05653f5a,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_7b5db08c,"yes, this device is in the justified target set",1
+9,target_member:family_room_speaker,k_62ee8fb3,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_b0b196d9,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_409cf990,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_f372c4b0,"no, this device is not in the justified target set",1
+9,resolution,k_b2f9bdb6,execute now,1
+9,target_member:workshop_light,k_1f0f5e2a,"no, this device is not in the justified target set",1
+9,post_0,k_c5f2f0b6,false,1
+9,target_member:deck_light,k_4fee7294,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_e65e0774,"no, this device is not in the justified target set",1
+9,state_read,k_7982eb73,kitchen_light.power is false,1
+9,target_member:kitchen_island_light,k_fbfeac33,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_f932770c,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_de5ea4d9,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_fe7c67a0,"no, this device is not in the justified target set",1
+9,outcome,k_f9a379cb,kitchen_plug.power becomes false,1
+9,target_member:workshop_lock,k_d4466600,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_7d50091f,"no, this device is not in the justified target set",1
+9,outcome,k_e246b088,no device property changes,1
+9,target_member:family_room_speaker,k_aa21aecf,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_ccc7e0f7,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_70258137,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_844801d3,"no, this device is not in the justified target set",1
+9,state_read,k_b731746e,kitchen_plug.power is true,1
+9,target_member:kitchen_island_light,k_1595ab15,"yes, this device is in the justified target set",1
+9,target_member:deck_plug,k_2996663c,"no, this device is not in the justified target set",1
+9,target_member:workshop_plug,k_b792cadb,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_a17da3f3,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_1630be41,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_8a0ad430,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_a2194c2c,"no, this device is not in the justified target set",1
+9,target_member:kitchen_light,k_f69ab052,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_f843c253,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_5aceeea1,"no, this device is not in the justified target set",1
+9,resolution,k_7d21a050,make no change because already satisfied,1
+9,post_0,k_ebcc0bf1,false,1
+9,target_member:family_room_plug,k_67e5c7a2,"yes, this device is in the justified target set",1
+9,resolution,k_d03ec7e2,execute now,1
+9,post_0,k_de47c8b6,true,1
+9,target_member:workshop_plug,k_981a842e,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_6f07bc8d,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_59530c05,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_57ce72db,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_abf73163,"no, this device is not in the justified target set",1
+9,state_read,k_87123e37,family_room_light.power is true,1
+9,target_member:nursery_light,k_60ec0216,"no, this device is not in the justified target set",1
+9,target_member:workshop_lock,k_01fd89ab,"no, this device is not in the justified target set",1
+9,post_1,k_926dcda2,true,1
+9,target_member:family_room_speaker,k_49e560da,"yes, this device is in the justified target set",1
+9,target_member:kitchen_plug,k_91440fa9,"yes, this device is in the justified target set",1
+9,target_member:kitchen_light,k_1d9c25e8,"no, this device is not in the justified target set",1
+9,outcome,k_1e4e4fda,family_room_plug.power becomes true; family_room_speaker.power becomes true,1
+9,target_member:kitchen_thermostat,k_91f4dde1,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_327acd31,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_81d61d62,"no, this device is not in the justified target set",1
+9,target_member:deck_plug,k_243ed1f3,"no, this device is not in the justified target set",1
+9,target_member:family_room_plug,k_658a3272,"no, this device is not in the justified target set",1
+9,target_member:nursery_plug,k_ba65b1af,"no, this device is not in the justified target set",1
+9,target_member:kitchen_plug,k_d719a92a,"no, this device is not in the justified target set",1
+9,target_member:workshop_light,k_b11232cf,"no, this device is not in the justified target set",1
+9,state_read,k_4e0b60d6,family_room_plug.power is false,1
+9,target_member:workshop_lock,k_3a7f3320,"no, this device is not in the justified target set",1
+9,target_member:deck_light,k_20e3e15a,"no, this device is not in the justified target set",1
+9,outcome,k_bc676671,no device property changes,1
+9,target_member:workshop_plug,k_dd569bdd,"no, this device is not in the justified target set",1
+9,target_member:family_room_light,k_cba2fca0,"no, this device is not in the justified target set",1
+9,target_member:family_room_speaker,k_d13d5764,"no, this device is not in the justified target set",1
+9,target_member:kitchen_thermostat,k_d10d80e0,"no, this device is not in the justified target set",1
+9,resolution,k_178963e2,ask a clarifying question,1
+9,target_member:kitchen_light,k_dfc57fba,"no, this device is not in the justified target set",1
+9,target_member:nursery_light,k_b77f0f55,"no, this device is not in the justified target set",1
+9,target_member:kitchen_island_light,k_f82b82ab,"no, this device is not in the justified target set",1
+9,state_read,k_65908517,breakfast_nook_plug.power is false,1
+9,target_member:bedroom_light,k_65b05add,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_f5ff0673,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_f6d59a64,"yes, this device is in the justified target set",1
+9,resolution,k_da4eb5a0,schedule for later,1
+9,target_member:sitting_room_light,k_1e326d69,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_79994564,"no, this device is not in the justified target set",1
+9,target_member:office_lock,k_3e56f5f0,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_afa2ec4b,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_1b5d429f,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_fbe5d09c,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_359cabf1,"no, this device is not in the justified target set",1
+9,post_0,k_f9ae66ab,false,1
+9,target_member:mudroom_light,k_6028802b,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_a291e0ad,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_fefd4861,"no, this device is not in the justified target set",1
+9,outcome,k_17e3fe78,a future schedule is added; device properties do not change yet,1
+9,target_member:office_plug,k_f50844a6,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_13640c9f,"no, this device is not in the justified target set",1
+9,outcome,k_9c2604e8,an automation rule is saved; device properties do not change immediately,1
+9,target_member:office_lock,k_e24df29f,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_11ce8103,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_8eca163c,"yes, this device is in the justified target set",1
+9,target_member:mudroom_light,k_ac9be4ec,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_1a198361,"no, this device is not in the justified target set",1
+9,post_0,k_4905df1f,21,1
+9,target_member:office_light,k_e6448e54,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_4839199a,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_345a047f,"no, this device is not in the justified target set",1
+9,resolution,k_9c2a7bf3,save an automation rule,1
+9,state_read,k_5aeba851,sitting_room_light.power is false,1
+9,target_member:bedroom_light,k_4c3a85f7,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_e824398e,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_7839e972,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_5554382a,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_21bb8520,"no, this device is not in the justified target set",1
+9,post_0,k_6dc51959,false,1
+9,target_member:mudroom_plug,k_27a20c96,"no, this device is not in the justified target set",1
+9,target_member:bedroom_light,k_cebf2551,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_ccabe2d1,"yes, this device is in the justified target set",1
+9,state_read,k_c57b0b54,sitting_room_plug.power is true,1
+9,target_member:office_light,k_bebb45e0,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_plug,k_b1ef0d21,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_03a683a0,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_0f577918,"no, this device is not in the justified target set",1
+9,resolution,k_cbb4f51a,make no change because already satisfied,1
+9,target_member:office_lock,k_8424f524,"no, this device is not in the justified target set",1
+9,outcome,k_31e62e47,no device property changes,1
+9,target_member:breakfast_nook_island_light,k_59e6adca,"no, this device is not in the justified target set",1
+9,target_member:mudroom_light,k_cd1dcd18,"no, this device is not in the justified target set",1
+9,target_member:bedroom_plug,k_bcd28e1c,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_d30ef777,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_296ae4a0,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_e717ebf2,"no, this device is not in the justified target set",1
+9,target_member:mudroom_plug,k_72b9b639,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_speaker,k_337ebafe,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_light,k_c70bf9d9,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_thermostat,k_5bcac82f,"no, this device is not in the justified target set",1
+9,resolution,k_aa6abc41,execute now,1
+9,target_member:mudroom_light,k_0ac6c5cb,"no, this device is not in the justified target set",1
+9,post_0,k_2b7d7c64,false,1
+9,target_member:bedroom_plug,k_0ff81fc4,"no, this device is not in the justified target set",1
+9,target_member:office_light,k_64a43963,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_plug,k_3af76f8d,"no, this device is not in the justified target set",1
+9,outcome,k_0e816ae5,sitting_room_plug.power becomes false,1
+9,target_member:sitting_room_plug,k_258f6cdc,"yes, this device is in the justified target set",1
+9,target_member:office_lock,k_0e3e122f,"no, this device is not in the justified target set",1
+9,target_member:breakfast_nook_island_light,k_926cf2cf,"no, this device is not in the justified target set",1
+9,target_member:office_plug,k_06ec749e,"no, this device is not in the justified target set",1
+9,state_read,k_6e51f987,bedroom_light.power is true,1
+9,target_member:bedroom_light,k_444316a2,"no, this device is not in the justified target set",1
+9,target_member:sitting_room_light,k_7bf455a5,"no, this device is not in the justified target set",1

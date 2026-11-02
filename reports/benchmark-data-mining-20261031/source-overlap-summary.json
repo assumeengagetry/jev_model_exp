@@ -1,0 +1,8 @@
+{
+  "bfcl_unique_source_ids": 1694,
+  "when2call_unique_bfcl_source_ids": 1295,
+  "exact_source_id_overlap": 1295,
+  "when2call_source_overlap_pct": 100.0,
+  "nontrivial_cross_benchmark_state_pairs": 0,
+  "definition": "Exact original source-ID intersection only; no approximate or semantic overlap inference."
+}

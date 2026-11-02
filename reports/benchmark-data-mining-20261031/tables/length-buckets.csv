@@ -1,0 +1,1721 @@
+benchmark_id,name,active,area,unit,bucket,count,pct
+1,BFCL,True,tools,joint,<128,0,0.00
+1,BFCL,True,tools,joint,128–255,383,22.61
+1,BFCL,True,tools,joint,256–511,331,19.54
+1,BFCL,True,tools,joint,512–1023,458,27.04
+1,BFCL,True,tools,joint,1024–2047,459,27.10
+1,BFCL,True,tools,joint,2048–4095,61,3.60
+1,BFCL,True,tools,joint,4096–8191,2,0.12
+1,BFCL,True,tools,joint,8192–16383,0,0.00
+1,BFCL,True,tools,joint,16384–32767,0,0.00
+1,BFCL,True,tools,joint,≥32768,0,0.00
+1,BFCL,True,tools,request_pair_max,<128,0,0.00
+1,BFCL,True,tools,request_pair_max,128–255,261,15.41
+1,BFCL,True,tools,request_pair_max,256–511,501,29.57
+1,BFCL,True,tools,request_pair_max,512–1023,503,29.69
+1,BFCL,True,tools,request_pair_max,1024–2047,389,22.96
+1,BFCL,True,tools,request_pair_max,2048–4095,38,2.24
+1,BFCL,True,tools,request_pair_max,4096–8191,2,0.12
+1,BFCL,True,tools,request_pair_max,8192–16383,0,0.00
+1,BFCL,True,tools,request_pair_max,16384–32767,0,0.00
+1,BFCL,True,tools,request_pair_max,≥32768,0,0.00
+1,BFCL,True,tools,pair,<128,0,0.00
+1,BFCL,True,tools,pair,128–255,543,5.69
+1,BFCL,True,tools,pair,256–511,1294,13.57
+1,BFCL,True,tools,pair,512–1023,3248,34.06
+1,BFCL,True,tools,pair,1024–2047,3811,39.96
+1,BFCL,True,tools,pair,2048–4095,514,5.39
+1,BFCL,True,tools,pair,4096–8191,126,1.32
+1,BFCL,True,tools,pair,8192–16383,0,0.00
+1,BFCL,True,tools,pair,16384–32767,0,0.00
+1,BFCL,True,tools,pair,≥32768,0,0.00
+1,BFCL,True,tools,state,<128,18,1.06
+1,BFCL,True,tools,state,128–255,545,32.17
+1,BFCL,True,tools,state,256–511,295,17.41
+1,BFCL,True,tools,state,512–1023,459,27.10
+1,BFCL,True,tools,state,1024–2047,344,20.31
+1,BFCL,True,tools,state,2048–4095,31,1.83
+1,BFCL,True,tools,state,4096–8191,2,0.12
+1,BFCL,True,tools,state,8192–16383,0,0.00
+1,BFCL,True,tools,state,16384–32767,0,0.00
+1,BFCL,True,tools,state,≥32768,0,0.00
+2,ToolRet,True,tools,joint,<128,0,0.00
+2,ToolRet,True,tools,joint,128–255,0,0.00
+2,ToolRet,True,tools,joint,256–511,0,0.00
+2,ToolRet,True,tools,joint,512–1023,0,0.00
+2,ToolRet,True,tools,joint,1024–2047,0,0.00
+2,ToolRet,True,tools,joint,2048–4095,35,5.11
+2,ToolRet,True,tools,joint,4096–8191,333,48.61
+2,ToolRet,True,tools,joint,8192–16383,297,43.36
+2,ToolRet,True,tools,joint,16384–32767,20,2.92
+2,ToolRet,True,tools,joint,≥32768,0,0.00
+2,ToolRet,True,tools,request_pair_max,<128,0,0.00
+2,ToolRet,True,tools,request_pair_max,128–255,12,1.75
+2,ToolRet,True,tools,request_pair_max,256–511,175,25.55
+2,ToolRet,True,tools,request_pair_max,512–1023,369,53.87
+2,ToolRet,True,tools,request_pair_max,1024–2047,72,10.51
+2,ToolRet,True,tools,request_pair_max,2048–4095,31,4.53
+2,ToolRet,True,tools,request_pair_max,4096–8191,24,3.50
+2,ToolRet,True,tools,request_pair_max,8192–16383,1,0.15
+2,ToolRet,True,tools,request_pair_max,16384–32767,1,0.15
+2,ToolRet,True,tools,request_pair_max,≥32768,0,0.00
+2,ToolRet,True,tools,pair,<128,498,1.14
+2,ToolRet,True,tools,pair,128–255,19774,45.11
+2,ToolRet,True,tools,pair,256–511,19508,44.50
+2,ToolRet,True,tools,pair,512–1023,3588,8.18
+2,ToolRet,True,tools,pair,1024–2047,318,0.73
+2,ToolRet,True,tools,pair,2048–4095,80,0.18
+2,ToolRet,True,tools,pair,4096–8191,68,0.16
+2,ToolRet,True,tools,pair,8192–16383,2,0.00
+2,ToolRet,True,tools,pair,16384–32767,2,0.00
+2,ToolRet,True,tools,pair,≥32768,0,0.00
+2,ToolRet,True,tools,state,<128,645,94.16
+2,ToolRet,True,tools,state,128–255,36,5.26
+2,ToolRet,True,tools,state,256–511,2,0.29
+2,ToolRet,True,tools,state,512–1023,2,0.29
+2,ToolRet,True,tools,state,1024–2047,0,0.00
+2,ToolRet,True,tools,state,2048–4095,0,0.00
+2,ToolRet,True,tools,state,4096–8191,0,0.00
+2,ToolRet,True,tools,state,8192–16383,0,0.00
+2,ToolRet,True,tools,state,16384–32767,0,0.00
+2,ToolRet,True,tools,state,≥32768,0,0.00
+3,API-Bank,True,tools,joint,<128,0,0.00
+3,API-Bank,True,tools,joint,128–255,0,0.00
+3,API-Bank,True,tools,joint,256–511,0,0.00
+3,API-Bank,True,tools,joint,512–1023,0,0.00
+3,API-Bank,True,tools,joint,1024–2047,0,0.00
+3,API-Bank,True,tools,joint,2048–4095,0,0.00
+3,API-Bank,True,tools,joint,4096–8191,508,100.00
+3,API-Bank,True,tools,joint,8192–16383,0,0.00
+3,API-Bank,True,tools,joint,16384–32767,0,0.00
+3,API-Bank,True,tools,joint,≥32768,0,0.00
+3,API-Bank,True,tools,request_pair_max,<128,0,0.00
+3,API-Bank,True,tools,request_pair_max,128–255,0,0.00
+3,API-Bank,True,tools,request_pair_max,256–511,0,0.00
+3,API-Bank,True,tools,request_pair_max,512–1023,0,0.00
+3,API-Bank,True,tools,request_pair_max,1024–2047,0,0.00
+3,API-Bank,True,tools,request_pair_max,2048–4095,0,0.00
+3,API-Bank,True,tools,request_pair_max,4096–8191,508,100.00
+3,API-Bank,True,tools,request_pair_max,8192–16383,0,0.00
+3,API-Bank,True,tools,request_pair_max,16384–32767,0,0.00
+3,API-Bank,True,tools,request_pair_max,≥32768,0,0.00
+3,API-Bank,True,tools,pair,<128,0,0.00
+3,API-Bank,True,tools,pair,128–255,0,0.00
+3,API-Bank,True,tools,pair,256–511,0,0.00
+3,API-Bank,True,tools,pair,512–1023,0,0.00
+3,API-Bank,True,tools,pair,1024–2047,0,0.00
+3,API-Bank,True,tools,pair,2048–4095,0,0.00
+3,API-Bank,True,tools,pair,4096–8191,26924,100.00
+3,API-Bank,True,tools,pair,8192–16383,0,0.00
+3,API-Bank,True,tools,pair,16384–32767,0,0.00
+3,API-Bank,True,tools,pair,≥32768,0,0.00
+3,API-Bank,True,tools,state,<128,0,0.00
+3,API-Bank,True,tools,state,128–255,0,0.00
+3,API-Bank,True,tools,state,256–511,0,0.00
+3,API-Bank,True,tools,state,512–1023,0,0.00
+3,API-Bank,True,tools,state,1024–2047,0,0.00
+3,API-Bank,True,tools,state,2048–4095,0,0.00
+3,API-Bank,True,tools,state,4096–8191,508,100.00
+3,API-Bank,True,tools,state,8192–16383,0,0.00
+3,API-Bank,True,tools,state,16384–32767,0,0.00
+3,API-Bank,True,tools,state,≥32768,0,0.00
+4,BANKING77,True,retrieval,joint,<128,0,0.00
+4,BANKING77,True,retrieval,joint,128–255,0,0.00
+4,BANKING77,True,retrieval,joint,256–511,0,0.00
+4,BANKING77,True,retrieval,joint,512–1023,3080,100.00
+4,BANKING77,True,retrieval,joint,1024–2047,0,0.00
+4,BANKING77,True,retrieval,joint,2048–4095,0,0.00
+4,BANKING77,True,retrieval,joint,4096–8191,0,0.00
+4,BANKING77,True,retrieval,joint,8192–16383,0,0.00
+4,BANKING77,True,retrieval,joint,16384–32767,0,0.00
+4,BANKING77,True,retrieval,joint,≥32768,0,0.00
+4,BANKING77,True,retrieval,request_pair_max,<128,3080,100.00
+4,BANKING77,True,retrieval,request_pair_max,128–255,0,0.00
+4,BANKING77,True,retrieval,request_pair_max,256–511,0,0.00
+4,BANKING77,True,retrieval,request_pair_max,512–1023,0,0.00
+4,BANKING77,True,retrieval,request_pair_max,1024–2047,0,0.00
+4,BANKING77,True,retrieval,request_pair_max,2048–4095,0,0.00
+4,BANKING77,True,retrieval,request_pair_max,4096–8191,0,0.00
+4,BANKING77,True,retrieval,request_pair_max,8192–16383,0,0.00
+4,BANKING77,True,retrieval,request_pair_max,16384–32767,0,0.00
+4,BANKING77,True,retrieval,request_pair_max,≥32768,0,0.00
+4,BANKING77,True,retrieval,pair,<128,237160,100.00
+4,BANKING77,True,retrieval,pair,128–255,0,0.00
+4,BANKING77,True,retrieval,pair,256–511,0,0.00
+4,BANKING77,True,retrieval,pair,512–1023,0,0.00
+4,BANKING77,True,retrieval,pair,1024–2047,0,0.00
+4,BANKING77,True,retrieval,pair,2048–4095,0,0.00
+4,BANKING77,True,retrieval,pair,4096–8191,0,0.00
+4,BANKING77,True,retrieval,pair,8192–16383,0,0.00
+4,BANKING77,True,retrieval,pair,16384–32767,0,0.00
+4,BANKING77,True,retrieval,pair,≥32768,0,0.00
+4,BANKING77,True,retrieval,state,<128,3080,100.00
+4,BANKING77,True,retrieval,state,128–255,0,0.00
+4,BANKING77,True,retrieval,state,256–511,0,0.00
+4,BANKING77,True,retrieval,state,512–1023,0,0.00
+4,BANKING77,True,retrieval,state,1024–2047,0,0.00
+4,BANKING77,True,retrieval,state,2048–4095,0,0.00
+4,BANKING77,True,retrieval,state,4096–8191,0,0.00
+4,BANKING77,True,retrieval,state,8192–16383,0,0.00
+4,BANKING77,True,retrieval,state,16384–32767,0,0.00
+4,BANKING77,True,retrieval,state,≥32768,0,0.00
+5,CLINC150+OOS,True,retrieval,joint,<128,0,0.00
+5,CLINC150+OOS,True,retrieval,joint,128–255,0,0.00
+5,CLINC150+OOS,True,retrieval,joint,256–511,0,0.00
+5,CLINC150+OOS,True,retrieval,joint,512–1023,0,0.00
+5,CLINC150+OOS,True,retrieval,joint,1024–2047,5500,100.00
+5,CLINC150+OOS,True,retrieval,joint,2048–4095,0,0.00
+5,CLINC150+OOS,True,retrieval,joint,4096–8191,0,0.00
+5,CLINC150+OOS,True,retrieval,joint,8192–16383,0,0.00
+5,CLINC150+OOS,True,retrieval,joint,16384–32767,0,0.00
+5,CLINC150+OOS,True,retrieval,joint,≥32768,0,0.00
+5,CLINC150+OOS,True,retrieval,request_pair_max,<128,5500,100.00
+5,CLINC150+OOS,True,retrieval,request_pair_max,128–255,0,0.00
+5,CLINC150+OOS,True,retrieval,request_pair_max,256–511,0,0.00
+5,CLINC150+OOS,True,retrieval,request_pair_max,512–1023,0,0.00
+5,CLINC150+OOS,True,retrieval,request_pair_max,1024–2047,0,0.00
+5,CLINC150+OOS,True,retrieval,request_pair_max,2048–4095,0,0.00
+5,CLINC150+OOS,True,retrieval,request_pair_max,4096–8191,0,0.00
+5,CLINC150+OOS,True,retrieval,request_pair_max,8192–16383,0,0.00
+5,CLINC150+OOS,True,retrieval,request_pair_max,16384–32767,0,0.00
+5,CLINC150+OOS,True,retrieval,request_pair_max,≥32768,0,0.00
+5,CLINC150+OOS,True,retrieval,pair,<128,830500,100.00
+5,CLINC150+OOS,True,retrieval,pair,128–255,0,0.00
+5,CLINC150+OOS,True,retrieval,pair,256–511,0,0.00
+5,CLINC150+OOS,True,retrieval,pair,512–1023,0,0.00
+5,CLINC150+OOS,True,retrieval,pair,1024–2047,0,0.00
+5,CLINC150+OOS,True,retrieval,pair,2048–4095,0,0.00
+5,CLINC150+OOS,True,retrieval,pair,4096–8191,0,0.00
+5,CLINC150+OOS,True,retrieval,pair,8192–16383,0,0.00
+5,CLINC150+OOS,True,retrieval,pair,16384–32767,0,0.00
+5,CLINC150+OOS,True,retrieval,pair,≥32768,0,0.00
+5,CLINC150+OOS,True,retrieval,state,<128,5500,100.00
+5,CLINC150+OOS,True,retrieval,state,128–255,0,0.00
+5,CLINC150+OOS,True,retrieval,state,256–511,0,0.00
+5,CLINC150+OOS,True,retrieval,state,512–1023,0,0.00
+5,CLINC150+OOS,True,retrieval,state,1024–2047,0,0.00
+5,CLINC150+OOS,True,retrieval,state,2048–4095,0,0.00
+5,CLINC150+OOS,True,retrieval,state,4096–8191,0,0.00
+5,CLINC150+OOS,True,retrieval,state,8192–16383,0,0.00
+5,CLINC150+OOS,True,retrieval,state,16384–32767,0,0.00
+5,CLINC150+OOS,True,retrieval,state,≥32768,0,0.00
+6,RouterBench,False,tools,joint,<128,0,0.00
+6,RouterBench,False,tools,joint,128–255,0,0.00
+6,RouterBench,False,tools,joint,256–511,0,0.00
+6,RouterBench,False,tools,joint,512–1023,0,0.00
+6,RouterBench,False,tools,joint,1024–2047,1242,12.42
+6,RouterBench,False,tools,joint,2048–4095,8705,87.05
+6,RouterBench,False,tools,joint,4096–8191,53,0.53
+6,RouterBench,False,tools,joint,8192–16383,0,0.00
+6,RouterBench,False,tools,joint,16384–32767,0,0.00
+6,RouterBench,False,tools,joint,≥32768,0,0.00
+6,RouterBench,False,tools,request_pair_max,<128,0,0.00
+6,RouterBench,False,tools,request_pair_max,128–255,0,0.00
+6,RouterBench,False,tools,request_pair_max,256–511,0,0.00
+6,RouterBench,False,tools,request_pair_max,512–1023,2,0.02
+6,RouterBench,False,tools,request_pair_max,1024–2047,3228,32.28
+6,RouterBench,False,tools,request_pair_max,2048–4095,6727,67.27
+6,RouterBench,False,tools,request_pair_max,4096–8191,43,0.43
+6,RouterBench,False,tools,request_pair_max,8192–16383,0,0.00
+6,RouterBench,False,tools,request_pair_max,16384–32767,0,0.00
+6,RouterBench,False,tools,request_pair_max,≥32768,0,0.00
+6,RouterBench,False,tools,pair,<128,0,0.00
+6,RouterBench,False,tools,pair,128–255,0,0.00
+6,RouterBench,False,tools,pair,256–511,0,0.00
+6,RouterBench,False,tools,pair,512–1023,44,0.02
+6,RouterBench,False,tools,pair,1024–2047,74857,34.03
+6,RouterBench,False,tools,pair,2048–4095,144155,65.53
+6,RouterBench,False,tools,pair,4096–8191,944,0.43
+6,RouterBench,False,tools,pair,8192–16383,0,0.00
+6,RouterBench,False,tools,pair,16384–32767,0,0.00
+6,RouterBench,False,tools,pair,≥32768,0,0.00
+6,RouterBench,False,tools,state,<128,0,0.00
+6,RouterBench,False,tools,state,128–255,0,0.00
+6,RouterBench,False,tools,state,256–511,0,0.00
+6,RouterBench,False,tools,state,512–1023,2,0.02
+6,RouterBench,False,tools,state,1024–2047,5452,54.52
+6,RouterBench,False,tools,state,2048–4095,4505,45.05
+6,RouterBench,False,tools,state,4096–8191,41,0.41
+6,RouterBench,False,tools,state,8192–16383,0,0.00
+6,RouterBench,False,tools,state,16384–32767,0,0.00
+6,RouterBench,False,tools,state,≥32768,0,0.00
+9,Home appliance simulator,True,tools,joint,<128,0,0.00
+9,Home appliance simulator,True,tools,joint,128–255,0,0.00
+9,Home appliance simulator,True,tools,joint,256–511,0,0.00
+9,Home appliance simulator,True,tools,joint,512–1023,0,0.00
+9,Home appliance simulator,True,tools,joint,1024–2047,0,0.00
+9,Home appliance simulator,True,tools,joint,2048–4095,88,100.00
+9,Home appliance simulator,True,tools,joint,4096–8191,0,0.00
+9,Home appliance simulator,True,tools,joint,8192–16383,0,0.00
+9,Home appliance simulator,True,tools,joint,16384–32767,0,0.00
+9,Home appliance simulator,True,tools,joint,≥32768,0,0.00
+9,Home appliance simulator,True,tools,request_pair_max,<128,0,0.00
+9,Home appliance simulator,True,tools,request_pair_max,128–255,0,0.00
+9,Home appliance simulator,True,tools,request_pair_max,256–511,0,0.00
+9,Home appliance simulator,True,tools,request_pair_max,512–1023,0,0.00
+9,Home appliance simulator,True,tools,request_pair_max,1024–2047,88,100.00
+9,Home appliance simulator,True,tools,request_pair_max,2048–4095,0,0.00
+9,Home appliance simulator,True,tools,request_pair_max,4096–8191,0,0.00
+9,Home appliance simulator,True,tools,request_pair_max,8192–16383,0,0.00
+9,Home appliance simulator,True,tools,request_pair_max,16384–32767,0,0.00
+9,Home appliance simulator,True,tools,request_pair_max,≥32768,0,0.00
+9,Home appliance simulator,True,tools,pair,<128,0,0.00
+9,Home appliance simulator,True,tools,pair,128–255,0,0.00
+9,Home appliance simulator,True,tools,pair,256–511,0,0.00
+9,Home appliance simulator,True,tools,pair,512–1023,2381,56.42
+9,Home appliance simulator,True,tools,pair,1024–2047,1839,43.58
+9,Home appliance simulator,True,tools,pair,2048–4095,0,0.00
+9,Home appliance simulator,True,tools,pair,4096–8191,0,0.00
+9,Home appliance simulator,True,tools,pair,8192–16383,0,0.00
+9,Home appliance simulator,True,tools,pair,16384–32767,0,0.00
+9,Home appliance simulator,True,tools,pair,≥32768,0,0.00
+9,Home appliance simulator,True,tools,state,<128,0,0.00
+9,Home appliance simulator,True,tools,state,128–255,0,0.00
+9,Home appliance simulator,True,tools,state,256–511,0,0.00
+9,Home appliance simulator,True,tools,state,512–1023,86,97.73
+9,Home appliance simulator,True,tools,state,1024–2047,2,2.27
+9,Home appliance simulator,True,tools,state,2048–4095,0,0.00
+9,Home appliance simulator,True,tools,state,4096–8191,0,0.00
+9,Home appliance simulator,True,tools,state,8192–16383,0,0.00
+9,Home appliance simulator,True,tools,state,16384–32767,0,0.00
+9,Home appliance simulator,True,tools,state,≥32768,0,0.00
+10,SGD/SGD-X,False,retrieval,joint,<128,0,0.00
+10,SGD/SGD-X,False,retrieval,joint,128–255,0,0.00
+10,SGD/SGD-X,False,retrieval,joint,256–511,32,1.28
+10,SGD/SGD-X,False,retrieval,joint,512–1023,1368,54.72
+10,SGD/SGD-X,False,retrieval,joint,1024–2047,1100,44.00
+10,SGD/SGD-X,False,retrieval,joint,2048–4095,0,0.00
+10,SGD/SGD-X,False,retrieval,joint,4096–8191,0,0.00
+10,SGD/SGD-X,False,retrieval,joint,8192–16383,0,0.00
+10,SGD/SGD-X,False,retrieval,joint,16384–32767,0,0.00
+10,SGD/SGD-X,False,retrieval,joint,≥32768,0,0.00
+10,SGD/SGD-X,False,retrieval,request_pair_max,<128,0,0.00
+10,SGD/SGD-X,False,retrieval,request_pair_max,128–255,0,0.00
+10,SGD/SGD-X,False,retrieval,request_pair_max,256–511,5,0.20
+10,SGD/SGD-X,False,retrieval,request_pair_max,512–1023,757,30.28
+10,SGD/SGD-X,False,retrieval,request_pair_max,1024–2047,1737,69.48
+10,SGD/SGD-X,False,retrieval,request_pair_max,2048–4095,1,0.04
+10,SGD/SGD-X,False,retrieval,request_pair_max,4096–8191,0,0.00
+10,SGD/SGD-X,False,retrieval,request_pair_max,8192–16383,0,0.00
+10,SGD/SGD-X,False,retrieval,request_pair_max,16384–32767,0,0.00
+10,SGD/SGD-X,False,retrieval,request_pair_max,≥32768,0,0.00
+10,SGD/SGD-X,False,retrieval,pair,<128,0,0.00
+10,SGD/SGD-X,False,retrieval,pair,128–255,0,0.00
+10,SGD/SGD-X,False,retrieval,pair,256–511,12,0.17
+10,SGD/SGD-X,False,retrieval,pair,512–1023,2048,28.31
+10,SGD/SGD-X,False,retrieval,pair,1024–2047,5170,71.48
+10,SGD/SGD-X,False,retrieval,pair,2048–4095,3,0.04
+10,SGD/SGD-X,False,retrieval,pair,4096–8191,0,0.00
+10,SGD/SGD-X,False,retrieval,pair,8192–16383,0,0.00
+10,SGD/SGD-X,False,retrieval,pair,16384–32767,0,0.00
+10,SGD/SGD-X,False,retrieval,pair,≥32768,0,0.00
+10,SGD/SGD-X,False,retrieval,state,<128,0,0.00
+10,SGD/SGD-X,False,retrieval,state,128–255,0,0.00
+10,SGD/SGD-X,False,retrieval,state,256–511,17,0.68
+10,SGD/SGD-X,False,retrieval,state,512–1023,911,36.44
+10,SGD/SGD-X,False,retrieval,state,1024–2047,1571,62.84
+10,SGD/SGD-X,False,retrieval,state,2048–4095,1,0.04
+10,SGD/SGD-X,False,retrieval,state,4096–8191,0,0.00
+10,SGD/SGD-X,False,retrieval,state,8192–16383,0,0.00
+10,SGD/SGD-X,False,retrieval,state,16384–32767,0,0.00
+10,SGD/SGD-X,False,retrieval,state,≥32768,0,0.00
+11,ContractNLI,True,language,joint,<128,0,0.00
+11,ContractNLI,True,language,joint,128–255,0,0.00
+11,ContractNLI,True,language,joint,256–511,0,0.00
+11,ContractNLI,True,language,joint,512–1023,0,0.00
+11,ContractNLI,True,language,joint,1024–2047,7,5.69
+11,ContractNLI,True,language,joint,2048–4095,85,69.11
+11,ContractNLI,True,language,joint,4096–8191,29,23.58
+11,ContractNLI,True,language,joint,8192–16383,2,1.63
+11,ContractNLI,True,language,joint,16384–32767,0,0.00
+11,ContractNLI,True,language,joint,≥32768,0,0.00
+11,ContractNLI,True,language,request_pair_max,<128,0,0.00
+11,ContractNLI,True,language,request_pair_max,128–255,0,0.00
+11,ContractNLI,True,language,request_pair_max,256–511,2,1.63
+11,ContractNLI,True,language,request_pair_max,512–1023,14,11.38
+11,ContractNLI,True,language,request_pair_max,1024–2047,56,45.53
+11,ContractNLI,True,language,request_pair_max,2048–4095,38,30.89
+11,ContractNLI,True,language,request_pair_max,4096–8191,13,10.57
+11,ContractNLI,True,language,request_pair_max,8192–16383,0,0.00
+11,ContractNLI,True,language,request_pair_max,16384–32767,0,0.00
+11,ContractNLI,True,language,request_pair_max,≥32768,0,0.00
+11,ContractNLI,True,language,pair,<128,0,0.00
+11,ContractNLI,True,language,pair,128–255,0,0.00
+11,ContractNLI,True,language,pair,256–511,102,1.63
+11,ContractNLI,True,language,pair,512–1023,848,13.52
+11,ContractNLI,True,language,pair,1024–2047,2807,44.75
+11,ContractNLI,True,language,pair,2048–4095,1853,29.54
+11,ContractNLI,True,language,pair,4096–8191,663,10.57
+11,ContractNLI,True,language,pair,8192–16383,0,0.00
+11,ContractNLI,True,language,pair,16384–32767,0,0.00
+11,ContractNLI,True,language,pair,≥32768,0,0.00
+11,ContractNLI,True,language,state,<128,0,0.00
+11,ContractNLI,True,language,state,128–255,0,0.00
+11,ContractNLI,True,language,state,256–511,4,3.25
+11,ContractNLI,True,language,state,512–1023,16,13.01
+11,ContractNLI,True,language,state,1024–2047,57,46.34
+11,ContractNLI,True,language,state,2048–4095,33,26.83
+11,ContractNLI,True,language,state,4096–8191,13,10.57
+11,ContractNLI,True,language,state,8192–16383,0,0.00
+11,ContractNLI,True,language,state,16384–32767,0,0.00
+11,ContractNLI,True,language,state,≥32768,0,0.00
+12,ANLI,True,language,joint,<128,631,19.72
+12,ANLI,True,language,joint,128–255,2567,80.22
+12,ANLI,True,language,joint,256–511,2,0.06
+12,ANLI,True,language,joint,512–1023,0,0.00
+12,ANLI,True,language,joint,1024–2047,0,0.00
+12,ANLI,True,language,joint,2048–4095,0,0.00
+12,ANLI,True,language,joint,4096–8191,0,0.00
+12,ANLI,True,language,joint,8192–16383,0,0.00
+12,ANLI,True,language,joint,16384–32767,0,0.00
+12,ANLI,True,language,joint,≥32768,0,0.00
+12,ANLI,True,language,request_pair_max,<128,1418,44.31
+12,ANLI,True,language,request_pair_max,128–255,1781,55.66
+12,ANLI,True,language,request_pair_max,256–511,1,0.03
+12,ANLI,True,language,request_pair_max,512–1023,0,0.00
+12,ANLI,True,language,request_pair_max,1024–2047,0,0.00
+12,ANLI,True,language,request_pair_max,2048–4095,0,0.00
+12,ANLI,True,language,request_pair_max,4096–8191,0,0.00
+12,ANLI,True,language,request_pair_max,8192–16383,0,0.00
+12,ANLI,True,language,request_pair_max,16384–32767,0,0.00
+12,ANLI,True,language,request_pair_max,≥32768,0,0.00
+12,ANLI,True,language,pair,<128,4375,45.57
+12,ANLI,True,language,pair,128–255,5223,54.41
+12,ANLI,True,language,pair,256–511,2,0.02
+12,ANLI,True,language,pair,512–1023,0,0.00
+12,ANLI,True,language,pair,1024–2047,0,0.00
+12,ANLI,True,language,pair,2048–4095,0,0.00
+12,ANLI,True,language,pair,4096–8191,0,0.00
+12,ANLI,True,language,pair,8192–16383,0,0.00
+12,ANLI,True,language,pair,16384–32767,0,0.00
+12,ANLI,True,language,pair,≥32768,0,0.00
+12,ANLI,True,language,state,<128,3200,100.00
+12,ANLI,True,language,state,128–255,0,0.00
+12,ANLI,True,language,state,256–511,0,0.00
+12,ANLI,True,language,state,512–1023,0,0.00
+12,ANLI,True,language,state,1024–2047,0,0.00
+12,ANLI,True,language,state,2048–4095,0,0.00
+12,ANLI,True,language,state,4096–8191,0,0.00
+12,ANLI,True,language,state,8192–16383,0,0.00
+12,ANLI,True,language,state,16384–32767,0,0.00
+12,ANLI,True,language,state,≥32768,0,0.00
+20,BPoMP,True,arts,joint,<128,0,0.00
+20,BPoMP,True,arts,joint,128–255,5000,100.00
+20,BPoMP,True,arts,joint,256–511,0,0.00
+20,BPoMP,True,arts,joint,512–1023,0,0.00
+20,BPoMP,True,arts,joint,1024–2047,0,0.00
+20,BPoMP,True,arts,joint,2048–4095,0,0.00
+20,BPoMP,True,arts,joint,4096–8191,0,0.00
+20,BPoMP,True,arts,joint,8192–16383,0,0.00
+20,BPoMP,True,arts,joint,16384–32767,0,0.00
+20,BPoMP,True,arts,joint,≥32768,0,0.00
+20,BPoMP,True,arts,request_pair_max,<128,0,0.00
+20,BPoMP,True,arts,request_pair_max,128–255,4999,99.98
+20,BPoMP,True,arts,request_pair_max,256–511,1,0.02
+20,BPoMP,True,arts,request_pair_max,512–1023,0,0.00
+20,BPoMP,True,arts,request_pair_max,1024–2047,0,0.00
+20,BPoMP,True,arts,request_pair_max,2048–4095,0,0.00
+20,BPoMP,True,arts,request_pair_max,4096–8191,0,0.00
+20,BPoMP,True,arts,request_pair_max,8192–16383,0,0.00
+20,BPoMP,True,arts,request_pair_max,16384–32767,0,0.00
+20,BPoMP,True,arts,request_pair_max,≥32768,0,0.00
+20,BPoMP,True,arts,pair,<128,0,0.00
+20,BPoMP,True,arts,pair,128–255,9999,99.99
+20,BPoMP,True,arts,pair,256–511,1,0.01
+20,BPoMP,True,arts,pair,512–1023,0,0.00
+20,BPoMP,True,arts,pair,1024–2047,0,0.00
+20,BPoMP,True,arts,pair,2048–4095,0,0.00
+20,BPoMP,True,arts,pair,4096–8191,0,0.00
+20,BPoMP,True,arts,pair,8192–16383,0,0.00
+20,BPoMP,True,arts,pair,16384–32767,0,0.00
+20,BPoMP,True,arts,pair,≥32768,0,0.00
+20,BPoMP,True,arts,state,<128,5000,100.00
+20,BPoMP,True,arts,state,128–255,0,0.00
+20,BPoMP,True,arts,state,256–511,0,0.00
+20,BPoMP,True,arts,state,512–1023,0,0.00
+20,BPoMP,True,arts,state,1024–2047,0,0.00
+20,BPoMP,True,arts,state,2048–4095,0,0.00
+20,BPoMP,True,arts,state,4096–8191,0,0.00
+20,BPoMP,True,arts,state,8192–16383,0,0.00
+20,BPoMP,True,arts,state,16384–32767,0,0.00
+20,BPoMP,True,arts,state,≥32768,0,0.00
+21,Humicroedit,True,arts,joint,<128,2628,100.00
+21,Humicroedit,True,arts,joint,128–255,0,0.00
+21,Humicroedit,True,arts,joint,256–511,0,0.00
+21,Humicroedit,True,arts,joint,512–1023,0,0.00
+21,Humicroedit,True,arts,joint,1024–2047,0,0.00
+21,Humicroedit,True,arts,joint,2048–4095,0,0.00
+21,Humicroedit,True,arts,joint,4096–8191,0,0.00
+21,Humicroedit,True,arts,joint,8192–16383,0,0.00
+21,Humicroedit,True,arts,joint,16384–32767,0,0.00
+21,Humicroedit,True,arts,joint,≥32768,0,0.00
+21,Humicroedit,True,arts,request_pair_max,<128,2615,99.51
+21,Humicroedit,True,arts,request_pair_max,128–255,13,0.49
+21,Humicroedit,True,arts,request_pair_max,256–511,0,0.00
+21,Humicroedit,True,arts,request_pair_max,512–1023,0,0.00
+21,Humicroedit,True,arts,request_pair_max,1024–2047,0,0.00
+21,Humicroedit,True,arts,request_pair_max,2048–4095,0,0.00
+21,Humicroedit,True,arts,request_pair_max,4096–8191,0,0.00
+21,Humicroedit,True,arts,request_pair_max,8192–16383,0,0.00
+21,Humicroedit,True,arts,request_pair_max,16384–32767,0,0.00
+21,Humicroedit,True,arts,request_pair_max,≥32768,0,0.00
+21,Humicroedit,True,arts,pair,<128,5230,99.51
+21,Humicroedit,True,arts,pair,128–255,26,0.49
+21,Humicroedit,True,arts,pair,256–511,0,0.00
+21,Humicroedit,True,arts,pair,512–1023,0,0.00
+21,Humicroedit,True,arts,pair,1024–2047,0,0.00
+21,Humicroedit,True,arts,pair,2048–4095,0,0.00
+21,Humicroedit,True,arts,pair,4096–8191,0,0.00
+21,Humicroedit,True,arts,pair,8192–16383,0,0.00
+21,Humicroedit,True,arts,pair,16384–32767,0,0.00
+21,Humicroedit,True,arts,pair,≥32768,0,0.00
+21,Humicroedit,True,arts,state,<128,2628,100.00
+21,Humicroedit,True,arts,state,128–255,0,0.00
+21,Humicroedit,True,arts,state,256–511,0,0.00
+21,Humicroedit,True,arts,state,512–1023,0,0.00
+21,Humicroedit,True,arts,state,1024–2047,0,0.00
+21,Humicroedit,True,arts,state,2048–4095,0,0.00
+21,Humicroedit,True,arts,state,4096–8191,0,0.00
+21,Humicroedit,True,arts,state,8192–16383,0,0.00
+21,Humicroedit,True,arts,state,16384–32767,0,0.00
+21,Humicroedit,True,arts,state,≥32768,0,0.00
+22,POP909-CL,True,arts,joint,<128,0,0.00
+22,POP909-CL,True,arts,joint,128–255,0,0.00
+22,POP909-CL,True,arts,joint,256–511,0,0.00
+22,POP909-CL,True,arts,joint,512–1023,0,0.00
+22,POP909-CL,True,arts,joint,1024–2047,0,0.00
+22,POP909-CL,True,arts,joint,2048–4095,82,4.10
+22,POP909-CL,True,arts,joint,4096–8191,1916,95.80
+22,POP909-CL,True,arts,joint,8192–16383,2,0.10
+22,POP909-CL,True,arts,joint,16384–32767,0,0.00
+22,POP909-CL,True,arts,joint,≥32768,0,0.00
+22,POP909-CL,True,arts,request_pair_max,<128,0,0.00
+22,POP909-CL,True,arts,request_pair_max,128–255,9,0.45
+22,POP909-CL,True,arts,request_pair_max,256–511,4,0.20
+22,POP909-CL,True,arts,request_pair_max,512–1023,50,2.50
+22,POP909-CL,True,arts,request_pair_max,1024–2047,849,42.45
+22,POP909-CL,True,arts,request_pair_max,2048–4095,1071,53.55
+22,POP909-CL,True,arts,request_pair_max,4096–8191,16,0.80
+22,POP909-CL,True,arts,request_pair_max,8192–16383,1,0.05
+22,POP909-CL,True,arts,request_pair_max,16384–32767,0,0.00
+22,POP909-CL,True,arts,request_pair_max,≥32768,0,0.00
+22,POP909-CL,True,arts,pair,<128,0,0.00
+22,POP909-CL,True,arts,pair,128–255,1161,0.45
+22,POP909-CL,True,arts,pair,256–511,646,0.25
+22,POP909-CL,True,arts,pair,512–1023,6706,2.60
+22,POP909-CL,True,arts,pair,1024–2047,110866,42.97
+22,POP909-CL,True,arts,pair,2048–4095,136428,52.88
+22,POP909-CL,True,arts,pair,4096–8191,2064,0.80
+22,POP909-CL,True,arts,pair,8192–16383,129,0.05
+22,POP909-CL,True,arts,pair,16384–32767,0,0.00
+22,POP909-CL,True,arts,pair,≥32768,0,0.00
+22,POP909-CL,True,arts,state,<128,9,0.45
+22,POP909-CL,True,arts,state,128–255,1,0.05
+22,POP909-CL,True,arts,state,256–511,10,0.50
+22,POP909-CL,True,arts,state,512–1023,78,3.90
+22,POP909-CL,True,arts,state,1024–2047,906,45.30
+22,POP909-CL,True,arts,state,2048–4095,980,49.00
+22,POP909-CL,True,arts,state,4096–8191,15,0.75
+22,POP909-CL,True,arts,state,8192–16383,1,0.05
+22,POP909-CL,True,arts,state,16384–32767,0,0.00
+22,POP909-CL,True,arts,state,≥32768,0,0.00
+23,cfcolor,True,arts,joint,<128,0,0.00
+23,cfcolor,True,arts,joint,128–255,0,0.00
+23,cfcolor,True,arts,joint,256–511,5000,100.00
+23,cfcolor,True,arts,joint,512–1023,0,0.00
+23,cfcolor,True,arts,joint,1024–2047,0,0.00
+23,cfcolor,True,arts,joint,2048–4095,0,0.00
+23,cfcolor,True,arts,joint,4096–8191,0,0.00
+23,cfcolor,True,arts,joint,8192–16383,0,0.00
+23,cfcolor,True,arts,joint,16384–32767,0,0.00
+23,cfcolor,True,arts,joint,≥32768,0,0.00
+23,cfcolor,True,arts,request_pair_max,<128,0,0.00
+23,cfcolor,True,arts,request_pair_max,128–255,0,0.00
+23,cfcolor,True,arts,request_pair_max,256–511,5000,100.00
+23,cfcolor,True,arts,request_pair_max,512–1023,0,0.00
+23,cfcolor,True,arts,request_pair_max,1024–2047,0,0.00
+23,cfcolor,True,arts,request_pair_max,2048–4095,0,0.00
+23,cfcolor,True,arts,request_pair_max,4096–8191,0,0.00
+23,cfcolor,True,arts,request_pair_max,8192–16383,0,0.00
+23,cfcolor,True,arts,request_pair_max,16384–32767,0,0.00
+23,cfcolor,True,arts,request_pair_max,≥32768,0,0.00
+23,cfcolor,True,arts,pair,<128,0,0.00
+23,cfcolor,True,arts,pair,128–255,0,0.00
+23,cfcolor,True,arts,pair,256–511,10000,100.00
+23,cfcolor,True,arts,pair,512–1023,0,0.00
+23,cfcolor,True,arts,pair,1024–2047,0,0.00
+23,cfcolor,True,arts,pair,2048–4095,0,0.00
+23,cfcolor,True,arts,pair,4096–8191,0,0.00
+23,cfcolor,True,arts,pair,8192–16383,0,0.00
+23,cfcolor,True,arts,pair,16384–32767,0,0.00
+23,cfcolor,True,arts,pair,≥32768,0,0.00
+23,cfcolor,True,arts,state,<128,0,0.00
+23,cfcolor,True,arts,state,128–255,0,0.00
+23,cfcolor,True,arts,state,256–511,5000,100.00
+23,cfcolor,True,arts,state,512–1023,0,0.00
+23,cfcolor,True,arts,state,1024–2047,0,0.00
+23,cfcolor,True,arts,state,2048–4095,0,0.00
+23,cfcolor,True,arts,state,4096–8191,0,0.00
+23,cfcolor,True,arts,state,8192–16383,0,0.00
+23,cfcolor,True,arts,state,16384–32767,0,0.00
+23,cfcolor,True,arts,state,≥32768,0,0.00
+24,MMLU,False,knowledge,joint,<128,10263,73.13
+24,MMLU,False,knowledge,joint,128–255,2384,16.99
+24,MMLU,False,knowledge,joint,256–511,1274,9.08
+24,MMLU,False,knowledge,joint,512–1023,112,0.80
+24,MMLU,False,knowledge,joint,1024–2047,0,0.00
+24,MMLU,False,knowledge,joint,2048–4095,0,0.00
+24,MMLU,False,knowledge,joint,4096–8191,0,0.00
+24,MMLU,False,knowledge,joint,8192–16383,0,0.00
+24,MMLU,False,knowledge,joint,16384–32767,0,0.00
+24,MMLU,False,knowledge,joint,≥32768,0,0.00
+24,MMLU,False,knowledge,request_pair_max,<128,11557,82.36
+24,MMLU,False,knowledge,request_pair_max,128–255,1614,11.50
+24,MMLU,False,knowledge,request_pair_max,256–511,808,5.76
+24,MMLU,False,knowledge,request_pair_max,512–1023,54,0.38
+24,MMLU,False,knowledge,request_pair_max,1024–2047,0,0.00
+24,MMLU,False,knowledge,request_pair_max,2048–4095,0,0.00
+24,MMLU,False,knowledge,request_pair_max,4096–8191,0,0.00
+24,MMLU,False,knowledge,request_pair_max,8192–16383,0,0.00
+24,MMLU,False,knowledge,request_pair_max,16384–32767,0,0.00
+24,MMLU,False,knowledge,request_pair_max,≥32768,0,0.00
+24,MMLU,False,knowledge,pair,<128,46557,82.94
+24,MMLU,False,knowledge,pair,128–255,6258,11.15
+24,MMLU,False,knowledge,pair,256–511,3110,5.54
+24,MMLU,False,knowledge,pair,512–1023,207,0.37
+24,MMLU,False,knowledge,pair,1024–2047,0,0.00
+24,MMLU,False,knowledge,pair,2048–4095,0,0.00
+24,MMLU,False,knowledge,pair,4096–8191,0,0.00
+24,MMLU,False,knowledge,pair,8192–16383,0,0.00
+24,MMLU,False,knowledge,pair,16384–32767,0,0.00
+24,MMLU,False,knowledge,pair,≥32768,0,0.00
+24,MMLU,False,knowledge,state,<128,14033,100.00
+24,MMLU,False,knowledge,state,128–255,0,0.00
+24,MMLU,False,knowledge,state,256–511,0,0.00
+24,MMLU,False,knowledge,state,512–1023,0,0.00
+24,MMLU,False,knowledge,state,1024–2047,0,0.00
+24,MMLU,False,knowledge,state,2048–4095,0,0.00
+24,MMLU,False,knowledge,state,4096–8191,0,0.00
+24,MMLU,False,knowledge,state,8192–16383,0,0.00
+24,MMLU,False,knowledge,state,16384–32767,0,0.00
+24,MMLU,False,knowledge,state,≥32768,0,0.00
+25,GPQA Diamond,True,knowledge,joint,<128,32,16.33
+25,GPQA Diamond,True,knowledge,joint,128–255,113,57.65
+25,GPQA Diamond,True,knowledge,joint,256–511,44,22.45
+25,GPQA Diamond,True,knowledge,joint,512–1023,6,3.06
+25,GPQA Diamond,True,knowledge,joint,1024–2047,0,0.00
+25,GPQA Diamond,True,knowledge,joint,2048–4095,1,0.51
+25,GPQA Diamond,True,knowledge,joint,4096–8191,0,0.00
+25,GPQA Diamond,True,knowledge,joint,8192–16383,0,0.00
+25,GPQA Diamond,True,knowledge,joint,16384–32767,0,0.00
+25,GPQA Diamond,True,knowledge,joint,≥32768,0,0.00
+25,GPQA Diamond,True,knowledge,request_pair_max,<128,78,39.80
+25,GPQA Diamond,True,knowledge,request_pair_max,128–255,99,50.51
+25,GPQA Diamond,True,knowledge,request_pair_max,256–511,17,8.67
+25,GPQA Diamond,True,knowledge,request_pair_max,512–1023,2,1.02
+25,GPQA Diamond,True,knowledge,request_pair_max,1024–2047,0,0.00
+25,GPQA Diamond,True,knowledge,request_pair_max,2048–4095,0,0.00
+25,GPQA Diamond,True,knowledge,request_pair_max,4096–8191,0,0.00
+25,GPQA Diamond,True,knowledge,request_pair_max,8192–16383,0,0.00
+25,GPQA Diamond,True,knowledge,request_pair_max,16384–32767,0,0.00
+25,GPQA Diamond,True,knowledge,request_pair_max,≥32768,0,0.00
+25,GPQA Diamond,True,knowledge,pair,<128,320,40.82
+25,GPQA Diamond,True,knowledge,pair,128–255,391,49.87
+25,GPQA Diamond,True,knowledge,pair,256–511,65,8.29
+25,GPQA Diamond,True,knowledge,pair,512–1023,8,1.02
+25,GPQA Diamond,True,knowledge,pair,1024–2047,0,0.00
+25,GPQA Diamond,True,knowledge,pair,2048–4095,0,0.00
+25,GPQA Diamond,True,knowledge,pair,4096–8191,0,0.00
+25,GPQA Diamond,True,knowledge,pair,8192–16383,0,0.00
+25,GPQA Diamond,True,knowledge,pair,16384–32767,0,0.00
+25,GPQA Diamond,True,knowledge,pair,≥32768,0,0.00
+25,GPQA Diamond,True,knowledge,state,<128,196,100.00
+25,GPQA Diamond,True,knowledge,state,128–255,0,0.00
+25,GPQA Diamond,True,knowledge,state,256–511,0,0.00
+25,GPQA Diamond,True,knowledge,state,512–1023,0,0.00
+25,GPQA Diamond,True,knowledge,state,1024–2047,0,0.00
+25,GPQA Diamond,True,knowledge,state,2048–4095,0,0.00
+25,GPQA Diamond,True,knowledge,state,4096–8191,0,0.00
+25,GPQA Diamond,True,knowledge,state,8192–16383,0,0.00
+25,GPQA Diamond,True,knowledge,state,16384–32767,0,0.00
+25,GPQA Diamond,True,knowledge,state,≥32768,0,0.00
+26,ARC-Easy,False,knowledge,joint,<128,2332,98.15
+26,ARC-Easy,False,knowledge,joint,128–255,44,1.85
+26,ARC-Easy,False,knowledge,joint,256–511,0,0.00
+26,ARC-Easy,False,knowledge,joint,512–1023,0,0.00
+26,ARC-Easy,False,knowledge,joint,1024–2047,0,0.00
+26,ARC-Easy,False,knowledge,joint,2048–4095,0,0.00
+26,ARC-Easy,False,knowledge,joint,4096–8191,0,0.00
+26,ARC-Easy,False,knowledge,joint,8192–16383,0,0.00
+26,ARC-Easy,False,knowledge,joint,16384–32767,0,0.00
+26,ARC-Easy,False,knowledge,joint,≥32768,0,0.00
+26,ARC-Easy,False,knowledge,request_pair_max,<128,2368,99.66
+26,ARC-Easy,False,knowledge,request_pair_max,128–255,8,0.34
+26,ARC-Easy,False,knowledge,request_pair_max,256–511,0,0.00
+26,ARC-Easy,False,knowledge,request_pair_max,512–1023,0,0.00
+26,ARC-Easy,False,knowledge,request_pair_max,1024–2047,0,0.00
+26,ARC-Easy,False,knowledge,request_pair_max,2048–4095,0,0.00
+26,ARC-Easy,False,knowledge,request_pair_max,4096–8191,0,0.00
+26,ARC-Easy,False,knowledge,request_pair_max,8192–16383,0,0.00
+26,ARC-Easy,False,knowledge,request_pair_max,16384–32767,0,0.00
+26,ARC-Easy,False,knowledge,request_pair_max,≥32768,0,0.00
+26,ARC-Easy,False,knowledge,pair,<128,9472,99.69
+26,ARC-Easy,False,knowledge,pair,128–255,29,0.31
+26,ARC-Easy,False,knowledge,pair,256–511,0,0.00
+26,ARC-Easy,False,knowledge,pair,512–1023,0,0.00
+26,ARC-Easy,False,knowledge,pair,1024–2047,0,0.00
+26,ARC-Easy,False,knowledge,pair,2048–4095,0,0.00
+26,ARC-Easy,False,knowledge,pair,4096–8191,0,0.00
+26,ARC-Easy,False,knowledge,pair,8192–16383,0,0.00
+26,ARC-Easy,False,knowledge,pair,16384–32767,0,0.00
+26,ARC-Easy,False,knowledge,pair,≥32768,0,0.00
+26,ARC-Easy,False,knowledge,state,<128,2376,100.00
+26,ARC-Easy,False,knowledge,state,128–255,0,0.00
+26,ARC-Easy,False,knowledge,state,256–511,0,0.00
+26,ARC-Easy,False,knowledge,state,512–1023,0,0.00
+26,ARC-Easy,False,knowledge,state,1024–2047,0,0.00
+26,ARC-Easy,False,knowledge,state,2048–4095,0,0.00
+26,ARC-Easy,False,knowledge,state,4096–8191,0,0.00
+26,ARC-Easy,False,knowledge,state,8192–16383,0,0.00
+26,ARC-Easy,False,knowledge,state,16384–32767,0,0.00
+26,ARC-Easy,False,knowledge,state,≥32768,0,0.00
+27,ARC-Challenge,False,knowledge,joint,<128,1120,95.56
+27,ARC-Challenge,False,knowledge,joint,128–255,52,4.44
+27,ARC-Challenge,False,knowledge,joint,256–511,0,0.00
+27,ARC-Challenge,False,knowledge,joint,512–1023,0,0.00
+27,ARC-Challenge,False,knowledge,joint,1024–2047,0,0.00
+27,ARC-Challenge,False,knowledge,joint,2048–4095,0,0.00
+27,ARC-Challenge,False,knowledge,joint,4096–8191,0,0.00
+27,ARC-Challenge,False,knowledge,joint,8192–16383,0,0.00
+27,ARC-Challenge,False,knowledge,joint,16384–32767,0,0.00
+27,ARC-Challenge,False,knowledge,joint,≥32768,0,0.00
+27,ARC-Challenge,False,knowledge,request_pair_max,<128,1164,99.32
+27,ARC-Challenge,False,knowledge,request_pair_max,128–255,8,0.68
+27,ARC-Challenge,False,knowledge,request_pair_max,256–511,0,0.00
+27,ARC-Challenge,False,knowledge,request_pair_max,512–1023,0,0.00
+27,ARC-Challenge,False,knowledge,request_pair_max,1024–2047,0,0.00
+27,ARC-Challenge,False,knowledge,request_pair_max,2048–4095,0,0.00
+27,ARC-Challenge,False,knowledge,request_pair_max,4096–8191,0,0.00
+27,ARC-Challenge,False,knowledge,request_pair_max,8192–16383,0,0.00
+27,ARC-Challenge,False,knowledge,request_pair_max,16384–32767,0,0.00
+27,ARC-Challenge,False,knowledge,request_pair_max,≥32768,0,0.00
+27,ARC-Challenge,False,knowledge,pair,<128,4657,99.36
+27,ARC-Challenge,False,knowledge,pair,128–255,30,0.64
+27,ARC-Challenge,False,knowledge,pair,256–511,0,0.00
+27,ARC-Challenge,False,knowledge,pair,512–1023,0,0.00
+27,ARC-Challenge,False,knowledge,pair,1024–2047,0,0.00
+27,ARC-Challenge,False,knowledge,pair,2048–4095,0,0.00
+27,ARC-Challenge,False,knowledge,pair,4096–8191,0,0.00
+27,ARC-Challenge,False,knowledge,pair,8192–16383,0,0.00
+27,ARC-Challenge,False,knowledge,pair,16384–32767,0,0.00
+27,ARC-Challenge,False,knowledge,pair,≥32768,0,0.00
+27,ARC-Challenge,False,knowledge,state,<128,1172,100.00
+27,ARC-Challenge,False,knowledge,state,128–255,0,0.00
+27,ARC-Challenge,False,knowledge,state,256–511,0,0.00
+27,ARC-Challenge,False,knowledge,state,512–1023,0,0.00
+27,ARC-Challenge,False,knowledge,state,1024–2047,0,0.00
+27,ARC-Challenge,False,knowledge,state,2048–4095,0,0.00
+27,ARC-Challenge,False,knowledge,state,4096–8191,0,0.00
+27,ARC-Challenge,False,knowledge,state,8192–16383,0,0.00
+27,ARC-Challenge,False,knowledge,state,16384–32767,0,0.00
+27,ARC-Challenge,False,knowledge,state,≥32768,0,0.00
+28,WinoGrande,True,knowledge,joint,<128,1267,100.00
+28,WinoGrande,True,knowledge,joint,128–255,0,0.00
+28,WinoGrande,True,knowledge,joint,256–511,0,0.00
+28,WinoGrande,True,knowledge,joint,512–1023,0,0.00
+28,WinoGrande,True,knowledge,joint,1024–2047,0,0.00
+28,WinoGrande,True,knowledge,joint,2048–4095,0,0.00
+28,WinoGrande,True,knowledge,joint,4096–8191,0,0.00
+28,WinoGrande,True,knowledge,joint,8192–16383,0,0.00
+28,WinoGrande,True,knowledge,joint,16384–32767,0,0.00
+28,WinoGrande,True,knowledge,joint,≥32768,0,0.00
+28,WinoGrande,True,knowledge,request_pair_max,<128,1267,100.00
+28,WinoGrande,True,knowledge,request_pair_max,128–255,0,0.00
+28,WinoGrande,True,knowledge,request_pair_max,256–511,0,0.00
+28,WinoGrande,True,knowledge,request_pair_max,512–1023,0,0.00
+28,WinoGrande,True,knowledge,request_pair_max,1024–2047,0,0.00
+28,WinoGrande,True,knowledge,request_pair_max,2048–4095,0,0.00
+28,WinoGrande,True,knowledge,request_pair_max,4096–8191,0,0.00
+28,WinoGrande,True,knowledge,request_pair_max,8192–16383,0,0.00
+28,WinoGrande,True,knowledge,request_pair_max,16384–32767,0,0.00
+28,WinoGrande,True,knowledge,request_pair_max,≥32768,0,0.00
+28,WinoGrande,True,knowledge,pair,<128,2534,100.00
+28,WinoGrande,True,knowledge,pair,128–255,0,0.00
+28,WinoGrande,True,knowledge,pair,256–511,0,0.00
+28,WinoGrande,True,knowledge,pair,512–1023,0,0.00
+28,WinoGrande,True,knowledge,pair,1024–2047,0,0.00
+28,WinoGrande,True,knowledge,pair,2048–4095,0,0.00
+28,WinoGrande,True,knowledge,pair,4096–8191,0,0.00
+28,WinoGrande,True,knowledge,pair,8192–16383,0,0.00
+28,WinoGrande,True,knowledge,pair,16384–32767,0,0.00
+28,WinoGrande,True,knowledge,pair,≥32768,0,0.00
+28,WinoGrande,True,knowledge,state,<128,1267,100.00
+28,WinoGrande,True,knowledge,state,128–255,0,0.00
+28,WinoGrande,True,knowledge,state,256–511,0,0.00
+28,WinoGrande,True,knowledge,state,512–1023,0,0.00
+28,WinoGrande,True,knowledge,state,1024–2047,0,0.00
+28,WinoGrande,True,knowledge,state,2048–4095,0,0.00
+28,WinoGrande,True,knowledge,state,4096–8191,0,0.00
+28,WinoGrande,True,knowledge,state,8192–16383,0,0.00
+28,WinoGrande,True,knowledge,state,16384–32767,0,0.00
+28,WinoGrande,True,knowledge,state,≥32768,0,0.00
+29,HellaSwag,True,language,joint,<128,2345,23.35
+29,HellaSwag,True,language,joint,128–255,4017,40.00
+29,HellaSwag,True,language,joint,256–511,3680,36.65
+29,HellaSwag,True,language,joint,512–1023,0,0.00
+29,HellaSwag,True,language,joint,1024–2047,0,0.00
+29,HellaSwag,True,language,joint,2048–4095,0,0.00
+29,HellaSwag,True,language,joint,4096–8191,0,0.00
+29,HellaSwag,True,language,joint,8192–16383,0,0.00
+29,HellaSwag,True,language,joint,16384–32767,0,0.00
+29,HellaSwag,True,language,joint,≥32768,0,0.00
+29,HellaSwag,True,language,request_pair_max,<128,4777,47.57
+29,HellaSwag,True,language,request_pair_max,128–255,4962,49.41
+29,HellaSwag,True,language,request_pair_max,256–511,303,3.02
+29,HellaSwag,True,language,request_pair_max,512–1023,0,0.00
+29,HellaSwag,True,language,request_pair_max,1024–2047,0,0.00
+29,HellaSwag,True,language,request_pair_max,2048–4095,0,0.00
+29,HellaSwag,True,language,request_pair_max,4096–8191,0,0.00
+29,HellaSwag,True,language,request_pair_max,8192–16383,0,0.00
+29,HellaSwag,True,language,request_pair_max,16384–32767,0,0.00
+29,HellaSwag,True,language,request_pair_max,≥32768,0,0.00
+29,HellaSwag,True,language,pair,<128,25910,64.50
+29,HellaSwag,True,language,pair,128–255,13088,32.58
+29,HellaSwag,True,language,pair,256–511,1170,2.91
+29,HellaSwag,True,language,pair,512–1023,0,0.00
+29,HellaSwag,True,language,pair,1024–2047,0,0.00
+29,HellaSwag,True,language,pair,2048–4095,0,0.00
+29,HellaSwag,True,language,pair,4096–8191,0,0.00
+29,HellaSwag,True,language,pair,8192–16383,0,0.00
+29,HellaSwag,True,language,pair,16384–32767,0,0.00
+29,HellaSwag,True,language,pair,≥32768,0,0.00
+29,HellaSwag,True,language,state,<128,10042,100.00
+29,HellaSwag,True,language,state,128–255,0,0.00
+29,HellaSwag,True,language,state,256–511,0,0.00
+29,HellaSwag,True,language,state,512–1023,0,0.00
+29,HellaSwag,True,language,state,1024–2047,0,0.00
+29,HellaSwag,True,language,state,2048–4095,0,0.00
+29,HellaSwag,True,language,state,4096–8191,0,0.00
+29,HellaSwag,True,language,state,8192–16383,0,0.00
+29,HellaSwag,True,language,state,16384–32767,0,0.00
+29,HellaSwag,True,language,state,≥32768,0,0.00
+30,GSM8K,True,knowledge,joint,<128,209,7.92
+30,GSM8K,True,knowledge,joint,128–255,2402,91.05
+30,GSM8K,True,knowledge,joint,256–511,27,1.02
+30,GSM8K,True,knowledge,joint,512–1023,0,0.00
+30,GSM8K,True,knowledge,joint,1024–2047,0,0.00
+30,GSM8K,True,knowledge,joint,2048–4095,0,0.00
+30,GSM8K,True,knowledge,joint,4096–8191,0,0.00
+30,GSM8K,True,knowledge,joint,8192–16383,0,0.00
+30,GSM8K,True,knowledge,joint,16384–32767,0,0.00
+30,GSM8K,True,knowledge,joint,≥32768,0,0.00
+30,GSM8K,True,knowledge,request_pair_max,<128,1510,57.24
+30,GSM8K,True,knowledge,request_pair_max,128–255,1128,42.76
+30,GSM8K,True,knowledge,request_pair_max,256–511,0,0.00
+30,GSM8K,True,knowledge,request_pair_max,512–1023,0,0.00
+30,GSM8K,True,knowledge,request_pair_max,1024–2047,0,0.00
+30,GSM8K,True,knowledge,request_pair_max,2048–4095,0,0.00
+30,GSM8K,True,knowledge,request_pair_max,4096–8191,0,0.00
+30,GSM8K,True,knowledge,request_pair_max,8192–16383,0,0.00
+30,GSM8K,True,knowledge,request_pair_max,16384–32767,0,0.00
+30,GSM8K,True,knowledge,request_pair_max,≥32768,0,0.00
+30,GSM8K,True,knowledge,pair,<128,10594,57.37
+30,GSM8K,True,knowledge,pair,128–255,7872,42.63
+30,GSM8K,True,knowledge,pair,256–511,0,0.00
+30,GSM8K,True,knowledge,pair,512–1023,0,0.00
+30,GSM8K,True,knowledge,pair,1024–2047,0,0.00
+30,GSM8K,True,knowledge,pair,2048–4095,0,0.00
+30,GSM8K,True,knowledge,pair,4096–8191,0,0.00
+30,GSM8K,True,knowledge,pair,8192–16383,0,0.00
+30,GSM8K,True,knowledge,pair,16384–32767,0,0.00
+30,GSM8K,True,knowledge,pair,≥32768,0,0.00
+30,GSM8K,True,knowledge,state,<128,2527,95.79
+30,GSM8K,True,knowledge,state,128–255,111,4.21
+30,GSM8K,True,knowledge,state,256–511,0,0.00
+30,GSM8K,True,knowledge,state,512–1023,0,0.00
+30,GSM8K,True,knowledge,state,1024–2047,0,0.00
+30,GSM8K,True,knowledge,state,2048–4095,0,0.00
+30,GSM8K,True,knowledge,state,4096–8191,0,0.00
+30,GSM8K,True,knowledge,state,8192–16383,0,0.00
+30,GSM8K,True,knowledge,state,16384–32767,0,0.00
+30,GSM8K,True,knowledge,state,≥32768,0,0.00
+31,ChessBench,True,knowledge,joint,<128,0,0.00
+31,ChessBench,True,knowledge,joint,128–255,227,4.54
+31,ChessBench,True,knowledge,joint,256–511,675,13.50
+31,ChessBench,True,knowledge,joint,512–1023,3903,78.06
+31,ChessBench,True,knowledge,joint,1024–2047,195,3.90
+31,ChessBench,True,knowledge,joint,2048–4095,0,0.00
+31,ChessBench,True,knowledge,joint,4096–8191,0,0.00
+31,ChessBench,True,knowledge,joint,8192–16383,0,0.00
+31,ChessBench,True,knowledge,joint,16384–32767,0,0.00
+31,ChessBench,True,knowledge,joint,≥32768,0,0.00
+31,ChessBench,True,knowledge,request_pair_max,<128,0,0.00
+31,ChessBench,True,knowledge,request_pair_max,128–255,5000,100.00
+31,ChessBench,True,knowledge,request_pair_max,256–511,0,0.00
+31,ChessBench,True,knowledge,request_pair_max,512–1023,0,0.00
+31,ChessBench,True,knowledge,request_pair_max,1024–2047,0,0.00
+31,ChessBench,True,knowledge,request_pair_max,2048–4095,0,0.00
+31,ChessBench,True,knowledge,request_pair_max,4096–8191,0,0.00
+31,ChessBench,True,knowledge,request_pair_max,8192–16383,0,0.00
+31,ChessBench,True,knowledge,request_pair_max,16384–32767,0,0.00
+31,ChessBench,True,knowledge,request_pair_max,≥32768,0,0.00
+31,ChessBench,True,knowledge,pair,<128,0,0.00
+31,ChessBench,True,knowledge,pair,128–255,147635,100.00
+31,ChessBench,True,knowledge,pair,256–511,0,0.00
+31,ChessBench,True,knowledge,pair,512–1023,0,0.00
+31,ChessBench,True,knowledge,pair,1024–2047,0,0.00
+31,ChessBench,True,knowledge,pair,2048–4095,0,0.00
+31,ChessBench,True,knowledge,pair,4096–8191,0,0.00
+31,ChessBench,True,knowledge,pair,8192–16383,0,0.00
+31,ChessBench,True,knowledge,pair,16384–32767,0,0.00
+31,ChessBench,True,knowledge,pair,≥32768,0,0.00
+31,ChessBench,True,knowledge,state,<128,312,6.24
+31,ChessBench,True,knowledge,state,128–255,4688,93.76
+31,ChessBench,True,knowledge,state,256–511,0,0.00
+31,ChessBench,True,knowledge,state,512–1023,0,0.00
+31,ChessBench,True,knowledge,state,1024–2047,0,0.00
+31,ChessBench,True,knowledge,state,2048–4095,0,0.00
+31,ChessBench,True,knowledge,state,4096–8191,0,0.00
+31,ChessBench,True,knowledge,state,8192–16383,0,0.00
+31,ChessBench,True,knowledge,state,16384–32767,0,0.00
+31,ChessBench,True,knowledge,state,≥32768,0,0.00
+32,MuSR,True,knowledge,joint,<128,0,0.00
+32,MuSR,True,knowledge,joint,128–255,0,0.00
+32,MuSR,True,knowledge,joint,256–511,0,0.00
+32,MuSR,True,knowledge,joint,512–1023,390,51.86
+32,MuSR,True,knowledge,joint,1024–2047,362,48.14
+32,MuSR,True,knowledge,joint,2048–4095,0,0.00
+32,MuSR,True,knowledge,joint,4096–8191,0,0.00
+32,MuSR,True,knowledge,joint,8192–16383,0,0.00
+32,MuSR,True,knowledge,joint,16384–32767,0,0.00
+32,MuSR,True,knowledge,joint,≥32768,0,0.00
+32,MuSR,True,knowledge,request_pair_max,<128,0,0.00
+32,MuSR,True,knowledge,request_pair_max,128–255,0,0.00
+32,MuSR,True,knowledge,request_pair_max,256–511,0,0.00
+32,MuSR,True,knowledge,request_pair_max,512–1023,418,55.59
+32,MuSR,True,knowledge,request_pair_max,1024–2047,334,44.41
+32,MuSR,True,knowledge,request_pair_max,2048–4095,0,0.00
+32,MuSR,True,knowledge,request_pair_max,4096–8191,0,0.00
+32,MuSR,True,knowledge,request_pair_max,8192–16383,0,0.00
+32,MuSR,True,knowledge,request_pair_max,16384–32767,0,0.00
+32,MuSR,True,knowledge,request_pair_max,≥32768,0,0.00
+32,MuSR,True,knowledge,pair,<128,0,0.00
+32,MuSR,True,knowledge,pair,128–255,0,0.00
+32,MuSR,True,knowledge,pair,256–511,0,0.00
+32,MuSR,True,knowledge,pair,512–1023,1352,62.08
+32,MuSR,True,knowledge,pair,1024–2047,826,37.92
+32,MuSR,True,knowledge,pair,2048–4095,0,0.00
+32,MuSR,True,knowledge,pair,4096–8191,0,0.00
+32,MuSR,True,knowledge,pair,8192–16383,0,0.00
+32,MuSR,True,knowledge,pair,16384–32767,0,0.00
+32,MuSR,True,knowledge,pair,≥32768,0,0.00
+32,MuSR,True,knowledge,state,<128,752,100.00
+32,MuSR,True,knowledge,state,128–255,0,0.00
+32,MuSR,True,knowledge,state,256–511,0,0.00
+32,MuSR,True,knowledge,state,512–1023,0,0.00
+32,MuSR,True,knowledge,state,1024–2047,0,0.00
+32,MuSR,True,knowledge,state,2048–4095,0,0.00
+32,MuSR,True,knowledge,state,4096–8191,0,0.00
+32,MuSR,True,knowledge,state,8192–16383,0,0.00
+32,MuSR,True,knowledge,state,16384–32767,0,0.00
+32,MuSR,True,knowledge,state,≥32768,0,0.00
+33,SATA-Bench,True,knowledge,joint,<128,0,0.00
+33,SATA-Bench,True,knowledge,joint,128–255,0,0.00
+33,SATA-Bench,True,knowledge,joint,256–511,225,13.64
+33,SATA-Bench,True,knowledge,joint,512–1023,713,43.21
+33,SATA-Bench,True,knowledge,joint,1024–2047,578,35.03
+33,SATA-Bench,True,knowledge,joint,2048–4095,124,7.52
+33,SATA-Bench,True,knowledge,joint,4096–8191,10,0.61
+33,SATA-Bench,True,knowledge,joint,8192–16383,0,0.00
+33,SATA-Bench,True,knowledge,joint,16384–32767,0,0.00
+33,SATA-Bench,True,knowledge,joint,≥32768,0,0.00
+33,SATA-Bench,True,knowledge,request_pair_max,<128,5,0.30
+33,SATA-Bench,True,knowledge,request_pair_max,128–255,162,9.82
+33,SATA-Bench,True,knowledge,request_pair_max,256–511,709,42.97
+33,SATA-Bench,True,knowledge,request_pair_max,512–1023,495,30.00
+33,SATA-Bench,True,knowledge,request_pair_max,1024–2047,218,13.21
+33,SATA-Bench,True,knowledge,request_pair_max,2048–4095,57,3.45
+33,SATA-Bench,True,knowledge,request_pair_max,4096–8191,4,0.24
+33,SATA-Bench,True,knowledge,request_pair_max,8192–16383,0,0.00
+33,SATA-Bench,True,knowledge,request_pair_max,16384–32767,0,0.00
+33,SATA-Bench,True,knowledge,request_pair_max,≥32768,0,0.00
+33,SATA-Bench,True,knowledge,pair,<128,60,0.19
+33,SATA-Bench,True,knowledge,pair,128–255,2050,6.61
+33,SATA-Bench,True,knowledge,pair,256–511,12018,38.73
+33,SATA-Bench,True,knowledge,pair,512–1023,9776,31.50
+33,SATA-Bench,True,knowledge,pair,1024–2047,5300,17.08
+33,SATA-Bench,True,knowledge,pair,2048–4095,1710,5.51
+33,SATA-Bench,True,knowledge,pair,4096–8191,120,0.39
+33,SATA-Bench,True,knowledge,pair,8192–16383,0,0.00
+33,SATA-Bench,True,knowledge,pair,16384–32767,0,0.00
+33,SATA-Bench,True,knowledge,pair,≥32768,0,0.00
+33,SATA-Bench,True,knowledge,state,<128,27,1.64
+33,SATA-Bench,True,knowledge,state,128–255,454,27.52
+33,SATA-Bench,True,knowledge,state,256–511,517,31.33
+33,SATA-Bench,True,knowledge,state,512–1023,397,24.06
+33,SATA-Bench,True,knowledge,state,1024–2047,195,11.82
+33,SATA-Bench,True,knowledge,state,2048–4095,57,3.45
+33,SATA-Bench,True,knowledge,state,4096–8191,3,0.18
+33,SATA-Bench,True,knowledge,state,8192–16383,0,0.00
+33,SATA-Bench,True,knowledge,state,16384–32767,0,0.00
+33,SATA-Bench,True,knowledge,state,≥32768,0,0.00
+34,SimpleBench,False,knowledge,joint,<128,1,10.00
+34,SimpleBench,False,knowledge,joint,128–255,8,80.00
+34,SimpleBench,False,knowledge,joint,256–511,1,10.00
+34,SimpleBench,False,knowledge,joint,512–1023,0,0.00
+34,SimpleBench,False,knowledge,joint,1024–2047,0,0.00
+34,SimpleBench,False,knowledge,joint,2048–4095,0,0.00
+34,SimpleBench,False,knowledge,joint,4096–8191,0,0.00
+34,SimpleBench,False,knowledge,joint,8192–16383,0,0.00
+34,SimpleBench,False,knowledge,joint,16384–32767,0,0.00
+34,SimpleBench,False,knowledge,joint,≥32768,0,0.00
+34,SimpleBench,False,knowledge,request_pair_max,<128,6,60.00
+34,SimpleBench,False,knowledge,request_pair_max,128–255,4,40.00
+34,SimpleBench,False,knowledge,request_pair_max,256–511,0,0.00
+34,SimpleBench,False,knowledge,request_pair_max,512–1023,0,0.00
+34,SimpleBench,False,knowledge,request_pair_max,1024–2047,0,0.00
+34,SimpleBench,False,knowledge,request_pair_max,2048–4095,0,0.00
+34,SimpleBench,False,knowledge,request_pair_max,4096–8191,0,0.00
+34,SimpleBench,False,knowledge,request_pair_max,8192–16383,0,0.00
+34,SimpleBench,False,knowledge,request_pair_max,16384–32767,0,0.00
+34,SimpleBench,False,knowledge,request_pair_max,≥32768,0,0.00
+34,SimpleBench,False,knowledge,pair,<128,36,60.00
+34,SimpleBench,False,knowledge,pair,128–255,24,40.00
+34,SimpleBench,False,knowledge,pair,256–511,0,0.00
+34,SimpleBench,False,knowledge,pair,512–1023,0,0.00
+34,SimpleBench,False,knowledge,pair,1024–2047,0,0.00
+34,SimpleBench,False,knowledge,pair,2048–4095,0,0.00
+34,SimpleBench,False,knowledge,pair,4096–8191,0,0.00
+34,SimpleBench,False,knowledge,pair,8192–16383,0,0.00
+34,SimpleBench,False,knowledge,pair,16384–32767,0,0.00
+34,SimpleBench,False,knowledge,pair,≥32768,0,0.00
+34,SimpleBench,False,knowledge,state,<128,10,100.00
+34,SimpleBench,False,knowledge,state,128–255,0,0.00
+34,SimpleBench,False,knowledge,state,256–511,0,0.00
+34,SimpleBench,False,knowledge,state,512–1023,0,0.00
+34,SimpleBench,False,knowledge,state,1024–2047,0,0.00
+34,SimpleBench,False,knowledge,state,2048–4095,0,0.00
+34,SimpleBench,False,knowledge,state,4096–8191,0,0.00
+34,SimpleBench,False,knowledge,state,8192–16383,0,0.00
+34,SimpleBench,False,knowledge,state,16384–32767,0,0.00
+34,SimpleBench,False,knowledge,state,≥32768,0,0.00
+36,BRIGHT,True,retrieval,joint,<128,0,0.00
+36,BRIGHT,True,retrieval,joint,128–255,0,0.00
+36,BRIGHT,True,retrieval,joint,256–511,0,0.00
+36,BRIGHT,True,retrieval,joint,512–1023,0,0.00
+36,BRIGHT,True,retrieval,joint,1024–2047,0,0.00
+36,BRIGHT,True,retrieval,joint,2048–4095,0,0.00
+36,BRIGHT,True,retrieval,joint,4096–8191,73,33.18
+36,BRIGHT,True,retrieval,joint,8192–16383,73,33.18
+36,BRIGHT,True,retrieval,joint,16384–32767,74,33.64
+36,BRIGHT,True,retrieval,joint,≥32768,0,0.00
+36,BRIGHT,True,retrieval,request_pair_max,<128,0,0.00
+36,BRIGHT,True,retrieval,request_pair_max,128–255,0,0.00
+36,BRIGHT,True,retrieval,request_pair_max,256–511,13,5.91
+36,BRIGHT,True,retrieval,request_pair_max,512–1023,69,31.36
+36,BRIGHT,True,retrieval,request_pair_max,1024–2047,106,48.18
+36,BRIGHT,True,retrieval,request_pair_max,2048–4095,22,10.00
+36,BRIGHT,True,retrieval,request_pair_max,4096–8191,10,4.55
+36,BRIGHT,True,retrieval,request_pair_max,8192–16383,0,0.00
+36,BRIGHT,True,retrieval,request_pair_max,16384–32767,0,0.00
+36,BRIGHT,True,retrieval,request_pair_max,≥32768,0,0.00
+36,BRIGHT,True,retrieval,pair,<128,4,0.03
+36,BRIGHT,True,retrieval,pair,128–255,1556,11.05
+36,BRIGHT,True,retrieval,pair,256–511,6158,43.74
+36,BRIGHT,True,retrieval,pair,512–1023,3132,22.24
+36,BRIGHT,True,retrieval,pair,1024–2047,2914,20.70
+36,BRIGHT,True,retrieval,pair,2048–4095,202,1.43
+36,BRIGHT,True,retrieval,pair,4096–8191,114,0.81
+36,BRIGHT,True,retrieval,pair,8192–16383,0,0.00
+36,BRIGHT,True,retrieval,pair,16384–32767,0,0.00
+36,BRIGHT,True,retrieval,pair,≥32768,0,0.00
+36,BRIGHT,True,retrieval,state,<128,81,36.82
+36,BRIGHT,True,retrieval,state,128–255,79,35.91
+36,BRIGHT,True,retrieval,state,256–511,33,15.00
+36,BRIGHT,True,retrieval,state,512–1023,21,9.55
+36,BRIGHT,True,retrieval,state,1024–2047,3,1.36
+36,BRIGHT,True,retrieval,state,2048–4095,2,0.91
+36,BRIGHT,True,retrieval,state,4096–8191,1,0.45
+36,BRIGHT,True,retrieval,state,8192–16383,0,0.00
+36,BRIGHT,True,retrieval,state,16384–32767,0,0.00
+36,BRIGHT,True,retrieval,state,≥32768,0,0.00
+37,Amazon ESCI,True,retrieval,joint,<128,248,4.96
+37,Amazon ESCI,True,retrieval,joint,128–255,1572,31.44
+37,Amazon ESCI,True,retrieval,joint,256–511,1658,33.16
+37,Amazon ESCI,True,retrieval,joint,512–1023,1322,26.44
+37,Amazon ESCI,True,retrieval,joint,1024–2047,199,3.98
+37,Amazon ESCI,True,retrieval,joint,2048–4095,1,0.02
+37,Amazon ESCI,True,retrieval,joint,4096–8191,0,0.00
+37,Amazon ESCI,True,retrieval,joint,8192–16383,0,0.00
+37,Amazon ESCI,True,retrieval,joint,16384–32767,0,0.00
+37,Amazon ESCI,True,retrieval,joint,≥32768,0,0.00
+37,Amazon ESCI,True,retrieval,request_pair_max,<128,629,12.58
+37,Amazon ESCI,True,retrieval,request_pair_max,128–255,1506,30.12
+37,Amazon ESCI,True,retrieval,request_pair_max,256–511,1455,29.10
+37,Amazon ESCI,True,retrieval,request_pair_max,512–1023,1245,24.90
+37,Amazon ESCI,True,retrieval,request_pair_max,1024–2047,164,3.28
+37,Amazon ESCI,True,retrieval,request_pair_max,2048–4095,1,0.02
+37,Amazon ESCI,True,retrieval,request_pair_max,4096–8191,0,0.00
+37,Amazon ESCI,True,retrieval,request_pair_max,8192–16383,0,0.00
+37,Amazon ESCI,True,retrieval,request_pair_max,16384–32767,0,0.00
+37,Amazon ESCI,True,retrieval,request_pair_max,≥32768,0,0.00
+37,Amazon ESCI,True,retrieval,pair,<128,2552,12.76
+37,Amazon ESCI,True,retrieval,pair,128–255,6033,30.16
+37,Amazon ESCI,True,retrieval,pair,256–511,5790,28.95
+37,Amazon ESCI,True,retrieval,pair,512–1023,4968,24.84
+37,Amazon ESCI,True,retrieval,pair,1024–2047,653,3.27
+37,Amazon ESCI,True,retrieval,pair,2048–4095,4,0.02
+37,Amazon ESCI,True,retrieval,pair,4096–8191,0,0.00
+37,Amazon ESCI,True,retrieval,pair,8192–16383,0,0.00
+37,Amazon ESCI,True,retrieval,pair,16384–32767,0,0.00
+37,Amazon ESCI,True,retrieval,pair,≥32768,0,0.00
+37,Amazon ESCI,True,retrieval,state,<128,1229,24.58
+37,Amazon ESCI,True,retrieval,state,128–255,1280,25.60
+37,Amazon ESCI,True,retrieval,state,256–511,1260,25.20
+37,Amazon ESCI,True,retrieval,state,512–1023,1101,22.02
+37,Amazon ESCI,True,retrieval,state,1024–2047,129,2.58
+37,Amazon ESCI,True,retrieval,state,2048–4095,1,0.02
+37,Amazon ESCI,True,retrieval,state,4096–8191,0,0.00
+37,Amazon ESCI,True,retrieval,state,8192–16383,0,0.00
+37,Amazon ESCI,True,retrieval,state,16384–32767,0,0.00
+37,Amazon ESCI,True,retrieval,state,≥32768,0,0.00
+38,ACOS,True,language,joint,<128,0,0.00
+38,ACOS,True,language,joint,128–255,0,0.00
+38,ACOS,True,language,joint,256–511,0,0.00
+38,ACOS,True,language,joint,512–1023,0,0.00
+38,ACOS,True,language,joint,1024–2047,0,0.00
+38,ACOS,True,language,joint,2048–4095,167,10.67
+38,ACOS,True,language,joint,4096–8191,1398,89.33
+38,ACOS,True,language,joint,8192–16383,0,0.00
+38,ACOS,True,language,joint,16384–32767,0,0.00
+38,ACOS,True,language,joint,≥32768,0,0.00
+38,ACOS,True,language,request_pair_max,<128,1143,73.04
+38,ACOS,True,language,request_pair_max,128–255,422,26.96
+38,ACOS,True,language,request_pair_max,256–511,0,0.00
+38,ACOS,True,language,request_pair_max,512–1023,0,0.00
+38,ACOS,True,language,request_pair_max,1024–2047,0,0.00
+38,ACOS,True,language,request_pair_max,2048–4095,0,0.00
+38,ACOS,True,language,request_pair_max,4096–8191,0,0.00
+38,ACOS,True,language,request_pair_max,8192–16383,0,0.00
+38,ACOS,True,language,request_pair_max,16384–32767,0,0.00
+38,ACOS,True,language,request_pair_max,≥32768,0,0.00
+38,ACOS,True,language,pair,<128,153264,84.13
+38,ACOS,True,language,pair,128–255,28920,15.87
+38,ACOS,True,language,pair,256–511,0,0.00
+38,ACOS,True,language,pair,512–1023,0,0.00
+38,ACOS,True,language,pair,1024–2047,0,0.00
+38,ACOS,True,language,pair,2048–4095,0,0.00
+38,ACOS,True,language,pair,4096–8191,0,0.00
+38,ACOS,True,language,pair,8192–16383,0,0.00
+38,ACOS,True,language,pair,16384–32767,0,0.00
+38,ACOS,True,language,pair,≥32768,0,0.00
+38,ACOS,True,language,state,<128,1565,100.00
+38,ACOS,True,language,state,128–255,0,0.00
+38,ACOS,True,language,state,256–511,0,0.00
+38,ACOS,True,language,state,512–1023,0,0.00
+38,ACOS,True,language,state,1024–2047,0,0.00
+38,ACOS,True,language,state,2048–4095,0,0.00
+38,ACOS,True,language,state,4096–8191,0,0.00
+38,ACOS,True,language,state,8192–16383,0,0.00
+38,ACOS,True,language,state,16384–32767,0,0.00
+38,ACOS,True,language,state,≥32768,0,0.00
+39,FinEntity,True,language,joint,<128,27,2.76
+39,FinEntity,True,language,joint,128–255,625,63.84
+39,FinEntity,True,language,joint,256–511,287,29.32
+39,FinEntity,True,language,joint,512–1023,37,3.78
+39,FinEntity,True,language,joint,1024–2047,3,0.31
+39,FinEntity,True,language,joint,2048–4095,0,0.00
+39,FinEntity,True,language,joint,4096–8191,0,0.00
+39,FinEntity,True,language,joint,8192–16383,0,0.00
+39,FinEntity,True,language,joint,16384–32767,0,0.00
+39,FinEntity,True,language,joint,≥32768,0,0.00
+39,FinEntity,True,language,request_pair_max,<128,348,35.55
+39,FinEntity,True,language,request_pair_max,128–255,629,64.25
+39,FinEntity,True,language,request_pair_max,256–511,2,0.20
+39,FinEntity,True,language,request_pair_max,512–1023,0,0.00
+39,FinEntity,True,language,request_pair_max,1024–2047,0,0.00
+39,FinEntity,True,language,request_pair_max,2048–4095,0,0.00
+39,FinEntity,True,language,request_pair_max,4096–8191,0,0.00
+39,FinEntity,True,language,request_pair_max,8192–16383,0,0.00
+39,FinEntity,True,language,request_pair_max,16384–32767,0,0.00
+39,FinEntity,True,language,request_pair_max,≥32768,0,0.00
+39,FinEntity,True,language,pair,<128,1866,29.22
+39,FinEntity,True,language,pair,128–255,4452,69.70
+39,FinEntity,True,language,pair,256–511,69,1.08
+39,FinEntity,True,language,pair,512–1023,0,0.00
+39,FinEntity,True,language,pair,1024–2047,0,0.00
+39,FinEntity,True,language,pair,2048–4095,0,0.00
+39,FinEntity,True,language,pair,4096–8191,0,0.00
+39,FinEntity,True,language,pair,8192–16383,0,0.00
+39,FinEntity,True,language,pair,16384–32767,0,0.00
+39,FinEntity,True,language,pair,≥32768,0,0.00
+39,FinEntity,True,language,state,<128,955,97.55
+39,FinEntity,True,language,state,128–255,24,2.45
+39,FinEntity,True,language,state,256–511,0,0.00
+39,FinEntity,True,language,state,512–1023,0,0.00
+39,FinEntity,True,language,state,1024–2047,0,0.00
+39,FinEntity,True,language,state,2048–4095,0,0.00
+39,FinEntity,True,language,state,4096–8191,0,0.00
+39,FinEntity,True,language,state,8192–16383,0,0.00
+39,FinEntity,True,language,state,16384–32767,0,0.00
+39,FinEntity,True,language,state,≥32768,0,0.00
+40,iSarcasmEval,True,language,joint,<128,3188,69.30
+40,iSarcasmEval,True,language,joint,128–255,1391,30.24
+40,iSarcasmEval,True,language,joint,256–511,21,0.46
+40,iSarcasmEval,True,language,joint,512–1023,0,0.00
+40,iSarcasmEval,True,language,joint,1024–2047,0,0.00
+40,iSarcasmEval,True,language,joint,2048–4095,0,0.00
+40,iSarcasmEval,True,language,joint,4096–8191,0,0.00
+40,iSarcasmEval,True,language,joint,8192–16383,0,0.00
+40,iSarcasmEval,True,language,joint,16384–32767,0,0.00
+40,iSarcasmEval,True,language,joint,≥32768,0,0.00
+40,iSarcasmEval,True,language,request_pair_max,<128,4594,99.87
+40,iSarcasmEval,True,language,request_pair_max,128–255,6,0.13
+40,iSarcasmEval,True,language,request_pair_max,256–511,0,0.00
+40,iSarcasmEval,True,language,request_pair_max,512–1023,0,0.00
+40,iSarcasmEval,True,language,request_pair_max,1024–2047,0,0.00
+40,iSarcasmEval,True,language,request_pair_max,2048–4095,0,0.00
+40,iSarcasmEval,True,language,request_pair_max,4096–8191,0,0.00
+40,iSarcasmEval,True,language,request_pair_max,8192–16383,0,0.00
+40,iSarcasmEval,True,language,request_pair_max,16384–32767,0,0.00
+40,iSarcasmEval,True,language,request_pair_max,≥32768,0,0.00
+40,iSarcasmEval,True,language,pair,<128,23168,99.86
+40,iSarcasmEval,True,language,pair,128–255,32,0.14
+40,iSarcasmEval,True,language,pair,256–511,0,0.00
+40,iSarcasmEval,True,language,pair,512–1023,0,0.00
+40,iSarcasmEval,True,language,pair,1024–2047,0,0.00
+40,iSarcasmEval,True,language,pair,2048–4095,0,0.00
+40,iSarcasmEval,True,language,pair,4096–8191,0,0.00
+40,iSarcasmEval,True,language,pair,8192–16383,0,0.00
+40,iSarcasmEval,True,language,pair,16384–32767,0,0.00
+40,iSarcasmEval,True,language,pair,≥32768,0,0.00
+40,iSarcasmEval,True,language,state,<128,4597,99.93
+40,iSarcasmEval,True,language,state,128–255,3,0.07
+40,iSarcasmEval,True,language,state,256–511,0,0.00
+40,iSarcasmEval,True,language,state,512–1023,0,0.00
+40,iSarcasmEval,True,language,state,1024–2047,0,0.00
+40,iSarcasmEval,True,language,state,2048–4095,0,0.00
+40,iSarcasmEval,True,language,state,4096–8191,0,0.00
+40,iSarcasmEval,True,language,state,8192–16383,0,0.00
+40,iSarcasmEval,True,language,state,16384–32767,0,0.00
+40,iSarcasmEval,True,language,state,≥32768,0,0.00
+41,VAST,True,language,joint,<128,720,23.95
+41,VAST,True,language,joint,128–255,2005,66.70
+41,VAST,True,language,joint,256–511,281,9.35
+41,VAST,True,language,joint,512–1023,0,0.00
+41,VAST,True,language,joint,1024–2047,0,0.00
+41,VAST,True,language,joint,2048–4095,0,0.00
+41,VAST,True,language,joint,4096–8191,0,0.00
+41,VAST,True,language,joint,8192–16383,0,0.00
+41,VAST,True,language,joint,16384–32767,0,0.00
+41,VAST,True,language,joint,≥32768,0,0.00
+41,VAST,True,language,request_pair_max,<128,1015,33.77
+41,VAST,True,language,request_pair_max,128–255,1822,60.61
+41,VAST,True,language,request_pair_max,256–511,169,5.62
+41,VAST,True,language,request_pair_max,512–1023,0,0.00
+41,VAST,True,language,request_pair_max,1024–2047,0,0.00
+41,VAST,True,language,request_pair_max,2048–4095,0,0.00
+41,VAST,True,language,request_pair_max,4096–8191,0,0.00
+41,VAST,True,language,request_pair_max,8192–16383,0,0.00
+41,VAST,True,language,request_pair_max,16384–32767,0,0.00
+41,VAST,True,language,request_pair_max,≥32768,0,0.00
+41,VAST,True,language,pair,<128,3045,33.77
+41,VAST,True,language,pair,128–255,5466,60.61
+41,VAST,True,language,pair,256–511,507,5.62
+41,VAST,True,language,pair,512–1023,0,0.00
+41,VAST,True,language,pair,1024–2047,0,0.00
+41,VAST,True,language,pair,2048–4095,0,0.00
+41,VAST,True,language,pair,4096–8191,0,0.00
+41,VAST,True,language,pair,8192–16383,0,0.00
+41,VAST,True,language,pair,16384–32767,0,0.00
+41,VAST,True,language,pair,≥32768,0,0.00
+41,VAST,True,language,state,<128,3006,100.00
+41,VAST,True,language,state,128–255,0,0.00
+41,VAST,True,language,state,256–511,0,0.00
+41,VAST,True,language,state,512–1023,0,0.00
+41,VAST,True,language,state,1024–2047,0,0.00
+41,VAST,True,language,state,2048–4095,0,0.00
+41,VAST,True,language,state,4096–8191,0,0.00
+41,VAST,True,language,state,8192–16383,0,0.00
+41,VAST,True,language,state,16384–32767,0,0.00
+41,VAST,True,language,state,≥32768,0,0.00
+42,NLI4CT,True,language,joint,<128,39,0.71
+42,NLI4CT,True,language,joint,128–255,963,17.51
+42,NLI4CT,True,language,joint,256–511,1964,35.71
+42,NLI4CT,True,language,joint,512–1023,1854,33.71
+42,NLI4CT,True,language,joint,1024–2047,588,10.69
+42,NLI4CT,True,language,joint,2048–4095,92,1.67
+42,NLI4CT,True,language,joint,4096–8191,0,0.00
+42,NLI4CT,True,language,joint,8192–16383,0,0.00
+42,NLI4CT,True,language,joint,16384–32767,0,0.00
+42,NLI4CT,True,language,joint,≥32768,0,0.00
+42,NLI4CT,True,language,request_pair_max,<128,59,1.07
+42,NLI4CT,True,language,request_pair_max,128–255,959,17.44
+42,NLI4CT,True,language,request_pair_max,256–511,1901,34.56
+42,NLI4CT,True,language,request_pair_max,512–1023,1800,32.73
+42,NLI4CT,True,language,request_pair_max,1024–2047,689,12.53
+42,NLI4CT,True,language,request_pair_max,2048–4095,92,1.67
+42,NLI4CT,True,language,request_pair_max,4096–8191,0,0.00
+42,NLI4CT,True,language,request_pair_max,8192–16383,0,0.00
+42,NLI4CT,True,language,request_pair_max,16384–32767,0,0.00
+42,NLI4CT,True,language,request_pair_max,≥32768,0,0.00
+42,NLI4CT,True,language,pair,<128,121,1.10
+42,NLI4CT,True,language,pair,128–255,1927,17.52
+42,NLI4CT,True,language,pair,256–511,3792,34.47
+42,NLI4CT,True,language,pair,512–1023,3599,32.72
+42,NLI4CT,True,language,pair,1024–2047,1377,12.52
+42,NLI4CT,True,language,pair,2048–4095,184,1.67
+42,NLI4CT,True,language,pair,4096–8191,0,0.00
+42,NLI4CT,True,language,pair,8192–16383,0,0.00
+42,NLI4CT,True,language,pair,16384–32767,0,0.00
+42,NLI4CT,True,language,pair,≥32768,0,0.00
+42,NLI4CT,True,language,state,<128,402,7.31
+42,NLI4CT,True,language,state,128–255,1105,20.09
+42,NLI4CT,True,language,state,256–511,1817,33.04
+42,NLI4CT,True,language,state,512–1023,1560,28.36
+42,NLI4CT,True,language,state,1024–2047,556,10.11
+42,NLI4CT,True,language,state,2048–4095,60,1.09
+42,NLI4CT,True,language,state,4096–8191,0,0.00
+42,NLI4CT,True,language,state,8192–16383,0,0.00
+42,NLI4CT,True,language,state,16384–32767,0,0.00
+42,NLI4CT,True,language,state,≥32768,0,0.00
+43,CRUXEval,True,knowledge,joint,<128,197,34.56
+43,CRUXEval,True,knowledge,joint,128–255,345,60.53
+43,CRUXEval,True,knowledge,joint,256–511,26,4.56
+43,CRUXEval,True,knowledge,joint,512–1023,2,0.35
+43,CRUXEval,True,knowledge,joint,1024–2047,0,0.00
+43,CRUXEval,True,knowledge,joint,2048–4095,0,0.00
+43,CRUXEval,True,knowledge,joint,4096–8191,0,0.00
+43,CRUXEval,True,knowledge,joint,8192–16383,0,0.00
+43,CRUXEval,True,knowledge,joint,16384–32767,0,0.00
+43,CRUXEval,True,knowledge,joint,≥32768,0,0.00
+43,CRUXEval,True,knowledge,request_pair_max,<128,329,57.72
+43,CRUXEval,True,knowledge,request_pair_max,128–255,240,42.11
+43,CRUXEval,True,knowledge,request_pair_max,256–511,0,0.00
+43,CRUXEval,True,knowledge,request_pair_max,512–1023,1,0.18
+43,CRUXEval,True,knowledge,request_pair_max,1024–2047,0,0.00
+43,CRUXEval,True,knowledge,request_pair_max,2048–4095,0,0.00
+43,CRUXEval,True,knowledge,request_pair_max,4096–8191,0,0.00
+43,CRUXEval,True,knowledge,request_pair_max,8192–16383,0,0.00
+43,CRUXEval,True,knowledge,request_pair_max,16384–32767,0,0.00
+43,CRUXEval,True,knowledge,request_pair_max,≥32768,0,0.00
+43,CRUXEval,True,knowledge,pair,<128,1028,56.36
+43,CRUXEval,True,knowledge,pair,128–255,795,43.59
+43,CRUXEval,True,knowledge,pair,256–511,0,0.00
+43,CRUXEval,True,knowledge,pair,512–1023,1,0.05
+43,CRUXEval,True,knowledge,pair,1024–2047,0,0.00
+43,CRUXEval,True,knowledge,pair,2048–4095,0,0.00
+43,CRUXEval,True,knowledge,pair,4096–8191,0,0.00
+43,CRUXEval,True,knowledge,pair,8192–16383,0,0.00
+43,CRUXEval,True,knowledge,pair,16384–32767,0,0.00
+43,CRUXEval,True,knowledge,pair,≥32768,0,0.00
+43,CRUXEval,True,knowledge,state,<128,562,98.60
+43,CRUXEval,True,knowledge,state,128–255,8,1.40
+43,CRUXEval,True,knowledge,state,256–511,0,0.00
+43,CRUXEval,True,knowledge,state,512–1023,0,0.00
+43,CRUXEval,True,knowledge,state,1024–2047,0,0.00
+43,CRUXEval,True,knowledge,state,2048–4095,0,0.00
+43,CRUXEval,True,knowledge,state,4096–8191,0,0.00
+43,CRUXEval,True,knowledge,state,8192–16383,0,0.00
+43,CRUXEval,True,knowledge,state,16384–32767,0,0.00
+43,CRUXEval,True,knowledge,state,≥32768,0,0.00
+44,CLadder,True,knowledge,joint,<128,634,12.68
+44,CLadder,True,knowledge,joint,128–255,4071,81.42
+44,CLadder,True,knowledge,joint,256–511,295,5.90
+44,CLadder,True,knowledge,joint,512–1023,0,0.00
+44,CLadder,True,knowledge,joint,1024–2047,0,0.00
+44,CLadder,True,knowledge,joint,2048–4095,0,0.00
+44,CLadder,True,knowledge,joint,4096–8191,0,0.00
+44,CLadder,True,knowledge,joint,8192–16383,0,0.00
+44,CLadder,True,knowledge,joint,16384–32767,0,0.00
+44,CLadder,True,knowledge,joint,≥32768,0,0.00
+44,CLadder,True,knowledge,request_pair_max,<128,1871,37.42
+44,CLadder,True,knowledge,request_pair_max,128–255,2988,59.76
+44,CLadder,True,knowledge,request_pair_max,256–511,141,2.82
+44,CLadder,True,knowledge,request_pair_max,512–1023,0,0.00
+44,CLadder,True,knowledge,request_pair_max,1024–2047,0,0.00
+44,CLadder,True,knowledge,request_pair_max,2048–4095,0,0.00
+44,CLadder,True,knowledge,request_pair_max,4096–8191,0,0.00
+44,CLadder,True,knowledge,request_pair_max,8192–16383,0,0.00
+44,CLadder,True,knowledge,request_pair_max,16384–32767,0,0.00
+44,CLadder,True,knowledge,request_pair_max,≥32768,0,0.00
+44,CLadder,True,knowledge,pair,<128,3742,37.42
+44,CLadder,True,knowledge,pair,128–255,5976,59.76
+44,CLadder,True,knowledge,pair,256–511,282,2.82
+44,CLadder,True,knowledge,pair,512–1023,0,0.00
+44,CLadder,True,knowledge,pair,1024–2047,0,0.00
+44,CLadder,True,knowledge,pair,2048–4095,0,0.00
+44,CLadder,True,knowledge,pair,4096–8191,0,0.00
+44,CLadder,True,knowledge,pair,8192–16383,0,0.00
+44,CLadder,True,knowledge,pair,16384–32767,0,0.00
+44,CLadder,True,knowledge,pair,≥32768,0,0.00
+44,CLadder,True,knowledge,state,<128,5000,100.00
+44,CLadder,True,knowledge,state,128–255,0,0.00
+44,CLadder,True,knowledge,state,256–511,0,0.00
+44,CLadder,True,knowledge,state,512–1023,0,0.00
+44,CLadder,True,knowledge,state,1024–2047,0,0.00
+44,CLadder,True,knowledge,state,2048–4095,0,0.00
+44,CLadder,True,knowledge,state,4096–8191,0,0.00
+44,CLadder,True,knowledge,state,8192–16383,0,0.00
+44,CLadder,True,knowledge,state,16384–32767,0,0.00
+44,CLadder,True,knowledge,state,≥32768,0,0.00
+45,HLE,True,knowledge,joint,<128,98,19.56
+45,HLE,True,knowledge,joint,128–255,188,37.52
+45,HLE,True,knowledge,joint,256–511,119,23.75
+45,HLE,True,knowledge,joint,512–1023,61,12.18
+45,HLE,True,knowledge,joint,1024–2047,27,5.39
+45,HLE,True,knowledge,joint,2048–4095,4,0.80
+45,HLE,True,knowledge,joint,4096–8191,3,0.60
+45,HLE,True,knowledge,joint,8192–16383,1,0.20
+45,HLE,True,knowledge,joint,16384–32767,0,0.00
+45,HLE,True,knowledge,joint,≥32768,0,0.00
+45,HLE,True,knowledge,request_pair_max,<128,201,40.12
+45,HLE,True,knowledge,request_pair_max,128–255,146,29.14
+45,HLE,True,knowledge,request_pair_max,256–511,94,18.76
+45,HLE,True,knowledge,request_pair_max,512–1023,37,7.39
+45,HLE,True,knowledge,request_pair_max,1024–2047,17,3.39
+45,HLE,True,knowledge,request_pair_max,2048–4095,2,0.40
+45,HLE,True,knowledge,request_pair_max,4096–8191,4,0.80
+45,HLE,True,knowledge,request_pair_max,8192–16383,0,0.00
+45,HLE,True,knowledge,request_pair_max,16384–32767,0,0.00
+45,HLE,True,knowledge,request_pair_max,≥32768,0,0.00
+45,HLE,True,knowledge,pair,<128,1332,38.68
+45,HLE,True,knowledge,pair,128–255,891,25.87
+45,HLE,True,knowledge,pair,256–511,749,21.75
+45,HLE,True,knowledge,pair,512–1023,269,7.81
+45,HLE,True,knowledge,pair,1024–2047,155,4.50
+45,HLE,True,knowledge,pair,2048–4095,14,0.41
+45,HLE,True,knowledge,pair,4096–8191,34,0.99
+45,HLE,True,knowledge,pair,8192–16383,0,0.00
+45,HLE,True,knowledge,pair,16384–32767,0,0.00
+45,HLE,True,knowledge,pair,≥32768,0,0.00
+45,HLE,True,knowledge,state,<128,501,100.00
+45,HLE,True,knowledge,state,128–255,0,0.00
+45,HLE,True,knowledge,state,256–511,0,0.00
+45,HLE,True,knowledge,state,512–1023,0,0.00
+45,HLE,True,knowledge,state,1024–2047,0,0.00
+45,HLE,True,knowledge,state,2048–4095,0,0.00
+45,HLE,True,knowledge,state,4096–8191,0,0.00
+45,HLE,True,knowledge,state,8192–16383,0,0.00
+45,HLE,True,knowledge,state,16384–32767,0,0.00
+45,HLE,True,knowledge,state,≥32768,0,0.00
+50,Habermas Machine,True,arts,joint,<128,0,0.00
+50,Habermas Machine,True,arts,joint,128–255,0,0.00
+50,Habermas Machine,True,arts,joint,256–511,14,0.84
+50,Habermas Machine,True,arts,joint,512–1023,1336,79.71
+50,Habermas Machine,True,arts,joint,1024–2047,326,19.45
+50,Habermas Machine,True,arts,joint,2048–4095,0,0.00
+50,Habermas Machine,True,arts,joint,4096–8191,0,0.00
+50,Habermas Machine,True,arts,joint,8192–16383,0,0.00
+50,Habermas Machine,True,arts,joint,16384–32767,0,0.00
+50,Habermas Machine,True,arts,joint,≥32768,0,0.00
+50,Habermas Machine,True,arts,request_pair_max,<128,0,0.00
+50,Habermas Machine,True,arts,request_pair_max,128–255,0,0.00
+50,Habermas Machine,True,arts,request_pair_max,256–511,273,16.29
+50,Habermas Machine,True,arts,request_pair_max,512–1023,1352,80.67
+50,Habermas Machine,True,arts,request_pair_max,1024–2047,51,3.04
+50,Habermas Machine,True,arts,request_pair_max,2048–4095,0,0.00
+50,Habermas Machine,True,arts,request_pair_max,4096–8191,0,0.00
+50,Habermas Machine,True,arts,request_pair_max,8192–16383,0,0.00
+50,Habermas Machine,True,arts,request_pair_max,16384–32767,0,0.00
+50,Habermas Machine,True,arts,request_pair_max,≥32768,0,0.00
+50,Habermas Machine,True,arts,pair,<128,0,0.00
+50,Habermas Machine,True,arts,pair,128–255,0,0.00
+50,Habermas Machine,True,arts,pair,256–511,2074,32.86
+50,Habermas Machine,True,arts,pair,512–1023,4053,64.22
+50,Habermas Machine,True,arts,pair,1024–2047,184,2.92
+50,Habermas Machine,True,arts,pair,2048–4095,0,0.00
+50,Habermas Machine,True,arts,pair,4096–8191,0,0.00
+50,Habermas Machine,True,arts,pair,8192–16383,0,0.00
+50,Habermas Machine,True,arts,pair,16384–32767,0,0.00
+50,Habermas Machine,True,arts,pair,≥32768,0,0.00
+50,Habermas Machine,True,arts,state,<128,0,0.00
+50,Habermas Machine,True,arts,state,128–255,53,3.16
+50,Habermas Machine,True,arts,state,256–511,1478,88.19
+50,Habermas Machine,True,arts,state,512–1023,145,8.65
+50,Habermas Machine,True,arts,state,1024–2047,0,0.00
+50,Habermas Machine,True,arts,state,2048–4095,0,0.00
+50,Habermas Machine,True,arts,state,4096–8191,0,0.00
+50,Habermas Machine,True,arts,state,8192–16383,0,0.00
+50,Habermas Machine,True,arts,state,16384–32767,0,0.00
+50,Habermas Machine,True,arts,state,≥32768,0,0.00
+56,PhishNChips,True,retrieval,joint,<128,0,0.00
+56,PhishNChips,True,retrieval,joint,128–255,0,0.00
+56,PhishNChips,True,retrieval,joint,256–511,0,0.00
+56,PhishNChips,True,retrieval,joint,512–1023,1999,99.95
+56,PhishNChips,True,retrieval,joint,1024–2047,1,0.05
+56,PhishNChips,True,retrieval,joint,2048–4095,0,0.00
+56,PhishNChips,True,retrieval,joint,4096–8191,0,0.00
+56,PhishNChips,True,retrieval,joint,8192–16383,0,0.00
+56,PhishNChips,True,retrieval,joint,16384–32767,0,0.00
+56,PhishNChips,True,retrieval,joint,≥32768,0,0.00
+56,PhishNChips,True,retrieval,request_pair_max,<128,0,0.00
+56,PhishNChips,True,retrieval,request_pair_max,128–255,1526,76.30
+56,PhishNChips,True,retrieval,request_pair_max,256–511,470,23.50
+56,PhishNChips,True,retrieval,request_pair_max,512–1023,4,0.20
+56,PhishNChips,True,retrieval,request_pair_max,1024–2047,0,0.00
+56,PhishNChips,True,retrieval,request_pair_max,2048–4095,0,0.00
+56,PhishNChips,True,retrieval,request_pair_max,4096–8191,0,0.00
+56,PhishNChips,True,retrieval,request_pair_max,8192–16383,0,0.00
+56,PhishNChips,True,retrieval,request_pair_max,16384–32767,0,0.00
+56,PhishNChips,True,retrieval,request_pair_max,≥32768,0,0.00
+56,PhishNChips,True,retrieval,pair,<128,228,0.63
+56,PhishNChips,True,retrieval,pair,128–255,30466,84.63
+56,PhishNChips,True,retrieval,pair,256–511,5265,14.62
+56,PhishNChips,True,retrieval,pair,512–1023,41,0.11
+56,PhishNChips,True,retrieval,pair,1024–2047,0,0.00
+56,PhishNChips,True,retrieval,pair,2048–4095,0,0.00
+56,PhishNChips,True,retrieval,pair,4096–8191,0,0.00
+56,PhishNChips,True,retrieval,pair,8192–16383,0,0.00
+56,PhishNChips,True,retrieval,pair,16384–32767,0,0.00
+56,PhishNChips,True,retrieval,pair,≥32768,0,0.00
+56,PhishNChips,True,retrieval,state,<128,278,13.90
+56,PhishNChips,True,retrieval,state,128–255,1558,77.90
+56,PhishNChips,True,retrieval,state,256–511,163,8.15
+56,PhishNChips,True,retrieval,state,512–1023,1,0.05
+56,PhishNChips,True,retrieval,state,1024–2047,0,0.00
+56,PhishNChips,True,retrieval,state,2048–4095,0,0.00
+56,PhishNChips,True,retrieval,state,4096–8191,0,0.00
+56,PhishNChips,True,retrieval,state,8192–16383,0,0.00
+56,PhishNChips,True,retrieval,state,16384–32767,0,0.00
+56,PhishNChips,True,retrieval,state,≥32768,0,0.00
+57,MMLU-Pro,True,knowledge,joint,<128,2743,22.80
+57,MMLU-Pro,True,knowledge,joint,128–255,6162,51.21
+57,MMLU-Pro,True,knowledge,joint,256–511,2756,22.91
+57,MMLU-Pro,True,knowledge,joint,512–1023,357,2.97
+57,MMLU-Pro,True,knowledge,joint,1024–2047,14,0.12
+57,MMLU-Pro,True,knowledge,joint,2048–4095,0,0.00
+57,MMLU-Pro,True,knowledge,joint,4096–8191,0,0.00
+57,MMLU-Pro,True,knowledge,joint,8192–16383,0,0.00
+57,MMLU-Pro,True,knowledge,joint,16384–32767,0,0.00
+57,MMLU-Pro,True,knowledge,joint,≥32768,0,0.00
+57,MMLU-Pro,True,knowledge,request_pair_max,<128,9238,76.78
+57,MMLU-Pro,True,knowledge,request_pair_max,128–255,2220,18.45
+57,MMLU-Pro,True,knowledge,request_pair_max,256–511,541,4.50
+57,MMLU-Pro,True,knowledge,request_pair_max,512–1023,30,0.25
+57,MMLU-Pro,True,knowledge,request_pair_max,1024–2047,3,0.02
+57,MMLU-Pro,True,knowledge,request_pair_max,2048–4095,0,0.00
+57,MMLU-Pro,True,knowledge,request_pair_max,4096–8191,0,0.00
+57,MMLU-Pro,True,knowledge,request_pair_max,8192–16383,0,0.00
+57,MMLU-Pro,True,knowledge,request_pair_max,16384–32767,0,0.00
+57,MMLU-Pro,True,knowledge,request_pair_max,≥32768,0,0.00
+57,MMLU-Pro,True,knowledge,pair,<128,88368,77.52
+57,MMLU-Pro,True,knowledge,pair,128–255,20689,18.15
+57,MMLU-Pro,True,knowledge,pair,256–511,4639,4.07
+57,MMLU-Pro,True,knowledge,pair,512–1023,264,0.23
+57,MMLU-Pro,True,knowledge,pair,1024–2047,30,0.03
+57,MMLU-Pro,True,knowledge,pair,2048–4095,0,0.00
+57,MMLU-Pro,True,knowledge,pair,4096–8191,0,0.00
+57,MMLU-Pro,True,knowledge,pair,8192–16383,0,0.00
+57,MMLU-Pro,True,knowledge,pair,16384–32767,0,0.00
+57,MMLU-Pro,True,knowledge,pair,≥32768,0,0.00
+57,MMLU-Pro,True,knowledge,state,<128,10502,87.28
+57,MMLU-Pro,True,knowledge,state,128–255,1204,10.01
+57,MMLU-Pro,True,knowledge,state,256–511,305,2.53
+57,MMLU-Pro,True,knowledge,state,512–1023,18,0.15
+57,MMLU-Pro,True,knowledge,state,1024–2047,3,0.02
+57,MMLU-Pro,True,knowledge,state,2048–4095,0,0.00
+57,MMLU-Pro,True,knowledge,state,4096–8191,0,0.00
+57,MMLU-Pro,True,knowledge,state,8192–16383,0,0.00
+57,MMLU-Pro,True,knowledge,state,16384–32767,0,0.00
+57,MMLU-Pro,True,knowledge,state,≥32768,0,0.00
+58,BBH,True,knowledge,joint,<128,2087,37.90
+58,BBH,True,knowledge,joint,128–255,2311,41.96
+58,BBH,True,knowledge,joint,256–511,1097,19.92
+58,BBH,True,knowledge,joint,512–1023,12,0.22
+58,BBH,True,knowledge,joint,1024–2047,0,0.00
+58,BBH,True,knowledge,joint,2048–4095,0,0.00
+58,BBH,True,knowledge,joint,4096–8191,0,0.00
+58,BBH,True,knowledge,joint,8192–16383,0,0.00
+58,BBH,True,knowledge,joint,16384–32767,0,0.00
+58,BBH,True,knowledge,joint,≥32768,0,0.00
+58,BBH,True,knowledge,request_pair_max,<128,2481,45.05
+58,BBH,True,knowledge,request_pair_max,128–255,2739,49.74
+58,BBH,True,knowledge,request_pair_max,256–511,275,4.99
+58,BBH,True,knowledge,request_pair_max,512–1023,12,0.22
+58,BBH,True,knowledge,request_pair_max,1024–2047,0,0.00
+58,BBH,True,knowledge,request_pair_max,2048–4095,0,0.00
+58,BBH,True,knowledge,request_pair_max,4096–8191,0,0.00
+58,BBH,True,knowledge,request_pair_max,8192–16383,0,0.00
+58,BBH,True,knowledge,request_pair_max,16384–32767,0,0.00
+58,BBH,True,knowledge,request_pair_max,≥32768,0,0.00
+58,BBH,True,knowledge,pair,<128,6920,28.00
+58,BBH,True,knowledge,pair,128–255,16391,66.33
+58,BBH,True,knowledge,pair,256–511,1375,5.56
+58,BBH,True,knowledge,pair,512–1023,24,0.10
+58,BBH,True,knowledge,pair,1024–2047,0,0.00
+58,BBH,True,knowledge,pair,2048–4095,0,0.00
+58,BBH,True,knowledge,pair,4096–8191,0,0.00
+58,BBH,True,knowledge,pair,8192–16383,0,0.00
+58,BBH,True,knowledge,pair,16384–32767,0,0.00
+58,BBH,True,knowledge,pair,≥32768,0,0.00
+58,BBH,True,knowledge,state,<128,3388,61.52
+58,BBH,True,knowledge,state,128–255,1987,36.08
+58,BBH,True,knowledge,state,256–511,122,2.22
+58,BBH,True,knowledge,state,512–1023,10,0.18
+58,BBH,True,knowledge,state,1024–2047,0,0.00
+58,BBH,True,knowledge,state,2048–4095,0,0.00
+58,BBH,True,knowledge,state,4096–8191,0,0.00
+58,BBH,True,knowledge,state,8192–16383,0,0.00
+58,BBH,True,knowledge,state,16384–32767,0,0.00
+58,BBH,True,knowledge,state,≥32768,0,0.00
+59,RAGTruth,True,language,joint,<128,0,0.00
+59,RAGTruth,True,language,joint,128–255,0,0.00
+59,RAGTruth,True,language,joint,256–511,359,13.30
+59,RAGTruth,True,language,joint,512–1023,1580,58.52
+59,RAGTruth,True,language,joint,1024–2047,738,27.33
+59,RAGTruth,True,language,joint,2048–4095,23,0.85
+59,RAGTruth,True,language,joint,4096–8191,0,0.00
+59,RAGTruth,True,language,joint,8192–16383,0,0.00
+59,RAGTruth,True,language,joint,16384–32767,0,0.00
+59,RAGTruth,True,language,joint,≥32768,0,0.00
+59,RAGTruth,True,language,request_pair_max,<128,0,0.00
+59,RAGTruth,True,language,request_pair_max,128–255,0,0.00
+59,RAGTruth,True,language,request_pair_max,256–511,406,15.04
+59,RAGTruth,True,language,request_pair_max,512–1023,1567,58.04
+59,RAGTruth,True,language,request_pair_max,1024–2047,705,26.11
+59,RAGTruth,True,language,request_pair_max,2048–4095,22,0.81
+59,RAGTruth,True,language,request_pair_max,4096–8191,0,0.00
+59,RAGTruth,True,language,request_pair_max,8192–16383,0,0.00
+59,RAGTruth,True,language,request_pair_max,16384–32767,0,0.00
+59,RAGTruth,True,language,request_pair_max,≥32768,0,0.00
+59,RAGTruth,True,language,pair,<128,0,0.00
+59,RAGTruth,True,language,pair,128–255,0,0.00
+59,RAGTruth,True,language,pair,256–511,814,15.07
+59,RAGTruth,True,language,pair,512–1023,3135,58.06
+59,RAGTruth,True,language,pair,1024–2047,1407,26.06
+59,RAGTruth,True,language,pair,2048–4095,44,0.81
+59,RAGTruth,True,language,pair,4096–8191,0,0.00
+59,RAGTruth,True,language,pair,8192–16383,0,0.00
+59,RAGTruth,True,language,pair,16384–32767,0,0.00
+59,RAGTruth,True,language,pair,≥32768,0,0.00
+59,RAGTruth,True,language,state,<128,0,0.00
+59,RAGTruth,True,language,state,128–255,4,0.15
+59,RAGTruth,True,language,state,256–511,558,20.67
+59,RAGTruth,True,language,state,512–1023,1516,56.15
+59,RAGTruth,True,language,state,1024–2047,603,22.33
+59,RAGTruth,True,language,state,2048–4095,19,0.70
+59,RAGTruth,True,language,state,4096–8191,0,0.00
+59,RAGTruth,True,language,state,8192–16383,0,0.00
+59,RAGTruth,True,language,state,16384–32767,0,0.00
+59,RAGTruth,True,language,state,≥32768,0,0.00
+61,HoVer,True,retrieval,joint,<128,0,0.00
+61,HoVer,True,retrieval,joint,128–255,324,8.10
+61,HoVer,True,retrieval,joint,256–511,2580,64.50
+61,HoVer,True,retrieval,joint,512–1023,1096,27.40
+61,HoVer,True,retrieval,joint,1024–2047,0,0.00
+61,HoVer,True,retrieval,joint,2048–4095,0,0.00
+61,HoVer,True,retrieval,joint,4096–8191,0,0.00
+61,HoVer,True,retrieval,joint,8192–16383,0,0.00
+61,HoVer,True,retrieval,joint,16384–32767,0,0.00
+61,HoVer,True,retrieval,joint,≥32768,0,0.00
+61,HoVer,True,retrieval,request_pair_max,<128,0,0.00
+61,HoVer,True,retrieval,request_pair_max,128–255,342,8.55
+61,HoVer,True,retrieval,request_pair_max,256–511,2537,63.42
+61,HoVer,True,retrieval,request_pair_max,512–1023,1121,28.02
+61,HoVer,True,retrieval,request_pair_max,1024–2047,0,0.00
+61,HoVer,True,retrieval,request_pair_max,2048–4095,0,0.00
+61,HoVer,True,retrieval,request_pair_max,4096–8191,0,0.00
+61,HoVer,True,retrieval,request_pair_max,8192–16383,0,0.00
+61,HoVer,True,retrieval,request_pair_max,16384–32767,0,0.00
+61,HoVer,True,retrieval,request_pair_max,≥32768,0,0.00
+61,HoVer,True,retrieval,pair,<128,1,0.01
+61,HoVer,True,retrieval,pair,128–255,701,8.76
+61,HoVer,True,retrieval,pair,256–511,5074,63.42
+61,HoVer,True,retrieval,pair,512–1023,2224,27.80
+61,HoVer,True,retrieval,pair,1024–2047,0,0.00
+61,HoVer,True,retrieval,pair,2048–4095,0,0.00
+61,HoVer,True,retrieval,pair,4096–8191,0,0.00
+61,HoVer,True,retrieval,pair,8192–16383,0,0.00
+61,HoVer,True,retrieval,pair,16384–32767,0,0.00
+61,HoVer,True,retrieval,pair,≥32768,0,0.00
+61,HoVer,True,retrieval,state,<128,9,0.23
+61,HoVer,True,retrieval,state,128–255,579,14.47
+61,HoVer,True,retrieval,state,256–511,2582,64.55
+61,HoVer,True,retrieval,state,512–1023,830,20.75
+61,HoVer,True,retrieval,state,1024–2047,0,0.00
+61,HoVer,True,retrieval,state,2048–4095,0,0.00
+61,HoVer,True,retrieval,state,4096–8191,0,0.00
+61,HoVer,True,retrieval,state,8192–16383,0,0.00
+61,HoVer,True,retrieval,state,16384–32767,0,0.00
+61,HoVer,True,retrieval,state,≥32768,0,0.00
+62,When2Call,True,tools,joint,<128,0,0.00
+62,When2Call,True,tools,joint,128–255,271,7.42
+62,When2Call,True,tools,joint,256–511,1001,27.41
+62,When2Call,True,tools,joint,512–1023,1482,40.58
+62,When2Call,True,tools,joint,1024–2047,862,23.60
+62,When2Call,True,tools,joint,2048–4095,34,0.93
+62,When2Call,True,tools,joint,4096–8191,2,0.05
+62,When2Call,True,tools,joint,8192–16383,0,0.00
+62,When2Call,True,tools,joint,16384–32767,0,0.00
+62,When2Call,True,tools,joint,≥32768,0,0.00
+62,When2Call,True,tools,request_pair_max,<128,192,5.26
+62,When2Call,True,tools,request_pair_max,128–255,379,10.38
+62,When2Call,True,tools,request_pair_max,256–511,802,21.96
+62,When2Call,True,tools,request_pair_max,512–1023,1278,34.99
+62,When2Call,True,tools,request_pair_max,1024–2047,899,24.62
+62,When2Call,True,tools,request_pair_max,2048–4095,96,2.63
+62,When2Call,True,tools,request_pair_max,4096–8191,6,0.16
+62,When2Call,True,tools,request_pair_max,8192–16383,0,0.00
+62,When2Call,True,tools,request_pair_max,16384–32767,0,0.00
+62,When2Call,True,tools,request_pair_max,≥32768,0,0.00
+62,When2Call,True,tools,pair,<128,888,6.08
+62,When2Call,True,tools,pair,128–255,1583,10.84
+62,When2Call,True,tools,pair,256–511,3198,21.89
+62,When2Call,True,tools,pair,512–1023,4990,34.16
+62,When2Call,True,tools,pair,1024–2047,3561,24.38
+62,When2Call,True,tools,pair,2048–4095,364,2.49
+62,When2Call,True,tools,pair,4096–8191,24,0.16
+62,When2Call,True,tools,pair,8192–16383,0,0.00
+62,When2Call,True,tools,pair,16384–32767,0,0.00
+62,When2Call,True,tools,pair,≥32768,0,0.00
+62,When2Call,True,tools,state,<128,327,8.95
+62,When2Call,True,tools,state,128–255,518,14.18
+62,When2Call,True,tools,state,256–511,773,21.17
+62,When2Call,True,tools,state,512–1023,1137,31.13
+62,When2Call,True,tools,state,1024–2047,829,22.70
+62,When2Call,True,tools,state,2048–4095,62,1.70
+62,When2Call,True,tools,state,4096–8191,6,0.16
+62,When2Call,True,tools,state,8192–16383,0,0.00
+62,When2Call,True,tools,state,16384–32767,0,0.00
+62,When2Call,True,tools,state,≥32768,0,0.00
+64,New Yorker,True,arts,joint,<128,0,0.00
+64,New Yorker,True,arts,joint,128–255,528,100.00
+64,New Yorker,True,arts,joint,256–511,0,0.00
+64,New Yorker,True,arts,joint,512–1023,0,0.00
+64,New Yorker,True,arts,joint,1024–2047,0,0.00
+64,New Yorker,True,arts,joint,2048–4095,0,0.00
+64,New Yorker,True,arts,joint,4096–8191,0,0.00
+64,New Yorker,True,arts,joint,8192–16383,0,0.00
+64,New Yorker,True,arts,joint,16384–32767,0,0.00
+64,New Yorker,True,arts,joint,≥32768,0,0.00
+64,New Yorker,True,arts,request_pair_max,<128,365,69.13
+64,New Yorker,True,arts,request_pair_max,128–255,162,30.68
+64,New Yorker,True,arts,request_pair_max,256–511,1,0.19
+64,New Yorker,True,arts,request_pair_max,512–1023,0,0.00
+64,New Yorker,True,arts,request_pair_max,1024–2047,0,0.00
+64,New Yorker,True,arts,request_pair_max,2048–4095,0,0.00
+64,New Yorker,True,arts,request_pair_max,4096–8191,0,0.00
+64,New Yorker,True,arts,request_pair_max,8192–16383,0,0.00
+64,New Yorker,True,arts,request_pair_max,16384–32767,0,0.00
+64,New Yorker,True,arts,request_pair_max,≥32768,0,0.00
+64,New Yorker,True,arts,pair,<128,2021,76.55
+64,New Yorker,True,arts,pair,128–255,615,23.30
+64,New Yorker,True,arts,pair,256–511,4,0.15
+64,New Yorker,True,arts,pair,512–1023,0,0.00
+64,New Yorker,True,arts,pair,1024–2047,0,0.00
+64,New Yorker,True,arts,pair,2048–4095,0,0.00
+64,New Yorker,True,arts,pair,4096–8191,0,0.00
+64,New Yorker,True,arts,pair,8192–16383,0,0.00
+64,New Yorker,True,arts,pair,16384–32767,0,0.00
+64,New Yorker,True,arts,pair,≥32768,0,0.00
+64,New Yorker,True,arts,state,<128,510,96.59
+64,New Yorker,True,arts,state,128–255,18,3.41
+64,New Yorker,True,arts,state,256–511,0,0.00
+64,New Yorker,True,arts,state,512–1023,0,0.00
+64,New Yorker,True,arts,state,1024–2047,0,0.00
+64,New Yorker,True,arts,state,2048–4095,0,0.00
+64,New Yorker,True,arts,state,4096–8191,0,0.00
+64,New Yorker,True,arts,state,8192–16383,0,0.00
+64,New Yorker,True,arts,state,16384–32767,0,0.00
+64,New Yorker,True,arts,state,≥32768,0,0.00

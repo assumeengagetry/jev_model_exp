@@ -1,0 +1,47 @@
+benchmark_id,name,active,locale,requests
+1,BFCL,True,unspecified,1694
+2,ToolRet,True,unspecified,685
+3,API-Bank,True,unspecified,508
+4,BANKING77,True,unspecified,3080
+5,CLINC150+OOS,True,unspecified,5500
+6,RouterBench,False,unspecified,10000
+9,Home appliance simulator,True,unspecified,88
+10,SGD/SGD-X,False,unspecified,2500
+11,ContractNLI,True,unspecified,123
+12,ANLI,True,unspecified,3200
+20,BPoMP,True,unspecified,5000
+21,Humicroedit,True,unspecified,2628
+22,POP909-CL,True,unspecified,2000
+23,cfcolor,True,unspecified,5000
+24,MMLU,False,unspecified,14033
+25,GPQA Diamond,True,unspecified,196
+26,ARC-Easy,False,unspecified,2376
+27,ARC-Challenge,False,unspecified,1172
+28,WinoGrande,True,unspecified,1267
+29,HellaSwag,True,unspecified,10042
+31,ChessBench,True,unspecified,5000
+32,MuSR,True,unspecified,752
+33,SATA-Bench,True,unspecified,1650
+34,SimpleBench,False,unspecified,10
+36,BRIGHT,True,unspecified,220
+37,Amazon ESCI,True,us,3336
+37,Amazon ESCI,True,es,732
+37,Amazon ESCI,True,jp,932
+38,ACOS,True,unspecified,1565
+39,FinEntity,True,unspecified,979
+40,iSarcasmEval,True,Ar,1600
+40,iSarcasmEval,True,En,3000
+41,VAST,True,unspecified,3006
+42,NLI4CT,True,unspecified,5500
+43,CRUXEval,True,unspecified,570
+44,CLadder,True,unspecified,5000
+45,HLE,True,unspecified,501
+50,Habermas Machine,True,unspecified,1676
+57,MMLU-Pro,True,unspecified,12032
+58,BBH,True,unspecified,5507
+62,When2Call,True,unspecified,3652
+64,New Yorker,True,unspecified,528
+59,RAGTruth,True,unspecified,2700
+61,HoVer,True,unspecified,4000
+56,PhishNChips,True,unspecified,2000
+30,GSM8K,True,unspecified,2638

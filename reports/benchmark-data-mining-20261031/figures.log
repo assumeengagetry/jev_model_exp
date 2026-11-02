@@ -1,0 +1,38 @@
+findfont: Failed to find font weight bold for Noto Sans CJK SC, now using 400.
+findfont: Failed to find font weight bold for Noto Sans CJK SC, now using 400.
+findfont: Failed to find font weight bold for Noto Sans CJK SC, now using 400.
+字体：Noto Sans CJK SC；语言：中文；范围：active37。
+输出目录：/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures
+已写入 16 张图，每张包含 PNG + SVG：
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/01-length-quantiles-heatmap.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/01-length-quantiles-heatmap.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/02-pair-request-coverage.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/02-pair-request-coverage.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/03-joint-request-coverage.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/03-joint-request-coverage.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/04-matching-label-composition.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/04-matching-label-composition.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/05-semantic-yes-no-composition.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/05-semantic-yes-no-composition.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/06-matching-vs-semantic-rates.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/06-matching-vs-semantic-rates.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/07-five-domain-data-profile-radars.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/07-five-domain-data-profile-radars.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/08-official-weight-vs-sample-token-burden.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/08-official-weight-vs-sample-token-burden.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/09-candidates-fields-and-pairs-per-request.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/09-candidates-fields-and-pairs-per-request.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/10-joint-length-distribution.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/10-joint-length-distribution.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/11-pair-request-length-distribution.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/11-pair-request-length-distribution.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/12-answer-position-and-candidate-length-bias.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/12-answer-position-and-candidate-length-bias.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/13-total-candidate-pair-vs-joint-tokens.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/13-total-candidate-pair-vs-joint-tokens.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/14-five-domain-request-coverage.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/14-five-domain-request-coverage.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/15-feature-correlations-not-causation.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/15-feature-correlations-not-causation.svg
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/16-candidate-pair-length-distribution.png
+/home/dev/assumeengage/reports/benchmark-data-mining-20261031/figures/16-candidate-pair-length-distribution.svg

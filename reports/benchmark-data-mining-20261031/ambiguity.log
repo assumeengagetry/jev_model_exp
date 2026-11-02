@@ -1,0 +1,8 @@
+       name  full_payload_conflicting_groups  actual_pair_conflicting_groups
+       VAST                               10                              21
+     NLI4CT                                1                               2
+PhishNChips                                0                            2000
+   MMLU-Pro                                0                               1
+        BBH                                2                               5
+      HoVer                                1                               2
+  When2Call                                0                              16
