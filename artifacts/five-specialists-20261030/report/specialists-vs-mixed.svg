@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="470" viewBox="0 0 1050 470">
+<rect width="1050" height="470" fill="white"/>
+<text x="25" y="28" font-size="19">Active specialists vs mixed: public skill</text>
+<polygon points="250.00,196.00 282.34,219.49 269.98,257.51 230.02,257.51 217.66,219.49" fill="none" stroke="#ccc"/>
+<polygon points="250.00,162.00 314.67,208.99 289.97,285.01 210.03,285.01 185.33,208.99" fill="none" stroke="#ccc"/>
+<polygon points="250.00,128.00 347.01,198.48 309.95,312.52 190.05,312.52 152.99,198.48" fill="none" stroke="#ccc"/>
+<polygon points="250.00,94.00 379.34,187.97 329.94,340.03 170.06,340.03 120.66,187.97" fill="none" stroke="#ccc"/>
+<polygon points="250.00,60.00 411.68,177.47 349.92,367.53 150.08,367.53 88.32,177.47" fill="none" stroke="#ccc"/>
+<text x="250.0" y="34.5" text-anchor="middle" font-size="14">knowledge</text>
+<text x="435.9" y="169.6" text-anchor="middle" font-size="14">language</text>
+<text x="364.9" y="388.2" text-anchor="middle" font-size="14">retrieval</text>
+<text x="135.1" y="388.2" text-anchor="middle" font-size="14">tools</text>
+<text x="64.1" y="169.6" text-anchor="middle" font-size="14">arts</text>
+<polygon points="250.00,213.53 278.20,220.84 296.22,293.62 223.94,265.87 221.25,220.66" fill="none" stroke="#222222" stroke-width="2"/>
+<line x1="525" x2="555" y1="70" y2="70" stroke="#222222" stroke-width="3"/>
+<text x="565" y="75" font-size="13">MIXED_ALL : 22.82</text>
+<polygon points="250.00,208.53 273.36,222.41 267.11,253.55 213.59,280.12 238.04,226.11" fill="none" stroke="#2673d9" stroke-width="2"/>
+<line x1="525" x2="555" y1="106" y2="106" stroke="#2673d9" stroke-width="3"/>
+<text x="565" y="111" font-size="13">SPECIALIST_KNOWLEDGE : 17.83</text>
+<polygon points="250.00,225.39 258.36,227.28 292.55,288.56 227.11,261.51 243.19,227.79" fill="none" stroke="#ee8d22" stroke-width="2"/>
+<line x1="525" x2="555" y1="142" y2="142" stroke="#ee8d22" stroke-width="3"/>
+<text x="565" y="147" font-size="13">SPECIALIST_RETRIEVAL : 15.17</text>
+<polygon points="250.00,223.13 264.78,225.20 255.85,238.05 215.33,277.72 248.24,229.43" fill="none" stroke="#9d49c6" stroke-width="2"/>
+<line x1="525" x2="555" y1="178" y2="178" stroke="#9d49c6" stroke-width="3"/>
+<text x="565" y="183" font-size="13">SPECIALIST_TOOLS : 11.03</text>
+<polygon points="250.00,222.84 262.64,225.89 262.12,246.68 228.24,259.95 220.74,220.49" fill="none" stroke="#238a70" stroke-width="2"/>
+<line x1="525" x2="555" y1="214" y2="214" stroke="#238a70" stroke-width="3"/>
+<text x="565" y="219" font-size="13">SPECIALIST_ARTS : 11.33</text>
+</svg>

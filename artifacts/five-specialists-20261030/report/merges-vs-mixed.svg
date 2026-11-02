@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="470" viewBox="0 0 1050 470">
+<rect width="1050" height="470" fill="white"/>
+<text x="25" y="28" font-size="19">Effective-weight merges vs mixed: public skill</text>
+<polygon points="250.00,196.00 282.34,219.49 269.98,257.51 230.02,257.51 217.66,219.49" fill="none" stroke="#ccc"/>
+<polygon points="250.00,162.00 314.67,208.99 289.97,285.01 210.03,285.01 185.33,208.99" fill="none" stroke="#ccc"/>
+<polygon points="250.00,128.00 347.01,198.48 309.95,312.52 190.05,312.52 152.99,198.48" fill="none" stroke="#ccc"/>
+<polygon points="250.00,94.00 379.34,187.97 329.94,340.03 170.06,340.03 120.66,187.97" fill="none" stroke="#ccc"/>
+<polygon points="250.00,60.00 411.68,177.47 349.92,367.53 150.08,367.53 88.32,177.47" fill="none" stroke="#ccc"/>
+<text x="250.0" y="34.5" text-anchor="middle" font-size="14">knowledge</text>
+<text x="435.9" y="169.6" text-anchor="middle" font-size="14">language</text>
+<text x="364.9" y="388.2" text-anchor="middle" font-size="14">retrieval</text>
+<text x="135.1" y="388.2" text-anchor="middle" font-size="14">tools</text>
+<text x="64.1" y="169.6" text-anchor="middle" font-size="14">arts</text>
+<polygon points="250.00,213.53 278.20,220.84 296.22,293.62 223.94,265.87 221.25,220.66" fill="none" stroke="#222222" stroke-width="2"/>
+<line x1="525" x2="555" y1="70" y2="70" stroke="#222222" stroke-width="3"/>
+<text x="565" y="75" font-size="13">MIXED_ALL : 22.82</text>
+<polygon points="250.00,215.60 276.84,221.28 285.21,278.47 212.18,282.06 233.67,224.69" fill="none" stroke="#2673d9" stroke-width="2"/>
+<line x1="525" x2="555" y1="106" y2="106" stroke="#2673d9" stroke-width="3"/>
+<text x="565" y="111" font-size="13">MERGE_AVERAGE : 21.46</text>
+<polygon points="250.00,223.42 261.45,226.28 284.41,277.37 236.62,248.42 240.67,226.97" fill="none" stroke="#ee8d22" stroke-width="2"/>
+<line x1="525" x2="555" y1="142" y2="142" stroke="#ee8d22" stroke-width="3"/>
+<text x="565" y="147" font-size="13">MERGE_TASK_ARITHMETIC : 12.75</text>
+<polygon points="250.00,217.86 273.28,222.44 290.78,286.13 225.73,263.41 236.63,225.66" fill="none" stroke="#9d49c6" stroke-width="2"/>
+<line x1="525" x2="555" y1="178" y2="178" stroke="#9d49c6" stroke-width="3"/>
+<text x="565" y="183" font-size="13">MERGE_TIES : 19.00</text>
+<polygon points="250.00,227.35 254.66,228.49 266.54,252.76 241.34,241.92 241.30,227.17" fill="none" stroke="#238a70" stroke-width="2"/>
+<line x1="525" x2="555" y1="214" y2="214" stroke="#238a70" stroke-width="3"/>
+<text x="565" y="219" font-size="13">MERGE_DARE_TASK_ARITHMETIC : 6.58</text>
+<polygon points="250.00,223.49 260.35,226.64 279.75,270.94 230.79,256.43 239.77,226.67" fill="none" stroke="#c64e62" stroke-width="2"/>
+<line x1="525" x2="555" y1="250" y2="250" stroke="#c64e62" stroke-width="3"/>
+<text x="565" y="255" font-size="13">MERGE_DARE_TIES : 12.75</text>
+</svg>

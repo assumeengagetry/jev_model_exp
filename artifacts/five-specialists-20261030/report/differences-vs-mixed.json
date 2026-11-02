@@ -1,0 +1,82 @@
+{
+  "SPECIALIST_KNOWLEDGE": {
+    "knowledge": 2.9399999999999995,
+    "language": -2.990000000000002,
+    "retrieval": -29.14,
+    "tools": 10.36,
+    "arts": -10.380000000000003,
+    "public_total": -4.990000000000002
+  },
+  "SPECIALIST_RETRIEVAL": {
+    "knowledge": -6.9799999999999995,
+    "language": -12.270000000000001,
+    "retrieval": -3.6799999999999997,
+    "tools": -3.169999999999998,
+    "arts": -13.57,
+    "public_total": -7.65
+  },
+  "SPECIALIST_TOOLS": {
+    "knowledge": -5.6499999999999995,
+    "language": -8.300000000000002,
+    "retrieval": -40.41,
+    "tools": 8.619999999999997,
+    "arts": -16.69,
+    "public_total": -11.790000000000001
+  },
+  "SPECIALIST_ARTS": {
+    "knowledge": -5.4799999999999995,
+    "language": -9.620000000000001,
+    "retrieval": -34.129999999999995,
+    "tools": -4.299999999999997,
+    "arts": 0.31999999999999673,
+    "public_total": -11.49
+  },
+  "MIXED_ALL": {
+    "knowledge": 0.0,
+    "language": 0.0,
+    "retrieval": 0.0,
+    "tools": 0.0,
+    "arts": 0.0,
+    "public_total": 0.0
+  },
+  "MERGE_AVERAGE": {
+    "knowledge": -1.2200000000000006,
+    "language": -0.8399999999999999,
+    "retrieval": -11.019999999999996,
+    "tools": 11.770000000000003,
+    "arts": -7.68,
+    "public_total": -1.3599999999999994
+  },
+  "MERGE_TASK_ARITHMETIC": {
+    "knowledge": -5.82,
+    "language": -10.360000000000001,
+    "retrieval": -11.82,
+    "tools": -12.69,
+    "arts": -12.010000000000002,
+    "public_total": -10.07
+  },
+  "MERGE_TIES": {
+    "knowledge": -2.549999999999999,
+    "language": -3.0400000000000027,
+    "retrieval": -5.449999999999996,
+    "tools": -1.7899999999999991,
+    "arts": -9.510000000000002,
+    "public_total": -3.8200000000000003
+  },
+  "MERGE_DARE_TASK_ARITHMETIC": {
+    "knowledge": -8.129999999999999,
+    "language": -14.560000000000002,
+    "retrieval": -29.709999999999997,
+    "tools": -17.409999999999997,
+    "arts": -12.400000000000002,
+    "public_total": -16.240000000000002
+  },
+  "MERGE_DARE_TIES": {
+    "knowledge": -5.859999999999999,
+    "language": -11.040000000000001,
+    "retrieval": -16.489999999999995,
+    "tools": -6.859999999999996,
+    "arts": -11.450000000000003,
+    "public_total": -10.07
+  }
+}

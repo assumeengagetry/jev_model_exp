@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "model": "MERGE_AVERAGE",
+  "method": "simple_average",
+  "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_AVERAGE/final",
+  "checkpoint_kind": "dense_effective_sequence_classifier",
+  "specialists": [
+    "SPECIALIST_KNOWLEDGE",
+    "SPECIALIST_RETRIEVAL",
+    "SPECIALIST_TOOLS",
+    "SPECIALIST_ARTS"
+  ],
+  "classification_head_included": true,
+  "compute_dtype": "float32",
+  "storage_dtype": "bfloat16",
+  "modified_tensor_count": 197,
+  "new_training_tokens": 0,
+  "parameters": {
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ]
+  },
+  "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+  "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+}

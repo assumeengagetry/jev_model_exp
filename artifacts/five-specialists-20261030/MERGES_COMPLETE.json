@@ -1,0 +1,133 @@
+{
+  "complete": true,
+  "models": [
+    {
+      "complete": true,
+      "model": "MERGE_AVERAGE",
+      "method": "simple_average",
+      "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_AVERAGE/final",
+      "checkpoint_kind": "dense_effective_sequence_classifier",
+      "specialists": [
+        "SPECIALIST_KNOWLEDGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_TOOLS",
+        "SPECIALIST_ARTS"
+      ],
+      "classification_head_included": true,
+      "compute_dtype": "float32",
+      "storage_dtype": "bfloat16",
+      "modified_tensor_count": 197,
+      "new_training_tokens": 0,
+      "parameters": {
+        "weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+      "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+    },
+    {
+      "complete": true,
+      "model": "MERGE_TASK_ARITHMETIC",
+      "method": "task_arithmetic",
+      "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_TASK_ARITHMETIC/final",
+      "checkpoint_kind": "dense_effective_sequence_classifier",
+      "specialists": [
+        "SPECIALIST_KNOWLEDGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_TOOLS",
+        "SPECIALIST_ARTS"
+      ],
+      "classification_head_included": true,
+      "compute_dtype": "float32",
+      "storage_dtype": "bfloat16",
+      "modified_tensor_count": 197,
+      "new_training_tokens": 0,
+      "parameters": {
+        "lambda": 1.0
+      },
+      "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+      "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+    },
+    {
+      "complete": true,
+      "model": "MERGE_TIES",
+      "method": "ties",
+      "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_TIES/final",
+      "checkpoint_kind": "dense_effective_sequence_classifier",
+      "specialists": [
+        "SPECIALIST_KNOWLEDGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_TOOLS",
+        "SPECIALIST_ARTS"
+      ],
+      "classification_head_included": true,
+      "compute_dtype": "float32",
+      "storage_dtype": "bfloat16",
+      "modified_tensor_count": 197,
+      "new_training_tokens": 0,
+      "parameters": {
+        "density": 0.2,
+        "lambda": 1.0
+      },
+      "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+      "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+    },
+    {
+      "complete": true,
+      "model": "MERGE_DARE_TASK_ARITHMETIC",
+      "method": "dare_task_arithmetic",
+      "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_DARE_TASK_ARITHMETIC/final",
+      "checkpoint_kind": "dense_effective_sequence_classifier",
+      "specialists": [
+        "SPECIALIST_KNOWLEDGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_TOOLS",
+        "SPECIALIST_ARTS"
+      ],
+      "classification_head_included": true,
+      "compute_dtype": "float32",
+      "storage_dtype": "bfloat16",
+      "modified_tensor_count": 197,
+      "new_training_tokens": 0,
+      "parameters": {
+        "keep_probability": 0.5,
+        "lambda": 1.0,
+        "seed": 42
+      },
+      "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+      "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+    },
+    {
+      "complete": true,
+      "model": "MERGE_DARE_TIES",
+      "method": "dare_ties",
+      "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_DARE_TIES/final",
+      "checkpoint_kind": "dense_effective_sequence_classifier",
+      "specialists": [
+        "SPECIALIST_KNOWLEDGE",
+        "SPECIALIST_RETRIEVAL",
+        "SPECIALIST_TOOLS",
+        "SPECIALIST_ARTS"
+      ],
+      "classification_head_included": true,
+      "compute_dtype": "float32",
+      "storage_dtype": "bfloat16",
+      "modified_tensor_count": 197,
+      "new_training_tokens": 0,
+      "parameters": {
+        "keep_probability": 0.5,
+        "density": 0.2,
+        "lambda": 1.0,
+        "seed": 42
+      },
+      "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+      "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+    }
+  ],
+  "new_training_models": 0,
+  "elapsed_seconds": 99.01590162696084
+}

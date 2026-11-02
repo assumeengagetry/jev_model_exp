@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "model": "SPECIALIST_RETRIEVAL",
+  "requests": 110087,
+  "benchmarks": 37,
+  "counts": {
+    "ok": 110087
+  },
+  "public_score": 15.17,
+  "coverage": 1.0,
+  "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+  "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+}

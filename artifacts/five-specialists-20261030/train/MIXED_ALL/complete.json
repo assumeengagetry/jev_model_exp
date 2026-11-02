@@ -1,0 +1,28 @@
+{
+  "model": "MIXED_ALL",
+  "complete": true,
+  "pool_pairs": 18173706,
+  "pairs_seen": 18173706,
+  "epochs": 1,
+  "effective_tokens": 4042053269,
+  "elapsed_seconds": 49231.093582249014,
+  "effective_tokens_per_second": 82103.66609563638,
+  "seen_domains": {
+    "knowledge": 3073453,
+    "retrieval": 11047617,
+    "arts": 2472921,
+    "tools": 1579715
+  },
+  "optimizer_steps": 141983,
+  "global_effective_batch": 128,
+  "common_initialization": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+  "precision": "bf16",
+  "attention": "causal_sdpa",
+  "micro_token_budget_final": 16384,
+  "oom_retries": 3,
+  "gradient_checkpointing": false,
+  "communication": "gloo_cpu_float32_adapter_gradients",
+  "peak_allocated_gb": 90.12568712234497,
+  "training_pair_cap": null,
+  "training_token_cap": null
+}

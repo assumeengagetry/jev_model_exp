@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "model": "MERGE_DARE_TIES",
+  "method": "dare_ties",
+  "checkpoint": "/home/dev/assumeengage/runs/five-specialists-20261030/merges/MERGE_DARE_TIES/final",
+  "checkpoint_kind": "dense_effective_sequence_classifier",
+  "specialists": [
+    "SPECIALIST_KNOWLEDGE",
+    "SPECIALIST_RETRIEVAL",
+    "SPECIALIST_TOOLS",
+    "SPECIALIST_ARTS"
+  ],
+  "classification_head_included": true,
+  "compute_dtype": "float32",
+  "storage_dtype": "bfloat16",
+  "modified_tensor_count": 197,
+  "new_training_tokens": 0,
+  "parameters": {
+    "keep_probability": 0.5,
+    "density": 0.2,
+    "lambda": 1.0,
+    "seed": 42
+  },
+  "dare_scope": "Bernoulli retention with exact 1/keep rescale before the selected merge",
+  "ties_scope": "per-tensor magnitude trim, sum sign, nonzero sign-consistent mean"
+}
