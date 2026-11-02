@@ -19,9 +19,9 @@
 
 ## 图表概览
 
-![五领域上下文覆盖率](figures/14-five-domain-request-coverage.png)
+![输入长度分布柱状图](figures/17-input-length-distribution-bar.png)
 
-多数领域在较短上下文下已能覆盖大部分请求，工具任务的长尾更突出。
+输入主要集中在短文本区间，长文本请求较少，但仍需保留长尾处理能力。
 
 ![五领域数据画像雷达图](figures/07-five-domain-data-profile-radars.png)
 
