@@ -1,0 +1,9 @@
+# Optional Transformers-native Teacher fallback; not needed by the SGLang image.
+# Install torch==2.11.0 from the official cu128 index before this file.
+transformers==5.12.1
+accelerate==1.15.0
+huggingface_hub==1.33.0
+safetensors>=0.4.3
+requests
+pillow
+sentencepiece

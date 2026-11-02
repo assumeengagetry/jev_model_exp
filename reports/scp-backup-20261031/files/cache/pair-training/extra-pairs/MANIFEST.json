@@ -1,0 +1,266 @@
+{
+  "complete": true,
+  "sources": [
+    {
+      "name": "gsm8k",
+      "domain": "knowledge",
+      "path": "cache/pair-training/extra-pairs/knowledge/gsm8k.parquet",
+      "counts": {
+        "raw_rows": 7473,
+        "pairs": 29892
+      },
+      "source": "native official train; distractors from distinct other train answers",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "math",
+      "domain": "knowledge",
+      "path": "cache/pair-training/extra-pairs/knowledge/math.parquet",
+      "counts": {
+        "raw_rows": 7498,
+        "pairs": 29981
+      },
+      "source": "native official train; distractors from distinct other train answers",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "mmlu",
+      "domain": "knowledge",
+      "path": "cache/pair-training/extra-pairs/knowledge/mmlu.parquet",
+      "counts": {
+        "raw_rows": 99842,
+        "pairs": 399368
+      },
+      "source": "native official train; no evaluation split",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "arc",
+      "domain": "knowledge",
+      "path": "cache/pair-training/extra-pairs/knowledge/arc.parquet",
+      "counts": {
+        "raw_rows": 3370,
+        "pairs": 13478
+      },
+      "source": "native official train; no evaluation split",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "winogrande",
+      "domain": "knowledge",
+      "path": "cache/pair-training/extra-pairs/knowledge/winogrande.parquet",
+      "counts": {
+        "raw_rows": 40398,
+        "pairs": 80796
+      },
+      "source": "native official train; no evaluation split",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "hellaswag",
+      "domain": "language",
+      "path": "cache/pair-training/extra-pairs/language/hellaswag.parquet",
+      "counts": {
+        "raw_rows": 39905,
+        "pairs": 159620
+      },
+      "source": "native official train; no evaluation split",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "anli",
+      "domain": "language",
+      "path": "cache/pair-training/extra-pairs/language/anli.parquet",
+      "counts": {
+        "raw_rows": 162865,
+        "pairs": 488595
+      },
+      "source": "native official train; no evaluation split",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "contractnli",
+      "domain": "language",
+      "path": "cache/pair-training/extra-pairs/language/contractnli.parquet",
+      "counts": {
+        "raw_rows": 6819,
+        "pairs": 20457
+      },
+      "source": "native official train; no evaluation split",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "banking77",
+      "domain": "retrieval",
+      "path": "cache/pair-training/extra-pairs/retrieval/banking77.parquet",
+      "counts": {
+        "raw_rows": 10003,
+        "pairs": 770231
+      },
+      "source": "native official train; no evaluation split",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "clinc150",
+      "domain": "retrieval",
+      "path": "cache/pair-training/extra-pairs/retrieval/clinc150.parquet",
+      "counts": {
+        "raw_rows": 15250,
+        "pairs": 2302750
+      },
+      "source": "native official train; no evaluation split",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "mbpp",
+      "domain": "knowledge",
+      "path": "cache/pair-training/extra-pairs/knowledge/mbpp.parquet",
+      "counts": {
+        "raw_rows": 374,
+        "pairs": 4108
+      },
+      "source": "MBPP train assertions used as static annotations; never executed",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "glaive",
+      "domain": "tools",
+      "path": "cache/pair-training/extra-pairs/tools/glaive.parquet",
+      "counts": {
+        "raw_rows": 112960,
+        "pairs": 429356,
+        "unparsed_calls": 80912
+      },
+      "source": "Glaive function-calling-v2 official train, every assistant decision",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "when2call",
+      "domain": "tools",
+      "path": "cache/pair-training/extra-pairs/tools/when2call.parquet",
+      "counts": {
+        "raw_rows": 24000,
+        "pairs": 113394
+      },
+      "source": "When2Call official SFT and preference train converted to candidate decisions",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "vast",
+      "domain": "language",
+      "path": "cache/pair-training/extra-pairs/language/vast.parquet",
+      "counts": {
+        "raw_rows": 13477,
+        "pairs": 40431
+      },
+      "source": "VAST official train, native 0=against/1=favor/2=neutral",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "isarcasm",
+      "domain": "language",
+      "path": "cache/pair-training/extra-pairs/language/isarcasm.parquet",
+      "counts": {
+        "raw_rows": 6570,
+        "pairs": 23542
+      },
+      "source": "iSarcasmEval official English and Arabic train annotations",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "nli4ct",
+      "domain": "language",
+      "path": "cache/pair-training/extra-pairs/language/nli4ct.parquet",
+      "counts": {
+        "raw_rows": 1700,
+        "pairs": 3400
+      },
+      "source": "NLI4CT official train with full indicated clinical-trial sections",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "ragtruth",
+      "domain": "language",
+      "path": "cache/pair-training/extra-pairs/language/ragtruth.parquet",
+      "counts": {
+        "raw_rows": 15090,
+        "pairs": 30180
+      },
+      "source": "RAGTruth response-level hallucination, official train only",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "acos_laptop-acos",
+      "domain": "language",
+      "path": "cache/pair-training/extra-pairs/language/acos_laptop-acos.parquet",
+      "counts": {
+        "raw_rows": 2934,
+        "pairs": 1003428
+      },
+      "source": "ACOS official train aspect-category/sentiment annotations",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "acos_restaurant-acos",
+      "domain": "language",
+      "path": "cache/pair-training/extra-pairs/language/acos_restaurant-acos.parquet",
+      "counts": {
+        "raw_rows": 1530,
+        "pairs": 55080
+      },
+      "source": "ACOS official train aspect-category/sentiment annotations",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "humicroedit",
+      "domain": "arts",
+      "path": "cache/pair-training/extra-pairs/arts/humicroedit.parquet",
+      "counts": {
+        "raw_rows": 29239,
+        "pairs": 95476
+      },
+      "source": "Humicroedit official train; human humor grades and paired edits",
+      "complete": true,
+      "tests_executed": false
+    },
+    {
+      "name": "cfcolor",
+      "domain": "arts",
+      "path": "cache/pair-training/extra-pairs/arts/cfcolor.parquet",
+      "counts": {
+        "raw_rating_pairs": 158500,
+        "pairs": 367264
+      },
+      "source": "Original cfcolor train ratings only; target palettes excluded from visible history",
+      "complete": true,
+      "tests_executed": false
+    }
+  ],
+  "all_available_train_rows_considered": true,
+  "pair_cap": null,
+  "gaps": [
+    "HoVer claims available but oracle Wikipedia documents not available; not used as full-context training.",
+    "ChessBench/ToolRet/NewYorker/Habermas native downloads unresolved; typed and independent train sources supplement capabilities."
+  ],
+  "tests_executed": false,
+  "extra_file_hash_checks": false
+}

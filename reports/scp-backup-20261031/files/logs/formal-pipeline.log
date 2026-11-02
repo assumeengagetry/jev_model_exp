@@ -1,0 +1,15 @@
+{"stage": "waiting_for_complete_new_text_token_cache", "updated_unix": 1793374053.7311664, "plan": "config/training-plan-five-specialists-2026-10-30.md", "formal_training_started": false}
+{"stage": "running_process", "updated_unix": 1793374053.733301, "plan": "config/training-plan-five-specialists-2026-10-30.md", "pid": 35719, "command": ["/home/dev/assumeengage/envs/jev/bin/python", "/home/dev/assumeengage/scripts/finalize-training-cache.py"], "log": "logs/finalize-training-cache.log"}
+{"stage": "starting_formal_training_process", "updated_unix": 1793374057.6603463, "plan": "config/training-plan-five-specialists-2026-10-30.md", "model": "SPECIALIST_KNOWLEDGE", "epochs": 1, "world_size": 4, "pair_cap": null, "token_cap": null}
+{"stage": "running_process", "updated_unix": 1793374057.6677902, "plan": "config/training-plan-five-specialists-2026-10-30.md", "pid": 35783, "command": ["/home/dev/assumeengage/envs/jev/bin/python", "-m", "torch.distributed.run", "--standalone", "--nnodes=1", "--nproc_per_node=4", "/home/dev/assumeengage/scripts/train-pair-model.py", "--model", "SPECIALIST_KNOWLEDGE"], "log": "logs/formal-SPECIALIST_KNOWLEDGE.log"}
+{"stage": "blocked", "updated_unix": 1793374078.7054589, "plan": "config/training-plan-five-specialists-2026-10-30.md", "error": "Actual experiment process exited 1; see logs/formal-SPECIALIST_KNOWLEDGE.log"}
+Traceback (most recent call last):
+  File "/home/dev/assumeengage/scripts/run-formal-experiment.py", line 81, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/dev/assumeengage/scripts/run-formal-experiment.py", line 71, in main
+    run([PYTHON,'-m','torch.distributed.run','--standalone','--nnodes=1','--nproc_per_node=4',
+  File "/home/dev/assumeengage/scripts/run-formal-experiment.py", line 51, in run
+    if code:raise RuntimeError(f'Actual experiment process exited {code}; see {log.relative_to(HOME)}')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Actual experiment process exited 1; see logs/formal-SPECIALIST_KNOWLEDGE.log

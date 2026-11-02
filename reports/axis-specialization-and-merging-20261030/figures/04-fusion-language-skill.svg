@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="800" viewBox="0 0 1540 800" role="img" aria-labelledby="title desc">
+<title id="title">固定融合没有超过混合训练：TIES 最接近，但仍损失约 22%</title><desc id="desc">比较的是相同训练数据曝光总量：混合模型约 15M tokens，等于五个专家各约 3M 的总和。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Source Han Sans CN",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0.00" y="0.00" width="1540.00" height="800.00" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="54.00" y="57.00" fill="#172d43" font-size="29" text-anchor="start" font-weight="700">固定融合没有超过混合训练：TIES 最接近，但仍损失约 22%</text>
+<text x="54.00" y="93.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">比较的是相同训练数据曝光总量：混合模型约 15M tokens，等于五个专家各约 3M 的总和。</text>
+<text x="655.00" y="163.00" fill="#172d43" font-size="21" text-anchor="middle" font-weight="700">Language Skill / 100</text>
+<text x="1190.00" y="163.00" fill="#172d43" font-size="21" text-anchor="middle" font-weight="700">相对混合训练</text>
+<line x1="300.00" y1="190.00" x2="300.00" y2="610.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="300.00" y="640.00" fill="#566d80" font-size="17" text-anchor="middle" font-weight="400">0</text>
+<line x1="477.50" y1="190.00" x2="477.50" y2="610.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="477.50" y="640.00" fill="#566d80" font-size="17" text-anchor="middle" font-weight="400">10</text>
+<line x1="655.00" y1="190.00" x2="655.00" y2="610.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="655.00" y="640.00" fill="#566d80" font-size="17" text-anchor="middle" font-weight="400">20</text>
+<line x1="832.50" y1="190.00" x2="832.50" y2="610.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="832.50" y="640.00" fill="#566d80" font-size="17" text-anchor="middle" font-weight="400">30</text>
+<line x1="1010.00" y1="190.00" x2="1010.00" y2="610.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="1010.00" y="640.00" fill="#566d80" font-size="17" text-anchor="middle" font-weight="400">40</text>
+<text x="270.00" y="253.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="700">混合训练</text>
+<rect x="300.00" y="222.00" width="551.51" height="47.00" rx="4" fill="#126c97" stroke="none" stroke-width="1"/>
+<text x="865.51" y="253.00" fill="#126c97" font-size="24" text-anchor="start" font-weight="700">31.1</text>
+<text x="1190.00" y="253.00" fill="#566d80" font-size="22" text-anchor="middle" font-weight="400">匹配控制</text>
+<text x="270.00" y="355.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="400">TIES融合</text>
+<rect x="300.00" y="324.00" width="432.85" height="47.00" rx="4" fill="#ca6b1c" stroke="none" stroke-width="1"/>
+<text x="746.85" y="355.00" fill="#ca6b1c" font-size="24" text-anchor="start" font-weight="700">24.4</text>
+<text x="1190.00" y="345.00" fill="#ad3d48" font-size="24" text-anchor="middle" font-weight="700">-6.7 分</text>
+<text x="1190.00" y="375.00" fill="#566d80" font-size="18" text-anchor="middle" font-weight="400">相对下降 22%</text>
+<text x="270.00" y="457.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="400">概率集成</text>
+<rect x="300.00" y="426.00" width="365.96" height="47.00" rx="4" fill="#20856f" stroke="none" stroke-width="1"/>
+<text x="679.96" y="457.00" fill="#20856f" font-size="24" text-anchor="start" font-weight="700">20.6</text>
+<text x="1190.00" y="447.00" fill="#ad3d48" font-size="24" text-anchor="middle" font-weight="700">-10.5 分</text>
+<text x="1190.00" y="477.00" fill="#566d80" font-size="18" text-anchor="middle" font-weight="400">相对下降 34%</text>
+<text x="270.00" y="559.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="400">权重平均</text>
+<rect x="300.00" y="528.00" width="361.29" height="47.00" rx="4" fill="#7254a2" stroke="none" stroke-width="1"/>
+<text x="675.29" y="559.00" fill="#7254a2" font-size="24" text-anchor="start" font-weight="700">20.4</text>
+<text x="1190.00" y="549.00" fill="#ad3d48" font-size="24" text-anchor="middle" font-weight="700">-10.7 分</text>
+<text x="1190.00" y="579.00" fill="#566d80" font-size="18" text-anchor="middle" font-weight="400">相对下降 34%</text>
+<line x1="851.51" y1="190.00" x2="851.51" y2="610.00" stroke="#126c97" stroke-width="2" stroke-dasharray="6 6"/>
+<rect x="54.00" y="685.00" width="1432.00" height="72.00" rx="8" fill="#f2f6f9" stroke="none" stroke-width="1"/>
+<text x="76.00" y="715.00" fill="#172d43" font-size="18" text-anchor="start" font-weight="400">TIES、权重平均：各部署一个 0.6B 模型；概率集成：同一问题需要五个专家输出，不是单模型权重融合。</text>
+<text x="76.00" y="743.00" fill="#566d80" font-size="16" text-anchor="start" font-weight="400">本图仅为当前单 seed、短预算实验的观察结果，不把弱专家与融合干扰解释成同一个原因。</text>
+</svg>

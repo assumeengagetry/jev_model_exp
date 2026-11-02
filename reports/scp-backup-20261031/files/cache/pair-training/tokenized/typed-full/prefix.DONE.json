@@ -1,0 +1,9 @@
+{
+  "format": "candidate-pair-v1-separated-prefix-suffix-eos",
+  "source_rows": 2400833,
+  "source_bytes": 630975689,
+  "source_mtime_ns": 1793366197390986527,
+  "rows": 2400833,
+  "tokens": 612383614,
+  "max_length": 83992
+}

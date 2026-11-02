@@ -1,0 +1,1 @@
+{"_id": "621ffdd236468d709f181d82", "id": "legacy-datasets/banking77", "sha": "f54121560de48f2852f90be299010d1d6dc612ec", "siblings": [{"rfilename": ".gitattributes"}, {"rfilename": "README.md"}, {"rfilename": "data/test-00000-of-00001.parquet"}, {"rfilename": "data/train-00000-of-00001.parquet"}]}

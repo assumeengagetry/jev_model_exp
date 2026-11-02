@@ -1,0 +1,38 @@
+{
+  "status": "planned_not_executed",
+  "areas": [
+    {"id": "knowledge", "name": "Knowledge", "dataset": "D_K", "benchmarks": 11},
+    {"id": "language", "name": "Language", "dataset": "D_L", "benchmarks": 9},
+    {"id": "retrieval", "name": "Retrieval", "dataset": "D_R", "benchmarks": 6},
+    {"id": "tools", "name": "Tools", "dataset": "D_T", "benchmarks": 5},
+    {"id": "arts", "name": "Arts", "dataset": "D_A", "benchmarks": 6}
+  ],
+  "stage": "distillation_after_fusion",
+  "student_parent": "One fixed existing Qwen3-0.6B checkpoint chosen after the preceding fusion experiment; all three arms inherit identical weights and trained score head.",
+  "default_parent": "Previous-stage mixed model; a selected merged model may instead be used for all three arms.",
+  "training_models": [
+    {"id": "KD_HARD", "name": "HARD", "header": ["原始标签", "HARD"], "areas": ["knowledge","language","retrieval","tools","arts"], "loss": "CE", "kind": "hard"},
+    {"id": "KD_SOFT", "name": "SOFT", "header": ["Teacher", "SOFT"], "areas": ["knowledge","language","retrieval","tools","arts"], "loss": "KL", "kind": "soft"},
+    {"id": "KD_HYBRID", "name": "HYBRID", "header": ["原始＋Teacher", "HYBRID"], "areas": ["knowledge","language","retrieval","tools","arts"], "loss": "0.5CE＋0.5KL", "kind": "hybrid"}
+  ],
+  "existing_references": ["Student before this distillation-stage continuation"],
+  "new_fusion_models": 0,
+  "student": "Qwen/Qwen3-0.6B",
+  "teacher": "PelaAI/KnowLine-31B-Gen1",
+  "microbatch": 32,
+  "gradient_accumulation": 4,
+  "effective_batch": 128,
+  "peak_lr": 0.00005,
+  "lora_rank": 32,
+  "lora_alpha": 64,
+  "precision": "BF16",
+  "training_max_length": 4096,
+  "hybrid_teacher_weight": 0.5,
+  "formal_training_passes": 1,
+  "teacher_label_semantics": "每个最终训练pair的独立匹配/不匹配二分类概率；不直接使用互斥多选题概率代替匹配概率",
+  "reuse_previous_stage_model_as_hard_result": false,
+  "new_student_training_pass_multiplier": 3,
+  "historical_500k_pair_limit": false,
+  "historical_two_hour_limit": false,
+  "performance_scores": null
+}

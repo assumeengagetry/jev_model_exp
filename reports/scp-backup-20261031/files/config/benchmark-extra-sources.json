@@ -1,0 +1,14 @@
+{
+  "language/acos.tar.gz": "https://codeload.github.com/NUSTM/ACOS/tar.gz/45d179a3dcc6a3dedd848d81b16f2552454805fe",
+  "language/isarcasm.tar.gz": "https://codeload.github.com/iabufarha/iSarcasmEval/tar.gz/dfc708b53bde1bb571abfb5692f63231c2232195",
+  "language/nli4ct.tar.gz": "https://codeload.github.com/ai-systems/Task-2-SemEval-2024/tar.gz/7f32fa6c7db43e577f22e9fc6c28eef1cc6d223e",
+  "language/vast_train.csv": "https://ghfast.top/https://raw.githubusercontent.com/emilyallaway/zero-shot-stance/e7c4775182b184730f350995f8260579c9e066fe/data/VAST/vast_train.csv",
+  "language/ragtruth.tar.gz": "https://codeload.github.com/ParticleMedia/RAGTruth/tar.gz/c103204",
+  "retrieval/hover_train.json": "https://ghfast.top/https://raw.githubusercontent.com/hover-nlp/hover/39b8469/data/hover/hover_train_release_v1.1.json",
+  "retrieval/sgd.tar.gz": "https://codeload.github.com/google-research-datasets/dstc8-schema-guided-dialogue/tar.gz/e852981ae34990f4358979625854259302feaa78",
+  "arts/humicroedit.zip": "https://cs.rochester.edu/u/nhossain/semeval-2020-task-7-dataset.zip",
+  "arts/cfcolor.zip": "https://www.dgp.toronto.edu/~donovan/cfcolor/cfcolor.zip",
+  "arts/habermas.parquet": "https://storage.googleapis.com/habermas_machine/datasets/hm_all_candidate_comparisons.parquet",
+  "games/chessbench-first-train-shard.bag": "https://storage.googleapis.com/searchless_chess/data/train/action_value-00000-of-02148_data.bag",
+  "games/boxoban.tar.gz": "https://codeload.github.com/google-deepmind/boxoban-levels/tar.gz/refs/heads/master"
+}

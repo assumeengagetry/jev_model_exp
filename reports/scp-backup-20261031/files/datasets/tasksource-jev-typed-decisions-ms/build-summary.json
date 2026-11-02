@@ -1,0 +1,16 @@
+{
+  "selected_tasks": 660,
+  "completed_tasks": 660,
+  "failed_tasks": 0,
+  "outdated_datasets": 0,
+  "parquet_files": 2018,
+  "excluded_source_families": [
+    "bigbench/",
+    "mmlu/",
+    "blimp/"
+  ],
+  "build_fingerprint": "491a9042e4f04977",
+  "shard_fingerprints": {
+    "491a9042e4f04977": 660
+  }
+}

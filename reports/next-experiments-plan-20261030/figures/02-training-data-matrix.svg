@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="930" viewBox="0 0 1640 930" role="img" aria-labelledby="title desc">
+<title id="title">蒸馏数据分配：三组共用同一训练池，只改变监督</title><desc id="desc">沿用上一阶段的五方向数据，不重新训练五个专科；颜色不是得分或完成状态。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Source Han Sans CN",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0.00" y="0.00" width="1640.00" height="930.00" fill="#ffffff" stroke="none" rx="0"/>
+<text x="54.00" y="58.00" fill="#172d43" font-size="29" text-anchor="start" font-weight="700">蒸馏数据分配：三组共用同一训练池，只改变监督</text>
+<text x="54.00" y="96.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">沿用上一阶段的五方向数据，不重新训练五个专科；颜色不是得分或完成状态。</text>
+<text x="990.00" y="151.00" fill="#172d43" font-size="23" text-anchor="middle" font-weight="700">共同起点：上一阶段固定的同一个 0.6B Student</text>
+<line x1="450.00" y1="171.00" x2="1530.00" y2="171.00" stroke="#566d80" stroke-width="1"/>
+<text x="630.00" y="203.00" fill="#172d43" font-size="21" text-anchor="middle" font-weight="700">原始标签</text>
+<text x="630.00" y="230.00" fill="#172d43" font-size="21" text-anchor="middle" font-weight="700">HARD</text>
+<text x="990.00" y="203.00" fill="#172d43" font-size="21" text-anchor="middle" font-weight="700">Teacher</text>
+<text x="990.00" y="230.00" fill="#172d43" font-size="21" text-anchor="middle" font-weight="700">SOFT</text>
+<text x="1350.00" y="203.00" fill="#172d43" font-size="21" text-anchor="middle" font-weight="700">原始＋Teacher</text>
+<text x="1350.00" y="230.00" fill="#172d43" font-size="21" text-anchor="middle" font-weight="700">HYBRID</text>
+<text x="428.00" y="283.00" fill="#172d43" font-size="22" text-anchor="end" font-weight="700">Knowledge</text>
+<text x="428.00" y="311.00" fill="#566d80" font-size="17" text-anchor="end" font-weight="400">D_K</text>
+<rect x="451.00" y="244.00" width="358.00" height="80.00" fill="#d5ece3" stroke="none" rx="0"/>
+<text x="630.00" y="275.00" fill="#267c68" font-size="21" text-anchor="middle" font-weight="700">沿用 D_K</text>
+<text x="630.00" y="305.00" fill="#267c68" font-size="19" text-anchor="middle" font-weight="400">CE</text>
+<rect x="811.00" y="244.00" width="358.00" height="80.00" fill="#f8dfbd" stroke="none" rx="0"/>
+<text x="990.00" y="275.00" fill="#a8651b" font-size="21" text-anchor="middle" font-weight="700">沿用 D_K</text>
+<text x="990.00" y="305.00" fill="#a8651b" font-size="19" text-anchor="middle" font-weight="400">KL</text>
+<rect x="1171.00" y="244.00" width="358.00" height="80.00" fill="#e5dcf1" stroke="none" rx="0"/>
+<text x="1350.00" y="275.00" fill="#7455a2" font-size="21" text-anchor="middle" font-weight="700">沿用 D_K</text>
+<text x="1350.00" y="305.00" fill="#7455a2" font-size="19" text-anchor="middle" font-weight="400">0.5CE＋0.5KL</text>
+<text x="428.00" y="365.00" fill="#172d43" font-size="22" text-anchor="end" font-weight="700">Language</text>
+<text x="428.00" y="393.00" fill="#566d80" font-size="17" text-anchor="end" font-weight="400">D_L</text>
+<rect x="451.00" y="326.00" width="358.00" height="80.00" fill="#d5ece3" stroke="none" rx="0"/>
+<text x="630.00" y="357.00" fill="#267c68" font-size="21" text-anchor="middle" font-weight="700">沿用 D_L</text>
+<text x="630.00" y="387.00" fill="#267c68" font-size="19" text-anchor="middle" font-weight="400">CE</text>
+<rect x="811.00" y="326.00" width="358.00" height="80.00" fill="#f8dfbd" stroke="none" rx="0"/>
+<text x="990.00" y="357.00" fill="#a8651b" font-size="21" text-anchor="middle" font-weight="700">沿用 D_L</text>
+<text x="990.00" y="387.00" fill="#a8651b" font-size="19" text-anchor="middle" font-weight="400">KL</text>
+<rect x="1171.00" y="326.00" width="358.00" height="80.00" fill="#e5dcf1" stroke="none" rx="0"/>
+<text x="1350.00" y="357.00" fill="#7455a2" font-size="21" text-anchor="middle" font-weight="700">沿用 D_L</text>
+<text x="1350.00" y="387.00" fill="#7455a2" font-size="19" text-anchor="middle" font-weight="400">0.5CE＋0.5KL</text>
+<text x="428.00" y="447.00" fill="#172d43" font-size="22" text-anchor="end" font-weight="700">Retrieval</text>
+<text x="428.00" y="475.00" fill="#566d80" font-size="17" text-anchor="end" font-weight="400">D_R</text>
+<rect x="451.00" y="408.00" width="358.00" height="80.00" fill="#d5ece3" stroke="none" rx="0"/>
+<text x="630.00" y="439.00" fill="#267c68" font-size="21" text-anchor="middle" font-weight="700">沿用 D_R</text>
+<text x="630.00" y="469.00" fill="#267c68" font-size="19" text-anchor="middle" font-weight="400">CE</text>
+<rect x="811.00" y="408.00" width="358.00" height="80.00" fill="#f8dfbd" stroke="none" rx="0"/>
+<text x="990.00" y="439.00" fill="#a8651b" font-size="21" text-anchor="middle" font-weight="700">沿用 D_R</text>
+<text x="990.00" y="469.00" fill="#a8651b" font-size="19" text-anchor="middle" font-weight="400">KL</text>
+<rect x="1171.00" y="408.00" width="358.00" height="80.00" fill="#e5dcf1" stroke="none" rx="0"/>
+<text x="1350.00" y="439.00" fill="#7455a2" font-size="21" text-anchor="middle" font-weight="700">沿用 D_R</text>
+<text x="1350.00" y="469.00" fill="#7455a2" font-size="19" text-anchor="middle" font-weight="400">0.5CE＋0.5KL</text>
+<text x="428.00" y="529.00" fill="#172d43" font-size="22" text-anchor="end" font-weight="700">Tools</text>
+<text x="428.00" y="557.00" fill="#566d80" font-size="17" text-anchor="end" font-weight="400">D_T</text>
+<rect x="451.00" y="490.00" width="358.00" height="80.00" fill="#d5ece3" stroke="none" rx="0"/>
+<text x="630.00" y="521.00" fill="#267c68" font-size="21" text-anchor="middle" font-weight="700">沿用 D_T</text>
+<text x="630.00" y="551.00" fill="#267c68" font-size="19" text-anchor="middle" font-weight="400">CE</text>
+<rect x="811.00" y="490.00" width="358.00" height="80.00" fill="#f8dfbd" stroke="none" rx="0"/>
+<text x="990.00" y="521.00" fill="#a8651b" font-size="21" text-anchor="middle" font-weight="700">沿用 D_T</text>
+<text x="990.00" y="551.00" fill="#a8651b" font-size="19" text-anchor="middle" font-weight="400">KL</text>
+<rect x="1171.00" y="490.00" width="358.00" height="80.00" fill="#e5dcf1" stroke="none" rx="0"/>
+<text x="1350.00" y="521.00" fill="#7455a2" font-size="21" text-anchor="middle" font-weight="700">沿用 D_T</text>
+<text x="1350.00" y="551.00" fill="#7455a2" font-size="19" text-anchor="middle" font-weight="400">0.5CE＋0.5KL</text>
+<text x="428.00" y="611.00" fill="#172d43" font-size="22" text-anchor="end" font-weight="700">Arts</text>
+<text x="428.00" y="639.00" fill="#566d80" font-size="17" text-anchor="end" font-weight="400">D_A</text>
+<rect x="451.00" y="572.00" width="358.00" height="80.00" fill="#d5ece3" stroke="none" rx="0"/>
+<text x="630.00" y="603.00" fill="#267c68" font-size="21" text-anchor="middle" font-weight="700">沿用 D_A</text>
+<text x="630.00" y="633.00" fill="#267c68" font-size="19" text-anchor="middle" font-weight="400">CE</text>
+<rect x="811.00" y="572.00" width="358.00" height="80.00" fill="#f8dfbd" stroke="none" rx="0"/>
+<text x="990.00" y="603.00" fill="#a8651b" font-size="21" text-anchor="middle" font-weight="700">沿用 D_A</text>
+<text x="990.00" y="633.00" fill="#a8651b" font-size="19" text-anchor="middle" font-weight="400">KL</text>
+<rect x="1171.00" y="572.00" width="358.00" height="80.00" fill="#e5dcf1" stroke="none" rx="0"/>
+<text x="1350.00" y="603.00" fill="#7455a2" font-size="21" text-anchor="middle" font-weight="700">沿用 D_A</text>
+<text x="1350.00" y="633.00" fill="#7455a2" font-size="19" text-anchor="middle" font-weight="400">0.5CE＋0.5KL</text>
+<rect x="240.00" y="711.00" width="25.00" height="25.00" fill="#d5ece3" stroke="none" rx="0"/>
+<text x="278.00" y="731.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">原始标签 HARD</text>
+<rect x="670.00" y="711.00" width="25.00" height="25.00" fill="#f8dfbd" stroke="none" rx="0"/>
+<text x="708.00" y="731.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">Teacher 软标签 SOFT</text>
+<rect x="1100.00" y="711.00" width="25.00" height="25.00" fill="#e5dcf1" stroke="none" rx="0"/>
+<text x="1138.00" y="731.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">原始＋Teacher HYBRID</text>
+<rect x="54.00" y="786.00" width="1532.00" height="88.00" fill="#f2f6f9" stroke="none" rx="8"/>
+<text x="78.00" y="821.00" fill="#172d43" font-size="21" text-anchor="start" font-weight="700">每组完整训练同一份 D_DISTILL 一遍：HARD、SOFT、HYBRID 各 T tokens，本轮共新增 3T。</text>
+<text x="78.00" y="856.00" fill="#566d80" font-size="18" text-anchor="start" font-weight="400">上一阶段 Student 仅作未续训参照；不能将它直接登记为本轮已经完成的 HARD 训练。</text>
+</svg>

@@ -1,0 +1,183 @@
+{
+  "scope": "Archived Language-only aggregate verification; no model loading, training or official per-request rescoring.",
+  "source_sha256": {
+    "research/lu-specialist-fusion-20261029T152144Z/fusion-report.json": "c60040d5a1fdfd4a4c303cfb6dc0a9f67b77723d899dd76f505044d337f24e20",
+    "research/lu-specialist-fusion-20261029T152144Z/nine-benchmark-scores.csv": "c33b09e2a4b0fa8bc969407256fa52fae5de192487312415c8dbec34b33eb20d",
+    "research/lu-specialist-fusion-20261029T152144Z/specialization-dev.csv": "ac65031e1f140d97a326a541515a36f5ec50c0317ed27053d4d51e2761758679",
+    "research/lu-specialist-fusion-20261029T152144Z/native-dev-metrics.csv": "92c18101a1743ddbcd9027f88948af5706f08f6211c727f4cd4b239467abd3e0",
+    "research/lu-specialist-fusion-20261029T152144Z/fusion-deltas.csv": "fdec39814610a1c7c43782e6d7668ce05ed61e4a4d0a31a7858b3015c7943af1"
+  },
+  "summary": {
+    "ANLI": {
+      "code": "ANLI",
+      "name": "ANLI专家",
+      "language_skill": 17.921239368950232,
+      "language_skill_delta": -13.149989048576955,
+      "relative_skill_change_percent": -42.32207646209149,
+      "natural_pair_macro_f1": 0.8928764590763647,
+      "native_10task_macro": 0.38352183800701234,
+      "D0_task_macro_pair_f1": 0.7919512665269123,
+      "new_training_tokens": 2999592,
+      "optimizer_steps": 180,
+      "inference_models": 1
+    },
+    "HELLASWAG": {
+      "code": "HELLASWAG",
+      "name": "HellaSwag专家",
+      "language_skill": 19.33370305644892,
+      "language_skill_delta": -11.73752536107827,
+      "relative_skill_change_percent": -37.77618703500363,
+      "natural_pair_macro_f1": 0.7770980166157138,
+      "native_10task_macro": 0.37557274212826125,
+      "D0_task_macro_pair_f1": 0.7672666347831747,
+      "new_training_tokens": 2999879,
+      "optimizer_steps": 219,
+      "inference_models": 1
+    },
+    "ACOS": {
+      "code": "ACOS",
+      "name": "ACOS专家",
+      "language_skill": 19.199074661231386,
+      "language_skill_delta": -11.872153756295802,
+      "relative_skill_change_percent": -38.209476615346034,
+      "natural_pair_macro_f1": 0.8729528642777202,
+      "native_10task_macro": 0.40180223202515364,
+      "D0_task_macro_pair_f1": 0.792469606949532,
+      "new_training_tokens": 2996204,
+      "optimizer_steps": 197,
+      "inference_models": 1
+    },
+    "ISARCASM": {
+      "code": "ISARCASM",
+      "name": "英语讽刺专家",
+      "language_skill": 16.753108597618606,
+      "language_skill_delta": -14.318119819908581,
+      "relative_skill_change_percent": -46.081602012979225,
+      "natural_pair_macro_f1": 0.8834249224639443,
+      "native_10task_macro": 0.3459463747607231,
+      "D0_task_macro_pair_f1": 0.7966869959544051,
+      "new_training_tokens": 2999878,
+      "optimizer_steps": 433,
+      "inference_models": 1
+    },
+    "RAGTRUTH": {
+      "code": "RAGTRUTH",
+      "name": "RAGTruth专家",
+      "language_skill": 19.257504071850313,
+      "language_skill_delta": -11.813724345676874,
+      "relative_skill_change_percent": -38.0214267261245,
+      "natural_pair_macro_f1": 0.8446539183531336,
+      "native_10task_macro": 0.25907530088113,
+      "D0_task_macro_pair_f1": 0.7905637350194322,
+      "new_training_tokens": 2999787,
+      "optimizer_steps": 27,
+      "inference_models": 1
+    },
+    "MIXED": {
+      "code": "MIXED",
+      "name": "混合训练",
+      "language_skill": 31.071228417527188,
+      "language_skill_delta": 0.0,
+      "relative_skill_change_percent": 0.0,
+      "natural_pair_macro_f1": 0.9107881144555878,
+      "native_10task_macro": 0.5154575443804189,
+      "D0_task_macro_pair_f1": 0.777345541683884,
+      "new_training_tokens": 14995340,
+      "optimizer_steps": 1055,
+      "inference_models": 1
+    },
+    "TIES": {
+      "code": "TIES",
+      "name": "TIES融合",
+      "language_skill": 24.38581012608429,
+      "language_skill_delta": -6.685418291442897,
+      "relative_skill_change_percent": -21.516427357187048,
+      "natural_pair_macro_f1": 0.884938698626313,
+      "native_10task_macro": 0.3675864726390404,
+      "D0_task_macro_pair_f1": 0.7907034704293872,
+      "new_training_tokens": 0,
+      "optimizer_steps": 0,
+      "inference_models": 1
+    },
+    "LINEAR": {
+      "code": "LINEAR",
+      "name": "权重平均",
+      "language_skill": 20.35413669838998,
+      "language_skill_delta": -10.717091719137208,
+      "relative_skill_change_percent": -34.49201162929152,
+      "natural_pair_macro_f1": 0.8423545742556653,
+      "native_10task_macro": 0.3148763596189229,
+      "D0_task_macro_pair_f1": 0.7994950559442304,
+      "new_training_tokens": 0,
+      "optimizer_steps": 0,
+      "inference_models": 1
+    },
+    "PROBABILITY_MEAN": {
+      "code": "PROBABILITY_MEAN",
+      "name": "概率集成",
+      "language_skill": 20.617505811657335,
+      "language_skill_delta": -10.453722605869853,
+      "relative_skill_change_percent": -33.64438143672793,
+      "natural_pair_macro_f1": 0.8966068676137099,
+      "native_10task_macro": 0.3903533787015108,
+      "D0_task_macro_pair_f1": 0.8025088914071767,
+      "new_training_tokens": 0,
+      "optimizer_steps": 0,
+      "inference_models": 5
+    }
+  },
+  "specialization": [
+    {
+      "code": "ANLI",
+      "expert_native": 0.4171592555071127,
+      "mixed_native": 0.42477650365136765,
+      "native_difference_pp": -0.7617248144254962,
+      "expert_public_skill": 11.159376872378672,
+      "mixed_public_skill": 13.870581186339129,
+      "public_skill_difference": -2.7112043139604562
+    },
+    {
+      "code": "HELLASWAG",
+      "expert_native": 0.6616643929058663,
+      "mixed_native": 0.6384720327421555,
+      "native_difference_pp": 2.3192360163710846,
+      "expert_public_skill": 54.84,
+      "mixed_public_skill": 53.61333333333334,
+      "public_skill_difference": 1.2266666666666666
+    },
+    {
+      "code": "ACOS",
+      "expert_native": 0.3936751455755608,
+      "mixed_native": 0.4054627161548856,
+      "native_difference_pp": -1.178757057932478,
+      "expert_public_skill": 36.64602683178534,
+      "mixed_public_skill": 37.07946336429308,
+      "public_skill_difference": -0.4334365325077414
+    },
+    {
+      "code": "ISARCASM",
+      "expert_native": 0.39628482972136225,
+      "mixed_native": 0.39344262295081966,
+      "native_difference_pp": 0.2842206770542588,
+      "expert_public_skill": 12.22,
+      "mixed_public_skill": 19.24,
+      "public_skill_difference": -7.019999999999998
+    },
+    {
+      "code": "RAGTRUTH",
+      "expert_native": 0.30843618957195984,
+      "mixed_native": 0.6791352816157803,
+      "native_difference_pp": -37.06990920438204,
+      "expert_public_skill": 25.480000000000004,
+      "mixed_public_skill": 41.07,
+      "public_skill_difference": -15.589999999999996
+    }
+  ],
+  "benchmark_scores_checked": 81,
+  "native_task_rows_checked": 90,
+  "actual_training_tokens_experts_and_mixed": 14995340,
+  "all_schemes_requests": 31715,
+  "natural_dev_pairs": 67202,
+  "errors": 0,
+  "coverage": 1.0
+}

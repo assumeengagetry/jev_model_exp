@@ -1,0 +1,22 @@
+{
+  "name": "clinc150",
+  "area": "retrieval",
+  "repo": "clinc/clinc_oos",
+  "patterns": [
+    "plus/train-*.parquet"
+  ],
+  "revision": "155b9c710419136e17307b80d0a13e68cd46b4ec",
+  "status": "downloaded",
+  "files": [
+    {
+      "path": "datasets/benchmarks-train/retrieval/clinc150/plus/train-00000-of-00001.parquet",
+      "bytes": 312096,
+      "status": "present"
+    },
+    {
+      "path": "datasets/benchmarks-train/retrieval/clinc150/README.md",
+      "bytes": 23960,
+      "status": "present"
+    }
+  ]
+}

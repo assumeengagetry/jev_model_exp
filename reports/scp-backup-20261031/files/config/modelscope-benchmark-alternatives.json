@@ -1,0 +1,70 @@
+[
+  {
+    "repo": "allenai/winogrande",
+    "status": 200,
+    "id": 107285,
+    "bytes": 4621560,
+    "description": ""
+  },
+  {
+    "repo": "facebook/anli",
+    "status": 200,
+    "id": 104457,
+    "bytes": 26299245,
+    "description": ""
+  },
+  {
+    "repo": "nv-community/When2Call",
+    "status": 200,
+    "id": 98213,
+    "bytes": 63428282,
+    "description": ""
+  },
+  {
+    "repo": "Rowan/hellaswag",
+    "status": 404
+  },
+  {
+    "repo": "cais/mmlu",
+    "status": 200,
+    "id": 66741,
+    "bytes": 270057603,
+    "description": ""
+  },
+  {
+    "repo": "jmhessel/newyorker_caption_contest",
+    "status": 404
+  },
+  {
+    "repo": "mangopy/ToolRet-Training-20w",
+    "status": 404
+  },
+  {
+    "repo": "liminghao1630/API-Bank",
+    "status": 404
+  },
+  {
+    "repo": "tasksource/esci",
+    "status": 404
+  },
+  {
+    "repo": "tasksource/contract-nli",
+    "status": 404
+  },
+  {
+    "repo": "google-deepmind/chessbench",
+    "status": 404
+  },
+  {
+    "repo": "AI-ModelScope/chessbench",
+    "status": 404
+  },
+  {
+    "repo": "modelscope/anli",
+    "status": 404
+  },
+  {
+    "repo": "modelscope/tasksource-jev-typed-decisions",
+    "status": 404
+  }
+]

@@ -1,0 +1,315 @@
+{
+  "upstream_repo": "tasksource/tasksource-jev-typed-decisions",
+  "mirror_repo": "saiting/tasksource-jev-typed-decisions",
+  "source": "ModelScope domestic public snapshot",
+  "configs": [
+    "default",
+    "full",
+    "filtered-full"
+  ],
+  "note": "Separate mirror snapshot, not mixed with the newer incomplete HF snapshot.",
+  "extra_file_hash_checks": false,
+  "files": [
+    {
+      "file": "build-summary.json",
+      "status": "downloaded",
+      "bytes": 308,
+      "mirror_file_revision": "a56913e86d00c8ca81df2b400053c4e5d01d237c"
+    },
+    {
+      "file": "filtered-full/README.md",
+      "status": "downloaded",
+      "bytes": 5158,
+      "mirror_file_revision": "8aef3318b1a330fa597ee5987a4eb638222f5091"
+    },
+    {
+      "file": "filtered-full/filtering-report.json",
+      "status": "downloaded",
+      "bytes": 22170,
+      "mirror_file_revision": "7c8e4e943ed370ba3760d1a86a27be3b819e8118"
+    },
+    {
+      "file": "README.md",
+      "status": "downloaded",
+      "bytes": 23328,
+      "mirror_file_revision": "dadd8ab9b032a3e799d109740217573e974659bc"
+    },
+    {
+      "file": "sources.yaml",
+      "status": "downloaded",
+      "bytes": 234094,
+      "mirror_file_revision": "ddf017776c6d4fe9e9fdf8a360d7df7e7b4c13c0"
+    },
+    {
+      "file": "data/test-webinstruct-05e8b528d68c.parquet",
+      "status": "downloaded",
+      "bytes": 34517,
+      "mirror_file_revision": "0464d5f15128a09f0e7adfdf5b98e891b351e1ea"
+    },
+    {
+      "file": "data/test-00000-of-00001.parquet",
+      "status": "downloaded",
+      "bytes": 5800227,
+      "mirror_file_revision": "4bd520ad56968559861863d29e0a788595dc0141"
+    },
+    {
+      "file": "full/test-webinstruct-05e8b528d68c.parquet",
+      "status": "downloaded",
+      "bytes": 34517,
+      "mirror_file_revision": "96ba3c7c9499973d7c4026cdb2e88e222feabd7a"
+    },
+    {
+      "file": "full/test-00000-of-00001.parquet",
+      "status": "downloaded",
+      "bytes": 5800227,
+      "mirror_file_revision": "38d07055cec9b3d2e074d8024f1d3f5a96854a4c"
+    },
+    {
+      "file": "full/test-tasksource-addition-167c5ad6fb79.parquet",
+      "status": "downloaded",
+      "bytes": 3860466,
+      "mirror_file_revision": "a96978adaf0a05f75b9b09276d1572d11e432444"
+    },
+    {
+      "file": "data/test-tasksource-addition-167c5ad6fb79.parquet",
+      "status": "downloaded",
+      "bytes": 3860466,
+      "mirror_file_revision": "1f4fb735974ff6589fd5289ba58d6ad05a123ffc"
+    },
+    {
+      "file": "filtered-full/train-00000-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 39504229,
+      "mirror_file_revision": "0d5f4e15e67a534cf96f6fd9605923be9cf25694"
+    },
+    {
+      "file": "data/train-00000-of-00005.parquet",
+      "status": "downloaded",
+      "bytes": 103701841,
+      "mirror_file_revision": "4a1f29e39a3ed6a8b52ab451d8fd4591ffde5860"
+    },
+    {
+      "file": "full/train-00000-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 92567139,
+      "mirror_file_revision": "ef5b9497405c96628d44491ef5fd1e8eadbe09af"
+    },
+    {
+      "file": "filtered-full/train-00001-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 39515890,
+      "mirror_file_revision": "e790ed4af01994445b1d0ba9137cbc4e3198e7aa"
+    },
+    {
+      "file": "filtered-full/train-00002-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 40300306,
+      "mirror_file_revision": "015db32b026be041e718d1c0958e949ceb4293c9"
+    },
+    {
+      "file": "data/train-00003-of-00005.parquet",
+      "status": "downloaded",
+      "bytes": 104413919,
+      "mirror_file_revision": "bd378546305f84a99ad3ba836d325d1a2f24aef7"
+    },
+    {
+      "file": "filtered-full/train-00003-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 39285054,
+      "mirror_file_revision": "013c9bdd467e2a1576b71bcad1aa898dd4eef53b"
+    },
+    {
+      "file": "full/train-00001-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 91841649,
+      "mirror_file_revision": "e081d4490ee4acbd17e13eca0ba8aaa928c2f968"
+    },
+    {
+      "file": "full/train-00003-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 92588076,
+      "mirror_file_revision": "007f578fad8ae0fa617c7a49170dfcf2ea18632f"
+    },
+    {
+      "file": "filtered-full/train-00004-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 39637820,
+      "mirror_file_revision": "2d6bfcd5292ef1eaed06ae4758b2322575f052f2"
+    },
+    {
+      "file": "full/train-00004-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 92209176,
+      "mirror_file_revision": "a6f80d23c8a8e7e5789073d547420a47a320990b"
+    },
+    {
+      "file": "filtered-full/train-00005-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 39429254,
+      "mirror_file_revision": "905fba39bd2536e24a8af871e65b9e8c2492d619"
+    },
+    {
+      "file": "filtered-full/train-00006-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 39369856,
+      "mirror_file_revision": "74d57f9ff78b1fa1022ae1424375873c552705a1"
+    },
+    {
+      "file": "full/train-00005-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 91479779,
+      "mirror_file_revision": "d07e66f381edf528207ecdc17b66ed22afc9dd4f"
+    },
+    {
+      "file": "full/train-00002-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 92124179,
+      "mirror_file_revision": "4d34865f3c2bcf9a0384b4e3510bb712147ebd5e"
+    },
+    {
+      "file": "data/train-00004-of-00005.parquet",
+      "status": "downloaded",
+      "bytes": 103719910,
+      "mirror_file_revision": "c3f28129d8c34983fae46f8d86108544eb12c249"
+    },
+    {
+      "file": "filtered-full/train-00007-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 39481907,
+      "mirror_file_revision": "bb002d6b3e9bcfae124d5a3503cb9504ee344404"
+    },
+    {
+      "file": "data/train-00001-of-00005.parquet",
+      "status": "downloaded",
+      "bytes": 103442731,
+      "mirror_file_revision": "9781bc20ac118f3f656fad6cdd7a97694a1548bc"
+    },
+    {
+      "file": "filtered-full/train-00009-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 39650802,
+      "mirror_file_revision": "cbabb15d4613b95e732098990355e1929a9236b3"
+    },
+    {
+      "file": "data/train-00002-of-00005.parquet",
+      "status": "downloaded",
+      "bytes": 104804208,
+      "mirror_file_revision": "49061b5b085c4bfb992423d07b28d928d37aca98"
+    },
+    {
+      "file": "full/train-00007-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 91662667,
+      "mirror_file_revision": "b62c8ee9f7e989cb7f08ec3086b11edd7fe88f8f"
+    },
+    {
+      "file": "filtered-full/train-00010-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 39731352,
+      "mirror_file_revision": "09822d03a579517a8205468ad7ecef03d6404634"
+    },
+    {
+      "file": "filtered-full/train-00008-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 39849999,
+      "mirror_file_revision": "9d8307175715c73d2befc9a75ca5e5c619201e38"
+    },
+    {
+      "file": "full/train-00010-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 92128326,
+      "mirror_file_revision": "f05c6aebc6cc07035cf3dc453ab51e6c3a7b4c93"
+    },
+    {
+      "file": "full/train-00008-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 92038322,
+      "mirror_file_revision": "a66374db24e54a73d16f89218ee7f246e32bb7be"
+    },
+    {
+      "file": "full/train-00006-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 91998795,
+      "mirror_file_revision": "10d6b1d1c33e4ff90f529a55e51ceda4af8c7d99"
+    },
+    {
+      "file": "full/train-00011-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 91215179,
+      "mirror_file_revision": "f663a2d22d377af5c37b1f73476c700c7f8bb6f6"
+    },
+    {
+      "file": "filtered-full/train-00011-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 39593889,
+      "mirror_file_revision": "36b75c26d4d9cdfb0e9b73a01d1eccb9397165aa"
+    },
+    {
+      "file": "full/train-00012-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 93101906,
+      "mirror_file_revision": "4edf163032c12fdcda8c9b0c4fe21aff69205d4d"
+    },
+    {
+      "file": "full/train-webinstruct-05e8b528d68c.parquet",
+      "status": "downloaded",
+      "bytes": 6030383,
+      "mirror_file_revision": "83dd583ac1a822c2ecdd10da8df01b0380532f6f"
+    },
+    {
+      "file": "full/validation-00000-of-00001.parquet",
+      "status": "downloaded",
+      "bytes": 5737942,
+      "mirror_file_revision": "1d17ea6d0a106c26d2deaa32ba90ef789d1d1e93"
+    },
+    {
+      "file": "data/train-webinstruct-05e8b528d68c.parquet",
+      "status": "downloaded",
+      "bytes": 6030383,
+      "mirror_file_revision": "83db6b11a01da1bd7c749f5b826c2a3cc350c593"
+    },
+    {
+      "file": "full/validation-tasksource-addition-167c5ad6fb79.parquet",
+      "status": "downloaded",
+      "bytes": 3294308,
+      "mirror_file_revision": "a5fddb41b43f1b856e8ea9280e4d892395c99496"
+    },
+    {
+      "file": "data/validation-00000-of-00001.parquet",
+      "status": "downloaded",
+      "bytes": 5737942,
+      "mirror_file_revision": "15880f0baa64d49c73cc0c4d9c9b549d72727f22"
+    },
+    {
+      "file": "data/validation-tasksource-addition-167c5ad6fb79.parquet",
+      "status": "downloaded",
+      "bytes": 3294308,
+      "mirror_file_revision": "43a9962162d13952467ec7e87d4c92d7792674fb"
+    },
+    {
+      "file": "full/train-tasksource-addition-167c5ad6fb79.parquet",
+      "status": "downloaded",
+      "bytes": 31257875,
+      "mirror_file_revision": "c2953f776d5ffa33aa8636107c8da228cd86b264"
+    },
+    {
+      "file": "filtered-full/train-00012-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 40282835,
+      "mirror_file_revision": "bc0b26739f05627359a244a14f0200916315911d"
+    },
+    {
+      "file": "data/train-tasksource-addition-167c5ad6fb79.parquet",
+      "status": "downloaded",
+      "bytes": 31257875,
+      "mirror_file_revision": "c5328f1a5e23bd4f628ddaf202422b455f1b0c77"
+    },
+    {
+      "file": "full/train-00009-of-00013.parquet",
+      "status": "downloaded",
+      "bytes": 91996419,
+      "mirror_file_revision": "6354713c34e1bee6c0082424aae243dc6cbcba7c"
+    }
+  ],
+  "complete": true
+}

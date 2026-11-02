@@ -1,0 +1,90 @@
+{
+  "scope": "Evidence in the current local archive; no training or Teacher/Student execution.",
+  "source_sha256": {
+    "reports/experiment-dashboard/data.json": "071b64841f88c12383fe8aa093b94685fc3c2cd7fce8ff1314f60f51a4d587f5",
+    "reports/experiment-dashboard/build_data.py": "5359186b0c679a02199580138bd5a97ea42bc7207f11004b908a69bb9781a19a",
+    "reports/experiment-roadmap-status-20261029.md": "241161d083cb7be14ac6e64b68e21fcaa5bb2864c1279941881e454a5d9fd739",
+    "reports/language-understanding-study-20261029/runs-through-pair-ratio.csv": "63fee72d75e8f3e35723aabd959613430157ec40ee3245774aaa8cb55535eac6",
+    "research/lu-specialist-fusion-20261029T152144Z/dashboard-runs.csv": "b805a81f8d16b7492c5aad30b32c064a0169877325cf2fcda31002351165744f",
+    "reports/teacher-distillation-evidence-20261030/teacher-snapshot.json": "01d1902b61f494868cb122b64e884ebedf21d4b22e00007681ba8e495131e1bf"
+  },
+  "dashboard_generated": "2026-10-30T02:56:38+00:00",
+  "full_result_count": 104,
+  "student_result_rows": 0,
+  "reported_labelled_pairs": 9998,
+  "planned_teacher_questions": 4166,
+  "completed_teacher_questions_verified": null,
+  "historical_download_gb": 62.6,
+  "historical_download_files": 31,
+  "historical_download_timestamp": "2026-10-30T02:30:52+00:00",
+  "local_teacher_root_exists": false,
+  "labels_present_locally": false,
+  "teacher_label_quality_measured_locally": false,
+  "baselines": [
+    {
+      "code": "R0",
+      "plot_name": "R0",
+      "score_mean": 17.74074225679047,
+      "sample_std": 0,
+      "seed_count": 1,
+      "tokens_per_endpoint": 342474304,
+      "seed_scores": [
+        17.74074225679047
+      ]
+    },
+    {
+      "code": "JOINT",
+      "plot_name": "硬标签 r16",
+      "score_mean": 33.74017276950995,
+      "sample_std": 0.5231516786835325,
+      "seed_count": 4,
+      "tokens_per_endpoint": 50000000,
+      "seed_scores": [
+        33.26374254736872,
+        34.38158651316732,
+        33.94841792455391,
+        33.36694409294984
+      ]
+    },
+    {
+      "code": "LR32",
+      "plot_name": "硬标签 r32",
+      "score_mean": 35.04917625169091,
+      "sample_std": 0.95927573635325,
+      "seed_count": 4,
+      "tokens_per_endpoint": 50000000,
+      "seed_scores": [
+        34.03111719014396,
+        35.07294705491715,
+        36.33032163750431,
+        34.762319124198214
+      ]
+    }
+  ],
+  "students": [
+    {
+      "arm": "HARD",
+      "supervision": "人工标签",
+      "language_skill": null,
+      "native_dev": null,
+      "trained_checkpoint_found": false,
+      "status": "not_found_in_local_completed_results"
+    },
+    {
+      "arm": "SOFT",
+      "supervision": "Teacher 软标签",
+      "language_skill": null,
+      "native_dev": null,
+      "trained_checkpoint_found": false,
+      "status": "not_found_in_local_completed_results"
+    },
+    {
+      "arm": "HYBRID",
+      "supervision": "人工＋Teacher",
+      "language_skill": null,
+      "native_dev": null,
+      "trained_checkpoint_found": false,
+      "status": "not_found_in_local_completed_results"
+    }
+  ]
+}

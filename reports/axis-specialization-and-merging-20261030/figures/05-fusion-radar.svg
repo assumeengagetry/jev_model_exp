@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1090" viewBox="0 0 1540 1090" role="img" aria-labelledby="title desc">
+<title id="title">能力轮廓：融合损失主要落在 HellaSwag、ACOS 和 RAGTruth</title><desc id="desc">九条轴均为公开 benchmark Skill，统一 0–100；雷达面积不是 Language 总分。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Source Han Sans CN",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0.00" y="0.00" width="1540.00" height="1090.00" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="54.00" y="57.00" fill="#172d43" font-size="29" text-anchor="start" font-weight="700">能力轮廓：融合损失主要落在 HellaSwag、ACOS 和 RAGTruth</text>
+<text x="54.00" y="93.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">九条轴均为公开 benchmark Skill，统一 0–100；雷达面积不是 Language 总分。</text>
+<polygon points="600.00,494.60 645.25,511.07 669.33,552.78 660.97,600.20 624.08,631.15 575.92,631.15 539.03,600.20 530.67,552.78 554.75,511.07" stroke="#d9e4ec" fill="none" fill-opacity="1" stroke-width="1"/>
+<polygon points="600.00,424.20 690.50,457.14 738.66,540.55 721.94,635.40 648.16,697.31 551.84,697.31 478.06,635.40 461.34,540.55 509.50,457.14" stroke="#d9e4ec" fill="none" fill-opacity="1" stroke-width="1"/>
+<polygon points="600.00,353.80 735.76,403.21 807.99,528.33 782.90,670.60 672.23,763.46 527.77,763.46 417.10,670.60 392.01,528.33 464.24,403.21" stroke="#d9e4ec" fill="none" fill-opacity="1" stroke-width="1"/>
+<polygon points="600.00,283.40 781.01,349.28 877.32,516.10 843.87,705.80 696.31,829.62 503.69,829.62 356.13,705.80 322.68,516.10 418.99,349.28" stroke="#d9e4ec" fill="none" fill-opacity="1" stroke-width="1"/>
+<polygon points="600.00,213.00 826.26,295.35 946.65,503.88 904.84,741.00 720.39,895.77 479.61,895.77 295.16,741.00 253.35,503.88 373.74,295.35" stroke="#d9e4ec" fill="#fafcfd" fill-opacity="1" stroke-width="1"/>
+<polygon points="600.00,494.60 645.25,511.07 669.33,552.78 660.97,600.20 624.08,631.15 575.92,631.15 539.03,600.20 530.67,552.78 554.75,511.07" stroke="#d9e4ec" fill="none" fill-opacity="1" stroke-width="1"/>
+<polygon points="600.00,424.20 690.50,457.14 738.66,540.55 721.94,635.40 648.16,697.31 551.84,697.31 478.06,635.40 461.34,540.55 509.50,457.14" stroke="#d9e4ec" fill="none" fill-opacity="1" stroke-width="1"/>
+<polygon points="600.00,353.80 735.76,403.21 807.99,528.33 782.90,670.60 672.23,763.46 527.77,763.46 417.10,670.60 392.01,528.33 464.24,403.21" stroke="#d9e4ec" fill="none" fill-opacity="1" stroke-width="1"/>
+<polygon points="600.00,283.40 781.01,349.28 877.32,516.10 843.87,705.80 696.31,829.62 503.69,829.62 356.13,705.80 322.68,516.10 418.99,349.28" stroke="#d9e4ec" fill="none" fill-opacity="1" stroke-width="1"/>
+<line x1="600.00" y1="565.00" x2="600.00" y2="213.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="600.00" y="163.68" fill="#172d43" font-size="21" text-anchor="middle" font-weight="400">ContractNLI</text>
+<line x1="600.00" y1="565.00" x2="826.26" y2="295.35" stroke="#d9e4ec" stroke-width="1"/>
+<text x="862.46" y="259.21" fill="#172d43" font-size="21" text-anchor="start" font-weight="400">ANLI</text>
+<line x1="600.00" y1="565.00" x2="946.65" y2="503.88" stroke="#d9e4ec" stroke-width="1"/>
+<text x="1002.12" y="501.10" fill="#172d43" font-size="21" text-anchor="start" font-weight="400">HellaSwag</text>
+<line x1="600.00" y1="565.00" x2="904.84" y2="741.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="953.62" y="776.16" fill="#172d43" font-size="21" text-anchor="start" font-weight="400">ACOS</text>
+<line x1="600.00" y1="565.00" x2="720.39" y2="895.77" stroke="#d9e4ec" stroke-width="1"/>
+<text x="739.65" y="955.70" fill="#172d43" font-size="21" text-anchor="start" font-weight="400">FinEntity</text>
+<line x1="600.00" y1="565.00" x2="479.61" y2="895.77" stroke="#d9e4ec" stroke-width="1"/>
+<text x="460.35" y="955.70" fill="#172d43" font-size="21" text-anchor="end" font-weight="400">iSarcasmEval</text>
+<line x1="600.00" y1="565.00" x2="295.16" y2="741.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="246.38" y="776.16" fill="#172d43" font-size="21" text-anchor="end" font-weight="400">VAST</text>
+<line x1="600.00" y1="565.00" x2="253.35" y2="503.88" stroke="#d9e4ec" stroke-width="1"/>
+<text x="197.88" y="501.10" fill="#172d43" font-size="21" text-anchor="end" font-weight="400">NLI4CT</text>
+<line x1="600.00" y1="565.00" x2="373.74" y2="295.35" stroke="#d9e4ec" stroke-width="1"/>
+<text x="337.54" y="259.21" fill="#172d43" font-size="21" text-anchor="end" font-weight="400">RAGTruth</text>
+<text x="612.00" y="489.60" fill="#566d80" font-size="14" text-anchor="start" font-weight="400">20</text>
+<text x="612.00" y="419.20" fill="#566d80" font-size="14" text-anchor="start" font-weight="400">40</text>
+<text x="612.00" y="348.80" fill="#566d80" font-size="14" text-anchor="start" font-weight="400">60</text>
+<text x="612.00" y="278.40" fill="#566d80" font-size="14" text-anchor="start" font-weight="400">80</text>
+<text x="612.00" y="208.00" fill="#566d80" font-size="14" text-anchor="start" font-weight="400">100</text>
+<polygon points="600.00,495.80 615.08,547.03 715.09,544.71 650.68,594.26 678.28,780.08 583.43,610.51 549.24,594.30 559.20,557.81 600.00,565.00" stroke="#7254a2" fill="#7254a2" fill-opacity="0.07" stroke-width="2.5" stroke-dasharray="7 4"/>
+<circle cx="600.00" cy="495.80" r="3.5" fill="#7254a2" stroke="none" stroke-width="1"/>
+<circle cx="615.08" cy="547.03" r="3.5" fill="#7254a2" stroke="none" stroke-width="1"/>
+<circle cx="715.09" cy="544.71" r="3.5" fill="#7254a2" stroke="none" stroke-width="1"/>
+<circle cx="650.68" cy="594.26" r="3.5" fill="#7254a2" stroke="none" stroke-width="1"/>
+<circle cx="678.28" cy="780.08" r="3.5" fill="#7254a2" stroke="none" stroke-width="1"/>
+<circle cx="583.43" cy="610.51" r="3.5" fill="#7254a2" stroke="none" stroke-width="1"/>
+<circle cx="549.24" cy="594.30" r="3.5" fill="#7254a2" stroke="none" stroke-width="1"/>
+<circle cx="559.20" cy="557.81" r="3.5" fill="#7254a2" stroke="none" stroke-width="1"/>
+<circle cx="600.00" cy="565.00" r="3.5" fill="#7254a2" stroke="none" stroke-width="1"/>
+<polygon points="600.00,502.91 611.12,551.75 732.47,541.64 643.16,589.92 683.37,794.04 589.30,594.41 539.55,599.90 561.42,558.20 597.38,561.87" stroke="#20856f" fill="#20856f" fill-opacity="0.07" stroke-width="2.5"/>
+<circle cx="600.00" cy="502.91" r="3.5" fill="#20856f" stroke="none" stroke-width="1"/>
+<circle cx="611.12" cy="551.75" r="3.5" fill="#20856f" stroke="none" stroke-width="1"/>
+<circle cx="732.47" cy="541.64" r="3.5" fill="#20856f" stroke="none" stroke-width="1"/>
+<circle cx="643.16" cy="589.92" r="3.5" fill="#20856f" stroke="none" stroke-width="1"/>
+<circle cx="683.37" cy="794.04" r="3.5" fill="#20856f" stroke="none" stroke-width="1"/>
+<circle cx="589.30" cy="594.41" r="3.5" fill="#20856f" stroke="none" stroke-width="1"/>
+<circle cx="539.55" cy="599.90" r="3.5" fill="#20856f" stroke="none" stroke-width="1"/>
+<circle cx="561.42" cy="558.20" r="3.5" fill="#20856f" stroke="none" stroke-width="1"/>
+<circle cx="597.38" cy="561.87" r="3.5" fill="#20856f" stroke="none" stroke-width="1"/>
+<polygon points="600.00,516.18 629.21,530.18 757.10,537.30 681.48,612.04 688.48,808.10 580.62,618.25 555.37,590.77 549.69,556.13 600.00,565.00" stroke="#ca6b1c" fill="#ca6b1c" fill-opacity="0.07" stroke-width="2.5"/>
+<circle cx="600.00" cy="516.18" r="3.5" fill="#ca6b1c" stroke="none" stroke-width="1"/>
+<circle cx="629.21" cy="530.18" r="3.5" fill="#ca6b1c" stroke="none" stroke-width="1"/>
+<circle cx="757.10" cy="537.30" r="3.5" fill="#ca6b1c" stroke="none" stroke-width="1"/>
+<circle cx="681.48" cy="612.04" r="3.5" fill="#ca6b1c" stroke="none" stroke-width="1"/>
+<circle cx="688.48" cy="808.10" r="3.5" fill="#ca6b1c" stroke="none" stroke-width="1"/>
+<circle cx="580.62" cy="618.25" r="3.5" fill="#ca6b1c" stroke="none" stroke-width="1"/>
+<circle cx="555.37" cy="590.77" r="3.5" fill="#ca6b1c" stroke="none" stroke-width="1"/>
+<circle cx="549.69" cy="556.13" r="3.5" fill="#ca6b1c" stroke="none" stroke-width="1"/>
+<circle cx="600.00" cy="565.00" r="3.5" fill="#ca6b1c" stroke="none" stroke-width="1"/>
+<polygon points="600.00,514.28 631.38,527.60 785.85,532.23 713.03,630.26 686.30,802.12 576.84,628.64 562.41,586.70 547.06,555.66 507.07,454.26" stroke="#126c97" fill="#126c97" fill-opacity="0.07" stroke-width="3.5"/>
+<circle cx="600.00" cy="514.28" r="4.5" fill="#126c97" stroke="none" stroke-width="1"/>
+<circle cx="631.38" cy="527.60" r="4.5" fill="#126c97" stroke="none" stroke-width="1"/>
+<circle cx="785.85" cy="532.23" r="4.5" fill="#126c97" stroke="none" stroke-width="1"/>
+<circle cx="713.03" cy="630.26" r="4.5" fill="#126c97" stroke="none" stroke-width="1"/>
+<circle cx="686.30" cy="802.12" r="4.5" fill="#126c97" stroke="none" stroke-width="1"/>
+<circle cx="576.84" cy="628.64" r="4.5" fill="#126c97" stroke="none" stroke-width="1"/>
+<circle cx="562.41" cy="586.70" r="4.5" fill="#126c97" stroke="none" stroke-width="1"/>
+<circle cx="547.06" cy="555.66" r="4.5" fill="#126c97" stroke="none" stroke-width="1"/>
+<circle cx="507.07" cy="454.26" r="4.5" fill="#126c97" stroke="none" stroke-width="1"/>
+<line x1="1120.00" y1="340.00" x2="1170.00" y2="340.00" stroke="#126c97" stroke-width="4"/>
+<text x="1190.00" y="347.00" fill="#126c97" font-size="23" text-anchor="start" font-weight="700">混合训练</text>
+<text x="1190.00" y="378.00" fill="#566d80" font-size="18" text-anchor="start" font-weight="400">Language 31.1</text>
+<line x1="1120.00" y1="447.00" x2="1170.00" y2="447.00" stroke="#ca6b1c" stroke-width="4"/>
+<text x="1190.00" y="454.00" fill="#ca6b1c" font-size="23" text-anchor="start" font-weight="700">TIES融合</text>
+<text x="1190.00" y="485.00" fill="#566d80" font-size="18" text-anchor="start" font-weight="400">Language 24.4</text>
+<line x1="1120.00" y1="554.00" x2="1170.00" y2="554.00" stroke="#20856f" stroke-width="4"/>
+<text x="1190.00" y="561.00" fill="#20856f" font-size="23" text-anchor="start" font-weight="700">概率集成</text>
+<text x="1190.00" y="592.00" fill="#566d80" font-size="18" text-anchor="start" font-weight="400">Language 20.6</text>
+<line x1="1120.00" y1="661.00" x2="1170.00" y2="661.00" stroke="#7254a2" stroke-width="4"/>
+<text x="1190.00" y="668.00" fill="#7254a2" font-size="23" text-anchor="start" font-weight="700">权重平均</text>
+<text x="1190.00" y="699.00" fill="#566d80" font-size="18" text-anchor="start" font-weight="400">Language 20.4</text>
+<text x="1110.00" y="827.00" fill="#566d80" font-size="18" text-anchor="start" font-weight="400">TIES 的 FinEntity 略有提升；</text>
+<text x="1110.00" y="853.00" fill="#566d80" font-size="18" text-anchor="start" font-weight="400">概率集成的 VAST 有所提升。</text>
+<text x="1110.00" y="879.00" fill="#566d80" font-size="18" text-anchor="start" font-weight="400">局部收益没有抵消整体下降。</text>
+<text x="54.00" y="1043.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">Qwen3-0.6B / LoRA r32；同一完整评测协议，31,715 请求。没有用未测方向或缺失分数补齐雷达图。</text>
+</svg>

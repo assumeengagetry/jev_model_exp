@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "source": "/home/dev/assumeengage/datasets/evaluation-only/decision-index-suite-0.3/candidate-cache/normalized",
+  "format": "candidate-pair-v1-separated-prefix-suffix-eos",
+  "tokenizer": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+  "prefix": {
+    "format": "candidate-pair-v1-separated-prefix-suffix-eos",
+    "source_rows": 304911,
+    "source_bytes": 30427964,
+    "source_mtime_ns": 1793374296560294579,
+    "rows": 304911,
+    "tokens": 125755207,
+    "max_length": 22650
+  },
+  "suffix": {
+    "format": "candidate-pair-v1-separated-prefix-suffix-eos",
+    "source_rows": 215099,
+    "source_bytes": 6326684,
+    "source_mtime_ns": 1793374296704292040,
+    "rows": 215099,
+    "tokens": 4282253,
+    "max_length": 2054
+  },
+  "source_domain_pairs": null,
+  "pair_cap": null,
+  "tokenization_truncation": false,
+  "extra_file_hash_checks": false
+}

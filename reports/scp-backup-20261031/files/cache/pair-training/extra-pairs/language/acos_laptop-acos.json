@@ -1,0 +1,12 @@
+{
+  "name": "acos_laptop-acos",
+  "domain": "language",
+  "path": "cache/pair-training/extra-pairs/language/acos_laptop-acos.parquet",
+  "counts": {
+    "raw_rows": 2934,
+    "pairs": 1003428
+  },
+  "source": "ACOS official train aspect-category/sentiment annotations",
+  "complete": true,
+  "tests_executed": false
+}

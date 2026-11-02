@@ -1,0 +1,18 @@
+{
+  "verified_utc": "2026-10-31T10:47:36+00:00",
+  "entries": [
+    {
+      "repo": "assumeengage/qwen3-06b-experiment-backup-20261031",
+      "path": "RESTORE.md",
+      "bytes": 5884,
+      "verified": true
+    },
+    {
+      "repo": "assumeengage/jev-distill-data-20261031",
+      "path": "RESTORE.md",
+      "bytes": 5884,
+      "verified": true
+    }
+  ],
+  "restore_missing_only": true
+}

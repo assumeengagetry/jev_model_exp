@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-30",
+  "passed": true,
+  "scope": "Local archived-result arithmetic, report links and generated figures; not model re-evaluation or independent validation of historical per-request scoring.",
+  "source_hashes_checked": 5,
+  "local_report_links_checked": 18,
+  "archived_public_scores_checked": 81,
+  "native_task_rows_checked": 90,
+  "displayed_heatmap_cells_checked": 170,
+  "rendered_png_and_svg_pairs_checked": 5,
+  "figure_dimensions_and_png_signatures_checked": true,
+  "all_five_png_figures_visually_inspected": true,
+  "matched_training_tokens": 14995340,
+  "official_scored_areas": 5,
+  "official_category_definitions": 6,
+  "official_scored_benchmarks": 37,
+  "models_loaded_or_executed": 0,
+  "training_or_gpu_jobs_started": 0,
+  "notes": [
+    "The displayed cells of both heatmaps, including Language summaries, were independently compared with the archived fusion-report.json.",
+    "Specialization and fusion differences were calculated before rounding; full precision is retained in CSV/JSON.",
+    "Fusion new_training_tokens=0 in model-summary.csv describes the merge step only; source experts required 14995340 incremental training tokens in total.",
+    "Existing tracked reports and the user's untracked cluster-recovery report were not modified."
+  ]
+}

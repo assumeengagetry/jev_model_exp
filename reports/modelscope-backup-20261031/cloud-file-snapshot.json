@@ -1,0 +1,445 @@
+{
+  "observed_utc": "2026-10-31T09:44:24+00:00",
+  "endpoint": "https://www.modelscope.cn",
+  "repositories": [
+    {
+      "repo_id": "assumeengage/qwen3-06b-experiment-backup-20261031",
+      "repo_type": "model",
+      "private": true,
+      "file_count": 46,
+      "bytes": 1777519148,
+      "files": [
+        {
+          "path": "workspace",
+          "size": 0
+        },
+        {
+          "path": "workspace/models",
+          "size": 0
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32",
+          "size": 0
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B",
+          "size": 0
+        },
+        {
+          "path": "workspace/runs",
+          "size": 0
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030",
+          "size": 0
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE",
+          "size": 0
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/final",
+          "size": 0
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_TOOLS",
+          "size": 0
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_TOOLS/final",
+          "size": 0
+        },
+        {
+          "path": ".gitattributes",
+          "size": 2614
+        },
+        {
+          "path": "BACKUP_STATUS.json",
+          "size": 148
+        },
+        {
+          "path": "README.md",
+          "size": 1415
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/README.md",
+          "size": 5204
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/adapter_config.json",
+          "size": 1112
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/adapter_model.safetensors",
+          "size": 80796648
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/added_tokens.json",
+          "size": 707
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/chat_template.jinja",
+          "size": 4168
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/config.json",
+          "size": 1566
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/initialization.json",
+          "size": 465
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/merges.txt",
+          "size": 1671853
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/special_tokens_map.json",
+          "size": 613
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/tokenizer.json",
+          "size": 11422654
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/tokenizer_config.json",
+          "size": 5404
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B-common-pair-init-r32/vocab.json",
+          "size": 2776833
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B/DOWNLOAD.json",
+          "size": 1186
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B/LICENSE",
+          "size": 11343
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B/README.md",
+          "size": 13965
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B/config.json",
+          "size": 726
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B/configuration.json",
+          "size": 73
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B/generation_config.json",
+          "size": 239
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B/merges.txt",
+          "size": 1671853
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B/model.safetensors",
+          "size": 1503300328
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B/tokenizer.json",
+          "size": 11422654
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B/tokenizer_config.json",
+          "size": 9732
+        },
+        {
+          "path": "workspace/models/Qwen3-0.6B/vocab.json",
+          "size": 2776833
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/complete.json",
+          "size": 753
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/final/README.md",
+          "size": 5204
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/final/adapter_config.json",
+          "size": 1143
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/final/adapter_model.safetensors",
+          "size": 80800744
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/final/config.json",
+          "size": 1566
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_TOOLS/complete.json",
+          "size": 745
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_TOOLS/final/README.md",
+          "size": 5204
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_TOOLS/final/adapter_config.json",
+          "size": 1143
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_TOOLS/final/adapter_model.safetensors",
+          "size": 80800744
+        },
+        {
+          "path": "workspace/runs/five-specialists-20261030/SPECIALIST_TOOLS/final/config.json",
+          "size": 1566
+        }
+      ]
+    },
+    {
+      "repo_id": "assumeengage/jev-distill-data-20261031",
+      "repo_type": "dataset",
+      "private": true,
+      "file_count": 56,
+      "bytes": 7634376506,
+      "files": [
+        {
+          "path": "workspace/cache",
+          "size": 0
+        },
+        {
+          "path": "workspace/cache/pair-training/tokenized/global-new",
+          "size": 0
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool",
+          "size": 0
+        },
+        {
+          "path": "workspace/cache/pair-training",
+          "size": 0
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs",
+          "size": 0
+        },
+        {
+          "path": "workspace/cache/pair-training/tokenized",
+          "size": 0
+        },
+        {
+          "path": "workspace",
+          "size": 0
+        },
+        {
+          "path": ".gitattributes",
+          "size": 3818
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/arts_candidate.npy",
+          "size": 9891812
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/arts_group.npy",
+          "size": 9891812
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/arts_length.npy",
+          "size": 9891812
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/arts_source.npy",
+          "size": 9891812
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/arts_state.npy",
+          "size": 9891812
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/arts_target.npy",
+          "size": 9891812
+        },
+        {
+          "path": "BACKUP_STATUS.json",
+          "size": 150
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/candidates.parquet",
+          "size": 94800113
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/groups.parquet",
+          "size": 24576360
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/inputs.parquet",
+          "size": 1316149686
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/knowledge_candidate.npy",
+          "size": 12293940
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/knowledge_group.npy",
+          "size": 12293940
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/knowledge_length.npy",
+          "size": 12293940
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/knowledge_source.npy",
+          "size": 12293940
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/knowledge_state.npy",
+          "size": 12293940
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/knowledge_target.npy",
+          "size": 12293940
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/language_candidate.npy",
+          "size": 58453472
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/language_group.npy",
+          "size": 58453472
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/language_length.npy",
+          "size": 58453472
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/language_source.npy",
+          "size": 58453472
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/language_state.npy",
+          "size": 58453472
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/language_target.npy",
+          "size": 58453472
+        },
+        {
+          "path": "LICENSE.md",
+          "size": 1
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/MANIFEST.json",
+          "size": 4767
+        },
+        {
+          "path": "workspace/cache/pair-training/tokenized/global-new/MANIFEST.json",
+          "size": 984
+        },
+        {
+          "path": "workspace/cache/pair-training/tokenized/global-new/prefix.DONE.json",
+          "size": 227
+        },
+        {
+          "path": "workspace/cache/pair-training/tokenized/global-new/prefix.PROGRESS.json",
+          "size": 211
+        },
+        {
+          "path": "workspace/cache/pair-training/tokenized/global-new/prefix_ids.bin",
+          "size": 5148478336
+        },
+        {
+          "path": "workspace/cache/pair-training/tokenized/global-new/prefix_offsets.bin",
+          "size": 39995256
+        },
+        {
+          "path": "README.md",
+          "size": 167
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/retrieval_candidate.npy",
+          "size": 44190596
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/retrieval_group.npy",
+          "size": 44190596
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/retrieval_length.npy",
+          "size": 44190596
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/retrieval_source.npy",
+          "size": 44190596
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/retrieval_state.npy",
+          "size": 44190596
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/retrieval_target.npy",
+          "size": 44190596
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/SOURCES.json",
+          "size": 301147
+        },
+        {
+          "path": "workspace/cache/pair-training/tokenized/global-new/suffix.DONE.json",
+          "size": 220
+        },
+        {
+          "path": "workspace/cache/pair-training/tokenized/global-new/suffix.PROGRESS.json",
+          "size": 204
+        },
+        {
+          "path": "workspace/cache/pair-training/tokenized/global-new/suffix_ids.bin",
+          "size": 216444628
+        },
+        {
+          "path": "workspace/cache/pair-training/tokenized/global-new/suffix_offsets.bin",
+          "size": 6725176
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/tools_candidate.npy",
+          "size": 6318988
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/tools_group.npy",
+          "size": 6318988
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/tools_length.npy",
+          "size": 6318988
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/tools_source.npy",
+          "size": 6318988
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/tools_state.npy",
+          "size": 6318988
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/pairs/tools_target.npy",
+          "size": 6318988
+        },
+        {
+          "path": "workspace/cache/pair-training/global-pool/TRAINING_READY.json",
+          "size": 2207
+        }
+      ]
+    }
+  ],
+  "model_config_downloaded": {
+    "success": true,
+    "path": "workspace/runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/final/config.json",
+    "id2label": {
+      "0": "not_match",
+      "1": "match"
+    }
+  },
+  "public_teacher_same_id": {
+    "exists": false,
+    "error_type": "NotExistError",
+    "status_code": 404
+  }
+}

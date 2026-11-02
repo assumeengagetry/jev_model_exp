@@ -1,0 +1,1623 @@
+{
+  "recorded_utc": "2026-10-31T10:50:58.971031+00:00",
+  "remote_root": "/home/dev/assumeengage",
+  "source_config_files_rechecked": 201,
+  "new_source_transfers": 0,
+  "transport_options": [
+    "ClearAllForwardings=yes",
+    "ControlMaster=no",
+    "ControlPath=none"
+  ],
+  "source_training_modified": false,
+  "modelscope_authentication_probes": false,
+  "records": [
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/LICENSE",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/LICENSE",
+      "sha256": "3445fa3344098a37d88d2d0c24e39cf6c8a1d63a9478d52668db2acfda21f6ab",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/README.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/README.md",
+      "sha256": "803bd1c33f408437b0d1ee5d8c810501a2ed2e617bf2606485cca845d3c580df",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/pyproject.toml",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/pyproject.toml",
+      "sha256": "13613903ca86f82b2fb4da248359d36c63c7393c5f01d19af7802f42e8cfcb25",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/__init__.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/__init__.py",
+      "sha256": "802fef8d0a617d28cd906facf8582b707ca7baa35475ce834ef8af41ab9aa54f",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/__main__.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/__main__.py",
+      "sha256": "22950564c4001e4c1ee193a0207857f06a69c0dfaf3ce4546b07eae9e864d6c9",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/cli.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/cli.py",
+      "sha256": "ddbbafe11877b096296f691e25b30ea8f921e0b8009a475aae3f6aa89b3e4bde",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/constants.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/constants.py",
+      "sha256": "e15cb302a9b302bd588931f32c437a0cbab3c1d0c4d6f02069c073c3977ba082",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/editions.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/editions.py",
+      "sha256": "189dea1a4b6fbc77ce33aa157867f6f8018b392efd0f02c0036b8bd1c6bd437a",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/hf_job.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/hf_job.py",
+      "sha256": "9e438d899b354e4e2b6483dc10ddbcd59236ed5f53063f04dfc5a310b7d5e765",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/pipeline.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/pipeline.py",
+      "sha256": "33b178538392f22283f1b623e3c078f55582bf36cc9f51f74ccb0ccdb23498f1",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/runner.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/runner.py",
+      "sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/benchmarks.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/benchmarks.json",
+      "sha256": "e7c9ef019a0f2ecc3269cbc3897a07a524550629d74cade64b9567c6c130db3c",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/chance-baselines.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/chance-baselines.json",
+      "sha256": "b68bb94e1ce0d2a40b4f69d0b7a9acf796c4bc64c973d5c291625aec34629bfa",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/index-0.2.1.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/index-0.2.1.json",
+      "sha256": "5df3732bc876803b0064fcbc0d69cbba8efff4838ae171a0e41b2d87c6f7b3f8",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/index-0.2.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/index-0.2.json",
+      "sha256": "d7165596fe3f9ae10690089b7175d5bdb1973677257c914ce6b3cfa91ac3dcd1",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/index-0.3.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/index-0.3.json",
+      "sha256": "158c38439c004a1bfb371dab02ec614046aabd3de08a02629ae89e7137d67167",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/index-panel.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/index-panel.json",
+      "sha256": "a9823d5d8ce1dcf81da91f285d9de5b77b8bb1c9a5ad4fa2d51df6c3d0850a21",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/vision-0.3.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/vision-0.3.json",
+      "sha256": "5b8e834213ab40cb36933e55e916408e7be78aabb486cc77eeee8903807f7a00",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/release-v2.1/bright-subset.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/release-v2.1/bright-subset.json",
+      "sha256": "ed3a05220e09be2b96c02514345c61894f7a0ffc73e6884a100392d23692cfb8",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/release-v2.1/home-appliances-subset.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/release-v2.1/home-appliances-subset.json",
+      "sha256": "d2d0df922a47a9757bef17f382a4ed4c5c3bfff953f941c29404e93a490bce2c",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/release-v2.1/toolret-subset.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/release-v2.1/toolret-subset.json",
+      "sha256": "c301d5503955c14d99485e284d434bb1533f51229c34da1edc19dd8388116f01",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/release-v2/acos-subset.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/release-v2/acos-subset.json",
+      "sha256": "3b20eea1613ae3e1644339e6f89a4287b307a5750a86239bb8bca6f8238b8e45",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/data/release-v2/retrieval-subsets.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/data/release-v2/retrieval-subsets.json",
+      "sha256": "9228a9492ea40c499d8bb024417f566d0c0ced62c71ed4c1bf908e87ed50d8df",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/engines/__init__.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/engines/__init__.py",
+      "sha256": "808a0971ad2ce9f9a1afc3c071691001375aa73b26f3ba891beb8364dcabba77",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/engines/base.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/engines/base.py",
+      "sha256": "ae548636cfbd583fe774b67e4d3d2cdc6db10f580f47d9559d5de44373b79ca5",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/engines/http.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/engines/http.py",
+      "sha256": "d8dbb8146ca5e002dd790f3b1c35e80cc42f99a7c56eddd39dc14b69ffaf9aae",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/engines/transformers_engine.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/engines/transformers_engine.py",
+      "sha256": "af70ecd8e28e4459c79e02c5f3697587e947c90415d6d55e5b1670d1056b36b8",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/scoring/__init__.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/scoring/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/scoring/added.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/scoring/added.py",
+      "sha256": "81d53ce5f9905e572797f7a02a8f63ac9a15d1332028529f5e38b64351376165",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/scoring/index.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/scoring/index.py",
+      "sha256": "ee8d3b9677ed9e0ffba7eda40a0cae35cb4d89cbc79864cbf37514d5ccaa9d24",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/scoring/index02.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/scoring/index02.py",
+      "sha256": "7cb9e5d12bb98a08d0fef2136988bd55457865ef8e819a5dc8a6fbef94d5a227",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/scoring/metrics.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/scoring/metrics.py",
+      "sha256": "b4e240511bd4978082233127a98672cd5558783c8e3aed1e9fb5420e9a52dcc1",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/scoring/report.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/scoring/report.py",
+      "sha256": "14279d8c10a83b0aab2edeaccf69110d3bd03719eb550ab8bcd0895b42fd1d42",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/__init__.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/download.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/download.py",
+      "sha256": "47ceff984fb0b3ac02cfad789a617143321c9a66c45019a181f8098ac214802e",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/io.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/io.py",
+      "sha256": "c814245aba0a79866a3749e6e7faf038dd41d29fb596008259afcd585a0c8dee",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/sample.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/sample.py",
+      "sha256": "deef072e9f0a8d4e78734273b8e6c29972319d012d009727a1fedeae5dda0dac",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/__init__.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/acquire.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/acquire.py",
+      "sha256": "94bc9997f9c95ae33ed9d2d00e6c715bd1408b69ecb64de9e31e06317b761c16",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/adapters_added.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/adapters_added.py",
+      "sha256": "66bdf8a82b33d5ffa8d10c25f701904620ec52da41ad040bf752879bad1291b2",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/adapters_creative.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/adapters_creative.py",
+      "sha256": "0e8ec014260d75de864e6af2c6bc3488b5cd7f80ef2dee0f2adf0c9ecb91ea61",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/adapters_mechanical.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/adapters_mechanical.py",
+      "sha256": "d4afcabd4f54ba4a7a4e835b39246bb08672f8db09aa0fc7578d7b2b006421a6",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/adapters_retrieval.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/adapters_retrieval.py",
+      "sha256": "3179d605cf87578eb04d86ec7fb3b950d33a33288301779e0fe80d302c2cb40f",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/adapters_scored.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/adapters_scored.py",
+      "sha256": "872061974ab9e3061e9a1e795cf5a6e07f5b0359c96b7451313e36288337b736",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/adapters_selection.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/adapters_selection.py",
+      "sha256": "62e2ea8bdbac5873ca6e05e428a3d94582c0f18117c0ca00db771d03daa5aba7",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/freeze.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/freeze.py",
+      "sha256": "e74f275de704d6bd5d315a479d16a922a89283d3af9af3d3d1d66716f76ea04c",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/gsm8k_v3.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/gsm8k_v3.py",
+      "sha256": "bb8246a271fc07a35c283ead1aa853833d3c40d27abbe993f10d49a35d797503",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/home_appliance.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/home_appliance.py",
+      "sha256": "89666f0c5af54cc7d35addcb1feb29cb6ed022dfa6de8f2419ee96325e3c6bc3",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/layout.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/layout.py",
+      "sha256": "21d36d35cf8c5369cadbd2f509e1dc508b6dae3ec3d408447643895ffade38fb",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/normalize_direct.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/normalize_direct.py",
+      "sha256": "98f7fcc03edc25fa03a62d48fdc467748ee23cbbf8ba4442086bd0840df60431",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/normalize_text.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/normalize_text.py",
+      "sha256": "9b73af4ce3b0bd71591c1f0bb915732c567234685429a9e31a19a78c6d70bcdb",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/rebuild.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/rebuild.py",
+      "sha256": "5569093debd38250cc507482e541107efa286c330582a81d1c6219f402ee209c",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/suite/build/release_v2.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/suite/build/release_v2.py",
+      "sha256": "1df6e4375a2f1cd1b42d0839e931de682f46e055cbb2bfea4e03e56d87b2a4ac",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/vision/__init__.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/vision/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/vision/build.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/vision/build.py",
+      "sha256": "8228f1d8218f7d371cbee4aaf4f215fb3f39a0553d62b2282d174258f26787ac",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/vision/convert.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/vision/convert.py",
+      "sha256": "c3baf1ad7b79ead7b6afdfa88c43bdc29359c4b88dc0a01fd515d390b198726e",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/vision/engines.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/vision/engines.py",
+      "sha256": "a2b48aad22908cd6cc988fc1d585773b48d4671f2a4384e3a252f4571676b1ce",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/vision/images.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/vision/images.py",
+      "sha256": "1920ea8e3f2f85b301322c7b329feaa9e09855154cc6e1b322657fb0dcc922ac",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/vision/rows.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/vision/rows.py",
+      "sha256": "5084ef6dfee7530a715efe99f4f6b2b2343d3bffc8a067e20743b31e8d0f13ba",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/vision/run.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/vision/run.py",
+      "sha256": "89e9563aec2a842cf7ea906f1ddc1a34d909be54bf655c2c5d05380040ab82a3",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/vision/score.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/vision/score.py",
+      "sha256": "fc5429a62a863ce924f37db892c6c94dd2ac278db7dca83807da27c1b0685966",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index/vision/spec.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index/vision/spec.py",
+      "sha256": "ce43e156403ad2c67c0175dbb8cdcfd808970a1d08cfba57602bd7acdfc5ae24",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/docs/edition-0.1.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/docs/edition-0.1.md",
+      "sha256": "d718011b62c8b93bb7011c1cc94efbb41b13228dddc4b396b410d47a3bde82e4",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/docs/engines.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/docs/engines.md",
+      "sha256": "4b2c49af53575d2416fe620b62acaa70f86746d972a1d89f3b76216fbe3cc1a3",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/docs/format.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/docs/format.md",
+      "sha256": "76c1d907c923c1a025b86f20b66ccff7de86142c7b239ca1c1fd9eab98a78449",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/docs/suite.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/docs/suite.md",
+      "sha256": "5bc0553574fd39ff9b535022105afec6523a9f96d9431cf95c39d419bfa98039",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/docs/vision.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/docs/vision.md",
+      "sha256": "66d8588c27a1f7267ea86f8f73de0087dfdd95bb29fa18715b6459654ea22da2",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/hub/excluded-questions.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/hub/excluded-questions.json",
+      "sha256": "331df32d4b719c7db43214d0e5d85859d39c3b2eb7d0b3812214cce150155e81",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/hub/manifest.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/hub/manifest.json",
+      "sha256": "b4e7835960362e3005947fda8cfcefc39669e4584018a6b126bdb8b00365047d",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/hub/0.2.1/manifest.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/hub/0.2.1/manifest.json",
+      "sha256": "ff77c78ff4f48835db51b061b006b345d679e1530ba1261a3a4ceb792a89638d",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/hub/0.2/manifest.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/hub/0.2/manifest.json",
+      "sha256": "2b1d2f978dffb7aa39269b5c4cc6ba739358326c2319dad31076d2b3cba69b8d",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/hub/0.3/manifest.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/hub/0.3/manifest.json",
+      "sha256": "e24b2f990ed2220233af19713a13c0a92b3c1756af1991ddf985a3420bf1258c",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/scripts/prepare_hub_upload.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/scripts/prepare_hub_upload.py",
+      "sha256": "674cb18b7d3e18db62e27d5d8eb84902a0ae1c3229cd190d5d97f5b8247e7e59",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/test_editions.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/test_editions.py",
+      "sha256": "ae8fab4c07dc3ac93620359b7226dc28ae84248bdf520751fc0d56c3be52829f",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/test_index.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/test_index.py",
+      "sha256": "2c7e3b1a0a0264303b6a5f29b4839895fe9c1eec58277e758016db08e8e2aee8",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/test_index02.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/test_index02.py",
+      "sha256": "42b71e8664fe89ec6f89ae8980f0577985c0b5910eac6ed8f172ca1774917e99",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/test_index021.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/test_index021.py",
+      "sha256": "3bb7752b47b10ef7ecef83cbc6e44195626ad111d591e8651fca53b555666f4b",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/test_index03.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/test_index03.py",
+      "sha256": "3072e5645b23efb9cb42bca1e6a576b1f4929d329381b1fc701c6839dbcd3e2f",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/test_metrics.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/test_metrics.py",
+      "sha256": "3869a1dbecc4def7db55d1c46fa0fd6d6f0277d4ba1582ac9be67e3ad3b265c2",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/test_report_and_engine.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/test_report_and_engine.py",
+      "sha256": "82e9304ebe92aaa378eaae614f96cb1c7feece7b36ae980a34e101ef6f39f312",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/test_runner.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/test_runner.py",
+      "sha256": "6326a6834bef2a5a175928baa86e587294b1cecc14272e4e3f6b2be1cbc5a9b3",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/test_suite_build.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/test_suite_build.py",
+      "sha256": "2fa6ef998cfac2b3f660e3399bcfc9d7968c34ba89c8efd89e3372ab829b108e",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/test_vision.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/test_vision.py",
+      "sha256": "3babdc6e46240651d11d5486cdc488730b385e6da8cc58c5db77b97689319cfb",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/fixtures/board-0.2.1.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/fixtures/board-0.2.1.json",
+      "sha256": "53eb9b58bd8a698ec81049dc173ac67aec683480120611a22fdb71f50a5cf7b5",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/fixtures/board-0.2.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/fixtures/board-0.2.json",
+      "sha256": "fc072fa839fe9e51b2ba96d66e608011e4e507f31ab952d750e70d86d658b8df",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/fixtures/board-0.3.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/fixtures/board-0.3.json",
+      "sha256": "062466c3dee6cd02a27d20db1632883415880c963c6a0399df6691db339883b5",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/tests/fixtures/vision-public-0.3.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/tests/fixtures/vision-public-0.3.json",
+      "sha256": "7332b3873257606951dfc6ee61bdeeffa96e81bf515b4fa2bb040f4e8ea97859",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index.egg-info/PKG-INFO",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index.egg-info/PKG-INFO",
+      "sha256": "be6a8b8e35f5a548ba5081a7e04812abae432c6c6362a3db255fdc353d124752",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index.egg-info/dependency_links.txt",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index.egg-info/dependency_links.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index.egg-info/entry_points.txt",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index.egg-info/entry_points.txt",
+      "sha256": "e49c9bad8387900ec429fd38e77673f15eba4922c06d01a1ef05b094645888ce",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index.egg-info/requires.txt",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index.egg-info/requires.txt",
+      "sha256": "aab31e904ba522b65b0faab85b74c7ab0a1910fbe985845bf9bf923a19e7755b",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index.egg-info/top_level.txt",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index.egg-info/top_level.txt",
+      "sha256": "0303d842f0d60c868fa6f06262f4d9586e5438e57a165bf5ccca73f79ba33468",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/src/decision-index-main/decision_index.egg-info/SOURCES.txt",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/src/decision-index-main/decision_index.egg-info/SOURCES.txt",
+      "sha256": "feab6d766e8c3af9cc30c945ea24a8667a9e4cc54db7dca3ed6e2d403d370d60",
+      "category": "src",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/install-packages.sh",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/install-packages.sh",
+      "sha256": "9ae809b5773bdea383024555d5b0d2d9f0d25e6c3f66d6e048270e534f66d9e3",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-qwen.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/download-qwen.py",
+      "sha256": "14d001ab8858243606fa6ce4dae32b8094c7694fba2b5edae9ceb530c7d44586",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download_utils.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/download_utils.py",
+      "sha256": "0aac68478e00b9c541e43cc8f5bdcbf7835411e7818b611f35d25e367f5da1b9",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-tasksource.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/download-tasksource.py",
+      "sha256": "f09e87bb3462c683ab0a73d8285ae8e3042e85eede943522da35a9629f79a40e",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-benchmarks-hf.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/download-benchmarks-hf.py",
+      "sha256": "e8f8a8477e1ca92854d956cddf40d1b131dc2c858f958ec6be783bbb71869122",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-benchmark-train.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/prepare-benchmark-train.py",
+      "sha256": "01d36d23658c7c160b44292afc5939239018768d8cd282276c38d2b5a14e4536",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-benchmark-extras.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/download-benchmark-extras.py",
+      "sha256": "745389a9fb671dbf5737016142a92b01beada3bbb3ec1544ea7b19bb78c09208",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-benchmarks-modelscope.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/download-benchmarks-modelscope.py",
+      "sha256": "73bd1ebc83c4c1a3d35d5462b3affa6038851438345750aef2ec0de6a7d3aed0",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-hf-xet.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/download-hf-xet.py",
+      "sha256": "295dcda98debccbaa1f8f834180d8d0d5dd762a767923ea1e18b79d4d1bee718",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/initialize-pair-classifier.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/initialize-pair-classifier.py",
+      "sha256": "fcee95428ca7e62443268027acfa3008721c6d2764bd41e891217a113fb8c636",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-tasksource-modelscope.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/download-tasksource-modelscope.py",
+      "sha256": "3e9454302f8423dbee2fba1401b9363cacb9bf121e69ea0f9eaf898daaf6f32b",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/overnight-download-supplements.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/overnight-download-supplements.py",
+      "sha256": "ccb140b29320c855b58af624e1f19812ad6d89b4e5ec31064f36edd00e37a64f",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/locate-existing-training-cache.cjs",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/locate-existing-training-cache.cjs",
+      "sha256": "ed4832961635647fca248f2d91138dbe9a82798a95191792cb7551a4622e69e9",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/overnight-download-zero-shot-http.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/overnight-download-zero-shot-http.py",
+      "sha256": "739e2a23ffa6f9478b45db4b60acb3d21f198d024e89ecb6e9fb3bd28010ef99",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/pair_data_common.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/pair_data_common.py",
+      "sha256": "b97a5e7fbcf7f1231e4746d7aefd7969214b29bc0ca7315a9a27827e9a3b3d63",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-typed-pairs.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/prepare-typed-pairs.py",
+      "sha256": "1b66d1e947da026c2514ea6679e0341a0f42494807226903107eaec468c9d4b3",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-overnight-pairs.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/prepare-overnight-pairs.py",
+      "sha256": "313cf7ab61170c93f91bad07922338e6d9f35a9218945cbe055d8bb36e33ad42",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/watch-training-session.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/watch-training-session.py",
+      "sha256": "fbbea49960d71b67a1815148da82954ed4423cfb7f6764b93856d97b01cb214b",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/tokenize-normalized-source.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/tokenize-normalized-source.py",
+      "sha256": "09e3130d917a3514f940e53ed6249b2fd7b98106637e7cef66f403ff29cf8d80",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-official-evaluation-data.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/prepare-official-evaluation-data.py",
+      "sha256": "aed7b9544dd9833a8ca12745c61fe244bf9397649ff58b6b447da3f36041753f",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/finalize-frozen-evaluation-data.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/finalize-frozen-evaluation-data.py",
+      "sha256": "503162dd1b2251c96ed49178164c5ceccd85e5d1a26450e5391fbd3e9e3c8093",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-main-extra-pairs.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/prepare-main-extra-pairs.py",
+      "sha256": "857dc24b32b7d9dad0831637df4f6b58cc12c05faced4f34b6f44abee7d3546a",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/generate-training-rules.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/generate-training-rules.py",
+      "sha256": "d9a2219b87092d1082ea631216221eaa0cd696c5ae31456730ad392f5f7cfc0a",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/build-global-pair-pool.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/build-global-pair-pool.py",
+      "sha256": "53998916a97bb826502d893ad340453888a5dd3d24b6f765b360c032d6d04f60",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-frozen-evaluation-ranges.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/download-frozen-evaluation-ranges.py",
+      "sha256": "ce4e86e687d8e9fac7c06b643f4844ae3f419759d4ed85c19af4da4fd8f13263",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/pair_training_runtime.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/pair_training_runtime.py",
+      "sha256": "4509478328e5080f157c47c6425bdad2bd57ee7aa0efefec06939eea275db57d",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/finalize-training-cache.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/finalize-training-cache.py",
+      "sha256": "7e93d1d619d0c84e0528e370f996813cb7fa7183fe889a9427c5af4bd1de25a1",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/tokenize-when-pool-ready.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/tokenize-when-pool-ready.py",
+      "sha256": "382acafbc0479152c7b18ecfb5f3472cee814b28aa9280c38c2ca637e29ce13e",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/train-pair-model.py",
+      "sha256": "c867d4a547bfa2aa9448af4e5b5070b4be8af6d6a3e54c71fc0de2bf385bae17",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/run-formal-experiment.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/run-formal-experiment.py",
+      "sha256": "bcff8835c2c13c76d20e423bc06e5a46639d0f8de425e0ea4f0275b33200499d",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-evaluation-candidate-cache.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/prepare-evaluation-candidate-cache.py",
+      "sha256": "02ccf2a13efa25f4f84f637a05092cfb8f41ff0112928b6b955bc456947fbe9a",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model-takeover.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/train-pair-model-takeover.py",
+      "sha256": "77c0efd7d08d77d8c03fbcd7bb62eece61e4f1f7de5503b4fd34363e4ac6499f",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/run-five-area-takeover.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/run-five-area-takeover.py",
+      "sha256": "c19ed894f58ca969eb7a5fd48efaa63472cf8ff9c8657892c51ef9063886274d",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/merge-formal-models.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/merge-formal-models.py",
+      "sha256": "1245da0e20594e55e69a85c29fd9af2e56c8e9aa32efdddc9c63792ae44e5e51",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/run-formal-evaluation.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/run-formal-evaluation.py",
+      "sha256": "b627d89fc7f56f30299fc6530acc234e8c695b012630dd07c527af2f8366cabc",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/five-area-stage-snapshot.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/scripts/five-area-stage-snapshot.py",
+      "sha256": "5abda0f96e325be7aca40ecc0ae419b6177939f5580609df22fe46ff1487e0ea",
+      "category": "scripts",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/suite.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/suite.md",
+      "sha256": "5bc0553574fd39ff9b535022105afec6523a9f96d9431cf95c39d419bfa98039",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/tasksource_meta.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/tasksource_meta.json",
+      "sha256": "73027ffc097d40a815340b35bb42ddf1a83f473b8baf3273290226da6c221987",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/tasksource_tree.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/tasksource_tree.json",
+      "sha256": "80bc2d4ded203bbd563a111c29ea352a6bbdbe64e0f38da3f616ed4901a1e81c",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/decider_model_card.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/decider_model_card.md",
+      "sha256": "ffb330fab152ab2a0584a743ef2d4754fa919860922ec7482151e2ae81b7a404",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/tasksource_dataset_card.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/tasksource_dataset_card.md",
+      "sha256": "f87aab321b7ce0a49390839dce7d8fabee0a6fcc58811ed108cfcf06a3b8ae45",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/space_tree.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/space_tree.json",
+      "sha256": "f09e500878e912cd57640d1a341c616d535ad878f9d0a4f740d5a05c8a570815",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/index_readme.txt",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/index_readme.txt",
+      "sha256": "803bd1c33f408437b0d1ee5d8c810501a2ed2e617bf2606485cca845d3c580df",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/unsloth_pyproject.txt",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/unsloth_pyproject.txt",
+      "sha256": "3640ddbc0210b3666c920f3b4f04b9473b96d9475bfbabb199b96515d2278258",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/index_pyproject.txt",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/index_pyproject.txt",
+      "sha256": "13613903ca86f82b2fb4da248359d36c63c7393c5f01d19af7802f42e8cfcb25",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/requirements.txt",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/requirements.txt",
+      "sha256": "d99b2403c876759387954d9cf853ae67f71561af1e9d4debffffeb3cd232c677",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/edition-0.1.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/edition-0.1.md",
+      "sha256": "d718011b62c8b93bb7011c1cc94efbb41b13228dddc4b396b410d47a3bde82e4",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/benchmark-hf-sources.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/benchmark-hf-sources.json",
+      "sha256": "bebde3c5b2239336c65a91c48e30f906cf756ff819e9d7611250273e9f52c45c",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/boxoban_readme.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/boxoban_readme.md",
+      "sha256": "d3e231ab2c9d838588d9fdcf00d5a16928c0e8b92f48d488056b411111749d44",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/board_index.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/board_index.json",
+      "sha256": "bdfdd5ff3e7700f66e27b4d31274830d8136344d732487a00f74af5c936c72e2",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/accelerate-single.yaml",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/accelerate-single.yaml",
+      "sha256": "a379399e39422cd748a7b8a007b86f0330dd2fb30e422e245db1b37aaa88cc82",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/accelerate-4gpu.yaml",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/accelerate-4gpu.yaml",
+      "sha256": "3a6a09d7a77665c3cdd2735aec0048aa925481ee0ce746fd00f4d99655648d31",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/habermas_readme.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/habermas_readme.md",
+      "sha256": "b967e89dc753aec404e80bc9291dfd37ed391f0b5361ec50b47aa5df4a80d4c2",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/toolret_train_search.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/toolret_train_search.json",
+      "sha256": "2e60ca3139b33af3efbef4b893d7d0d994f5be8e93ec6a5e9b1ec2e7f5a55f05",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/chess_train_metadata.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/chess_train_metadata.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/esci_train_metadata.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/esci_train_metadata.json",
+      "sha256": "26b4f5b258b00a7abf17f8fa4eace1f7aa552f91e42d3000a91210d2ca4196f8",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/installed-packages.txt",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/installed-packages.txt",
+      "sha256": "7391bde1451b78cd661fec31ef94c49259fcdc2502f7c1e9beaa77dbbf3a537c",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/benchmark-extra-sources.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/benchmark-extra-sources.json",
+      "sha256": "c464e5a0e38e9be3e03419e4ad7c0849d02d36671cbc260054003b49c804124a",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/apibank_contents.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/apibank_contents.json",
+      "sha256": "8bf10f2c6d19f621a95a266c0de80738faba028e28ed3924f186cd7d4adcc76f",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/apibank_hf_search.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/apibank_hf_search.json",
+      "sha256": "fd38e525ea54f932bcabb5fb6bc43f10e6163739b6d278c2b2989065066be1df",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/modelscope-dataset-sources.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/modelscope-dataset-sources.json",
+      "sha256": "357e3976a7b04fb62571d7d2abff4629ab0d325785afa01332b5cdac571478d5",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/modelscope__hellaswag_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/modelscope__hellaswag_files.json",
+      "sha256": "c1ef60f225c94ee637aaee926d901d204738fdaa37ce87aa862e13bdb84df8c9",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/AI-ModelScope__gsm8k_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/AI-ModelScope__gsm8k_files.json",
+      "sha256": "a218c92c2050728b50b1108a0b259dfba7707eec8d6c7f7d4f43e2e876c423d2",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/modelscope__mmlu_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/modelscope__mmlu_files.json",
+      "sha256": "d84d4d80287f40089b3967853b67ba7c381030fbff2c07115b7bf1022e7a9a77",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hellaswag-modelscope-loader.py",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hellaswag-modelscope-loader.py",
+      "sha256": "b13abec8d3ee0c18a0977f20f2254635241ac70da4ad02180e584f0bb1850c48",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/modelscope-benchmark-alternatives.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/modelscope-benchmark-alternatives.json",
+      "sha256": "818ad68d7282e86014dd5b30cf4da8bf0da4144d815808b2b7d61686116f2cad",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/nv-community__When2Call_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/nv-community__When2Call_files.json",
+      "sha256": "da0d6f946cc490e5855f68347d35f6e04dd503e1ad4afe7ff983390297a52153",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/facebook__anli_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/facebook__anli_files.json",
+      "sha256": "2987c703234ae6b29a4e5907ed0e1dbf83342a5e839f5cc5b8b16022de663ce2",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/allenai__winogrande_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/allenai__winogrande_files.json",
+      "sha256": "abc623a0e4fb637269a54c53d978cba64436286265f19fe60a632a4e1ad72438",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/cais__mmlu_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/cais__mmlu_files.json",
+      "sha256": "adcebf1040c5bfaa9cade2c333ae8e0077be008b769e58fdb31f16b727170427",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/training-plan-five-specialists-2026-10-30.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/training-plan-five-specialists-2026-10-30.md",
+      "sha256": "c7b880fe8dbf7f1ff1ae0ff6d727963c9349af24fe60b7995e1818409a96637c",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/training-plan-five-specialists-2026-10-30.handoff.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/training-plan-five-specialists-2026-10-30.handoff.json",
+      "sha256": "9c01c109766a26c2cb9c8185a3ec52e4da602b9c15e7712441c0c5895027df02",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/zero-shot-label-nli-card.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/zero-shot-label-nli-card.md",
+      "sha256": "d907446deee2f0d1579e5b191817a0e6a09b04d030becb1b21123106edcdc7a9",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/tasksource-modelscope-card.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/tasksource-modelscope-card.md",
+      "sha256": "087612d7ae43c40d29c2667c0f586e44caf97bc3914b2d239400cf4a4013d399",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/tasksource-modelscope-files-page1.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/tasksource-modelscope-files-page1.json",
+      "sha256": "2e95488f7b9db54fd7d82c12c75a9788ceb4ad59565e0e623d2f0eb24839b0c5",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/SargeDev__jev-system1-union-train_card.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/SargeDev__jev-system1-union-train_card.md",
+      "sha256": "e31a53a5368c6b783dd71e83a8442b6cccbd8984f8be5cbd427914dd4caa0bae",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/AI-ModelScope__hh-rlhf_card.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/AI-ModelScope__hh-rlhf_card.md",
+      "sha256": "1401068d987411878213325527f38dd8a781cf6b04c9e50f1a4bd71bd0312c0c",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/AI-ModelScope__HelpSteer2_card.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/AI-ModelScope__HelpSteer2_card.md",
+      "sha256": "0d5720fdbff14ca7f6e19d15f56830a33d984d534f9caeaee3ee3c3b721bfea9",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/HIT-TMG__JevEmbed-Data_card.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/HIT-TMG__JevEmbed-Data_card.md",
+      "sha256": "f5da592dee1d0f74569551a5d32191a267b419354576ecd2497190bdee84134b",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/SargeDev__jev-system1-union-train_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/SargeDev__jev-system1-union-train_files.json",
+      "sha256": "cf30a9d832dd2d53b66d70f584d641baec2e2a8e657a39ef4b0bc7232260965d",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/AI-ModelScope__HelpSteer2_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/AI-ModelScope__HelpSteer2_files.json",
+      "sha256": "07ef390b4e422e13b56dc5da52970426fb726c3bd47be0ba9ff7f2a7163581d4",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/AI-ModelScope__hh-rlhf_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/AI-ModelScope__hh-rlhf_files.json",
+      "sha256": "608388d007e36bbcade8ed94b94e2f2ab65c5a93dfdbaf8b579fdebfbcbed5ac",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/HIT-TMG__JevEmbed-Data_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/HIT-TMG__JevEmbed-Data_files.json",
+      "sha256": "f7728df42c825b03a54f7b666f4501e9d64fc0ab6c7736a2c3afdad311cbc253",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/glaiveai__glaive-function-calling-v2_card.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/glaiveai__glaive-function-calling-v2_card.md",
+      "sha256": "48034784f2e05cbb313602bcbcd8a96940dc08021ca5fb4f4a26476725baf7a3",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/glaiveai__glaive-function-calling-v2_files.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/glaiveai__glaive-function-calling-v2_files.json",
+      "sha256": "dd3b15f1c3cd533d3fe73a5036bed1a7263758503a86e7555cd067c1fa4ad75a",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/source-domain-overrides.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/source-domain-overrides.json",
+      "sha256": "e3d00c9f2e007f967ad2367ef78e9f25891596c63109575d94ae431788e5da35",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/experiment-five-specialists.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/experiment-five-specialists.json",
+      "sha256": "62b8bea1d9e8ff717af43899855640a890f973aa637af16864449523c2087777",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/next-distillation-REPORT.md",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/next-distillation-REPORT.md",
+      "sha256": "67fa8d7ebba11a3fbadc2bea895ece51451d9e22f5814302cf92003bb86f91d3",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/queued-distillation.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/queued-distillation.json",
+      "sha256": "c8d92d80cacab789108f22a1dd1cce127668ebf5e59ebe331c970abc96a34273",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/allenai__winogrande.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/allenai__winogrande.json",
+      "sha256": "067c19aea5a5df036395787635adb9a56d7007edb3fd6b787290f24cbf7b3e5f",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/clinc__clinc_oos.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/clinc__clinc_oos.json",
+      "sha256": "e4a5c9d3fbf74b1861209cc2203a8fa3150a7680bc1fddba58a2903819edbc50",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/mangopy__ToolRet-Queries.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/mangopy__ToolRet-Queries.json",
+      "sha256": "900528a3f44fe65fa22510bbf242c734f1324e0e7af8549c187004b0bebc8525",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/allenai__ai2_arc.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/allenai__ai2_arc.json",
+      "sha256": "f0356c88d5257c526c4d22930e886527504aedf061b32600325c19625743d4a0",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/nvidia__When2Call.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/nvidia__When2Call.json",
+      "sha256": "499b687595376452dab99bb0b96a1500a37d3177123bd221c946a8fed5a4c4c6",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/legacy-datasets__banking77.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/legacy-datasets__banking77.json",
+      "sha256": "551b9a73e3659bac236db6143d52aec61828f1364c594cc8a25b28f562a082b1",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/cais__mmlu.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/cais__mmlu.json",
+      "sha256": "0691498afe75b0c351dea74de4eb4096aaaba55f76fce32cfa12262e75f55fde",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/jmhessel__newyorker_caption_contest.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/jmhessel__newyorker_caption_contest.json",
+      "sha256": "64661bc6b867ba7ae327e829ebf16fabeba112505028d7cf3e8d2a2c7f948623",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/Rowan__hellaswag.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/Rowan__hellaswag.json",
+      "sha256": "bd2f62e7ed26a09f2dd1e2f6c5cdab9010a6c6a3fbf2af42925fbc3a37aa1df1",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/TIGER-Lab__MMLU-Pro.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/TIGER-Lab__MMLU-Pro.json",
+      "sha256": "e4d42163109b722120ca224d0194cbefc19df520c03cf2022a99305ddb6bc7f0",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/tasksource__contract-nli.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/tasksource__contract-nli.json",
+      "sha256": "7d06f86ddfc8f0c9a21e26d18f5fa2fd7512733a0fe39423dd1563ceb133b694",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/mangopy__ToolRet-Tools.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/mangopy__ToolRet-Tools.json",
+      "sha256": "6688044720c28255113e65627cbc02dea88e32829df1aef524c7cc3f3de70d59",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/xlangai__BRIGHT.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/xlangai__BRIGHT.json",
+      "sha256": "55e3929589e634aa56e7b42b447237eeb68f277b549cf63fca3a1b3d17a99b43",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/openai__gsm8k.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/openai__gsm8k.json",
+      "sha256": "1c165e3d4f52540bee569dc947e35f0626cf9d0c0b9d0074dcc343d8fcadd813",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/facebook__anli.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/facebook__anli.json",
+      "sha256": "6e64b0a8862881babed23b4731f688482ad846cec82b836ae1de295e30e382d4",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/mangopy__ToolRet-Training-20w.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/mangopy__ToolRet-Training-20w.json",
+      "sha256": "ddef0ad571b18fcb30d9ddda9ada33af33914f85a884046863b846a07f9bffe7",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/tasksource__esci.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/tasksource__esci.json",
+      "sha256": "4900104f4d9a571ae5a87bd08dcc63921ad07661163ca6fd88ae23e49f381244",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/liminghao1630__API-Bank.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/liminghao1630__API-Bank.json",
+      "sha256": "b7c0f265501044d82894763ee14ca276465105e6311b7435980e92130d6cea91",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    },
+    {
+      "source": "/home/dev/assumeengage/config/hub-metadata/tasksource__zero-shot-label-nli.json",
+      "local_path": "/home/assumeengage/profiler/jev_model_exp/reports/scp-backup-20261031/files/config/hub-metadata/tasksource__zero-shot-label-nli.json",
+      "sha256": "37cfe77e5c039e4f0d09ea8812259509166e9985b2ed859cff2c85f380304098",
+      "category": "config",
+      "source_hash_matches_local": true,
+      "evidence": "Incremental entry returned UNCHANGED_ALREADY_VERIFIED during this followup; recorded afterwards, not continuous monitoring"
+    }
+  ]
+}

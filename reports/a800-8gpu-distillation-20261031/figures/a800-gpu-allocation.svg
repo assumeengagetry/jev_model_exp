@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1000" viewBox="0 0 1560 1000" role="img" aria-labelledby="title desc">
+<title id="title">8×A800：先并行标注，再并行训练三个 Student</title><desc id="desc">按 80GB 卡规划；这是 GPU 分配设计，不是已运行结果。40GB 卡采用报告中的 TP4 替代配置。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Source Han Sans CN",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0.00" y="0.00" width="1560.00" height="1000.00" fill="#ffffff" stroke="none" rx="0"/>
+<text x="54.00" y="58.00" fill="#172d43" font-size="29" text-anchor="start" font-weight="700">8×A800：先并行标注，再并行训练三个 Student</text>
+<text x="54.00" y="96.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">按 80GB 卡规划；这是 GPU 分配设计，不是已运行结果。40GB 卡采用报告中的 TP4 替代配置。</text>
+<text x="542.50" y="160.00" fill="#172d43" font-size="24" text-anchor="middle" font-weight="700">阶段 A：Teacher 离线标注</text>
+<text x="1177.50" y="160.00" fill="#172d43" font-size="24" text-anchor="middle" font-weight="700">阶段 B：Student 等量续训</text>
+<text x="542.50" y="196.00" fill="#566d80" font-size="19" text-anchor="middle" font-weight="400">4 副本 × 每副本 TP2</text>
+<text x="1177.50" y="196.00" fill="#566d80" font-size="19" text-anchor="middle" font-weight="400">3 组 × 每组两卡 DDP＋两卡评测</text>
+<text x="210.00" y="259.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="700">GPU 0</text>
+<text x="210.00" y="331.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="700">GPU 1</text>
+<text x="210.00" y="403.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="700">GPU 2</text>
+<text x="210.00" y="475.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="700">GPU 3</text>
+<text x="210.00" y="547.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="700">GPU 4</text>
+<text x="210.00" y="619.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="700">GPU 5</text>
+<text x="210.00" y="691.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="700">GPU 6</text>
+<text x="210.00" y="763.00" fill="#172d43" font-size="23" text-anchor="end" font-weight="700">GPU 7</text>
+<rect x="260.00" y="216.00" width="565.00" height="138.00" fill="#f8dfbd" stroke="none" rx="9"/>
+<text x="286.00" y="265.00" fill="#a8651b" font-size="24" text-anchor="start" font-weight="700">Teacher 副本 0 · TP2 · BF16</text>
+<text x="286.00" y="311.00" fill="#172d43" font-size="18" text-anchor="start" font-weight="400">GPU 0、1 · 不同训练分片 · 共享磁盘权重</text>
+<rect x="260.00" y="360.00" width="565.00" height="138.00" fill="#f5e8d1" stroke="none" rx="9"/>
+<text x="286.00" y="409.00" fill="#a8651b" font-size="24" text-anchor="start" font-weight="700">Teacher 副本 1 · TP2 · BF16</text>
+<text x="286.00" y="455.00" fill="#172d43" font-size="18" text-anchor="start" font-weight="400">GPU 2、3 · 不同训练分片 · 共享磁盘权重</text>
+<rect x="260.00" y="504.00" width="565.00" height="138.00" fill="#f8dfbd" stroke="none" rx="9"/>
+<text x="286.00" y="553.00" fill="#a8651b" font-size="24" text-anchor="start" font-weight="700">Teacher 副本 2 · TP2 · BF16</text>
+<text x="286.00" y="599.00" fill="#172d43" font-size="18" text-anchor="start" font-weight="400">GPU 4、5 · 不同训练分片 · 共享磁盘权重</text>
+<rect x="260.00" y="648.00" width="565.00" height="138.00" fill="#f5e8d1" stroke="none" rx="9"/>
+<text x="286.00" y="697.00" fill="#a8651b" font-size="24" text-anchor="start" font-weight="700">Teacher 副本 3 · TP2 · BF16</text>
+<text x="286.00" y="743.00" fill="#172d43" font-size="18" text-anchor="start" font-weight="400">GPU 6、7 · 不同训练分片 · 共享磁盘权重</text>
+<rect x="895.00" y="216.00" width="565.00" height="138.00" fill="#d5ece3" stroke="none" rx="9"/>
+<text x="921.00" y="265.00" fill="#267c68" font-size="24" text-anchor="start" font-weight="700">HARD</text>
+<text x="921.00" y="311.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">原始标签 CE</text>
+<rect x="895.00" y="360.00" width="565.00" height="138.00" fill="#f8dfbd" stroke="none" rx="9"/>
+<text x="921.00" y="409.00" fill="#a8651b" font-size="24" text-anchor="start" font-weight="700">SOFT</text>
+<text x="921.00" y="455.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">Teacher 概率 KL</text>
+<rect x="895.00" y="504.00" width="565.00" height="138.00" fill="#e5dcf1" stroke="none" rx="9"/>
+<text x="921.00" y="553.00" fill="#7455a2" font-size="24" text-anchor="start" font-weight="700">HYBRID</text>
+<text x="921.00" y="599.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">0.5 CE＋0.5 KL</text>
+<rect x="895.00" y="648.00" width="565.00" height="138.00" fill="#e5edf5" stroke="none" rx="9"/>
+<text x="921.00" y="697.00" fill="#176e98" font-size="24" text-anchor="start" font-weight="700">起始 Student 评测／辅助</text>
+<text x="921.00" y="743.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">旧模型的新机参照，不是 HARD 新训练</text>
+<text x="842.00" y="504.00" fill="#566d80" font-size="36" text-anchor="middle" font-weight="700">→</text>
+<rect x="54.00" y="830.00" width="1452.00" height="112.00" fill="#f2f6f9" stroke="none" rx="10"/>
+<text x="78.00" y="868.00" fill="#172d43" font-size="23" text-anchor="start" font-weight="700">Teacher 标注完成后，先释放本轮 Teacher 显存，再运行三组 Student。</text>
+<text x="78.00" y="905.00" fill="#566d80" font-size="20" text-anchor="start" font-weight="400">每组：microbatch32／卡 × grad acc2 × 2 卡＝有效 batch128；BF16、LoRA r32、LR 5e-5。</text>
+</svg>

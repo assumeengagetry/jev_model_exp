@@ -1,0 +1,45 @@
+{
+  "checked_date": "2026-10-30",
+  "leaderboard": {
+    "source": "https://huggingface.co/spaces/multimodalart/jev-decision-index/resolve/c130faf65f82e81d3bdefb01e758c712dc5c5199/data/index.json",
+    "revision": "c130faf65f82e81d3bdefb01e758c712dc5c5199",
+    "generated_utc": "2026-10-29T14:04:16Z",
+    "edition": "Decision Index 0.4.1",
+    "models_checked": 247,
+    "rank_method": "Sorted all entries by scores.balanced_skill; v03.rank_v and v03.rank_tie also inspected. Array order is not ranking.",
+    "top_three": [
+      {"engine": "knowline-31b-gen1", "name": "KnowLine 31B Gen1", "full": 71.86, "public": 70.13, "public_language_skill": 71.99, "rank_v": 1, "rank_tie": 1},
+      {"engine": "glide-v1.2", "name": "Fastino GLiDE 1.2", "full": 71.52, "public": 71.99, "public_language_skill": 75.49, "rank_v": 2, "rank_tie": 1},
+      {"engine": "sieve-31b-v3", "name": "Sieve 31B v3", "full": 71.1, "public": 71.68, "public_language_skill": 71.64, "rank_v": 3, "rank_tie": 1}
+    ],
+    "teacher_public_categories": [
+      {"id": "knowledge", "name": "Knowledge", "skill_fraction": 0.5943, "coverage": 1},
+      {"id": "language", "name": "Language", "skill_fraction": 0.7199, "coverage": 1},
+      {"id": "retrieval", "name": "Retrieval", "skill_fraction": 0.7303, "coverage": 1},
+      {"id": "tools", "name": "Tools", "skill_fraction": 0.8474, "coverage": 1},
+      {"id": "arts", "name": "Arts", "skill_fraction": 0.6049, "coverage": 1}
+    ],
+    "full_score_formula": "0.60*private_same_skills + 0.40*private_new_domains, both mapped onto the public scale with untuned stock models"
+  },
+  "model_repository": {
+    "id": "PelaAI/KnowLine-31B-Gen1",
+    "api_source": "https://huggingface.co/api/models/PelaAI/KnowLine-31B-Gen1",
+    "revision_checked_now": "8f052a8130e599b53e5324c34f0f5ff90696e1c6",
+    "historical_download_revision_recovered": false,
+    "private": false,
+    "gated": false,
+    "declared_license": "apache-2.0",
+    "bf16_parameters": 31273088876,
+    "weight_shards": 13,
+    "model_card": "https://huggingface.co/PelaAI/KnowLine-31B-Gen1/raw/8f052a8130e599b53e5324c34f0f5ff90696e1c6/README.md",
+    "inference_guide": "https://huggingface.co/PelaAI/KnowLine-31B-Gen1/raw/8f052a8130e599b53e5324c34f0f5ff90696e1c6/INFERENCE.md",
+    "native_output": "Probability distribution over option label tokens; no generated reasoning required.",
+    "author_inference_conditions": {
+      "read_twice_for_text_requests_at_most_tokens": 3000,
+      "temperature_folded_into_weights": 1.44,
+      "score_extra_divisor": 0.6944,
+      "calibrated_probabilities_require_native_front_end": true
+    }
+  },
+  "provenance_note": "Selected fields transcribed from successful live HTTP reads. These public results are not local Teacher re-evaluation or Student distillation results. The current repository revision does not establish the revision of the historical download."
+}

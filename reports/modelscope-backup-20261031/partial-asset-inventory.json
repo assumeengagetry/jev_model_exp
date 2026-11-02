@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-31",
+  "status": "historical_initial_inventory_before_cn_authentication",
+  "superseded_by": "remote-inventory.json, FINAL-RECEIPT.json and STATUS.md",
+  "source_alias": "sh-09-gpu",
+  "source_root": "/home/dev/assumeengage",
+  "provenance": "Values from successful read-only SSH inspections in this task. A later complete per-file inventory could not be obtained after the SSH gateway began closing connections.",
+  "modelscope_files_successfully_uploaded_at_that_time": 0,
+  "modelscope_repositories_created_at_that_time": 0,
+  "auth_block": {
+    "http_status": 400,
+    "platform_error_code": 10010103009,
+    "meaning": "Existing AccessToken rejected; refresh required.",
+    "usable_cached_login_found": false
+  },
+  "latest_ssh_attempts": {
+    "count": 2,
+    "result": "connection_closed_by_gateway",
+    "global_ssh_config_modified": false
+  },
+  "observed_directory_bytes": {
+    "models": 1615906541,
+    "datasets": 7369141416,
+    "cache": 25573080752,
+    "runs": 1374893003,
+    "src": 6223779,
+    "scripts": 330780,
+    "config": 4113835,
+    "logs": 1037044
+  },
+  "priority_migration_assets": [
+    {"path": "models/Qwen3-0.6B", "role": "Base dependency required by adapter checkpoints", "state": "exists"},
+    {"path": "models/Qwen3-0.6B-common-pair-init-r32", "role": "Shared initialization and tokenizer; not a trained final Student", "state": "exists"},
+    {"path": "cache/pair-training/global-pool", "role": "Frozen global training pool and source/pair mappings", "state": "TRAINING_READY complete=true"},
+    {"path": "cache/pair-training/normalized/typed-full", "role": "Existing typed input/candidate backing data required by the prepared pool", "state": "manifest and files observed"},
+    {"path": "cache/pair-training/tokenized/global-new", "role": "New input/candidate token arrays and offsets", "state": "MANIFEST complete=true"},
+    {"path": "cache/pair-training/tokenized/typed-full", "role": "Typed input/candidate token arrays and offsets", "state": "MANIFEST complete=true"},
+    {"path": "datasets/evaluation-only/decision-index-suite-0.3", "role": "Frozen public evaluation suite", "state": "directory observed"}
+  ],
+  "prepared_pool": {
+    "pairs": 32787042,
+    "effective_training_tokens": 6527647613,
+    "domain_pairs": {"knowledge": 3073453, "language": 14613336, "retrieval": 11047617, "tools": 1579715, "arts": 2472921}
+  },
+  "completed_models_observed": [
+    {"model": "SPECIALIST_KNOWLEDGE", "path": "runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/final", "complete_marker": true, "pairs_seen": 3073453, "effective_tokens": 524419216},
+    {"model": "SPECIALIST_TOOLS", "path": "runs/five-specialists-20261030/SPECIALIST_TOOLS/final", "complete_marker": true, "pairs_seen": 1579715, "effective_tokens": 689961711}
+  ],
+  "last_observed_running_model": "SPECIALIST_ARTS",
+  "final_distillation_parent": "not yet identified; do not replace with initialization or an arbitrary specialist",
+  "soft_labels": "not located in successful limited-depth inspection; full absence is not established",
+  "small_asset_delegate": {
+    "session_id": "ses_e78d20bb6ffeeIq6l616oJr4f8",
+    "request_admitted": true,
+    "handoff_file": "reports/scp-backup-20261031/HANDOFF.md",
+    "completion": "not yet verified by this coordinating task"
+  },
+  "excluded_from_upload": ["credentials", "tokens", "SSH private keys", "browser profiles", "environment package download caches"],
+  "source_files_modified": false,
+  "training_stopped_or_restarted": false
+}

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="840" viewBox="0 0 1540 840" role="img" aria-labelledby="title desc">
+<title id="title">专科模型是否更擅长本方向？只有 HellaSwag 出现一致优势</title><desc id="desc">同一行比较同一个专家与混合训练；两面板指标不同，不能合并成一个平均收益。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Source Han Sans CN",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0.00" y="0.00" width="1540.00" height="840.00" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="54.00" y="57.00" fill="#172d43" font-size="29" text-anchor="start" font-weight="700">专科模型是否更擅长本方向？只有 HellaSwag 出现一致优势</text>
+<text x="54.00" y="93.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">同一行比较同一个专家与混合训练；两面板指标不同，不能合并成一个平均收益。</text>
+<text x="560.00" y="166.00" fill="#172d43" font-size="20" text-anchor="middle" font-weight="700">本族原生 dev 差值（百分点）</text>
+<text x="560.00" y="199.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">正值 = 专家更好；负值 = 混合训练更好</text>
+<line x1="360.00" y1="225.00" x2="360.00" y2="671.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="360.00" y="704.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">-40</text>
+<line x1="448.89" y1="225.00" x2="448.89" y2="671.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="448.89" y="704.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">-30</text>
+<line x1="537.78" y1="225.00" x2="537.78" y2="671.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="537.78" y="704.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">-20</text>
+<line x1="626.67" y1="225.00" x2="626.67" y2="671.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="626.67" y="704.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">-10</text>
+<line x1="715.56" y1="225.00" x2="715.56" y2="671.00" stroke="#566d80" stroke-width="2"/>
+<text x="715.56" y="704.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">0</text>
+<line x1="760.00" y1="225.00" x2="760.00" y2="671.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="760.00" y="704.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">5</text>
+<rect x="708.78" y="247.00" width="6.77" height="30.00" rx="3" fill="#b94d57" stroke="none" stroke-width="1"/>
+<circle cx="708.78" cy="262.00" r="4" fill="#b94d57" stroke="none" stroke-width="1"/>
+<text x="696.78" y="269.00" fill="#b94d57" font-size="21" text-anchor="end" font-weight="700">-0.8</text>
+<rect x="715.56" y="332.00" width="20.62" height="30.00" rx="3" fill="#237d9c" stroke="none" stroke-width="1"/>
+<circle cx="736.17" cy="347.00" r="4" fill="#237d9c" stroke="none" stroke-width="1"/>
+<text x="748.17" y="354.00" fill="#237d9c" font-size="21" text-anchor="start" font-weight="700">+2.3</text>
+<rect x="705.08" y="417.00" width="10.48" height="30.00" rx="3" fill="#b94d57" stroke="none" stroke-width="1"/>
+<circle cx="705.08" cy="432.00" r="4" fill="#b94d57" stroke="none" stroke-width="1"/>
+<text x="693.08" y="439.00" fill="#b94d57" font-size="21" text-anchor="end" font-weight="700">-1.2</text>
+<rect x="715.56" y="502.00" width="2.53" height="30.00" rx="3" fill="#237d9c" stroke="none" stroke-width="1"/>
+<circle cx="718.08" cy="517.00" r="4" fill="#237d9c" stroke="none" stroke-width="1"/>
+<text x="730.08" y="524.00" fill="#237d9c" font-size="21" text-anchor="start" font-weight="700">+0.3</text>
+<rect x="386.05" y="587.00" width="329.51" height="30.00" rx="3" fill="#b94d57" stroke="none" stroke-width="1"/>
+<circle cx="386.05" cy="602.00" r="4" fill="#b94d57" stroke="none" stroke-width="1"/>
+<text x="374.05" y="609.00" fill="#b94d57" font-size="21" text-anchor="end" font-weight="700">-37.1</text>
+<text x="1195.00" y="166.00" fill="#172d43" font-size="20" text-anchor="middle" font-weight="700">对应公开 benchmark 差值（Skill 分）</text>
+<text x="1195.00" y="199.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">正值 = 专家更好；负值 = 混合训练更好</text>
+<line x1="1064.09" y1="225.00" x2="1064.09" y2="671.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="1064.09" y="704.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">-15</text>
+<line x1="1145.91" y1="225.00" x2="1145.91" y2="671.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="1145.91" y="704.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">-10</text>
+<line x1="1227.73" y1="225.00" x2="1227.73" y2="671.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="1227.73" y="704.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">-5</text>
+<line x1="1309.55" y1="225.00" x2="1309.55" y2="671.00" stroke="#566d80" stroke-width="2"/>
+<text x="1309.55" y="704.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">0</text>
+<rect x="1265.18" y="247.00" width="44.37" height="30.00" rx="3" fill="#b94d57" stroke="none" stroke-width="1"/>
+<circle cx="1265.18" cy="262.00" r="4" fill="#b94d57" stroke="none" stroke-width="1"/>
+<text x="1253.18" y="269.00" fill="#b94d57" font-size="21" text-anchor="end" font-weight="700">-2.7</text>
+<rect x="1309.55" y="332.00" width="20.07" height="30.00" rx="3" fill="#237d9c" stroke="none" stroke-width="1"/>
+<circle cx="1329.62" cy="347.00" r="4" fill="#237d9c" stroke="none" stroke-width="1"/>
+<text x="1341.62" y="354.00" fill="#237d9c" font-size="21" text-anchor="start" font-weight="700">+1.2</text>
+<rect x="1302.45" y="417.00" width="7.09" height="30.00" rx="3" fill="#b94d57" stroke="none" stroke-width="1"/>
+<circle cx="1302.45" cy="432.00" r="4" fill="#b94d57" stroke="none" stroke-width="1"/>
+<text x="1290.45" y="439.00" fill="#b94d57" font-size="21" text-anchor="end" font-weight="700">-0.4</text>
+<rect x="1194.67" y="502.00" width="114.87" height="30.00" rx="3" fill="#b94d57" stroke="none" stroke-width="1"/>
+<circle cx="1194.67" cy="517.00" r="4" fill="#b94d57" stroke="none" stroke-width="1"/>
+<text x="1182.67" y="524.00" fill="#b94d57" font-size="21" text-anchor="end" font-weight="700">-7.0</text>
+<rect x="1054.44" y="587.00" width="255.11" height="30.00" rx="3" fill="#b94d57" stroke="none" stroke-width="1"/>
+<circle cx="1054.44" cy="602.00" r="4" fill="#b94d57" stroke="none" stroke-width="1"/>
+<text x="1042.44" y="609.00" fill="#b94d57" font-size="21" text-anchor="end" font-weight="700">-15.6</text>
+<text x="290.00" y="269.00" fill="#172d43" font-size="21" text-anchor="end" font-weight="400">ANLI专家</text>
+<text x="290.00" y="354.00" fill="#172d43" font-size="21" text-anchor="end" font-weight="400">HellaSwag专家</text>
+<text x="290.00" y="439.00" fill="#172d43" font-size="21" text-anchor="end" font-weight="400">ACOS专家</text>
+<text x="290.00" y="524.00" fill="#172d43" font-size="21" text-anchor="end" font-weight="400">英语讽刺专家</text>
+<text x="290.00" y="609.00" fill="#172d43" font-size="21" text-anchor="end" font-weight="400">RAGTruth专家</text>
+<rect x="54.00" y="748.00" width="1432.00" height="54.00" rx="8" fill="#f2f6f9" stroke="none" stroke-width="1"/>
+<text x="76.00" y="781.00" fill="#172d43" font-size="17" text-anchor="start" font-weight="400">英语讽刺：原生英文 dev 仅 +0.3 个百分点，但公开 iSarcasmEval 复合 Skill 下降 7.0 分，不能判为稳定专科收益。</text>
+</svg>

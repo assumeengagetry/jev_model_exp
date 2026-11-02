@@ -1,0 +1,45 @@
+{
+  "repo": "tasksource/zero-shot-label-nli",
+  "config": "default",
+  "split": "train",
+  "revision": "9f0763b798363a6d4ca8f65de2dc80e0fcb48ae2",
+  "extra_hash_checks": false,
+  "files": [
+    {
+      "file": "data/train-00002-of-00005.parquet",
+      "status": "downloaded",
+      "bytes": 251459043,
+      "transport": "https://hf-mirror.com",
+      "revision": "9f0763b798363a6d4ca8f65de2dc80e0fcb48ae2"
+    },
+    {
+      "file": "data/train-00003-of-00005.parquet",
+      "status": "downloaded",
+      "bytes": 216765054,
+      "transport": "https://hf-mirror.com",
+      "revision": "9f0763b798363a6d4ca8f65de2dc80e0fcb48ae2"
+    },
+    {
+      "file": "data/train-00004-of-00005.parquet",
+      "status": "downloaded",
+      "bytes": 207449792,
+      "transport": "https://hf-mirror.com",
+      "revision": "9f0763b798363a6d4ca8f65de2dc80e0fcb48ae2"
+    },
+    {
+      "file": "data/train-00000-of-00005.parquet",
+      "status": "downloaded",
+      "bytes": 219742758,
+      "transport": "https://hf-mirror.com",
+      "revision": "9f0763b798363a6d4ca8f65de2dc80e0fcb48ae2"
+    },
+    {
+      "file": "data/train-00001-of-00005.parquet",
+      "status": "downloaded",
+      "bytes": 245536038,
+      "transport": "https://hf-mirror.com",
+      "revision": "9f0763b798363a6d4ca8f65de2dc80e0fcb48ae2"
+    }
+  ],
+  "complete": true
+}

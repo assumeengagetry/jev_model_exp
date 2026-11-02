@@ -1,0 +1,58 @@
+[
+  {
+    "path": "datasets/benchmark-sources/language/acos.tar.gz",
+    "bytes": 1760505,
+    "status": "present"
+  },
+  {
+    "path": "datasets/benchmark-sources/language/isarcasm.tar.gz",
+    "bytes": 688733,
+    "status": "present"
+  },
+  {
+    "path": "datasets/benchmark-sources/language/nli4ct.tar.gz",
+    "bytes": 3717863,
+    "status": "present"
+  },
+  {
+    "path": "datasets/benchmark-sources/language/vast_train.csv",
+    "bytes": 30142407,
+    "status": "present"
+  },
+  {
+    "path": "datasets/benchmark-sources/language/ragtruth.tar.gz",
+    "bytes": 7387757,
+    "status": "present"
+  },
+  {
+    "path": "datasets/benchmark-sources/retrieval/hover_train.json",
+    "bytes": 9205582,
+    "status": "present"
+  },
+  {
+    "file": "retrieval/sgd.tar.gz",
+    "error": "Command '['curl', '-4', '-fsSL', '--connect-timeout', '15', '--speed-limit', '1024', '--speed-time', '60', '--max-time', '600', '--retry', '2', '--retry-max-time', '900', '--retry-all-errors', '--retry-delay', '2', '-o', '/home/dev/assumeengage/datasets/benchmark-sources/retrieval/sgd.tar.gz.part', 'https://codeload.github.com/google-research-datasets/dstc8-schema-guided-dialogue/tar.gz/e852981ae34990f4358979625854259302feaa78']' timed out after 930 seconds"
+  },
+  {
+    "path": "datasets/benchmark-sources/arts/humicroedit.zip",
+    "bytes": 1621456,
+    "status": "present"
+  },
+  {
+    "path": "datasets/benchmark-sources/arts/cfcolor.zip",
+    "bytes": 53745893,
+    "status": "downloaded"
+  },
+  {
+    "file": "arts/habermas.parquet",
+    "error": "Command '['curl', '-4', '-fsSL', '--connect-timeout', '15', '--speed-limit', '1024', '--speed-time', '60', '--max-time', '600', '--retry', '2', '--retry-max-time', '900', '--retry-all-errors', '--retry-delay', '2', '-C', '-', '-o', '/home/dev/assumeengage/datasets/benchmark-sources/arts/habermas.parquet.part', 'https://storage.googleapis.com/habermas_machine/datasets/hm_all_candidate_comparisons.parquet']' timed out after 930 seconds"
+  },
+  {
+    "file": "games/chessbench-first-train-shard.bag",
+    "error": "Command '['curl', '-4', '-fsSL', '--connect-timeout', '15', '--speed-limit', '1024', '--speed-time', '60', '--max-time', '600', '--retry', '2', '--retry-max-time', '900', '--retry-all-errors', '--retry-delay', '2', '-C', '-', '-o', '/home/dev/assumeengage/datasets/benchmark-sources/games/chessbench-first-train-shard.bag.part', 'https://storage.googleapis.com/searchless_chess/data/train/action_value-00000-of-02148_data.bag']' timed out after 930 seconds"
+  },
+  {
+    "file": "games/boxoban.tar.gz",
+    "error": "Command '['curl', '-4', '-fsSL', '--connect-timeout', '15', '--speed-limit', '1024', '--speed-time', '60', '--max-time', '600', '--retry', '2', '--retry-max-time', '900', '--retry-all-errors', '--retry-delay', '2', '-o', '/home/dev/assumeengage/datasets/benchmark-sources/games/boxoban.tar.gz.part', 'https://codeload.github.com/google-deepmind/boxoban-levels/tar.gz/refs/heads/master']' timed out after 930 seconds"
+  }
+]

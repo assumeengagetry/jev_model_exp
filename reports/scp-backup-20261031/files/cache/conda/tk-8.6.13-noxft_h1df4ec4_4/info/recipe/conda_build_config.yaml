@@ -1,0 +1,3 @@
+tk_variant:
+  - xft  # [linux]
+  - noxft

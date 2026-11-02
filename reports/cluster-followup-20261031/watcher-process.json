@@ -1,0 +1,10 @@
+{
+  "pid": 2765321,
+  "log": "/home/assumeengage/profiler/jev_model_exp/reports/cluster-followup-20261031/watcher.log",
+  "state_file": "/home/assumeengage/profiler/jev_model_exp/reports/cluster-followup-20261031/state.json",
+  "scp_session": "ses_e78d20bb6ffeeIq6l616oJr4f8",
+  "execution_session": "ses_e749dc3c2ffev4nW5qgrukOIiC",
+  "time": "2026-10-31T08:09:31.897874+00:00",
+  "previous_pid": 2602515,
+  "scope": "four-specialists-five-trained-ten-evaluated"
+}

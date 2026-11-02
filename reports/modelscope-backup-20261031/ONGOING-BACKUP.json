@@ -1,0 +1,17 @@
+{
+  "scope": "backup_only_no_training_or_model_inference",
+  "endpoint": "https://www.modelscope.cn",
+  "initial_snapshot_complete": true,
+  "initial_verified_files": 1372,
+  "initial_verified_bytes": 21372577529,
+  "initial_completed_utc": "2026-10-31T09:56:41+00:00",
+  "source_watch_pid": 67837,
+  "source_watch_root": "/home/dev/assumeengage/backup/modelscope-20261031",
+  "max_watch_hours": 72,
+  "interval_seconds": 300,
+  "source_watch_verified_alive_utc": "2026-10-31T10:04:41+00:00",
+  "completion_monitor_shell_id": "sh_19182264b001xgaeFjrfxZkDTj",
+  "completion_notification": "Background command waits on the backup worker lock and reports when the watch exits; no manual completion polling.",
+  "small_scp_session": "ses_e78d20bb6ffeeIq6l616oJr4f8",
+  "remaining_scope": "Upload completed future models and final evaluation assets only; do not restart the experiment. Request final incremental small-file SCP after source completion."
+}

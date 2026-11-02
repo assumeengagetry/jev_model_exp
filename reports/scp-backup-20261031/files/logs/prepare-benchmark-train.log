@@ -1,0 +1,10 @@
+language/acos.tar.gz extracted 2
+language/isarcasm.tar.gz extracted 2
+datasets/benchmark-sources/knowledge/mmlu-data.tar extracted 1
+datasets/benchmark-sources/language/hellaswag-train.jsonl extracted 1
+language/vast_train.csv extracted 1
+retrieval/hover_train.json extracted 1
+datasets/benchmark-sources/arts/humicroedit.zip extracted 4
+datasets/benchmark-sources/language/nli4ct.tar.gz extracted 1001
+datasets/benchmark-sources/language/ragtruth.tar.gz extracted 2
+datasets/benchmark-sources/arts/cfcolor.zip extracted 1

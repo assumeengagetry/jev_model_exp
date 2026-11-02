@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "seed": 42,
+  "sources": [
+    {
+      "source": "workflow_policy",
+      "domain": "tools",
+      "cases": 100000,
+      "pairs": 400000,
+      "path": "cache/pair-training/generated-pairs/workflow_policy.parquet"
+    },
+    {
+      "source": "numeric_constraints",
+      "domain": "knowledge",
+      "cases": 50000,
+      "pairs": 200000,
+      "path": "cache/pair-training/generated-pairs/numeric_constraints.parquet"
+    },
+    {
+      "source": "symbolic_music",
+      "domain": "arts",
+      "cases": 50000,
+      "pairs": 200000,
+      "path": "cache/pair-training/generated-pairs/symbolic_music.parquet"
+    },
+    {
+      "source": "poetry_structure",
+      "domain": "arts",
+      "cases": 50000,
+      "pairs": 150000,
+      "path": "cache/pair-training/generated-pairs/poetry_structure.parquet"
+    },
+    {
+      "source": "chess_move_legality",
+      "domain": "knowledge",
+      "cases": 30000,
+      "pairs": 120000,
+      "path": "cache/pair-training/generated-pairs/chess_move_legality.parquet"
+    }
+  ],
+  "purpose": "requested poetry/music/rules/workflow/chess training coverage; not a replacement for canonical NLI",
+  "tests_run": false,
+  "file_hash_checks": false
+}

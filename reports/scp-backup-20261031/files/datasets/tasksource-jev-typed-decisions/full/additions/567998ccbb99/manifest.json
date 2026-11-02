@@ -1,0 +1,47 @@
+{
+  "config": "full",
+  "baseline_revision": "10eb88768d4c82650a92586b7566101bccebf589",
+  "seed": 0,
+  "max_rows": 30000,
+  "added_rows": 35901,
+  "sources": {
+    "checkthat2024/check-worthiness": 26591,
+    "soul": 9310
+  },
+  "dropped_overlap": {
+    "built": 36268,
+    "train": 367,
+    "evaluation": 0
+  },
+  "revisions": {
+    "soul": {
+      "DAMO-NLP-SG/SOUL": "aef002daaa10d151457958a28b162fc996825023"
+    },
+    "checkthat2024/check-worthiness": {
+      "OpenFact/CLEF24-CheckThat-Task1-en-all": "c02a329c67e4a9201f8bc450f3c5033a60398176"
+    }
+  },
+  "evaluation": "unchanged",
+  "default": "unchanged until the next full rebuild",
+  "preserved_parquets": {
+    "full/test-00000-of-00001.parquet": "f2ab059f5a85de7666b1a2d3b443db292b91f854",
+    "full/train-00000-of-00015.parquet": "f760ee18afd4ce70b015751ef79fc6fd818eae22",
+    "full/train-00001-of-00015.parquet": "bdf7e70d4ab8cdd55500fdb881d37b0121132510",
+    "full/train-00002-of-00015.parquet": "bc1a1bc64592bcf967676340974dac5430258b17",
+    "full/train-00003-of-00015.parquet": "35387df68c882a632c5db1b0640b6c35a20a3db1",
+    "full/train-00004-of-00015.parquet": "41b77b9438781e13b1d5170b7b478b7171023e2c",
+    "full/train-00005-of-00015.parquet": "2aca50a156ee0e00e694a89f512e0adaa06115b3",
+    "full/train-00006-of-00015.parquet": "59e41fe02dffc640932fb77c1cdf9dd0e02318c7",
+    "full/train-00007-of-00015.parquet": "351a3a06f2b67a15bd5e09204a0d56a7db6b2231",
+    "full/train-00008-of-00015.parquet": "ac056cd110fb57910182062b43e9ad22d225dce0",
+    "full/train-00009-of-00015.parquet": "9cafbac20e9cd9c6c2370dcf4a1d7e85b7d57a50",
+    "full/train-00010-of-00015.parquet": "6cf74222bb104a4b6ae168a0f92dfc950184af9b",
+    "full/train-00011-of-00015.parquet": "b15741e8207198c5b6be6b9bd589f039ddc5c6c9",
+    "full/train-00012-of-00015.parquet": "fac82ce7720e4476dfd75761e66b72cd99544c12",
+    "full/train-00013-of-00015.parquet": "72aaac7b41d430853a0d55a9d0f9356fbd0d4b56",
+    "full/train-00014-of-00015.parquet": "b1453c5e9bd1805fb7bfdda3fd3b55e4debfccd8",
+    "full/train-append-517726f3090c-00000-of-00001.parquet": "8744caf5d8beceb486035c5a93af9fe415b39820",
+    "full/validation-00000-of-00001.parquet": "96211364bc43a2349890d3aa9714d4b23bfaf2ba"
+  },
+  "script_sha256": "d99649747f8c3b5cb39ebc7faa179ce4cc2148193c88595b1e4c6002b782b58b"
+}

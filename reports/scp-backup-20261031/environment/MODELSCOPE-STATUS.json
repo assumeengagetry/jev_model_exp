@@ -1,0 +1,119 @@
+{
+  "captured_utc": "2026-10-31T09:23:26.138882+00:00",
+  "checked": true,
+  "cached_username": null,
+  "repositories": [],
+  "read_api_available": false,
+  "uploaded_anything": false,
+  "credential_environment_present": false,
+  "default_home_context": "/root",
+  "alternate_home_context": "/home/jovyan",
+  "alternate_home_status": {
+    "cached_username": null
+  },
+  "repository_check_scope": "No cached username was found in either checked home context, so namespace repository listing was not attempted. Empty repositories does not establish that no repository exists.",
+  "login_scope": "Cached account lookup and credential-environment presence only; no token or cookie values read back, no login or write-capability test.",
+  "read_api_checked": false,
+  "main_task_update": {
+    "recorded_utc": "2026-10-31T10:50:58.971031+00:00",
+    "reported_by": "Latest user main-task acceptance report",
+    "status": "first_round_existing_stable_asset_backup_verified_by_main",
+    "stable_large_asset_files_reported": 1372,
+    "stable_large_asset_gb_reported_approx": 21.37,
+    "local_small_source_files_independently_checked_by_main": 467,
+    "support_archive_source_file_count_reported": 469,
+    "support_archive_mb_reported_approx": 16.36,
+    "support_archive_scope": "467 source small files plus 2 environment observation files",
+    "support_repository": "assumeengage/jev-distill-data-20261031",
+    "support_prefix": "support/",
+    "root_metadata_files_not_separately_uploaded_but_confirmed_in_scp": 6,
+    "partial_fragments_intentionally_not_full_data_backups": 64,
+    "future_large_asset_watch_owned_by_main": true,
+    "future_watch_max_hours_reported": 72,
+    "source_final_completion_notification_expected": true,
+    "independently_retested_in_cloud_by_scp_worker": false
+  },
+  "further_authentication_or_credential_probes_disabled": true,
+  "historical_main_task_reports": [
+    {
+      "recorded_utc": "2026-10-31T09:42:39.739660+00:00",
+      "reported_by": "main task update supplied by user",
+      "status": "upload_blocked_authentication_rejected",
+      "http_status": 400,
+      "platform_code": "10010103009",
+      "credential_refresh_required": true,
+      "cache_session_only_reported": true,
+      "cookie_available_reported": false,
+      "git_credential_available_reported": false,
+      "account_name_confirmed": false,
+      "repository_confirmed": false,
+      "independently_retried_by_scp_worker": false
+    }
+  ],
+  "effective_status": "main_task_cn_private_repositories_writable_first_round_stable_assets_verified",
+  "withdrawn_main_task_reports": [
+    {
+      "recorded_utc": "2026-10-31T10:06:19.878445+00:00",
+      "reported_by": "latest main task update supplied by user",
+      "status": "cn_uploads_succeeding_remaining_assets_in_progress",
+      "model_gb_reported_approx": 1.78,
+      "data_gb_reported_approx": 7.63,
+      "reported_model_scope": [
+        "SPECIALIST_KNOWLEDGE final",
+        "SPECIALIST_TOOLS final",
+        "common initialization",
+        "public base model"
+      ],
+      "other_uploads_continue": true,
+      "independently_retested_by_scp_worker": false,
+      "account_or_repository_probe_performed": false,
+      "auth_and_large_assets_owned_by_main_task": true,
+      "validity": "withdrawn_by_main_task_correction",
+      "use_as_upload_evidence": false
+    }
+  ],
+  "conflicting_status_document": {
+    "detected": true,
+    "scope": "STATUS.md still claims writable private repositories and a formal metadata inventory, conflicting with the latest user correction and partial inventory. It is not used as upload or complete-coverage evidence.",
+    "status_claims_repositories_writable": true,
+    "status_claims_formal_inventory": true,
+    "current": false
+  },
+  "current_cloud_backup_claims": {
+    "source": "Main task independent acceptance report; not a new cloud API check by SCP worker",
+    "stable_assets": 1372,
+    "stable_assets_gb_approx": 21.37,
+    "support_archive_files": 469,
+    "support_archive_mb_approx": 16.36
+  },
+  "superseded_main_task_reports": [
+    {
+      "recorded_utc": "2026-10-31T10:22:46.000315+00:00",
+      "authority": "Latest user correction plus partial-asset-inventory.json; conflicting STATUS.md recorded separately",
+      "status": "partial_inventory_auth_blocked_zero_confirmed_uploads",
+      "successful_uploaded_files_reported": 0,
+      "backup_repositories_created_reported": 0,
+      "http_status": 400,
+      "platform_error_code": "10010103009",
+      "independently_retested_by_scp_worker": false,
+      "complete_remote_inventory_available": false,
+      "overall_remote_small_asset_remainder": null,
+      "current": false,
+      "superseded_utc": "2026-10-31T10:50:58.971031+00:00"
+    }
+  ],
+  "current_repositories_reported_by_main": [
+    {
+      "id": "assumeengage/qwen3-06b-experiment-backup-20261031",
+      "type": "model",
+      "visibility": "private"
+    },
+    {
+      "id": "assumeengage/jev-distill-data-20261031",
+      "type": "dataset",
+      "visibility": "private"
+    }
+  ],
+  "authentication_available_confirmed_by_main": true,
+  "authenticated_account_name_not_read_by_scp_worker": true
+}

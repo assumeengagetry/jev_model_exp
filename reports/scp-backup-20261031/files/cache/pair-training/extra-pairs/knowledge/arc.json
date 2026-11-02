@@ -1,0 +1,12 @@
+{
+  "name": "arc",
+  "domain": "knowledge",
+  "path": "cache/pair-training/extra-pairs/knowledge/arc.parquet",
+  "counts": {
+    "raw_rows": 3370,
+    "pairs": 13478
+  },
+  "source": "native official train; no evaluation split",
+  "complete": true,
+  "tests_executed": false
+}

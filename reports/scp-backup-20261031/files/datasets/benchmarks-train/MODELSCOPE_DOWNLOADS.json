@@ -1,0 +1,70 @@
+{
+  "hash_verification": false,
+  "train_only": true,
+  "files": [
+    {
+      "name": "gsm8k",
+      "path": "datasets/benchmarks-train/knowledge/gsm8k/main/train-00000-of-00001.parquet",
+      "bytes": 2306545,
+      "status": "present",
+      "source": "https://modelscope.cn/api/v1/datasets/AI-ModelScope/gsm8k/repo?Revision=master&FilePath=main%2Ftrain-00000-of-00001.parquet"
+    },
+    {
+      "name": "winogrande",
+      "path": "datasets/benchmarks-train/knowledge/winogrande/winogrande_xl/train-00000-of-00001.parquet",
+      "bytes": 2058506,
+      "status": "downloaded",
+      "source": "https://modelscope.cn/api/v1/datasets/allenai/winogrande/repo?Revision=master&FilePath=winogrande_xl%2Ftrain-00000-of-00001.parquet"
+    },
+    {
+      "name": "anli",
+      "path": "datasets/benchmarks-train/language/anli/plain_text/train_r1-00000-of-00001.parquet",
+      "bytes": 3140120,
+      "status": "downloaded",
+      "source": "https://modelscope.cn/api/v1/datasets/facebook/anli/repo?Revision=master&FilePath=plain_text%2Ftrain_r1-00000-of-00001.parquet"
+    },
+    {
+      "name": "anli",
+      "path": "datasets/benchmarks-train/language/anli/plain_text/train_r2-00000-of-00001.parquet",
+      "bytes": 6527557,
+      "status": "downloaded",
+      "source": "https://modelscope.cn/api/v1/datasets/facebook/anli/repo?Revision=master&FilePath=plain_text%2Ftrain_r2-00000-of-00001.parquet"
+    },
+    {
+      "name": "anli",
+      "path": "datasets/benchmarks-train/language/anli/plain_text/train_r3-00000-of-00001.parquet",
+      "bytes": 14333467,
+      "status": "downloaded",
+      "source": "https://modelscope.cn/api/v1/datasets/facebook/anli/repo?Revision=master&FilePath=plain_text%2Ftrain_r3-00000-of-00001.parquet"
+    },
+    {
+      "name": "when2call",
+      "path": "datasets/benchmarks-train/tools/when2call/train/when2call_train_pref.jsonl",
+      "bytes": 17369692,
+      "status": "downloaded",
+      "source": "https://modelscope.cn/api/v1/datasets/nv-community/When2Call/repo?Revision=master&FilePath=train%2Fwhen2call_train_pref.jsonl"
+    },
+    {
+      "name": "when2call",
+      "path": "datasets/benchmarks-train/tools/when2call/train/when2call_train_sft.jsonl",
+      "bytes": 23867125,
+      "status": "downloaded",
+      "source": "https://modelscope.cn/api/v1/datasets/nv-community/When2Call/repo?Revision=master&FilePath=train%2Fwhen2call_train_sft.jsonl"
+    },
+    {
+      "name": "mmlu-source",
+      "path": "datasets/benchmark-sources/knowledge/mmlu-data.tar",
+      "bytes": 166184960,
+      "status": "present",
+      "source": "https://modelscope.cn/api/v1/datasets/modelscope/mmlu/repo?Revision=master&FilePath=data.tar"
+    },
+    {
+      "name": "hellaswag-source",
+      "path": "datasets/benchmark-sources/language/hellaswag-train.jsonl",
+      "bytes": 47496131,
+      "status": "downloaded",
+      "source": "https://modelscope.oss-cn-beijing.aliyuncs.com/open_data/hellaswag/hellaswag_train.jsonl"
+    }
+  ],
+  "complete": true
+}

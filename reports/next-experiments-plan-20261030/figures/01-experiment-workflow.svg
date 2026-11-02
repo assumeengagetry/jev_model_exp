@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1010" viewBox="0 0 1640 1010" role="img" aria-labelledby="title desc">
+<title id="title">融合结束后，只新增 HARD／SOFT／HYBRID 三组蒸馏续训</title><desc id="desc">实验设计图：复用已完成阶段的 Student 和数据；不重训专科，不再次模型融合。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Source Han Sans CN",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0.00" y="0.00" width="1640.00" height="1010.00" fill="#ffffff" stroke="none" rx="0"/>
+<text x="54.00" y="58.00" fill="#172d43" font-size="29" text-anchor="start" font-weight="700">融合结束后，只新增 HARD／SOFT／HYBRID 三组蒸馏续训</text>
+<text x="54.00" y="96.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">实验设计图：复用已完成阶段的 Student 和数据；不重训专科，不再次模型融合。</text>
+<rect x="54.00" y="151.00" width="730.00" height="142.00" fill="#edf4f9" stroke="none" rx="12"/>
+<text x="80.00" y="193.00" fill="#176e98" font-size="24" text-anchor="start" font-weight="700">继承同一个已有 Student</text>
+<text x="80.00" y="232.00" fill="#172d43" font-size="21" text-anchor="start" font-weight="400">融合实验结束后，固定一个 0.6B checkpoint。</text>
+<text x="80.00" y="270.00" fill="#566d80" font-size="18" text-anchor="start" font-weight="400">三组继承完全相同的权重、分类头与适配结构。</text>
+<rect x="850.00" y="151.00" width="736.00" height="142.00" fill="#fcf2e7" stroke="none" rx="12"/>
+<text x="876.00" y="193.00" fill="#a8651b" font-size="24" text-anchor="start" font-weight="700">沿用训练池＋Teacher 离线标注</text>
+<text x="876.00" y="232.00" fill="#172d43" font-size="20" text-anchor="start" font-weight="400">KnowLine 31B 输出每个 pair 的匹配／不匹配概率。</text>
+<text x="876.00" y="270.00" fill="#566d80" font-size="18" text-anchor="start" font-weight="400">数据缓存与软标签复用，不重新建设专科数据。</text>
+<line x1="419.00" y1="293.00" x2="419.00" y2="349.00" stroke="#71899c" stroke-width="2"/>
+<polygon points="419.00,349.00 413.00,339.00 425.00,339.00" fill="#71899c" fill-opacity="1" stroke="#71899c" stroke-width="1"/>
+<line x1="1218.00" y1="293.00" x2="1218.00" y2="349.00" stroke="#71899c" stroke-width="2"/>
+<polygon points="1218.00,349.00 1212.00,339.00 1224.00,339.00" fill="#71899c" fill-opacity="1" stroke="#71899c" stroke-width="1"/>
+<rect x="54.00" y="349.00" width="1532.00" height="92.00" fill="#f2f6f9" stroke="none" rx="10"/>
+<text x="820.00" y="386.00" fill="#172d43" font-size="24" text-anchor="middle" font-weight="700">同一个 Student 起点＋同一批输入／顺序＋同样的续训量，只改变监督</text>
+<text x="820.00" y="422.00" fill="#566d80" font-size="19" text-anchor="middle" font-weight="400">BF16、r32／alpha64、microbatch32 × grad acc4、有效 batch128；续训 LR 5e-5。</text>
+<line x1="288.00" y1="441.00" x2="288.00" y2="508.00" stroke="#71899c" stroke-width="2"/>
+<polygon points="288.00,508.00 282.00,498.00 294.00,498.00" fill="#71899c" fill-opacity="1" stroke="#71899c" stroke-width="1"/>
+<rect x="54.00" y="508.00" width="468.00" height="166.00" fill="#eaf5f1" stroke="none" rx="12"/>
+<text x="78.00" y="548.00" fill="#267c68" font-size="28" text-anchor="start" font-weight="700">HARD</text>
+<text x="78.00" y="591.00" fill="#267c68" font-size="23" text-anchor="start" font-weight="700">原始标签 CE</text>
+<text x="78.00" y="638.00" fill="#172d43" font-size="18" text-anchor="start" font-weight="400">等量续训控制，不能直接拿旧模型代替</text>
+<line x1="288.00" y1="674.00" x2="288.00" y2="738.00" stroke="#71899c" stroke-width="2"/>
+<polygon points="288.00,738.00 282.00,728.00 294.00,728.00" fill="#71899c" fill-opacity="1" stroke="#71899c" stroke-width="1"/>
+<line x1="820.00" y1="441.00" x2="820.00" y2="508.00" stroke="#71899c" stroke-width="2"/>
+<polygon points="820.00,508.00 814.00,498.00 826.00,498.00" fill="#71899c" fill-opacity="1" stroke="#71899c" stroke-width="1"/>
+<rect x="586.00" y="508.00" width="468.00" height="166.00" fill="#fcf2e7" stroke="none" rx="12"/>
+<text x="610.00" y="548.00" fill="#a8651b" font-size="28" text-anchor="start" font-weight="700">SOFT</text>
+<text x="610.00" y="591.00" fill="#a8651b" font-size="23" text-anchor="start" font-weight="700">Teacher 概率 KL</text>
+<text x="610.00" y="638.00" fill="#172d43" font-size="18" text-anchor="start" font-weight="400">只学习 Teacher，数据与 HARD 一致</text>
+<line x1="820.00" y1="674.00" x2="820.00" y2="738.00" stroke="#71899c" stroke-width="2"/>
+<polygon points="820.00,738.00 814.00,728.00 826.00,728.00" fill="#71899c" fill-opacity="1" stroke="#71899c" stroke-width="1"/>
+<line x1="1352.00" y1="441.00" x2="1352.00" y2="508.00" stroke="#71899c" stroke-width="2"/>
+<polygon points="1352.00,508.00 1346.00,498.00 1358.00,498.00" fill="#71899c" fill-opacity="1" stroke="#71899c" stroke-width="1"/>
+<rect x="1118.00" y="508.00" width="468.00" height="166.00" fill="#f1edf8" stroke="none" rx="12"/>
+<text x="1142.00" y="548.00" fill="#7455a2" font-size="28" text-anchor="start" font-weight="700">HYBRID</text>
+<text x="1142.00" y="591.00" fill="#7455a2" font-size="23" text-anchor="start" font-weight="700">0.5 CE＋0.5 KL</text>
+<text x="1142.00" y="638.00" fill="#172d43" font-size="18" text-anchor="start" font-weight="400">原始标签与 Teacher 混合监督</text>
+<line x1="1352.00" y1="674.00" x2="1352.00" y2="738.00" stroke="#71899c" stroke-width="2"/>
+<polygon points="1352.00,738.00 1346.00,728.00 1358.00,728.00" fill="#71899c" fill-opacity="1" stroke="#71899c" stroke-width="1"/>
+<rect x="54.00" y="738.00" width="1532.00" height="145.00" fill="#edf4f9" stroke="none" rx="12"/>
+<text x="80.00" y="780.00" fill="#176e98" font-size="25" text-anchor="start" font-weight="700">沿用相同五方向／37 项评测：起始 Student＋三组续训结果</text>
+<text x="80.00" y="825.00" fill="#172d43" font-size="22" text-anchor="start" font-weight="400">主比较：SOFT − HARD、HYBRID − HARD；另列三组相对起始 Student 的增益。</text>
+<text x="80.00" y="861.00" fill="#566d80" font-size="19" text-anchor="start" font-weight="400">交付雷达图、逐 benchmark 差值热力图、总体柱状图，以及训练与标注成本。</text>
+<text x="54.00" y="951.00" fill="#172d43" font-size="20" text-anchor="start" font-weight="700">本阶段新增 3 次等量续训，共 3T tokens；上一阶段已有模型只作起点和参照，不计为新训练。</text>
+</svg>

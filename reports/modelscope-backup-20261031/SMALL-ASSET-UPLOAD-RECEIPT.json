@@ -1,0 +1,21 @@
+{
+  "verified_utc": "2026-10-31T10:16:43+00:00",
+  "dataset_repo": "assumeengage/jev-distill-data-20261031",
+  "private": true,
+  "supplementary_assets": [
+    {
+      "path": "support/scp-small-assets-20261031.tar.gz",
+      "bytes": 16363078
+    },
+    {
+      "path": "support/SCP-SMALL-ASSETS.json",
+      "bytes": 97047
+    },
+    {
+      "path": "RESTORE.md",
+      "bytes": 4939
+    }
+  ],
+  "source_file_count": 469,
+  "verified": true
+}

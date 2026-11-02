@@ -1,0 +1,17 @@
+python:
+  - 3.11
+python_impl:
+  - cpython
+is_python_min:
+  - no
+numpy:
+  - 2
+build_type:
+  - release
+  - debug                      # [not win]
+channel_targets:
+  - conda-forge main
+  - conda-forge python_debug   # [not win]
+zip_keys:
+  - build_type
+  - channel_targets

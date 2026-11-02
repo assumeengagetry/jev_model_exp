@@ -1,0 +1,214 @@
+{
+  "repo": "tasksource/tasksource-jev-typed-decisions",
+  "revision": "8df2e5c9a33f19a2c2b8febf291c3acb0a91a8a8",
+  "configs": [
+    "default",
+    "full",
+    "filtered-full"
+  ],
+  "hash_verification": false,
+  "files": [
+    {
+      "path": "datasets/tasksource-jev-typed-decisions/filtered-full/README.md",
+      "bytes": 5158,
+      "status": "downloaded"
+    },
+    {
+      "path": "datasets/tasksource-jev-typed-decisions/filtered-full/filtering-report.json",
+      "bytes": 22170,
+      "status": "downloaded"
+    },
+    {
+      "path": "datasets/tasksource-jev-typed-decisions/full/additions/517726f3090c/manifest.json",
+      "bytes": 2036,
+      "status": "downloaded"
+    },
+    {
+      "path": "datasets/tasksource-jev-typed-decisions/full/additions/567998ccbb99/manifest.json",
+      "bytes": 2318,
+      "status": "downloaded"
+    },
+    {
+      "path": "datasets/tasksource-jev-typed-decisions/README.md",
+      "bytes": 12833,
+      "status": "downloaded"
+    },
+    {
+      "path": "datasets/tasksource-jev-typed-decisions/sources.yaml",
+      "bytes": 278352,
+      "status": "present"
+    },
+    {
+      "path": "datasets/tasksource-jev-typed-decisions/build-summary.json",
+      "bytes": 323,
+      "status": "downloaded"
+    }
+  ],
+  "errors": [
+    {
+      "file": "data/train-00002-of-00006.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "data/train-00000-of-00006.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "data/test-00000-of-00001.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "data/train-00001-of-00006.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "data/train-00004-of-00006.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "data/train-00003-of-00006.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "data/train-00005-of-00006.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "data/validation-00000-of-00001.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00000-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00001-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00002-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00003-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00004-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00005-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00007-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00006-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00008-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00009-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00010-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00011-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "filtered-full/train-00012-of-00013.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/test-00000-of-00001.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00000-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00002-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00001-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00003-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00004-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00006-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00005-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00007-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00009-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00008-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00010-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00011-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00012-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00013-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-00014-of-00015.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-append-517726f3090c-00000-of-00001.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/train-append-567998ccbb99-00000-of-00001.parquet",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "full/validation-00000-of-00001.parquet",
+      "error": "The read operation timed out"
+    }
+  ],
+  "complete": false,
+  "omitted": {
+    "vision": "Image data, not supported by the requested text-only Qwen3-0.6B",
+    "extraction": "Separate span-extraction task, not the typed-decision text training mix"
+  }
+}

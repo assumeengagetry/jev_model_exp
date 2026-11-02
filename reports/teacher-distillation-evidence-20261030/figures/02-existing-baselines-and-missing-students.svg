@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="830" viewBox="0 0 1540 830" role="img" aria-labelledby="title desc">
+<title id="title">已有硬标签成绩不能代替本轮蒸馏的 HARD 控制</title><desc id="desc">左侧是已完成历史模型；右侧是需要同起点、同样本、同预算比较的三组 Student，缺失成绩不画零分柱。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Source Han Sans CN",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0.00" y="0.00" width="1540.00" height="830.00" fill="#ffffff" stroke="none" rx="0"/>
+<text x="54.00" y="58.00" fill="#172d43" font-size="29" text-anchor="start" font-weight="700">已有硬标签成绩不能代替本轮蒸馏的 HARD 控制</text>
+<text x="54.00" y="96.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">左侧是已完成历史模型；右侧是需要同起点、同样本、同预算比较的三组 Student，缺失成绩不画零分柱。</text>
+<text x="440.00" y="168.00" fill="#172d43" font-size="22" text-anchor="middle" font-weight="700">已完成：历史 Language Skill</text>
+<text x="1175.00" y="168.00" fill="#172d43" font-size="22" text-anchor="middle" font-weight="700">待补：本轮配平 Student 对照</text>
+<line x1="300.00" y1="210.00" x2="300.00" y2="587.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="300.00" y="624.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">0</text>
+<line x1="390.00" y1="210.00" x2="390.00" y2="587.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="390.00" y="624.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">10</text>
+<line x1="480.00" y1="210.00" x2="480.00" y2="587.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="480.00" y="624.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">20</text>
+<line x1="570.00" y1="210.00" x2="570.00" y2="587.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="570.00" y="624.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">30</text>
+<line x1="660.00" y1="210.00" x2="660.00" y2="587.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="660.00" y="624.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">40</text>
+<line x1="750.00" y1="210.00" x2="750.00" y2="587.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="750.00" y="624.00" fill="#566d80" font-size="16" text-anchor="middle" font-weight="400">50</text>
+<text x="270.00" y="279.00" fill="#172d43" font-size="22" text-anchor="end" font-weight="400">R0</text>
+<rect x="300.00" y="249.00" width="159.67" height="46.00" fill="#96b0c3" stroke="none" rx="4"/>
+<text x="481.67" y="280.00" fill="#96b0c3" font-size="21" text-anchor="start" font-weight="700">17.7</text>
+<text x="300.00" y="328.00" fill="#566d80" font-size="16" text-anchor="start" font-weight="400">起始模型，单个终点</text>
+<text x="270.00" y="404.00" fill="#172d43" font-size="22" text-anchor="end" font-weight="400">硬标签 r16</text>
+<rect x="300.00" y="374.00" width="303.66" height="46.00" fill="#5398b7" stroke="none" rx="4"/>
+<line x1="598.95" y1="397.00" x2="608.37" y2="397.00" stroke="#172d43" stroke-width="2"/>
+<line x1="598.95" y1="389.00" x2="598.95" y2="405.00" stroke="#172d43" stroke-width="2"/>
+<line x1="608.37" y1="389.00" x2="608.37" y2="405.00" stroke="#172d43" stroke-width="2"/>
+<text x="625.66" y="405.00" fill="#5398b7" font-size="21" text-anchor="start" font-weight="700">33.7 ± 0.5</text>
+<text x="300.00" y="453.00" fill="#566d80" font-size="16" text-anchor="start" font-weight="400">新增 50M tokens，4 个续训 seed</text>
+<text x="270.00" y="529.00" fill="#172d43" font-size="22" text-anchor="end" font-weight="400">硬标签 r32</text>
+<rect x="300.00" y="499.00" width="315.44" height="46.00" fill="#146e96" stroke="none" rx="4"/>
+<line x1="606.81" y1="522.00" x2="624.08" y2="522.00" stroke="#172d43" stroke-width="2"/>
+<line x1="606.81" y1="514.00" x2="606.81" y2="530.00" stroke="#172d43" stroke-width="2"/>
+<line x1="624.08" y1="514.00" x2="624.08" y2="530.00" stroke="#172d43" stroke-width="2"/>
+<text x="637.44" y="530.00" fill="#146e96" font-size="21" text-anchor="start" font-weight="700">35.0 ± 1.0</text>
+<text x="300.00" y="578.00" fill="#566d80" font-size="16" text-anchor="start" font-weight="400">新增 50M tokens，4 个续训 seed</text>
+<line x1="867.00" y1="195.00" x2="867.00" y2="634.00" stroke="#d9e4ec" stroke-width="2"/>
+<rect x="923.00" y="228.00" width="540.00" height="91.00" fill="#f2f5f8" stroke="none" rx="8"/>
+<text x="947.00" y="264.00" fill="#172d43" font-size="23" text-anchor="start" font-weight="700">HARD</text>
+<text x="1083.00" y="264.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">人工标签</text>
+<text x="1428.00" y="264.00" fill="#566d80" font-size="23" text-anchor="end" font-weight="700">未测</text>
+<text x="947.00" y="297.00" fill="#566d80" font-size="16" text-anchor="start" font-weight="400">未见本轮训练、dev 或九项完整评测成绩</text>
+<rect x="923.00" y="353.00" width="540.00" height="91.00" fill="#f2f5f8" stroke="none" rx="8"/>
+<text x="947.00" y="389.00" fill="#172d43" font-size="23" text-anchor="start" font-weight="700">SOFT</text>
+<text x="1083.00" y="389.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">Teacher 软标签</text>
+<text x="1428.00" y="389.00" fill="#566d80" font-size="23" text-anchor="end" font-weight="700">未测</text>
+<text x="947.00" y="422.00" fill="#566d80" font-size="16" text-anchor="start" font-weight="400">未见本轮训练、dev 或九项完整评测成绩</text>
+<rect x="923.00" y="478.00" width="540.00" height="91.00" fill="#f2f5f8" stroke="none" rx="8"/>
+<text x="947.00" y="514.00" fill="#172d43" font-size="23" text-anchor="start" font-weight="700">HYBRID</text>
+<text x="1083.00" y="514.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">人工＋Teacher</text>
+<text x="1428.00" y="514.00" fill="#566d80" font-size="23" text-anchor="end" font-weight="700">未测</text>
+<text x="947.00" y="547.00" fill="#566d80" font-size="16" text-anchor="start" font-weight="400">未见本轮训练、dev 或九项完整评测成绩</text>
+<rect x="54.00" y="679.00" width="1432.00" height="99.00" fill="#f2f6f9" stroke="none" rx="8"/>
+<text x="76.00" y="712.00" fill="#172d43" font-size="18" text-anchor="start" font-weight="400">误差线为 4 个续训 seed 的样本标准差，不是置信区间；它们共享同一个 R0。</text>
+<text x="76.00" y="748.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">历史 r32 的 35.0 分是参考水平，不是这批 9,998 pair 上的配平 HARD 分数，不能直接用来计算蒸馏增益。</text>
+</svg>

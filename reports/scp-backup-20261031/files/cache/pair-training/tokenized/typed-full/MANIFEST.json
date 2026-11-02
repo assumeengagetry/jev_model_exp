@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "source": "/home/dev/assumeengage/cache/pair-training/normalized/typed-full",
+  "format": "candidate-pair-v1-separated-prefix-suffix-eos",
+  "tokenizer": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+  "prefix": {
+    "format": "candidate-pair-v1-separated-prefix-suffix-eos",
+    "source_rows": 2400833,
+    "source_bytes": 630975689,
+    "source_mtime_ns": 1793366197390986527,
+    "rows": 2400833,
+    "tokens": 612383614,
+    "max_length": 83992
+  },
+  "suffix": {
+    "format": "candidate-pair-v1-separated-prefix-suffix-eos",
+    "source_rows": 1349002,
+    "source_bytes": 101954800,
+    "source_mtime_ns": 1793366199106956509,
+    "rows": 1349002,
+    "tokens": 53832107,
+    "max_length": 11645
+  },
+  "source_domain_pairs": {
+    "language": 12055238,
+    "knowledge": 1297487,
+    "arts": 234389,
+    "retrieval": 2289981,
+    "tools": 198032
+  },
+  "pair_cap": null,
+  "tokenization_truncation": false,
+  "extra_file_hash_checks": false
+}

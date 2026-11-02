@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-10-30",
+  "source": "https://huggingface.co/spaces/multimodalart/jev-decision-index/raw/main/data/index.json",
+  "source_generated_utc": "2026-10-29T14:04:16Z",
+  "edition": "Decision Index 0.4.1",
+  "active_scored_areas": 5,
+  "category_definitions": 6,
+  "categories": [
+    {"id": "knowledge", "label": "Knowledge & Reasoning", "panel": [25,30,31,32,33,43,44,45,57,58,28], "folded_into": null},
+    {"id": "language", "label": "Language Understanding", "panel": [11,12,29,38,39,40,41,42,59], "folded_into": null},
+    {"id": "retrieval", "label": "Retrieval & Classification", "panel": [4,5,36,37,56,61], "folded_into": null},
+    {"id": "tools", "label": "Tools & Automation", "panel": [1,2,3,9,62], "folded_into": null},
+    {"id": "arts", "label": "Arts & Human Taste", "panel": [20,21,22,23,50,64], "folded_into": null},
+    {"id": "games", "label": "Games & Strategy", "panel": [], "panel_full": [31], "folded_into": "knowledge", "jev_only": true}
+  ],
+  "note": "Selected public metadata transcribed from the successful live JSON fetch, not a full copy of the leaderboard. Historical experiments use the frozen local Decision Index 0.3 protocol."
+}

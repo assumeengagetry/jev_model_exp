@@ -1,0 +1,96 @@
+{
+  "sent": {
+    "five/train/SPECIALIST_KNOWLEDGE": {
+      "message_id": "msg_191006505001xvfwayUE0DbwKO",
+      "name": "SPECIALIST_KNOWLEDGE"
+    },
+    "five/train/SPECIALIST_TOOLS": {
+      "message_id": "msg_191006505001xvfwayUE0DbwKO",
+      "name": "SPECIALIST_TOOLS"
+    },
+    "five/train/SPECIALIST_ARTS": {
+      "message_id": "msg_191970903001OuwWMLXcOR4ZIW",
+      "name": "SPECIALIST_ARTS"
+    },
+    "five/train/SPECIALIST_RETRIEVAL": {
+      "message_id": "msg_19315eebd001qQTCsDR6ncXHtt",
+      "name": "SPECIALIST_RETRIEVAL"
+    },
+    "five/train/MIXED_ALL": {
+      "message_id": "msg_196059621001dy3oRIg27wuTpl",
+      "name": "MIXED_ALL"
+    },
+    "five/merge/MERGE_AVERAGE": {
+      "message_id": "msg_196076f0b001v1M7PGE0FXpLzy",
+      "name": "MERGE_AVERAGE"
+    },
+    "five/merge/MERGE_DARE_TASK_ARITHMETIC": {
+      "message_id": "msg_196076f0b001v1M7PGE0FXpLzy",
+      "name": "MERGE_DARE_TASK_ARITHMETIC"
+    },
+    "five/merge/MERGE_DARE_TIES": {
+      "message_id": "msg_196076f0b001v1M7PGE0FXpLzy",
+      "name": "MERGE_DARE_TIES"
+    },
+    "five/merge/MERGE_TASK_ARITHMETIC": {
+      "message_id": "msg_196076f0b001v1M7PGE0FXpLzy",
+      "name": "MERGE_TASK_ARITHMETIC"
+    },
+    "five/merge/MERGE_TIES": {
+      "message_id": "msg_196076f0b001v1M7PGE0FXpLzy",
+      "name": "MERGE_TIES"
+    },
+    "five/evaluation/SPECIALIST_KNOWLEDGE": {
+      "message_id": "msg_1965885de001gJ54mGspF5dRjd",
+      "name": "SPECIALIST_KNOWLEDGE"
+    },
+    "five/evaluation/SPECIALIST_RETRIEVAL": {
+      "message_id": "msg_196a43bbd0010LZPubQx9REy9o",
+      "name": "SPECIALIST_RETRIEVAL"
+    },
+    "five/evaluation/SPECIALIST_TOOLS": {
+      "message_id": "msg_196f1b2f1001RlqZyC0KL32gw9",
+      "name": "SPECIALIST_TOOLS"
+    },
+    "five/evaluation/SPECIALIST_ARTS": {
+      "message_id": "msg_19758e8df001VKxtKiBI3p0chh",
+      "name": "SPECIALIST_ARTS"
+    },
+    "five/evaluation/MIXED_ALL": {
+      "message_id": "msg_197a65e7b0016mV2AtgcOR56A6",
+      "name": "MIXED_ALL"
+    },
+    "five/evaluation/MERGE_AVERAGE": {
+      "message_id": "msg_197ddaa05001OWyzs5itnfpDaY",
+      "name": "MERGE_AVERAGE"
+    },
+    "five/evaluation/MERGE_TASK_ARITHMETIC": {
+      "message_id": "msg_19816ccdf001ga1GTNGYgu7e2i",
+      "name": "MERGE_TASK_ARITHMETIC"
+    },
+    "five/evaluation/MERGE_TIES": {
+      "message_id": "msg_1984ff170001E1R1pjvnSjVE7A",
+      "name": "MERGE_TIES"
+    },
+    "five/evaluation/MERGE_DARE_TASK_ARITHMETIC": {
+      "message_id": "msg_198873abe001lNuAx5JDl5A9TP",
+      "name": "MERGE_DARE_TASK_ARITHMETIC"
+    },
+    "five/evaluation/MERGE_DARE_TIES": {
+      "message_id": "msg_198c05cef001viNy7gJ8ncCmwJ",
+      "name": "MERGE_DARE_TIES"
+    },
+    "five/final-report": {
+      "message_id": "msg_198c05cef001viNy7gJ8ncCmwJ",
+      "name": "四专科与融合总报告"
+    }
+  },
+  "distillation_wakeup": "msg_198c05d6e001rCmKfxbWdrkRs4",
+  "blocked_wakeups": [
+    "five:1793523373.2378561:evaluation exited 1; see /home/dev/assumeengage/logs/takeover-evaluation.log",
+    "five:1793540309.6354365:evaluation exited 1; see /home/dev/assumeengage/logs/takeover-evaluation.log",
+    "distillation:1793600425.7736452:teacher-assets stopped before completion; see /home/dev/assumeengage/logs/distillation-teacher-assets.log"
+  ],
+  "last_observed_utc": "2026-11-02T06:27:04.013464+00:00",
+  "last_five_area_stage": "complete"
+}

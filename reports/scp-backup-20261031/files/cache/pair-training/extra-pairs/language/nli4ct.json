@@ -1,0 +1,12 @@
+{
+  "name": "nli4ct",
+  "domain": "language",
+  "path": "cache/pair-training/extra-pairs/language/nli4ct.parquet",
+  "counts": {
+    "raw_rows": 1700,
+    "pairs": 3400
+  },
+  "source": "NLI4CT official train with full indicated clinical-trial sections",
+  "complete": true,
+  "tests_executed": false
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-30",
+  "passed": true,
+  "scope": "Report evidence, arithmetic, local result inventory, links and figures; not model or per-request scoring verification.",
+  "source_hashes_unchanged": 6,
+  "complete_archive_result_schemes_checked": 104,
+  "student_distillation_results_found_in_checked_ledgers": 0,
+  "historical_baseline_endpoints_checked": 9,
+  "baseline_mean_and_sample_std_recomputed_from_archived_csv": true,
+  "all_missing_student_scores_remain_null": true,
+  "teacher_public_area_scores_checked": 5,
+  "local_report_links_checked": 14,
+  "png_svg_pairs_rendered_and_visually_checked": 3,
+  "png_signatures_and_dimensions_checked": true,
+  "local_teacher_directory_found": false,
+  "local_model_weight_or_prepared_cache_files_found": false,
+  "tracked_files_modified": 0,
+  "model_executions": 0,
+  "new_weight_downloads": 0,
+  "training_or_service_jobs_started": 0,
+  "notes": [
+    "Latest successfully read leaderboard snapshot generated at 2026-10-29T14:04:16Z, checked on 2026-10-30.",
+    "Teacher Full numerical rank 1 is distinguished from its first tie group and from public Language Skill.",
+    "The 9998-pair output is an archived dashboard statement conditional on an original ready file, not a newly verified label artifact.",
+    "Current public model revision was checked but does not establish the historical download revision.",
+    "No Student improvement, distillation success/failure, speedup or calibration gain is asserted."
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "root": "/home/dev/assumeengage",
+  "files": [
+    {
+      "source": "/home/dev/assumeengage/scripts/build-global-pair-pool.py",
+      "relative": "scripts/build-global-pair-pool.py",
+      "size": 10775,
+      "mtime_ns": 1793372402757608795
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-benchmark-extras.py",
+      "relative": "scripts/download-benchmark-extras.py",
+      "size": 933,
+      "mtime_ns": 1793351595009146849
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-benchmarks-hf.py",
+      "relative": "scripts/download-benchmarks-hf.py",
+      "size": 2254,
+      "mtime_ns": 1793345922357300439
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-benchmarks-modelscope.py",
+      "relative": "scripts/download-benchmarks-modelscope.py",
+      "size": 3700,
+      "mtime_ns": 1793352477809597143
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-frozen-evaluation-ranges.py",
+      "relative": "scripts/download-frozen-evaluation-ranges.py",
+      "size": 7057,
+      "mtime_ns": 1793373070685877365
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-hf-xet.py",
+      "relative": "scripts/download-hf-xet.py",
+      "size": 4412,
+      "mtime_ns": 1793358379185022515
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-qwen.py",
+      "relative": "scripts/download-qwen.py",
+      "size": 2335,
+      "mtime_ns": 1793346369961108156
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-tasksource-modelscope.py",
+      "relative": "scripts/download-tasksource-modelscope.py",
+      "size": 3766,
+      "mtime_ns": 1793360905756237583
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-tasksource.py",
+      "relative": "scripts/download-tasksource.py",
+      "size": 2058,
+      "mtime_ns": 1793345022803739069
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download_utils.py",
+      "relative": "scripts/download_utils.py",
+      "size": 9712,
+      "mtime_ns": 1793358095370142020
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/finalize-frozen-evaluation-data.py",
+      "relative": "scripts/finalize-frozen-evaluation-data.py",
+      "size": 6339,
+      "mtime_ns": 1793369896486059636
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/finalize-training-cache.py",
+      "relative": "scripts/finalize-training-cache.py",
+      "size": 2722,
+      "mtime_ns": 1793373314601588387
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/five-area-stage-snapshot.py",
+      "relative": "scripts/five-area-stage-snapshot.py",
+      "size": 4709,
+      "mtime_ns": 1793434072802038222
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/generate-training-rules.py",
+      "relative": "scripts/generate-training-rules.py",
+      "size": 7201,
+      "mtime_ns": 1793371903574437887
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/initialize-pair-classifier.py",
+      "relative": "scripts/initialize-pair-classifier.py",
+      "size": 2306,
+      "mtime_ns": 1793358902055529395
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/install-packages.sh",
+      "relative": "scripts/install-packages.sh",
+      "size": 314,
+      "mtime_ns": 1793346369957108226
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/locate-existing-training-cache.cjs",
+      "relative": "scripts/locate-existing-training-cache.cjs",
+      "size": 7897,
+      "mtime_ns": 1793366939874071734
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/merge-formal-models.py",
+      "relative": "scripts/merge-formal-models.py",
+      "size": 6833,
+      "mtime_ns": 1793419623200889401
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/overnight-download-supplements.py",
+      "relative": "scripts/overnight-download-supplements.py",
+      "size": 7971,
+      "mtime_ns": 1793365743170927814
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/overnight-download-zero-shot-http.py",
+      "relative": "scripts/overnight-download-zero-shot-http.py",
+      "size": 5320,
+      "mtime_ns": 1793364923241465983
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/pair_data_common.py",
+      "relative": "scripts/pair_data_common.py",
+      "size": 3069,
+      "mtime_ns": 1793365839389246426
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/pair_training_runtime.py",
+      "relative": "scripts/pair_training_runtime.py",
+      "size": 6084,
+      "mtime_ns": 1793373314597588457
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-benchmark-train.py",
+      "relative": "scripts/prepare-benchmark-train.py",
+      "size": 8955,
+      "mtime_ns": 1793352477817597002
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-evaluation-candidate-cache.py",
+      "relative": "scripts/prepare-evaluation-candidate-cache.py",
+      "size": 5768,
+      "mtime_ns": 1793374153326820500
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-main-extra-pairs.py",
+      "relative": "scripts/prepare-main-extra-pairs.py",
+      "size": 21587,
+      "mtime_ns": 1793371214166640888
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-official-evaluation-data.py",
+      "relative": "scripts/prepare-official-evaluation-data.py",
+      "size": 7434,
+      "mtime_ns": 1793371547632737722
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-overnight-pairs.py",
+      "relative": "scripts/prepare-overnight-pairs.py",
+      "size": 13157,
+      "mtime_ns": 1793367253504630538
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/prepare-typed-pairs.py",
+      "relative": "scripts/prepare-typed-pairs.py",
+      "size": 6675,
+      "mtime_ns": 1793365511206979397
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/run-five-area-takeover.py",
+      "relative": "scripts/run-five-area-takeover.py",
+      "size": 3333,
+      "mtime_ns": 1793419003431750586
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/run-formal-evaluation.py",
+      "relative": "scripts/run-formal-evaluation.py",
+      "size": 19058,
+      "mtime_ns": 1793419623216889120
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/run-formal-experiment.py",
+      "relative": "scripts/run-formal-experiment.py",
+      "size": 4040,
+      "mtime_ns": 1793373921150914182
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/tokenize-normalized-source.py",
+      "relative": "scripts/tokenize-normalized-source.py",
+      "size": 7019,
+      "mtime_ns": 1793367759119843222
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/tokenize-when-pool-ready.py",
+      "relative": "scripts/tokenize-when-pool-ready.py",
+      "size": 5189,
+      "mtime_ns": 1793374153330820430
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model-takeover.py",
+      "relative": "scripts/train-pair-model-takeover.py",
+      "size": 12082,
+      "mtime_ns": 1793419003399751147
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model.py",
+      "relative": "scripts/train-pair-model.py",
+      "size": 11401,
+      "mtime_ns": 1793373576760976746
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/watch-training-session.py",
+      "relative": "scripts/watch-training-session.py",
+      "size": 3092,
+      "mtime_ns": 1793367336719185570
+    },
+    {
+      "source": "/home/dev/assumeengage/config/experiment-five-specialists.json",
+      "relative": "config/experiment-five-specialists.json",
+      "size": 1794,
+      "mtime_ns": 1793371903570437959
+    },
+    {
+      "source": "/home/dev/assumeengage/config/source-domain-overrides.json",
+      "relative": "config/source-domain-overrides.json",
+      "size": 820,
+      "mtime_ns": 1793371903566438029
+    },
+    {
+      "source": "/home/dev/assumeengage/config/accelerate-4gpu.yaml",
+      "relative": "config/accelerate-4gpu.yaml",
+      "size": 294,
+      "mtime_ns": 1793345155153024997
+    },
+    {
+      "source": "/home/dev/assumeengage/config/accelerate-single.yaml",
+      "relative": "config/accelerate-single.yaml",
+      "size": 195,
+      "mtime_ns": 1793345155153024997
+    }
+  ],
+  "symbols": [
+    {
+      "source": "/home/dev/assumeengage/scripts/download-frozen-evaluation-ranges.py",
+      "line": 25,
+      "symbol": "download_file"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download-qwen.py",
+      "line": 18,
+      "symbol": "download"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download_utils.py",
+      "line": 84,
+      "symbol": "direct_hf_download"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/download_utils.py",
+      "line": 168,
+      "symbol": "download"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/overnight-download-supplements.py",
+      "line": 96,
+      "symbol": "download"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/pair_data_common.py",
+      "line": 40,
+      "symbol": "render_pair"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/pair_training_runtime.py",
+      "line": 91,
+      "symbol": "assemble"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/pair_training_runtime.py",
+      "line": 99,
+      "symbol": "collate"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/run-formal-evaluation.py",
+      "line": 84,
+      "symbol": "load_classifier"
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model-takeover.py",
+      "line": 32,
+      "call": "dist.init_process_group",
+      "literal_arguments": [
+        "gloo"
+      ]
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model-takeover.py",
+      "line": 156,
+      "call": "dist.all_reduce",
+      "literal_arguments": []
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model-takeover.py",
+      "line": 143,
+      "call": "dist.all_reduce",
+      "literal_arguments": []
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model-takeover.py",
+      "line": 165,
+      "call": "dist.all_reduce",
+      "literal_arguments": []
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model.py",
+      "line": 32,
+      "call": "dist.init_process_group",
+      "literal_arguments": [
+        "nccl"
+      ]
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model.py",
+      "line": 149,
+      "call": "dist.all_reduce",
+      "literal_arguments": []
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model.py",
+      "line": 139,
+      "call": "dist.all_reduce",
+      "literal_arguments": []
+    },
+    {
+      "source": "/home/dev/assumeengage/scripts/train-pair-model.py",
+      "line": 155,
+      "call": "dist.all_reduce",
+      "literal_arguments": []
+    }
+  ],
+  "model_label_mappings": [
+    {
+      "source": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/config.json",
+      "mapping": {
+        "id2label": {
+          "0": "not_match",
+          "1": "match"
+        },
+        "label2id": {
+          "match": 1,
+          "not_match": 0
+        },
+        "model_type": "qwen3"
+      }
+    },
+    {
+      "source": "/home/dev/assumeengage/runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/final/config.json",
+      "mapping": {
+        "id2label": {
+          "0": "not_match",
+          "1": "match"
+        },
+        "label2id": {
+          "match": 1,
+          "not_match": 0
+        },
+        "model_type": "qwen3"
+      }
+    },
+    {
+      "source": "/home/dev/assumeengage/runs/five-specialists-20261030/SPECIALIST_TOOLS/final/config.json",
+      "mapping": {
+        "id2label": {
+          "0": "not_match",
+          "1": "match"
+        },
+        "label2id": {
+          "match": 1,
+          "not_match": 0
+        },
+        "model_type": "qwen3"
+      }
+    }
+  ],
+  "modelscope_authentication_probes": false
+}

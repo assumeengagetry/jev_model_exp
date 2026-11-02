@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="640" viewBox="0 0 1540 640" role="img" aria-labelledby="title desc">
+<title id="title">蒸馏推进到了 Teacher 标注记录，尚缺 Student 效果对照</title><desc id="desc">颜色表示证据来源，不是完成百分比；历史下载和标注记录不等于当前资产可用。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Source Han Sans CN",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0.00" y="0.00" width="1540.00" height="640.00" fill="#ffffff" stroke="none" rx="0"/>
+<text x="54.00" y="58.00" fill="#172d43" font-size="29" text-anchor="start" font-weight="700">蒸馏推进到了 Teacher 标注记录，尚缺 Student 效果对照</text>
+<text x="54.00" y="96.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">颜色表示证据来源，不是完成百分比；历史下载和标注记录不等于当前资产可用。</text>
+<rect x="54.00" y="175.00" width="337.00" height="300.00" fill="#eaf5f2" stroke="none" rx="12"/>
+<text x="78.00" y="220.00" fill="#172d43" font-size="23" text-anchor="start" font-weight="700">Teacher 选型</text>
+<text x="78.00" y="286.00" fill="#267c68" font-size="34" text-anchor="start" font-weight="700">Full 71.9</text>
+<text x="78.00" y="332.00" fill="#267c68" font-size="19" text-anchor="start" font-weight="700">线上榜单已核对</text>
+<text x="78.00" y="389.00" fill="#172d43" font-size="17" text-anchor="start" font-weight="400">KnowLine 31B Gen1</text>
+<text x="78.00" y="426.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">数值第一，属于第一并列组</text>
+<text x="405.00" y="322.00" fill="#566d80" font-size="23" text-anchor="middle" font-weight="400">→</text>
+<rect x="419.00" y="175.00" width="337.00" height="300.00" fill="#fbf3e8" stroke="none" rx="12"/>
+<text x="443.00" y="220.00" fill="#172d43" font-size="23" text-anchor="start" font-weight="700">Teacher 权重</text>
+<text x="443.00" y="286.00" fill="#aa6b20" font-size="34" text-anchor="start" font-weight="700">62.6 GB</text>
+<text x="443.00" y="332.00" fill="#aa6b20" font-size="19" text-anchor="start" font-weight="700">历史报告记载下载完成</text>
+<text x="443.00" y="389.00" fill="#172d43" font-size="17" text-anchor="start" font-weight="400">31 个文件完成校验</text>
+<text x="443.00" y="426.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">原权重与验收文件本地缺失</text>
+<text x="770.00" y="322.00" fill="#566d80" font-size="23" text-anchor="middle" font-weight="400">→</text>
+<rect x="784.00" y="175.00" width="337.00" height="300.00" fill="#fbf3e8" stroke="none" rx="12"/>
+<text x="808.00" y="220.00" fill="#172d43" font-size="23" text-anchor="start" font-weight="700">Teacher 软标签</text>
+<text x="808.00" y="286.00" fill="#aa6b20" font-size="34" text-anchor="start" font-weight="700">9,998 pair</text>
+<text x="808.00" y="332.00" fill="#aa6b20" font-size="19" text-anchor="start" font-weight="700">较晚看板记载已输出</text>
+<text x="808.00" y="389.00" fill="#172d43" font-size="17" text-anchor="start" font-weight="400">原准备 4,166 道问题</text>
+<text x="808.00" y="426.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">标签本体与 ready 回执缺失</text>
+<text x="1135.00" y="322.00" fill="#566d80" font-size="23" text-anchor="middle" font-weight="400">→</text>
+<rect x="1149.00" y="175.00" width="337.00" height="300.00" fill="#f0f3f6" stroke="none" rx="12"/>
+<text x="1173.00" y="220.00" fill="#172d43" font-size="23" text-anchor="start" font-weight="700">Student 三组对照</text>
+<text x="1173.00" y="286.00" fill="#637787" font-size="34" text-anchor="start" font-weight="700">0 份成绩</text>
+<text x="1173.00" y="332.00" fill="#637787" font-size="19" text-anchor="start" font-weight="700">本地完整评测台账未见</text>
+<text x="1173.00" y="389.00" fill="#172d43" font-size="17" text-anchor="start" font-weight="400">HARD / SOFT / HYBRID</text>
+<text x="1173.00" y="426.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">没有可计算的蒸馏收益</text>
+<text x="54.00" y="546.00" fill="#172d43" font-size="18" text-anchor="start" font-weight="400">本地看板快照：2026-10-30T02:56:38+00:00；完整评测 104 个，其中 Student 蒸馏结果 0 个。</text>
+<text x="54.00" y="587.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">9,998 是 pair 数；4,166 是原准备问题数，不能相除当作标注完成率。0 份成绩不代表模型得分为 0。</text>
+</svg>

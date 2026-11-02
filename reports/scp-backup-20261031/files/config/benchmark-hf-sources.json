@@ -1,0 +1,16 @@
+[
+  {"name":"mmlu","area":"knowledge","repo":"cais/mmlu","patterns":["auxiliary_train/train-*.parquet"],"note":"Official auxiliary_train, not dev/validation/test."},
+  {"name":"arc","area":"knowledge","repo":"allenai/ai2_arc","patterns":["ARC-Easy/train-*.parquet","ARC-Challenge/train-*.parquet"]},
+  {"name":"winogrande","area":"knowledge","repo":"allenai/winogrande","patterns":["winogrande_xl/train-*.parquet"]},
+  {"name":"gsm8k","area":"knowledge","repo":"openai/gsm8k","patterns":["main/train-*.parquet"]},
+  {"name":"hellaswag","area":"language","repo":"Rowan/hellaswag","patterns":["data/train-*.parquet"]},
+  {"name":"anli","area":"language","repo":"facebook/anli","patterns":["plain_text/train_*.parquet"]},
+  {"name":"contractnli","area":"language","repo":"tasksource/contract-nli","patterns":["contractnli_a/train.parquet","contractnli_b/train.parquet"],"note":"Tasksource mirror of ContractNLI's official training examples."},
+  {"name":"banking77","area":"retrieval","repo":"legacy-datasets/banking77","patterns":["data/train-*.parquet"]},
+  {"name":"clinc150","area":"retrieval","repo":"clinc/clinc_oos","patterns":["plus/train-*.parquet"]},
+  {"name":"esci","area":"retrieval","repo":"tasksource/esci","patterns":["*/train*.parquet","train*.parquet"],"note":"Tasksource mirror: official train split with product text already joined, all available locales."},
+  {"name":"when2call","area":"tools","repo":"nvidia/When2Call","patterns":["train/*.jsonl"]},
+  {"name":"apibank","area":"tools","repo":"liminghao1630/API-Bank","patterns":["training-data/*.json"],"note":"Official author's training-data collection, levels 1/2/3; test-data excluded."},
+  {"name":"toolret","area":"tools","repo":"mangopy/ToolRet-Training-20w","patterns":["*.parquet","*/*.parquet","*.jsonl","*/*.jsonl"],"note":"Official 200K training collection; not the ToolRet-Queries evaluation set."},
+  {"name":"newyorker","area":"arts","repo":"jmhessel/newyorker_caption_contest","patterns":["matching/train-*.parquet"],"note":"Official matching train split; includes original image bytes, but text descriptions can be used for Qwen3."}
+]

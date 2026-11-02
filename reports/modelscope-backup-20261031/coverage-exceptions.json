@@ -1,0 +1,37 @@
+{
+  "incomplete_download_parts_excluded": 64,
+  "part_bytes": 586024054,
+  "small_metadata_covered_by_scp": [
+    {
+      "path": "datasets/README.md",
+      "scp_installed": true,
+      "local_present": true
+    },
+    {
+      "path": "runs/five-specialists-20261030/PIPELINE.json",
+      "scp_installed": true,
+      "local_present": true
+    },
+    {
+      "path": "runs/five-specialists-20261030/TAKEOVER.json",
+      "scp_installed": true,
+      "local_present": true
+    },
+    {
+      "path": "runs/five-specialists-20261030/SPECIALIST_ARTS/latest.json",
+      "scp_installed": true,
+      "local_present": true
+    },
+    {
+      "path": "runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/latest.json",
+      "scp_installed": true,
+      "local_present": true
+    },
+    {
+      "path": "runs/five-specialists-20261030/SPECIALIST_TOOLS/latest.json",
+      "scp_installed": true,
+      "local_present": true
+    }
+  ],
+  "zero_inventory_size_mismatches": true
+}

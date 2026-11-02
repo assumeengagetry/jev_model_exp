@@ -1,0 +1,1 @@
+{"time_utc": "2026-11-01T20:25:35.313520+00:00", "controller_pid": 114582, "student_parent": "runs/five-specialists-20261030/MIXED_ALL/final", "active_domains": ["knowledge", "retrieval", "tools", "arts"], "full_pairs": 18173706, "training_started_without_second_confirmation": true}

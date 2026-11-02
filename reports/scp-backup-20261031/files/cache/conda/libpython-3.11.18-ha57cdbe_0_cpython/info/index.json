@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "ha57cdbe_0_cpython",
+  "build_number": 0,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=15"
+  ],
+  "license": "Python-2.0",
+  "name": "libpython",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1793015226560,
+  "version": "3.11.18"
+}

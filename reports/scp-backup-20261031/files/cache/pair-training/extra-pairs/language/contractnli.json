@@ -1,0 +1,12 @@
+{
+  "name": "contractnli",
+  "domain": "language",
+  "path": "cache/pair-training/extra-pairs/language/contractnli.parquet",
+  "counts": {
+    "raw_rows": 6819,
+    "pairs": 20457
+  },
+  "source": "native official train; no evaluation split",
+  "complete": true,
+  "tests_executed": false
+}

@@ -1,0 +1,5 @@
+workflow_policy 100000 cases 400000 pairs
+numeric_constraints 50000 cases 200000 pairs
+symbolic_music 50000 cases 200000 pairs
+poetry_structure 50000 cases 150000 pairs
+chess_move_legality 30000 cases 120000 pairs

@@ -1,0 +1,262 @@
+Actual full-source tokenization, workers: 30 without length truncation or pair caps.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+prefix texts 16384 / 2400833 cached_tokens 3982079 new_texts_per_s 1342
+prefix texts 32768 / 2400833 cached_tokens 7930331 new_texts_per_s 2618
+prefix texts 49152 / 2400833 cached_tokens 12011113 new_texts_per_s 3811
+prefix texts 65536 / 2400833 cached_tokens 15972679 new_texts_per_s 4955
+prefix texts 81920 / 2400833 cached_tokens 19830189 new_texts_per_s 6078
+prefix texts 98304 / 2400833 cached_tokens 23771595 new_texts_per_s 7109
+prefix texts 114688 / 2400833 cached_tokens 27782917 new_texts_per_s 8097
+prefix texts 131072 / 2400833 cached_tokens 31760374 new_texts_per_s 8990
+prefix texts 147456 / 2400833 cached_tokens 35867691 new_texts_per_s 9913
+prefix texts 163840 / 2400833 cached_tokens 39802316 new_texts_per_s 10767
+prefix texts 180224 / 2400833 cached_tokens 43755055 new_texts_per_s 11595
+prefix texts 196608 / 2400833 cached_tokens 47623629 new_texts_per_s 12363
+prefix texts 212992 / 2400833 cached_tokens 51492593 new_texts_per_s 13078
+prefix texts 229376 / 2400833 cached_tokens 55487996 new_texts_per_s 13821
+prefix texts 245760 / 2400833 cached_tokens 59364057 new_texts_per_s 14538
+prefix texts 262144 / 2400833 cached_tokens 63266879 new_texts_per_s 15204
+prefix texts 278528 / 2400833 cached_tokens 67257246 new_texts_per_s 15824
+prefix texts 294912 / 2400833 cached_tokens 71177434 new_texts_per_s 16450
+prefix texts 311296 / 2400833 cached_tokens 75125505 new_texts_per_s 17034
+prefix texts 327680 / 2400833 cached_tokens 79202169 new_texts_per_s 17636
+prefix texts 344064 / 2400833 cached_tokens 83145407 new_texts_per_s 18165
+prefix texts 360448 / 2400833 cached_tokens 86932192 new_texts_per_s 18731
+prefix texts 376832 / 2400833 cached_tokens 90777698 new_texts_per_s 19280
+prefix texts 393216 / 2400833 cached_tokens 94740744 new_texts_per_s 19425
+prefix texts 409600 / 2400833 cached_tokens 98697634 new_texts_per_s 20034
+prefix texts 425984 / 2400833 cached_tokens 102732314 new_texts_per_s 20448
+prefix texts 442368 / 2400833 cached_tokens 106758151 new_texts_per_s 20935
+prefix texts 458752 / 2400833 cached_tokens 110672817 new_texts_per_s 21403
+prefix texts 475136 / 2400833 cached_tokens 114773822 new_texts_per_s 21781
+prefix texts 491520 / 2400833 cached_tokens 118759939 new_texts_per_s 22241
+prefix texts 507904 / 2400833 cached_tokens 122676634 new_texts_per_s 22582
+prefix texts 524288 / 2400833 cached_tokens 126578268 new_texts_per_s 23047
+prefix texts 540672 / 2400833 cached_tokens 130473042 new_texts_per_s 23318
+prefix texts 557056 / 2400833 cached_tokens 134370699 new_texts_per_s 23685
+prefix texts 573440 / 2400833 cached_tokens 138399634 new_texts_per_s 24052
+prefix texts 589824 / 2400833 cached_tokens 142379344 new_texts_per_s 24390
+prefix texts 606208 / 2400833 cached_tokens 146378280 new_texts_per_s 24680
+prefix texts 622592 / 2400833 cached_tokens 150213597 new_texts_per_s 24998
+prefix texts 638976 / 2400833 cached_tokens 154252833 new_texts_per_s 25309
+prefix texts 655360 / 2400833 cached_tokens 158135810 new_texts_per_s 25627
+prefix texts 671744 / 2400833 cached_tokens 162003628 new_texts_per_s 25943
+prefix texts 688128 / 2400833 cached_tokens 165877382 new_texts_per_s 26191
+prefix texts 704512 / 2400833 cached_tokens 169868034 new_texts_per_s 26527
+prefix texts 720896 / 2400833 cached_tokens 173895463 new_texts_per_s 26738
+prefix texts 737280 / 2400833 cached_tokens 177878084 new_texts_per_s 27050
+prefix texts 753664 / 2400833 cached_tokens 181799820 new_texts_per_s 27365
+prefix texts 770048 / 2400833 cached_tokens 185886681 new_texts_per_s 27623
+prefix texts 786432 / 2400833 cached_tokens 189882101 new_texts_per_s 27747
+prefix texts 802816 / 2400833 cached_tokens 193749395 new_texts_per_s 28072
+prefix texts 819200 / 2400833 cached_tokens 197697478 new_texts_per_s 28290
+prefix texts 835584 / 2400833 cached_tokens 201685849 new_texts_per_s 28558
+prefix texts 851968 / 2400833 cached_tokens 205732834 new_texts_per_s 28789
+prefix texts 868352 / 2400833 cached_tokens 209637804 new_texts_per_s 28990
+prefix texts 884736 / 2400833 cached_tokens 213621289 new_texts_per_s 29229
+prefix texts 901120 / 2400833 cached_tokens 217542359 new_texts_per_s 29320
+prefix texts 917504 / 2400833 cached_tokens 221506780 new_texts_per_s 29619
+prefix texts 933888 / 2400833 cached_tokens 225428125 new_texts_per_s 29838
+prefix texts 950272 / 2400833 cached_tokens 229411680 new_texts_per_s 30043
+prefix texts 966656 / 2400833 cached_tokens 233380409 new_texts_per_s 30163
+prefix texts 983040 / 2400833 cached_tokens 237242183 new_texts_per_s 30452
+prefix texts 999424 / 2400833 cached_tokens 241156819 new_texts_per_s 30555
+prefix texts 1015808 / 2400833 cached_tokens 245122396 new_texts_per_s 30733
+prefix texts 1032192 / 2400833 cached_tokens 249081565 new_texts_per_s 30944
+prefix texts 1048576 / 2400833 cached_tokens 252949941 new_texts_per_s 31199
+prefix texts 1064960 / 2400833 cached_tokens 256984406 new_texts_per_s 31187
+prefix texts 1081344 / 2400833 cached_tokens 260871107 new_texts_per_s 31295
+prefix texts 1097728 / 2400833 cached_tokens 264725617 new_texts_per_s 31405
+prefix texts 1114112 / 2400833 cached_tokens 268707718 new_texts_per_s 31636
+prefix texts 1130496 / 2400833 cached_tokens 272681680 new_texts_per_s 31775
+prefix texts 1146880 / 2400833 cached_tokens 276645234 new_texts_per_s 31954
+prefix texts 1163264 / 2400833 cached_tokens 280521317 new_texts_per_s 32041
+prefix texts 1179648 / 2400833 cached_tokens 284397362 new_texts_per_s 32279
+prefix texts 1196032 / 2400833 cached_tokens 288371593 new_texts_per_s 32408
+prefix texts 1212416 / 2400833 cached_tokens 292515288 new_texts_per_s 32490
+prefix texts 1228800 / 2400833 cached_tokens 296354320 new_texts_per_s 32701
+prefix texts 1245184 / 2400833 cached_tokens 300529703 new_texts_per_s 32808
+prefix texts 1261568 / 2400833 cached_tokens 304544270 new_texts_per_s 32889
+prefix texts 1277952 / 2400833 cached_tokens 308518953 new_texts_per_s 33052
+prefix texts 1294336 / 2400833 cached_tokens 312565566 new_texts_per_s 33139
+prefix texts 1310720 / 2400833 cached_tokens 316521093 new_texts_per_s 33332
+prefix texts 1327104 / 2400833 cached_tokens 320459145 new_texts_per_s 33512
+prefix texts 1343488 / 2400833 cached_tokens 324338975 new_texts_per_s 33621
+prefix texts 1359872 / 2400833 cached_tokens 328297740 new_texts_per_s 33740
+prefix texts 1376256 / 2400833 cached_tokens 332223193 new_texts_per_s 33865
+prefix texts 1392640 / 2400833 cached_tokens 336153425 new_texts_per_s 34027
+prefix texts 1409024 / 2400833 cached_tokens 340147009 new_texts_per_s 34144
+prefix texts 1425408 / 2400833 cached_tokens 344071444 new_texts_per_s 34258
+prefix texts 1441792 / 2400833 cached_tokens 348019627 new_texts_per_s 34382
+prefix texts 1458176 / 2400833 cached_tokens 351916619 new_texts_per_s 34526
+prefix texts 1474560 / 2400833 cached_tokens 355741930 new_texts_per_s 34659
+prefix texts 1490944 / 2400833 cached_tokens 359523979 new_texts_per_s 34756
+prefix texts 1507328 / 2400833 cached_tokens 363460308 new_texts_per_s 34860
+prefix texts 1523712 / 2400833 cached_tokens 367466616 new_texts_per_s 34997
+prefix texts 1540096 / 2400833 cached_tokens 371417463 new_texts_per_s 35128
+prefix texts 1556480 / 2400833 cached_tokens 375357345 new_texts_per_s 35232
+prefix texts 1572864 / 2400833 cached_tokens 379338166 new_texts_per_s 35325
+prefix texts 1589248 / 2400833 cached_tokens 383227332 new_texts_per_s 35415
+prefix texts 1605632 / 2400833 cached_tokens 387038097 new_texts_per_s 35521
+prefix texts 1622016 / 2400833 cached_tokens 391060975 new_texts_per_s 35609
+prefix texts 1638400 / 2400833 cached_tokens 395092140 new_texts_per_s 35700
+prefix texts 1654784 / 2400833 cached_tokens 399103114 new_texts_per_s 35759
+prefix texts 1671168 / 2400833 cached_tokens 403150096 new_texts_per_s 35840
+prefix texts 1687552 / 2400833 cached_tokens 407190630 new_texts_per_s 35872
+prefix texts 1703936 / 2400833 cached_tokens 411127856 new_texts_per_s 35985
+prefix texts 1720320 / 2400833 cached_tokens 415229492 new_texts_per_s 35838
+prefix texts 1736704 / 2400833 cached_tokens 419211344 new_texts_per_s 36038
+prefix texts 1753088 / 2400833 cached_tokens 423284928 new_texts_per_s 36106
+prefix texts 1769472 / 2400833 cached_tokens 427161462 new_texts_per_s 36141
+prefix texts 1785856 / 2400833 cached_tokens 431067663 new_texts_per_s 36217
+prefix texts 1802240 / 2400833 cached_tokens 434967018 new_texts_per_s 36362
+prefix texts 1818624 / 2400833 cached_tokens 438832112 new_texts_per_s 36419
+prefix texts 1835008 / 2400833 cached_tokens 442859919 new_texts_per_s 36509
+prefix texts 1851392 / 2400833 cached_tokens 446868342 new_texts_per_s 36577
+prefix texts 1867776 / 2400833 cached_tokens 450709623 new_texts_per_s 35990
+prefix texts 1884160 / 2400833 cached_tokens 454681619 new_texts_per_s 36155
+prefix texts 1900544 / 2400833 cached_tokens 458438529 new_texts_per_s 36355
+prefix texts 1916928 / 2400833 cached_tokens 462534582 new_texts_per_s 36545
+prefix texts 1933312 / 2400833 cached_tokens 466649514 new_texts_per_s 36723
+prefix texts 1949696 / 2400833 cached_tokens 470590235 new_texts_per_s 36816
+prefix texts 1966080 / 2400833 cached_tokens 474500136 new_texts_per_s 36858
+prefix texts 1982464 / 2400833 cached_tokens 478457840 new_texts_per_s 36924
+prefix texts 1998848 / 2400833 cached_tokens 482602297 new_texts_per_s 36900
+prefix texts 2015232 / 2400833 cached_tokens 486645211 new_texts_per_s 37024
+prefix texts 2031616 / 2400833 cached_tokens 490579769 new_texts_per_s 37136
+prefix texts 2048000 / 2400833 cached_tokens 494403867 new_texts_per_s 37197
+prefix texts 2064384 / 2400833 cached_tokens 498261771 new_texts_per_s 37305
+prefix texts 2080768 / 2400833 cached_tokens 502289480 new_texts_per_s 37373
+prefix texts 2097152 / 2400833 cached_tokens 506174715 new_texts_per_s 37405
+prefix texts 2113536 / 2400833 cached_tokens 510070860 new_texts_per_s 37512
+prefix texts 2129920 / 2400833 cached_tokens 513938453 new_texts_per_s 37570
+prefix texts 2146304 / 2400833 cached_tokens 517809968 new_texts_per_s 37663
+prefix texts 2162688 / 2400833 cached_tokens 521902526 new_texts_per_s 37723
+prefix texts 2179072 / 2400833 cached_tokens 525829843 new_texts_per_s 37780
+prefix texts 2195456 / 2400833 cached_tokens 529852347 new_texts_per_s 37868
+prefix texts 2211840 / 2400833 cached_tokens 533906715 new_texts_per_s 37900
+prefix texts 2228224 / 2400833 cached_tokens 537710287 new_texts_per_s 38031
+prefix texts 2244608 / 2400833 cached_tokens 541745640 new_texts_per_s 38038
+prefix texts 2260992 / 2400833 cached_tokens 545835615 new_texts_per_s 38064
+prefix texts 2277376 / 2400833 cached_tokens 549934280 new_texts_per_s 38172
+prefix texts 2293760 / 2400833 cached_tokens 553928208 new_texts_per_s 38247
+prefix texts 2310144 / 2400833 cached_tokens 557894382 new_texts_per_s 38298
+prefix texts 2326528 / 2400833 cached_tokens 561788581 new_texts_per_s 38392
+prefix texts 2342912 / 2400833 cached_tokens 565873289 new_texts_per_s 38461
+prefix texts 2359296 / 2400833 cached_tokens 569987639 new_texts_per_s 38480
+prefix texts 2375680 / 2400833 cached_tokens 610284505 new_texts_per_s 28046
+prefix texts 2392064 / 2400833 cached_tokens 611704393 new_texts_per_s 28216
+prefix texts 2400833 / 2400833 cached_tokens 612383614 new_texts_per_s 28308
+suffix texts 16384 / 1349002 cached_tokens 386072 new_texts_per_s 80521
+suffix texts 32768 / 1349002 cached_tokens 921658 new_texts_per_s 134695
+suffix texts 49152 / 1349002 cached_tokens 1457005 new_texts_per_s 141866
+suffix texts 65536 / 1349002 cached_tokens 1982593 new_texts_per_s 166442
+suffix texts 81920 / 1349002 cached_tokens 2556668 new_texts_per_s 175126
+suffix texts 98304 / 1349002 cached_tokens 3154518 new_texts_per_s 179116
+suffix texts 114688 / 1349002 cached_tokens 3755056 new_texts_per_s 187470
+suffix texts 131072 / 1349002 cached_tokens 4332281 new_texts_per_s 190042
+suffix texts 147456 / 1349002 cached_tokens 4926176 new_texts_per_s 191856
+suffix texts 163840 / 1349002 cached_tokens 5531996 new_texts_per_s 192733
+suffix texts 180224 / 1349002 cached_tokens 6170965 new_texts_per_s 190839
+suffix texts 196608 / 1349002 cached_tokens 6843294 new_texts_per_s 190714
+suffix texts 212992 / 1349002 cached_tokens 7434996 new_texts_per_s 191620
+suffix texts 229376 / 1349002 cached_tokens 8076765 new_texts_per_s 196299
+suffix texts 245760 / 1349002 cached_tokens 8709008 new_texts_per_s 194564
+suffix texts 262144 / 1349002 cached_tokens 9356466 new_texts_per_s 195752
+suffix texts 278528 / 1349002 cached_tokens 10015008 new_texts_per_s 193713
+suffix texts 294912 / 1349002 cached_tokens 10654876 new_texts_per_s 194033
+suffix texts 311296 / 1349002 cached_tokens 11312117 new_texts_per_s 195406
+suffix texts 327680 / 1349002 cached_tokens 11955942 new_texts_per_s 196819
+suffix texts 344064 / 1349002 cached_tokens 12649816 new_texts_per_s 196633
+suffix texts 360448 / 1349002 cached_tokens 13311733 new_texts_per_s 197775
+suffix texts 376832 / 1349002 cached_tokens 13973707 new_texts_per_s 198662
+suffix texts 393216 / 1349002 cached_tokens 14666404 new_texts_per_s 197194
+suffix texts 409600 / 1349002 cached_tokens 15322054 new_texts_per_s 194877
+suffix texts 425984 / 1349002 cached_tokens 15990939 new_texts_per_s 197492
+suffix texts 442368 / 1349002 cached_tokens 16660857 new_texts_per_s 197085
+suffix texts 458752 / 1349002 cached_tokens 17308379 new_texts_per_s 196555
+suffix texts 475136 / 1349002 cached_tokens 17977019 new_texts_per_s 195932
+suffix texts 491520 / 1349002 cached_tokens 18651029 new_texts_per_s 196362
+suffix texts 507904 / 1349002 cached_tokens 19325338 new_texts_per_s 197283
+suffix texts 524288 / 1349002 cached_tokens 20023649 new_texts_per_s 196044
+suffix texts 540672 / 1349002 cached_tokens 20715734 new_texts_per_s 195422
+suffix texts 557056 / 1349002 cached_tokens 21423506 new_texts_per_s 197218
+suffix texts 573440 / 1349002 cached_tokens 22106042 new_texts_per_s 195039
+suffix texts 589824 / 1349002 cached_tokens 22799785 new_texts_per_s 194917
+suffix texts 606208 / 1349002 cached_tokens 23485482 new_texts_per_s 196163
+suffix texts 622592 / 1349002 cached_tokens 24137319 new_texts_per_s 197044
+suffix texts 638976 / 1349002 cached_tokens 24843047 new_texts_per_s 195190
+suffix texts 655360 / 1349002 cached_tokens 25537984 new_texts_per_s 195738
+suffix texts 671744 / 1349002 cached_tokens 26246507 new_texts_per_s 193779
+suffix texts 688128 / 1349002 cached_tokens 26929129 new_texts_per_s 195920
+suffix texts 704512 / 1349002 cached_tokens 27642869 new_texts_per_s 193646
+suffix texts 720896 / 1349002 cached_tokens 28321538 new_texts_per_s 192476
+suffix texts 737280 / 1349002 cached_tokens 28999303 new_texts_per_s 193028
+suffix texts 753664 / 1349002 cached_tokens 29706722 new_texts_per_s 191744
+suffix texts 770048 / 1349002 cached_tokens 30390929 new_texts_per_s 192909
+suffix texts 786432 / 1349002 cached_tokens 31084640 new_texts_per_s 192193
+suffix texts 802816 / 1349002 cached_tokens 31790393 new_texts_per_s 192310
+suffix texts 819200 / 1349002 cached_tokens 32480159 new_texts_per_s 192301
+suffix texts 835584 / 1349002 cached_tokens 33194995 new_texts_per_s 191325
+suffix texts 851968 / 1349002 cached_tokens 33886874 new_texts_per_s 192853
+suffix texts 868352 / 1349002 cached_tokens 34595267 new_texts_per_s 191439
+suffix texts 884736 / 1349002 cached_tokens 35305258 new_texts_per_s 190228
+suffix texts 901120 / 1349002 cached_tokens 36005219 new_texts_per_s 191004
+suffix texts 917504 / 1349002 cached_tokens 36719448 new_texts_per_s 189895
+suffix texts 933888 / 1349002 cached_tokens 37409716 new_texts_per_s 190950
+suffix texts 950272 / 1349002 cached_tokens 38126744 new_texts_per_s 191342
+suffix texts 966656 / 1349002 cached_tokens 38864725 new_texts_per_s 190551
+suffix texts 983040 / 1349002 cached_tokens 39559890 new_texts_per_s 190148
+suffix texts 999424 / 1349002 cached_tokens 40248578 new_texts_per_s 190154
+suffix texts 1015808 / 1349002 cached_tokens 40961864 new_texts_per_s 190084
+suffix texts 1032192 / 1349002 cached_tokens 41667647 new_texts_per_s 189224
+suffix texts 1048576 / 1349002 cached_tokens 42383316 new_texts_per_s 190018
+suffix texts 1064960 / 1349002 cached_tokens 43058519 new_texts_per_s 189544
+suffix texts 1081344 / 1349002 cached_tokens 43772213 new_texts_per_s 189202
+suffix texts 1097728 / 1349002 cached_tokens 44448800 new_texts_per_s 190271
+suffix texts 1114112 / 1349002 cached_tokens 45172958 new_texts_per_s 189221
+suffix texts 1130496 / 1349002 cached_tokens 45878636 new_texts_per_s 188889
+suffix texts 1146880 / 1349002 cached_tokens 46615102 new_texts_per_s 189455
+suffix texts 1163264 / 1349002 cached_tokens 47345761 new_texts_per_s 188906
+suffix texts 1179648 / 1349002 cached_tokens 48069811 new_texts_per_s 189365
+suffix texts 1196032 / 1349002 cached_tokens 48795764 new_texts_per_s 189471
+suffix texts 1212416 / 1349002 cached_tokens 49516115 new_texts_per_s 189241
+suffix texts 1228800 / 1349002 cached_tokens 50259958 new_texts_per_s 189384
+suffix texts 1245184 / 1349002 cached_tokens 50958077 new_texts_per_s 188277
+suffix texts 1261568 / 1349002 cached_tokens 51979789 new_texts_per_s 188467
+suffix texts 1277952 / 1349002 cached_tokens 52634496 new_texts_per_s 189545
+suffix texts 1294336 / 1349002 cached_tokens 53246482 new_texts_per_s 189185
+suffix texts 1310720 / 1349002 cached_tokens 53419354 new_texts_per_s 190628
+suffix texts 1327104 / 1349002 cached_tokens 53596660 new_texts_per_s 192658
+suffix texts 1343488 / 1349002 cached_tokens 53770752 new_texts_per_s 194705
+suffix texts 1349002 / 1349002 cached_tokens 53832107 new_texts_per_s 195388
+Reusable full prefix/candidate token cache ready: /home/dev/assumeengage/cache/pair-training/tokenized/typed-full

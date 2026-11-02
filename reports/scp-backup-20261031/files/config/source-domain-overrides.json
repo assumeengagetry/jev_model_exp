@@ -1,0 +1,19 @@
+{
+  "multilingual/wili_2018": "retrieval",
+  "multilingual/mtop": "retrieval",
+  "trec": "retrieval",
+  "wiki_hop/original": "knowledge",
+  "summarize_from_feedback/comparisons": "arts",
+  "tasksource_dpo_pairs": "arts",
+  "SpaRTUN": "knowledge",
+  "webinstruct/mc": "knowledge",
+  "numer_sense": "knowledge",
+  "procedural-typed-decisions/entity_belief_tracking": "knowledge",
+  "procedural-typed-decisions/record_aggregation": "tools",
+  "procedural-typed-decisions/table_lookup": "retrieval",
+  "procedural-typed-decisions/policy_applicability": "tools",
+  "procedural-typed-decisions/policy_under_uncertainty": "tools",
+  "procedural-typed-decisions/evidence_sufficiency": "retrieval",
+  "procedural-typed-decisions/state_perturbation": "tools",
+  "procedural-typed-decisions/multi_view_adjudication": "knowledge"
+}

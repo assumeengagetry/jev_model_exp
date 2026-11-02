@@ -1,0 +1,5 @@
+Acquiring frozen evaluation inputs: adi060/decision-index-suite-0.2 ec174a4e7aa03e786a7e7e7e384db0f6c69a23e2 ['selected-rows.jsonl.gz', 'excluded-questions.json', 'manifest.json', 'added-rows.jsonl.gz']
+{"file": "selected-rows.jsonl.gz", "status": "failed", "error_type": "ConnectionError"}
+{"file": "excluded-questions.json", "status": "downloaded", "bytes": 663020}
+{"file": "mirror-0.2-manifest.json", "status": "downloaded", "bytes": 27050}
+{"file": "added-rows.jsonl.gz", "status": "failed", "error_type": "ConnectionError"}

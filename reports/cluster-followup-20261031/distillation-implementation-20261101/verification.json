@@ -1,0 +1,146 @@
+{
+  "observed_utc": "2026-11-01T20:52:12.857432+00:00",
+  "all_five_scripts_match": true,
+  "deployed_files": {
+    "train-four-domain-kd.py": true,
+    "run-four-domain-distillation.py": true,
+    "run-distillation-evaluation.py": true,
+    "label-knowline-pairs.py": true,
+    "prepare-knowline-teacher.py": true
+  },
+  "previous_pipeline": {
+    "stage": "complete",
+    "updated_unix": 1793564040.6187723,
+    "owner": "ssh-five-area-takeover",
+    "trained_models": 5,
+    "weight_merge_methods": 5,
+    "primary_conditions": 10
+  },
+  "previous_evaluation": {
+    "complete": true,
+    "conditions": 10,
+    "report": "/home/dev/assumeengage/runs/five-specialists-20261030/report/REPORT.md"
+  },
+  "pipeline": {
+    "stage": "running",
+    "updated_unix": 1793566329.8244526,
+    "owner": "approved-four-domain-distillation",
+    "active_training_domains": [
+      "knowledge",
+      "retrieval",
+      "tools",
+      "arts"
+    ],
+    "pair_cap": null,
+    "token_cap": null,
+    "phase": "hard_training_and_teacher_preparation",
+    "jobs": {
+      "KD_HARD": {
+        "pid": 114583,
+        "starttime": "49467810",
+        "marker": "/home/dev/assumeengage/runs/distillation-after-five-specialists-20261031/KD_HARD/complete.json",
+        "adopted": true,
+        "ownership_file": "/home/dev/assumeengage/runs/distillation-after-five-specialists-20261031/KD_HARD/OWNER.json",
+        "gpus": "0",
+        "log": "/home/dev/assumeengage/logs/distillation-KD_HARD.log"
+      },
+      "teacher-assets": {
+        "pid": 115004,
+        "starttime": "49496573",
+        "marker": "/home/dev/assumeengage/runs/distillation-after-five-specialists-20261031/TEACHER_READY.json",
+        "adopted": true,
+        "gpus": null
+      }
+    }
+  },
+  "controller_pid": 115779,
+  "controller_alive": true,
+  "controller_lock_held": true,
+  "hard_latest": [
+    {
+      "event": "formal_optimizer_progress",
+      "model": "KD_HARD",
+      "step": 1460,
+      "total_steps": 141983,
+      "pairs_seen": 186880,
+      "effective_tokens": 41593212,
+      "loss": 0.15201314834994265,
+      "learning_rate": 1.7140173749706502e-05,
+      "effective_tokens_per_second": 28256.12881721408,
+      "elapsed_seconds": 1570.503425287956
+    }
+  ],
+  "hard_owner": {
+    "arm": "KD_HARD",
+    "student_parent": "runs/five-specialists-20261030/MIXED_ALL/final",
+    "active_training_domains": [
+      "knowledge",
+      "retrieval",
+      "tools",
+      "arts"
+    ],
+    "pool_pairs": 18173706,
+    "worker_pid": 114583,
+    "worker_starttime": "49467810",
+    "coordinator_pid": 114583,
+    "coordinator_starttime": "49467810",
+    "world_size": 1,
+    "cuda_visible_devices": "0",
+    "lock_mode": "legacy_live_pid_guard",
+    "command": [
+      "/home/dev/assumeengage/envs/jev/bin/python",
+      "/home/dev/assumeengage/scripts/train-four-domain-kd.py",
+      "--arm",
+      "KD_HARD"
+    ],
+    "registered_without_restarting_existing_training": true
+  },
+  "teacher_assets": {
+    "stage": "weights-and-environment",
+    "ready_files": 16,
+    "total_files": 29,
+    "downloaded_bytes": 155238446,
+    "total_bytes": 62578809319,
+    "environment_ready": true,
+    "component_errors": [],
+    "updated_at": "2026-11-01T20:52:05.055254+00:00"
+  },
+  "teacher_environment": {
+    "complete": true,
+    "python": "/home/dev/assumeengage/envs/knowline/bin/python",
+    "transformers": "5.12.1",
+    "torch": "2.9.1+cu128",
+    "torch_cuda": "12.8",
+    "gemma4_class": "Gemma4ForConditionalGeneration",
+    "student_environment_modified": false
+  },
+  "teacher_ready": false,
+  "teacher_labels_ready": false,
+  "soft_started": false,
+  "hybrid_started": false,
+  "scope": {
+    "active_training_domains": [
+      "knowledge",
+      "retrieval",
+      "tools",
+      "arts"
+    ],
+    "pairs": 18173706,
+    "effective_student_tokens": 4042053269,
+    "student_parent": "runs/five-specialists-20261030/MIXED_ALL/final",
+    "arms": [
+      "KD_HARD",
+      "KD_SOFT",
+      "KD_HYBRID"
+    ],
+    "learning_rate": 5e-05,
+    "global_effective_batch_pairs": 128
+  },
+  "processes": [
+    " 114583       1 /home/dev/assumeengage/envs/jev/bin/python /home/dev/assumeengage/scripts/train-four-domain-kd.py --arm KD_HARD",
+    " 115779       1 /home/dev/assumeengage/envs/jev/bin/python -B -u /home/dev/assumeengage/scripts/run-four-domain-distillation.py"
+  ],
+  "project_free_gib": 46.93,
+  "teacher_backing_free_gib": 309.89,
+  "gpu_status": "0, 59311 MiB, 100 %\n1, 0 MiB, 0 %\n2, 0 MiB, 0 %\n3, 0 MiB, 0 %"
+}

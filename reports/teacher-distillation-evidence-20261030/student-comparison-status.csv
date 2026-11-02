@@ -1,0 +1,4 @@
+arm,supervision,language_skill,native_dev,trained_checkpoint_found,status
+HARD,人工标签,,,False,not_found_in_local_completed_results
+SOFT,Teacher 软标签,,,False,not_found_in_local_completed_results
+HYBRID,人工＋Teacher,,,False,not_found_in_local_completed_results

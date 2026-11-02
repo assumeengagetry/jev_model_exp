@@ -1,0 +1,14 @@
+benchmark_id,name,active,cluster_key,clusters,request_memberships,largest_cluster,median_cluster,repeated_membership_pct
+20,BPoMP,True,group_id,811,5000,41,2.00,92.44
+22,POP909-CL,True,song_id,792,2000,8,2.00,89.65
+23,cfcolor,True,user_id,669,5000,190,2.00,95.10
+38,ACOS,True,group_id,400,1565,6,6.00,89.33
+42,NLI4CT,True,trial_ids,249,8447,71,40.00,100.00
+50,Habermas Machine,True,group_id,1676,1676,1,1.00,0.00
+50,Habermas Machine,True,question_id,728,1676,20,2.00,82.16
+62,When2Call,True,bfcl_source_id,1295,3652,3,3.00,100.00
+64,New Yorker,True,contest_number,141,528,6,3.00,100.00
+59,RAGTruth,True,source_task_id,450,2700,6,6.00,100.00
+61,HoVer,True,hpqa_id,1592,4000,18,2.00,80.17
+30,GSM8K,True,group_id,1319,2638,2,2.00,100.00
+30,GSM8K,True,answer_group,132,2638,20,20.00,100.00

@@ -1,0 +1,73 @@
+{"time": "2026-10-31T08:53:49.445668+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-10-31T08:55:50.470025+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-10-31T08:57:51.491864+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-10-31T08:59:52.518526+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-10-31T09:01:53.544952+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-10-31T10:52:37.009331+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_191970903001OuwWMLXcOR4ZIW", "milestones": ["five/train/SPECIALIST_ARTS"]}
+{"time": "2026-10-31T17:50:50.608160+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_19315eebd001qQTCsDR6ncXHtt", "milestones": ["five/train/SPECIALIST_RETRIEVAL"]}
+{"time": "2026-11-01T07:31:51.159729+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_196059621001dy3oRIg27wuTpl", "milestones": ["five/train/MIXED_ALL"]}
+{"time": "2026-11-01T07:33:52.022780+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_196076f0b001v1M7PGE0FXpLzy", "milestones": ["five/merge/MERGE_AVERAGE", "five/merge/MERGE_DARE_TASK_ARITHMETIC", "five/merge/MERGE_DARE_TIES", "five/merge/MERGE_TASK_ARITHMETIC", "five/merge/MERGE_TIES"]}
+{"time": "2026-11-01T08:56:23.756268+00:00", "event": "blocked_execution_wakeup_admitted", "phase": "five", "message_id": "msg_19652fdbe001vF8DVULroUlw5Y"}
+{"time": "2026-11-01T09:02:26.318977+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_1965885de001gJ54mGspF5dRjd", "milestones": ["five/evaluation/SPECIALIST_KNOWLEDGE"]}
+{"time": "2026-11-01T10:25:08.048938+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_196a43bbd0010LZPubQx9REy9o", "milestones": ["five/evaluation/SPECIALIST_RETRIEVAL"]}
+{"time": "2026-11-01T11:49:45.104806+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_196f1b2f1001RlqZyC0KL32gw9", "milestones": ["five/evaluation/SPECIALIST_TOOLS"]}
+{"time": "2026-11-01T13:40:27.946306+00:00", "event": "blocked_execution_wakeup_admitted", "phase": "five", "message_id": "msg_1975710970011fOrBxqefcWkjH"}
+{"time": "2026-11-01T13:42:28.903836+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_19758e8df001VKxtKiBI3p0chh", "milestones": ["five/evaluation/SPECIALIST_ARTS"]}
+{"time": "2026-11-01T15:07:05.267620+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_197a65e7b0016mV2AtgcOR56A6", "milestones": ["five/evaluation/MIXED_ALL"]}
+{"time": "2026-11-01T16:07:29.083470+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_197ddaa05001OWyzs5itnfpDaY", "milestones": ["five/evaluation/MERGE_AVERAGE"]}
+{"time": "2026-11-01T17:09:53.622435+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_19816ccdf001ga1GTNGYgu7e2i", "milestones": ["five/evaluation/MERGE_TASK_ARITHMETIC"]}
+{"time": "2026-11-01T18:12:18.463384+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_1984ff170001E1R1pjvnSjVE7A", "milestones": ["five/evaluation/MERGE_TIES"]}
+{"time": "2026-11-01T19:12:41.716356+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_198873abe001lNuAx5JDl5A9TP", "milestones": ["five/evaluation/MERGE_DARE_TASK_ARITHMETIC"]}
+{"time": "2026-11-01T20:15:06.018628+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_198c05cef001viNy7gJ8ncCmwJ", "milestones": ["five/evaluation/MERGE_DARE_TIES", "five/final-report"]}
+{"time": "2026-11-01T20:15:06.165821+00:00", "event": "distillation_execution_wakeup_admitted", "message_id": "msg_198c05d6e001rCmKfxbWdrkRs4"}
+{"time": "2026-11-02T05:56:52.016300+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T05:58:52.101099+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:21:01.438384+00:00", "event": "blocked_execution_wakeup_admitted", "phase": "distillation", "message_id": "msg_19aeb1a6a001JfA6SW3igdONnw"}
+{"time": "2026-11-02T06:29:04.652243+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:31:05.335012+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:33:05.966132+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:35:06.606993+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:37:07.369112+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:39:08.093731+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:41:08.789674+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:43:10.609410+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:45:11.279794+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:47:11.998089+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:49:12.702983+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:51:13.357833+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:53:14.184588+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:55:14.867370+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:57:15.635028+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T06:59:16.296043+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:01:17.036840+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:03:17.651726+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:05:18.310025+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:07:19.030572+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:09:19.521673+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:11:20.239527+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:13:20.936858+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:15:21.569011+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:17:22.264181+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:19:22.894933+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:21:23.722309+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:23:24.413012+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:25:25.022741+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:27:25.787419+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:29:26.592051+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:31:27.405748+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:33:28.258006+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:35:29.022984+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:37:29.713007+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:39:30.453783+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:41:31.255263+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:43:32.098779+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:45:32.681983+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:47:33.524847+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:49:34.204841+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:51:34.908719+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:53:35.459231+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:55:36.173451+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:57:36.928203+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T07:59:37.727268+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T08:01:38.253570+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
+{"time": "2026-11-02T08:03:39.011317+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}

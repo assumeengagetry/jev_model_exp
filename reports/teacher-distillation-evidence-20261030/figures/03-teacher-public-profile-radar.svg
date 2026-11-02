@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="940" viewBox="0 0 1460 940" role="img" aria-labelledby="title desc">
+<title id="title">Teacher 的五方向能力：这是线上大模型成绩，不是蒸馏后成绩</title><desc id="desc">KnowLine 31B Gen1 的公开 Skill；五条轴统一 0–100。Full 排名来自私测，另列而不混入雷达轴。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Source Han Sans CN",sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0.00" y="0.00" width="1460.00" height="940.00" fill="#ffffff" stroke="none" rx="0"/>
+<text x="54.00" y="58.00" fill="#172d43" font-size="29" text-anchor="start" font-weight="700">Teacher 的五方向能力：这是线上大模型成绩，不是蒸馏后成绩</text>
+<text x="54.00" y="96.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">KnowLine 31B Gen1 的公开 Skill；五条轴统一 0–100。Full 排名来自私测，另列而不混入雷达轴。</text>
+<polygon points="540.00,200.00 817.71,401.77 711.63,728.23 368.37,728.23 262.29,401.77" fill="#fafcfd" fill-opacity="1" stroke="#d9e4ec" stroke-width="1"/>
+<polygon points="540.00,433.60 595.54,473.95 574.33,539.25 505.67,539.25 484.46,473.95" fill="none" fill-opacity="1" stroke="#d9e4ec" stroke-width="1"/>
+<text x="552.00" y="427.60" fill="#566d80" font-size="14" text-anchor="start" font-weight="400">20</text>
+<polygon points="540.00,375.20 651.08,455.91 608.65,586.49 471.35,586.49 428.92,455.91" fill="none" fill-opacity="1" stroke="#d9e4ec" stroke-width="1"/>
+<text x="552.00" y="369.20" fill="#566d80" font-size="14" text-anchor="start" font-weight="400">40</text>
+<polygon points="540.00,316.80 706.63,437.86 642.98,633.74 437.02,633.74 373.37,437.86" fill="none" fill-opacity="1" stroke="#d9e4ec" stroke-width="1"/>
+<text x="552.00" y="310.80" fill="#566d80" font-size="14" text-anchor="start" font-weight="400">60</text>
+<polygon points="540.00,258.40 762.17,419.81 677.31,680.99 402.69,680.99 317.83,419.81" fill="none" fill-opacity="1" stroke="#d9e4ec" stroke-width="1"/>
+<text x="552.00" y="252.40" fill="#566d80" font-size="14" text-anchor="start" font-weight="400">80</text>
+<polygon points="540.00,200.00 817.71,401.77 711.63,728.23 368.37,728.23 262.29,401.77" fill="none" fill-opacity="1" stroke="#d9e4ec" stroke-width="1"/>
+<text x="552.00" y="194.00" fill="#566d80" font-size="14" text-anchor="start" font-weight="400">100</text>
+<line x1="540.00" y1="492.00" x2="540.00" y2="200.00" stroke="#d9e4ec" stroke-width="1"/>
+<text x="540.00" y="141.60" fill="#172d43" font-size="22" text-anchor="middle" font-weight="400">Knowledge</text>
+<text x="540.00" y="172.60" fill="#146e96" font-size="23" text-anchor="middle" font-weight="700">59.4</text>
+<line x1="540.00" y1="492.00" x2="817.71" y2="401.77" stroke="#d9e4ec" stroke-width="1"/>
+<text x="873.25" y="383.72" fill="#172d43" font-size="22" text-anchor="start" font-weight="400">Language</text>
+<text x="873.25" y="414.72" fill="#146e96" font-size="23" text-anchor="start" font-weight="700">72.0</text>
+<line x1="540.00" y1="492.00" x2="711.63" y2="728.23" stroke="#d9e4ec" stroke-width="1"/>
+<text x="745.96" y="775.48" fill="#172d43" font-size="22" text-anchor="start" font-weight="400">Retrieval</text>
+<text x="745.96" y="806.48" fill="#146e96" font-size="23" text-anchor="start" font-weight="700">73.0</text>
+<line x1="540.00" y1="492.00" x2="368.37" y2="728.23" stroke="#d9e4ec" stroke-width="1"/>
+<text x="334.04" y="775.48" fill="#172d43" font-size="22" text-anchor="end" font-weight="400">Tools</text>
+<text x="334.04" y="806.48" fill="#146e96" font-size="23" text-anchor="end" font-weight="700">84.7</text>
+<line x1="540.00" y1="492.00" x2="262.29" y2="401.77" stroke="#d9e4ec" stroke-width="1"/>
+<text x="206.75" y="383.72" fill="#172d43" font-size="22" text-anchor="end" font-weight="400">Arts</text>
+<text x="206.75" y="414.72" fill="#146e96" font-size="23" text-anchor="end" font-weight="700">60.5</text>
+<polygon points="540.00,318.46 739.92,427.04 665.34,664.52 394.56,692.18 372.01,437.42" fill="#146e96" fill-opacity="0.14" stroke="#146e96" stroke-width="3.5"/>
+<circle cx="540.00" cy="318.46" r="5" fill="#146e96"/>
+<circle cx="739.92" cy="427.04" r="5" fill="#146e96"/>
+<circle cx="665.34" cy="664.52" r="5" fill="#146e96"/>
+<circle cx="394.56" cy="692.18" r="5" fill="#146e96"/>
+<circle cx="372.01" cy="437.42" r="5" fill="#146e96"/>
+<rect x="1010.00" y="242.00" width="385.00" height="362.00" fill="#f2f6f9" stroke="none" rx="10"/>
+<text x="1035.00" y="286.00" fill="#566d80" font-size="19" text-anchor="start" font-weight="400">Full（私测）</text>
+<text x="1035.00" y="333.00" fill="#146e96" font-size="32" text-anchor="start" font-weight="700">71.9</text>
+<text x="1035.00" y="392.00" fill="#566d80" font-size="19" text-anchor="start" font-weight="400">Public（全部公开方向）</text>
+<text x="1035.00" y="439.00" fill="#146e96" font-size="32" text-anchor="start" font-weight="700">70.1</text>
+<text x="1035.00" y="498.00" fill="#566d80" font-size="19" text-anchor="start" font-weight="400">Language（公开）</text>
+<text x="1035.00" y="545.00" fill="#146e96" font-size="32" text-anchor="start" font-weight="700">72.0</text>
+<text x="1010.00" y="671.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">Full 数值最高，但不等于</text>
+<text x="1010.00" y="706.00" fill="#172d43" font-size="19" text-anchor="start" font-weight="400">每个方向或训练标签都最好。</text>
+<text x="54.00" y="882.00" fill="#566d80" font-size="17" text-anchor="start" font-weight="400">来源：2026-10-30 读取的官方榜单快照（生成于 2026-10-29）；未在本地重新评测 Teacher。</text>
+</svg>

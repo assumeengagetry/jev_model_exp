@@ -1,0 +1,179 @@
+{
+  "observed_utc": "2026-10-31T15:50:47.739053+00:00",
+  "all_deployed_files_match": true,
+  "deployed_files": {
+    "scripts/run-five-area-takeover.py": true,
+    "scripts/pair_training_runtime.py": true,
+    "scripts/train-pair-model-takeover.py": true,
+    "scripts/merge-formal-models.py": true,
+    "scripts/run-formal-evaluation.py": true,
+    "scripts/five-area-stage-snapshot.py": true,
+    "config/experiment-five-specialists.json": true,
+    "config/queued-distillation.json": true,
+    "config/next-distillation-REPORT.md": true,
+    "config/training-plan-five-specialists-2026-10-30.md": true
+  },
+  "pipeline": {
+    "stage": "running",
+    "updated_unix": 1793461802.7205343,
+    "owner": "ssh-five-area-takeover",
+    "model": "SPECIALIST_RETRIEVAL",
+    "child_pid": 69363,
+    "child_starttime": "37386108",
+    "adopted_existing_process": true,
+    "log": "/home/dev/assumeengage/logs/takeover-SPECIALIST_RETRIEVAL.log",
+    "pairs_cap": null,
+    "token_cap": null,
+    "communication": "gloo_cpu_adapter_gradient_sum"
+  },
+  "processes": {
+    "old_controller": {
+      "pid": 57217,
+      "alive": false
+    },
+    "controller": {
+      "pid": 75931,
+      "alive": true,
+      "state": "S",
+      "starttime": "39174541",
+      "command": "/home/dev/assumeengage/envs/jev/bin/python -u /home/dev/assumeengage/scripts/run-five-area-takeover.py "
+    },
+    "retrieval": {
+      "pid": 69363,
+      "alive": true,
+      "state": "S",
+      "starttime": "37386108",
+      "command": "/home/dev/assumeengage/envs/jev/bin/python -m torch.distributed.run --standalone --nnodes=1 --nproc_per_node=4 /home/dev/assumeengage/scripts/train-pair-model-takeover.py --model SPECIALIST_RETRIEVAL "
+    }
+  },
+  "exclusive_controller_lock_held": true,
+  "retrieval_same_starttime_as_before": true,
+  "progress": [
+    {
+      "event": "formal_optimizer_progress",
+      "model": "SPECIALIST_RETRIEVAL",
+      "step": 61700,
+      "total_steps": 86310,
+      "pairs_seen": 7897600,
+      "effective_tokens": 1123650291,
+      "loss": 0.06424559548668185,
+      "learning_rate": 1.9847574793608738e-05,
+      "effective_tokens_per_second": 65132.96640425967,
+      "elapsed_seconds": 17904.803104594
+    },
+    {
+      "event": "formal_optimizer_progress",
+      "model": "SPECIALIST_RETRIEVAL",
+      "step": 61720,
+      "total_steps": 86310,
+      "pairs_seen": 7900160,
+      "effective_tokens": 1123989686,
+      "loss": 0.05478561124673433,
+      "learning_rate": 1.9817649786614394e-05,
+      "effective_tokens_per_second": 64197.10773543016,
+      "elapsed_seconds": 17910.089869246993
+    }
+  ],
+  "log_age_seconds": 0.22,
+  "active_scope": {
+    "active_training_domains": [
+      "knowledge",
+      "retrieval",
+      "tools",
+      "arts"
+    ],
+    "models": [
+      "SPECIALIST_KNOWLEDGE",
+      "SPECIALIST_RETRIEVAL",
+      "SPECIALIST_TOOLS",
+      "SPECIALIST_ARTS",
+      "MIXED_ALL"
+    ],
+    "mixed_all_pairs": 18173706,
+    "mixed_all_effective_tokens": 4042053269,
+    "trained_models": 5,
+    "merge_methods": 5,
+    "evaluation_conditions": 10
+  },
+  "original_cache_still_has_language": true,
+  "language_training_started": false,
+  "stage_snapshot": {
+    "milestones": [
+      {
+        "key": "five/train/SPECIALIST_KNOWLEDGE",
+        "stage": "正式模型训练完成",
+        "name": "SPECIALIST_KNOWLEDGE",
+        "artifacts": [
+          "/home/dev/assumeengage/runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/complete.json",
+          "/home/dev/assumeengage/runs/five-specialists-20261030/SPECIALIST_KNOWLEDGE/final"
+        ],
+        "log": "/home/dev/assumeengage/logs/takeover-SPECIALIST_KNOWLEDGE.log",
+        "summary": {
+          "pairs_seen": 3073453,
+          "effective_tokens": 524419216,
+          "elapsed_seconds": 6905.358858302992
+        }
+      },
+      {
+        "key": "five/train/SPECIALIST_TOOLS",
+        "stage": "正式模型训练完成",
+        "name": "SPECIALIST_TOOLS",
+        "artifacts": [
+          "/home/dev/assumeengage/runs/five-specialists-20261030/SPECIALIST_TOOLS/complete.json",
+          "/home/dev/assumeengage/runs/five-specialists-20261030/SPECIALIST_TOOLS/final"
+        ],
+        "log": "/home/dev/assumeengage/logs/takeover-SPECIALIST_TOOLS.log",
+        "summary": {
+          "pairs_seen": 1579715,
+          "effective_tokens": 689961711,
+          "elapsed_seconds": 6270.488299846009
+        }
+      },
+      {
+        "key": "five/train/SPECIALIST_ARTS",
+        "stage": "正式模型训练完成",
+        "name": "SPECIALIST_ARTS",
+        "artifacts": [
+          "/home/dev/assumeengage/runs/five-specialists-20261030/SPECIALIST_ARTS/complete.json",
+          "/home/dev/assumeengage/runs/five-specialists-20261030/SPECIALIST_ARTS/final"
+        ],
+        "log": "/home/dev/assumeengage/logs/takeover-SPECIALIST_ARTS.log",
+        "summary": {
+          "pairs_seen": 2472921,
+          "effective_tokens": 1255826651,
+          "elapsed_seconds": 11667.862554029969
+        }
+      }
+    ],
+    "five_area_complete": false,
+    "active_models": [
+      "SPECIALIST_KNOWLEDGE",
+      "SPECIALIST_RETRIEVAL",
+      "SPECIALIST_TOOLS",
+      "SPECIALIST_ARTS",
+      "MIXED_ALL"
+    ],
+    "active_training_domains": [
+      "knowledge",
+      "retrieval",
+      "tools",
+      "arts"
+    ],
+    "expected_conditions": 10,
+    "pipeline": {
+      "stage": "running",
+      "updated_unix": 1793461802.7205343,
+      "owner": "ssh-five-area-takeover",
+      "model": "SPECIALIST_RETRIEVAL",
+      "child_pid": 69363,
+      "child_starttime": "37386108",
+      "adopted_existing_process": true,
+      "log": "/home/dev/assumeengage/logs/takeover-SPECIALIST_RETRIEVAL.log",
+      "pairs_cap": null,
+      "token_cap": null,
+      "communication": "gloo_cpu_adapter_gradient_sum"
+    },
+    "distillation_status": {},
+    "distillation_complete": false
+  }
+}

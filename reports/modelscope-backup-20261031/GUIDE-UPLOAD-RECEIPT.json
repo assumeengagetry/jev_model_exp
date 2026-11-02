@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "verified_utc": "2026-10-31T10:36:29+00:00",
+  "repo": "assumeengage/jev-distill-data-20261031",
+  "prefix": "support/a800",
+  "files": [
+    "REPORT.md",
+    "requirements-student.txt",
+    "requirements-teacher-hf.txt",
+    "figures/a800-gpu-allocation.png",
+    "figures/a800-gpu-allocation.svg"
+  ],
+  "bytes": 219855,
+  "restore_guide_updated_in_both_repos": true
+}

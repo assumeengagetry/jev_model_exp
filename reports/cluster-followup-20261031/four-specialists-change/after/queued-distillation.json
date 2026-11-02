@@ -1,0 +1,30 @@
+{
+  "requested_at_utc": "2026-10-31T08:09:11.611719+00:00",
+  "plan": "config/next-distillation-REPORT.md",
+  "execute_after": "all five active previous models (four specialists and MIXED_ALL), five weight merges and ten public five-area evaluations complete",
+  "previous_run_root": "runs/five-specialists-20261030",
+  "new_run_root": "runs/distillation-after-five-specialists-20261031",
+  "student_parent": "runs/five-specialists-20261030/MIXED_ALL/final",
+  "teacher": "PelaAI/KnowLine-31B-Gen1",
+  "training_pool": "cache/pair-training/global-pool",
+  "active_training_domains": ["knowledge", "retrieval", "tools", "arts"],
+  "cancelled_models": ["SPECIALIST_LANGUAGE"],
+  "training_scope": "Use the exact same four-domain pool as MIXED_ALL; preserve cached Language files but do not label or train on them.",
+  "arms": [
+    "KD_HARD",
+    "KD_SOFT",
+    "KD_HYBRID"
+  ],
+  "supervision": "original labels; independent per-pair teacher probabilities; 0.5 original plus 0.5 teacher",
+  "epochs_each": 1,
+  "learning_rate": 5e-05,
+  "lora_r": 32,
+  "lora_alpha": 64,
+  "effective_batch_pairs": 128,
+  "execution_session": "ses_e749dc3c2ffev4nW5qgrukOIiC",
+  "scp_notification_session": "ses_e78d20bb6ffeeIq6l616oJr4f8",
+  "trigger": "local persistent stage watcher resumes the execution session only after full completion",
+  "reuse_existing_data_and_token_cache": true,
+  "repeat_specialist_training": false,
+  "repeat_weight_merging": false
+}
