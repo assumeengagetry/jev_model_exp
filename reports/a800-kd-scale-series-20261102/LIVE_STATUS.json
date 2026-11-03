@@ -1,5 +1,5 @@
 {
-  "unix_time": 1793671218.1940718,
+  "unix_time": 1793675360.3704598,
   "controller": {
     "active": {
       "student": {
@@ -65,7 +65,7 @@
     "reported": [
       1000000
     ],
-    "updated_unix": 1793671202.6255715
+    "updated_unix": 1793675307.1375918
   },
   "steps": {
     "teacher-2000000-1-step.json": {
@@ -92,7 +92,9 @@
       "step_id": "59",
       "devices": "0,1",
       "started_unix": 1793644986.711041,
-      "state": "running"
+      "state": "failed",
+      "exit_code": 1,
+      "ended_unix": 1793675312.1095543
     },
     "teacher-3000000-1-step.json": {
       "role": "teacher",
@@ -104,7 +106,9 @@
       "step_id": "60",
       "devices": "0,1",
       "started_unix": 1793644986.7277117,
-      "state": "running"
+      "state": "failed",
+      "exit_code": 1,
+      "ended_unix": 1793675312.1181302
     },
     "student-1000000-1-step.json": {
       "role": "student",
@@ -548,11 +552,11 @@
     "2": {
       "complete": null,
       "scheduler": {
-        "completed_models": [],
-        "pending_training": [],
-        "pending_evaluation": [
-          "KD_SOFT"
+        "completed_models": [
+          "KD_HARD"
         ],
+        "pending_training": [],
+        "pending_evaluation": [],
         "active": {
           "0": {
             "model": "KD_HYBRID",
@@ -560,12 +564,12 @@
             "pid": 690582
           },
           "1": {
-            "model": "KD_HARD",
+            "model": "KD_SOFT",
             "phase": "evaluate",
-            "pid": 693924
+            "pid": 1000590
           }
         },
-        "updated_unix": 1793671213.776504
+        "updated_unix": 1793675310.2649329
       },
       "training": {
         "KD_HARD": {
@@ -635,21 +639,39 @@
         "KD_HYBRID": {
           "event": "continuation_progress",
           "model": "KD_HYBRID",
-          "step": 1600,
+          "step": 4300,
           "total_steps": 15625,
-          "pairs_seen": 204800,
-          "effective_tokens": 44918520,
-          "loss": 0.1123091972869588,
-          "ce": 0.153227320175356,
-          "kl": 0.07139107446797426,
-          "learning_rate": 4.9315012210522596e-05,
-          "elapsed_seconds": 2443.7197788991034,
-          "tokens_per_second": 18740.13534744435,
-          "pairs_per_second": 88.72087127122106
+          "pairs_seen": 550400,
+          "effective_tokens": 120608566,
+          "loss": 0.1100861301879013,
+          "ce": 0.15274628664868942,
+          "kl": 0.06742597322333495,
+          "learning_rate": 4.252033938963427e-05,
+          "elapsed_seconds": 6551.363081820309,
+          "tokens_per_second": 18789.397702776132,
+          "pairs_per_second": 84.19780375278651
         }
       },
       "evaluation": {
-        "KD_HARD": null,
+        "KD_HARD": {
+          "complete": true,
+          "model": "KD_HARD",
+          "requests": 5935,
+          "benchmarks": 37,
+          "counts": {
+            "ok": 5935
+          },
+          "pilot_score": 21.66,
+          "coverage": 1.0,
+          "latency_scope": "One evaluation GPU per model; actual candidate scoring, not isolated latency-v1",
+          "evaluation_inputs": "Same frozen complete pilot cases and ALL candidates; no training-length truncation",
+          "scope": "pilot_subset",
+          "selected_cases": 4786,
+          "candidate_pairs": 163671,
+          "full_public_requests": 110087,
+          "official_full_public_run": false,
+          "private_full_score": false
+        },
         "KD_SOFT": null,
         "KD_HYBRID": null
       }
@@ -724,23 +746,23 @@
         "mode": "dynamic-state-local-chunks-v1",
         "run_id": 1793644990562415169,
         "total_pairs": 3000000,
-        "completed_pairs": 2326965,
+        "completed_pairs": 2366030,
         "recovered_pairs": 2072464,
-        "completion_fraction": 0.775655,
-        "new_pairs_this_run": 254501,
-        "new_pairs_per_second": 9.704903880768272,
-        "run_elapsed_seconds": 26223.95884871483,
-        "annotation_elapsed_seconds": 26047.622470140457,
-        "completed_tasks": 516,
+        "completion_fraction": 0.7886766666666667,
+        "new_pairs_this_run": 293566,
+        "new_pairs_per_second": 9.682018122104534,
+        "run_elapsed_seconds": 30320.744735002518,
+        "annotation_elapsed_seconds": 30144.408356428146,
+        "completed_tasks": 528,
         "total_tasks": 728,
         "active_tasks": {
-          "0": 471
+          "0": 483
         },
         "new_pairs_by_replica": {
-          "0": 254501,
+          "0": 293566,
           "1": 0
         },
-        "updated_unix": 1793671198.045661
+        "updated_unix": 1793675292.7292707
       },
       "timing": {
         "first_stage_started_unix": 1793644990.5617895,

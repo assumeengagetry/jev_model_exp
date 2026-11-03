@@ -1,0 +1,12 @@
+{
+  "step": 600,
+  "total_steps": 600,
+  "clean_kl": 0.26981343794614077,
+  "perturbed_kl": 0.2735471953637898,
+  "coefficient_gradient_norm": 0.07147867977619171,
+  "sam_coefficient_perturbation_norm": 0.04492376744747162,
+  "coefficient_min": -0.6230779886245728,
+  "coefficient_max": 4.611128807067871,
+  "coefficient_mean": 0.48741310834884644,
+  "elapsed_seconds": 3230.771992776543
+}

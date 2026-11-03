@@ -1,0 +1,17 @@
+{
+  "domains": [
+    "knowledge",
+    "retrieval",
+    "tools",
+    "arts"
+  ],
+  "unique_inputs_per_domain": 1600,
+  "total_unique_inputs": 6400,
+  "batch_per_domain": 16,
+  "steps": 600,
+  "cycles": 6,
+  "seed": 42,
+  "labels_used": false,
+  "evaluation_inputs_used": false,
+  "source": "/data/run01/scwb721/jev-kd-20261101/workspace/cache/pair-training/global-pool"
+}

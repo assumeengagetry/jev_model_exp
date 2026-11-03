@@ -1,0 +1,149 @@
+{
+  "checked_unix": 1793691735.6898322,
+  "launcher-state.json": {
+    "pid": 1371431,
+    "host": "ln02",
+    "started_unix": 1793677550.6763895,
+    "phase": "raw_step_requested",
+    "srun_pid": 2882436,
+    "command": [
+      "srun",
+      "--jobid=275711",
+      "--exact",
+      "-N1",
+      "-n1",
+      "-c32",
+      "--gpus=4",
+      "--mem=384G",
+      "--time=12:00:00",
+      "--chdir=/data/run01/scwb721/jev-kd-20261101/experiments/kd-raw-qwen-1m-20261103",
+      "env",
+      "JEV_KD_ROOT=/data/run01/scwb721/jev-kd-20261101/experiments/kd-raw-qwen-1m-20261103",
+      "HF_HUB_OFFLINE=1",
+      "TRANSFORMERS_OFFLINE=1",
+      "TOKENIZERS_PARALLELISM=false",
+      "OMP_NUM_THREADS=4",
+      "MKL_NUM_THREADS=4",
+      "/data/run01/scwb721/jev-kd-20261101/envs/student/bin/python",
+      "-u",
+      "/data/run01/scwb721/jev-kd-20261101/experiments/kd-raw-qwen-1m-20261103/code/run_job.py"
+    ],
+    "unix_time": 1793689174.6594145
+  },
+  "allocation.json": {
+    "pid": 2324813,
+    "job_id": "275711",
+    "step_id": "64",
+    "devices": "0,1,2,3",
+    "started_unix": 1793689175.9884908
+  },
+  "initialization-check.json": {
+    "complete": true,
+    "initialization": "raw_pretrained_backbone_untrained_adapter_and_head",
+    "backbone": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B",
+    "initial_adapter_and_head": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B-common-pair-init-r32",
+    "lora_B_matrices": 196,
+    "lora_B_nonzero_elements": 0,
+    "saved_random_heads": {
+      "base_model.model.score.weight": [
+        2,
+        1024
+      ]
+    },
+    "trained_MIXED_ALL_adapter_used": false,
+    "trained_MIXED_ALL_head_used": false,
+    "metadata": {
+      "base_model": "/home/dev/assumeengage/models/Qwen3-0.6B",
+      "model_class": "Qwen3ForSequenceClassification",
+      "seed": 42,
+      "labels": [
+        "not_match",
+        "match"
+      ],
+      "precision": "bfloat16",
+      "lora_r": 32,
+      "lora_alpha": 64,
+      "classification_head_saved": true,
+      "attention": "causal SDPA",
+      "base_weights_duplicated": false,
+      "purpose": "actual common initialization for five specialists and MIXED_ALL",
+      "model_forward_or_smoke_test_run": false
+    }
+  },
+  "progress.json": {
+    "completed": [],
+    "pending_training": [],
+    "pending_evaluation": [],
+    "active": {
+      "0": {
+        "name": "KD_HARD",
+        "phase": "train",
+        "pid": 2325036
+      },
+      "1": {
+        "name": "KD_SOFT",
+        "phase": "train",
+        "pid": 2325037
+      },
+      "2": {
+        "name": "KD_HYBRID",
+        "phase": "train",
+        "pid": 2325038
+      },
+      "3": {
+        "name": "BASELINE",
+        "phase": "evaluate",
+        "pid": 2325039
+      }
+    },
+    "unix_time": 1793691731.8456042
+  },
+  "training": {
+    "KD_HARD": {
+      "event": "continuation_progress",
+      "model": "KD_HARD",
+      "step": 1500,
+      "total_steps": 7813,
+      "pairs_seen": 192000,
+      "effective_tokens": 43774619,
+      "loss": 0.23550120793282986,
+      "ce": 0.23550120793282986,
+      "kl": 0.0,
+      "learning_rate": 4.663593950386403e-05,
+      "elapsed_seconds": 2384.3256930075586,
+      "tokens_per_second": 18903.471786189326,
+      "pairs_per_second": 89.85771014966603
+    },
+    "KD_SOFT": {
+      "event": "continuation_progress",
+      "model": "KD_SOFT",
+      "step": 1500,
+      "total_steps": 7813,
+      "pairs_seen": 192000,
+      "effective_tokens": 43774619,
+      "loss": 0.09089108760890667,
+      "ce": 0.28691071980749255,
+      "kl": 0.09089108760890667,
+      "learning_rate": 4.663593950386403e-05,
+      "elapsed_seconds": 2395.682648293674,
+      "tokens_per_second": 18791.188572546194,
+      "pairs_per_second": 89.32397155496044
+    },
+    "KD_HYBRID": {
+      "event": "continuation_progress",
+      "model": "KD_HYBRID",
+      "step": 1500,
+      "total_steps": 7813,
+      "pairs_seen": 192000,
+      "effective_tokens": 43774619,
+      "loss": 0.1779281012917636,
+      "ce": 0.245908823258942,
+      "kl": 0.10994737882268965,
+      "learning_rate": 4.663593950386403e-05,
+      "elapsed_seconds": 2395.0283658728004,
+      "tokens_per_second": 18833.6328495289,
+      "pairs_per_second": 89.52573055361225
+    }
+  },
+  "evaluation": {}
+}

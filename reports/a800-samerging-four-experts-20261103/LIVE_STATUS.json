@@ -1,0 +1,157 @@
+{
+  "COMPLETE.json": {
+    "complete": true,
+    "public_index": 20.21,
+    "subset_index": 20.09,
+    "coverage": 1.0,
+    "differences": {
+      "MIXED_ALL": {
+        "index": -2.6099999999999994,
+        "areas": {
+          "knowledge": -1.4799999999999993,
+          "language": -1.8699999999999994,
+          "retrieval": -12.830000000000002,
+          "tools": 9.250000000000004,
+          "arts": -8.700000000000001
+        }
+      },
+      "MERGE_AVERAGE": {
+        "index": -1.25,
+        "areas": {
+          "knowledge": -0.2599999999999991,
+          "language": -1.0300000000000002,
+          "retrieval": -1.8100000000000005,
+          "tools": -2.52,
+          "arts": -1.02
+        }
+      },
+      "MERGE_TIES": {
+        "index": 1.2100000000000009,
+        "areas": {
+          "knowledge": 1.07,
+          "language": 1.1700000000000017,
+          "retrieval": -7.3800000000000034,
+          "tools": 11.04,
+          "arts": 0.8100000000000009
+        }
+      },
+      "MERGE_SLERP_HIERARCHICAL": {
+        "index": -1.3399999999999999,
+        "areas": {
+          "knowledge": -0.3499999999999989,
+          "language": -0.9300000000000003,
+          "retrieval": -1.8600000000000005,
+          "tools": -2.9200000000000004,
+          "arts": -1.0499999999999996
+        }
+      }
+    },
+    "report": "/data/run01/scwb721/jev-kd-20261101/experiments/samerging-four-experts-20261103/report/REPORT.md",
+    "unix_time": 1793689166.4066951
+  },
+  "STEP_STARTED.json": {
+    "pid": 1919611,
+    "host": "d1n41a28g02",
+    "job_id": "275711",
+    "step_id": "63",
+    "devices": "0,1,2",
+    "started_unix": 1793683911.6207135
+  },
+  "STEP_EXIT.json": {
+    "pid": 1919611,
+    "host": "d1n41a28g02",
+    "job_id": "275711",
+    "step_id": "63",
+    "devices": "0,1,2",
+    "started_unix": 1793683911.6207135,
+    "exit_code": 0,
+    "ended_unix": 1793689167.0301888
+  },
+  "status.json": {
+    "phase": "scoring_frozen_subset_from_saved_predictions",
+    "unix_time": 1793689152.6432204
+  },
+  "calibration-progress.json": {
+    "step": 600,
+    "total_steps": 600,
+    "clean_kl": 0.26981343794614077,
+    "perturbed_kl": 0.2735471953637898,
+    "coefficient_gradient_norm": 0.07147867977619171,
+    "sam_coefficient_perturbation_norm": 0.04492376744747162,
+    "coefficient_min": -0.6230779886245728,
+    "coefficient_max": 4.611128807067871,
+    "coefficient_mean": 0.48741310834884644,
+    "elapsed_seconds": 3230.771992776543
+  },
+  "MERGE_COMPLETE.json": {
+    "complete": true,
+    "model": "MERGE_SAMERGING",
+    "checkpoint": "/data/run01/scwb721/jev-kd-20261101/experiments/samerging-four-experts-20261103/outputs/MERGE_SAMERGING/final",
+    "experts": [
+      "SPECIALIST_KNOWLEDGE",
+      "SPECIALIST_RETRIEVAL",
+      "SPECIALIST_TOOLS",
+      "SPECIALIST_ARTS"
+    ],
+    "method": "SAMerging_layer_wise_effective_weights",
+    "steps": 600,
+    "unique_calibration_inputs": 6400,
+    "batch_per_task": 16,
+    "task_loss_weight": 0.25,
+    "temperature": 1,
+    "init_coefficients": 0.5,
+    "optimizer": "official SAM with SGD",
+    "lr": 0.001,
+    "momentum": 0.99,
+    "weight_decay": 0.0005,
+    "rho": 0.07,
+    "adaptive": true,
+    "clamp": false,
+    "classification_head_merged": true,
+    "optimized_parameters": "merge coefficients only",
+    "coefficient_count": 788,
+    "calibration_labels_used": false,
+    "evaluation_inputs_used_for_calibration": false,
+    "forward_and_export_dtype": "BF16",
+    "merge_arithmetic_dtype": "FP32",
+    "elapsed_seconds": 3232.5380578413606,
+    "upstream_commit": "a194e8ed8ab790dcae9c02a8d1467e00e86b53e5",
+    "adaptations": [
+      "Qwen3 shared binary head instead of GPT2 task-specific heads",
+      "fixed input-ID/logit pairing instead of advancing shuffled loaders twice",
+      "fresh merged weights after SAM coefficient perturbation",
+      "stable log_softmax KL and gradient accumulation preserving task batch16"
+    ]
+  },
+  "launch.json": {
+    "pid": 1835209,
+    "host": "ln01",
+    "requested_unix": 1793683911.3459952,
+    "allocation": 275711,
+    "requested_gpus": 3,
+    "attempt": 2,
+    "command": [
+      "srun",
+      "--jobid=275711",
+      "--exact",
+      "-N1",
+      "-n1",
+      "-c24",
+      "--gpus=3",
+      "--mem=288G",
+      "--time=06:00:00",
+      "--cpu-bind=none",
+      "--chdir=/data/run01/scwb721/jev-kd-20261101/experiments/samerging-four-experts-20261103",
+      "env",
+      "HF_HUB_OFFLINE=1",
+      "TRANSFORMERS_OFFLINE=1",
+      "TOKENIZERS_PARALLELISM=false",
+      "OMP_NUM_THREADS=4",
+      "MKL_NUM_THREADS=4",
+      "/data/run01/scwb721/jev-kd-20261101/envs/student/bin/python",
+      "-u",
+      "/data/run01/scwb721/jev-kd-20261101/experiments/samerging-four-experts-20261103/code/step_owner.py"
+    ],
+    "reason": "Top-level step avoids inherited CPU binding; reuse calibration and shard0"
+  }
+}

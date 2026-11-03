@@ -1,0 +1,46 @@
+{
+  "checked_date": "2026-11-02",
+  "scope": "Representative author disclosures and public code, not an exhaustive prevalence count of all leaderboard entries",
+  "leaderboard": {
+    "url": "https://huggingface.co/spaces/multimodalart/jev-decision-index/resolve/c130faf65f82e81d3bdefb01e758c712dc5c5199/data/index.json",
+    "generated_utc": "2026-10-29T14:04:16Z",
+    "models": 247
+  },
+  "model_cards": [
+    {"repo": "perplexity-ai/pplx-decider-flash-v1.2", "revision": "9ff7cf9838e59df461c276b7699d56b244d2af58"},
+    {"repo": "perplexity-ai/pplx-decider-v1.2", "revision": "cce0f3f80033e9d89d80831d5281fd72124aacce"},
+    {"repo": "sthanika-ai/Sieve-31B", "revision": "cd6186b83ea00d0aadea0da10d515a78569728bd"},
+    {"repo": "sthanika-ai/Sieve-31B-v3", "revision": "8fcee858f7f20a50bfa3c8f984c22adb3cbb46a2"},
+    {"repo": "sanghwa-na/bobcat-1.3", "revision": "4f25c70ece312ec4e74c47f1c5264cb2aeea956a"},
+    {"repo": "startlux-models/StartLux-Decision-v1.1-27B-Instant", "revision": "32e7d35d74db615c4a059181efbf21c5421f3561"},
+    {"repo": "vllm-sr/d3-ultra", "revision": "ccdcfa611649a59e095e0b5e1732a15cedafadd6"},
+    {"repo": "baselabs/mammoth-1", "revision": "61cec44c281c693992e3d6ebeb44dd3402dfa186"},
+    {"repo": "PelaAI/KnowLine-31B-Gen1", "revision": "8f052a8130e599b53e5324c34f0f5ff90696e1c6"},
+    {"repo": "autotrust/AutoTrust-JEV-27B-v1.1", "revision": "ae156900e9f338e423042b89e25d0fd8093064d4"},
+    {"repo": "autotrust/JEV-27B", "revision": "14b425269ed24452e0a5ad5a8f3e51d139647a88"},
+    {"repo": "corners-ai/CoCo-Decision-2.4-4B", "revision": "64ce98c8b3a2661362ff6213bc350c26124247ea"},
+    {"repo": "vllm-sr/vela3-fast", "revision": "fa60e3aa41132c60bf05a84cabfdced39cb6d4f7"},
+    {"repo": "sanghwa-na/bobcat-flash-1.2", "revision": "5fee24183e58ee99c8a9ca8806baf2fc41bd787d"},
+    {"repo": "sanghwa-na/bobcat-1.2", "revision": "7d212e7bb3d4ed1e0106219a845a1a48ab8735f4"},
+    {"repo": "tardellirs/crivo-150m", "revision": null, "card_version": "2", "note": "Author card retrieved successfully; separate metadata request reset, so no commit is invented."}
+  ],
+  "other_primary_sources": [
+    "https://labs.baseten.co/articles/mammoth-1-and-elephant-1-frontier-decision-models",
+    "https://arxiv.org/html/2610.17309v1",
+    "https://github.com/Mapika/decider",
+    "https://github.com/sthanika-ai/sieve",
+    "https://github.com/foxl-ai/bobcat",
+    "https://arxiv.org/html/2610.09188v1",
+    "https://vllm-sr.ai/blog/vela-3-0-name-it-vela-finds-it",
+    "https://huggingface.co/tardellirs/crivo-150m#distillation"
+  ],
+  "additional_version_specific_evidence": [
+    "https://huggingface.co/sanghwa-na/bobcat-1.2#training-and-distillation",
+    "https://huggingface.co/sanghwa-na/bobcat-flash-1.2#training-and-distillation",
+    "https://github.com/foxl-ai/bobcat/blob/538169365291d7c46d2c116f8ee09ad9f4b3ac5e/src/bobcat/flash_train.py",
+    "https://huggingface.co/Mapika/decider-4b/blob/v2.1/README.md#training",
+    "https://github.com/Mapika/decider/blob/91b6fa9b94ab6c4dc2c63d3b14d413243b4fffcc/decider/train.py",
+    "https://github.com/Mapika/decider/blob/91b6fa9b94ab6c4dc2c63d3b14d413243b4fffcc/decider/data/teacher_questions.py"
+  ],
+  "version_caveat": "The explicit Jev-1.13 distillation details in autotrust/JEV-27B must not be transferred to the differently named leaderboard release autotrust/AutoTrust-JEV-27B-v1.1. Training loss temperatures must not be confused with serving calibration temperatures."
+}

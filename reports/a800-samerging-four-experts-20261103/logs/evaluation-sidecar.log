@@ -1,0 +1,5 @@
+srun: Job step's --cpus-per-task value exceeds that of job (24 > 8). Job step may never run.
+srun: error: CPU binding outside of job step allocation, allocated CPUs are: 0x000000000000000000000000FFFFFF00.
+srun: error: Task launch for StepId=275711.62 failed on node d1n41a28g02: Unable to satisfy cpu bind request
+srun: error: Application launch failed: Unable to satisfy cpu bind request
+srun: Job step aborted

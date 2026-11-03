@@ -1,0 +1,17 @@
+{
+  "job_id": "275711",
+  "step_id": "63",
+  "devices": [
+    "0",
+    "1",
+    "2"
+  ],
+  "pending_shards": [
+    1,
+    2,
+    3
+  ],
+  "existing_complete_shards": [
+    0
+  ]
+}

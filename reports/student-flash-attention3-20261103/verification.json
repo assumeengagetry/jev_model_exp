@@ -1,0 +1,89 @@
+{
+  "observed_utc": "2026-11-03T07:16:40.841262+00:00",
+  "all_deployed_files_match": true,
+  "files": {
+    "scripts/student_flash_attention3.py": true,
+    "scripts/train-fresh-qwen-milestone.py": true,
+    "config/experiment-fresh-qwen-1m-20261103.json": true
+  },
+  "attention": {
+    "attention": "flash_attention_3",
+    "student_attention_implementation": "flash_attn3_hopper",
+    "student_attention_provider": "kernels-community/flash-attn3",
+    "student_attention_required": true
+  },
+  "unchanged_training": {
+    "pairs": 1000000,
+    "student_parent": "models/Qwen3-0.6B-common-pair-init-r32",
+    "active_training_domains": [
+      "knowledge",
+      "retrieval",
+      "tools",
+      "arts"
+    ],
+    "seed": 42,
+    "learning_rate": 0.0001,
+    "epochs": 1,
+    "global_effective_batch_pairs": 128
+  },
+  "native_ready": {
+    "complete": true,
+    "backend": "flash_attention_3",
+    "implementation": "flash_attn3_hopper",
+    "provider": "kernels-community/flash-attn3",
+    "build": "build/torch29-cxx11-cu128-x86_64-linux",
+    "kernel_directory": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128",
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "cxx11_abi": true,
+    "forward_export": "_jev_student_fa3_installation.flash_attn_interface",
+    "varlen_export": "_jev_student_fa3_installation.flash_attn_interface",
+    "native_backward_export": true,
+    "gpu_forward_or_backward_executed": false,
+    "global_environment_modified": false,
+    "sdpa_fallback": false,
+    "installed_utc": "2026-11-03T07:06:00.292180+00:00"
+  },
+  "deployment_receipt": {
+    "changed_utc": "2026-11-03T07:11:59.699747+00:00",
+    "scope": "Student training only",
+    "attention": "flash_attention_3",
+    "attention_implementation": "flash_attn3_hopper",
+    "provider": "kernels-community/flash-attn3",
+    "sdpa_fallback": false,
+    "teacher_modified": false,
+    "baseline_evaluation_modified": false,
+    "processes_signalled_or_restarted": false,
+    "core_python_packages_modified": false,
+    "data_and_optimizer_fields_unchanged": true,
+    "backup": "/home/dev/assumeengage/runs/distillation-fresh-qwen-1m-20261103/student-attention-before-fa3-20261103T071159Z",
+    "native_extension_import_verified": true,
+    "actual_student_training_started": false,
+    "actual_training_forward_backward_verified": false
+  },
+  "versions": {
+    "torch": "2.9.1+cu128",
+    "transformers": "4.57.6",
+    "peft": "0.18.1"
+  },
+  "protected_processes": {
+    "162355": {
+      "same_registered_process": true
+    },
+    "162356": {
+      "same_registered_process": true
+    },
+    "162357": {
+      "same_registered_process": true
+    },
+    "162358": {
+      "same_registered_process": true
+    }
+  },
+  "current_phase": "labeling_first_million_and_baseline",
+  "student_started": {
+    "KD_HARD": false,
+    "KD_SOFT": false,
+    "KD_HYBRID": false
+  }
+}

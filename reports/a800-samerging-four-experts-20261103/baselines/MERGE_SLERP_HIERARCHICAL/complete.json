@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "model": "MERGE_SLERP_HIERARCHICAL",
+  "requests": 110087,
+  "benchmarks": 37,
+  "counts": {
+    "ok": 110087
+  },
+  "public_score": 21.55,
+  "coverage": 1.0,
+  "latency_scope": "Up to three independent workers on otherwise idle GPUs; resumable priority yielding; not isolated latency-v1",
+  "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+}

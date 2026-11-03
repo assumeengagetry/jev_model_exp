@@ -8,6 +8,8 @@ Evaluation reuses the same frozen37-benchmark complete-case subset and baseline 
 
 ## Latest verified status —2026-11-03 02:40 CST
 
+**后续更新：2026-11-03 11:08 CST 用户要求优先SAMerging，本系列已主动暂停。** Controller已停止，并有`PAUSED.json`防止自动重启；仅中断既有Student2M/Teacher3M两个step，未取消allocation。HARD/SOFT2M已完成训练保留；HYBRID从4,000-step checkpoint可恢复；Teacher最后提交约236.6万条目标标签，原概率缓存保留。下述02:40记录是历史状态，不表示当前仍在自动推进。
+
 - **1M is complete**, with all three arms trained and all selected evaluation cases scored. Index: BASELINE22.39, HARD22.49, SOFT21.36, HYBRID22.38. SOFT−HARD−1.13; HYBRID−HARD−0.11. See `1m/REPORT.md` and `SCALE_CURVE.md`.
 - Teacher2M remains active at1,997,980/2,000,000 committed labels;2,020 targets remain. The controller has no blocked role and will automatically start2M Student work and3M Teacher production once ready.
 - Each1M arm completed7,813 steps and228,021,289 effective tokens. Evaluation coverage is100% of the frozen selected subset, not100% of the full benchmark collection.

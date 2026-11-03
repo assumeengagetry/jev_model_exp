@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "model": "MERGE_SAMERGING",
+  "requests": 5935,
+  "benchmarks": 37,
+  "counts": {
+    "ok": 5935
+  },
+  "coverage": 1.0,
+  "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+  "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score",
+  "scope": "pilot_subset",
+  "pilot_score": 20.09,
+  "selected_cases": 4786
+}

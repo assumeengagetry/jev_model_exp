@@ -1,0 +1,31 @@
+{
+  "pid": 1835209,
+  "host": "ln01",
+  "requested_unix": 1793683911.3459952,
+  "allocation": 275711,
+  "requested_gpus": 3,
+  "attempt": 2,
+  "command": [
+    "srun",
+    "--jobid=275711",
+    "--exact",
+    "-N1",
+    "-n1",
+    "-c24",
+    "--gpus=3",
+    "--mem=288G",
+    "--time=06:00:00",
+    "--cpu-bind=none",
+    "--chdir=/data/run01/scwb721/jev-kd-20261101/experiments/samerging-four-experts-20261103",
+    "env",
+    "HF_HUB_OFFLINE=1",
+    "TRANSFORMERS_OFFLINE=1",
+    "TOKENIZERS_PARALLELISM=false",
+    "OMP_NUM_THREADS=4",
+    "MKL_NUM_THREADS=4",
+    "/data/run01/scwb721/jev-kd-20261101/envs/student/bin/python",
+    "-u",
+    "/data/run01/scwb721/jev-kd-20261101/experiments/samerging-four-experts-20261103/code/step_owner.py"
+  ],
+  "reason": "Top-level step avoids inherited CPU binding; reuse calibration and shard0"
+}

@@ -1,0 +1,37 @@
+{
+  "repo": "kernels-community/flash-attn3",
+  "revision": "e29f138fc363b396e5d2706c8a5f6fa7d36f41e0",
+  "build": "build/torch29-cxx11-cu128-x86_64-linux",
+  "files": [
+    {
+      "name": "__init__.py",
+      "bytes": 387
+    },
+    {
+      "name": "_flash_attn3_cuda_2d990fe.abi3.so",
+      "bytes": 804184680
+    },
+    {
+      "name": "_ops.py",
+      "bytes": 234
+    },
+    {
+      "name": "flash_attn3/__init__.py",
+      "bytes": 1030
+    },
+    {
+      "name": "flash_attn_config.py",
+      "bytes": 952
+    },
+    {
+      "name": "flash_attn_interface.py",
+      "bytes": 41297
+    },
+    {
+      "name": "metadata.json",
+      "bytes": 159
+    }
+  ],
+  "extra_hash_checks": false,
+  "complete": false
+}
