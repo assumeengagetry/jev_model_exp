@@ -1,5 +1,10 @@
 # 四专家 SAMerging 实验
 
+## 报告入口
+
+- **[完整方法与实验报告：SAMERGING_DETAILED_REPORT.md](report/SAMERGING_DETAILED_REPORT.md)**：方法原理、Qwen/LoRA适配、数据与超参数、官方实现差异、调度恢复、完整结果及解释边界。
+- [自动生成的简版结果报告](report/REPORT.md)；[完整公共结果CSV](report/public-comparison.csv)。
+
 ## 最终结果 —2026-11-03 14:59 CST
 
 **已完成：公共37项总分20.21，coverage100%（110,087/110,087请求均ok）；KD冻结子集分数20.09（5,935/5,935请求均ok）。** 相对MIXED_ALL−2.61、average−1.25、SLERP−1.34、TIES＋1.21。本配置未超过average/SLERP/MIXED_ALL。
