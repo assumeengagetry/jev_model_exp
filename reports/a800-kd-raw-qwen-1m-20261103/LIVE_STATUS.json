@@ -1,5 +1,5 @@
 {
-  "checked_unix": 1793699671.862941,
+  "checked_unix": 1793700002.0414052,
   "launcher-state.json": {
     "pid": 1371431,
     "host": "ln02",
@@ -93,53 +93,53 @@
         "pid": 2325038
       }
     },
-    "unix_time": 1793699669.615958
+    "unix_time": 1793699999.299247
   },
   "training": {
     "KD_HARD": {
       "event": "continuation_progress",
       "model": "KD_HARD",
-      "step": 6600,
+      "step": 6800,
       "total_steps": 7813,
-      "pairs_seen": 844800,
-      "effective_tokens": 192601728,
-      "loss": 0.1770705259802162,
-      "ce": 0.1770705259802162,
+      "pairs_seen": 870400,
+      "effective_tokens": 198416216,
+      "loss": 0.17677124309388093,
+      "ce": 0.17677124309388093,
       "kl": 0.0,
-      "learning_rate": 3.094130480477267e-06,
-      "elapsed_seconds": 10478.154909960926,
-      "tokens_per_second": 18778.012828660616,
-      "pairs_per_second": 86.18221006083846
+      "learning_rate": 2.171772344338788e-06,
+      "elapsed_seconds": 10794.497160557657,
+      "tokens_per_second": 18460.86656394207,
+      "pairs_per_second": 90.87696105138413
     },
     "KD_SOFT": {
       "event": "continuation_progress",
       "model": "KD_SOFT",
-      "step": 6500,
+      "step": 6700,
       "total_steps": 7813,
-      "pairs_seen": 832000,
-      "effective_tokens": 189812770,
-      "loss": 0.052392091482897744,
-      "ce": 0.2550364657514729,
-      "kl": 0.052392091482897744,
-      "learning_rate": 3.612172412673287e-06,
-      "elapsed_seconds": 10384.545145060867,
-      "tokens_per_second": 18069.588111814686,
-      "pairs_per_second": 77.88898836273273
+      "pairs_seen": 857600,
+      "effective_tokens": 195816007,
+      "loss": 0.05256066123838537,
+      "ce": 0.273460281919688,
+      "kl": 0.05256066123838537,
+      "learning_rate": 2.6137220164149435e-06,
+      "elapsed_seconds": 10709.697688683867,
+      "tokens_per_second": 18267.92191549823,
+      "pairs_per_second": 72.74707656627733
     },
     "KD_HYBRID": {
       "event": "continuation_progress",
       "model": "KD_HYBRID",
-      "step": 6500,
+      "step": 6700,
       "total_steps": 7813,
-      "pairs_seen": 832000,
-      "effective_tokens": 189812770,
-      "loss": 0.13553372239810416,
-      "ce": 0.19849537853559013,
-      "kl": 0.07257206595357275,
-      "learning_rate": 3.612172412673287e-06,
-      "elapsed_seconds": 10367.301674831659,
-      "tokens_per_second": 18087.698246817257,
-      "pairs_per_second": 77.96705212853271
+      "pairs_seen": 857600,
+      "effective_tokens": 195816007,
+      "loss": 0.14517548487434398,
+      "ce": 0.2154793855897151,
+      "kl": 0.07487158428906696,
+      "learning_rate": 2.6137220164149435e-06,
+      "elapsed_seconds": 10692.245557837188,
+      "tokens_per_second": 18268.836239215176,
+      "pairs_per_second": 72.75071761410702
     }
   },
   "evaluation": {
