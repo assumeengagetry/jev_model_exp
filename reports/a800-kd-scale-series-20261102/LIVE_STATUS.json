@@ -1,5 +1,5 @@
 {
-  "unix_time": 1793671157.465846,
+  "unix_time": 1793671218.1940718,
   "controller": {
     "active": {
       "student": {
@@ -65,7 +65,7 @@
     "reported": [
       1000000
     ],
-    "updated_unix": 1793671142.5655842
+    "updated_unix": 1793671202.6255715
   },
   "steps": {
     "teacher-2000000-1-step.json": {
@@ -565,7 +565,7 @@
             "pid": 693924
           }
         },
-        "updated_unix": 1793671153.1879752
+        "updated_unix": 1793671213.776504
       },
       "training": {
         "KD_HARD": {
@@ -724,23 +724,23 @@
         "mode": "dynamic-state-local-chunks-v1",
         "run_id": 1793644990562415169,
         "total_pairs": 3000000,
-        "completed_pairs": 2326453,
+        "completed_pairs": 2326965,
         "recovered_pairs": 2072464,
-        "completion_fraction": 0.7754843333333333,
-        "new_pairs_this_run": 253989,
-        "new_pairs_per_second": 9.707593263732543,
-        "run_elapsed_seconds": 26163.951568603516,
-        "annotation_elapsed_seconds": 25987.615190029144,
+        "completion_fraction": 0.775655,
+        "new_pairs_this_run": 254501,
+        "new_pairs_per_second": 9.704903880768272,
+        "run_elapsed_seconds": 26223.95884871483,
+        "annotation_elapsed_seconds": 26047.622470140457,
         "completed_tasks": 516,
         "total_tasks": 728,
         "active_tasks": {
           "0": 471
         },
         "new_pairs_by_replica": {
-          "0": 253989,
+          "0": 254501,
           "1": 0
         },
-        "updated_unix": 1793671149.551027
+        "updated_unix": 1793671198.045661
       },
       "timing": {
         "first_stage_started_unix": 1793644990.5617895,
