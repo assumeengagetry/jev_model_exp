@@ -1,0 +1,39 @@
+{
+  "active": {
+    "teacher": {
+      "role": "teacher",
+      "size": 2000000,
+      "attempt": 1,
+      "pid": 136387,
+      "host": "ln02",
+      "started_unix": 1793616330.6035025,
+      "command": [
+        "srun",
+        "--jobid=275711",
+        "--exact",
+        "-N1",
+        "-n1",
+        "-c16",
+        "--gpus=2",
+        "--mem=128G",
+        "--time=21-00:00:00",
+        "--chdir=/data/run01/scwb721/jev-kd-20261101/staged/scale-series-20261102/producer/2m",
+        "/usr/bin/python3",
+        "-u",
+        "/data/run01/scwb721/jev-kd-20261101/staged/scale-series-20261102/code/role_runner.py",
+        "teacher",
+        "2000000",
+        "1"
+      ]
+    }
+  },
+  "attempts": {
+    "student-1000000": 1,
+    "teacher-2000000": 1
+  },
+  "blocked": {},
+  "reported": [
+    1000000
+  ],
+  "updated_unix": 1793644826.3020854
+}

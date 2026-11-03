@@ -1,0 +1,64 @@
+# Keep reports, figures, configurations, indexes and summary tables in Git.
+# These rules are path/type based; .gitignore cannot filter by file size.
+
+# Model weights and training checkpoints (not *.safetensors.index.json).
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.ggml
+*.onnx
+*.h5
+*.hdf5
+
+# Generated per-request predictions and evaluation shards.
+# Research source examples outside report/artifact bundles remain versioned.
+/artifacts/**/*.jsonl
+/reports/**/*.jsonl
+results.jsonl
+part-*.jsonl
+predictions*.jsonl
+
+# Bulk dataset/cache containers, not small CSV/JSON report tables or indexes.
+*.arrow
+*.parquet
+*.npz
+/cache/
+
+# Python caches and local environments.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.venv/
+venv/
+/envs/
+.ipynb_checkpoints/
+
+# Runtime locks and incomplete transfers; preserve logs and dependency locks.
+watcher.lock
+*.pid
+*.sock
+*.tmp
+*.partial
+*.part
+.*.incoming-*/
+
+# Operating-system metadata.
+.DS_Store
+.AppleDouble/
+._*
+
+# Local credentials; sanitized environment examples may be committed.
+.env
+.env.*
+!.env.example
+!.env.sample
+.secrets/
+.ssh/
+id_rsa
+id_ed25519

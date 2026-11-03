@@ -1,0 +1,5 @@
+{
+  "remote": "/data/run01/scwb721/jev-kd-20261101/staged/scale-series-20261102/stages/1m",
+  "downloaded_unix": 1793644835.933579,
+  "artifact_scope": "reports, native metrics, saved predictions, selections, training logs and completion metadata; no repeated inference"
+}

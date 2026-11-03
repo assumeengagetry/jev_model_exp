@@ -1,0 +1,42 @@
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 14204.31it/s]
+[1mQwen3ForSequenceClassification LOAD REPORT[0m from: /data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B
+Key            | Status     | 
+---------------+------------+-
+lm_head.weight | UNEXPECTED | 
+score.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+`use_return_dict` is deprecated! Use `return_dict` instead!
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 200, "terminal_requests_in_shard": 200, "seconds": 72.66172039881349, "nonpadding_tokens": 2650608, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 400, "terminal_requests_in_shard": 400, "seconds": 1631.9433848075569, "nonpadding_tokens": 49575568, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 600, "terminal_requests_in_shard": 600, "seconds": 1665.244310427457, "nonpadding_tokens": 50591091, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 800, "terminal_requests_in_shard": 800, "seconds": 1890.253580622375, "nonpadding_tokens": 60469476, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 1000, "terminal_requests_in_shard": 1000, "seconds": 2126.7274950630963, "nonpadding_tokens": 69496859, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 1200, "terminal_requests_in_shard": 1200, "seconds": 2135.3448251634836, "nonpadding_tokens": 69574166, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 1400, "terminal_requests_in_shard": 1400, "seconds": 2143.974365685135, "nonpadding_tokens": 69649978, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 1600, "terminal_requests_in_shard": 1600, "seconds": 2152.6127823591232, "nonpadding_tokens": 69725142, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 1800, "terminal_requests_in_shard": 1800, "seconds": 2161.6408592909575, "nonpadding_tokens": 69796035, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 2000, "terminal_requests_in_shard": 2000, "seconds": 2777.10734205693, "nonpadding_tokens": 96070410, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 2200, "terminal_requests_in_shard": 2200, "seconds": 3033.3320123031735, "nonpadding_tokens": 106919951, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 2400, "terminal_requests_in_shard": 2400, "seconds": 3042.1846317499876, "nonpadding_tokens": 106990134, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 2600, "terminal_requests_in_shard": 2600, "seconds": 3055.0026732236147, "nonpadding_tokens": 107342250, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 2800, "terminal_requests_in_shard": 2800, "seconds": 3073.1505327410996, "nonpadding_tokens": 108169255, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 3000, "terminal_requests_in_shard": 3000, "seconds": 3190.235852882266, "nonpadding_tokens": 113151421, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 3200, "terminal_requests_in_shard": 3200, "seconds": 3276.7199289165437, "nonpadding_tokens": 116332871, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 3400, "terminal_requests_in_shard": 3400, "seconds": 3335.693744890392, "nonpadding_tokens": 119216959, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 3600, "terminal_requests_in_shard": 3600, "seconds": 3394.246707584709, "nonpadding_tokens": 122079745, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 3800, "terminal_requests_in_shard": 3800, "seconds": 3419.5177671052516, "nonpadding_tokens": 123142549, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 4000, "terminal_requests_in_shard": 4000, "seconds": 3428.4470538944006, "nonpadding_tokens": 123178762, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 4200, "terminal_requests_in_shard": 4200, "seconds": 3437.5669284798205, "nonpadding_tokens": 123313384, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 4400, "terminal_requests_in_shard": 4400, "seconds": 3446.5794959552586, "nonpadding_tokens": 123447600, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 4600, "terminal_requests_in_shard": 4600, "seconds": 3456.9031462967396, "nonpadding_tokens": 123648299, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 4800, "terminal_requests_in_shard": 4800, "seconds": 3468.874991182238, "nonpadding_tokens": 124063356, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 5000, "terminal_requests_in_shard": 5000, "seconds": 3477.803264286369, "nonpadding_tokens": 124234350, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 5200, "terminal_requests_in_shard": 5200, "seconds": 3490.7327130548656, "nonpadding_tokens": 124669639, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 5400, "terminal_requests_in_shard": 5400, "seconds": 3500.2264126837254, "nonpadding_tokens": 124918348, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 5600, "terminal_requests_in_shard": 5600, "seconds": 3511.0286147408187, "nonpadding_tokens": 125247354, "micro_token_budget": 32768}
+{"model": "KD_HYBRID", "worker": 0, "new_requests": 5800, "terminal_requests_in_shard": 5800, "seconds": 3523.2231837660074, "nonpadding_tokens": 125623671, "micro_token_budget": 32768}
+{"event": "pilot_score_complete", "model": "KD_HYBRID", "pilot_score": 22.38, "coverage": 1.0}
+{"event": "pilot_evaluation_complete", "model": "KD_HYBRID", "pilot_score": 22.38, "coverage": 1.0, "requests": 5935}

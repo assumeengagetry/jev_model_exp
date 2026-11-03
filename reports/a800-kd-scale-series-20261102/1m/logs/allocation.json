@@ -1,0 +1,8 @@
+{
+  "job_id": "275711",
+  "step_id": "54",
+  "pid": 976492,
+  "role": "student",
+  "root": "/data/run01/scwb721/jev-kd-20261101/staged/scale-series-20261102/stages/1m",
+  "cuda_visible_devices": "0,1"
+}

@@ -24,7 +24,7 @@
 - [x] 实际完成融合，核实分类头、回退统计和新模型权重。
 - [x] 启动正式37项评测，核实原 HARD 未中断。
 - [x] 更新监控到 sh-10-gpu；SLERP融合阶段通知已送达指定 SCP 会话。
-- [ ] 完成评分后拉回独立报告，与 MIXED_ALL 22.82、平均融合21.46及其他原模型对照。
+- [x] 完成评分后拉回独立报告，与 MIXED_ALL 22.82、平均融合21.46及其他原模型对照。
 
 ## 评审与处置
 
@@ -43,3 +43,12 @@
 - 三个SLERP worker实际SIGINT均未被忽略且安装了处理器；本次未为了验证而中断它们。
 - 监控进程更新为3617344，SSH为sh-10-gpu，Teacher/KD自动恢复关闭，现有HARD只读观察保留。SLERP融合通知回执为msg_19bb0fcd7001CV7kaRAzDJj46n；仅证明消息已入队，不证明SCP传输完成。
 - 证据：`launch-stdout.json`、`verification.json`。原十条件完成标记仍为conditions=10，未覆盖原报告，SLERP最终评分尚未完成。
+
+## 最终正式结果（2026-11-02 12:09 UTC重新核实）
+
+- PIPELINE=complete/report_ready；根 COMPLETE.json 和模型评测 complete.json 均为 complete:true。
+- 同一37项公共评测，110,087条请求全部ok，覆盖率1.0；分片数36,696＋36,696＋36,695精确覆盖总数。
+- SLERP公共总分21.55，相对MIXED_ALL22.82为-1.27，相对等权平均21.46为+0.09。只说明本次固定分层树/t=0.5配置数值接近均值，未证明显著或普遍优于平均融合。
+- 五维Skill：Knowledge8.56、Language16.50、Retrieval35.29、Tools38.25、Arts10.13。
+- 三个worker实际推理耗时约4,778—4,820秒；任务已退出并释放GPU1—3，原HARD仍未被本补测干预。
+- 最终报告通知回执msg_19c00f75d001huDja3eRYgik02已入队；本地实际已见 `artifacts/four-specialists-slerp-20261102/report/REPORT.md`、11条件CSV和对照雷达图。

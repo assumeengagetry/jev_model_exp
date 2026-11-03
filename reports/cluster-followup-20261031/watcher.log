@@ -129,3 +129,4 @@
 {"time": "2026-11-02T09:56:53.507089+00:00", "event": "stage_watcher_retry_pending", "error": "Cluster stage snapshot failed, exit 255"}
 {"time": "2026-11-02T09:57:09.993306+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_19bb0fcd7001CV7kaRAzDJj46n", "milestones": ["slerp/merge/MERGE_SLERP_HIERARCHICAL"]}
 {"time": "2026-11-02T10:18:08.607640+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_19bc4314f001TUscxXCKBixhhA", "milestones": ["distillation/TEACHER_READY"]}
+{"time": "2026-11-02T11:24:31.495733+00:00", "event": "scp_stage_notification_admitted", "message_id": "msg_19c00f75d001huDja3eRYgik02", "milestones": ["slerp/final-report"]}

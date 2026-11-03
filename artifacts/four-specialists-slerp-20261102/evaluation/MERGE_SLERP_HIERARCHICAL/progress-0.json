@@ -1,0 +1,9 @@
+{
+  "model": "MERGE_SLERP_HIERARCHICAL",
+  "worker": 0,
+  "new_requests": 36600,
+  "terminal_requests_in_shard": 36600,
+  "seconds": 4818.300220945035,
+  "nonpadding_tokens": 337663141,
+  "micro_token_budget": 32768
+}

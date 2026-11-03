@@ -1,0 +1,20 @@
+[
+  {
+    "pairs": 100000,
+    "BASELINE": 22.39,
+    "KD_HARD": 23.79,
+    "KD_SOFT": 21.8,
+    "KD_HYBRID": 23.42,
+    "soft_minus_hard": -1.9899999999999984,
+    "hybrid_minus_hard": -0.36999999999999744
+  },
+  {
+    "pairs": 1000000,
+    "BASELINE": 22.39,
+    "KD_HARD": 22.49,
+    "KD_SOFT": 21.36,
+    "KD_HYBRID": 22.38,
+    "soft_minus_hard": -1.129999999999999,
+    "hybrid_minus_hard": -0.10999999999999943
+  }
+]

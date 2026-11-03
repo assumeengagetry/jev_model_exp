@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "milestones": [
+    {
+      "size": 1000000,
+      "root": "/data/run01/scwb721/jev-kd-20261101/staged/scale-series-20261102/stages/1m",
+      "initial_labeled_pairs": 1000000,
+      "initial_missing_teacher_pairs": 0,
+      "domain_pairs": {
+        "knowledge": 169116,
+        "retrieval": 607890,
+        "tools": 86923,
+        "arts": 136071
+      }
+    },
+    {
+      "size": 2000000,
+      "root": "/data/run01/scwb721/jev-kd-20261101/staged/scale-series-20261102/stages/2m",
+      "initial_labeled_pairs": 1743843,
+      "initial_missing_teacher_pairs": 256157,
+      "domain_pairs": {
+        "knowledge": 338231,
+        "retrieval": 1215780,
+        "tools": 173846,
+        "arts": 272143
+      }
+    },
+    {
+      "size": 3000000,
+      "root": "/data/run01/scwb721/jev-kd-20261101/staged/scale-series-20261102/stages/3m",
+      "initial_labeled_pairs": 1816307,
+      "initial_missing_teacher_pairs": 1183693,
+      "domain_pairs": {
+        "knowledge": 507346,
+        "retrieval": 1823671,
+        "tools": 260769,
+        "arts": 408214
+      }
+    }
+  ],
+  "initial_global_labeled_pairs": 1816307,
+  "upper_bound_pairs": 3000000,
+  "teacher": "PelaAI/KnowLine-31B-Gen1",
+  "student_parent": "/data/run01/scwb721/jev-kd-20261101/workspace/runs/five-specialists-20261030/MIXED_ALL/final"
+}

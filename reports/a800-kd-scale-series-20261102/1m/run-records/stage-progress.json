@@ -1,0 +1,11 @@
+{
+  "completed_models": [
+    "KD_HARD",
+    "KD_HYBRID",
+    "KD_SOFT"
+  ],
+  "pending_training": [],
+  "pending_evaluation": [],
+  "active": {},
+  "updated_unix": 1793644797.8080428
+}

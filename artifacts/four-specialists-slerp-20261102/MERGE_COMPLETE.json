@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "model": "MERGE_SLERP_HIERARCHICAL",
+  "method": "hierarchical_slerp_per_tensor",
+  "specialists": [
+    "SPECIALIST_KNOWLEDGE",
+    "SPECIALIST_RETRIEVAL",
+    "SPECIALIST_TOOLS",
+    "SPECIALIST_ARTS"
+  ],
+  "tree": [
+    [
+      "knowledge",
+      "retrieval"
+    ],
+    [
+      "tools",
+      "arts"
+    ]
+  ],
+  "t_each_stage": 0.5,
+  "dot_threshold": 0.9995,
+  "classification_head_included": true,
+  "compute_dtype": "float32",
+  "storage_dtype": "bfloat16",
+  "new_training_tokens": 0,
+  "order_independent_multislerp": false,
+  "interpolation_modes": {
+    "identical": 342,
+    "spherical": 559,
+    "linear_collinear": 32
+  },
+  "bf16_comparison_to_average": {
+    "different_elements": 249095299,
+    "total_elements": 596051968,
+    "maximum_absolute_difference": 0.015625
+  },
+  "elapsed_seconds": 11.140666224993765,
+  "checkpoint": "/home/dev/assumeengage/runs/four-specialists-slerp-20261102/MERGE_SLERP_HIERARCHICAL/final",
+  "artifacts": [
+    "/home/dev/assumeengage/runs/four-specialists-slerp-20261102/MERGE_SLERP_HIERARCHICAL/final",
+    "/home/dev/assumeengage/runs/four-specialists-slerp-20261102/tensor-interpolation-statistics.json"
+  ]
+}

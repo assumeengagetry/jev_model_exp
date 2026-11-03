@@ -1,0 +1,31 @@
+{
+  "model": "PelaAI/KnowLine-31B-Gen1",
+  "precision": "BF16",
+  "domains": [
+    "knowledge",
+    "retrieval",
+    "tools",
+    "arts"
+  ],
+  "domain_pairs": {
+    "knowledge": 338231,
+    "retrieval": 1215780,
+    "tools": 173846,
+    "arts": 272143
+  },
+  "pairs": 2000000,
+  "global_cache_pairs": 18173706,
+  "row_order": "Concatenated domain arrays in domains order; unchanged within each domain",
+  "columns": [
+    "P(not_match)",
+    "P(match)"
+  ],
+  "temperature": 1,
+  "frontend": "Official knowline_server.py",
+  "question_type": "noul",
+  "read_twice": true,
+  "independent_pairs": true,
+  "scheduling": "dynamic-state-local-chunks-v1",
+  "target_chunk_pairs": 4096,
+  "input_format": "Original candidate-pair-v1; same head-tail policy for training pairs over 4096 Student tokens"
+}

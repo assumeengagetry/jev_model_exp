@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "model": "MERGE_SLERP_HIERARCHICAL",
+  "public_score": 21.55,
+  "benchmarks": 37,
+  "requests": 110087,
+  "artifacts": [
+    "/home/dev/assumeengage/runs/four-specialists-slerp-20261102/report",
+    "/home/dev/assumeengage/runs/four-specialists-slerp-20261102/evaluation/MERGE_SLERP_HIERARCHICAL",
+    "/home/dev/assumeengage/runs/four-specialists-slerp-20261102/MERGE_COMPLETE.json"
+  ]
+}

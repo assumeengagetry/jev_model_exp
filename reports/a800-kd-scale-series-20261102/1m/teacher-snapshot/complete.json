@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "pairs": 1000000,
+  "model": "PelaAI/KnowLine-31B-Gen1",
+  "temperature": 1,
+  "columns": [
+    "P(not_match)",
+    "P(match)"
+  ],
+  "reused_cache": true,
+  "new_teacher_calls": 0,
+  "source_cache": "/data/run01/scwb721/jev-kd-20261101/outputs/teacher/probabilities.npy",
+  "note": "Snapshot creation makes no Teacher calls; upstream producer time is reported separately"
+}
