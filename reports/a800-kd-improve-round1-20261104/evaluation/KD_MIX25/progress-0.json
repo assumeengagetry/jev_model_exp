@@ -1,0 +1,9 @@
+{
+  "model": "KD_MIX25",
+  "worker": 0,
+  "new_requests": 5800,
+  "terminal_requests_in_shard": 5800,
+  "seconds": 3522.6807410530746,
+  "nonpadding_tokens": 125623671,
+  "micro_token_budget": 32768
+}

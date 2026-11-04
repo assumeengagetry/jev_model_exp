@@ -1,0 +1,15 @@
+{
+  "event": "continuation_progress",
+  "model": "KD_MIX25",
+  "step": 7813,
+  "total_steps": 7813,
+  "pairs_seen": 1000000,
+  "effective_tokens": 228021289,
+  "loss": 0.17328564090654255,
+  "ce": 0.19711520543321967,
+  "kl": 0.10179694195743651,
+  "learning_rate": 0.0,
+  "elapsed_seconds": 12440.534684494138,
+  "tokens_per_second": 17573.897801108305,
+  "pairs_per_second": 97.06151808548054
+}

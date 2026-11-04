@@ -1,0 +1,113 @@
+{
+  "domains": {
+    "knowledge": {
+      "pairs": 169116,
+      "slope": 0.9561518754945035,
+      "intercept": -1.100841406353238,
+      "iterations": 6,
+      "original_target_mean": 0.2145374463345753,
+      "before": {
+        "mean": 0.32338780472835615,
+        "brier": 0.1079410649685708,
+        "cross_entropy": 0.3478875423155399
+      },
+      "after": {
+        "mean": 0.21453854717603876,
+        "brier": 0.085883573049832,
+        "cross_entropy": 0.2889478653785489
+      },
+      "exact_target_groups": 1070,
+      "adaptive_epsilon_mean": 0.09999999999999999,
+      "shuffled_epsilon_mean": 0.09999999999999999,
+      "adaptive_epsilon_range": [
+        0.05000038552879127,
+        0.14999961447120871
+      ]
+    },
+    "retrieval": {
+      "pairs": 607890,
+      "slope": 1.1028010843376441,
+      "intercept": -1.7378768412606456,
+      "iterations": 7,
+      "original_target_mean": 0.030018040544673275,
+      "before": {
+        "mean": 0.056688724333426435,
+        "brier": 0.015080962630631682,
+        "cross_entropy": 0.056268920348257936
+      },
+      "after": {
+        "mean": 0.030019778421547072,
+        "brier": 0.009430323142526002,
+        "cross_entropy": 0.0360308042760609
+      },
+      "exact_target_groups": 6,
+      "adaptive_epsilon_mean": 0.1,
+      "shuffled_epsilon_mean": 0.09999999999999999,
+      "adaptive_epsilon_range": [
+        0.050000084797647365,
+        0.14999991520235262
+      ]
+    },
+    "tools": {
+      "pairs": 86923,
+      "slope": 1.4103774424637407,
+      "intercept": -0.27062216917566073,
+      "iterations": 6,
+      "original_target_mean": 0.1947660996676486,
+      "before": {
+        "mean": 0.20910197110621973,
+        "brier": 0.02482323055125351,
+        "cross_entropy": 0.10468939117602895
+      },
+      "after": {
+        "mean": 0.19476637029074279,
+        "brier": 0.023604145297639528,
+        "cross_entropy": 0.09624321114490833
+      },
+      "exact_target_groups": 4199,
+      "adaptive_epsilon_mean": 0.09999999999999999,
+      "shuffled_epsilon_mean": 0.09999999999999999,
+      "adaptive_epsilon_range": [
+        0.05000075234355014,
+        0.14999924765644984
+      ]
+    },
+    "arts": {
+      "pairs": 136071,
+      "slope": 0.5438721876188435,
+      "intercept": -0.8466977809728641,
+      "iterations": 6,
+      "original_target_mean": 0.4710982857941232,
+      "before": {
+        "mean": 0.7505377484336136,
+        "brier": 0.31366655666106036,
+        "cross_entropy": 0.8954134029798602
+      },
+      "after": {
+        "mean": 0.47109913249193214,
+        "brier": 0.2294375663590518,
+        "cross_entropy": 0.6536698345494123
+      },
+      "exact_target_groups": 50,
+      "adaptive_epsilon_mean": 0.09999999999999999,
+      "shuffled_epsilon_mean": 0.09999999999999999,
+      "adaptive_epsilon_range": [
+        0.050000702296509575,
+        0.1499992977034904
+      ]
+    }
+  },
+  "fit_scope": "original training targets only; no benchmark calibration",
+  "adaptive_scope": "rank confidence inside each(domain, exact original target) group; matched shuffled histogram",
+  "ridge": 1e-06,
+  "slope_bounds": [
+    0.05,
+    10
+  ],
+  "intercept_bounds": [
+    -20,
+    20
+  ],
+  "seed": 20261104,
+  "elapsed_seconds": 1.2305121421813965
+}

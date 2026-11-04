@@ -1,0 +1,42 @@
+{
+  "KD_HARD_minus_BASE_QWEN": {
+    "knowledge": 7.470000000000001,
+    "language": 13.62,
+    "retrieval": 36.33,
+    "tools": 37.269999999999996,
+    "arts": 12.07,
+    "public_index": 20.75
+  },
+  "KD_SOFT_minus_BASE_QWEN": {
+    "knowledge": 8.420000000000002,
+    "language": 13.77,
+    "retrieval": 36.05,
+    "tools": 33.419999999999995,
+    "arts": 7.039999999999999,
+    "public_index": 19.77
+  },
+  "KD_HYBRID_minus_BASE_QWEN": {
+    "knowledge": 8.26,
+    "language": 17.470000000000002,
+    "retrieval": 35.61,
+    "tools": 38.17,
+    "arts": 10.530000000000001,
+    "public_index": 21.81
+  },
+  "KD_SOFT_minus_KD_HARD": {
+    "knowledge": 0.9500000000000011,
+    "language": 0.15000000000000036,
+    "retrieval": -0.28000000000000114,
+    "tools": -3.8500000000000014,
+    "arts": -5.030000000000001,
+    "public_index": -0.9800000000000004
+  },
+  "KD_HYBRID_minus_KD_HARD": {
+    "knowledge": 0.7899999999999991,
+    "language": 3.8500000000000014,
+    "retrieval": -0.7199999999999989,
+    "tools": 0.9000000000000057,
+    "arts": -1.5399999999999991,
+    "public_index": 1.0599999999999987
+  }
+}

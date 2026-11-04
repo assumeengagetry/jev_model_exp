@@ -1,0 +1,15 @@
+{
+  "event": "continuation_progress",
+  "model": "KD_LS10",
+  "step": 7813,
+  "total_steps": 7813,
+  "pairs_seen": 1000000,
+  "effective_tokens": 228021289,
+  "loss": 0.3226503921672702,
+  "ce": 0.21663782708346843,
+  "kl": 0.0,
+  "learning_rate": 0.0,
+  "elapsed_seconds": 12429.946523781866,
+  "tokens_per_second": 17602.828370810086,
+  "pairs_per_second": 97.22130307149291
+}

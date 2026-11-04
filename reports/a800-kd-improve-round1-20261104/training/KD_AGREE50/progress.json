@@ -1,0 +1,15 @@
+{
+  "event": "continuation_progress",
+  "model": "KD_AGREE50",
+  "step": 7813,
+  "total_steps": 7813,
+  "pairs_seen": 1000000,
+  "effective_tokens": 228021289,
+  "loss": 0.16548409612849355,
+  "ce": 0.19777268182486296,
+  "kl": 0.12662400684319436,
+  "learning_rate": 0.0,
+  "elapsed_seconds": 12458.60560297966,
+  "tokens_per_second": 17556.16773773664,
+  "pairs_per_second": 96.9635940571243
+}

@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "scope": "exploratory_kd_hypothesis_round",
+  "report": "/data/run01/scwb721/jev-kd-20261101/experiments/kd-improve-round1-20261104/outputs/report/REPORT.md",
+  "scores": {
+    "BASELINE": 1.76,
+    "KD_HARD": 18.46,
+    "KD_SOFT": 17.54,
+    "KD_HYBRID": 19.1,
+    "KD_MIX25": 18.76,
+    "KD_AGREE50": 18.3,
+    "KD_TEMP2_50": 19.17,
+    "KD_LS10": 19.79
+  },
+  "differences": {
+    "KD_MIX25": {
+      "minus_hard": 0.3000000000000007,
+      "minus_hybrid50": -0.33999999999999986,
+      "minus_label_smoothing": -1.0299999999999976,
+      "areas_minus_hard": {
+        "knowledge": 0.39000000000000057,
+        "language": -1.9000000000000004,
+        "retrieval": -0.21000000000000085,
+        "tools": 4.240000000000002,
+        "arts": -0.3899999999999988
+      }
+    },
+    "KD_AGREE50": {
+      "minus_hard": -0.16000000000000014,
+      "minus_hybrid50": -0.8000000000000007,
+      "minus_label_smoothing": -1.4899999999999984,
+      "areas_minus_hard": {
+        "knowledge": -1.1999999999999993,
+        "language": -1.9800000000000004,
+        "retrieval": 0.8800000000000026,
+        "tools": 4.109999999999999,
+        "arts": -2.6599999999999984
+      }
+    },
+    "KD_TEMP2_50": {
+      "minus_hard": 0.7100000000000009,
+      "minus_hybrid50": 0.07000000000000028,
+      "minus_label_smoothing": -0.6199999999999974,
+      "areas_minus_hard": {
+        "knowledge": 0.27999999999999936,
+        "language": -0.3600000000000012,
+        "retrieval": 1.6799999999999997,
+        "tools": 3.8999999999999986,
+        "arts": -3.17
+      }
+    },
+    "KD_LS10": {
+      "minus_hard": 1.3299999999999983,
+      "minus_hybrid50": 0.6899999999999977,
+      "minus_label_smoothing": 0.0,
+      "areas_minus_hard": {
+        "knowledge": 3.1899999999999995,
+        "language": -2.630000000000001,
+        "retrieval": 0.7999999999999972,
+        "tools": 7.239999999999995,
+        "arts": -2.9299999999999997
+      }
+    }
+  },
+  "best_new_arm": "KD_LS10",
+  "best_new_arm_minus_hard": 1.3299999999999983,
+  "best_new_arm_minus_hybrid50": 0.6899999999999977,
+  "initialization": "raw_pretrained_qwen",
+  "unix_time": 1793778018.890709
+}

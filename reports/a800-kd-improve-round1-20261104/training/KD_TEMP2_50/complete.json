@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "model": "KD_TEMP2_50",
+  "parent": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B-common-pair-init-r32",
+  "domains": [
+    "knowledge",
+    "retrieval",
+    "tools",
+    "arts"
+  ],
+  "pool_pairs": 1000000,
+  "pairs_seen": 1000000,
+  "epochs": 1,
+  "optimizer_steps": 7813,
+  "effective_batch": 128,
+  "learning_rate": 5e-05,
+  "warmup_ratio": 0.03,
+  "weight_decay": 0.01,
+  "optimizer": "AdamW_fused",
+  "scheduler": "cosine",
+  "precision": "BF16",
+  "loss": "0.5 CE + 0.5*T^2 KL(q_T||p_T), T=2",
+  "temperature": 2,
+  "teacher_weight": 0.5,
+  "effective_tokens": 228021289,
+  "elapsed_seconds": 12459.757885184139,
+  "effective_tokens_per_second": 18300.619570717296,
+  "pairs_per_second": 80.25838135980933,
+  "attention": "sdpa",
+  "micro_token_budget": 16384,
+  "gradient_checkpointing": false,
+  "peak_allocated_GiB": 38.10494375228882
+}

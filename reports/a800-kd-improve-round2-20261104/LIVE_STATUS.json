@@ -1,0 +1,756 @@
+{
+  "checked_unix": 1793782046.683486,
+  "launch.json": {
+    "pid": 223586,
+    "host": "ln02",
+    "requested_unix": 1793778586.2328944,
+    "allocation": 275711,
+    "gpus": 4,
+    "command": [
+      "srun",
+      "--jobid=275711",
+      "--exact",
+      "-N1",
+      "-n1",
+      "-c32",
+      "--gpus=4",
+      "--mem=384G",
+      "--time=12:00:00",
+      "--cpu-bind=none",
+      "--chdir=/data/run01/scwb721/jev-kd-20261101/experiments/kd-improve-round2-20261104",
+      "env",
+      "JEV_KD_ROOT=/data/run01/scwb721/jev-kd-20261101/experiments/kd-improve-round2-20261104",
+      "HF_HUB_OFFLINE=1",
+      "TRANSFORMERS_OFFLINE=1",
+      "TOKENIZERS_PARALLELISM=false",
+      "OMP_NUM_THREADS=4",
+      "MKL_NUM_THREADS=4",
+      "/data/run01/scwb721/jev-kd-20261101/envs/student/bin/python",
+      "-u",
+      "/data/run01/scwb721/jev-kd-20261101/experiments/kd-improve-round2-20261104/code/run_job.py"
+    ]
+  },
+  "allocation.json": {
+    "pid": 1264914,
+    "job_id": "275711",
+    "step_id": "66",
+    "devices": "0,1,2,3",
+    "started_unix": 1793778587.5691264
+  },
+  "initialization-check.json": {
+    "complete": true,
+    "initialization": "raw_pretrained_backbone_untrained_adapter_and_head",
+    "backbone": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B",
+    "initial_adapter_and_head": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B-common-pair-init-r32",
+    "lora_B_matrices": 196,
+    "lora_B_nonzero_elements": 0,
+    "saved_random_heads": {
+      "base_model.model.score.weight": [
+        2,
+        1024
+      ]
+    },
+    "trained_MIXED_ALL_adapter_used": false,
+    "trained_MIXED_ALL_head_used": false,
+    "metadata": {
+      "base_model": "/home/dev/assumeengage/models/Qwen3-0.6B",
+      "model_class": "Qwen3ForSequenceClassification",
+      "seed": 42,
+      "labels": [
+        "not_match",
+        "match"
+      ],
+      "precision": "bfloat16",
+      "lora_r": 32,
+      "lora_alpha": 64,
+      "classification_head_saved": true,
+      "attention": "causal SDPA",
+      "base_weights_duplicated": false,
+      "purpose": "actual common initialization for five specialists and MIXED_ALL",
+      "model_forward_or_smoke_test_run": false
+    }
+  },
+  "progress.json": {
+    "completed": [],
+    "pending_training": [],
+    "pending_evaluation": [],
+    "active": {
+      "0": {
+        "name": "KD_CAL50",
+        "phase": "train",
+        "pid": 1265207
+      },
+      "1": {
+        "name": "KD_CALSOFT",
+        "phase": "train",
+        "pid": 1265208
+      },
+      "2": {
+        "name": "KD_ADAPT_LS",
+        "phase": "train",
+        "pid": 1265209
+      },
+      "3": {
+        "name": "KD_SHUFFLE_LS",
+        "phase": "train",
+        "pid": 1265210
+      }
+    },
+    "unix_time": 1793782044.6217163
+  },
+  "teacher-diagnostic.json": {
+    "scope": "training_target_diagnostic_not_teacher_benchmark_score",
+    "note": "Agreement/Brier/CE use original training targets, which are not guaranteed flawless ground truth.",
+    "global_metrics": {
+      "pairs": 1000000,
+      "original_target_mean": 0.13556184996872261,
+      "teacher_match_probability_mean": 0.20945275322106346,
+      "teacher_probability_quantiles": [
+        0.00011455281492089853,
+        0.0003614632817334495,
+        0.0007969096128363162,
+        0.0016410198295488954,
+        0.008249278645962477,
+        0.30131766200065613,
+        0.8558826267719268,
+        0.9907474011182785,
+        0.9998266100883484
+      ],
+      "original_soft_label_fraction": 0.012022,
+      "original_label_conflict_fraction": 0.10478235733047397,
+      "high_confidence_conflict_fraction": 0.014147,
+      "agreement_gate_fraction": 0.895001,
+      "teacher_uncertain_fraction": 0.03855,
+      "brier_vs_original_targets": 0.07226075921739326,
+      "cross_entropy_vs_original_targets": 0.22397837670280388,
+      "teacher_binary_entropy_nats": 0.18322480091288515,
+      "probability_calibration_gap_vs_original_targets": 0.07389090325234082,
+      "bins": [
+        {
+          "interval": [
+            0.0,
+            0.1
+          ],
+          "pairs": 674490,
+          "teacher_mean": 0.011445811428012244,
+          "original_target_mean": 0.0027631420353428156
+        },
+        {
+          "interval": [
+            0.1,
+            0.2
+          ],
+          "pairs": 48283,
+          "teacher_mean": 0.14410803670802494,
+          "original_target_mean": 0.04969088135130861
+        },
+        {
+          "interval": [
+            0.2,
+            0.3
+          ],
+          "pairs": 26967,
+          "teacher_mean": 0.24654476989876925,
+          "original_target_mean": 0.09786574895408155
+        },
+        {
+          "interval": [
+            0.3,
+            0.4
+          ],
+          "pairs": 20149,
+          "teacher_mean": 0.34842197989061446,
+          "original_target_mean": 0.1585372011666234
+        },
+        {
+          "interval": [
+            0.4,
+            0.5
+          ],
+          "pairs": 18992,
+          "teacher_mean": 0.4509548221957237,
+          "original_target_mean": 0.2369503901276513
+        },
+        {
+          "interval": [
+            0.5,
+            0.6
+          ],
+          "pairs": 19558,
+          "teacher_mean": 0.5487666317492325,
+          "original_target_mean": 0.3063665262348296
+        },
+        {
+          "interval": [
+            0.6,
+            0.7
+          ],
+          "pairs": 22409,
+          "teacher_mean": 0.6530624153043878,
+          "original_target_mean": 0.37830772884633623
+        },
+        {
+          "interval": [
+            0.7,
+            0.8
+          ],
+          "pairs": 36032,
+          "teacher_mean": 0.7549694968324624,
+          "original_target_mean": 0.4555674267338328
+        },
+        {
+          "interval": [
+            0.8,
+            0.9
+          ],
+          "pairs": 68123,
+          "teacher_mean": 0.8547393942613186,
+          "original_target_mean": 0.5473387922086052
+        },
+        {
+          "interval": [
+            0.9,
+            1.0
+          ],
+          "pairs": 64997,
+          "teacher_mean": 0.9499440305760884,
+          "original_target_mean": 0.8122599422718747
+        }
+      ]
+    },
+    "domains": {
+      "knowledge": {
+        "pairs": 169116,
+        "original_target_mean": 0.2145374463345753,
+        "teacher_match_probability_mean": 0.32338780472835615,
+        "teacher_probability_quantiles": [
+          0.00015019651618786156,
+          0.0003471870339126326,
+          0.005746729439124465,
+          0.03520984388887882,
+          0.17589984089136124,
+          0.5912910550832748,
+          0.8966669738292694,
+          0.9914431363344193,
+          0.9996377825737
+        ],
+        "original_soft_label_fraction": 0.02453345632583552,
+        "original_label_conflict_fraction": 0.15983999431932494,
+        "high_confidence_conflict_fraction": 0.017437735045767403,
+        "agreement_gate_fraction": 0.8395539156555264,
+        "teacher_uncertain_fraction": 0.09359847678516521,
+        "brier_vs_original_targets": 0.1079410649685708,
+        "cross_entropy_vs_original_targets": 0.3478875423155399,
+        "teacher_binary_entropy_nats": 0.3403387112242892,
+        "probability_calibration_gap_vs_original_targets": 0.10885035839378084,
+        "bins": [
+          {
+            "interval": [
+              0.0,
+              0.1
+            ],
+            "pairs": 67340,
+            "teacher_mean": 0.030778647723402705,
+            "original_target_mean": 0.013988554200756646
+          },
+          {
+            "interval": [
+              0.1,
+              0.2
+            ],
+            "pairs": 21415,
+            "teacher_mean": 0.14559513195712462,
+            "original_target_mean": 0.06361777262447761
+          },
+          {
+            "interval": [
+              0.2,
+              0.3
+            ],
+            "pairs": 13077,
+            "teacher_mean": 0.24669918141375444,
+            "original_target_mean": 0.10212472059690685
+          },
+          {
+            "interval": [
+              0.3,
+              0.4
+            ],
+            "pairs": 9777,
+            "teacher_mean": 0.3482155996536055,
+            "original_target_mean": 0.1565748256142244
+          },
+          {
+            "interval": [
+              0.4,
+              0.5
+            ],
+            "pairs": 8697,
+            "teacher_mean": 0.4496439684906732,
+            "original_target_mean": 0.21886304295041945
+          },
+          {
+            "interval": [
+              0.5,
+              0.6
+            ],
+            "pairs": 7132,
+            "teacher_mean": 0.5477976366016748,
+            "original_target_mean": 0.2820422772824267
+          },
+          {
+            "interval": [
+              0.6,
+              0.7
+            ],
+            "pairs": 6806,
+            "teacher_mean": 0.6515328057051195,
+            "original_target_mean": 0.3562412443232802
+          },
+          {
+            "interval": [
+              0.7,
+              0.8
+            ],
+            "pairs": 7945,
+            "teacher_mean": 0.7519929954208917,
+            "original_target_mean": 0.46248036911810736
+          },
+          {
+            "interval": [
+              0.8,
+              0.9
+            ],
+            "pairs": 10440,
+            "teacher_mean": 0.8537245000858873,
+            "original_target_mean": 0.624025171389268
+          },
+          {
+            "interval": [
+              0.9,
+              1.0
+            ],
+            "pairs": 16487,
+            "teacher_mean": 0.9540645502136671,
+            "original_target_mean": 0.8844695369369955
+          }
+        ]
+      },
+      "retrieval": {
+        "pairs": 607890,
+        "original_target_mean": 0.030018040544673275,
+        "teacher_match_probability_mean": 0.056688724333426435,
+        "teacher_probability_quantiles": [
+          0.00011455281492089853,
+          0.0003367766452720389,
+          0.0006648889102507383,
+          0.0010985114495269954,
+          0.002821308793500066,
+          0.01185993361286819,
+          0.10875888839364048,
+          0.9786083531379699,
+          0.9996927380561829
+        ],
+        "original_soft_label_fraction": 9.870206780832058e-06,
+        "original_label_conflict_fraction": 0.01922232256981972,
+        "high_confidence_conflict_fraction": 0.0031584661698662586,
+        "agreement_gate_fraction": 0.9807728371909391,
+        "teacher_uncertain_fraction": 0.010292980637944364,
+        "brier_vs_original_targets": 0.015080962630631682,
+        "cross_entropy_vs_original_targets": 0.056268920348257936,
+        "teacher_binary_entropy_nats": 0.08255336436171264,
+        "probability_calibration_gap_vs_original_targets": 0.02667068378875316,
+        "bins": [
+          {
+            "interval": [
+              0.0,
+              0.1
+            ],
+            "pairs": 544172,
+            "teacher_mean": 0.008905335217719992,
+            "original_target_mean": 0.0013776281519198616
+          },
+          {
+            "interval": [
+              0.1,
+              0.2
+            ],
+            "pairs": 21350,
+            "teacher_mean": 0.141529476559553,
+            "original_target_mean": 0.02493364558984859
+          },
+          {
+            "interval": [
+              0.2,
+              0.3
+            ],
+            "pairs": 8891,
+            "teacher_mean": 0.2440511677583872,
+            "original_target_mean": 0.0528624451692723
+          },
+          {
+            "interval": [
+              0.3,
+              0.4
+            ],
+            "pairs": 5054,
+            "teacher_mean": 0.34639860502122466,
+            "original_target_mean": 0.07855164226355361
+          },
+          {
+            "interval": [
+              0.4,
+              0.5
+            ],
+            "pairs": 3587,
+            "teacher_mean": 0.4485254461448904,
+            "original_target_mean": 0.11156026391737768
+          },
+          {
+            "interval": [
+              0.5,
+              0.6
+            ],
+            "pairs": 2670,
+            "teacher_mean": 0.5463761036762138,
+            "original_target_mean": 0.16273408239700374
+          },
+          {
+            "interval": [
+              0.6,
+              0.7
+            ],
+            "pairs": 2470,
+            "teacher_mean": 0.650696930783963,
+            "original_target_mean": 0.20161943319838058
+          },
+          {
+            "interval": [
+              0.7,
+              0.8
+            ],
+            "pairs": 2995,
+            "teacher_mean": 0.7524598766447905,
+            "original_target_mean": 0.3268781302170284
+          },
+          {
+            "interval": [
+              0.8,
+              0.9
+            ],
+            "pairs": 3783,
+            "teacher_mean": 0.8529247443826622,
+            "original_target_mean": 0.5389902194025905
+          },
+          {
+            "interval": [
+              0.9,
+              1.0
+            ],
+            "pairs": 12918,
+            "teacher_mean": 0.968967697968847,
+            "original_target_mean": 0.9094287041337669
+          }
+        ]
+      },
+      "tools": {
+        "pairs": 86923,
+        "original_target_mean": 0.1947660996676486,
+        "teacher_match_probability_mean": 0.20910197110621973,
+        "teacher_probability_quantiles": [
+          0.0002339041093364358,
+          0.0005019543692469597,
+          0.001185668050311506,
+          0.0027643591165542603,
+          0.00809409562498331,
+          0.25180236995220184,
+          0.9672983169555665,
+          0.9981858468055725,
+          0.9998266100883484
+        ],
+        "original_soft_label_fraction": 0.07288059546955351,
+        "original_label_conflict_fraction": 0.03896029179946841,
+        "high_confidence_conflict_fraction": 0.0021858426423386214,
+        "agreement_gate_fraction": 0.9608849211370983,
+        "teacher_uncertain_fraction": 0.037999148671812984,
+        "brier_vs_original_targets": 0.02482323055125351,
+        "cross_entropy_vs_original_targets": 0.10468939117602895,
+        "teacher_binary_entropy_nats": 0.14721442683404978,
+        "probability_calibration_gap_vs_original_targets": 0.020825040044444805,
+        "bins": [
+          {
+            "interval": [
+              0.0,
+              0.1
+            ],
+            "pairs": 60598,
+            "teacher_mean": 0.01137785145550382,
+            "original_target_mean": 0.0011940289258706217
+          },
+          {
+            "interval": [
+              0.1,
+              0.2
+            ],
+            "pairs": 3413,
+            "teacher_mean": 0.14485022742186618,
+            "original_target_mean": 0.07304919135115437
+          },
+          {
+            "interval": [
+              0.2,
+              0.3
+            ],
+            "pairs": 2187,
+            "teacher_mean": 0.24858220987904273,
+            "original_target_mean": 0.17142345887374358
+          },
+          {
+            "interval": [
+              0.3,
+              0.4
+            ],
+            "pairs": 1944,
+            "teacher_mean": 0.3498033655217155,
+            "original_target_mean": 0.22618875112893613
+          },
+          {
+            "interval": [
+              0.4,
+              0.5
+            ],
+            "pairs": 1781,
+            "teacher_mean": 0.4490524262842471,
+            "original_target_mean": 0.3666555772856036
+          },
+          {
+            "interval": [
+              0.5,
+              0.6
+            ],
+            "pairs": 1522,
+            "teacher_mean": 0.5466182018078266,
+            "original_target_mean": 0.4742345265356128
+          },
+          {
+            "interval": [
+              0.6,
+              0.7
+            ],
+            "pairs": 1337,
+            "teacher_mean": 0.6494900511108233,
+            "original_target_mean": 0.6534107498219424
+          },
+          {
+            "interval": [
+              0.7,
+              0.8
+            ],
+            "pairs": 1479,
+            "teacher_mean": 0.7525848430342735,
+            "original_target_mean": 0.8045180720691787
+          },
+          {
+            "interval": [
+              0.8,
+              0.9
+            ],
+            "pairs": 1950,
+            "teacher_mean": 0.8500685749298487,
+            "original_target_mean": 0.9114141104618708
+          },
+          {
+            "interval": [
+              0.9,
+              1.0
+            ],
+            "pairs": 10712,
+            "teacher_mean": 0.979972419112676,
+            "original_target_mean": 0.987473724859254
+          }
+        ]
+      },
+      "arts": {
+        "pairs": 136071,
+        "original_target_mean": 0.4710982857941232,
+        "teacher_match_probability_mean": 0.7505377484336136,
+        "teacher_probability_quantiles": [
+          0.001289747771807015,
+          0.0514565009623766,
+          0.46805447340011597,
+          0.6892537176609039,
+          0.8229168653488159,
+          0.885471522808075,
+          0.9192502498626709,
+          0.9564358651638027,
+          0.994871973991394
+        ],
+        "original_soft_label_fraction": 0.011258828111794577,
+        "original_label_conflict_fraction": 0.4609466933396093,
+        "high_confidence_conflict_fraction": 0.06678866180155948,
+        "agreement_gate_fraction": 0.5386452660743288,
+        "teacher_uncertain_fraction": 0.09672156447736843,
+        "brier_vs_original_targets": 0.31366655666106036,
+        "cross_entropy_vs_original_targets": 0.8954134029798602,
+        "teacher_binary_entropy_nats": 0.46070356754885783,
+        "probability_calibration_gap_vs_original_targets": 0.2794394626394905,
+        "bins": [
+          {
+            "interval": [
+              0.0,
+              0.1
+            ],
+            "pairs": 2380,
+            "teacher_mean": 0.047034493188360046,
+            "original_target_mean": 0.04189075630377321
+          },
+          {
+            "interval": [
+              0.1,
+              0.2
+            ],
+            "pairs": 2105,
+            "teacher_mean": 0.15392894763632228,
+            "original_target_mean": 0.12123515444526763
+          },
+          {
+            "interval": [
+              0.2,
+              0.3
+            ],
+            "pairs": 2812,
+            "teacher_mean": 0.25212638298974266,
+            "original_target_mean": 0.16314280805195208
+          },
+          {
+            "interval": [
+              0.3,
+              0.4
+            ],
+            "pairs": 3374,
+            "teacher_mean": 0.35125496818352253,
+            "original_target_mean": 0.24505722112666592
+          },
+          {
+            "interval": [
+              0.4,
+              0.5
+            ],
+            "pairs": 4927,
+            "teacher_mean": 0.4557250340255395,
+            "original_target_mean": 0.31327982036680774
+          },
+          {
+            "interval": [
+              0.5,
+              0.6
+            ],
+            "pairs": 8234,
+            "teacher_mean": 0.5507782292374714,
+            "original_target_mean": 0.34298106013302493
+          },
+          {
+            "interval": [
+              0.6,
+              0.7
+            ],
+            "pairs": 11796,
+            "teacher_mean": 0.6548451823970349,
+            "original_target_mean": 0.39685569806217075
+          },
+          {
+            "interval": [
+              0.7,
+              0.8
+            ],
+            "pairs": 23613,
+            "teacher_mean": 0.7564386671684862,
+            "original_target_mean": 0.4477074814229359
+          },
+          {
+            "interval": [
+              0.8,
+              0.9
+            ],
+            "pairs": 51950,
+            "teacher_mean": 0.8552508170405068,
+            "original_target_mean": 0.5188696869474919
+          },
+          {
+            "interval": [
+              0.9,
+              1.0
+            ],
+            "pairs": 24880,
+            "teacher_mean": 0.9244075819969753,
+            "original_target_mean": 0.6385205655816907
+          }
+        ]
+      }
+    },
+    "elapsed_seconds": 1.35103178024292
+  },
+  "training": {
+    "KD_CAL50": {
+      "event": "continuation_progress",
+      "model": "KD_CAL50",
+      "step": 2100,
+      "total_steps": 7813,
+      "pairs_seen": 268800,
+      "effective_tokens": 61406599,
+      "loss": 0.1486017834143786,
+      "ce": 0.2226658639208381,
+      "kl": 0.07453770214721772,
+      "learning_rate": 4.288707835355698e-05,
+      "elapsed_seconds": 3356.850497663021,
+      "tokens_per_second": 17954.34135048945,
+      "pairs_per_second": 72.59538374114612
+    },
+    "KD_CALSOFT": {
+      "event": "continuation_progress",
+      "model": "KD_CALSOFT",
+      "step": 2100,
+      "total_steps": 7813,
+      "pairs_seen": 268800,
+      "effective_tokens": 61406599,
+      "loss": 0.06852237544439958,
+      "ce": 0.2326234941288476,
+      "kl": 0.06852237544439958,
+      "learning_rate": 4.288707835355698e-05,
+      "elapsed_seconds": 3355.319251026958,
+      "tokens_per_second": 17977.150871977206,
+      "pairs_per_second": 72.68761023573208
+    },
+    "KD_ADAPT_LS": {
+      "event": "continuation_progress",
+      "model": "KD_ADAPT_LS",
+      "step": 2100,
+      "total_steps": 7813,
+      "pairs_seen": 268800,
+      "effective_tokens": 61406599,
+      "loss": 0.33783261748496446,
+      "ce": 0.2386046222395089,
+      "kl": 0.0,
+      "learning_rate": 4.288707835355698e-05,
+      "elapsed_seconds": 3354.5027486383915,
+      "tokens_per_second": 17962.095873759867,
+      "pairs_per_second": 72.62673786222226
+    },
+    "KD_SHUFFLE_LS": {
+      "event": "continuation_progress",
+      "model": "KD_SHUFFLE_LS",
+      "step": 2100,
+      "total_steps": 7813,
+      "pairs_seen": 268800,
+      "effective_tokens": 61406599,
+      "loss": 0.3478295349061955,
+      "ce": 0.24791972281265773,
+      "kl": 0.0,
+      "learning_rate": 4.288707835355698e-05,
+      "elapsed_seconds": 3354.7664041779935,
+      "tokens_per_second": 17974.76250469146,
+      "pairs_per_second": 72.67795327108834
+    }
+  },
+  "evaluation": {}
+}
