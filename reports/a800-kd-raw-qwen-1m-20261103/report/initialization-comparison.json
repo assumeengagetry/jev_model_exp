@@ -1,0 +1,26 @@
+{
+  "raw": {
+    "BASELINE": 1.76,
+    "KD_HARD": 18.46,
+    "KD_SOFT": 17.54,
+    "KD_HYBRID": 19.1
+  },
+  "warm": {
+    "BASELINE": 22.39,
+    "KD_HARD": 22.49,
+    "KD_SOFT": 21.36,
+    "KD_HYBRID": 22.38
+  },
+  "supervision_interactions": {
+    "KD_SOFT": {
+      "raw_minus_hard": -0.9200000000000017,
+      "warm_minus_hard": -1.129999999999999,
+      "initialization_interaction": 0.2099999999999973
+    },
+    "KD_HYBRID": {
+      "raw_minus_hard": 0.6400000000000006,
+      "warm_minus_hard": -0.10999999999999943,
+      "initialization_interaction": 0.75
+    }
+  }
+}

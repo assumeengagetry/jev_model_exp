@@ -2,6 +2,17 @@
 
 ## 状态
 
+**2026-11-03 19:27 CST更新：四组训练/评测已全部完成，step退出0。** RAW BASELINE1.76、HARD18.46、SOFT17.54、HYBRID19.10；每组冻结评测coverage100%。相对HARD：SOFT−0.92，HYBRID＋0.64；与warm1M的监督增益相比，初始化交互分别＋0.21、＋0.75。
+
+- **[最终report](report/REPORT.md)**
+- [原始起点与已训练起点Index对比图](report/figures/raw-vs-warm-1m-index.svg)
+- [不同初始化下的蒸馏增益图](report/figures/distillation-gain-by-initialization.svg)
+- [四组五方向雷达图PNG](report/four-model-five-area-radar.png)
+- [逐benchmark差值热力图PNG](report/benchmark-deltas-heatmap.png)
+- [原始起点与已训练起点结果CSV](report/raw-vs-warm-1m.csv)
+
+以下15:01和11:46段落为历史运行记录，不表示当前仍在等待或训练。
+
 **2026-11-03 15:01 CST更新：本轮已实际启动，不再等待。** SAMerging结束且step退出0后，raw对照自动启动为275711.64。HARD/SOFT/HYBRID三组训练与RAW BASELINE评测正在四卡并行；三组均已完成第1/7,813个optimizer step。
 
 实际初始化receipt确认：196个LoRA B矩阵全部为0，加载同一份[2,1024]未训练head，未使用训练过的MIXED_ALL adapter/head。最终质量结果仍待训练和评测完成。

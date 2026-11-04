@@ -1,0 +1,42 @@
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 13881.45it/s]
+[1mQwen3ForSequenceClassification LOAD REPORT[0m from: /data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B
+Key            | Status     | 
+---------------+------------+-
+lm_head.weight | UNEXPECTED | 
+score.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+`use_return_dict` is deprecated! Use `return_dict` instead!
+{"model": "BASELINE", "worker": 0, "new_requests": 200, "terminal_requests_in_shard": 200, "seconds": 72.56220168620348, "nonpadding_tokens": 2650608, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 400, "terminal_requests_in_shard": 400, "seconds": 1630.793347645551, "nonpadding_tokens": 49575568, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 600, "terminal_requests_in_shard": 600, "seconds": 1664.4666525498033, "nonpadding_tokens": 50591091, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 800, "terminal_requests_in_shard": 800, "seconds": 1889.287132449448, "nonpadding_tokens": 60469476, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 1000, "terminal_requests_in_shard": 1000, "seconds": 2125.7711917869747, "nonpadding_tokens": 69496859, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 1200, "terminal_requests_in_shard": 1200, "seconds": 2134.378379791975, "nonpadding_tokens": 69574166, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 1400, "terminal_requests_in_shard": 1400, "seconds": 2143.534705273807, "nonpadding_tokens": 69649978, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 1600, "terminal_requests_in_shard": 1600, "seconds": 2152.328201621771, "nonpadding_tokens": 69725142, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 1800, "terminal_requests_in_shard": 1800, "seconds": 2161.125594239682, "nonpadding_tokens": 69796035, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 2000, "terminal_requests_in_shard": 2000, "seconds": 2776.4446678608656, "nonpadding_tokens": 96070410, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 2200, "terminal_requests_in_shard": 2200, "seconds": 3032.535886064172, "nonpadding_tokens": 106919951, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 2400, "terminal_requests_in_shard": 2400, "seconds": 3041.2569298371673, "nonpadding_tokens": 106990134, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 2600, "terminal_requests_in_shard": 2600, "seconds": 3053.9988398887217, "nonpadding_tokens": 107342250, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 2800, "terminal_requests_in_shard": 2800, "seconds": 3072.0636070892215, "nonpadding_tokens": 108169255, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 3000, "terminal_requests_in_shard": 3000, "seconds": 3189.20617390424, "nonpadding_tokens": 113151421, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 3200, "terminal_requests_in_shard": 3200, "seconds": 3275.7108745500445, "nonpadding_tokens": 116332871, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 3400, "terminal_requests_in_shard": 3400, "seconds": 3334.381908159703, "nonpadding_tokens": 119216959, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 3600, "terminal_requests_in_shard": 3600, "seconds": 3392.641084227711, "nonpadding_tokens": 122079745, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 3800, "terminal_requests_in_shard": 3800, "seconds": 3417.803106740117, "nonpadding_tokens": 123142549, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 4000, "terminal_requests_in_shard": 4000, "seconds": 3426.7281208075583, "nonpadding_tokens": 123178762, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 4200, "terminal_requests_in_shard": 4200, "seconds": 3435.8251901119947, "nonpadding_tokens": 123313384, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 4400, "terminal_requests_in_shard": 4400, "seconds": 3444.8999602794647, "nonpadding_tokens": 123447600, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 4600, "terminal_requests_in_shard": 4600, "seconds": 3455.257956109941, "nonpadding_tokens": 123648299, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 4800, "terminal_requests_in_shard": 4800, "seconds": 3467.219633165747, "nonpadding_tokens": 124063356, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 5000, "terminal_requests_in_shard": 5000, "seconds": 3476.2006149478257, "nonpadding_tokens": 124234350, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 5200, "terminal_requests_in_shard": 5200, "seconds": 3489.091980814934, "nonpadding_tokens": 124669639, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 5400, "terminal_requests_in_shard": 5400, "seconds": 3498.5694659873843, "nonpadding_tokens": 124918348, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 5600, "terminal_requests_in_shard": 5600, "seconds": 3509.3516573123634, "nonpadding_tokens": 125247354, "micro_token_budget": 32768}
+{"model": "BASELINE", "worker": 0, "new_requests": 5800, "terminal_requests_in_shard": 5800, "seconds": 3521.575021792203, "nonpadding_tokens": 125623671, "micro_token_budget": 32768}
+{"event": "pilot_score_complete", "model": "BASELINE", "pilot_score": 1.76, "coverage": 1.0}
+{"event": "pilot_evaluation_complete", "model": "BASELINE", "pilot_score": 1.76, "coverage": 1.0, "requests": 5935}

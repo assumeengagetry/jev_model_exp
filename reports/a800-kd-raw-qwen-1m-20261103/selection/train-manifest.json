@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "scope": "staged_scale_experiment",
+  "pairs": 1000000,
+  "domains": {
+    "knowledge": 169116,
+    "retrieval": 607890,
+    "tools": 86923,
+    "arts": 136071
+  },
+  "seed": 20261102,
+  "nested_pilot_pairs": 100000,
+  "initial_labeled_pairs": 1000000,
+  "initial_missing_teacher_pairs": 0,
+  "effective_training_tokens": 228021289,
+  "parent": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B-common-pair-init-r32",
+  "teacher": "PelaAI/KnowLine-31B-Gen1",
+  "epochs": 1,
+  "sampling": "Nested; full-pool domain proportions; prefer cached rows, then source/original-label strata",
+  "selected_by_teacher_confidence": false,
+  "created_unix": 1793615981.3914862,
+  "initialization": "raw_pretrained_Qwen3_backbone_plus_shared_untrained_LoRA_and_random_head",
+  "matched_warm_stage": "/data/run01/scwb721/jev-kd-20261101/staged/scale-series-20261102/stages/1m",
+  "exact_sample_and_order_reused": true,
+  "teacher_probability_snapshot_reused": true,
+  "original_selection_created_unix": 1793615981.3914862,
+  "experiment_prepared_unix": 1793677550.3147156
+}

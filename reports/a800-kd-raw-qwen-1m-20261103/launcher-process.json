@@ -1,0 +1,6 @@
+{
+  "pid": 1371431,
+  "host": "ln02",
+  "started_unix": 1793677550.3171358,
+  "purpose": "Run raw-Qwen1M KD only after successful SAMerging completion"
+}
