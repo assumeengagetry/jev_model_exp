@@ -1,0 +1,172 @@
+{
+  "checked_unix": 1793818576.6804397,
+  "launch.json": {
+    "pid": 1380648,
+    "host": "ln02",
+    "requested_unix": 1793817600.2447386,
+    "allocation": 275711,
+    "gpus": 3,
+    "new_training_steps": 0,
+    "command": [
+      "srun",
+      "--jobid=275711",
+      "--exact",
+      "-N1",
+      "-n1",
+      "-c24",
+      "--gpus=3",
+      "--mem=128G",
+      "--time=04:00:00",
+      "--cpu-bind=none",
+      "--chdir=/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105",
+      "env",
+      "JEV_KD_ROOT=/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105",
+      "HF_HUB_OFFLINE=1",
+      "TRANSFORMERS_OFFLINE=1",
+      "TOKENIZERS_PARALLELISM=false",
+      "OMP_NUM_THREADS=4",
+      "MKL_NUM_THREADS=4",
+      "/data/run01/scwb721/jev-kd-20261101/envs/teacher/bin/python",
+      "-u",
+      "/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105/code/run_readout.py"
+    ]
+  },
+  "allocation.json": {
+    "pid": 835371,
+    "job_id": "275711",
+    "step_id": "69",
+    "devices": "0,1,2",
+    "started_unix": 1793817604.8649268
+  },
+  "status.json": {
+    "phase": "qwen_native_readout_inference",
+    "conditions": [
+      "QWEN_RAW_LM",
+      "QWEN_HARD_LM",
+      "QWEN_LS_LM"
+    ],
+    "new_training_steps": 0,
+    "unix_time": 1793817761.3347988
+  },
+  "native-model-paths.json": {
+    "QWEN_RAW_LM": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B",
+    "QWEN_HARD_LM": "/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105/models/QWEN_HARD_LM",
+    "QWEN_LS_LM": "/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105/models/QWEN_LS_LM"
+  },
+  "progress-QWEN_RAW_LM.json": {
+    "model": "QWEN_RAW_LM",
+    "processed_requests": 5900,
+    "selected_requests": 5935,
+    "new_requests": 5900,
+    "elapsed_seconds": 375.2127044200897,
+    "updated_unix": 1793818141.3854425
+  },
+  "progress-QWEN_HARD_LM.json": {
+    "model": "QWEN_HARD_LM",
+    "processed_requests": 5900,
+    "selected_requests": 5935,
+    "new_requests": 5900,
+    "elapsed_seconds": 368.8673539161682,
+    "updated_unix": 1793818140.5659585
+  },
+  "progress-QWEN_LS_LM.json": {
+    "model": "QWEN_LS_LM",
+    "processed_requests": 5900,
+    "selected_requests": 5935,
+    "new_requests": 5900,
+    "elapsed_seconds": 365.71119022369385,
+    "updated_unix": 1793818142.1033843
+  },
+  "COMPLETE.json": {
+    "complete": true,
+    "scope": "qwen_native_readout_diagnostic",
+    "report": "/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105/outputs/report/REPORT.md",
+    "scores": {
+      "QWEN_RAW_LM": 8.01,
+      "QWEN_HARD_LM": 10.72,
+      "QWEN_LS_LM": 12.84,
+      "RAW_CLASSIFIER": 1.76,
+      "HARD_CLASSIFIER": 18.46,
+      "LS_CLASSIFIER": 19.79,
+      "TEACHER_NATIVE": 68.37,
+      "TEACHER_PAIR": 63.95
+    },
+    "effects": {
+      "hard_backbone_native_minus_raw_native": 2.710000000000001,
+      "ls_backbone_native_minus_raw_native": 4.83,
+      "raw_native_minus_random_classifier": 6.25,
+      "ls_native_minus_ls_classifier": -6.949999999999999
+    },
+    "new_training_steps": 0,
+    "unix_time": 1793818197.069594
+  },
+  "STEP_EXIT.json": {
+    "pid": 835371,
+    "job_id": "275711",
+    "step_id": "69",
+    "devices": "0,1,2",
+    "started_unix": 1793817604.8649268,
+    "exit_code": 0,
+    "ended_unix": 1793818203.3986
+  },
+  "training": {},
+  "evaluation": {
+    "QWEN_RAW_LM": {
+      "complete": true,
+      "model": "QWEN_RAW_LM",
+      "requests": 5935,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 5935
+      },
+      "pilot_score": 8.01,
+      "coverage": 1.0,
+      "latency_scope": "One TP1 Qwen CausalLM per condition, native label-token readout; concurrent, not isolated latency-v1",
+      "evaluation_inputs": "Same frozen complete pilot cases and ALL candidates; no training-length truncation",
+      "scope": "pilot_subset",
+      "selected_cases": 4786,
+      "candidate_pairs": 163671,
+      "full_public_requests": 110087,
+      "official_full_public_run": false,
+      "private_full_score": false
+    },
+    "QWEN_HARD_LM": {
+      "complete": true,
+      "model": "QWEN_HARD_LM",
+      "requests": 5935,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 5935
+      },
+      "pilot_score": 10.72,
+      "coverage": 1.0,
+      "latency_scope": "One TP1 Qwen CausalLM per condition, native label-token readout; concurrent, not isolated latency-v1",
+      "evaluation_inputs": "Same frozen complete pilot cases and ALL candidates; no training-length truncation",
+      "scope": "pilot_subset",
+      "selected_cases": 4786,
+      "candidate_pairs": 163671,
+      "full_public_requests": 110087,
+      "official_full_public_run": false,
+      "private_full_score": false
+    },
+    "QWEN_LS_LM": {
+      "complete": true,
+      "model": "QWEN_LS_LM",
+      "requests": 5935,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 5935
+      },
+      "pilot_score": 12.84,
+      "coverage": 1.0,
+      "latency_scope": "One TP1 Qwen CausalLM per condition, native label-token readout; concurrent, not isolated latency-v1",
+      "evaluation_inputs": "Same frozen complete pilot cases and ALL candidates; no training-length truncation",
+      "scope": "pilot_subset",
+      "selected_cases": 4786,
+      "candidate_pairs": 163671,
+      "full_public_requests": 110087,
+      "official_full_public_run": false,
+      "private_full_score": false
+    }
+  }
+}

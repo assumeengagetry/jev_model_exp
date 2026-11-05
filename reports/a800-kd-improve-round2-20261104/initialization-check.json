@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "initialization": "raw_pretrained_backbone_untrained_adapter_and_head",
+  "backbone": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B",
+  "initial_adapter_and_head": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B-common-pair-init-r32",
+  "lora_B_matrices": 196,
+  "lora_B_nonzero_elements": 0,
+  "saved_random_heads": {
+    "base_model.model.score.weight": [
+      2,
+      1024
+    ]
+  },
+  "trained_MIXED_ALL_adapter_used": false,
+  "trained_MIXED_ALL_head_used": false,
+  "metadata": {
+    "base_model": "/home/dev/assumeengage/models/Qwen3-0.6B",
+    "model_class": "Qwen3ForSequenceClassification",
+    "seed": 42,
+    "labels": [
+      "not_match",
+      "match"
+    ],
+    "precision": "bfloat16",
+    "lora_r": 32,
+    "lora_alpha": 64,
+    "classification_head_saved": true,
+    "attention": "causal SDPA",
+    "base_weights_duplicated": false,
+    "purpose": "actual common initialization for five specialists and MIXED_ALL",
+    "model_forward_or_smoke_test_run": false
+  }
+}

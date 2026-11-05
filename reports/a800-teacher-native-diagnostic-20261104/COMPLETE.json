@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "scope": "native_teacher_frozen_subset_diagnostic",
+  "report": "/data/run01/scwb721/jev-kd-20261101/experiments/teacher-native-diagnostic-20261104/outputs/report/REPORT.md",
+  "teacher_index": 68.37,
+  "coverage": 1.0,
+  "counts": {
+    "ok": 5935
+  },
+  "minus_ls10": 48.580000000000005,
+  "scores": {
+    "TEACHER_NATIVE": 68.37,
+    "KD_HARD": 18.46,
+    "KD_SOFT": 17.54,
+    "KD_HYBRID": 19.1,
+    "KD_TEMP2_50": 19.17,
+    "KD_LS10": 19.79,
+    "KD_CALSOFT": 18.72
+  },
+  "unix_time": 1793800301.008347
+}

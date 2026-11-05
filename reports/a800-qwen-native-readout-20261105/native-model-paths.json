@@ -1,0 +1,5 @@
+{
+  "QWEN_RAW_LM": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B",
+  "QWEN_HARD_LM": "/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105/models/QWEN_HARD_LM",
+  "QWEN_LS_LM": "/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105/models/QWEN_LS_LM"
+}

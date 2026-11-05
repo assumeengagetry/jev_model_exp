@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "model": "KD_SHUFFLE_LS",
+  "parent": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B-common-pair-init-r32",
+  "domains": [
+    "knowledge",
+    "retrieval",
+    "tools",
+    "arts"
+  ],
+  "pool_pairs": 1000000,
+  "pairs_seen": 1000000,
+  "epochs": 1,
+  "optimizer_steps": 7813,
+  "effective_batch": 128,
+  "learning_rate": 5e-05,
+  "warmup_ratio": 0.03,
+  "weight_decay": 0.01,
+  "optimizer": "AdamW_fused",
+  "scheduler": "cosine",
+  "precision": "BF16",
+  "loss": "CE with identical group epsilon histograms shuffled across examples",
+  "temperature": 1,
+  "teacher_kl_weight": 0.0,
+  "effective_tokens": 228021289,
+  "elapsed_seconds": 12451.705080609769,
+  "effective_tokens_per_second": 18312.455003056788,
+  "pairs_per_second": 80.31028630426165,
+  "attention": "sdpa",
+  "micro_token_budget": 16384,
+  "gradient_checkpointing": false,
+  "peak_allocated_GiB": 38.10494375228882
+}

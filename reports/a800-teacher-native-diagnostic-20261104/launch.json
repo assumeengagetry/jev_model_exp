@@ -1,0 +1,30 @@
+{
+  "pid": 2630439,
+  "host": "ln01",
+  "requested_unix": 1793795996.9062505,
+  "allocation": 275711,
+  "gpus": 2,
+  "command": [
+    "srun",
+    "--jobid=275711",
+    "--exact",
+    "-N1",
+    "-n1",
+    "-c16",
+    "--gpus=2",
+    "--mem=128G",
+    "--time=04:00:00",
+    "--cpu-bind=none",
+    "--chdir=/data/run01/scwb721/jev-kd-20261101/experiments/teacher-native-diagnostic-20261104",
+    "env",
+    "JEV_KD_ROOT=/data/run01/scwb721/jev-kd-20261101/experiments/teacher-native-diagnostic-20261104",
+    "HF_HUB_OFFLINE=1",
+    "TRANSFORMERS_OFFLINE=1",
+    "TOKENIZERS_PARALLELISM=false",
+    "OMP_NUM_THREADS=4",
+    "MKL_NUM_THREADS=4",
+    "/data/run01/scwb721/jev-kd-20261101/envs/teacher/bin/python",
+    "-u",
+    "/data/run01/scwb721/jev-kd-20261101/experiments/teacher-native-diagnostic-20261104/code/run_native.py"
+  ]
+}

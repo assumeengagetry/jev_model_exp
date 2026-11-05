@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "scope": "qwen_native_readout_diagnostic",
+  "report": "/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105/outputs/report/REPORT.md",
+  "scores": {
+    "QWEN_RAW_LM": 8.01,
+    "QWEN_HARD_LM": 10.72,
+    "QWEN_LS_LM": 12.84,
+    "RAW_CLASSIFIER": 1.76,
+    "HARD_CLASSIFIER": 18.46,
+    "LS_CLASSIFIER": 19.79,
+    "TEACHER_NATIVE": 68.37,
+    "TEACHER_PAIR": 63.95
+  },
+  "effects": {
+    "hard_backbone_native_minus_raw_native": 2.710000000000001,
+    "ls_backbone_native_minus_raw_native": 4.83,
+    "raw_native_minus_random_classifier": 6.25,
+    "ls_native_minus_ls_classifier": -6.949999999999999
+  },
+  "new_training_steps": 0,
+  "unix_time": 1793818197.069594
+}

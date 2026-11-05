@@ -1,0 +1,121 @@
+{
+  "checked_unix": 1793816244.0893712,
+  "launch.json": {
+    "pid": 356406,
+    "host": "ln01",
+    "requested_unix": 1793801395.8828578,
+    "allocation": 275711,
+    "gpus": 4,
+    "command": [
+      "srun",
+      "--jobid=275711",
+      "--exact",
+      "-N1",
+      "-n1",
+      "-c32",
+      "--gpus=4",
+      "--mem=384G",
+      "--time=12:00:00",
+      "--cpu-bind=none",
+      "--chdir=/data/run01/scwb721/jev-kd-20261101/experiments/teacher-pair-diagnostic-20261104",
+      "env",
+      "JEV_KD_ROOT=/data/run01/scwb721/jev-kd-20261101/experiments/teacher-pair-diagnostic-20261104",
+      "HF_HUB_OFFLINE=1",
+      "TRANSFORMERS_OFFLINE=1",
+      "TOKENIZERS_PARALLELISM=false",
+      "OMP_NUM_THREADS=4",
+      "MKL_NUM_THREADS=4",
+      "/data/run01/scwb721/jev-kd-20261101/envs/teacher/bin/python",
+      "-u",
+      "/data/run01/scwb721/jev-kd-20261101/experiments/teacher-pair-diagnostic-20261104/code/run_pair.py"
+    ]
+  },
+  "allocation.json": {
+    "job_id": "275711",
+    "step_id": "68",
+    "pid": 3377070,
+    "devices": "0,1,2,3",
+    "started_unix": 1793801401.4019673
+  },
+  "status.json": {
+    "phase": "pair_scoring",
+    "unix_time": 1793816180.6076708
+  },
+  "pair-progress.json": {
+    "processed_requests": 5935,
+    "selected_requests": 5935,
+    "completed_pairs": 163148,
+    "unique_pairs": 163148,
+    "recovered_pairs": 0,
+    "new_pairs": 163148,
+    "elapsed_seconds": 14562.376556396484,
+    "updated_unix": 1793816180.4990904
+  },
+  "pair-manifest.json": {
+    "selected_requests": 5935,
+    "selected_field_options": 163671,
+    "unique_pair_calls": 163148,
+    "deduplicated_calls": 523,
+    "all_candidates_retained": true,
+    "input_policy": "full original rendered pair text; no4096 training cap",
+    "target_dtype": "float32 two columns",
+    "readout": "log(Pmatch)-log(Pnotmatch), floor1e-30; same candidate normalization as Student",
+    "prompt": "Is the candidate a correct match for the input, question, and supplied criteria? Judge this pair independently. Answer Yes for match and No for not_match.",
+    "replica_assignment": "input_state_id modulo2, all candidates of a state on same replica"
+  },
+  "COMPLETE.json": {
+    "complete": true,
+    "scope": "teacher_pair_protocol_diagnostic",
+    "report": "/data/run01/scwb721/jev-kd-20261101/experiments/teacher-pair-diagnostic-20261104/outputs/report/REPORT.md",
+    "teacher_pair_index": 63.95,
+    "teacher_native_index": 68.37,
+    "pair_minus_native": -4.420000000000002,
+    "coverage": 1.0,
+    "counts": {
+      "ok": 5935
+    },
+    "minus_ls10": 44.160000000000004,
+    "scores": {
+      "TEACHER_PAIR": 63.95,
+      "TEACHER_NATIVE": 68.37,
+      "KD_HARD": 18.46,
+      "KD_SOFT": 17.54,
+      "KD_HYBRID": 19.1,
+      "KD_TEMP2_50": 19.17,
+      "KD_LS10": 19.79,
+      "KD_CALSOFT": 18.72
+    },
+    "unix_time": 1793816222.3619597
+  },
+  "STEP_EXIT.json": {
+    "job_id": "275711",
+    "step_id": "68",
+    "pid": 3377070,
+    "devices": "0,1,2,3",
+    "started_unix": 1793801401.4019673,
+    "exit_code": 0,
+    "ended_unix": 1793816228.9159713
+  },
+  "training": {},
+  "evaluation": {
+    "TEACHER_PAIR": {
+      "complete": true,
+      "model": "TEACHER_PAIR",
+      "requests": 5935,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 5935
+      },
+      "pilot_score": 63.95,
+      "coverage": 1.0,
+      "latency_scope": "Two TP2 Teacher replicas; actual concurrent paired-adapter wall time, not isolated latency-v1",
+      "evaluation_inputs": "Same frozen complete pilot cases and ALL candidates; no training-length truncation",
+      "scope": "pilot_subset",
+      "selected_cases": 4786,
+      "candidate_pairs": 163671,
+      "full_public_requests": 110087,
+      "official_full_public_run": false,
+      "private_full_score": false
+    }
+  }
+}

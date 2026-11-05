@@ -1,5 +1,5 @@
 {
-  "checked_unix": 1793782046.683486,
+  "checked_unix": 1793794640.698014,
   "launch.json": {
     "pid": 223586,
     "host": "ln02",
@@ -71,32 +71,101 @@
     }
   },
   "progress.json": {
-    "completed": [],
+    "completed": [
+      "KD_ADAPT_LS",
+      "KD_CAL50",
+      "KD_CALSOFT",
+      "KD_SHUFFLE_LS"
+    ],
     "pending_training": [],
     "pending_evaluation": [],
-    "active": {
-      "0": {
-        "name": "KD_CAL50",
-        "phase": "train",
-        "pid": 1265207
+    "active": {},
+    "unix_time": 1793794626.4804485
+  },
+  "COMPLETE.json": {
+    "complete": true,
+    "scope": "exploratory_kd_hypothesis_round",
+    "report": "/data/run01/scwb721/jev-kd-20261101/experiments/kd-improve-round2-20261104/outputs/report/REPORT.md",
+    "scores": {
+      "BASELINE": 1.76,
+      "KD_HARD": 18.46,
+      "KD_SOFT": 17.54,
+      "KD_HYBRID": 19.1,
+      "KD_MIX25": 18.76,
+      "KD_AGREE50": 18.3,
+      "KD_TEMP2_50": 19.17,
+      "KD_LS10": 19.79,
+      "KD_CAL50": 19.07,
+      "KD_CALSOFT": 18.72,
+      "KD_ADAPT_LS": 18.67,
+      "KD_SHUFFLE_LS": 19.56
+    },
+    "differences": {
+      "KD_CAL50": {
+        "minus_hard": 0.6099999999999994,
+        "minus_hybrid50": -0.030000000000001137,
+        "minus_label_smoothing": -0.7199999999999989,
+        "areas_minus_hard": {
+          "knowledge": 0.7699999999999996,
+          "language": -2.26,
+          "retrieval": 2.4499999999999957,
+          "tools": 2.309999999999995,
+          "arts": 0.8300000000000001
+        }
       },
-      "1": {
-        "name": "KD_CALSOFT",
-        "phase": "train",
-        "pid": 1265208
+      "KD_CALSOFT": {
+        "minus_hard": 0.259999999999998,
+        "minus_hybrid50": -0.38000000000000256,
+        "minus_label_smoothing": -1.0700000000000003,
+        "areas_minus_hard": {
+          "knowledge": 1.5699999999999985,
+          "language": -1.3300000000000018,
+          "retrieval": -2.039999999999999,
+          "tools": 4.089999999999996,
+          "arts": -1.3900000000000006
+        }
       },
-      "2": {
-        "name": "KD_ADAPT_LS",
-        "phase": "train",
-        "pid": 1265209
+      "KD_ADAPT_LS": {
+        "minus_hard": 0.21000000000000085,
+        "minus_hybrid50": -0.4299999999999997,
+        "minus_label_smoothing": -1.1199999999999974,
+        "areas_minus_hard": {
+          "knowledge": -0.46000000000000085,
+          "language": -0.46000000000000085,
+          "retrieval": -1.0100000000000016,
+          "tools": 6.269999999999996,
+          "arts": -4.93
+        }
       },
-      "3": {
-        "name": "KD_SHUFFLE_LS",
-        "phase": "train",
-        "pid": 1265210
+      "KD_SHUFFLE_LS": {
+        "minus_hard": 1.0999999999999979,
+        "minus_hybrid50": 0.4599999999999973,
+        "minus_label_smoothing": -0.23000000000000043,
+        "areas_minus_hard": {
+          "knowledge": 0.8300000000000001,
+          "language": 0.08999999999999986,
+          "retrieval": 0.7700000000000031,
+          "tools": 4.349999999999994,
+          "arts": -0.8300000000000001
+        }
       }
     },
-    "unix_time": 1793782044.6217163
+    "best_new_arm": "KD_SHUFFLE_LS",
+    "best_new_arm_minus_hard": 1.0999999999999979,
+    "best_new_arm_minus_hybrid50": 0.4599999999999973,
+    "best_new_arm_minus_label_smoothing": -0.23000000000000043,
+    "aligned_minus_shuffled": -0.889999999999997,
+    "initialization": "raw_pretrained_qwen",
+    "unix_time": 1793794628.7741718
+  },
+  "STEP_EXIT.json": {
+    "pid": 1264914,
+    "job_id": "275711",
+    "step_id": "66",
+    "devices": "0,1,2,3",
+    "started_unix": 1793778587.5691264,
+    "exit_code": 0,
+    "ended_unix": 1793794628.7749038
   },
   "teacher-diagnostic.json": {
     "scope": "training_target_diagnostic_not_teacher_benchmark_score",
@@ -692,65 +761,214 @@
   },
   "training": {
     "KD_CAL50": {
-      "event": "continuation_progress",
+      "complete": true,
       "model": "KD_CAL50",
-      "step": 2100,
-      "total_steps": 7813,
-      "pairs_seen": 268800,
-      "effective_tokens": 61406599,
-      "loss": 0.1486017834143786,
-      "ce": 0.2226658639208381,
-      "kl": 0.07453770214721772,
-      "learning_rate": 4.288707835355698e-05,
-      "elapsed_seconds": 3356.850497663021,
-      "tokens_per_second": 17954.34135048945,
-      "pairs_per_second": 72.59538374114612
+      "parent": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B-common-pair-init-r32",
+      "domains": [
+        "knowledge",
+        "retrieval",
+        "tools",
+        "arts"
+      ],
+      "pool_pairs": 1000000,
+      "pairs_seen": 1000000,
+      "epochs": 1,
+      "optimizer_steps": 7813,
+      "effective_batch": 128,
+      "learning_rate": 5e-05,
+      "warmup_ratio": 0.03,
+      "weight_decay": 0.01,
+      "optimizer": "AdamW_fused",
+      "scheduler": "cosine",
+      "precision": "BF16",
+      "loss": "0.5 CE + 0.5 KL with domain-calibrated Teacher",
+      "temperature": 1,
+      "teacher_weight": 0.5,
+      "effective_tokens": 228021289,
+      "elapsed_seconds": 12458.99049968645,
+      "effective_tokens_per_second": 18301.746759156653,
+      "pairs_per_second": 80.26332470717965,
+      "attention": "sdpa",
+      "micro_token_budget": 16384,
+      "gradient_checkpointing": false,
+      "peak_allocated_GiB": 38.10494375228882
     },
     "KD_CALSOFT": {
-      "event": "continuation_progress",
+      "complete": true,
       "model": "KD_CALSOFT",
-      "step": 2100,
-      "total_steps": 7813,
-      "pairs_seen": 268800,
-      "effective_tokens": 61406599,
-      "loss": 0.06852237544439958,
-      "ce": 0.2326234941288476,
-      "kl": 0.06852237544439958,
-      "learning_rate": 4.288707835355698e-05,
-      "elapsed_seconds": 3355.319251026958,
-      "tokens_per_second": 17977.150871977206,
-      "pairs_per_second": 72.68761023573208
+      "parent": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B-common-pair-init-r32",
+      "domains": [
+        "knowledge",
+        "retrieval",
+        "tools",
+        "arts"
+      ],
+      "pool_pairs": 1000000,
+      "pairs_seen": 1000000,
+      "epochs": 1,
+      "optimizer_steps": 7813,
+      "effective_batch": 128,
+      "learning_rate": 5e-05,
+      "warmup_ratio": 0.03,
+      "weight_decay": 0.01,
+      "optimizer": "AdamW_fused",
+      "scheduler": "cosine",
+      "precision": "BF16",
+      "loss": "KL with domain-calibrated Teacher, no CE",
+      "temperature": 1,
+      "teacher_weight": 1.0,
+      "effective_tokens": 228021289,
+      "elapsed_seconds": 12458.427317608148,
+      "effective_tokens_per_second": 18302.574087960973,
+      "pairs_per_second": 80.26695300350211,
+      "attention": "sdpa",
+      "micro_token_budget": 16384,
+      "gradient_checkpointing": false,
+      "peak_allocated_GiB": 38.10494375228882
     },
     "KD_ADAPT_LS": {
-      "event": "continuation_progress",
+      "complete": true,
       "model": "KD_ADAPT_LS",
-      "step": 2100,
-      "total_steps": 7813,
-      "pairs_seen": 268800,
-      "effective_tokens": 61406599,
-      "loss": 0.33783261748496446,
-      "ce": 0.2386046222395089,
-      "kl": 0.0,
-      "learning_rate": 4.288707835355698e-05,
-      "elapsed_seconds": 3354.5027486383915,
-      "tokens_per_second": 17962.095873759867,
-      "pairs_per_second": 72.62673786222226
+      "parent": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B-common-pair-init-r32",
+      "domains": [
+        "knowledge",
+        "retrieval",
+        "tools",
+        "arts"
+      ],
+      "pool_pairs": 1000000,
+      "pairs_seen": 1000000,
+      "epochs": 1,
+      "optimizer_steps": 7813,
+      "effective_batch": 128,
+      "learning_rate": 5e-05,
+      "warmup_ratio": 0.03,
+      "weight_decay": 0.01,
+      "optimizer": "AdamW_fused",
+      "scheduler": "cosine",
+      "precision": "BF16",
+      "loss": "CE with Teacher-confidence-rank adaptive smoothing; group mean epsilon0.1",
+      "temperature": 1,
+      "teacher_kl_weight": 0.0,
+      "effective_tokens": 228021289,
+      "elapsed_seconds": 12448.131282035261,
+      "effective_tokens_per_second": 18317.712420744865,
+      "pairs_per_second": 80.33334300090227,
+      "attention": "sdpa",
+      "micro_token_budget": 16384,
+      "gradient_checkpointing": false,
+      "peak_allocated_GiB": 38.10494375228882
     },
     "KD_SHUFFLE_LS": {
-      "event": "continuation_progress",
+      "complete": true,
       "model": "KD_SHUFFLE_LS",
-      "step": 2100,
-      "total_steps": 7813,
-      "pairs_seen": 268800,
-      "effective_tokens": 61406599,
-      "loss": 0.3478295349061955,
-      "ce": 0.24791972281265773,
-      "kl": 0.0,
-      "learning_rate": 4.288707835355698e-05,
-      "elapsed_seconds": 3354.7664041779935,
-      "tokens_per_second": 17974.76250469146,
-      "pairs_per_second": 72.67795327108834
+      "parent": "/data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B-common-pair-init-r32",
+      "domains": [
+        "knowledge",
+        "retrieval",
+        "tools",
+        "arts"
+      ],
+      "pool_pairs": 1000000,
+      "pairs_seen": 1000000,
+      "epochs": 1,
+      "optimizer_steps": 7813,
+      "effective_batch": 128,
+      "learning_rate": 5e-05,
+      "warmup_ratio": 0.03,
+      "weight_decay": 0.01,
+      "optimizer": "AdamW_fused",
+      "scheduler": "cosine",
+      "precision": "BF16",
+      "loss": "CE with identical group epsilon histograms shuffled across examples",
+      "temperature": 1,
+      "teacher_kl_weight": 0.0,
+      "effective_tokens": 228021289,
+      "elapsed_seconds": 12451.705080609769,
+      "effective_tokens_per_second": 18312.455003056788,
+      "pairs_per_second": 80.31028630426165,
+      "attention": "sdpa",
+      "micro_token_budget": 16384,
+      "gradient_checkpointing": false,
+      "peak_allocated_GiB": 38.10494375228882
     }
   },
-  "evaluation": {}
+  "evaluation": {
+    "KD_CAL50": {
+      "complete": true,
+      "model": "KD_CAL50",
+      "requests": 5935,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 5935
+      },
+      "pilot_score": 19.07,
+      "coverage": 1.0,
+      "latency_scope": "One evaluation GPU per model; actual candidate scoring, not isolated latency-v1",
+      "evaluation_inputs": "Same frozen complete pilot cases and ALL candidates; no training-length truncation",
+      "scope": "pilot_subset",
+      "selected_cases": 4786,
+      "candidate_pairs": 163671,
+      "full_public_requests": 110087,
+      "official_full_public_run": false,
+      "private_full_score": false
+    },
+    "KD_CALSOFT": {
+      "complete": true,
+      "model": "KD_CALSOFT",
+      "requests": 5935,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 5935
+      },
+      "pilot_score": 18.72,
+      "coverage": 1.0,
+      "latency_scope": "One evaluation GPU per model; actual candidate scoring, not isolated latency-v1",
+      "evaluation_inputs": "Same frozen complete pilot cases and ALL candidates; no training-length truncation",
+      "scope": "pilot_subset",
+      "selected_cases": 4786,
+      "candidate_pairs": 163671,
+      "full_public_requests": 110087,
+      "official_full_public_run": false,
+      "private_full_score": false
+    },
+    "KD_ADAPT_LS": {
+      "complete": true,
+      "model": "KD_ADAPT_LS",
+      "requests": 5935,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 5935
+      },
+      "pilot_score": 18.67,
+      "coverage": 1.0,
+      "latency_scope": "One evaluation GPU per model; actual candidate scoring, not isolated latency-v1",
+      "evaluation_inputs": "Same frozen complete pilot cases and ALL candidates; no training-length truncation",
+      "scope": "pilot_subset",
+      "selected_cases": 4786,
+      "candidate_pairs": 163671,
+      "full_public_requests": 110087,
+      "official_full_public_run": false,
+      "private_full_score": false
+    },
+    "KD_SHUFFLE_LS": {
+      "complete": true,
+      "model": "KD_SHUFFLE_LS",
+      "requests": 5935,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 5935
+      },
+      "pilot_score": 19.56,
+      "coverage": 1.0,
+      "latency_scope": "One evaluation GPU per model; actual candidate scoring, not isolated latency-v1",
+      "evaluation_inputs": "Same frozen complete pilot cases and ALL candidates; no training-length truncation",
+      "scope": "pilot_subset",
+      "selected_cases": 4786,
+      "candidate_pairs": 163671,
+      "full_public_requests": 110087,
+      "official_full_public_run": false,
+      "private_full_score": false
+    }
+  }
 }

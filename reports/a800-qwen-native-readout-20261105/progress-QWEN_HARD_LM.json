@@ -1,0 +1,8 @@
+{
+  "model": "QWEN_HARD_LM",
+  "processed_requests": 5900,
+  "selected_requests": 5935,
+  "new_requests": 5900,
+  "elapsed_seconds": 368.8673539161682,
+  "updated_unix": 1793818140.5659585
+}

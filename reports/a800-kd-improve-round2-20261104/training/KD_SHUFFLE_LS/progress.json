@@ -1,0 +1,15 @@
+{
+  "event": "continuation_progress",
+  "model": "KD_SHUFFLE_LS",
+  "step": 7813,
+  "total_steps": 7813,
+  "pairs_seen": 1000000,
+  "effective_tokens": 228021289,
+  "loss": 0.32467889904975894,
+  "ce": 0.21784326506778598,
+  "kl": 0.0,
+  "learning_rate": 0.0,
+  "elapsed_seconds": 12451.363207764924,
+  "tokens_per_second": 17572.469592552083,
+  "pairs_per_second": 97.05363001806498
+}

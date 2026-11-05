@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "model": "KD_SHUFFLE_LS",
+  "requests": 5935,
+  "benchmarks": 37,
+  "counts": {
+    "ok": 5935
+  },
+  "pilot_score": 19.56,
+  "coverage": 1.0,
+  "latency_scope": "One evaluation GPU per model; actual candidate scoring, not isolated latency-v1",
+  "evaluation_inputs": "Same frozen complete pilot cases and ALL candidates; no training-length truncation",
+  "scope": "pilot_subset",
+  "selected_cases": 4786,
+  "candidate_pairs": 163671,
+  "full_public_requests": 110087,
+  "official_full_public_run": false,
+  "private_full_score": false
+}

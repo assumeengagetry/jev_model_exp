@@ -1,0 +1,31 @@
+{
+  "pid": 1380648,
+  "host": "ln02",
+  "requested_unix": 1793817600.2447386,
+  "allocation": 275711,
+  "gpus": 3,
+  "new_training_steps": 0,
+  "command": [
+    "srun",
+    "--jobid=275711",
+    "--exact",
+    "-N1",
+    "-n1",
+    "-c24",
+    "--gpus=3",
+    "--mem=128G",
+    "--time=04:00:00",
+    "--cpu-bind=none",
+    "--chdir=/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105",
+    "env",
+    "JEV_KD_ROOT=/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105",
+    "HF_HUB_OFFLINE=1",
+    "TRANSFORMERS_OFFLINE=1",
+    "TOKENIZERS_PARALLELISM=false",
+    "OMP_NUM_THREADS=4",
+    "MKL_NUM_THREADS=4",
+    "/data/run01/scwb721/jev-kd-20261101/envs/teacher/bin/python",
+    "-u",
+    "/data/run01/scwb721/jev-kd-20261101/experiments/qwen-native-readout-20261105/code/run_readout.py"
+  ]
+}

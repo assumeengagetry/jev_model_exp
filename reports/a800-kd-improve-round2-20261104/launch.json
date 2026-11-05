@@ -1,0 +1,30 @@
+{
+  "pid": 223586,
+  "host": "ln02",
+  "requested_unix": 1793778586.2328944,
+  "allocation": 275711,
+  "gpus": 4,
+  "command": [
+    "srun",
+    "--jobid=275711",
+    "--exact",
+    "-N1",
+    "-n1",
+    "-c32",
+    "--gpus=4",
+    "--mem=384G",
+    "--time=12:00:00",
+    "--cpu-bind=none",
+    "--chdir=/data/run01/scwb721/jev-kd-20261101/experiments/kd-improve-round2-20261104",
+    "env",
+    "JEV_KD_ROOT=/data/run01/scwb721/jev-kd-20261101/experiments/kd-improve-round2-20261104",
+    "HF_HUB_OFFLINE=1",
+    "TRANSFORMERS_OFFLINE=1",
+    "TOKENIZERS_PARALLELISM=false",
+    "OMP_NUM_THREADS=4",
+    "MKL_NUM_THREADS=4",
+    "/data/run01/scwb721/jev-kd-20261101/envs/student/bin/python",
+    "-u",
+    "/data/run01/scwb721/jev-kd-20261101/experiments/kd-improve-round2-20261104/code/run_job.py"
+  ]
+}

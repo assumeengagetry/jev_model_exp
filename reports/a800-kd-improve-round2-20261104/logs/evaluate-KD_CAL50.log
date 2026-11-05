@@ -1,0 +1,42 @@
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 14571.72it/s]
+[1mQwen3ForSequenceClassification LOAD REPORT[0m from: /data/run01/scwb721/jev-kd-20261101/workspace/models/Qwen3-0.6B
+Key            | Status     | 
+---------------+------------+-
+lm_head.weight | UNEXPECTED | 
+score.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+`use_return_dict` is deprecated! Use `return_dict` instead!
+{"model": "KD_CAL50", "worker": 0, "new_requests": 200, "terminal_requests_in_shard": 200, "seconds": 72.56181417033076, "nonpadding_tokens": 2650608, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 400, "terminal_requests_in_shard": 400, "seconds": 1631.6498746462166, "nonpadding_tokens": 49575568, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 600, "terminal_requests_in_shard": 600, "seconds": 1664.884519122541, "nonpadding_tokens": 50591091, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 800, "terminal_requests_in_shard": 800, "seconds": 1889.6967184878886, "nonpadding_tokens": 60469476, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 1000, "terminal_requests_in_shard": 1000, "seconds": 2126.0002781115472, "nonpadding_tokens": 69496859, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 1200, "terminal_requests_in_shard": 1200, "seconds": 2134.5090588778257, "nonpadding_tokens": 69574166, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 1400, "terminal_requests_in_shard": 1400, "seconds": 2143.317404810339, "nonpadding_tokens": 69649978, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 1600, "terminal_requests_in_shard": 1600, "seconds": 2151.836954690516, "nonpadding_tokens": 69725142, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 1800, "terminal_requests_in_shard": 1800, "seconds": 2160.3749421052635, "nonpadding_tokens": 69796035, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 2000, "terminal_requests_in_shard": 2000, "seconds": 2775.5853380300105, "nonpadding_tokens": 96070410, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 2200, "terminal_requests_in_shard": 2200, "seconds": 3031.6847570352256, "nonpadding_tokens": 106919951, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 2400, "terminal_requests_in_shard": 2400, "seconds": 3040.384897712618, "nonpadding_tokens": 106990134, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 2600, "terminal_requests_in_shard": 2600, "seconds": 3053.0927661173046, "nonpadding_tokens": 107342250, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 2800, "terminal_requests_in_shard": 2800, "seconds": 3071.1703312061727, "nonpadding_tokens": 108169255, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 3000, "terminal_requests_in_shard": 3000, "seconds": 3188.350057799369, "nonpadding_tokens": 113151421, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 3200, "terminal_requests_in_shard": 3200, "seconds": 3274.743295222521, "nonpadding_tokens": 116332871, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 3400, "terminal_requests_in_shard": 3400, "seconds": 3333.5367920957506, "nonpadding_tokens": 119216959, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 3600, "terminal_requests_in_shard": 3600, "seconds": 3391.942253585905, "nonpadding_tokens": 122079745, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 3800, "terminal_requests_in_shard": 3800, "seconds": 3416.9848780818284, "nonpadding_tokens": 123142549, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 4000, "terminal_requests_in_shard": 4000, "seconds": 3425.666041582823, "nonpadding_tokens": 123178762, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 4200, "terminal_requests_in_shard": 4200, "seconds": 3434.6217146217823, "nonpadding_tokens": 123313384, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 4400, "terminal_requests_in_shard": 4400, "seconds": 3443.910226855427, "nonpadding_tokens": 123447600, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 4600, "terminal_requests_in_shard": 4600, "seconds": 3454.111139021814, "nonpadding_tokens": 123648299, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 4800, "terminal_requests_in_shard": 4800, "seconds": 3466.074392128736, "nonpadding_tokens": 124063356, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 5000, "terminal_requests_in_shard": 5000, "seconds": 3474.8719051405787, "nonpadding_tokens": 124234350, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 5200, "terminal_requests_in_shard": 5200, "seconds": 3487.71002067253, "nonpadding_tokens": 124669639, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 5400, "terminal_requests_in_shard": 5400, "seconds": 3497.0855614431202, "nonpadding_tokens": 124918348, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 5600, "terminal_requests_in_shard": 5600, "seconds": 3507.7401321716607, "nonpadding_tokens": 125247354, "micro_token_budget": 32768}
+{"model": "KD_CAL50", "worker": 0, "new_requests": 5800, "terminal_requests_in_shard": 5800, "seconds": 3519.895719666034, "nonpadding_tokens": 125623671, "micro_token_budget": 32768}
+{"event": "pilot_score_complete", "model": "KD_CAL50", "pilot_score": 19.07, "coverage": 1.0}
+{"event": "pilot_evaluation_complete", "model": "KD_CAL50", "pilot_score": 19.07, "coverage": 1.0, "requests": 5935}

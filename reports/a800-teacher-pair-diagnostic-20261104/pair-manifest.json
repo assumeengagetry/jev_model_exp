@@ -1,0 +1,12 @@
+{
+  "selected_requests": 5935,
+  "selected_field_options": 163671,
+  "unique_pair_calls": 163148,
+  "deduplicated_calls": 523,
+  "all_candidates_retained": true,
+  "input_policy": "full original rendered pair text; no4096 training cap",
+  "target_dtype": "float32 two columns",
+  "readout": "log(Pmatch)-log(Pnotmatch), floor1e-30; same candidate normalization as Student",
+  "prompt": "Is the candidate a correct match for the input, question, and supplied criteria? Judge this pair independently. Answer Yes for match and No for not_match.",
+  "replica_assignment": "input_state_id modulo2, all candidates of a state on same replica"
+}

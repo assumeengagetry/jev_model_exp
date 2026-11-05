@@ -1,5 +1,25 @@
 # 蒸馏改进第二轮：校准和样本级Teacher信息
 
+## 最终结果：2026-11-04 20:17已完成
+
+四组各训练完整1M/7,813steps/228,021,289tokens，评测5,935请求全部ok、coverage100%，step退出0。
+
+| 条件 | Index | vs HARD18.46 | vs LS19.79 |
+|---|---:|---:|---:|
+| CAL50 |19.07|+0.61|−0.72|
+| CALSOFT |18.72|+0.26|−1.07|
+| ADAPT_LS |18.67|+0.21|−1.12|
+| SHUFFLE_LS |19.56|+1.10|−0.23|
+
+Aligned−shuffled为−0.89。本轮没有超过uniformLS。校准使纯KD相比原SOFT17.54提高1.18，但calibration用了原训练labels，不能称作完全label-free蒸馏；也不能因此声称Teacher超过普通正则化。
+
+- [最终report](report/REPORT.md)
+- [所有条件对比PNG](report/variant-index-comparison.png)
+- [相对固定对照增益PNG](report/gains-over-controls.png)
+- [结果CSV](report/all-model-five-area.csv)
+
+以下启动/preprocessing记录为历史过程。百万训练的loss扫参到此停止，下一步是原生Teacher能力诊断，不是预设正结果的无限搜索。
+
 **2026-11-04 15:49已实际启动step275711.66，四卡并行；15:51各arm均已完成第1/7,813步。当前没有本轮最终质量分数。**
 
 第一轮普通LS0.1的19.79超过最好KD19.17，因此本轮同时以HARD18.46、HYBRID19.10、T2 19.17及LS19.79为参考，不能只凭超过HARD就宣称Teacher独有收益。

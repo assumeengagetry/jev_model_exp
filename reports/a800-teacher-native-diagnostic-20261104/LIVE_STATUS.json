@@ -1,0 +1,104 @@
+{
+  "checked_unix": 1793800302.6298356,
+  "launch.json": {
+    "pid": 2630439,
+    "host": "ln01",
+    "requested_unix": 1793795996.9062505,
+    "allocation": 275711,
+    "gpus": 2,
+    "command": [
+      "srun",
+      "--jobid=275711",
+      "--exact",
+      "-N1",
+      "-n1",
+      "-c16",
+      "--gpus=2",
+      "--mem=128G",
+      "--time=04:00:00",
+      "--cpu-bind=none",
+      "--chdir=/data/run01/scwb721/jev-kd-20261101/experiments/teacher-native-diagnostic-20261104",
+      "env",
+      "JEV_KD_ROOT=/data/run01/scwb721/jev-kd-20261101/experiments/teacher-native-diagnostic-20261104",
+      "HF_HUB_OFFLINE=1",
+      "TRANSFORMERS_OFFLINE=1",
+      "TOKENIZERS_PARALLELISM=false",
+      "OMP_NUM_THREADS=4",
+      "MKL_NUM_THREADS=4",
+      "/data/run01/scwb721/jev-kd-20261101/envs/teacher/bin/python",
+      "-u",
+      "/data/run01/scwb721/jev-kd-20261101/experiments/teacher-native-diagnostic-20261104/code/run_native.py"
+    ]
+  },
+  "allocation.json": {
+    "job_id": "275711",
+    "step_id": "67",
+    "pid": 2863472,
+    "devices": "0,1",
+    "started_unix": 1793796005.501007
+  },
+  "status.json": {
+    "phase": "native_scoring",
+    "unix_time": 1793800250.5250475
+  },
+  "native-progress.json": {
+    "model": "TEACHER_NATIVE",
+    "processed_requests": 5900,
+    "selected_requests": 5935,
+    "new_requests": 5900,
+    "elapsed_seconds": 4013.8687360286713,
+    "updated_unix": 1793800241.8409002
+  },
+  "COMPLETE.json": {
+    "complete": true,
+    "scope": "native_teacher_frozen_subset_diagnostic",
+    "report": "/data/run01/scwb721/jev-kd-20261101/experiments/teacher-native-diagnostic-20261104/outputs/report/REPORT.md",
+    "teacher_index": 68.37,
+    "coverage": 1.0,
+    "counts": {
+      "ok": 5935
+    },
+    "minus_ls10": 48.580000000000005,
+    "scores": {
+      "TEACHER_NATIVE": 68.37,
+      "KD_HARD": 18.46,
+      "KD_SOFT": 17.54,
+      "KD_HYBRID": 19.1,
+      "KD_TEMP2_50": 19.17,
+      "KD_LS10": 19.79,
+      "KD_CALSOFT": 18.72
+    },
+    "unix_time": 1793800301.008347
+  },
+  "STEP_EXIT.json": {
+    "job_id": "275711",
+    "step_id": "67",
+    "pid": 2863472,
+    "devices": "0,1",
+    "started_unix": 1793796005.501007,
+    "exit_code": 0,
+    "ended_unix": 1793800302.8544042
+  },
+  "training": {},
+  "evaluation": {
+    "TEACHER_NATIVE": {
+      "complete": true,
+      "model": "TEACHER_NATIVE",
+      "requests": 5935,
+      "benchmarks": 37,
+      "counts": {
+        "ok": 5935
+      },
+      "pilot_score": 68.37,
+      "coverage": 1.0,
+      "latency_scope": "One evaluation GPU per model; actual candidate scoring, not isolated latency-v1",
+      "evaluation_inputs": "Same frozen complete pilot cases and ALL candidates; no training-length truncation",
+      "scope": "pilot_subset",
+      "selected_cases": 4786,
+      "candidate_pairs": 163671,
+      "full_public_requests": 110087,
+      "official_full_public_run": false,
+      "private_full_score": false
+    }
+  }
+}

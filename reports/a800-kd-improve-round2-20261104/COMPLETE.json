@@ -1,0 +1,76 @@
+{
+  "complete": true,
+  "scope": "exploratory_kd_hypothesis_round",
+  "report": "/data/run01/scwb721/jev-kd-20261101/experiments/kd-improve-round2-20261104/outputs/report/REPORT.md",
+  "scores": {
+    "BASELINE": 1.76,
+    "KD_HARD": 18.46,
+    "KD_SOFT": 17.54,
+    "KD_HYBRID": 19.1,
+    "KD_MIX25": 18.76,
+    "KD_AGREE50": 18.3,
+    "KD_TEMP2_50": 19.17,
+    "KD_LS10": 19.79,
+    "KD_CAL50": 19.07,
+    "KD_CALSOFT": 18.72,
+    "KD_ADAPT_LS": 18.67,
+    "KD_SHUFFLE_LS": 19.56
+  },
+  "differences": {
+    "KD_CAL50": {
+      "minus_hard": 0.6099999999999994,
+      "minus_hybrid50": -0.030000000000001137,
+      "minus_label_smoothing": -0.7199999999999989,
+      "areas_minus_hard": {
+        "knowledge": 0.7699999999999996,
+        "language": -2.26,
+        "retrieval": 2.4499999999999957,
+        "tools": 2.309999999999995,
+        "arts": 0.8300000000000001
+      }
+    },
+    "KD_CALSOFT": {
+      "minus_hard": 0.259999999999998,
+      "minus_hybrid50": -0.38000000000000256,
+      "minus_label_smoothing": -1.0700000000000003,
+      "areas_minus_hard": {
+        "knowledge": 1.5699999999999985,
+        "language": -1.3300000000000018,
+        "retrieval": -2.039999999999999,
+        "tools": 4.089999999999996,
+        "arts": -1.3900000000000006
+      }
+    },
+    "KD_ADAPT_LS": {
+      "minus_hard": 0.21000000000000085,
+      "minus_hybrid50": -0.4299999999999997,
+      "minus_label_smoothing": -1.1199999999999974,
+      "areas_minus_hard": {
+        "knowledge": -0.46000000000000085,
+        "language": -0.46000000000000085,
+        "retrieval": -1.0100000000000016,
+        "tools": 6.269999999999996,
+        "arts": -4.93
+      }
+    },
+    "KD_SHUFFLE_LS": {
+      "minus_hard": 1.0999999999999979,
+      "minus_hybrid50": 0.4599999999999973,
+      "minus_label_smoothing": -0.23000000000000043,
+      "areas_minus_hard": {
+        "knowledge": 0.8300000000000001,
+        "language": 0.08999999999999986,
+        "retrieval": 0.7700000000000031,
+        "tools": 4.349999999999994,
+        "arts": -0.8300000000000001
+      }
+    }
+  },
+  "best_new_arm": "KD_SHUFFLE_LS",
+  "best_new_arm_minus_hard": 1.0999999999999979,
+  "best_new_arm_minus_hybrid50": 0.4599999999999973,
+  "best_new_arm_minus_label_smoothing": -0.23000000000000043,
+  "aligned_minus_shuffled": -0.889999999999997,
+  "initialization": "raw_pretrained_qwen",
+  "unix_time": 1793794628.7741718
+}

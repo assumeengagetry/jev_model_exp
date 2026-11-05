@@ -1,0 +1,9 @@
+{
+  "model": "KD_CAL50",
+  "worker": 0,
+  "new_requests": 5800,
+  "terminal_requests_in_shard": 5800,
+  "seconds": 3519.895719666034,
+  "nonpadding_tokens": 125623671,
+  "micro_token_budget": 32768
+}

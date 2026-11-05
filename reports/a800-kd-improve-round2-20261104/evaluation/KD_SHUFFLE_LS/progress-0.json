@@ -1,0 +1,9 @@
+{
+  "model": "KD_SHUFFLE_LS",
+  "worker": 0,
+  "new_requests": 5800,
+  "terminal_requests_in_shard": 5800,
+  "seconds": 3528.2880312800407,
+  "nonpadding_tokens": 125623671,
+  "micro_token_budget": 32768
+}

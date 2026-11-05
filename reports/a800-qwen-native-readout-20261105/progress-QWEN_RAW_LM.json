@@ -1,0 +1,8 @@
+{
+  "model": "QWEN_RAW_LM",
+  "processed_requests": 5900,
+  "selected_requests": 5935,
+  "new_requests": 5900,
+  "elapsed_seconds": 375.2127044200897,
+  "updated_unix": 1793818141.3854425
+}
