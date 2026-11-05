@@ -1,0 +1,35 @@
+{
+  "completed_trials": [
+    "R64_HARD",
+    "R64_HYBRID",
+    "FULL_HARD",
+    "FULL_HYBRID"
+  ],
+  "best_student": "R32_HYBRID",
+  "best_student_score": 22.63,
+  "best_hybrid": "R32_HYBRID",
+  "best_hybrid_score": 22.63,
+  "paired_comparisons": {
+    "r32": {
+      "hard": 21.57,
+      "hybrid": 22.63,
+      "kd_gain": 1.0599999999999987,
+      "kd_gain_change_vs_r32": 0.0
+    },
+    "r64": {
+      "hard": 19.75,
+      "hybrid": 22.2,
+      "kd_gain": 2.4499999999999993,
+      "hard_change_vs_r32": -1.8200000000000003,
+      "kd_gain_change_vs_r32": 1.3900000000000006
+    },
+    "full": {
+      "hard": 17.06,
+      "hybrid": 21.89,
+      "kd_gain": 4.830000000000002,
+      "hard_change_vs_r32": -4.510000000000002,
+      "kd_gain_change_vs_r32": 3.770000000000003
+    }
+  },
+  "report": "/home/dev/assumeengage/runs/distillation-capacity-20261104/report/REPORT.md"
+}

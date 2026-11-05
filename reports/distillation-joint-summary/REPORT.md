@@ -66,7 +66,7 @@
 | HARD 后 backbone，native LM | 10.72 | 低于其 classifier 18.46 |
 | LS 后 backbone，native LM | 12.84 | 低于其 classifier 19.79 |
 
-尚未区分训练 target 拟合不足、泛化／数据覆盖、训练长度和容量限制。Student native 诊断同时改变 protocol/readout，且未训练 native 协议，不能据此宣布分类头完全无关。
+尚未区分训练 target 拟合不足、泛化／数据覆盖、训练长度和容量限制。**Teacher pair 诊断保留了完整评测输入，而训练标注管线有 4,096-token head-tail cap；因此 pair 高分不能直接证明训练标签缓存及长输入处理没有问题。** Student native 诊断同时改变 protocol/readout，且未训练 native 协议，不能据此宣布分类头完全无关。
 
 ## H800：已有结果及其意义
 

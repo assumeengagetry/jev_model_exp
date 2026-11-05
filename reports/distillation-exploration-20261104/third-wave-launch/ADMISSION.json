@@ -1,0 +1,9 @@
+{
+  "purpose": "user-authorized rapid KD followups",
+  "pairs_per_trial": 1000000,
+  "new_teacher_pairs": 0,
+  "source_run": "runs/distillation-fresh-qwen-1m-20261103",
+  "extra_tests": false,
+  "extra_file_hash_checks": false,
+  "lr_trials_are_absolute_quality_search_not_new_paired_kd_gain": true
+}

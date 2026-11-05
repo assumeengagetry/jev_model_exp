@@ -1,0 +1,221 @@
+{
+  "observed_beijing": "2026-11-05T12:09:02.643394+08:00",
+  "scope": "actual selected million; metadata and offset arrays only; no GPU/model/tests/hashes",
+  "selected_pairs": 1000000,
+  "policy": "source-specific semantic whitelist; decoded nonempty original group; (domain,source,group,state); all group targets strict 0/1; one uniform positive/negative with both raw input lengths <=4096; selection independent of Teacher",
+  "main_sources": [
+    "native/arc",
+    "native/banking77",
+    "native/clinc150",
+    "native/mmlu",
+    "native/winogrande",
+    "overnight/esci",
+    "overnight/massive",
+    "overnight/openbookqa",
+    "overnight/sciq"
+  ],
+  "preference_sources": [
+    "overnight/hh_rlhf"
+  ],
+  "conditional_and_synthetic_not_in_main_relations": [
+    "generated/chess_move_legality",
+    "generated/numeric_constraints",
+    "generated/poetry_structure",
+    "generated/symbolic_music",
+    "generated/workflow_policy",
+    "native/when2call"
+  ],
+  "by_source": {
+    "overnight/hh_rlhf": {
+      "selected_pairs": 32367,
+      "observed_groups": 30768,
+      "no_retained_positive_or_negative": 29169,
+      "binary_positive_negative_groups": 1599,
+      "one_uniform_untruncated_relation": 1599,
+      "finite_teacher_relations": 1599,
+      "teacher_direction_agrees": 901,
+      "teacher_direction_disagrees": 614,
+      "teacher_direction_ties": 84
+    },
+    "overnight/openbookqa": {
+      "selected_pairs": 1621,
+      "observed_groups": 1408,
+      "no_retained_positive_or_negative": 1291,
+      "binary_positive_negative_groups": 117,
+      "one_uniform_untruncated_relation": 117,
+      "finite_teacher_relations": 117,
+      "teacher_direction_agrees": 116,
+      "teacher_direction_disagrees": 1
+    },
+    "overnight/sciq": {
+      "selected_pairs": 3881,
+      "observed_groups": 3430,
+      "no_retained_positive_or_negative": 3220,
+      "binary_positive_negative_groups": 210,
+      "one_uniform_untruncated_relation": 210,
+      "finite_teacher_relations": 210,
+      "teacher_direction_agrees": 209,
+      "teacher_direction_disagrees": 1
+    },
+    "overnight/esci": {
+      "selected_pairs": 37988,
+      "observed_groups": 36738,
+      "no_retained_positive_or_negative": 36098,
+      "binary_positive_negative_groups": 628,
+      "one_uniform_untruncated_relation": 628,
+      "finite_teacher_relations": 628,
+      "teacher_direction_agrees": 485,
+      "teacher_direction_disagrees": 142,
+      "soft_groups_excluded": 12,
+      "teacher_direction_ties": 1
+    },
+    "overnight/massive": {
+      "selected_pairs": 15646,
+      "observed_groups": 8566,
+      "no_retained_positive_or_negative": 8373,
+      "binary_positive_negative_groups": 193,
+      "one_uniform_untruncated_relation": 193,
+      "finite_teacher_relations": 193,
+      "teacher_direction_agrees": 192,
+      "teacher_direction_disagrees": 1
+    },
+    "native/arc": {
+      "selected_pairs": 1158,
+      "observed_groups": 1011,
+      "no_retained_positive_or_negative": 942,
+      "binary_positive_negative_groups": 69,
+      "one_uniform_untruncated_relation": 69,
+      "finite_teacher_relations": 69,
+      "teacher_direction_agrees": 69
+    },
+    "native/mmlu": {
+      "selected_pairs": 29150,
+      "observed_groups": 25859,
+      "no_retained_positive_or_negative": 24222,
+      "binary_positive_negative_groups": 1635,
+      "one_uniform_untruncated_relation": 1635,
+      "finite_teacher_relations": 1635,
+      "teacher_direction_agrees": 1582,
+      "teacher_direction_disagrees": 47,
+      "teacher_direction_ties": 6,
+      "soft_groups_excluded": 2
+    },
+    "native/winogrande": {
+      "selected_pairs": 6668,
+      "observed_groups": 6393,
+      "no_retained_positive_or_negative": 6117,
+      "binary_positive_negative_groups": 275,
+      "one_uniform_untruncated_relation": 275,
+      "finite_teacher_relations": 275,
+      "teacher_direction_agrees": 263,
+      "teacher_direction_disagrees": 11,
+      "teacher_direction_ties": 1,
+      "soft_groups_excluded": 1
+    },
+    "native/banking77": {
+      "selected_pairs": 17620,
+      "observed_groups": 8272,
+      "no_retained_positive_or_negative": 8082,
+      "binary_positive_negative_groups": 190,
+      "one_uniform_untruncated_relation": 190,
+      "finite_teacher_relations": 190,
+      "teacher_direction_agrees": 188,
+      "teacher_direction_disagrees": 2
+    },
+    "native/clinc150": {
+      "selected_pairs": 52089,
+      "observed_groups": 14741,
+      "no_retained_positive_or_negative": 14411,
+      "binary_positive_negative_groups": 330,
+      "one_uniform_untruncated_relation": 330,
+      "finite_teacher_relations": 330,
+      "teacher_direction_agrees": 330
+    },
+    "native/when2call": {
+      "selected_pairs": 16395,
+      "observed_groups": 13730,
+      "no_retained_positive_or_negative": 2324,
+      "nonpreference_when2call_groups_excluded": 11178,
+      "binary_positive_negative_groups": 228,
+      "one_uniform_untruncated_relation": 228,
+      "finite_teacher_relations": 228,
+      "teacher_direction_agrees": 220,
+      "teacher_direction_disagrees": 5,
+      "teacher_direction_ties": 3
+    },
+    "generated/chess_move_legality": {
+      "selected_pairs": 9831,
+      "observed_groups": 8652,
+      "no_retained_positive_or_negative": 7903,
+      "binary_positive_negative_groups": 749,
+      "one_uniform_untruncated_relation": 749,
+      "finite_teacher_relations": 749,
+      "teacher_direction_agrees": 722,
+      "teacher_direction_disagrees": 23,
+      "multiple_positive_groups": 31,
+      "teacher_direction_ties": 4
+    },
+    "generated/numeric_constraints": {
+      "selected_pairs": 16229,
+      "observed_groups": 14371,
+      "no_retained_positive_or_negative": 13454,
+      "binary_positive_negative_groups": 917,
+      "one_uniform_untruncated_relation": 917,
+      "finite_teacher_relations": 917,
+      "teacher_direction_agrees": 878,
+      "teacher_direction_disagrees": 30,
+      "teacher_direction_ties": 9
+    },
+    "generated/poetry_structure": {
+      "selected_pairs": 15098,
+      "observed_groups": 13658,
+      "binary_positive_negative_groups": 956,
+      "one_uniform_untruncated_relation": 956,
+      "finite_teacher_relations": 956,
+      "teacher_direction_agrees": 953,
+      "no_retained_positive_or_negative": 12702,
+      "teacher_direction_disagrees": 3
+    },
+    "generated/symbolic_music": {
+      "selected_pairs": 20169,
+      "observed_groups": 17342,
+      "no_retained_positive_or_negative": 15983,
+      "binary_positive_negative_groups": 1359,
+      "one_uniform_untruncated_relation": 1359,
+      "finite_teacher_relations": 1359,
+      "teacher_direction_agrees": 769,
+      "teacher_direction_disagrees": 543,
+      "teacher_direction_ties": 47
+    },
+    "generated/workflow_policy": {
+      "selected_pairs": 63014,
+      "observed_groups": 49530,
+      "no_retained_positive_or_negative": 43209,
+      "binary_positive_negative_groups": 6321,
+      "one_uniform_untruncated_relation": 6321,
+      "finite_teacher_relations": 6321,
+      "teacher_direction_agrees": 6219,
+      "teacher_direction_disagrees": 97,
+      "teacher_direction_ties": 5
+    }
+  },
+  "main_relations": 5246,
+  "main_relation_pairs": 10492,
+  "main_pair_coverage_percent": 1.0492,
+  "main_by_domain": {
+    "arts": {
+      "relations": 1599,
+      "relation_pairs": 3198
+    },
+    "knowledge": {
+      "relations": 2306,
+      "relation_pairs": 4612
+    },
+    "retrieval": {
+      "relations": 1341,
+      "relation_pairs": 2682
+    }
+  },
+  "teacher_direction_is_source_agreement_not_true_accuracy": true,
+  "source_review_uses_local_snapshot_and_does_not_prove_remote_conversion_equivalence": true
+}
