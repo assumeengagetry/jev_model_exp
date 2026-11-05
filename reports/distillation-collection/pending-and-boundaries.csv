@@ -1,0 +1,6 @@
+﻿line,condition,status,change,boundary,source
+H800,E05_TOOLS_CAL_ONLY,第三波已启动，尚无正式分数,r32 HYBRID，仅Tools截距校准,等待正式37项；不使用loss作为质量,reports/distillation-exploration-20261104/REPORT.md
+H800,E06_TOOLS_CAL_GUARD,第三波已启动，尚无正式分数,Tools校准 + 领域保护,相对领域保护22.90评判,reports/distillation-exploration-20261104/REPORT.md
+H800,E07_R64_LR5E5,第三波已启动，尚无正式分数,r64 HYBRID，LoRA/head LR降至5e-5,无匹配新LR HARD，不能用旧HARD宣称新KD净收益,reports/distillation-exploration-20261104/REPORT.md
+H800,E08_FULL_LR2E5,第三波已启动，尚无正式分数,全参HYBRID，backbone LR2e-5/head LR1e-4,无匹配新LR HARD，不能用旧HARD宣称新KD净收益,reports/distillation-exploration-20261104/REPORT.md
+历史Language,HARD/SOFT/HYBRID早期尝试,原证据报告当时未找到完整学生成绩,保留历史观察，不把后来A800/H800结果倒填旧实验,不能据此断言当前两线仍未完成,reports/teacher-distillation-evidence-20261030/student-comparison-status.csv

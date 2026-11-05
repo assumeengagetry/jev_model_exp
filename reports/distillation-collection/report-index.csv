@@ -1,0 +1,75 @@
+﻿title,role,path,family,note
+2026-11-03 实验报告与图表入口,汇总/入口,reports/LATEST_EXPERIMENT_REPORTS_20261103.md,LATEST_EXPERIMENT_REPORTS_20261103.md,原件保持原位置；文内旧进度按原观察日期理解。
+2026-11-04 蒸馏改进实验入口,汇总/入口,reports/LATEST_EXPERIMENT_REPORTS_20261104.md,LATEST_EXPERIMENT_REPORTS_20261104.md,原件保持原位置；文内旧进度按原观察日期理解。
+2026-11-05 蒸馏研究：最新结果,汇总/入口,reports/LATEST_EXPERIMENT_REPORTS_20261105.md,LATEST_EXPERIMENT_REPORTS_20261105.md,原件保持原位置；文内旧进度按原观察日期理解。
+Jev 实验报告与大表总入口,相关研究/记录,reports/README.md,README.md,原件保持原位置；文内旧进度按原观察日期理解。
+8×A800 新机器：Qwen3-0.6B 蒸馏实验完整规划,相关研究/记录,reports/a800-8gpu-distillation-20261031/REPORT.md,a800-8gpu-distillation-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+蒸馏改进第一轮：已完成,相关研究/记录,reports/a800-kd-improve-round1-20261104/README.md,a800-kd-improve-round1-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+蒸馏为什么可能变差：研究、实际线索与第一轮在跑实验,方案/文献研究,reports/a800-kd-improve-round1-20261104/RESEARCH_AND_PLAN.md,a800-kd-improve-round1-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+蒸馏改进：第一轮假设验证,结果报告,reports/a800-kd-improve-round1-20261104/report/REPORT.md,a800-kd-improve-round1-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+蒸馏改进第二轮：校准和样本级Teacher信息,相关研究/记录,reports/a800-kd-improve-round2-20261104/README.md,a800-kd-improve-round2-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+蒸馏改进第二轮：校准与样本级Teacher信息,结果报告,reports/a800-kd-improve-round2-20261104/report/REPORT.md,a800-kd-improve-round2-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+A800 蒸馏快速实验：本地报告入口,相关研究/记录,reports/a800-kd-pilot-100k-20261102/README.md,a800-kd-pilot-100k-20261102,原件保持原位置；文内旧进度按原观察日期理解。
+蒸馏 idea 快速对照：100k pilot,结果报告,reports/a800-kd-pilot-100k-20261102/REPORT.md,a800-kd-pilot-100k-20261102,原件保持原位置；文内旧进度按原观察日期理解。
+从原始 Qwen 起点重新做 KD 对照,相关研究/记录,reports/a800-kd-raw-qwen-1m-20261103/README.md,a800-kd-raw-qwen-1m-20261103,原件保持原位置；文内旧进度按原观察日期理解。
+"原始 Qwen 起点蒸馏对照：1,000,000 pairs",结果报告,reports/a800-kd-raw-qwen-1m-20261103/report/REPORT.md,a800-kd-raw-qwen-1m-20261103,原件保持原位置；文内旧进度按原观察日期理解。
+原始Qwen蒸馏：已完成的训练过程记录,相关研究/记录,reports/a800-kd-raw-qwen-1m-20261103/report/TRAINING_PROGRESS_20261103.md,a800-kd-raw-qwen-1m-20261103,原件保持原位置；文内旧进度按原观察日期理解。
+"蒸馏规模阶段：1,000,000 pairs",结果报告,reports/a800-kd-scale-series-20261102/1m/REPORT.md,a800-kd-scale-series-20261102,原件保持原位置；文内旧进度按原观察日期理解。
+KD scale series:1M →2M →3M,相关研究/记录,reports/a800-kd-scale-series-20261102/README.md,a800-kd-scale-series-20261102,原件保持原位置；文内旧进度按原观察日期理解。
+Qwen native-LM 读出诊断：已完成,机制诊断/数据审计,reports/a800-qwen-native-readout-20261105/README.md,a800-qwen-native-readout-20261105,原件保持原位置；文内旧进度按原观察日期理解。
+原始Qwen LM-head/native协议与现有classifier读出诊断,机制诊断/数据审计,reports/a800-qwen-native-readout-20261105/report/REPORT.md,a800-qwen-native-readout-20261105,原件保持原位置；文内旧进度按原观察日期理解。
+SAMerging 四专家合并实验报告,相关研究/记录,reports/a800-samerging-four-experts-20261103/report/SAMERGING_DETAILED_REPORT.md,a800-samerging-four-experts-20261103,原件保持原位置；文内旧进度按原观察日期理解。
+Teacher原生协议直接评测：已完成,机制诊断/数据审计,reports/a800-teacher-native-diagnostic-20261104/README.md,a800-teacher-native-diagnostic-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+Teacher原生协议直接评测,机制诊断/数据审计,reports/a800-teacher-native-diagnostic-20261104/report/REPORT.md,a800-teacher-native-diagnostic-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+Teacher 原生协议与 pair 改写：已完成,机制诊断/数据审计,reports/a800-teacher-pair-diagnostic-20261104/README.md,a800-teacher-pair-diagnostic-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+同一Teacher：原生任务协议与candidate-pair改写对照,机制诊断/数据审计,reports/a800-teacher-pair-diagnostic-20261104/report/REPORT.md,a800-teacher-pair-diagnostic-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+执行记录：完整四科 Teacher 蒸馏,环境/工程实现,reports/cluster-followup-20261031/distillation-implementation-20261101/EXECUTION.md,cluster-followup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+2026-11-01 第二次评测阻塞接手核对,相关研究/记录,reports/cluster-followup-20261031/evaluation-recovery-20261101/DISK-WRITE-RECOVERY-CHECK.md,cluster-followup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+2026-11-01 公开评分汇总恢复,相关研究/记录,reports/cluster-followup-20261031/evaluation-recovery-20261101/RECOVERY.md,cluster-followup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+Qwen3-0.6B：融合实验结束后的 Teacher 蒸馏规划,历史/备份副本，不重复计实验,reports/cluster-followup-20261031/four-specialists-change/after/next-distillation-REPORT.md,cluster-followup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+Qwen3-0.6B：四专科训练、四科混合与模型融合,历史/备份副本，不重复计实验,reports/cluster-followup-20261031/four-specialists-change/after/training-plan-five-specialists-2026-10-30.md,cluster-followup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+Qwen3-0.6B：融合实验结束后的 Teacher 蒸馏规划,历史/备份副本，不重复计实验,reports/cluster-followup-20261031/four-specialists-change/before/next-distillation-REPORT.md,cluster-followup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+取消 Language 专家：运行调整计划与记录,相关研究/记录,reports/cluster-followup-20261031/four-specialists-change.md,cluster-followup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+集群环境重建、实验状态还原与后续规划,相关研究/记录,reports/cluster-recovery-and-experiment-plan-20261030.md,cluster-recovery-and-experiment-plan-20261030.md,原件保持原位置；文内旧进度按原观察日期理解。
+集群工作量补充盘点,方案/文献研究,reports/cluster-work-inventory-20261102/PLAN.md,cluster-work-inventory-20261102,原件保持原位置；文内旧进度按原观察日期理解。
+Jev 项目工作量明细台账,相关研究/记录,reports/cluster-work-inventory-20261102/WORK-LEDGER.md,cluster-work-inventory-20261102,原件保持原位置；文内旧进度按原观察日期理解。
+蒸馏快速探索：两波完成，第三波训练中，当前最好22.90,结果报告,reports/distillation-exploration-20261104/REPORT.md,distillation-exploration-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+蒸馏快速探索：首波四组,结果报告,reports/distillation-exploration-20261104/first-wave-results/report/REPORT.md,distillation-exploration-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+排序蒸馏可行性：可信关系比表面组数少,机制诊断/数据审计,reports/distillation-exploration-20261104/group-ranking-audit/REPORT.md,distillation-exploration-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+第二波：Student容量与蒸馏收益,结果报告,reports/distillation-exploration-20261104/second-wave-results/report/REPORT.md,distillation-exploration-20261104,原件保持原位置；文内旧进度按原观察日期理解。
+A800 × H800 蒸馏研究：阶段结论总汇,汇总/入口,reports/distillation-joint-summary/REPORT.md,distillation-joint-summary,原件保持原位置；文内旧进度按原观察日期理解。
+实验总规划与当前位置,相关研究/记录,reports/experiment-roadmap-status-20261029.md,experiment-roadmap-status-20261029.md,原件保持原位置；文内旧进度按原观察日期理解。
+Qwen3-0.6B：四专科训练、四科混合与模型融合,相关研究/记录,reports/five-area-training-plan.md,five-area-training-plan.md,原件保持原位置；文内旧进度按原观察日期理解。
+原始Qwen3-0.6B：首个100万pair蒸馏节点,方案/文献研究,reports/fresh-qwen-1m-distillation-20261103/PLAN.md,fresh-qwen-1m-distillation-20261103,原件保持原位置；文内旧进度按原观察日期理解。
+执行记录：原始Qwen首个100万pair节点,相关研究/记录,reports/fresh-qwen-1m-distillation-20261103/PROGRESS.md,fresh-qwen-1m-distillation-20261103,原件保持原位置；文内旧进度按原观察日期理解。
+原始Qwen3-0.6B：100万pair蒸馏节点,结果报告,reports/fresh-qwen-1m-distillation-20261103/results-20261104/report/REPORT.md,fresh-qwen-1m-distillation-20261103,原件保持原位置；文内旧进度按原观察日期理解。
+Jev 决策模型实验工作记录,相关研究/记录,reports/jev-work-log-20261102.md,jev-work-log-20261102.md,原件保持原位置；文内旧进度按原观察日期理解。
+Qwen3-0.6B Language Understanding 已完成实验报告,相关研究/记录,reports/language-understanding-study-20261029.md,language-understanding-study-20261029.md,原件保持原位置；文内旧进度按原观察日期理解。
+榜单决策模型蒸馏方法调研,方案/文献研究,reports/leaderboard-distillation-20261102/PLAN.md,leaderboard-distillation-20261102,原件保持原位置；文内旧进度按原观察日期理解。
+榜单决策模型如何做蒸馏,方案/文献研究,reports/leaderboard-distillation-20261102/REPORT.md,leaderboard-distillation-20261102,原件保持原位置；文内旧进度按原观察日期理解。
+Decision Index 榜单模型蒸馏方法调研报告,方案/文献研究,reports/leaderboard-distillation-20261103.md,leaderboard-distillation-20261103.md,原件保持原位置；文内旧进度按原观察日期理解。
+新机器从 ModelScope 国内站恢复,历史/备份副本，不重复计实验,reports/modelscope-backup-20261031/NEW-MACHINE-RESTORE.md,modelscope-backup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+ModelScope 大文件与 SCP 小文件备份,历史/备份副本，不重复计实验,reports/modelscope-backup-20261031/PLAN.md,modelscope-backup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+备份执行状态,历史/备份副本，不重复计实验,reports/modelscope-backup-20261031/STATUS.md,modelscope-backup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+Qwen3-0.6B：融合实验结束后的 Teacher 蒸馏规划,相关研究/记录,reports/next-experiments-plan-20261030/REPORT.md,next-experiments-plan-20261030,原件保持原位置；文内旧进度按原观察日期理解。
+小资产 SCP / ModelScope 大资产交接,历史/备份副本，不重复计实验,reports/scp-backup-20261031/HANDOFF.md,scp-backup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+JEV System-1 Union Training Set (PRIVATE staging),历史/备份副本，不重复计实验,reports/scp-backup-20261031/files/config/SargeDev__jev-system1-union-train_card.md,scp-backup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+Qwen3-0.6B：融合实验结束后的 Teacher 蒸馏规划,历史/备份副本，不重复计实验,reports/scp-backup-20261031/files/config/next-distillation-REPORT.md,scp-backup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+tasksource-jev-typed-decisions,历史/备份副本，不重复计实验,reports/scp-backup-20261031/files/config/tasksource-modelscope-card.md,scp-backup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+tasksource-jev-typed-decisions,历史/备份副本，不重复计实验,reports/scp-backup-20261031/files/datasets/tasksource-jev-typed-decisions-ms/README.md,scp-backup-20261031,原件保持原位置；文内旧进度按原观察日期理解。
+四专家分层 SLERP 补测执行记录,方案/文献研究,reports/slerp-supplement-20261102/PLAN.md,slerp-supplement-20261102,原件保持原位置；文内旧进度按原观察日期理解。
+Student 显式 FlashAttention-3,环境/工程实现,reports/student-flash-attention3-20261103/CHANGE.md,student-flash-attention3-20261103,原件保持原位置；文内旧进度按原观察日期理解。
+榜首 Teacher 蒸馏：能否超过人工标签训练？,相关研究/记录,reports/teacher-distillation-evidence-20261030/REPORT.md,teacher-distillation-evidence-20261030,原件保持原位置；文内旧进度按原观察日期理解。
+calibrated-typed-decisions (v2.1),相关研究/记录,research/2026-10-27/raw/calibrated-readme.md,2026-10-27,原件保持原位置；文内旧进度按原观察日期理解。
+Open-Jev: typed decision datasets,相关研究/记录,research/2026-10-27/raw/openjev-readme.md,2026-10-27,原件保持原位置；文内旧进度按原观察日期理解。
+Typed Decisions,相关研究/记录,research/2026-10-27/raw/typed-decisions-readme.md,2026-10-27,原件保持原位置；文内旧进度按原观察日期理解。
+每数据家族专用模型→融合：首轮阶段报告,相关研究/记录,research/lu-specialist-fusion-20261029T152144Z/FUSION-REPORT.md,lu-specialist-fusion-20261029T152144Z,原件保持原位置；文内旧进度按原观察日期理解。
+五族专用模型→融合：首轮结果复核,相关研究/记录,research/lu-specialist-fusion-20261029T152144Z/FUSION-REVIEW.md,lu-specialist-fusion-20261029T152144Z,原件保持原位置；文内旧进度按原观察日期理解。
+Nimble、Together、Tasksource 与 typed-decisions 数据核查,相关研究/记录,research/nimble-together.md,nimble-together.md,原件保持原位置；文内旧进度按原观察日期理解。
+Mapika / Bobcat / Jebadiah 训练数据核查,相关研究/记录,research/notes-mapika-bobcat-jebadiah.md,notes-mapika-bobcat-jebadiah.md,原件保持原位置；文内旧进度按原观察日期理解。
+顶部决策模型训练数据核查（2026-10-27）,相关研究/记录,research/top-models/top-model-training-data-2026-10-27.md,top-models,原件保持原位置；文内旧进度按原观察日期理解。
+决策模型训练数据：核查与可获取清单,根目录研究/路线资料,data_sources.md,根目录,原件保持原位置；文内旧进度按原观察日期理解。
+TL;DR,根目录研究/路线资料,jev.md,根目录,原件保持原位置；文内旧进度按原观察日期理解。
+Language Understanding 后续实验路线,根目录研究/路线资料,language_roadmap.md,根目录,原件保持原位置；文内旧进度按原观察日期理解。
+给服务器 OpenCode 的后续清单：保留正在运行的 LoRA 基线,根目录研究/路线资料,opencode_language_checklist.md,根目录,原件保持原位置；文内旧进度按原观察日期理解。
+1.根据现状来写 ： 目标 硬件 还有 ddl,根目录研究/路线资料,schedule.md,根目录,原件保持原位置；文内旧进度按原观察日期理解。
