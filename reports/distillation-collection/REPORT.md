@@ -5,20 +5,20 @@
 ## 一页结论
 
 - **A800原始起点：普通无Teacher LS0.1为19.79，仍高于已测Teacher方案。** HYBRID19.10、T2 19.17、校准/自适应条件均未超过它，不能只展示HYBRID相对HARD的提升。
-- **H800 r32完整公共评测：领域保护22.90 > HYBRID22.63 > HARD21.57。** 领域保护不是所有方向都提高；此线尚缺匹配的LS对照，不能把全部提升解释为Teacher独有信息。
-- **增大容量未提高当前HYBRID绝对成绩。** r32为22.63，r64为22.20，全参为21.89；净增益变大同时伴随HARD变弱。
+- **H800新最好：Tools校准＋领域保护23.16。** 第三／第四波新增8个完成条件；比旧领域保护22.90高0.26，比HYBRID22.63高0.53，比HARD21.57高1.59。仍有领域交换，且尚缺匹配LS对照。
+- **r64低LR匹配控制已补齐：HARD21.41、HYBRID22.91，KD净增益+1.50。** 旧LR下+2.45部分来自HARD偏弱；低LR与校准领域保护组合反而只有21.85，未超过r32最佳23.16。
 - **纯SOFT两条原始起点线均弱于HARD。** A800低0.92，H800低0.98；warm-start两档亦无纯SOFT优势。
 - **Teacher诊断不是训练管线无误的证明。** native68.37、generic pair63.95使用完整评测输入；训练label管线有4096-token head-tail cap，缓存/长输入处理问题仍未排除。
-- 所有结论是当前单seed探索，不是独立held-out确认、官方私测Full或稳定最优配方；第三波没有正式分数，不填0。
+- 所有结论是当前单seed、自适应公共评测探索，不是独立held-out确认、官方私测Full或稳定最优配方；第五波没有正式分数，不填0。
 
 ## 总表与大图
 
-- **[全量对照大表PNG](figures/distillation-results-table.png)**：37个去重完成条件，逐组列五维、Index和匹配HARD差值。
+- **[全量对照大表PNG](figures/distillation-results-table.png)**：45个去重完成条件，逐组列五维、Index和匹配HARD差值。
 - **[研究总览PNG](figures/distillation-overview.png)**：四个面板分开看预算、线路与容量。
 - [可筛选CSV大表](results.csv)：初始化/预算/协议/对照/来源均保留，复制到多个诊断表的同一HARD等基线已去重。
-- [未完成与边界表](pending-and-boundaries.csv)：第三波启动材料和旧历史缺失结果单列，不造分数。
-- [全部相关报告索引](report-index.csv)：74份相关文档，含方法、实现、历史材料与备份副本角色标记。
-- **[全仓79张PNG图库](../png-export-20261105/index.html)** · [PNG路径清单](../png-export-20261105/png-index.csv)：不只蒸馏图，原有全仓图表也已导出PNG。
+- [未完成与边界表](pending-and-boundaries.csv)：第五波训练中条件和旧历史缺失结果单列，不造分数。
+- [全部相关报告索引](report-index.csv)：76份相关文档，含新增第三／第四波结果、方法、实现、历史材料与备份副本角色标记。
+- **[全仓81张PNG图库](../png-export-20261105/index.html)** · [PNG路径清单](../png-export-20261105/png-index.csv)：不只蒸馏图，原有全仓图表也已导出PNG。
 
 ![蒸馏分组总览](figures/distillation-overview.png)
 
@@ -31,7 +31,7 @@
 | H800原始起点/领域/容量 | 完整公共37项，110,087请求 | r64与全参各用同容量HARD；不同LR新组需补匹配HARD |
 | Teacher/native读出诊断 | 同A800子集，但输入/读出协议不同 | 与Student训练条件分组；不能用完整输入pair高分排除训练cap问题 |
 
-A800的19.79与H800的22.90不能解释成GPU型号导致效果变化。分数列是Skill/Index，不统一叫accuracy；BASELINE随机分类头分数也不代表原始Qwen的zero-shot语言能力。
+A800的19.79与H800的23.16不能解释成GPU型号导致效果变化。分数列是Skill/Index，不统一叫accuracy；BASELINE随机分类头分数也不代表原始Qwen的zero-shot语言能力。
 
 ## A800 · 已训练起点10万
 
@@ -105,9 +105,26 @@ A800的19.79与H800的22.90不能解释成GPU型号导致效果变化。分数�
 | Teacher native | 68.37 | — | — |
 | Teacher generic pair | 63.95 | — | — |
 
-## 第三波与诊断边界
+## H800 · 第三／第四波新增8个完成条件
 
-H800第三波E05/E06/E07/E08只有启动/训练记录；无正式评分。E07/E08的新学习率还缺匹配HARD，不可用旧HARD声称新KD净增益。训练缓存的候选组机械计数也不等于可用排序监督；完整source/group语义审计见下面原报告。
+| 条件 | Knowledge | Language | Retrieval | Tools | Arts | Index | vs匹配HARD |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| E05 仅Tools校准 | 8.88 | 14.56 | 38.62 | 42.11 | 13.51 | 22.84 | +1.27 |
+| **E06 Tools校准＋领域保护** | **8.43** | **14.87** | **38.75** | **44.20** | **12.98** | **23.16** | **+1.59** |
+| E07 r64 HYBRID，LR5e-5 | 9.87 | 16.34 | 35.28 | 43.16 | 11.85 | 22.91 | +1.50 |
+| E08 全参HYBRID，backbone LR2e-5 | 6.49 | 14.26 | 35.67 | 27.22 | 14.58 | 18.94 | 无匹配新LR HARD |
+| E09 Tools校准强度0.5倍 | 8.66 | 14.68 | 36.82 | 34.49 | 15.96 | 21.31 | −0.26 |
+| E10 Tools校准强度1.5倍 | 7.93 | 15.54 | 38.24 | 40.49 | 14.63 | 22.59 | +1.02 |
+| E11 r64低LR＋校准领域保护 | 8.92 | 14.83 | 35.46 | 39.94 | 13.15 | 21.85 | +0.44 |
+| E12 r64低LR HARD | 7.94 | 13.47 | 34.62 | 42.29 | 12.15 | 21.41 | 0.00 |
+
+每组均完成100万pair、7813步及37项110087请求，coverage100%。E07/E11以E12为匹配HARD；E05/E06/E09/E10以r32 HARD21.57为对照。E08未补齐新LR HARD，不填净增益。第四波没有超过23.16；不同rank和LR的改动不能当成纯容量因果效应。
+
+[第三波完成报告与图表](../distillation-exploration-20261104/third-wave-results/report/REPORT.md) · [第四波完成报告与图表](../distillation-exploration-20261104/fourth-wave-results/report/REPORT.md)
+
+## 第五波与诊断边界
+
+第五波E13/E14/E15/E16为静态匹配权重、温度2、温度退火与Teacher权重渐入，已有训练记录，尚无正式分数。训练缓存的候选组机械计数也不等于可用排序监督；完整source/group语义审计见下面原报告。
 
 Teacher pair诊断保留完整评测输入，训练label有4096-token head-tail cap，二者不是同一条输入处理链路。Student native诊断还改变了协议/读出且没有专门训练native协议，因此不能据此宣布分类头无关或已找到根因。
 
@@ -169,7 +186,7 @@ Teacher pair诊断保留完整评测输入，训练label有4096-token head-tail 
 - [蒸馏 idea 快速对照：100k pilot](../a800-kd-pilot-100k-20261102/REPORT.md)
 - [原始 Qwen 起点蒸馏对照：1,000,000 pairs](../a800-kd-raw-qwen-1m-20261103/report/REPORT.md)
 - [蒸馏规模阶段：1,000,000 pairs](../a800-kd-scale-series-20261102/1m/REPORT.md)
-- [蒸馏快速探索：两波完成，第三波训练中，当前最好22.90](../distillation-exploration-20261104/REPORT.md)
+- [蒸馏持续探索：四波完成，当前最好23.16，第五波待评分](../distillation-exploration-20261104/REPORT.md)
 - [蒸馏快速探索：首波四组](../distillation-exploration-20261104/first-wave-results/report/REPORT.md)
 - [第二波：Student容量与蒸馏收益](../distillation-exploration-20261104/second-wave-results/report/REPORT.md)
 - [原始Qwen3-0.6B：100万pair蒸馏节点](../fresh-qwen-1m-distillation-20261103/results-20261104/report/REPORT.md)

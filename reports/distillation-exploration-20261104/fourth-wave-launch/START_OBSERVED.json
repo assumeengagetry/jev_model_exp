@@ -1,0 +1,134 @@
+{
+  "observed_beijing": "2026-11-05T20:08:58.165432+08:00",
+  "phase": "training_refinement_wave",
+  "error": null,
+  "available_disk_gib": 14.81,
+  "trials": [
+    {
+      "name": "E09_TOOLS_CAL_HALF",
+      "arm": "KD_HYBRID",
+      "gpu": 0,
+      "student_parent": "models/Qwen3-0.6B-common-pair-init-r32",
+      "learning_rate": 0.0001,
+      "ready": {
+        "pairs": 1000000,
+        "optimizer_steps": 7813,
+        "resume_step": 0,
+        "optimizer_groups": null
+      },
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1660643,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 5432,
+        "fa3_backward_calls": 5432,
+        "sdpa_fallback": false,
+        "attention": "flash_attention_3",
+        "learning_rates": null
+      },
+      "oom_events_in_observed_log": 0
+    },
+    {
+      "name": "E10_TOOLS_CAL_STRONG",
+      "arm": "KD_HYBRID",
+      "gpu": 1,
+      "student_parent": "models/Qwen3-0.6B-common-pair-init-r32",
+      "learning_rate": 0.0001,
+      "ready": {
+        "pairs": 1000000,
+        "optimizer_steps": 7813,
+        "resume_step": 0,
+        "optimizer_groups": null
+      },
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1660643,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 5432,
+        "fa3_backward_calls": 5432,
+        "sdpa_fallback": false,
+        "attention": "flash_attention_3",
+        "learning_rates": null
+      },
+      "oom_events_in_observed_log": 0
+    },
+    {
+      "name": "E11_R64_CAL_GUARD",
+      "arm": "R64_HYBRID",
+      "gpu": 2,
+      "student_parent": "runs/distillation-capacity-20261104/initialization/Qwen3-0.6B-common-pair-init-r64",
+      "learning_rate": 5e-05,
+      "ready": {
+        "pairs": 1000000,
+        "optimizer_steps": 7813,
+        "resume_step": 0,
+        "optimizer_groups": [
+          {
+            "name": "lora_and_head",
+            "parameters": 40372224,
+            "base_learning_rate": 5e-05
+          }
+        ]
+      },
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1660643,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 5432,
+        "fa3_backward_calls": 5432,
+        "sdpa_fallback": false,
+        "attention": "flash_attention_3",
+        "learning_rates": {
+          "lora_and_head": 8.547008547008548e-06
+        }
+      },
+      "oom_events_in_observed_log": 0
+    },
+    {
+      "name": "E12_R64_HARD_LR5E5",
+      "arm": "R64_HARD",
+      "gpu": 3,
+      "student_parent": "runs/distillation-capacity-20261104/initialization/Qwen3-0.6B-common-pair-init-r64",
+      "learning_rate": 5e-05,
+      "ready": {
+        "pairs": 1000000,
+        "optimizer_steps": 7813,
+        "resume_step": 0,
+        "optimizer_groups": [
+          {
+            "name": "lora_and_head",
+            "parameters": 40372224,
+            "base_learning_rate": 5e-05
+          }
+        ]
+      },
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1660643,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 5432,
+        "fa3_backward_calls": 5432,
+        "sdpa_fallback": false,
+        "attention": "flash_attention_3",
+        "learning_rates": {
+          "lora_and_head": 8.547008547008548e-06
+        }
+      },
+      "oom_events_in_observed_log": 0
+    }
+  ],
+  "gpus": [
+    "0, 96 %, 44409 MiB, 95830 MiB",
+    "1, 96 %, 44409 MiB, 95830 MiB",
+    "2, 90 %, 45739 MiB, 95830 MiB",
+    "3, 69 %, 45739 MiB, 95830 MiB"
+  ]
+}

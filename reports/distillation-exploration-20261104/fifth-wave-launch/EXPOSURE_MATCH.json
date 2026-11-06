@@ -1,0 +1,30 @@
+{
+  "initial_temperature": 2.0,
+  "final_temperature": 1.0,
+  "ramp_steps": 1562,
+  "ramp_fraction": 0.2,
+  "matched_domain_multipliers": {
+    "knowledge": 0.9000728148272545,
+    "retrieval": 0.8995474998240942,
+    "tools": 0.900162478113756,
+    "arts": 0.9003707434672218
+  },
+  "ramp_definition": "min(1, global_step/(ramp_steps-1)); zero-based step",
+  "matched_order": "PairPool.order(seed42,batch128), per-domain loss-weighted selected-index means including tail",
+  "matching_loss_reduction": "w_i=1/actual_macro_pairs; tail64 has twice the per-pair reduction weight",
+  "domain_loss_weight_sums": {
+    "knowledge": 1953.1328125,
+    "retrieval": 1953.1328125,
+    "tools": 1953.375,
+    "arts": 1953.359375
+  },
+  "pairs": 1000000,
+  "optimizer_steps": 7813,
+  "base_domain_teacher_weights": {
+    "knowledge": 0.5,
+    "retrieval": 0.25,
+    "tools": 0.5,
+    "arts": 0.0
+  },
+  "matching_scope": "same per-domain cumulative Teacher coefficient; not identical gradient path"
+}

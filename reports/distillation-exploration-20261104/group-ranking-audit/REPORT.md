@@ -51,7 +51,7 @@ HH-RLHF的chosen／rejected是相对偏好，不能把rejected解释为绝对错
 
 ## 对后续实验的影响
 
-- 保持第三波4组真实训练和自动正式评分不变；先取得本波结果，再决定下一波GPU分配。
+- 第三波已完成、最好推进至23.16；第四波优先校准强度局部搜索、r64组合及匹配HARD。排序支线暂不占用GPU，不影响这些正式训练。
 - 排序支线若启动，优先检验上述K/R闭集关系，明确辅助项只有0.73%的pair覆盖，不强凑Tools或加入当前Teacher较弱的Arts偏好。
 - 必须共用atomic二行unit与sampler plan，配置组批HARD／HYBRID以及来源排序／Teacher排序控制；不能让改变batching的收益冒充Teacher收益。
 - **Teacher方向过滤不是默认步骤。** 如果以后只保留Teacher与来源同向关系，来源排序对照也必须使用完全相同的筛选集合；不能只在Teacher臂筛选后直接宣称蒸馏更有效。

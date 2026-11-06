@@ -1,0 +1,57 @@
+{
+  "trials": [
+    {
+      "name": "E09_TOOLS_CAL_HALF",
+      "arm": "KD_HYBRID",
+      "gpu": 0,
+      "run_root": "runs/distillation-refine-20261105/E09_TOOLS_CAL_HALF",
+      "config": "runs/distillation-refine-20261105/E09_TOOLS_CAL_HALF/config.json",
+      "trainer": "scripts/train-distillation-exploration.py",
+      "mode": "lora_r32",
+      "reference_score": 23.16,
+      "paired_hard_for_this_recipe": true
+    },
+    {
+      "name": "E10_TOOLS_CAL_STRONG",
+      "arm": "KD_HYBRID",
+      "gpu": 1,
+      "run_root": "runs/distillation-refine-20261105/E10_TOOLS_CAL_STRONG",
+      "config": "runs/distillation-refine-20261105/E10_TOOLS_CAL_STRONG/config.json",
+      "trainer": "scripts/train-distillation-exploration.py",
+      "mode": "lora_r32",
+      "reference_score": 23.16,
+      "paired_hard_for_this_recipe": true
+    },
+    {
+      "name": "E11_R64_CAL_GUARD",
+      "arm": "R64_HYBRID",
+      "gpu": 2,
+      "run_root": "runs/distillation-refine-20261105/E11_R64_CAL_GUARD",
+      "config": "runs/distillation-refine-20261105/E11_R64_CAL_GUARD/config.json",
+      "trainer": "scripts/train-capacity-recipe-refinement.py",
+      "mode": "lora_r64",
+      "reference_score": 22.91,
+      "paired_hard_for_this_recipe": true
+    },
+    {
+      "name": "E12_R64_HARD_LR5E5",
+      "arm": "R64_HARD",
+      "gpu": 3,
+      "run_root": "runs/distillation-refine-20261105/E12_R64_HARD_LR5E5",
+      "config": "runs/distillation-refine-20261105/E12_R64_HARD_LR5E5/config.json",
+      "trainer": "scripts/train-capacity-recipe-refinement.py",
+      "mode": "lora_r64",
+      "reference_score": null,
+      "paired_hard_for_this_recipe": true
+    }
+  ],
+  "pairs_per_trial": 1000000,
+  "new_teacher_pairs": 0,
+  "current_best": 23.16,
+  "evaluation_priority": [
+    2,
+    0,
+    1,
+    3
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "observed_beijing": "2026-11-06T04:40:27.605404+08:00",
+  "phase": "training_temperature_curriculum_wave",
+  "error": null,
+  "available_disk_gib": 12.05,
+  "trials": [
+    {
+      "name": "E13_STATIC_MATCHED",
+      "kind": "static_matched",
+      "resume_step": 0,
+      "progress": {
+        "step": 20,
+        "total_steps": 7813,
+        "pairs_seen": 2560,
+        "kd_temperature": 1.0,
+        "teacher_global_scale": null,
+        "teacher_scale_min": 0.8995475172996521,
+        "teacher_scale_max": 0.900370717048645,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 2548,
+        "fa3_backward_calls": 2548,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E14_TEMPERATURE2",
+      "kind": "fixed_t2",
+      "resume_step": 0,
+      "progress": {
+        "step": 20,
+        "total_steps": 7813,
+        "pairs_seen": 2560,
+        "kd_temperature": 2.0,
+        "teacher_global_scale": 1.0,
+        "teacher_scale_min": 1.0,
+        "teacher_scale_max": 1.0,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 2548,
+        "fa3_backward_calls": 2548,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E15_ANNEAL2TO1",
+      "kind": "anneal_2_to_1",
+      "resume_step": 0,
+      "progress": {
+        "step": 20,
+        "total_steps": 7813,
+        "pairs_seen": 2560,
+        "kd_temperature": 1.997567844342038,
+        "teacher_global_scale": 1.0,
+        "teacher_scale_min": 1.0,
+        "teacher_scale_max": 1.0,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 2548,
+        "fa3_backward_calls": 2548,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E16_TEACHER_WARMUP",
+      "kind": "teacher_warmup",
+      "resume_step": 0,
+      "progress": {
+        "step": 20,
+        "total_steps": 7813,
+        "pairs_seen": 2560,
+        "kd_temperature": 1.0,
+        "teacher_global_scale": 0.012171684817424727,
+        "teacher_scale_min": 0.012171684764325619,
+        "teacher_scale_max": 0.012171684764325619,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 2548,
+        "fa3_backward_calls": 2548,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    }
+  ],
+  "gpus": [
+    "0, 100 %, 44409 MiB, 95830 MiB",
+    "1, 98 %, 44409 MiB, 95830 MiB",
+    "2, 77 %, 44409 MiB, 95830 MiB",
+    "3, 97 %, 44409 MiB, 95830 MiB"
+  ]
+}

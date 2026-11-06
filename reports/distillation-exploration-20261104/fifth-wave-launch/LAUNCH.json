@@ -1,0 +1,5 @@
+{
+  "pid": 227225,
+  "launched_beijing": "2026-11-06T04:39:30.749366+08:00",
+  "command": "/home/dev/assumeengage/runs/distillation-temperature-20261106/code/run-temperature-curriculum.py"
+}

@@ -1,4 +1,6 @@
 ﻿title,role,path,family,note
+第三波：Tools局部校准与学习率修正,结果报告,reports/distillation-exploration-20261104/third-wave-results/report/REPORT.md,distillation-exploration-20261104,新增4个完成条件；当前最好E06为23.16。
+第四波：最佳配方局部搜索与r64匹配控制,结果报告,reports/distillation-exploration-20261104/fourth-wave-results/report/REPORT.md,distillation-exploration-20261104,新增4个完成条件；r64低LR匹配HARD21.41。
 2026-11-03 实验报告与图表入口,汇总/入口,reports/LATEST_EXPERIMENT_REPORTS_20261103.md,LATEST_EXPERIMENT_REPORTS_20261103.md,原件保持原位置；文内旧进度按原观察日期理解。
 2026-11-04 蒸馏改进实验入口,汇总/入口,reports/LATEST_EXPERIMENT_REPORTS_20261104.md,LATEST_EXPERIMENT_REPORTS_20261104.md,原件保持原位置；文内旧进度按原观察日期理解。
 2026-11-05 蒸馏研究：最新结果,汇总/入口,reports/LATEST_EXPERIMENT_REPORTS_20261105.md,LATEST_EXPERIMENT_REPORTS_20261105.md,原件保持原位置；文内旧进度按原观察日期理解。

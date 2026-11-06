@@ -1,0 +1,137 @@
+{
+  "trials": [
+    {
+      "name": "E13_STATIC_MATCHED",
+      "arm": "KD_HYBRID",
+      "gpu": 0,
+      "mode": "lora_r32",
+      "run_root": "runs/distillation-temperature-20261106/E13_STATIC_MATCHED",
+      "config": "runs/distillation-temperature-20261106/E13_STATIC_MATCHED/config.json",
+      "trainer": "scripts/train-temperature-curriculum.py",
+      "controls": {
+        "initial_temperature": 2.0,
+        "final_temperature": 1.0,
+        "ramp_steps": 1562,
+        "ramp_fraction": 0.2,
+        "matched_domain_multipliers": {
+          "knowledge": 0.9000728148272545,
+          "retrieval": 0.8995474998240942,
+          "tools": 0.900162478113756,
+          "arts": 0.9003707434672218
+        },
+        "ramp_definition": "min(1, global_step/(ramp_steps-1)); zero-based step",
+        "matched_order": "PairPool.order(seed42,batch128), per-domain loss-weighted selected-index means including tail",
+        "matching_loss_reduction": "w_i=1/actual_macro_pairs; tail64 has twice the per-pair reduction weight",
+        "domain_loss_weight_sums": {
+          "knowledge": 1953.1328125,
+          "retrieval": 1953.1328125,
+          "tools": 1953.375,
+          "arts": 1953.359375
+        },
+        "kind": "static_matched"
+      }
+    },
+    {
+      "name": "E14_TEMPERATURE2",
+      "arm": "KD_HYBRID",
+      "gpu": 1,
+      "mode": "lora_r32",
+      "run_root": "runs/distillation-temperature-20261106/E14_TEMPERATURE2",
+      "config": "runs/distillation-temperature-20261106/E14_TEMPERATURE2/config.json",
+      "trainer": "scripts/train-temperature-curriculum.py",
+      "controls": {
+        "initial_temperature": 2.0,
+        "final_temperature": 1.0,
+        "ramp_steps": 1562,
+        "ramp_fraction": 0.2,
+        "matched_domain_multipliers": {
+          "knowledge": 0.9000728148272545,
+          "retrieval": 0.8995474998240942,
+          "tools": 0.900162478113756,
+          "arts": 0.9003707434672218
+        },
+        "ramp_definition": "min(1, global_step/(ramp_steps-1)); zero-based step",
+        "matched_order": "PairPool.order(seed42,batch128), per-domain loss-weighted selected-index means including tail",
+        "matching_loss_reduction": "w_i=1/actual_macro_pairs; tail64 has twice the per-pair reduction weight",
+        "domain_loss_weight_sums": {
+          "knowledge": 1953.1328125,
+          "retrieval": 1953.1328125,
+          "tools": 1953.375,
+          "arts": 1953.359375
+        },
+        "kind": "fixed_t2"
+      }
+    },
+    {
+      "name": "E15_ANNEAL2TO1",
+      "arm": "KD_HYBRID",
+      "gpu": 2,
+      "mode": "lora_r32",
+      "run_root": "runs/distillation-temperature-20261106/E15_ANNEAL2TO1",
+      "config": "runs/distillation-temperature-20261106/E15_ANNEAL2TO1/config.json",
+      "trainer": "scripts/train-temperature-curriculum.py",
+      "controls": {
+        "initial_temperature": 2.0,
+        "final_temperature": 1.0,
+        "ramp_steps": 1562,
+        "ramp_fraction": 0.2,
+        "matched_domain_multipliers": {
+          "knowledge": 0.9000728148272545,
+          "retrieval": 0.8995474998240942,
+          "tools": 0.900162478113756,
+          "arts": 0.9003707434672218
+        },
+        "ramp_definition": "min(1, global_step/(ramp_steps-1)); zero-based step",
+        "matched_order": "PairPool.order(seed42,batch128), per-domain loss-weighted selected-index means including tail",
+        "matching_loss_reduction": "w_i=1/actual_macro_pairs; tail64 has twice the per-pair reduction weight",
+        "domain_loss_weight_sums": {
+          "knowledge": 1953.1328125,
+          "retrieval": 1953.1328125,
+          "tools": 1953.375,
+          "arts": 1953.359375
+        },
+        "kind": "anneal_2_to_1"
+      }
+    },
+    {
+      "name": "E16_TEACHER_WARMUP",
+      "arm": "KD_HYBRID",
+      "gpu": 3,
+      "mode": "lora_r32",
+      "run_root": "runs/distillation-temperature-20261106/E16_TEACHER_WARMUP",
+      "config": "runs/distillation-temperature-20261106/E16_TEACHER_WARMUP/config.json",
+      "trainer": "scripts/train-temperature-curriculum.py",
+      "controls": {
+        "initial_temperature": 2.0,
+        "final_temperature": 1.0,
+        "ramp_steps": 1562,
+        "ramp_fraction": 0.2,
+        "matched_domain_multipliers": {
+          "knowledge": 0.9000728148272545,
+          "retrieval": 0.8995474998240942,
+          "tools": 0.900162478113756,
+          "arts": 0.9003707434672218
+        },
+        "ramp_definition": "min(1, global_step/(ramp_steps-1)); zero-based step",
+        "matched_order": "PairPool.order(seed42,batch128), per-domain loss-weighted selected-index means including tail",
+        "matching_loss_reduction": "w_i=1/actual_macro_pairs; tail64 has twice the per-pair reduction weight",
+        "domain_loss_weight_sums": {
+          "knowledge": 1953.1328125,
+          "retrieval": 1953.1328125,
+          "tools": 1953.375,
+          "arts": 1953.359375
+        },
+        "kind": "teacher_warmup"
+      }
+    }
+  ],
+  "pairs_per_trial": 1000000,
+  "new_teacher_pairs": 0,
+  "current_best": 23.16,
+  "evaluation_priority": [
+    1,
+    2,
+    3,
+    0
+  ]
+}

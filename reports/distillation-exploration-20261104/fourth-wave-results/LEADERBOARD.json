@@ -1,0 +1,62 @@
+{
+  "completed_trials": [
+    "E09_TOOLS_CAL_HALF",
+    "E10_TOOLS_CAL_STRONG",
+    "E11_R64_CAL_GUARD",
+    "E12_R64_HARD_LR5E5"
+  ],
+  "best_model": "E06_TOOLS_CAL_GUARD",
+  "best_public_index": 23.16,
+  "previous_best_public_index": 23.16,
+  "delta_vs_previous_best": 0.0,
+  "comparisons": {
+    "E09_TOOLS_CAL_HALF": {
+      "public_index": 21.31,
+      "coverage": 1.0,
+      "delta_vs_previous_best": -1.8500000000000014,
+      "delta_vs_recipe_reference": -1.8500000000000014,
+      "recipe_reference": 23.16,
+      "matched_hard_planned": true
+    },
+    "E10_TOOLS_CAL_STRONG": {
+      "public_index": 22.59,
+      "coverage": 1.0,
+      "delta_vs_previous_best": -0.5700000000000003,
+      "delta_vs_recipe_reference": -0.5700000000000003,
+      "recipe_reference": 23.16,
+      "matched_hard_planned": true
+    },
+    "E11_R64_CAL_GUARD": {
+      "public_index": 21.85,
+      "coverage": 1.0,
+      "delta_vs_previous_best": -1.3099999999999987,
+      "delta_vs_recipe_reference": -1.0599999999999987,
+      "recipe_reference": 22.91,
+      "matched_hard_planned": true
+    },
+    "E12_R64_HARD_LR5E5": {
+      "public_index": 21.41,
+      "coverage": 1.0,
+      "delta_vs_previous_best": -1.75,
+      "delta_vs_recipe_reference": null,
+      "recipe_reference": null,
+      "matched_hard_planned": true
+    }
+  },
+  "matched_r64_comparisons": {
+    "E07_R64_LR5E5": {
+      "hard": 21.41,
+      "hybrid": 22.91,
+      "kd_gain": 1.5,
+      "head_and_lora_learning_rate": 5e-05
+    },
+    "E11_R64_CAL_GUARD": {
+      "hard": 21.41,
+      "hybrid": 21.85,
+      "kd_gain": 0.4400000000000013,
+      "head_and_lora_learning_rate": 5e-05
+    }
+  },
+  "new_teacher_pairs": 0,
+  "report": "/home/dev/assumeengage/runs/distillation-refine-20261105/report/REPORT.md"
+}
