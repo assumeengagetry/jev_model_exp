@@ -1,148 +1,121 @@
-# A800 × H800 蒸馏研究：阶段结论总汇
+# Qwen3-0.6B 蒸馏：哪些配方有效，当前保留什么配置
 
-> 汇总当前本地已产出的报告，最新入口标记至 2026-11-05；两条研究线仍在持续产出。本页只归纳已有结果，不等待全部实验结束，也不重新训练、评测或计算哈希。
+**当前完整公共评测最好为 23.2 分，配方是“来源监督＋Teacher 软标签混合、Tools 校准、分领域控制 Teacher 权重”，比普通混合监督提高 0.5 分，比仅用来源监督提高 1.6 分。** 但在配平的固定子集实验中，普通 label smoothing 仍优于已测 KD；Teacher 独有信息是否带来额外收益，证据还不够。
 
-**本轮增量：H800 第三、第四波新增 8 个完成条件，累计最好由 22.90 提高到 23.16；第五波只有训练记录，尚无正式分数。A800 最新本地完成入口未变。**
+Student 为 Qwen3-0.6B，Teacher 为 KnowLine-31B。HARD 表示使用来源标签，SOFT 表示只学习 Teacher 概率，HYBRID 表示两者混合；来源中的合法软标签均保留。除 warm-start 预算对照外，主要实验从原始模型和共同未训练分类头开始，各训练 100 万 pair。完整公共评测这组配方的训练池为 Knowledge、Retrieval、Tools、Arts 各 25 万，Language 不入训；固定子集组使用其自身配平的训练池。
 
-## 一页结论
+本文保留两种评测范围：**完整公共评测**为 37 项、约 11 万请求；**固定子集评测**为同 37 项中的 4,786 个完整 case、5,935 请求。各表内按相同范围比较，不将两种分数混排。结果来自 seed42 的探索，尚无多 seed 复现；Skill／Index 不是 accuracy。
 
-**目前最值得保留的路线是“来源监督＋Teacher 软标签混合，并按领域控制 Teacher 权重”，但尚未证明 Teacher 信息本身优于普通标签平滑，也没有找到稳定的最优蒸馏配方。**
+## 1. 分领域混合与 Tools 校准有效，统一降权和全域校准没有进一步收益
 
-1. **纯 SOFT 不如 HARD，混合监督更有希望。** 原始 Qwen 的配平实验中，A800 的 HYBRID 比 HARD 高 **0.64**，H800 高 **1.06**；纯 SOFT 分别低 **0.92、0.98**。A800 的 warm-start 两档也没有显示纯 SOFT 优势。
-2. **A800 最关键的新发现：普通标签平滑比已测 KD 更强。** LS0.1 为 **19.79**，超过普通 HYBRID **19.10**、温度 2 HYBRID **19.17**，也超过第二轮校准、自适应平滑等条件。只比较 HYBRID 与 HARD，会高估目前能归因于 Teacher 的收益。
-3. **H800 当前蒸馏最高为 Tools 校准＋领域保护 23.16。** 比旧领域保护 **22.90** 高 **0.26**，比原 HYBRID **22.63** 高 **0.53**，比 HARD **21.57** 高 **1.59**。第四波 4 个条件未再刷新最好；仍有领域间取舍，不是全方向提升。
-4. **r64 低学习率补齐控制后，KD 净增益为 +1.50。** r64 HARD **21.41**、原 HYBRID **22.91**；此前 LR 下的 **+2.45** 部分来自更弱的 HARD。将最佳校准领域保护组合搬到本次 r64 配方后只有 **21.85**，有效改动没有自动叠加。
-5. **Teacher 不弱，直接恢复 Student 原 LM head 也不是捷径。** A800 同一子集上，Teacher native **68.37**、generic pair **63.95**；Student 改用未专门训练的 native LM 读出后，HARD、LS 仅 **10.72、12.84**，均低于各自 classifier。
+完整公共评测中，纯 SOFT 低于 HARD，HYBRID 则有提升。在此基础上，分别保护易退化领域、只校准 Tools，得到当前最好的组合。
 
-**统筹判断：当前已有的是“混合监督有小幅收益”和若干负结果；尚缺的是“超过强无 Teacher 对照、跨 seed 稳定、跨领域不退化”的 Teacher 独有增益。**
+| 监督与校准配方 | 公共 Index |
+|---|---:|
+| HARD：来源监督 | 21.6 |
+| SOFT：仅 Teacher | 20.6 |
+| HYBRID：来源／Teacher 各 0.5 | 22.6 |
+| Teacher 权重统一降至 0.25 | 22.0 |
+| 按样本可靠性降低 Teacher 权重 | 21.9 |
+| 全领域 Teacher 截距校准 | 22.0 |
+| 分领域控制 Teacher 权重 | 22.9 |
+| 仅校准 Tools，保留原混合权重 | 22.8 |
+| **Tools 校准＋分领域权重** | **23.2** |
+| 上述组合，Tools 校准强度减半 | 21.3 |
+| 上述组合，Tools 校准强度提高至 1.5 倍 | 22.6 |
 
-## 两条线必须分开看分数
+分领域配方将 Knowledge／Tools 的 Teacher 权重设为 **0.5**，Retrieval 为 **0.25**，Arts 为 **0**。Tools 的校准截距约 **−1.28**，由训练来源标签与 Teacher 概率拟合。
 
-| 项目 | A800 探索线 | H800 探索线 |
-|---|---|---|
-| 主要作用 | 快速对照、监督机制与读出诊断 | 完整公共评测、领域权重与容量探索 |
-| 当前核心训练量 | 原始起点 100 万 pair；另有 warm-start 10 万／100 万 | 原始起点 100 万 pair，四科各 25 万 |
-| 核心评测范围 | 冻结 37 项探索子集：4,786 完整 cases、5,935 请求 | 完整公共 37 项；第一波报告标记 coverage 100% |
-| 当前主要参照 | HARD 18.46；HYBRID 19.10；LS0.1 19.79 | HARD 21.57；HYBRID 22.63；校准＋领域保护 23.16 |
-| 结论边界 | 子集、单 seed，不是完整公共榜单 | 前四波均已完成；同一公共评测自适应搜索、单 seed；第五波待评分 |
+在分领域权重上加入 Tools 校准，总分再提高 **0.3**。相应地，Tools、Retrieval、Arts 分别提高 **2.1、1.6、1.0** 分，但 Language、Knowledge 下降 **1.6、0.5** 分。进一步减弱或增强校准均未涨分，保留原校准强度。
 
-**A800 的 19.79 与 H800 的 23.16 不能直接排名，更不能解释成 H800 硬件让模型效果更好。** 两条线不是只更换 GPU 的同一实验。原始起点两线均未训练 Language 数据，但评测保留 Language。全部分数均不是官方 Private／Full。
+## 2. 混合监督超过 HARD，但目前没有超过普通 label smoothing
 
-## A800：已有结果及其意义
+### 原始起点：无 Teacher 的 LS0.1 是当前最强子集对照
 
-### 1. 原始起点：先打过普通 label smoothing，才能讨论 Teacher 独有收益
+下表固定起点、100 万 pair、样本顺序和训练量，只改变监督目标。
 
-| 条件 | 探索子集 Index | 相对 HARD |
+| 监督配方 | 固定子集 Index |
+|---|---:|
+| HARD | 18.5 |
+| SOFT | 17.5 |
+| HYBRID，Teacher 权重 0.5 | 19.1 |
+| HYBRID，Teacher 权重 0.25 | 18.8 |
+| Teacher／来源一致性门控 | 18.3 |
+| 温度 2 HYBRID | 19.2 |
+| 校准后混合监督 | 19.1 |
+| 校准后纯 SOFT | 18.7 |
+| Teacher 置信度自适应平滑 | 18.7 |
+| 打乱样本对应关系的平滑对照 | 19.6 |
+| **普通 LS0.1，无 Teacher** | **19.8** |
+
+HYBRID 比 HARD 高 **0.6**，但 LS0.1 比 HARD 高 **1.3**，也高于温度 2 HYBRID **0.6**。温度 2 与原 HYBRID 表现接近。校准改善了纯 SOFT，却仍未超过普通 LS；置信度自适应平滑也低于打乱对应关系的对照。
+
+因此，**目前观察到的 KD 收益还没有超过普通标签平滑的收益**。完整公共评测中的最佳配方尚缺匹配 LS 对照，这是下一步判断 Teacher 信息是否有用的关键。校准纯 SOFT 使用了来源标签，不属于完全 label-free 训练。
+
+### 已训练起点：普通来源标签续训更好，扩大到 100 万没有改善
+
+warm-start 从同一 MIXED_ALL 模型继续训练，每档各训练一遍，使用固定子集评测。
+
+| 条件 | 10 万 pair | 100 万 pair |
 |---|---:|---:|
-| HARD：来源监督 | 18.46 | — |
-| SOFT：仅 Teacher | 17.54 | −0.92 |
-| HYBRID：混合监督 | 19.10 | +0.64 |
-| 温度 2 HYBRID | 19.17 | +0.71 |
-| **LS0.1：普通标签平滑，无 Teacher** | **19.79** | **+1.33** |
-| 第二轮 CAL50 | 19.07 | +0.61 |
-| 第二轮 CALSOFT | 18.72 | +0.26 |
-| 第二轮 ADAPT_LS | 18.67 | +0.21 |
-| 第二轮 SHUFFLE_LS | 19.56 | +1.10 |
+| 训练前 MIXED_ALL | 22.4 | 22.4 |
+| **HARD** | **23.8** | **22.5** |
+| SOFT | 21.8 | 21.4 |
+| HYBRID | 23.4 | 22.4 |
 
-- **已得结论：** 目前没有已测 Teacher 蒸馏条件超过匹配的 LS0.1。温度 2 只比普通 HYBRID 高 **0.07**，不足以称为确定改进。
-- **机制线索：** aligned 自适应平滑不如 shuffled control，说明目前利用 Teacher 样本对应信息的方法没有奏效；不能外推为所有 Teacher 信息都无用。CALSOFT 的校准使用来源标签，不是完全 label-free。
+两档均由 HARD 领先。样本从 10 万扩至 100 万后，三种监督的成绩都下降；这里样本量与训练步数同时增加，不是固定计算预算的规模比较。
 
-### 2. 已训练起点：更多样本也不保证更好
+### Teacher 能力强，但没有直接传递为 Student 收益
 
-| warm-start 条件 | 10 万 pair | 100 万 pair |
+同一固定子集上，Teacher 的原生任务接口为 **68.4**，改用 generic candidate-pair 后为 **64.0**，仍明显强于 Student。pair 改写造成了一定下降，但没有毁掉 Teacher 的主要能力。
+
+Student 改回原 LM head、使用 native 协议读出后，也没有超过训练后的 classifier：
+
+| Student backbone | Classifier | Native LM |
 |---|---:|---:|
-| 原 MIXED_ALL 起点 | 22.39 | 22.39 |
-| HARD | **23.79** | **22.49** |
-| SOFT | 21.80 | 21.36 |
-| HYBRID | 23.42 | 22.38 |
+| 原始模型 | 1.8 | 8.0 |
+| HARD 训练后 | **18.5** | 10.7 |
+| LS0.1 训练后 | **19.8** | 12.8 |
 
-两档 SOFT−HARD 分别为 **−1.99、−1.13**；HYBRID−HARD 分别为 **−0.37、−0.11**。原始起点与 warm-start 不能合并成同一组对照；这里也不能推出“10 万普遍优于 100 万”或规模扩展必然无效。
+这次同时改变了输入协议和读出方式，且没有进行 native 协议训练。另一个仍需定位的差别是：Teacher 诊断保留完整输入，而训练标注使用 **4,096-token head-tail cap**。当前尚未区分训练目标拟合不足、输入截断和泛化／数据覆盖问题。
 
-### 3. 机制诊断：已缩小解释范围，但尚未找到根因
+## 3. 先调整 LR，再判断容量；更大的 KD 增益不等于更强的模型
 
-| 诊断 | 同一探索子集 Index | 已能说明的事 |
-|---|---:|---|
-| Teacher native | 68.37 | Teacher 在原任务协议上很强 |
-| Teacher generic candidate-pair | 63.95 | 比 native 低 4.42，但能力没有被 pair 改写整体摧毁 |
-| 原始 Qwen native LM | 8.01 | 与随机 classifier 起点 1.76 不是同一种 baseline |
-| HARD 后 backbone，native LM | 10.72 | 低于其 classifier 18.46 |
-| LS 后 backbone，native LM | 12.84 | 低于其 classifier 19.79 |
+下表均使用完整公共评测。LoRA 的 alpha/rank 保持为 2；LoRA 行的 LR 同时用于适配器和分类头，全参行列出 backbone LR，分类头 LR 固定为 1e-4。
 
-尚未区分训练 target 拟合不足、泛化／数据覆盖、训练长度和容量限制。**Teacher pair 诊断保留了完整评测输入，而训练标注管线有 4,096-token head-tail cap；因此 pair 高分不能直接证明训练标签缓存及长输入处理没有问题。** Student native 诊断同时改变 protocol/readout，且未训练 native 协议，不能据此宣布分类头完全无关。
-
-## H800：已有结果及其意义
-
-### 1. 原始起点的完整公共对照
-
-| 条件 | 公共 Index | 相对 HARD |
-|---|---:|---:|
-| HARD | 21.57 | — |
-| SOFT | 20.59 | −0.98 |
-| HYBRID | 22.63 | +1.06 |
-| **领域保护** | **22.90** | **+1.33** |
-| 降 Teacher 权重至 0.25 | 21.95 | +0.38 |
-| 样本可靠性门控 | 21.93 | +0.36 |
-| 领域截距校准 | 22.02 | +0.45 |
-
-领域保护对 Knowledge／Tools 保持 Teacher 权重 **0.5**，Retrieval 降至 **0.25**，Arts 为 **0**。相对原 HYBRID：**Tools +3.18、Retrieval +1.06**，但 Language **−1.75**、Arts **−0.56**、Knowledge **−0.08**。
-
-**当前可保留的是“按领域区别使用 Teacher”的方向，不是“所有领域更好”或“Teacher 权重越低越好”。** 来源一致率只是排查线索，不是真实 Teacher 准确率。H800 目前报告未提供匹配 LS 对照，不能把 +1.33 全部解释成 Teacher 独有收益。
-
-### 2. 容量对照：看绝对成绩，不只看 KD 净增益
-
-| 配方 | HARD | HYBRID | HYBRID−HARD |
-|---|---:|---:|---:|
-| r32／alpha64 | 21.57 | **22.63** | +1.06 |
-| r64／alpha128 | 19.75 | 22.20 | +2.45 |
-| 全参数 | 17.06 | 21.89 | +4.83 |
-
-**这轮没有支持“加大容量就能解决蒸馏瓶颈”。** r64／全参的 KD 净增益虽更大，HYBRID 绝对成绩反而低于 r32；这些是该轮学习率／单 seed 的结果，不是容量路线的最终否定。第二波后续已恢复 SSH 并取回完成报告，四组正式评分 coverage 均为 100%，不再仅依赖完成通知。
-
-### 3. 新完成的第三、第四波：最好提高到 23.16，局部改动不能简单叠加
-
-| 波次 | 条件 | 公共 Index | 比当前最好 23.16 | 匹配 HARD 净增益 |
+| 训练配置 | LR | HARD | HYBRID | HYBRID−HARD |
 |---|---|---:|---:|---:|
-| 第三波 | E05：仅 Tools 校准 | 22.84 | −0.32 | +1.27 |
-| 第三波 | **E06：Tools 校准＋领域保护** | **23.16** | **0.00** | **+1.59** |
-| 第三波 | E07：r64 原 HYBRID，LR 5e-5 | 22.91 | −0.25 | +1.50 |
-| 第三波 | E08：全参 backbone LR 2e-5 | 18.94 | −4.22 | 新 LR 无匹配 HARD |
-| 第四波 | E09：Tools 校准强度减半 | 21.31 | −1.85 | −0.26 |
-| 第四波 | E10：Tools 校准强度 1.5 倍 | 22.59 | −0.57 | +1.02 |
-| 第四波 | E11：r64 低 LR＋校准领域保护 | 21.85 | −1.31 | +0.44 |
-| 第四波 | E12：r64 低 LR HARD | 21.41 | −1.75 | 0.00 |
+| rank32 | 1e-4 | 21.6 | 22.6 | +1.1 |
+| rank64 | 1e-4 | 19.8 | 22.2 | +2.5 |
+| rank64 | 5e-5 | 21.4 | **22.9** | +1.5 |
+| rank64，加入 Tools 校准＋分领域权重 | 5e-5 | 21.4 | 21.9 | +0.4 |
+| 全参数 | 1e-5 | 17.1 | 21.9 | +4.8 |
+| 全参数 | 2e-5 | 未测 | 18.9 | — |
 
-两波每组均为同一 100 万 pair、7,813 步、seed42，完成 37 项、110,087 请求，coverage 100%；没有新增 Teacher 标注。E07/E11 的匹配 HARD 是第四波 E12，不使用旧 LR 的 HARD。r32 条件的匹配 HARD 仍为 21.57。
+rank64 的 LR 从 1e-4 降到 5e-5 后，HARD 提高 **1.7**，HYBRID 提高 **0.7**。匹配后的 KD 增益由 **2.5** 缩小为 **1.5**，说明此前较大的增益部分来自偏弱的 HARD。
 
-- **新最好确有推进，但存在交换。** E06 五维为 Knowledge **8.43**、Language **14.87**、Retrieval **38.75**、Tools **44.20**、Arts **12.98**。相对旧领域保护：Tools **+2.08**、Retrieval **+1.58**、Arts **+1.00**，Language **−1.57**、Knowledge **−0.51**。
-- **降低 r64 LR 首先修复了 HARD。** HARD 从 19.75 升到 21.41（**+1.66**），HYBRID 从 22.20 升到 22.91（**+0.71**）；修正后仍有 KD 收益，但并非此前想象的 +2.45。
-- **两条局部有效改动组合后反而变差。** r64 低 LR 原 HYBRID 为 22.91，加校准领域保护后 21.85（**−1.06**）；也低于 r32 最佳 23.16。
-- **校准强度不是越强／越弱越好。** 0.5 倍与 1.5 倍都未超过 E06；全参升 LR 也从旧 21.89 降到 18.94（**−2.95**）。这些只是否定本次配方，不是所有校准／全参方法。
+低 LR 的 rank64 HYBRID 已达到 22.9，但加入 rank32 上胜出的校准与分领域组合后，反而下降 **1.1**。全参提高 LR 后也下降 **3.0**。当前没有理由用更大容量替换表现最好的 rank32 配方。
 
-### 4. 仍在运行与暂缓部分
+相关融合实验也没有提供更好的替代：MIXED_ALL **22.8**、SLERP **21.6**、等权平均 **21.5**、SAMerging **20.2**。它们的训练预算和目标不同，单独保留为融合结果，不用于计算 KD 净增益。
 
-第五波已登记温度 2、温度从 2 退火到 1、Teacher 权重渐入及累计名义权重匹配的静态对照；**目前没有正式分数，不计入完成表或最好成绩。** 排序支线经来源语义审查后，可信 Knowledge／Retrieval 关系仅覆盖约 **0.73%** 的百万池 pair，暂缓投入排序训练；机械合格组数不能当作可靠监督量。
+## 当前保留的配置与下一步判断
 
-## 相关融合结果：不混作蒸馏收益
+| 项目 | 当前选择 |
+|---|---|
+| Student | 原始 Qwen3-0.6B＋共同未训练分类头 |
+| 微调 | LoRA rank32／alpha64，LR 1e-4，batch128 |
+| 数据 | 100 万 pair，四个训练方向各 25 万，一遍 |
+| 监督 | 来源标签＋Teacher 概率混合 |
+| Teacher 权重 | Knowledge／Tools 0.5，Retrieval 0.25，Arts 0 |
+| Tools 校准 | Teacher logit 截距约 −1.28 |
 
-完整公共 37 项中，MIXED_ALL **22.82**、SLERP **21.55**、等权平均 **21.46**、SAMerging **20.21**。已测融合没有超过混合训练；SAMerging 学的是融合系数，不是 HARD／SOFT／HYBRID 的同预算 Student 训练。
+**优先为该配置补齐相同数据和训练预算下的 LS 对照，再判断提升来自 Teacher 信息还是平滑效应。** 温度、温度退火、Teacher 权重渐入及匹配静态权重的实验仍待正式评分。排序蒸馏暂缓：来源审查后，可信关系仅覆盖约 **0.7%** 的百万 pair 池。
 
-H800 新最好 **23.16** 数值上高于 MIXED_ALL **0.34**，但两者训练数据／预算不同，不能把这点差异直接解释成蒸馏的因果收益。历史 Language **36.33** 属于单维度，完全不放入以上总分排名。
+## 数据来源
 
-## 统筹时继续追踪的三个问题
+- [完整公共评测：监督、领域权重与容量对照](../distillation-exploration-20261104/REPORT.md) · [校准与 LR 改动](../distillation-exploration-20261104/third-wave-results/report/REPORT.md) · [校准强度与匹配 HARD](../distillation-exploration-20261104/fourth-wave-results/report/REPORT.md)
+- [固定子集：原始起点对照](../a800-kd-raw-qwen-1m-20261103/report/REPORT.md) · [监督改进](../a800-kd-improve-round1-20261104/report/REPORT.md) · [校准与自适应平滑](../a800-kd-improve-round2-20261104/report/REPORT.md)
+- [warm-start 10 万](../a800-kd-pilot-100k-20261102/REPORT.md) · [warm-start 100 万](../a800-kd-scale-series-20261102/1m/REPORT.md)
+- [Teacher 接口诊断](../a800-teacher-pair-diagnostic-20261104/report/REPORT.md) · [Student native 读出](../a800-qwen-native-readout-20261105/report/REPORT.md) · [融合对照](../a800-samerging-four-experts-20261103/report/SAMERGING_DETAILED_REPORT.md)
 
-- **收益归因：** 混合／领域保护是否能超过匹配的普通 LS，而不仅仅超过 HARD？
-- **传递瓶颈：** Student 是没有拟合好 Teacher target，还是训练池上拟合了但没有泛化？
-- **稳定性与代价：** 当前微小增益是否跨 seed 保留，且不会以其他领域下降或过高标注成本换取？
-
-以上为问题台账，不代表本页新增启动实验。后续结果仍由 A800、H800 原执行 session 产出，本汇总统一吸收已完成结论；不覆盖它们的源报告，也不替代原实验调度。
-
-## 原始报告入口
-
-- [A800 最新汇报入口](../LATEST_EXPERIMENT_REPORTS_20261105.md) · [前一轮汇报入口](../LATEST_EXPERIMENT_REPORTS_20261104.md)
-- [A800 原始起点 100 万 pair](../a800-kd-raw-qwen-1m-20261103/report/REPORT.md)
-- [A800 warm-start 10 万](../a800-kd-pilot-100k-20261102/REPORT.md) · [warm-start 100 万](../a800-kd-scale-series-20261102/1m/REPORT.md)
-- [Teacher pair 诊断](../a800-teacher-pair-diagnostic-20261104/report/REPORT.md) · [Qwen native 读出诊断](../a800-qwen-native-readout-20261105/report/REPORT.md)
-- [H800 原始起点 100 万 pair](../fresh-qwen-1m-distillation-20261103/results-20261104/report/REPORT.md)
-- [H800 持续探索主报告](../distillation-exploration-20261104/REPORT.md) · [第一波](../distillation-exploration-20261104/first-wave-results/report/REPORT.md) · [第二波](../distillation-exploration-20261104/second-wave-results/report/REPORT.md)
-- [第三波完成报告与图表](../distillation-exploration-20261104/third-wave-results/report/REPORT.md) · [第四波完成报告与图表](../distillation-exploration-20261104/fourth-wave-results/report/REPORT.md)
-- [SAMerging 方法与完整公共结果](../a800-samerging-four-experts-20261103/report/SAMERGING_DETAILED_REPORT.md)
+主表按一位小数展示，差值由原值计算后保留一位小数；[逐项数值与来源](../distillation-collection/results.csv)保留在原结果表。
