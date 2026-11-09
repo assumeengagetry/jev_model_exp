@@ -1,0 +1,37 @@
+# Qwen 8B/9B attention audit
+Date: 2026-11-09. Read-only source review; no model/tokenizer/testing execution.
+Scope: 25 entries including MiMo distilled-Qwen; d3-flash delegated separately.
+
+`prompt_bidirectional_full_layers` and `block_bidirectional_full_layers` refer to the full-attention layers; Qwen3.5 DeltaNet layers remain causal unless an author explicitly says otherwise.
+
+| Name | Inventory base | Attention | Evidence |
+|---|---|---|---|
+| vLLM-SR Decision 2.0 Lux 9B | Qwen/Qwen3.5-9B | causal | [fast.py L545 says SDPA runs causal; L566-571 builds lower-triangular full-attention mask. shared_ctx.py preserves causal prefix/suffix tree.](https://huggingface.co/vllm-sr/Decision-2.0-Lux-9B/blob/main/decision2/fast.py) |
+| Bespoke Nimble 9B v3 | Qwen/Qwen3.5-9B | causal | [Official evaluation engine uses standard Qwen model + ordinary padding mask and prefix-cache continuation.](https://huggingface.co/datasets/bespokelabs/bespoke-nimble-9b-v3-decision-index/blob/main/code/nimble/evaluation/decision_index_engine.py) |
+| JevK5 9B v0.3.3 | Qwen/Qwen3.5-9B | causal | [Author runtime.py L79-84 loads standard native Qwen3_5ForCausalLM; L109-110 explicitly says every (causal) layer keeps padding away from readout.](https://github.com/allebee/jevk5/blob/main/jevk5/runtime.py) |
+| JPT-9B | Qwen/Qwen3.5-9B-Base | causal | [llm2jev uses standard SGLang/vLLM or HuggingFace model interface, next-token logits, no noncausal modification.](https://github.com/tic-top/llm2jev/blob/main/llm2jev/backends.py) |
+| JEV-9B | Qwen/Qwen3.5-9B | causal | [Model card gives standard AutoModelForCausalLM scoring and stock vLLM, no mask override; judge_config specifies ordinary answer slots.](https://huggingface.co/autotrust/JEV-9B#usage) |
+| Sieve 9B | Qwen/Qwen3.5-9B | causal | [Author source explicitly describes one causal row / batch of causal rows continuing cached state. Pointer head does not change backbone direction.](https://github.com/sthanika-ai/Sieve/blob/main/sieve/model.py) |
+| Kev 9B v2 | Qwen/Qwen3.5-9B-Base | causal | [Model card declares causal language-model backbone run prefill-only with pointer head; native 24 DeltaNet + 8 full layers.](https://huggingface.co/jaredpalmer/kev-9b) |
+| Bespoke Nimble 9B v2 | Qwen/Qwen3.5-9B-Base | causal | [Released inference.py uses standard Qwen3_5ForConditionalGeneration + LoRA and 2D padding mask, last-token readout. Author card actual base is Qwen3.5-9B rather than inventory -Base.](https://huggingface.co/bespokelabs/Bespoke-Nimble-9B-v2/blob/main/inference.py) |
+| Cloudflare clef-flash | Qwen/Qwen3.5-9B | causal_backbone_joint_attention_head | [Standard Qwen backbone receives ordinary padding mask (joint_schema_model.py L478-483); separate head uses unmasked cross-attention / TransformerDecoderLayers.](https://huggingface.co/Cloudflare/clef-flash/blob/main/joint_schema_model.py) |
+| CLM-v0.1-8B | Qwen/Qwen3-8B-Base | unknown | [Author runs stock Qwen3-8B vLLM pooling endpoint with prefix caching, but embedding service mask was not traced into vLLM version. Bidirectional InfoNCE in README is loss symmetry, not proof of bidirectional attention.](https://huggingface.co/Contrastive-LM/CLM-v0.1-8B) |
+| Nace.AI Drex v1.5 | XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | causal | [MiMo distill-Qwen, not direct Qwen base. Bundled code/kev/model.py explicitly says Qwen3.5 hybrid models use causal rows (L266-267).](https://huggingface.co/nace-ai/drex-v1.5/blob/main/code/kev/model.py) |
+| PurpleMIST-Flash-1.0 | Qwen/Qwen3.5-9B-Base | causal | [purplemist.py L204-208 passes ordinary 2D padding mask to native Qwen backbone, then pointer head.](https://huggingface.co/olaverse/PurpleMIST-Flash-1.0/blob/main/purplemist.py) |
+| Sieve 9B v2 | Qwen/Qwen3.5-9B | causal | [Same Sieve causal-row runtime as Sieve9B.](https://github.com/sthanika-ai/Sieve/blob/main/sieve/model.py) |
+| baselabs elephant-1 (9B) | Qwen/Qwen3.5-9B | block_bidirectional_full_layers | [README says block-bidirectional mask on full-attention layers; config.json declares full_attention=block_bidirectional, linear_attention=causal.](https://huggingface.co/baselabs/elephant-1/blob/main/config.json) |
+| OneJev1.6-9B | Qwen/Qwen3.5-9B | causal | [Released config has no modeling_overrides/readout.json; decision_config selects Flide onejev-slot-v2. Flide readout_config defaults attention=causal when no override exists (format.py L63); noncausal is only enabled by explicit block_bidirectional override.](https://github.com/OmniJev/Flide/blob/main/plugins/flide_onejev/format.py) |
+| frontier-infra Jebadiah 9B v2.1 (t1e) | Qwen/Qwen3.5-9B | causal | [scripts/jebadiah_model.py standard Qwen3_5ForCausalLM with 2D padding mask, selects last real token.](https://huggingface.co/frontier-infra/jebadiah-9b-v2-1/blob/main/scripts/jebadiah_model.py) |
+| StartLux-Decision v1.1 9B | Qwen/Qwen3.5-9B | prompt_bidirectional_full_layers | [Prompt tokens attend later tokens in full-attention layers, linear layers stay causal; config jev_prompt_attention=bidirectional.](https://huggingface.co/startlux-models/StartLux-Decision-v1.1-9B-Instant) |
+| Trio-Spark DI (9B) | Qwen/Qwen3.5-9B | unknown | [README/config/source endpoints return HTTP 401; cannot verify mask.](https://huggingface.co/MachineFi/Trio-Spark-DI) |
+| KnowLine 9B Gen1 | Qwen/Qwen3.5-9B | causal | [Model card says not trained block-bidirectional; runtime stock SGLang and standard model, no bidirectional mask flags.](https://huggingface.co/PelaAI/KnowLine-9B-Gen1) |
+| Seb-9B v2 | Qwen/Qwen3.5-9B | causal | [Published launch uses stock vLLM with prefix caching and standard next-token logprobs; HF fallback standard AutoModelForCausalLM.](https://huggingface.co/ironbcc/Seb-9B-v2) |
+| Piccolo 9B | Qwen/Qwen3.5-9B | prompt_bidirectional_full_layers | [piccolo_inference.py L138-147 replaces full-attention masks with all-zero additive matrix; linear_attention unchanged (L169-170).](https://huggingface.co/agentscope-ai/Piccolo-9B/blob/main/piccolo_inference.py) |
+| Jegue 0.2 (9B) | Qwen/Qwen3.5-9B | causal | [Official routed vLLM engine uses ordinary causal LM; code/decision_engine_dense.py bidir defaults False; answer_slot.py describes one causal pass.](https://huggingface.co/fdemelo/jegue/blob/main/code/answer_slot.py) |
+| Cerno 9B v1.2 | Qwen/Qwen3.5-9B | block_bidirectional_full_layers | [Released decider/model.py uses transformers create_causal_mask(block_sequence_ids=block_ids); full layers causal plus within-block bidirectional; recurrent linear layers keep causal scan.](https://huggingface.co/apertixai/cerno-9b-v1.2/blob/main/inference/third_party/decider/decider/model.py) |
+| Adjudex-9B v2 | Qwen/Qwen3.5-9B | prompt_bidirectional_full_layers | [decision_config attention_mode noncausal_full_attention; source model.py replaces full-attention mask with padding-only all-visible mask.](https://huggingface.co/newsbang/adjudex-9b-v2/blob/main/source/src/autojev/model.py) |
+| GLiDE 9B | Qwen/Qwen3.5-9B | prompt_bidirectional_full_layers | [glide/model.py: full-attention layers see every non-pad prompt token; decision_config attention_mode=noncausal_full_attention.](https://huggingface.co/fastino/GLiDE-9B/blob/main/glide/model.py) |
+
+Important base naming caveat: Nimble v2 author card/schema says Qwen3.5-9B, not -Base although leaderboard metadata says -Base. CLM author card uses Qwen3-8B whereas board base_chain traces to -Base. Distinguish lineage from immediate checkpoint.
+
+See nine-source-check.md for additional Sieve/JPT/Nimble source line evidence.

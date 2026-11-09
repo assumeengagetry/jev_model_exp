@@ -1,0 +1,375 @@
+benchmark_id,name,active,track,scope,label,count,pct
+1,BFCL,True,BFCL-tool-selection,all,yes,1694,35.53
+1,BFCL,True,BFCL-tool-selection,all,no,3074,64.47
+4,BANKING77,True,BANKING77,all,card_arrival,40,1.30
+4,BANKING77,True,BANKING77,all,card_linking,40,1.30
+4,BANKING77,True,BANKING77,all,exchange_rate,40,1.30
+4,BANKING77,True,BANKING77,all,card_payment_wrong_exchange_rate,40,1.30
+4,BANKING77,True,BANKING77,all,extra_charge_on_statement,40,1.30
+4,BANKING77,True,BANKING77,all,pending_cash_withdrawal,40,1.30
+4,BANKING77,True,BANKING77,all,fiat_currency_support,40,1.30
+4,BANKING77,True,BANKING77,all,card_delivery_estimate,40,1.30
+4,BANKING77,True,BANKING77,all,automatic_top_up,40,1.30
+4,BANKING77,True,BANKING77,all,card_not_working,40,1.30
+4,BANKING77,True,BANKING77,all,exchange_via_app,40,1.30
+4,BANKING77,True,BANKING77,all,lost_or_stolen_card,40,1.30
+4,BANKING77,True,BANKING77,all,age_limit,40,1.30
+4,BANKING77,True,BANKING77,all,pin_blocked,40,1.30
+4,BANKING77,True,BANKING77,all,contactless_not_working,40,1.30
+4,BANKING77,True,BANKING77,all,top_up_by_bank_transfer_charge,40,1.30
+4,BANKING77,True,BANKING77,all,pending_top_up,40,1.30
+4,BANKING77,True,BANKING77,all,cancel_transfer,40,1.30
+4,BANKING77,True,BANKING77,all,top_up_limits,40,1.30
+4,BANKING77,True,BANKING77,all,wrong_amount_of_cash_received,40,1.30
+4,BANKING77,True,BANKING77,all,card_payment_fee_charged,40,1.30
+4,BANKING77,True,BANKING77,all,transfer_not_received_by_recipient,40,1.30
+4,BANKING77,True,BANKING77,all,supported_cards_and_currencies,40,1.30
+4,BANKING77,True,BANKING77,all,getting_virtual_card,40,1.30
+4,BANKING77,True,BANKING77,all,card_acceptance,40,1.30
+4,BANKING77,True,BANKING77,all,top_up_reverted,40,1.30
+4,BANKING77,True,BANKING77,all,balance_not_updated_after_cheque_or_cash_deposit,40,1.30
+4,BANKING77,True,BANKING77,all,card_payment_not_recognised,40,1.30
+4,BANKING77,True,BANKING77,all,edit_personal_details,40,1.30
+4,BANKING77,True,BANKING77,all,why_verify_identity,40,1.30
+4,BANKING77,True,BANKING77,all,unable_to_verify_identity,40,1.30
+4,BANKING77,True,BANKING77,all,get_physical_card,40,1.30
+4,BANKING77,True,BANKING77,all,visa_or_mastercard,40,1.30
+4,BANKING77,True,BANKING77,all,topping_up_by_card,40,1.30
+4,BANKING77,True,BANKING77,all,disposable_card_limits,40,1.30
+4,BANKING77,True,BANKING77,all,compromised_card,40,1.30
+4,BANKING77,True,BANKING77,all,atm_support,40,1.30
+4,BANKING77,True,BANKING77,all,direct_debit_payment_not_recognised,40,1.30
+4,BANKING77,True,BANKING77,all,passcode_forgotten,40,1.30
+4,BANKING77,True,BANKING77,all,declined_cash_withdrawal,40,1.30
+4,BANKING77,True,BANKING77,all,pending_card_payment,40,1.30
+4,BANKING77,True,BANKING77,all,lost_or_stolen_phone,40,1.30
+4,BANKING77,True,BANKING77,all,request_refund,40,1.30
+4,BANKING77,True,BANKING77,all,declined_transfer,40,1.30
+4,BANKING77,True,BANKING77,all,Refund_not_showing_up,40,1.30
+4,BANKING77,True,BANKING77,all,declined_card_payment,40,1.30
+4,BANKING77,True,BANKING77,all,pending_transfer,40,1.30
+4,BANKING77,True,BANKING77,all,terminate_account,40,1.30
+4,BANKING77,True,BANKING77,all,card_swallowed,40,1.30
+4,BANKING77,True,BANKING77,all,transaction_charged_twice,40,1.30
+4,BANKING77,True,BANKING77,all,verify_source_of_funds,40,1.30
+4,BANKING77,True,BANKING77,all,transfer_timing,40,1.30
+4,BANKING77,True,BANKING77,all,reverted_card_payment?,40,1.30
+4,BANKING77,True,BANKING77,all,change_pin,40,1.30
+4,BANKING77,True,BANKING77,all,beneficiary_not_allowed,40,1.30
+4,BANKING77,True,BANKING77,all,transfer_fee_charged,40,1.30
+4,BANKING77,True,BANKING77,all,receiving_money,40,1.30
+4,BANKING77,True,BANKING77,all,failed_transfer,40,1.30
+4,BANKING77,True,BANKING77,all,transfer_into_account,40,1.30
+4,BANKING77,True,BANKING77,all,verify_top_up,40,1.30
+4,BANKING77,True,BANKING77,all,getting_spare_card,40,1.30
+4,BANKING77,True,BANKING77,all,top_up_by_cash_or_cheque,40,1.30
+4,BANKING77,True,BANKING77,all,order_physical_card,40,1.30
+4,BANKING77,True,BANKING77,all,virtual_card_not_working,40,1.30
+4,BANKING77,True,BANKING77,all,wrong_exchange_rate_for_cash_withdrawal,40,1.30
+4,BANKING77,True,BANKING77,all,get_disposable_virtual_card,40,1.30
+4,BANKING77,True,BANKING77,all,top_up_failed,40,1.30
+4,BANKING77,True,BANKING77,all,balance_not_updated_after_bank_transfer,40,1.30
+4,BANKING77,True,BANKING77,all,cash_withdrawal_not_recognised,40,1.30
+4,BANKING77,True,BANKING77,all,exchange_charge,40,1.30
+4,BANKING77,True,BANKING77,all,top_up_by_card_charge,40,1.30
+4,BANKING77,True,BANKING77,all,activate_my_card,40,1.30
+4,BANKING77,True,BANKING77,all,cash_withdrawal_charge,40,1.30
+4,BANKING77,True,BANKING77,all,card_about_to_expire,40,1.30
+4,BANKING77,True,BANKING77,all,apple_pay_or_google_pay,40,1.30
+4,BANKING77,True,BANKING77,all,verify_my_identity,40,1.30
+4,BANKING77,True,BANKING77,all,country_support,40,1.30
+5,CLINC150+OOS,True,CLINC150+OOS,all,translate,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,transfer,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,timer,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,definition,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,meaning of life,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,insurance change,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,find phone,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,travel alert,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,pto request,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,improve credit score,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,fun fact,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,change language,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,payday,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,replacement card duration,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,time,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,application status,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,flight status,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,flip coin,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,change user name,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,where are you from,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,shopping list update,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,what can i ask you,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,maybe,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,oil change how,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,restaurant reservation,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,balance,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,confirm reservation,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,freeze account,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,rollover 401k,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,who made you,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,distance,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,user name,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,timezone,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,next song,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,transactions,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,restaurant suggestion,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,rewards balance,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,pay bill,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,spending history,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,pto request status,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,credit score,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,new card,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,lost luggage,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,repeat,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,mpg,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,oil change when,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,yes,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,travel suggestion,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,insurance,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,todo list update,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,reminder,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,change speed,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,tire pressure,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,no,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,apr,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,nutrition info,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,calendar,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,uber,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,calculator,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,date,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,carry on,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,pto used,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,schedule maintenance,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,travel notification,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,sync device,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,thank you,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,roll dice,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,food last,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,cook time,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,reminder update,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,report lost card,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,ingredient substitution,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,make call,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,alarm,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,todo list,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,change accent,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,w2,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,bill due,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,calories,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,damaged card,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,restaurant reviews,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,routing,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,do you have pets,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,schedule meeting,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,gas type,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,plug type,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,tire change,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,exchange rate,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,next holiday,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,change volume,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,who do you work for,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,credit limit,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,how busy,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,accept reservations,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,order status,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,pin change,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,goodbye,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,account blocked,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,what song,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,international fees,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,last maintenance,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,meeting schedule,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,ingredients list,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,report fraud,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,measurement conversion,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,smart home,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,book hotel,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,current location,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,weather,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,taxes,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,min payment,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,whisper mode,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,cancel,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,international visa,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,vaccines,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,pto balance,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,directions,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,spelling,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,greeting,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,reset settings,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,what is your name,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,direct deposit,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,interest rate,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,credit limit change,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,what are your hobbies,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,book flight,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,shopping list,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,text,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,bill balance,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,share location,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,redeem rewards,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,play music,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,calendar update,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,are you a bot,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,gas,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,expiration date,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,update playlist,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,cancel reservation,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,tell joke,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,change ai name,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,how old are you,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,car rental,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,jump start,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,meal suggestion,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,recipe,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,income,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,order,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,traffic,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,order checks,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,card declined,30,0.55
+5,CLINC150+OOS,True,CLINC150+OOS,all,out of scope: none of the listed intents,1000,18.18
+11,ContractNLI,True,ContractNLI,all,NotMentioned,903,43.19
+11,ContractNLI,True,ContractNLI,all,Entailment,968,46.29
+11,ContractNLI,True,ContractNLI,all,Contradiction,220,10.52
+12,ANLI,True,ANLI,all,Entailment,1070,33.44
+12,ANLI,True,ANLI,all,Neutral,1068,33.38
+12,ANLI,True,ANLI,all,Contradiction,1062,33.19
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""C#M"", ""pitch_classes"": [1, 5, 8]}",78,3.90
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""F#M"", ""pitch_classes"": [1, 6, 10]}",62,3.10
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""FM"", ""pitch_classes"": [0, 5, 9]}",93,4.65
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Dm7"", ""pitch_classes"": [0, 2, 5, 9]}",8,0.40
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Gm"", ""pitch_classes"": [2, 7, 10]}",66,3.30
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""D#M"", ""pitch_classes"": [3, 7, 10]}",86,4.30
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""A#M"", ""pitch_classes"": [2, 5, 10]}",88,4.40
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""D#m"", ""pitch_classes"": [3, 6, 10]}",43,2.15
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""A#7"", ""pitch_classes"": [2, 5, 8, 10]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""GM"", ""pitch_classes"": [2, 7, 11]}",102,5.10
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Cm"", ""pitch_classes"": [0, 3, 7]}",67,3.35
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""DM"", ""pitch_classes"": [2, 6, 9]}",77,3.85
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""AM"", ""pitch_classes"": [1, 4, 9]}",73,3.65
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Bm"", ""pitch_classes"": [2, 6, 11]}",65,3.25
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""F#m"", ""pitch_classes"": [1, 6, 9]}",58,2.90
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""D#m7"", ""pitch_classes"": [1, 3, 6, 10]}",3,0.15
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""G#M"", ""pitch_classes"": [0, 3, 8]}",88,4.40
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""EM"", ""pitch_classes"": [4, 8, 11]}",80,4.00
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""CM"", ""pitch_classes"": [0, 4, 7]}",99,4.95
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Am"", ""pitch_classes"": [0, 4, 9]}",69,3.45
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""G#maj7"", ""pitch_classes"": [0, 3, 7, 8]}",6,0.30
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""BM"", ""pitch_classes"": [3, 6, 11]}",88,4.40
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Fsus4 / A#sus2"", ""pitch_classes"": [0, 5, 10]}",9,0.45
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Esus2 / Bsus4"", ""pitch_classes"": [4, 6, 11]}",6,0.30
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Em"", ""pitch_classes"": [4, 7, 11]}",74,3.70
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""F#m7"", ""pitch_classes"": [1, 4, 6, 9]}",9,0.45
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""C#m7"", ""pitch_classes"": [1, 4, 8, 11]}",8,0.40
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Dmaj7"", ""pitch_classes"": [1, 2, 6, 9]}",3,0.15
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""D#maj7"", ""pitch_classes"": [2, 3, 7, 10]}",6,0.30
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Dm"", ""pitch_classes"": [2, 5, 9]}",64,3.20
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Fmaj7"", ""pitch_classes"": [0, 4, 5, 9]}",4,0.20
+22,POP909-CL,True,POP909-chord-pitch-class,all,No chord sounding at the target beat.,29,1.45
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""F7"", ""pitch_classes"": [0, 3, 5, 9]}",2,0.10
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Csus2 / Gsus4"", ""pitch_classes"": [0, 2, 7]}",9,0.45
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Gm7"", ""pitch_classes"": [2, 5, 7, 10]}",7,0.35
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""A#maj7"", ""pitch_classes"": [2, 5, 9, 10]}",3,0.15
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Bmaj7"", ""pitch_classes"": [3, 6, 10, 11]}",3,0.15
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""G#m"", ""pitch_classes"": [3, 8, 11]}",50,2.50
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""D#sus4 / G#sus2"", ""pitch_classes"": [3, 8, 10]}",4,0.20
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""C#m"", ""pitch_classes"": [1, 4, 8]}",51,2.55
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Cm7"", ""pitch_classes"": [0, 3, 7, 10]}",4,0.20
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""C#7"", ""pitch_classes"": [1, 5, 8, 11]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Fm"", ""pitch_classes"": [0, 5, 8]}",55,2.75
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Dsus2 / Asus4"", ""pitch_classes"": [2, 4, 9]}",12,0.60
+22,POP909-CL,True,POP909-chord-pitch-class,all,A chord pitch-class set outside this vocabulary.,3,0.15
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""A#m"", ""pitch_classes"": [1, 5, 10]}",43,2.15
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Bm7"", ""pitch_classes"": [2, 6, 9, 11]}",6,0.30
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""C#sus4 / F#sus2"", ""pitch_classes"": [1, 6, 8]}",6,0.30
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""A7"", ""pitch_classes"": [1, 4, 7, 9]}",4,0.20
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Gmaj7"", ""pitch_classes"": [2, 6, 7, 11]}",2,0.10
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Am7"", ""pitch_classes"": [0, 4, 7, 9]}",8,0.40
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""C#sus2 / G#sus4"", ""pitch_classes"": [1, 3, 8]}",4,0.20
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Cdim"", ""pitch_classes"": [0, 3, 6]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""D#aug / Gaug / Baug"", ""pitch_classes"": [3, 7, 11]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Cmaj7"", ""pitch_classes"": [0, 4, 7, 11]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Esus4 / Asus2"", ""pitch_classes"": [4, 9, 11]}",8,0.40
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""G#7"", ""pitch_classes"": [0, 3, 6, 8]}",6,0.30
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""F#sus4 / Bsus2"", ""pitch_classes"": [1, 6, 11]}",5,0.25
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""G#m7"", ""pitch_classes"": [3, 6, 8, 11]}",4,0.20
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""G7"", ""pitch_classes"": [2, 5, 7, 11]}",2,0.10
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Fm7"", ""pitch_classes"": [0, 3, 5, 8]}",7,0.35
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""A#m7"", ""pitch_classes"": [1, 5, 8, 10]}",7,0.35
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""F#7"", ""pitch_classes"": [1, 4, 6, 10]}",2,0.10
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""D#7"", ""pitch_classes"": [1, 3, 7, 10]}",7,0.35
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Csus4 / Fsus2"", ""pitch_classes"": [0, 5, 7]}",6,0.30
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Em7"", ""pitch_classes"": [2, 4, 7, 11]}",6,0.30
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Dsus4 / Gsus2"", ""pitch_classes"": [2, 7, 9]}",5,0.25
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""C#maj7"", ""pitch_classes"": [0, 1, 5, 8]}",6,0.30
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Bdim"", ""pitch_classes"": [2, 5, 11]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""D7"", ""pitch_classes"": [0, 2, 6, 9]}",5,0.25
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""F#half-dim7"", ""pitch_classes"": [0, 4, 6, 9]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""F#mMaj7"", ""pitch_classes"": [1, 5, 6, 9]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""C7"", ""pitch_classes"": [0, 4, 7, 10]}",2,0.10
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""F#maj7"", ""pitch_classes"": [1, 5, 6, 10]}",4,0.20
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""D#sus2 / A#sus4"", ""pitch_classes"": [3, 5, 10]}",7,0.35
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""C#dim"", ""pitch_classes"": [1, 4, 7]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Bhalf-dim7"", ""pitch_classes"": [2, 5, 9, 11]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""B7"", ""pitch_classes"": [3, 6, 9, 11]}",2,0.10
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Amaj7"", ""pitch_classes"": [1, 4, 8, 9]}",3,0.15
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""D#dim"", ""pitch_classes"": [3, 6, 9]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""E7"", ""pitch_classes"": [2, 4, 8, 11]}",2,0.10
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""C#aug / Faug / Aaug"", ""pitch_classes"": [1, 5, 9]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Edim"", ""pitch_classes"": [4, 7, 10]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Emaj7"", ""pitch_classes"": [3, 4, 8, 11]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""F#dim"", ""pitch_classes"": [0, 6, 9]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""Gdim"", ""pitch_classes"": [1, 7, 10]}",1,0.05
+22,POP909-CL,True,POP909-chord-pitch-class,all,"{""names"": ""DmMaj7"", ""pitch_classes"": [1, 2, 5, 9]}",1,0.05
+33,SATA-Bench,True,SATA-Bench,all,no,9568,61.66
+33,SATA-Bench,True,SATA-Bench,all,yes,5949,38.34
+37,Amazon ESCI,True,Amazon-ESCI,all,Exact,3082,61.64
+37,Amazon ESCI,True,Amazon-ESCI,all,Irrelevant,552,11.04
+37,Amazon ESCI,True,Amazon-ESCI,all,Substitute,1202,24.04
+37,Amazon ESCI,True,Amazon-ESCI,all,Complement,164,3.28
+38,ACOS,True,ACOS-category-sentiment,all,no,90584,99.44
+38,ACOS,True,ACOS-category-sentiment,all,yes,508,0.56
+39,FinEntity,True,FinEntity-entity-given,all,Positive,502,23.58
+39,FinEntity,True,FinEntity-entity-given,all,Negative,498,23.39
+39,FinEntity,True,FinEntity-entity-given,all,Neutral,1129,53.03
+40,iSarcasmEval,True,iSarcasmEval-A-Ar,all,no,1200,85.71
+40,iSarcasmEval,True,iSarcasmEval-A-Ar,all,yes,200,14.29
+40,iSarcasmEval,True,iSarcasmEval-A-En,headline,no,1200,85.71
+40,iSarcasmEval,True,iSarcasmEval-A-En,headline,yes,200,14.29
+40,iSarcasmEval,True,iSarcasmEval-B-En,all,no,8129,96.77
+40,iSarcasmEval,True,iSarcasmEval-B-En,all,yes,271,3.23
+40,iSarcasmEval,True,iSarcasmEval-C-Ar,all,text_1,100,50.00
+40,iSarcasmEval,True,iSarcasmEval-C-Ar,all,text_0,100,50.00
+40,iSarcasmEval,True,iSarcasmEval-C-En,all,text_0,107,53.50
+40,iSarcasmEval,True,iSarcasmEval-C-En,all,text_1,93,46.50
+41,VAST,True,VAST,all,favor,944,31.40
+41,VAST,True,VAST,all,against,1018,33.87
+41,VAST,True,VAST,all,neutral,1044,34.73
+42,NLI4CT,True,NLI4CT-2024,all,Contradiction,3659,66.53
+42,NLI4CT,True,NLI4CT-2024,all,Entailment,1841,33.47
+44,CLadder,True,CLadder,all,no,2505,50.10
+44,CLadder,True,CLadder,all,yes,2495,49.90
+62,When2Call,True,cannot_answer,all,cannot_answer,1295,100.00
+62,When2Call,True,request_for_info,all,request_for_info,1062,100.00
+62,When2Call,True,tool_call,all,tool_call,1295,100.00
+59,RAGTruth,True,Summary,all,false,696,77.33
+59,RAGTruth,True,Summary,all,true,204,22.67
+59,RAGTruth,True,Data2txt,all,true,579,64.33
+59,RAGTruth,True,Data2txt,all,false,321,35.67
+59,RAGTruth,True,QA,all,false,740,82.22
+59,RAGTruth,True,QA,all,true,160,17.78
+61,HoVer,True,2-hop,all,SUPPORTED,521,46.27
+61,HoVer,True,3-hop,all,SUPPORTED,968,52.75
+61,HoVer,True,4-hop,all,SUPPORTED,511,49.18
+61,HoVer,True,2-hop,all,NOT_SUPPORTED,605,53.73
+61,HoVer,True,3-hop,all,NOT_SUPPORTED,867,47.25
+61,HoVer,True,4-hop,all,NOT_SUPPORTED,528,50.82
+56,PhishNChips,True,native-nine-question,headline,phishing,1000,50.00
+56,PhishNChips,True,native-nine-question,auxiliary,true,1000,16.67
+56,PhishNChips,True,native-nine-question,auxiliary,do_not_click,1000,16.67
+56,PhishNChips,True,native-nine-question,auxiliary,phishing,1000,16.67
+56,PhishNChips,True,native-nine-question,headline,legitimate,1000,50.00
+56,PhishNChips,True,native-nine-question,auxiliary,false,1000,16.67
+56,PhishNChips,True,native-nine-question,auxiliary,click,1000,16.67
+56,PhishNChips,True,native-nine-question,auxiliary,legitimate,1000,16.67

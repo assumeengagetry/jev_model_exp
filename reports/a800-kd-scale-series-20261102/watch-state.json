@@ -1,9 +1,0 @@
-{
-  "reported": [
-    1
-  ],
-  "failures": [
-    "student-2000000-1-step.json",
-    "teacher-3000000-1-step.json"
-  ]
-}

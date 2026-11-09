@@ -1,7 +1,0 @@
-Acquiring frozen evaluation inputs: adi060/decision-index-suite-0.2 ec174a4e7aa03e786a7e7e7e384db0f6c69a23e2 ['selected-rows.jsonl.gz', 'excluded-questions.json', 'manifest.json', 'added-rows.jsonl.gz']
-RANGED_ORIGIN_TRANSFER selected-rows.jsonl.gz
-RANGED_ORIGIN_TRANSFER{"file": "excluded-questions.json", "status": "present", "bytes": 663020} added-rows.jsonl.gz
-
-{"file": "mirror-0.2-manifest.json", "status": "present", "bytes": 27050}
-{"file": "selected-rows.jsonl.gz", "status": "failed", "error_type": "TimeoutError", "partial_bytes": 295758, "transport": "existing IPv4 ranged HTTP transport"}
-{"file": "added-rows.jsonl.gz", "status": "failed", "error_type": "TimeoutError", "partial_bytes": 640861, "transport": "existing IPv4 ranged HTTP transport"}

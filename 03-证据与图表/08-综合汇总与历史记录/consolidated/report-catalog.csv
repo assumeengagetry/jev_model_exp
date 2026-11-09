@@ -1,0 +1,44 @@
+﻿category,family,title,status,primary_entry,original_directory,note
+方案与文献调研,a800-8gpu-distillation-20261031,8卡A800蒸馏资源方案,方案,02-研究路径/01-蒸馏/a800-8gpu-distillation-20261031/REPORT.md,03-证据与图表/01-蒸馏/a800-8gpu-distillation-20261031,原目录原件保留；本目录只新增导航与合并表。
+蒸馏pilot与规模对照,a800-kd-pilot-100k-20261102,10万样本warm-start蒸馏,三组训练与冻结子集评测完成,01-研究结论/01-蒸馏/a800-kd-pilot-100k-20261102/REPORT.md,03-证据与图表/01-蒸馏/a800-kd-pilot-100k-20261102,原目录原件保留；本目录只新增导航与合并表。
+蒸馏pilot与规模对照,a800-kd-raw-qwen-1m-20261103,原始Qwen100万样本蒸馏,三组训练与冻结子集评测完成；与warm-start分组,01-研究结论/01-蒸馏/a800-kd-raw-qwen-1m-20261103/report/REPORT.md,03-证据与图表/01-蒸馏/a800-kd-raw-qwen-1m-20261103,原目录原件保留；本目录只新增导航与合并表。
+蒸馏pilot与规模对照,a800-kd-scale-series-20261102,蒸馏规模曲线：10万/100万,100万档完成；后续档以各自状态为准,02-研究路径/01-蒸馏/a800-kd-scale-series-20261102/README.md,03-证据与图表/01-蒸馏/a800-kd-scale-series-20261102,原目录原件保留；本目录只新增导航与合并表。
+完整公共评测与专科融合,a800-samerging-four-experts-20261103,四专家SAMerging,完整公共37项完成,01-研究结论/03-专科与融合/a800-samerging-four-experts-20261103/report/SAMERGING_DETAILED_REPORT.md,03-证据与图表/03-专科与融合/a800-samerging-four-experts-20261103,原目录原件保留；本目录只新增导航与合并表。
+历史Language单维研究,axis-specialization-and-merging-20261030,历史Language专科与融合分析,历史完整九项结果,01-研究结论/03-专科与融合/axis-specialization-and-merging-20261030/REPORT.md,03-证据与图表/03-专科与融合/axis-specialization-and-merging-20261030,原目录原件保留；本目录只新增导航与合并表。
+训练效率与资源研究,batch-benchmark-20261028,真实batch与长尾吞吐,9个条件；不等于模型质量分数,01-研究结论/05-Attention与效率/batch-benchmark-20261028/results.md,03-证据与图表/05-Attention与效率/batch-benchmark-20261028,原目录原件保留；本目录只新增导航与合并表。
+数据与公开任务画像,benchmark-data-mining-20261031,公开任务数据画像,37活跃任务与6归档任务分开,01-研究结论/04-数据与评测/benchmark-data-mining-20261031/REPORT.md,03-证据与图表/04-数据与评测/benchmark-data-mining-20261031,原目录原件保留；本目录只新增导航与合并表。
+训练效率与资源研究,checkpoint-length-scaling-20261029,长度、重算与显存机制,49个资源单元,01-研究结论/05-Attention与效率/checkpoint-length-scaling-20261029/RESEARCH-REPORT.md,03-证据与图表/05-Attention与效率/checkpoint-length-scaling-20261029,原目录原件保留；本目录只新增导航与合并表。
+工程、恢复与备份,cluster-followup-20261031,集群接管、恢复与实现记录,历史/阶段记录，不能替代最终评分,02-研究路径/08-综合汇总与历史记录/cluster-followup-20261031/four-specialists-change.md,03-证据与图表/08-综合汇总与历史记录/cluster-followup-20261031,原目录原件保留；本目录只新增导航与合并表。
+工程、恢复与备份,cluster-work-inventory-20261102,工作量台账及来源登记,登记条目不等于独立实验次数,02-研究路径/08-综合汇总与历史记录/cluster-work-inventory-20261102/WORK-LEDGER.md,03-证据与图表/08-综合汇总与历史记录/cluster-work-inventory-20261102,原目录原件保留；本目录只新增导航与合并表。
+工程、恢复与备份,cluster-workspace-snapshot-20261030,集群工作区历史快照,历史快照,../jev-辅助归档/2026-11-09整理/辅助文件/reports/cluster-workspace-snapshot-20261030/README.md,02-研究路径/03-专科与融合,原目录原件保留；本目录只新增导航与合并表。
+历史Language单维研究,experiment-dashboard,历史Language交互看板,104个完整终点；不是当前跨域五维看板,03-证据与图表/02-Language/experiment-dashboard/index.html,03-证据与图表/02-Language/experiment-dashboard,原目录原件保留；本目录只新增导航与合并表。
+方案与文献调研,fresh-qwen-1m-distillation-20261103,原始Qwen对照的前置方案,以raw-qwen目录的后续快照为准,02-研究路径/01-蒸馏/fresh-qwen-1m-distillation-20261103/PROGRESS.md,03-证据与图表/01-蒸馏/fresh-qwen-1m-distillation-20261103,原目录原件保留；本目录只新增导航与合并表。
+历史Language单维研究,language-understanding-study-20261029,Language阶段实验与附录,104个历史完整终点的主要研究入口,01-研究结论/02-Language/language-understanding-study-20261029.md,03-证据与图表/02-Language/language-understanding-study-20261029,原目录原件保留；本目录只新增导航与合并表。
+方案与文献调研,leaderboard-distillation-20261102,榜单蒸馏与社区方案调研,调研，不是本项目复现成绩,01-研究结论/01-蒸馏/leaderboard-distillation-20261102/REPORT.md,03-证据与图表/01-蒸馏/leaderboard-distillation-20261102,原目录原件保留；本目录只新增导航与合并表。
+训练效率与资源研究,length-label-benchmark-20261029,长度与正负比例研究,诊断与正式模型分数分开,01-研究结论/05-Attention与效率/length-label-benchmark-20261029/BENCHMARK-REPORT.md,03-证据与图表/05-Attention与效率/length-label-benchmark-20261029,原目录原件保留；本目录只新增导航与合并表。
+工程、恢复与备份,modelscope-backup-20261031,ModelScope备份与恢复资料,本地回执；本次未实时验证云端,../jev-辅助归档/2026-11-09整理/辅助文件/reports/modelscope-backup-20261031/NEW-MACHINE-RESTORE.md,../jev-辅助归档/2026-11-09整理/辅助文件/reports/modelscope-backup-20261031,原目录原件保留；本目录只新增导航与合并表。
+方案与文献调研,next-experiments-plan-20261030,后续实验设计,方案,02-研究路径/01-蒸馏/next-experiments-plan-20261030/REPORT.md,03-证据与图表/01-蒸馏/next-experiments-plan-20261030,原目录原件保留；本目录只新增导航与合并表。
+工程、恢复与备份,scp-backup-20261031,SCP归档、迁移清单与工具,历史资产保护与恢复材料,../jev-辅助归档/2026-11-09整理/辅助文件/reports/scp-backup-20261031/INDEX.md,.,原目录原件保留；本目录只新增导航与合并表。
+完整公共评测与专科融合,slerp-supplement-20261102,分层SLERP方法与阶段记录,最终报告另见artifacts中的完成结果,02-研究路径/03-专科与融合/slerp-supplement-20261102/PLAN.md,03-证据与图表/03-专科与融合/slerp-supplement-20261102,原目录原件保留；本目录只新增导航与合并表。
+工程、恢复与备份,student-flash-attention3-20261103,Student显式FlashAttention3部署记录,部署证据；不覆盖历史已完成训练的真实后端,02-研究路径/05-Attention与效率/student-flash-attention3-20261103/CHANGE.md,03-证据与图表/05-Attention与效率/student-flash-attention3-20261103,原目录原件保留；本目录只新增导航与合并表。
+方案与文献调研,teacher-distillation-evidence-20261030,早期Teacher证据核查,保留原观察日期，不当作当前未完成结论,01-研究结论/01-蒸馏/teacher-distillation-evidence-20261030/REPORT.md,03-证据与图表/01-蒸馏/teacher-distillation-evidence-20261030,原目录原件保留；本目录只新增导航与合并表。
+方法笔记与实验记录,training-notes-rewritten-20261102,训练机制与效率阅读笔记,方法笔记,03-证据与图表/07-方法与背景/training-notes-rewritten-20261102/阅读版.html,03-证据与图表/07-方法与背景/training-notes-rewritten-20261102,原目录原件保留；本目录只新增导航与合并表。
+完整公共评测与专科融合,five-specialists-20261030,四专科、混合与五种固定融合,完整公共37项完成,01-研究结论/03-专科与融合/five-specialists-20261030/report/REPORT.md,03-证据与图表/03-专科与融合/five-specialists-20261030,融合权重与报告保持原位置，不重复复制。
+完整公共评测与专科融合,four-specialists-slerp-20261102,分层SLERP正式评测与11条件对照,完整公共37项完成,01-研究结论/03-专科与融合/four-specialists-slerp-20261102/report/REPORT.md,03-证据与图表/03-专科与融合/four-specialists-slerp-20261102,融合权重与报告保持原位置，不重复复制。
+方案与文献调研,LATEST_EXPERIMENT_REPORTS_20261103,2026-11-03 实验报告与图表入口,保留原文；以文内观察时间为准,02-研究路径/08-综合汇总与历史记录/LATEST_EXPERIMENT_REPORTS_20261103.md,reports,单文件原档，未移动。
+方案与文献调研,cluster-recovery-and-experiment-plan-20261030,集群环境重建、实验状态还原与后续规划,保留原文；以文内观察时间为准,02-研究路径/08-综合汇总与历史记录/cluster-recovery-and-experiment-plan-20261030.md,reports,单文件原档，未移动。
+方案与文献调研,experiment-roadmap-status-20261029,实验总规划与当前位置,保留原文；以文内观察时间为准,02-研究路径/08-综合汇总与历史记录/experiment-roadmap-status-20261029.md,reports,单文件原档，未移动。
+方案与文献调研,experiment-timebox-2h,后续实验：两小时快筛执行约定,保留原文；以文内观察时间为准,02-研究路径/08-综合汇总与历史记录/experiment-timebox-2h.md,reports,单文件原档，未移动。
+方案与文献调研,five-area-training-plan,Qwen3-0.6B：四专科训练、四科混合与模型融合,保留原文；以文内观察时间为准,02-研究路径/03-专科与融合/five-area-training-plan.md,reports,单文件原档，未移动。
+方法笔记与实验记录,jev-work-log-20261102,Jev 决策模型实验工作记录,保留原文；以文内观察时间为准,02-研究路径/08-综合汇总与历史记录/jev-work-log-20261102.md,reports,单文件原档，未移动。
+历史Language单维研究,language-baseline-20261027,Qwen3-0.6B：Language Understanding 首轮基线实验报告,保留原文；以文内观察时间为准,01-研究结论/02-Language/language-baseline-20261027.md,reports,单文件原档，未移动。
+方案与文献调研,leaderboard-distillation-20261103,Decision Index 榜单模型蒸馏方法调研报告,保留原文；以文内观察时间为准,01-研究结论/01-蒸馏/leaderboard-distillation-20261103.md,reports,单文件原档，未移动。
+方案与文献调研,lu-progress-20261029T0320Z,Language快筛阶段结论与当前阻塞,保留原文；以文内观察时间为准,02-研究路径/08-综合汇总与历史记录/lu-progress-20261029T0320Z.md,reports,单文件原档，未移动。
+方案与文献调研,multi-axis-specialist-vs-mixed-fusion-20261030,旧版六方向方案（已替代）,保留原文；以文内观察时间为准,02-研究路径/03-专科与融合/multi-axis-specialist-vs-mixed-fusion-20261030.md,reports,单文件原档，未移动。
+方案与文献调研,attention,attention,历史研究原档,01-研究结论/05-Attention与效率/attention/audit.md,03-证据与图表/05-Attention与效率/attention,历史记录与新公共37项/蒸馏pilot不混算。
+方案与文献调研,language-axis,language-axis,历史研究原档,02-研究路径/02-Language/language-axis/README.md,03-证据与图表/02-Language/language-axis,历史记录与新公共37项/蒸馏pilot不混算。
+历史Language单维研究,lu-batch-lr-pilot-20261029,lu-batch-lr-pilot-20261029,历史研究原档,01-研究结论/02-Language/lu-batch-lr-pilot-20261029/STUDY-REVIEW.md,01-研究结论/02-Language/lu-batch-lr-pilot-20261029,历史记录与新公共37项/蒸馏pilot不混算。
+历史Language单维研究,lu-pair-ratio-screen-20261029T133342Z,lu-pair-ratio-screen-20261029T133342Z,历史研究原档,01-研究结论/02-Language/lu-pair-ratio-screen-20261029T133342Z/RATIO-REVIEW.md,01-研究结论/02-Language/lu-pair-ratio-screen-20261029T133342Z,历史记录与新公共37项/蒸馏pilot不混算。
+历史Language单维研究,lu-specialist-fusion-20261029T152144Z,lu-specialist-fusion-20261029T152144Z,历史研究原档,02-研究路径/03-专科与融合/lu-specialist-fusion-20261029T152144Z/FUSION-REPORT.md,03-证据与图表/03-专科与融合/lu-specialist-fusion-20261029T152144Z,历史记录与新公共37项/蒸馏pilot不混算。
+方案与文献调研,top-models,top-models,历史研究原档,../jev-辅助归档/2026-11-09整理/辅助文件/research/top-models/procedural-typed-decisions.README.md,03-证据与图表/04-数据与评测/top-models,历史记录与新公共37项/蒸馏pilot不混算。
+方案与文献调研,zero-shot-label-nli,zero-shot-label-nli,历史研究原档,../jev-辅助归档/2026-11-09整理/辅助文件/research/zero-shot-label-nli/README.md,03-证据与图表/02-Language/zero-shot-label-nli,历史记录与新公共37项/蒸馏pilot不混算。

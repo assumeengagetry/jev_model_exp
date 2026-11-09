@@ -1,6 +1,0 @@
-﻿line,condition,status,change,boundary,source
-H800,E13_STATIC_MATCHED,第五波训练记录，尚无正式分数,T1静态Teacher权重，匹配渐入组累计名义系数,仅名义系数匹配不等于梯度量匹配,reports/distillation-exploration-20261104/REPORT.md
-H800,E14_TEMPERATURE2,第五波训练记录，尚无正式分数,固定T2的KD分支，乘T平方,等待正式37项；不使用loss作为质量,reports/distillation-exploration-20261104/REPORT.md
-H800,E15_ANNEAL2TO1,第五波训练记录，尚无正式分数,温度从2退火到1,等待正式37项；不冒称原论文完整复现,reports/distillation-exploration-20261104/REPORT.md
-H800,E16_TEACHER_WARMUP,第五波训练记录，尚无正式分数,前20%步Teacher权重渐入,与E13静态对照比较；不使用旧HARD推断课程独有收益,reports/distillation-exploration-20261104/REPORT.md
-历史Language,HARD/SOFT/HYBRID早期尝试,原证据报告当时未找到完整学生成绩,保留历史观察，不把后来A800/H800结果倒填旧实验,不能据此断言当前两线仍未完成,reports/teacher-distillation-evidence-20261030/student-comparison-status.csv

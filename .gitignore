@@ -1,4 +1,4 @@
-# Keep reports, figures, configurations, indexes and summary tables in Git.
+# Keep research conclusions, research paths, evidence tables and figures in Git.
 # These rules are path/type based; .gitignore cannot filter by file size.
 
 # Model weights and training checkpoints (not *.safetensors.index.json).
@@ -62,3 +62,23 @@ watcher.lock
 .ssh/
 id_rsa
 id_ed25519
+
+# Research-library policy: execution assets live in the sibling auxiliary archive.
+*.py
+*.sh
+*.cjs
+*.log
+*.lock
+*.npy
+*.npz
+*.zip
+*.tar.gz
+*.jinja
+tokenizer.json
+tokenizer_config.json
+vocab.json
+merges.txt
+added_tokens.json
+special_tokens_map.json
+requirements*.txt
+*.jsonl

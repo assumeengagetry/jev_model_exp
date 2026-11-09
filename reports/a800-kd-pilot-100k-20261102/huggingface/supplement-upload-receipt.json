@@ -1,8 +1,0 @@
-{
-  "aggregate_report_uploaded": true,
-  "exact_shared_order_uploaded": true,
-  "model_url": "https://huggingface.co/engageassume/qwen3-06b-knowline-kd-pilot-100k-20261102",
-  "dataset_url": "https://huggingface.co/datasets/engageassume/knowline-teacher-labeled-pairs-20261102",
-  "report_commit_url": "https://huggingface.co/engageassume/qwen3-06b-knowline-kd-pilot-100k-20261102/commit/87f558cc742376a0d0c47d79ed3fe820a810e23c",
-  "order_commit_url": "https://huggingface.co/datasets/engageassume/knowline-teacher-labeled-pairs-20261102/commit/5361281839d6ba9984ad1e37fcb3b3b28f721f98"
-}

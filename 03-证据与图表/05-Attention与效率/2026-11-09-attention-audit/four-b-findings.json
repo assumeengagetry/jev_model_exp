@@ -1,0 +1,472 @@
+[
+  {
+    "engine": "decision-2.0-nox-4b",
+    "name": "vLLM-SR Decision 2.0 Nox 4B",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/vllm-sr/Decision-2.0-Nox-4B",
+    "classification": "causal",
+    "evidence": "Explicit tril mask in shared_ctx._masks; tree path also makes prefix causal and each question suffix causal.",
+    "source_url": "https://huggingface.co/vllm-sr/Decision-2.0-Nox-4B/blob/main/decision2/shared_ctx.py#L673",
+    "evidence_level": "source explicit"
+  },
+  {
+    "engine": "jpt-4b",
+    "name": "JPT-4B",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/kirp/jpt-4b",
+    "classification": "causal (native runtime)",
+    "evidence": "HF backend loads ordinary Qwen native class and calls self.model(**inputs), with no custom mask in that backend; SGLang/vLLM backends use normal generation scoring.",
+    "source_url": "https://github.com/tic-top/llm2jev/blob/main/llm2jev/backends.py#L142",
+    "evidence_level": "source native default; not a custom-mask claim"
+  },
+  {
+    "engine": "hopper-g-1.2",
+    "name": "Hopper (G) 1.2",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/HopitAI/hopper-g",
+    "classification": "causal (native runtime)",
+    "evidence": "Serving model loads ordinary Qwen CausalLM and merges LoRA; selected-row logits keep native attention.",
+    "source_url": "https://github.com/hopit-ai/hopper/blob/main/hopper_decisions/model.py#L61",
+    "evidence_level": "source native default"
+  },
+  {
+    "engine": "kev-4b-r10",
+    "name": "Kev 4B r10",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/jaredpalmer/kev-4b",
+    "classification": "causal",
+    "evidence": "Model card says causal language-model backbone. For Qwen3.5 hybrid, model.py explicitly runs every question as its own causal row.",
+    "source_url": "https://github.com/jaredpalmer/kev/blob/main/kev/model.py#L259",
+    "evidence_level": "source explicit; card is Kev1.0 history, current repo supports the same Qwen causal-row path"
+  },
+  {
+    "engine": "lev",
+    "name": "lev",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/interfaze-ai/lev",
+    "classification": "causal (native runtime)",
+    "evidence": "Native AutoModelForCausalLM loading and ordinary 2D padding masks; no noncausal hook found in model.py.",
+    "source_url": "https://github.com/Abhinavexists/lev/blob/main/packages/lev/src/lev/model.py#L566",
+    "evidence_level": "source native default"
+  },
+  {
+    "engine": "jevk5-v0.3",
+    "name": "JevK5 v0.3",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "model_url": "https://huggingface.co/alibiserikbay/JevK5",
+    "classification": "unknown",
+    "evidence": "Card/source reviewed only partially or no explicit served-version mask evidence. Do not infer from autoregressive metadata, SDPA, FlashAttention or task_type CAUSAL_LM.",
+    "source_url": "https://huggingface.co/alibiserikbay/JevK5",
+    "evidence_level": "unverified"
+  },
+  {
+    "engine": "neohorse-jev-4b",
+    "name": "NeoHorse-Jev-4B",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B",
+    "classification": "causal",
+    "evidence": "Vendored model says Qwen3.5 hybrid questions are their own causal rows; pointer readout does not change this.",
+    "source_url": "https://github.com/TokenRhythm/NeoHorse/blob/main/jev/package/src/neohorse_decision/_vendor/model.py#L142",
+    "evidence_level": "source explicit"
+  },
+  {
+    "engine": "ryotide-qwen-v0.3.1",
+    "name": "Ryotide Qwen v0.3.1",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "model_url": null,
+    "classification": "causal",
+    "evidence": "Torch backend docstring says the model is causal; ordinary AutoModelForCausalLM loader used.",
+    "source_url": "https://github.com/csabag/ryotide/blob/main/src/ryotide/torch_backend.py#L285",
+    "evidence_level": "source explicit"
+  },
+  {
+    "engine": "intern-decision-4b",
+    "name": "Intern-Decision-4B",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/internlm/Intern-Decision-4B",
+    "classification": "causal",
+    "evidence": "README says one causal HF forward; HFBackend loads native Qwen3_5 and performs an ordinary call with no noncausal mask patch.",
+    "source_url": "https://github.com/internlm/Intern-Decision/blob/main/src/inference/hf_backend.py#L105",
+    "evidence_level": "card explicit + source native"
+  },
+  {
+    "engine": "decider-4b",
+    "name": "Decider 4B",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/Mapika/decider-4b",
+    "classification": "causal",
+    "evidence": "Engine documents right padding + causal layers; model loads original Qwen CausalLM and uses ordinary 2D padding mask.",
+    "source_url": "https://github.com/Mapika/decider/blob/main/decider/engine.py#L3",
+    "evidence_level": "source explicit"
+  },
+  {
+    "engine": "intelif-qwen3-4b",
+    "name": "Intelif Qwen3-4B",
+    "base_model": "Qwen/Qwen3-4B",
+    "model_url": "https://huggingface.co/UserMoonlight/intelif-qwen3-4b",
+    "classification": "unknown",
+    "evidence": "Card/source reviewed only partially or no explicit served-version mask evidence. Do not infer from autoregressive metadata, SDPA, FlashAttention or task_type CAUSAL_LM.",
+    "source_url": "https://huggingface.co/UserMoonlight/intelif-qwen3-4b",
+    "evidence_level": "unverified"
+  },
+  {
+    "engine": "jobe",
+    "name": "Jobe",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": null,
+    "classification": "unknown",
+    "evidence": "Card/source reviewed only partially or no explicit served-version mask evidence. Do not infer from autoregressive metadata, SDPA, FlashAttention or task_type CAUSAL_LM.",
+    "source_url": "https://github.com/MantisShrimpdev/jobe",
+    "evidence_level": "unverified"
+  },
+  {
+    "engine": "pngwn-space-uncapped-full",
+    "name": "open-jev (pngwn)",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer-v2b",
+    "classification": "unknown",
+    "evidence": "Card/source reviewed only partially or no explicit served-version mask evidence. Do not infer from autoregressive metadata, SDPA, FlashAttention or task_type CAUSAL_LM.",
+    "source_url": "https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer-v2b",
+    "evidence_level": "unverified"
+  },
+  {
+    "engine": "tev1-4b",
+    "name": "Tev1-4B-experimental",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/togethercomputer/Tev1-4B-experimental",
+    "classification": "unknown",
+    "evidence": "Card/source reviewed only partially or no explicit served-version mask evidence. Do not infer from autoregressive metadata, SDPA, FlashAttention or task_type CAUSAL_LM.",
+    "source_url": "https://github.com/togethercomputer/tev1",
+    "evidence_level": "unverified"
+  },
+  {
+    "engine": "openvons",
+    "name": "openvons",
+    "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_url": null,
+    "classification": "unknown",
+    "evidence": "Card/source reviewed only partially or no explicit served-version mask evidence. Do not infer from autoregressive metadata, SDPA, FlashAttention or task_type CAUSAL_LM.",
+    "source_url": "https://github.com/genai-craft/openvons",
+    "evidence_level": "unverified"
+  },
+  {
+    "engine": "metask-jev-4b",
+    "name": "Metask-Jev-4B",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/wayfind/metask-jev-4b-policy-mix",
+    "classification": "causal (native runtime)",
+    "evidence": "Reference scorer loads Qwen3_5ForConditionalGeneration directly; no custom attention hook in this scorer.",
+    "source_url": "https://github.com/metask-ai/metask-jev/blob/main/inference/jev_scorer.py#L29",
+    "evidence_level": "source native default"
+  },
+  {
+    "engine": "semif",
+    "name": "SemIf",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": null,
+    "classification": "unknown",
+    "evidence": "Card/source reviewed only partially or no explicit served-version mask evidence. Do not infer from autoregressive metadata, SDPA, FlashAttention or task_type CAUSAL_LM.",
+    "source_url": "https://github.com/TheoLeeCJ/openjev",
+    "evidence_level": "unverified"
+  },
+  {
+    "engine": "mini-jev",
+    "name": "mini-jev",
+    "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_url": null,
+    "classification": "causal (native runtime)",
+    "evidence": "Engine loads original Qwen CausalLM and supplies tokenizer 2D padding mask; native causal attention retained.",
+    "source_url": "https://github.com/r-ms/mini-jev/blob/main/minijev/engine.py#L36",
+    "evidence_level": "source native default"
+  },
+  {
+    "engine": "saracura-ptbr-4b",
+    "name": "Saracura PT-BR 4B",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/felhen-ai/saracura-ptbr-4b",
+    "classification": "unknown",
+    "evidence": "Card/source reviewed only partially or no explicit served-version mask evidence. Do not infer from autoregressive metadata, SDPA, FlashAttention or task_type CAUSAL_LM.",
+    "source_url": "https://huggingface.co/felhen-ai/saracura-ptbr-4b",
+    "evidence_level": "unverified"
+  },
+  {
+    "engine": "aplomb-1",
+    "name": "Aplomb 1",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "model_url": "https://huggingface.co/empiriolabsai/aplomb-1",
+    "classification": "unknown",
+    "evidence": "Card/source reviewed only partially or no explicit served-version mask evidence. Do not infer from autoregressive metadata, SDPA, FlashAttention or task_type CAUSAL_LM.",
+    "source_url": "https://huggingface.co/empiriolabsai/aplomb-1",
+    "evidence_level": "unverified"
+  },
+  {
+    "engine": "rsi-jev-v6.1-vl-4b",
+    "name": "RSI-Jev v6.1 VL 4B",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "model_url": "https://huggingface.co/shgao/rsi-jev-v6.1-vl-4b",
+    "classification": "causal (release path; version-sensitive)",
+    "evidence": "Current source added opt-in RSIJEV_PREFIX_BIDIR=1 for v7.0-VL; docstring says env unset never changes a call. The listed v6.1 release is not automatically that v7 bidi variant.",
+    "source_url": "https://github.com/Shanghua-Gao/RSI-Jev/blob/main/rsijev/arch.py#L1035",
+    "evidence_level": "source explicit default; exact serving env not reexecuted"
+  },
+  {
+    "engine": "sieve-4b",
+    "name": "Sieve 4B",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "model_url": "https://huggingface.co/sthanika-ai/Sieve-4B",
+    "classification": "causal",
+    "evidence": "codes/model.py calls encode_prefix/run_branches without bidir; shared_prefix defaults bidir=False and builds tril for training.",
+    "source_url": "https://github.com/sthanika-ai/Sieve/blob/main/sieve/codes/shared_prefix.py#L255",
+    "evidence_level": "source explicit"
+  },
+  {
+    "engine": "jiwo-4b-v2",
+    "name": "jiwo 4B v2",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "model_url": "https://huggingface.co/eljiwo/jiwo-4b",
+    "classification": "causal",
+    "evidence": "last_logits docstring says every layer is causal; backbone called with ordinary 2D padding mask.",
+    "source_url": "https://github.com/jiwidi/jiwo/blob/main/src/jiwo/model.py#L320",
+    "evidence_level": "source explicit"
+  },
+  {
+    "engine": "cam1",
+    "name": "Cam1",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "model_url": "https://huggingface.co/cbuk10001/Cam1",
+    "classification": "unknown",
+    "evidence": "Card/source reviewed only partially or no explicit served-version mask evidence. Do not infer from autoregressive metadata, SDPA, FlashAttention or task_type CAUSAL_LM.",
+    "source_url": "https://huggingface.co/cbuk10001/Cam1",
+    "evidence_level": "unverified"
+  },
+  {
+    "engine": "vllm-sr-d3-mini",
+    "name": "vLLM-SR d3-mini (4B)",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "model_url": "https://huggingface.co/vllm-sr/d3-mini",
+    "classification": "unknown",
+    "evidence": "Card/source reviewed only partially or no explicit served-version mask evidence. Do not infer from autoregressive metadata, SDPA, FlashAttention or task_type CAUSAL_LM.",
+    "source_url": "https://huggingface.co/vllm-sr/d3-mini",
+    "evidence_level": "unverified"
+  },
+  {
+    "engine": "decision-4b-v1.6",
+    "name": "FlyMy.AI Decision 4B v1.6",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "model_url": "https://huggingface.co/flymy-ai/decision-4b-v1.6",
+    "classification": "causal",
+    "evidence": "Runtime docstring says every layer is causal; original Qwen CausalLM loaded then LoRA merged.",
+    "source_url": "https://huggingface.co/flymy-ai/decision-4b-v1.6/blob/main/model.py#L13",
+    "evidence_level": "source explicit"
+  },
+  {
+    "engine": "pplx-decider-flash-v1.2",
+    "name": "Perplexity Decider Flash v1.2 (4B)",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "model_url": "https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2",
+    "classification": "full-bidi (full_attention layers only)",
+    "evidence": "Model.py installs enable_noncausal_full_attention; full-attention layers see all nonpad tokens; Gated DeltaNet remains causal.",
+    "source_url": "https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/blob/main/source/src/pplx_decider/model.py#L65",
+    "evidence_level": "source explicit"
+  },
+  {
+    "engine": "onejev1.6-4b",
+    "name": "OneJev1.6-4B",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "causal",
+    "evidence": "Flide OneJev format defaults to causal when neither readout.json nor modeling_overrides exists; this HF release has neither. Current config and HF file inventory checked.",
+    "source_url": "https://github.com/OmniJev/Flide/blob/main/plugins/flide_onejev/format.py#L234",
+    "model_url": "https://huggingface.co/OmniJev/OneJev1.6-4B",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "startlux-decision-v1.1-4b-instant",
+    "name": "StartLux-Decision v1.1 4B",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "full-bidi (full_attention layers only)",
+    "evidence": "README: prompt tokens attend to later prompt tokens in full_attention layers; Gated DeltaNet stays causal. config declares jev_prompt_attention=bidirectional.",
+    "source_url": "https://huggingface.co/startlux-models/StartLux-Decision-v1.1-4B-Instant/blob/main/README.md#L26",
+    "model_url": "https://huggingface.co/startlux-models/StartLux-Decision-v1.1-4B-Instant",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "coco-decision-2.4-4b",
+    "name": "CoCo-Decision-4B 2.4",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "full-bidi (full_attention layers only)",
+    "evidence": "README and reference code open full_attention layers to whole prompt; padding masked; no causal mask.",
+    "source_url": "https://huggingface.co/corners-ai/CoCo-Decision-2.4-4B/blob/main/README.md#L54",
+    "model_url": "https://huggingface.co/corners-ai/CoCo-Decision-2.4-4B",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "nari-decision-4b-v3.2",
+    "name": "Nari Decision 4B v3.2",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "causal backbone + noncausal decision head",
+    "evidence": "modeling_sysone.py passes ordinary 2D attention_mask.long() to unmodified backbone. Decision head separately uses two layers of option self-attention and cross-attention over sequence.",
+    "source_url": "https://huggingface.co/blackmallangcow/nari-decision-4b/blob/main/modeling_sysone.py#L318",
+    "model_url": "https://huggingface.co/blackmallangcow/nari-decision-4b",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "mica-v0.5-4b",
+    "name": "Mica v0.5 4B",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "unknown for scored revision; current fast runtime causal",
+    "evidence": "Pinned source uses ordinary llama.cpp direct backend; current v0.5 prefill_engine.py has is_causal=n>1. No explicit pinned mask setting verified.",
+    "source_url": "https://github.com/akivet/Mica/blob/main/v0.5/serving/lib/prefill_engine.py#L145",
+    "model_url": "https://huggingface.co/sky7350/Mica-v0.5-4B",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "jeffan-4b-2010",
+    "name": "Jeffan-4B-2010",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "full-bidi (full_attention layers only)",
+    "evidence": "README explicitly says every prompt token sees every other in full_attention layers; Gated DeltaNet stays causal; example passes mask dict.",
+    "source_url": "https://huggingface.co/tattrongvu/Jeffan-4B-2010/blob/main/README.md#L26",
+    "model_url": "https://huggingface.co/tattrongvu/Jeffan-4B-2010",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "knowline-4b-gen5.5",
+    "name": "KnowLine 4B Gen5.5",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "causal",
+    "evidence": "README explains read-twice under causal attention; HF backend uses ordinary self.model(input_ids=inputs).logits.",
+    "source_url": "https://huggingface.co/PelaAI/KnowLine-4B-Gen5.5/blob/main/knowline_server.py#L242",
+    "model_url": "https://huggingface.co/PelaAI/KnowLine-4B-Gen5.5",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "valen-4b-r2",
+    "name": "Valen-4B",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "causal",
+    "evidence": "compiler._compile_shared docstring explicitly ordinary causal attention. runtime forwards unmodified 2D masks to Qwen3_5Model.",
+    "source_url": "https://huggingface.co/Valen-Team/Valen-4B/blob/main/compiler.py#L180",
+    "model_url": "https://huggingface.co/Valen-Team/Valen-4B",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "verdin-4b-v1.1",
+    "name": "Verdin-4B v1.1",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "state-block-bidi, question branches causal",
+    "evidence": "README: state bidirectional within 8192-token blocks in 8 full_attention layers; question branches and 24 Gated DeltaNet layers causal.",
+    "source_url": "https://huggingface.co/victorbennett/Verdin-4B-v1.1/blob/main/README.md#L140",
+    "model_url": "https://huggingface.co/victorbennett/Verdin-4B-v1.1",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "amber-hybrid-4b",
+    "name": "Amber Hybrid 4B",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "mixed models: causal Qwen decoder + bidirectional ModernBERT encoder",
+    "evidence": "hybrid_engine.py Decoder retains original Qwen causal mask and explicit causal padding comment; combines probabilities with separate ModernBERT encoder. Not a Qwen mask conversion.",
+    "source_url": "https://huggingface.co/MLukauskas/amber-hybrid-4b/blob/main/hybrid_engine.py#L159",
+    "model_url": "https://huggingface.co/MLukauskas/amber-hybrid-4b",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "amber-4b",
+    "name": "Amber 4B",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "causal",
+    "evidence": "decoder_engine.py explicitly says right padding without mask exact for causal model; uses ordinary self.model(input_ids=...).",
+    "source_url": "https://huggingface.co/MLukauskas/amber-4b/blob/main/decoder_engine.py#L151",
+    "model_url": "https://huggingface.co/MLukauskas/amber-4b",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "saif-4b",
+    "name": "Saif 4B",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "block-bidi with question isolation",
+    "evidence": "config attention=bidir. saif_v2_core attention_mask opens prefix-prefix, question-prefix and each question-self; distinct question blocks do not see each other. singlepass implements same segmented is_causal=False.",
+    "source_url": "https://huggingface.co/GyrTechnology/saif-4b/blob/main/saif_v2_core.py#L118",
+    "model_url": "https://huggingface.co/GyrTechnology/saif-4b",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "piccolo-4b",
+    "name": "Piccolo 4B",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "full-bidi (full_attention layers only)",
+    "evidence": "piccolo_inference.py descriptor requires attention_mode=bidirectional_prompt; hooks full_attention with all-zero additive LxL mask; GDN native.",
+    "source_url": "https://huggingface.co/agentscope-ai/Piccolo-4B/blob/main/piccolo_inference.py#L125",
+    "model_url": "https://huggingface.co/agentscope-ai/Piccolo-4B",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "purplemist-mini-2.0",
+    "name": "PurpleMIST-Mini-2.0",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "classification": "two-block mask: causal prefix + bidirectional question region",
+    "evidence": "README: eight full_attention layers prefix is causal and sees no questions; each question token sees whole prefix and every question; GDN causal.",
+    "source_url": "https://huggingface.co/olaverse/PurpleMIST-Mini-2.0/blob/main/README.md#L61",
+    "model_url": "https://huggingface.co/olaverse/PurpleMIST-Mini-2.0",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "cerno-4b-v1.2",
+    "name": "Cerno 4B v1.2",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "block-bidi",
+    "evidence": "README: state and each question+options form blocks; within-block bidirectional, across blocks causal, only full_attention layers.",
+    "source_url": "https://huggingface.co/apertixai/cerno-4b-v1.2/blob/main/README.md#L57",
+    "model_url": "https://huggingface.co/apertixai/cerno-4b-v1.2",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "basedecision-dyno",
+    "name": "BaseDecision-Dyno (4B)",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "full-bidi (full_attention layers only)",
+    "evidence": "README attention table says bidirectional full_attention layers; native recurrence in linear_attention layers.",
+    "source_url": "https://huggingface.co/onlyaady/BaseDecision-Dyno/blob/main/README.md#L42",
+    "model_url": "https://huggingface.co/onlyaady/BaseDecision-Dyno",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "senova-4b-v4",
+    "name": "Senova-4B v4",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "unknown",
+    "evidence": "README specifies read-twice and next-token distribution but no explicit mask; source server not inspected.",
+    "source_url": "https://huggingface.co/WangSenQWQ/Senova-4B-v4/blob/main/README.md",
+    "model_url": "https://huggingface.co/WangSenQWQ/Senova-4B-v4",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "rsi-jev-v5.0-vl-3b",
+    "name": "RSI-Jev v5.0 VL 3B",
+    "base_model": "Qwen/Qwen3.5-4B-Base",
+    "classification": "causal (author documentation)",
+    "evidence": "README explains option pooling issue caused by previous-option information in causal model. Actual served model is early-exit 3.25B, first 20 of Qwen3.5-4B-Base 32 layers, not full4B.",
+    "source_url": "https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/blob/main/README.md#L101",
+    "model_url": "https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "ezjev-4b-s2",
+    "name": "ezjev 4B s2",
+    "base_model": "Qwen/Qwen3.5-4B",
+    "classification": "causal (documented ordinary vLLM serving)",
+    "evidence": "README uses stock vLLM serve + llm2jev; no custom model/mask/plugin, ordinary Qwen3.5 serving. This is documented serving inference rather than direct mask source inspection.",
+    "source_url": "https://huggingface.co/everettjf/ezjev-4b-s2/blob/main/README.md#L42",
+    "model_url": "https://huggingface.co/everettjf/ezjev-4b-s2",
+    "evidence_level": "see linked source"
+  },
+  {
+    "engine": "kas-4b",
+    "name": "Kas 4B",
+    "base_model": "Qwen/Qwen3-4B",
+    "classification": "causal",
+    "evidence": "engine loads ordinary Qwen3 AutoModelForCausalLM and forwards input_ids, position_ids, past_key_values/use_cache without overriding mask.",
+    "source_url": "https://github.com/kashavpiya/kas-4b/blob/main/kas_engine/engine.py#L240",
+    "model_url": "https://huggingface.co/kpiya/kas-4b",
+    "evidence_level": "see linked source"
+  }
+]

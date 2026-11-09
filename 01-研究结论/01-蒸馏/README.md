@@ -1,0 +1,30 @@
+# 蒸馏 · 研究结论
+
+[返回分类](../README.md) · [返回总入口](../../README.md)
+
+## 文档
+
+- [Qwen3-0.6B 参榜候选模型](decision-index-candidate-20261106/README.md)
+- [蒸馏改进：第一轮假设验证](a800-kd-improve-round1-20261104/report/REPORT.md)
+- [蒸馏改进第二轮：校准与样本级Teacher信息](a800-kd-improve-round2-20261104/report/REPORT.md)
+- [蒸馏 idea 快速对照：100k pilot](a800-kd-pilot-100k-20261102/REPORT.md)
+- [原始 Qwen 起点蒸馏对照：1,000,000 pairs](a800-kd-raw-qwen-1m-20261103/report/REPORT.md)
+- [蒸馏规模阶段：1,000,000 pairs](a800-kd-scale-series-20261102/1m/REPORT.md)
+- [KD 数据规模曲线](a800-kd-scale-series-20261102/SCALE_CURVE.md)
+- [蒸馏报告全汇集：A800 / H800](distillation-collection/REPORT.md)
+- [蒸馏探索按用户指令停止评分，资源已交接新五维正式训练](distillation-exploration-20261104/REPORT.md)
+- [第八波：混合排序重跑与局部对照](distillation-exploration-20261104/eighth-wave-results/report/REPORT.md)
+- [第五波：二分类KD温度与Teacher课程](distillation-exploration-20261104/fifth-wave-results/report/REPORT.md)
+- [蒸馏快速探索：首波四组](distillation-exploration-20261104/first-wave-results/report/REPORT.md)
+- [第四波：最佳配方局部搜索与r64匹配控制](distillation-exploration-20261104/fourth-wave-results/report/REPORT.md)
+- [排序蒸馏可行性：可信关系比表面组数少](distillation-exploration-20261104/group-ranking-audit/REPORT.md)
+- [第九波：数值控制后的完整重复与混合排序对照](distillation-exploration-20261104/ninth-wave-results/report/REPORT.md)
+- [第二波：Student容量与蒸馏收益](distillation-exploration-20261104/second-wave-results/report/REPORT.md)
+- [第七波：可信候选组关系蒸馏](distillation-exploration-20261104/seventh-wave-results/report/REPORT.md)
+- [第六波：E06重跑、低温KD与r32学习率](distillation-exploration-20261104/sixth-wave-results/report/REPORT.md)
+- [第三波：Tools局部校准与学习率修正](distillation-exploration-20261104/third-wave-results/report/REPORT.md)
+- [Qwen3-0.6B 蒸馏：哪些训练方法有效（历史快照）](distillation-joint-summary/REPORT.md)
+- [原始Qwen3-0.6B：100万pair蒸馏节点](fresh-qwen-1m-distillation-20261103/results-20261104/report/REPORT.md)
+- [榜单决策模型如何做蒸馏](leaderboard-distillation-20261102/REPORT.md)
+- [Decision Index 榜单模型蒸馏方法调研报告](leaderboard-distillation-20261103.md)
+- [榜首 Teacher 蒸馏：能否超过人工标签训练？](teacher-distillation-evidence-20261030/REPORT.md)

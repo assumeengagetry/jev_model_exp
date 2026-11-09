@@ -1,5 +1,0 @@
-Skipping import of cpp extensions due to incompatible torch version 2.9.1+cu128 for torchao version 0.14.1             Please see https://github.com/pytorch/ao/issues/2919 for more info
-`torch_dtype` is deprecated! Use `dtype` instead!
-Some weights of Qwen3ForSequenceClassification were not initialized from the model checkpoint at /home/dev/assumeengage/models/Qwen3-0.6B and are newly initialized: ['score.weight']
-You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
-Shared classifier head and identical initial LoRA weights saved: /home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32

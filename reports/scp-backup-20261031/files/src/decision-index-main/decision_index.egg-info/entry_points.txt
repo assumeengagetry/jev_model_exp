@@ -1,2 +1,0 @@
-[console_scripts]
-decision-index = decision_index.cli:main

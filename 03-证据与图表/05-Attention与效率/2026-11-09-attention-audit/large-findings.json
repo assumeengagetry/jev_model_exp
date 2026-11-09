@@ -1,0 +1,382 @@
+[
+  {
+    "engine": "decision-2.0-vega-27b",
+    "name": "vLLM-SR Decision 2.0 Vega 27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/vllm-sr/Decision-2.0-Vega-27B",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "kev-27b",
+    "name": "Kev 27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/jaredpalmer/kev-27b",
+    "attention": "causal",
+    "evidence_level": "Source + explicit model card",
+    "evidence": "Qwen hybrid backbones always run each question as one causal row; source is_hybrid/rows_form/_rows_hidden. Card calls it causal LM backbone and identifies Qwen post-trained release.",
+    "sources": [
+      "https://huggingface.co/jaredpalmer/kev-27b",
+      "https://github.com/jaredpalmer/kev/blob/2074cc44256200bb37540103fa4572901faa10f3/kev/model.py#L259-L262",
+      "https://github.com/jaredpalmer/kev/blob/2074cc44256200bb37540103fa4572901faa10f3/kev/model.py#L329-L360"
+    ]
+  },
+  {
+    "engine": "simple-jev-qwen3.8-27b",
+    "name": "simple-jev · Qwen3.8-27B (featherless)",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": null,
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "jev-27b",
+    "name": "JEV-27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/autotrust/JEV-27B",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "eikos-27b-fp8",
+    "name": "Eikos-27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/caiovicentino1/Eikos-27B-FP8",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "jade",
+    "name": "JADE",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/theunnecessarythings/JADE",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "decider-chat-qwen3.6-27b",
+    "name": "Decider chat · Qwen3.6-27B",
+    "base_model": "Qwen/Qwen3.6-27B",
+    "model_url": null,
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "clef",
+    "name": "Cloudflare clef",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/Cloudflare/clef",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "jevfire-uncapped",
+    "name": "Jevfire",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": null,
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "solomon-v11-bf16-encoding",
+    "name": "Solomon v1.1",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/DoccyHealth/Solomon",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "linne-fern-1.0",
+    "name": "linne-fern 1.0 (27B)",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/MISA-core/linne-fern-1-0",
+    "attention": "causal",
+    "evidence_level": "Documented released inference example",
+    "evidence": "Card says standard Qwen architecture, stock transformers/vLLM/SGLang; full example loads AutoModelForCausalLM and passes ordinary tokenizer output without attention rewrite.",
+    "sources": [
+      "https://huggingface.co/MISA-core/linne-fern-1-0"
+    ]
+  },
+  {
+    "engine": "qwen-decision-27b-noncausal",
+    "name": "Qwen Decision 27B noncausal LoRA",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/jsaurabh/qwen-decision-27b-noncausal-lora",
+    "attention": "full-attention layers bidirectional; recurrent layers native",
+    "evidence_level": "Explicit model card",
+    "evidence": "Noncausal mask in full SDPA attention layers; recurrent layers native; no KV cache.",
+    "sources": [
+      "https://huggingface.co/jsaurabh/qwen-decision-27b-noncausal-lora"
+    ]
+  },
+  {
+    "engine": "reflex-27b-pmscr",
+    "name": "reflex Qwen3.8-27B-FP8 (pmscr)",
+    "base_model": "Qwen/Qwen3.8-27B-FP8",
+    "model_url": null,
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "rsi-jev-v6.1-vl-27b-auto",
+    "name": "RSI-Jev v6.1 VL 27B (effort auto)",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/shgao/rsi-jev-v6.1-vl-27b",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "startlux-decision-v1.1-27b-instant",
+    "name": "StartLux-Decision v1.1 27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/startlux-models/StartLux-Decision-v1.1-27B-Instant",
+    "attention": "full-attention layers bidirectional; recurrent layers causal",
+    "evidence_level": "Explicit model card",
+    "evidence": "Each question prompt independently; full layers read later prompt tokens, linear layers causal; jev_prompt_attention=bidirectional.",
+    "sources": [
+      "https://huggingface.co/startlux-models/StartLux-Decision-v1.1-27B-Instant"
+    ]
+  },
+  {
+    "engine": "pplx-decider-v1.2",
+    "name": "Perplexity Decider v1.2 (27B)",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.2",
+    "attention": "full-attention layers bidirectional; recurrent layers causal",
+    "evidence_level": "Explicit model card",
+    "evidence": "Full-attention layers noncausal over entire joint request; native linear-attention remains causal.",
+    "sources": [
+      "https://huggingface.co/perplexity-ai/pplx-decider-v1.2"
+    ]
+  },
+  {
+    "engine": "amos-1-large",
+    "name": "Amos 1 Large (27B)",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/mukaddamzaid/amos-1-large",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "lychee-27b",
+    "name": "Lychee-27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/LycheeAI/Lychee-27B",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "drex-max-v1",
+    "name": "Nace.AI Drex Max v1 (27B)",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": null,
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "matilda-decision-v1",
+    "name": "Matilda Decision v1",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/Maincode/matilda-decision-v1",
+    "attention": "full-attention layers bidirectional",
+    "evidence_level": "Explicit model card",
+    "evidence": "Trained with bidirectional attention and bundled runtime; full layers see whole prompt.",
+    "sources": [
+      "https://huggingface.co/Maincode/matilda-decision-v1"
+    ]
+  },
+  {
+    "engine": "sieve-27b-v2",
+    "name": "Sieve 27B v2",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/sthanika-ai/Sieve-27B-v2",
+    "attention": "causal",
+    "evidence_level": "Source",
+    "evidence": "load_sieve dispatches Sieve-27B-v2 to pointer loader. model.logits uses each question as a batch of causal rows, native backbone and only 2D padding mask, with optional cached state.",
+    "sources": [
+      "https://huggingface.co/sthanika-ai/Sieve-27B-v2",
+      "https://github.com/sthanika-ai/Sieve/blob/1e64657c930f91db7119b5638774c0f11a77e441/sieve/load.py#L215-L234",
+      "https://github.com/sthanika-ai/Sieve/blob/1e64657c930f91db7119b5638774c0f11a77e441/sieve/model.py#L112-L142"
+    ]
+  },
+  {
+    "engine": "cerno-27b",
+    "name": "Cerno 27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/apertixai/cerno-27b",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "onejev1.6-27b",
+    "name": "OneJev1.6-27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/OmniJev/OneJev1.6-27B",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "jebadiah-27b-v2.1-t1e",
+    "name": "frontier-infra Jebadiah 27B v2.1 (t1e)",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "visionjev-1.0.0",
+    "name": "VisionJEV 1.0.0 (27B)",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/taoszhang/VisionJEV",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "lumma-fev-27b",
+    "name": "Lumma-fev-27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/FrontiersMind/Lumma-fev-27B",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "ainvest-decision-27b-v1.0",
+    "name": "Ainvest-Decision-27B v1.0",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/Ainvest-World/Ainvest-Decision-27b-v1.0",
+    "attention": "full-attention layers bidirectional; recurrent layers native",
+    "evidence_level": "Explicit model card",
+    "evidence": "Noncausal full-attention layers; recurrent preserve evaluated semantics.",
+    "sources": [
+      "https://huggingface.co/Ainvest-World/Ainvest-Decision-27b-v1.0"
+    ]
+  },
+  {
+    "engine": "wemm-jev-27b",
+    "name": "WeMM-JEV-27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/Rover00/WeMM-JEV",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "oneshot-27b",
+    "name": "OneShot 27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/OneShotOrg/OneShot",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "vera-large",
+    "name": "vera-large",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/scar-ai/vera-large",
+    "attention": "full-attention layers bidirectional; recurrent layers causal",
+    "evidence_level": "Explicit model card",
+    "evidence": "is_causal:false, encoder-only full attention; Gated DeltaNet stays causal.",
+    "sources": [
+      "https://huggingface.co/scar-ai/vera-large"
+    ]
+  },
+  {
+    "engine": "ntele-hybrid-27b-v1",
+    "name": "NTele-Hybrid-27B-v1",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/ZTE-AIM/NTele-Hybrid-27B-v1",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  },
+  {
+    "engine": "nimble-v4-max-v4.1",
+    "name": "Bespoke Nimble v4.1 Max (27B)",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/bespokelabs/Nimble-v4-max",
+    "attention": "prefix/block-bidirectional full-attention layers; field/chat tail and recurrent layers causal",
+    "evidence_level": "Source + released schema_config",
+    "evidence": "schema_config.json prefix_attention=bidirectional_v1. Request tokens through last Requested field: form block id 0; field name/chat tail block id -1 remain causal. Request block reads both directions in full-attention layers. Shared-prefix runtime preserves this.",
+    "sources": [
+      "https://huggingface.co/bespokelabs/Nimble-v4-max/blob/main/schema_config.json",
+      "https://huggingface.co/datasets/bespokelabs/nimble-v4-max-decision-index/blob/main/code/nimble/training/prefix_attention.py",
+      "https://huggingface.co/datasets/bespokelabs/nimble-v4-max-decision-index/blob/main/code/nimble/evaluation/decision_index_engine.py"
+    ]
+  },
+  {
+    "engine": "piccolo-27b",
+    "name": "Piccolo 27B",
+    "base_model": "Qwen/Qwen3.5-27B",
+    "model_url": "https://huggingface.co/agentscope-ai/Piccolo-27B",
+    "attention": "bidirectional (author stated; exact mask not audited)",
+    "evidence_level": "Model card",
+    "evidence": "Tags bidirectional-attention and requires included reference implementation for bidirectional attention.",
+    "sources": [
+      "https://huggingface.co/agentscope-ai/Piccolo-27B"
+    ]
+  },
+  {
+    "engine": "glide-v1.2.1-loop",
+    "name": "GLiDE 27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/fastino/GLiDE-27B",
+    "attention": "full-attention layers bidirectional; recurrent layers native",
+    "evidence_level": "Source",
+    "evidence": "attention_masks returns full_attention=padding[:,None,None,:].bool(), no causal triangle; linear_attention is padding only.",
+    "sources": [
+      "https://huggingface.co/fastino/GLiDE-27B/blob/main/glide/model.py#L35-L39"
+    ]
+  },
+  {
+    "engine": "torchcast-decision-27b",
+    "name": "Torchcast Decision 27B",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "model_url": "https://huggingface.co/torchcast-ai/torchcast-decision-27b",
+    "attention": "unknown",
+    "evidence_level": "Card scanned only",
+    "evidence": "No direct causal/full/block classification justified from scanned card.",
+    "sources": []
+  }
+]

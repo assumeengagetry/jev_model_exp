@@ -1,6 +1,0 @@
-{
-  "pid": 56660,
-  "log": "/home/dev/assumeengage/logs/formal-takeover-20261031.log",
-  "time": "2026-10-31T03:48:40.257250+00:00",
-  "operation": "resume existing full formal pipeline with process-local NCCL shared-memory workaround"
-}

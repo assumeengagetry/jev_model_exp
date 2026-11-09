@@ -1,3 +1,0 @@
-{"event": "pilot_training_selection_ready", "pairs": 100000, "effective_tokens": 22871000, "domain_pairs": {"knowledge": 16912, "retrieval": 60789, "tools": 8692, "arts": 13607}, "new_teacher_calls": 0}
-{"event": "three_pilot_training_processes_launched", "pairs_per_arm": 100000, "pids": {"HARD": 241747, "SOFT": 241748, "HYBRID": 241749}}
-{"event": "three_pilot_training_arms_complete", "exit_codes": {"HARD": 0, "SOFT": 0, "HYBRID": 0}}

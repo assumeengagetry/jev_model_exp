@@ -1,9 +1,0 @@
-{
-  "model": "MERGE_SAMERGING",
-  "worker": 1,
-  "new_requests": 27400,
-  "terminal_requests_in_shard": 27400,
-  "seconds": 5094.494580958039,
-  "nonpadding_tokens": 253446255,
-  "micro_token_budget": 32768
-}

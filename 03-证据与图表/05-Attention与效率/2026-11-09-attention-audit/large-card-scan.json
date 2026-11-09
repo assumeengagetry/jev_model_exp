@@ -1,0 +1,398 @@
+[
+  {
+    "engine": "decision-2.0-vega-27b",
+    "url": "https://huggingface.co/vllm-sr/Decision-2.0-Vega-27B",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "base_model_relation: adapter",
+      "**Decision-2.0-Vega-27B** is the 27B model of [Decision 2.0](https://huggingface.co/collections/vllm-sr/decision-20-6ab7cf7bdfb506bf8269cb00), the decision models of [vLLM Semantic Router](https://github.com/vllm-project/semantic-router). Give it an input (text or JSON) and the questions you need answered: pick one of several options, say yes or no, or rate on a scale. It answers them all at once and returns a probability for every answer, without generating text."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "kev-27b",
+    "url": "https://huggingface.co/jaredpalmer/kev-27b",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "base_model_relation: finetune",
+      "| Developer | Jared Palmer ([github.com/jaredpalmer/kev](https://github.com/jaredpalmer/kev)) |",
+      "| Model type | Decision model: a causal language-model backbone run prefill-only, with a pointer head over the options |",
+      "| Backbone | `Qwen/Qwen3.8-27B` (revision `1d4bf0f2`, Qwen's post-trained release): 64 layers, 48 Gated DeltaNet (linear attention) and 16 full attention, hidden size 5,120; every backbone weight fine-tuned |",
+      "git clone https://github.com/jaredpalmer/kev.git && cd kev && uv sync --extra serve",
+      "One epoch over a private corpus of 145,840 records (337,130 questions) with states of at most 32,768 tokens. Only its manifest is public (`evals/sft-v2-r22/manifest.json` in the GitHub repository).",
+      "- **Hardware.** It needs an 80 GB-class data-centre GPU (more than 80 GB for the longest states). Apple Silicon via MLX: v2's full bf16 weights need about 51 GB plus working memory, so a 64 GB Mac is borderline and a 96–128 GB Mac should fit. This is expected from measurements on smaller models, not yet measured on a large Mac: loading a full-weight Kev-4B through the same path peaked at the size of its weights (8.4 GB), and its answers were within 0.015 of the fp32 evaluation path (`runs/mlx-full-4b`). v1 (the LoRA adapter, tag `v1-lora`) was served through MLX on a 128 GB M5 Max by an external contributor ([PR #175](https://github.com/jaredpalmer/kev/pull/175)): 0.849 accuracy on transfer-v4 development against the published 0.848, 52 GB steady and 97 GB at peak while the adapter was merged.",
+      "- Code, suites and evaluation reports: [github.com/jaredpalmer/kev](https://github.com/jaredpalmer/kev). Release numbers: `runs/release/kev-27b-r23.json` (`scripts/release_numbers.py --release kev-27b-r23`).",
+      "Questions and issues: [github.com/jaredpalmer/kev/issues](https://github.com/jaredpalmer/kev/issues)."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "simple-jev-qwen3.8-27b",
+    "url": null,
+    "hits": [],
+    "error": ""
+  },
+  {
+    "engine": "jev-27b",
+    "url": "https://huggingface.co/autotrust/JEV-27B",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "base_model_relation: finetune",
+      "| **Accuracy relative to Jev** on [`decision-models-under-pressure`](https://github.com/gazelle93/decision-models-under-pressure), 16 options, human gold labels | JEV-27B 96 % · JEV-9B 90 % · Laya 90 % · DeBERTa-v3-large zero-shot 90 % · DeBERTa-v3-base zero-shot 83 % · GLiClass-large 81 % · bge-large 73 % · gte-large 69 % | Closest of the models measured there (JEV rows are AutoTrust re-runs of the same items; the others were run by the benchmark's author) |",
+      "| **Score parity on community leaderboards** | [Decision Index 0.2](https://huggingface.co/spaces/multimodalart/jev-decision-index): Jev 51.67, AutoJev-27B 50.94. [JevBench v1.4.2](https://github.com/fstandhartinger/jevbench): decider-4b v2 64.13, Jev 63.29, JevK5 62.04. [Open-Jev](https://zefan-cai.github.io/open-jev/benchmarks/) public JevBench subset: Jev 200/231, Open-Jev 27B v1.1 197/231 | Not yet submitted to these leaderboards. On the public JevBench set in our own runs: JEV-27B 88.70, Jev 87.18 (family-macro score) |",
+      "| One decision, single request | 238 ms mean over 29,600 calls ([`decision-models-under-pressure`](https://github.com/gazelle93/decision-models-under-pressure)); 291–301 ms median on three workloads ([Open-Jev](https://zefan-cai.github.io/open-jev/benchmarks/)) | ≈ 90 ms median | **137 ms** median |",
+      "[`gazelle93/decision-models-under-pressure`](https://github.com/gazelle93/decision-models-under-pressure) (published",
+      "* Prefix caching: this architecture mixes Gated DeltaNet and attention layers, and vLLM caches it in blocks of 528",
+      "**linear fp32 head `H → 24 slots`** (`noul` → slots 0–1, `score` → 2–7, `choice` → 8–23). Inactive slots are masked,",
+      "from transformers import AutoModelForCausalLM, AutoTokenizer",
+      "base = AutoModelForCausalLM.from_pretrained(repo, dtype=torch.bfloat16, device_map=\"cuda\")  # == Qwen3.8-27B text model",
+      "| software | torch 2.13 + cu130, transformers 5.16, peft 0.21, flash-linear-attention 0.5.2 |"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "eikos-27b-fp8",
+    "url": "https://huggingface.co/caiovicentino1/Eikos-27B-FP8",
+    "hits": [
+      "base_model: caiovicentino1/Eikos-27B",
+      "base_model_relation: quantized",
+      "  Submission: [#19](https://github.com/apolinario/decision-index/pull/19).",
+      "  Leaderboard submission: [#12](https://github.com/McGill-NLP/agent-reward-bench/issues/12).",
+      "- Run records: [gist](https://gist.github.com/caiovicentino/b5969ca7a71f34a9fc50519915328ef7). Listing request:",
+      "  [#2](https://github.com/Jevals/jevals-data/issues/2).",
+      "items, speed and cost, is requested: [#117](https://github.com/fstandhartinger/jevbench/issues/117)."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "jade",
+    "url": "https://huggingface.co/theunnecessarythings/JADE",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "[the official reproduction kit](https://github.com/apolinario/decision-index).",
+      "[Decision Index instructions](https://github.com/apolinario/decision-index)."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "decider-chat-qwen3.6-27b",
+    "url": null,
+    "hits": [],
+    "error": ""
+  },
+  {
+    "engine": "clef",
+    "url": "https://huggingface.co/Cloudflare/clef",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "base_model_relation: finetune"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "jevfire-uncapped",
+    "url": null,
+    "hits": [],
+    "error": ""
+  },
+  {
+    "engine": "solomon-v11-bf16-encoding",
+    "url": "https://huggingface.co/DoccyHealth/Solomon",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "base_model_relation: adapter",
+      "linear-attention recurrence promoted to float32 (`precision='bf16'`, the configuration the model was trained",
+      "its own measured numbers below and its own identity: `precision='fp32'` (float32 weights and attention,",
+      "src/solomon/engine_numerics.py       versioned CUDA repair: bounded FP32 attention, FP64 recurrent accumulation",
+      "| **CC BY-SA** | WordPress.com (Automattic) Terms of Service, last updated April 10, 2026 | [https://github.com/Automattic/legalmattic/blob/master/Terms%20of%20Service/WordPress.com/EN-Terms-of-Service.md](https://github.com/Automattic/legalmattic/blob/master/Terms%20of%20Service/WordPress.com/EN-Terms-of-Service.md) | CC BY-SA 4.0 (Automattic/legalmattic LICENSE.txt and README; the Terms themselves state they are available under a Creative Commons Sharealike license) |",
+      "|  | Sourcegraph Handbook: Spending company money | [https://github.com/sourcegraph/handbook/blob/main/content/benefits-pay-perks/benefits-perks/spending-company-money.md](https://github.com/sourcegraph/handbook/blob/main/content/benefits-pay-perks/benefits-perks/spending-company-money.md) | Apache License 2.0 (LICENSE of the public sourcegraph/handbook repository) |",
+      "|  | Project Jupyter Governance: Executive Council | [https://raw.githubusercontent.com/jupyter/governance/main/docs/executive_council.md](https://raw.githubusercontent.com/jupyter/governance/main/docs/executive_council.md) | CC0 1.0 Universal (jupyter/governance repository LICENSE.md) |",
+      "| `flash-linear-attention` | 0.5.2 | NOT VERIFIED |"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "linne-fern-1.0",
+    "url": "https://huggingface.co/MISA-core/linne-fern-1-0",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "base_model_relation: finetune",
+      "from transformers import AutoModelForCausalLM, AutoTokenizer",
+      "model = AutoModelForCausalLM.from_pretrained(name, dtype=torch.bfloat16, device_map=\"auto\")"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "qwen-decision-27b-noncausal",
+    "url": "https://huggingface.co/jsaurabh/qwen-decision-27b-noncausal-lora",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "# Qwen Decision 27B — noncausal LoRA",
+      "Measured HTTP latency on one RTX PRO 6000 Blackwell 96 GB: median 105.9 ms, mean 383.2 ms, p95 1565.3 ms. Startup excluded. These numbers are not the maintainers' held-out latency gate. The run used the correct PyTorch causal-convolution fallback, without `causal_conv1d` installed.",
+      "hf download jsaurabh/qwen-decision-27b-noncausal-lora --local-dir qwen-decision-27b",
+      "The single-process server binds `127.0.0.1:8765`. `GET /health` reports the loaded configuration. `POST /v1/systemone` expects model `our-noncausal-27b-step1533` and the normal System One `state` and `questions` fields. Use an SSH tunnel when the evaluator is on another machine. The server is intended for local evaluation, without production authentication or concurrency handling.",
+      "For the official benchmark, build the private corpus following the [Decision Index instructions](https://github.com/apolinario/decision-index), use commit `9eb2dbe2a358004c8782c66e40a83ac07b953fec`, then run:",
+      "  --option model=our-noncausal-27b-step1533 \\",
+      "  --out runs/noncausal-step1533 --compact",
+      "- Noncausal mask in full SDPA attention layers; recurrent linear-attention layers retain their native mask. Last-token pooling, dedicated 255-way readout, no KV cache.",
+      "Data preparation used a deterministic two-thirds sample per suite from the archived 0.75-scale text corpus plus the project's synthetic banking gap curriculum. It filtered rendered inputs to 480 tokens to leave a 32-token margin for option shuffling. Namespaced family separation was checked between training/development/calibration splits. This was a fresh attention-ablation experiment, not a byte-identical rerun of historical banking experiments."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "reflex-27b-pmscr",
+    "url": null,
+    "hits": [],
+    "error": ""
+  },
+  {
+    "engine": "rsi-jev-v6.1-vl-27b-auto",
+    "url": "https://huggingface.co/shgao/rsi-jev-v6.1-vl-27b",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "[Jev HTTP API](https://github.com/Shanghua-Gao/RSI-Jev/blob/main/serve/README.md).",
+      "pip install \"rsi-jev[fast,vision] @ git+https://github.com/Shanghua-Gao/RSI-Jev\"",
+      "[project repository](https://github.com/Shanghua-Gao/RSI-Jev/tree/main/versions).",
+      "Unchanged from [v6.1-VL](https://github.com/Shanghua-Gao/RSI-Jev/blob/main/versions/v6.1-vl.md#1-the-task): a state (text, optionally up to four images),",
+      "exists). Every training stage is LoRA (rank 64, alpha 64) on attention and MLP projections of all",
+      "the next. The option readout is v6.1-VL's: cross-attention over each option's own tokens.",
+      "pip install \"rsi-jev[fast,vision] @ git+https://github.com/Shanghua-Gao/RSI-Jev\"",
+      "across releases ([v6.0-VL's record](https://github.com/Shanghua-Gao/RSI-Jev/blob/main/versions/v6.0-vl.md), §4.1); final-set ECE is in §4.1 below. The 27B",
+      "The 4B figures are from [v6.1-VL's record](https://github.com/Shanghua-Gao/RSI-Jev/blob/main/versions/v6.1-vl.md)."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "startlux-decision-v1.1-27b-instant",
+    "url": "https://huggingface.co/startlux-models/StartLux-Decision-v1.1-27B-Instant",
+    "hits": [
+      "Formats: **BF16** · [GGUF](https://huggingface.co/startlux-models/StartLux-Decision-v1.1-27B-Instant-GGUF) · [MLX 8-bit](https://huggingface.co/startlux-models/StartLux-Decision-v1.1-27B-Instant-MLX-8bit) · [MLX 4-bit](https://huggingface.co/startlux-models/StartLux-Decision-v1.1-27B-Instant-MLX-4bit) · Code: [StartLuxLabs/StartLux-Decision](https://github.com/StartLuxLabs/StartLux-Decision) · Paper: [arXiv 2610.17309](https://arxiv.org/abs/2610.17309)",
+      "Each question is read as its own prompt that holds the whole state. At the last prompt position the logits of the option letters are divided by a temperature for the question type and normalised over the listed options. In the full-attention layers, one in four, prompt tokens also attend to later prompt tokens, so the state is read with the question in view, while the linear-attention layers stay causal. `config.json` declares this with `\"jev_prompt_attention\": \"bidirectional\"`, and an engine that reads the prompt causally serves a different model without an error.",
+      "Stage 1 fine-tuned all weights on about 0.8 million decision examples. Stage 2 trained an adapter with bidirectional prompt attention on about 1.7 million further examples and merged it. The released weights are the uniform average of four such runs that differ only in their random seeds.",
+      "git clone https://github.com/StartLuxLabs/StartLux-Decision.git",
+      "Every choice answer carries `none_probability`, the share of the read-out that goes to an extra \"None of the above\" option the server adds internally. `choice` stays one of your options, and `probabilities` covers only your options. With `\"allow_none\": true`, `choice` is null when \"None of the above\" is the most likely option. [docs/none_probability.md](https://github.com/StartLuxLabs/StartLux-Decision/blob/main/docs/none_probability.md) explains how to read it and why we suggest acting on it from 0.2. [docs/api.md](https://github.com/StartLuxLabs/StartLux-Decision/blob/main/docs/api.md) has the full format, including images (base64 strings or data URIs, at most 8 per request).",
+      "On vLLM, `serve --launch-vllm` enables the package's plugin, which reads the prompt bidirectionally, and stops unless every vLLM server confirms it. The GGUF files carry llama.cpp's non-causal flag and need the server settings of the GGUF repository, and the package's MLX backend applies the bidirectional mask itself. Plain vLLM, llama.cpp, mlx-lm or mlx-vlm read the prompt causally and give a different model."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "pplx-decider-v1.2",
+    "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.2",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "base_model_relation: finetune",
+      "All questions in a request share one sequence. Full attention is noncausal, so every question attends to the state",
+      "- full attention uses varlen FlashAttention restricted to each request;",
+      "- the linear-attention state and the short convolution restart at every request boundary;",
+      "Requirements: CUDA, `flash-linear-attention` (`requirements-fast.txt`), and torch ≥ 2.10 for",
+      "`torch.nn.attention.varlen`. The FlashAttention kernel ships with torch, so no `flash-attn` build is needed.",
+      "- Full-attention layers are **noncausal** over the whole request. The linear-attention layers keep their native",
+      "  causal behavior. Default causal inference does not reproduce this checkpoint.",
+      "  noncausal attention and the per-marker readout. Readout row `i` corresponds to vocabulary row",
+      "- **`ImportError: ... flash-linear-attention`**: install `requirements-fast.txt`, or use `fast=False`.",
+      "A large part of the gains are thanks to the [tasksource](https://github.com/sileod/tasksource) data. If you also use"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "amos-1-large",
+    "url": "https://huggingface.co/mukaddamzaid/amos-1-large",
+    "hits": [
+      "base_model:"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "lychee-27b",
+    "url": "https://huggingface.co/LycheeAI/Lychee-27B",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "drex-max-v1",
+    "url": null,
+    "hits": [],
+    "error": ""
+  },
+  {
+    "engine": "matilda-decision-v1",
+    "url": "https://huggingface.co/Maincode/matilda-decision-v1",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "pip install flash-linear-attention  # optional: fast GPU kernels for the linear-attention layers",
+      "The model was trained with **bidirectional attention**: its full-attention layers see the whole prompt at once,",
+      "loads the bundled runtime (`matilda_decision_runtime.py`), which sets this up. Loading the weights as a plain causal backbone, or serving them in a causal engine, gives different and worse answers."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "sieve-27b-v2",
+    "url": "https://huggingface.co/sthanika-ai/Sieve-27B-v2",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "base_model_relation: finetune",
+      "[github.com/sthanika-ai/Sieve](https://github.com/sthanika-ai/Sieve).",
+      "pip install -r https://raw.githubusercontent.com/sthanika-ai/Sieve/main/requirements.txt   # the tested versions (torch 2.8.0)",
+      "pip install \"sieve-decisions[serve] @ git+https://github.com/sthanika-ai/Sieve\"",
+      "pip install --no-build-isolation causal-conv1d==1.7.0   # optional on A100 / H100: the fused convolution kernel (needs nvcc 11.6 or later)",
+      "- **causal-conv1d.** Our training, Decision Index and latency runs were on NVIDIA B300 GPUs, for which causal-conv1d",
+      "[kit](https://github.com/apolinario/decision-index) at `f5a6e4f` (0.3) and its scorer."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "cerno-27b",
+    "url": "https://huggingface.co/apertixai/cerno-27b",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "    <a href=\"https://github.com/apertixsk/cerno-inference\">Inference code</a> &middot;",
+      "git clone https://github.com/apertixsk/cerno-inference && cd cerno-inference",
+      "             \"criteria\": [\"no action needed\", \"can wait a few days\", \"should be handled today\", \"needs attention right now\"]},",
+      "| `urgency` | **can wait a few days** (level 1) | no action needed 0.06, can wait a few days 0.56, should be handled today 0.34, needs attention right now 0.04 |"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "onejev1.6-27b",
+    "url": "https://huggingface.co/OmniJev/OneJev1.6-27B",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "  <a href=\"https://github.com/OmniJev/OneJev\"><img alt=\"GitHub\" src=\"https://img.shields.io/badge/GitHub-OmniJev%2FOneJev-181717?style=flat-square&logo=github&logoColor=white\"></a>",
+      "  <a href=\"https://omnijev.github.io/OneJev/\"><img alt=\"Website\" src=\"https://img.shields.io/badge/Website-OneJev-0A84FF?style=flat-square&logo=googlechrome&logoColor=white\"></a>",
+      "  <a href=\"https://github.com/OmniJev/OneJev/blob/main/LICENSE\"><img alt=\"License\" src=\"https://img.shields.io/badge/License-Apache_2.0-D22128?style=flat-square&logo=apache&logoColor=white\"></a>",
+      "[Flide](https://github.com/OmniJev/Flide) serves TypeSafe's System One API plus a `media` field for images and video. More examples are on [GitHub](https://github.com/OmniJev/OneJev).",
+      "  howpublished = {\\url{https://github.com/OmniJev/OneJev}}"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "jebadiah-27b-v2.1-t1e",
+    "url": "https://huggingface.co/frontier-infra/jebadiah-27b-v2-1",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "base_model_relation: finetune",
+      "[Code](https://github.com/getainode/jebadiah) · [Run locally](https://github.com/getainode/jebadiah/blob/main/docs/run-locally.md) · [GGUF](https://huggingface.co/frontier-infra/jebadiah-27b-v2-1-GGUF) · [MLX 4-bit](https://huggingface.co/frontier-infra/jebadiah-27b-v2-1-MLX-4bit) · [MLX 8-bit](https://huggingface.co/frontier-infra/jebadiah-27b-v2-1-MLX-8bit)",
+      "Use [the pinned Decision Index engine](https://github.com/getainode/jebadiah/blob/678f6e2cc2bb1b51f34407d00255b5e13109ce3f/eval/decision-index/jebadiah_engine.py) with the released checkpoint. The recipe repeats the request payload inside the prompt. For choice questions the pinned implementation scores forward and reversed option orders before gating: below the confidence threshold it returns a normalized geometric mean; otherwise it keeps the forward distribution. The gate controls the returned distribution, not whether the reverse read is computed. Thinking remains disabled, and the shipped calibration is unchanged.",
+      "| Engine | `678f6e2cc2bb1b51f34407d00255b5e13109ce3f` | Git commit | [engine, 2026-10-12](https://github.com/getainode/jebadiah/blob/678f6e2cc2bb1b51f34407d00255b5e13109ce3f/eval/decision-index/jebadiah_engine.py) | `decision-index-t1e` peels to this commit. |",
+      "| `reverse_avg_below` | 0.7 | probability | [engine, 2026-10-12](https://github.com/getainode/jebadiah/blob/678f6e2cc2bb1b51f34407d00255b5e13109ce3f/eval/decision-index/jebadiah_engine.py) | Choice-only distribution gate; both orders are computed. |",
+      "Submission: [Decision Index PR](https://github.com/apolinario/decision-index/pull/199). The result dataset pins the model and inference code. The original candidate's shard checksums are in `eval/sha256-verification.json`; the checkpoint was not retrained for T1e."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "visionjev-1.0.0",
+    "url": "https://huggingface.co/taoszhang/VisionJEV",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "lumma-fev-27b",
+    "url": "https://huggingface.co/FrontiersMind/Lumma-fev-27B",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "base_model_relation: finetune",
+      "For speed, also install the `flash-linear-attention` and `causal-conv1d` kernels; without them transformers uses"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "ainvest-decision-27b-v1.0",
+    "url": "https://huggingface.co/Ainvest-World/Ainvest-Decision-27b-v1.0",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "- Custom `Qwen3_8ForDecision`, Qwen3.5-family backbone architecture, 255-way readout, last-token pooling, noncausal full-attention layers; recurrent layers preserve their evaluated semantics.",
+      "- This is a custom decision checkpoint; use the included Python package. A stock causal-LM generation pipeline does not implement its readout protocol. Vision is not evaluated or claimed in this release.",
+      "Validated environment: Python 3.12, PyTorch 2.14.0+cu126, Transformers 5.17.0, Linux, NVIDIA H200. Use a CUDA-appropriate PyTorch build. The hybrid-attention kernel dependencies in `requirements.lock.txt` must also be installed; `causal-conv1d` may require a matching CUDA toolkit/build environment.",
+      "Install the official [Decision Index kit](https://github.com/apolinario/decision-index) separately. The included adapter subclasses its Engine when the kit is installed:",
+      "A large part of the gains are thanks to the [**tasksource**](https://github.com/sileod/tasksource) data."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "wemm-jev-27b",
+    "url": "https://huggingface.co/Rover00/WeMM-JEV",
+    "hits": [],
+    "error": ""
+  },
+  {
+    "engine": "oneshot-27b",
+    "url": "https://huggingface.co/OneShotOrg/OneShot",
+    "hits": [
+      "Requirements: Linux, Bash ≥ 4.3, Python 3.12, CUDA Toolkit 12.8 (with `nvcc` available), and an NVIDIA driver compatible with CUDA 12.8. The GPU must support BF16 and [FlashAttention 2](https://github.com/Dao-AILab/flash-attention/tree/v2.8.1#nvidia-cuda-support)."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "vera-large",
+    "url": "https://huggingface.co/scar-ai/vera-large",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "answer code, the full-attention layers see the whole prompt (the Gated DeltaNet layers stay causal), and each option",
+      "option's own line. Training updates the full-attention projections, the DeltaNet gates and every norm in full and the",
+      "an 80 GB-class card or larger (H100 80GB, RTX PRO 6000 96GB, MI300X). `[fast]` adds flash-linear-attention for the",
+      "| SGLang | **Not supported yet** | Its Qwen3.5 full-attention layers are causal only; vera-large's read the whole prompt. |",
+      "full-attention layers bidirectional (`is_causal: false`, encoder-only attention), and the vera readout runs on top.",
+      "Chunked prefill and prefix caching are off, since a bidirectional prompt must be read in one piece. Answers match the"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "ntele-hybrid-27b-v1",
+    "url": "https://huggingface.co/ZTE-AIM/NTele-Hybrid-27B-v1",
+    "hits": [
+      "base_model:"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "nimble-v4-max-v4.1",
+    "url": "https://huggingface.co/bespokelabs/Nimble-v4-max",
+    "hits": [
+      "base_model: Qwen/Qwen3.8-27B",
+      "Use the inference code in [bespokelabs/nimble-v4-max-decision-index](https://huggingface.co/datasets/bespokelabs/nimble-v4-max-decision-index) (`code/nimble/`). It builds the prompts that `schema_config.json` pins by hash, reads each request with the attention pattern the model was trained with, and scores one token per option. Loading the weights as a plain chat model, or generating text, does not reproduce its answers."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "piccolo-27b",
+    "url": "https://huggingface.co/agentscope-ai/Piccolo-27B",
+    "hits": [
+      "base_model: Qwen/Qwen3.5-27B",
+      "- bidirectional-attention",
+      "<a style=\"display:inline-flex;margin:0\" href=\"https://github.com/agentscope-ai/Piccolo\"><img style=\"display:block;margin:0\" src=\"https://huggingface.co/agentscope-ai/Piccolo-27B/resolve/main/assets/links/project.png\" width=\"87\" height=\"28\" alt=\"Project\"></a>",
+      "Use the included reference implementation for bidirectional attention and candidate scoring.",
+      "Use the [request example](https://github.com/agentscope-ai/Piccolo/tree/main/inference) to prepare `request.json`.",
+      "Use Piccolo locally for tool review and context selection with the [QwenPaw setup guide](https://github.com/agentscope-ai/Piccolo/blob/main/docs/QWENPAW.md).",
+      "[Benchmark results](https://github.com/agentscope-ai/Piccolo/tree/main/evaluation) are for the full checkpoint."
+    ],
+    "error": ""
+  },
+  {
+    "engine": "glide-v1.2.1-loop",
+    "url": "https://huggingface.co/fastino/GLiDE-27B",
+    "hits": [
+      "- `flash-linear-attention==0.5.2` is optional but recommended: it provides fast kernels for the linear-attention layers. Without it",
+      "- At load, transformers logs that `causal_conv1d` is not installed and uses its PyTorch path. This is expected: the validated setup",
+      "**Max context.** 40,000 tokens per question prompt by default. Full-attention cost grows quadratically with length, so long",
+      "**Cold start and the kernel cache.** The linear-attention kernels are compiled and autotuned by Triton on first use of each new",
+      "**Precision.** Weights and compute are bf16 with PyTorch SDPA attention (`Glide.from_pretrained` disables the cuDNN SDPA backend"
+    ],
+    "error": ""
+  },
+  {
+    "engine": "torchcast-decision-27b",
+    "url": "https://huggingface.co/torchcast-ai/torchcast-decision-27b",
+    "hits": [
+      "Decision Index: the official kit ([apolinario/decision-index](https://github.com/apolinario/decision-index), release",
+      "80GB; rows were answered in bf16 by our batched runner (`eval/di_batch.py` in the GitHub repository), with the suite",
+      "- `requirements.txt` installs the fast kernels, `flash-linear-attention` and `causal-conv1d`, and",
+      "pip install -r requirements.txt                          # causal-conv1d may need --no-build-isolation",
+      "[Torchcast-AI/torchcast-decision-27b](https://github.com/Torchcast-AI/torchcast-decision-27b)."
+    ],
+    "error": ""
+  }
+]
