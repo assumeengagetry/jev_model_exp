@@ -1,0 +1,93 @@
+{
+  "model": "KD_HYBRID",
+  "complete": true,
+  "pool_pairs": 1000000,
+  "pairs_seen": 1000000,
+  "epochs": 1,
+  "effective_tokens": 314094515,
+  "elapsed_seconds": 9909.467533788993,
+  "effective_tokens_per_second": 31696.406888564932,
+  "seen_domains": {
+    "knowledge": 250000,
+    "retrieval": 250000,
+    "tools": 250000,
+    "arts": 250000
+  },
+  "optimizer_steps": 7813,
+  "global_effective_batch": 128,
+  "student_parent": "models/Qwen3-0.6B-common-pair-init-r32",
+  "active_training_domains": [
+    "knowledge",
+    "retrieval",
+    "tools",
+    "arts"
+  ],
+  "supervision": "KD_HYBRID",
+  "learning_rate": 0.0001,
+  "seed": 42,
+  "exploration_policy": {
+    "method": "low_temperature_forward_binary_kd",
+    "base_recipe": {
+      "method": "tools_only_intercept_calibration",
+      "tools_logit_bias": -1.2826099976040561,
+      "other_teacher_probabilities_unchanged": true,
+      "domain_weights": {
+        "knowledge": 0.5,
+        "retrieval": 0.25,
+        "tools": 0.5,
+        "arts": 0.0
+      }
+    },
+    "controls": {
+      "kind": "fixed_half",
+      "initial_temperature": 0.5,
+      "final_temperature": 0.5,
+      "matched_domain_multipliers": {
+        "knowledge": 1.0,
+        "retrieval": 1.0,
+        "tools": 1.0,
+        "arts": 1.0
+      }
+    }
+  },
+  "loss_implementation": "T1 exact cached effective target; T<1 source BCE plus T^2 forward binary KL",
+  "temperature_controls": {
+    "kind": "fixed_half",
+    "initial_temperature": 0.5,
+    "final_temperature": 0.5,
+    "matched_domain_multipliers": {
+      "knowledge": 1.0,
+      "retrieval": 1.0,
+      "tools": 1.0,
+      "arts": 1.0
+    }
+  },
+  "teacher_logit_cache_path": "runs/distillation-temperature-20261106/targets/calibrated-teacher-logits.npy",
+  "source_branch_temperature": 1.0,
+  "kd_teacher_and_student_temperature_scaled": true,
+  "kd_temperature_squared_multiplier": true,
+  "mixing_statistics": {
+    "mean_teacher_weight": 0.3125,
+    "all_source_pairs_retained": 1000000
+  },
+  "common_initialization": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+  "precision": "bf16",
+  "attention": "flash_attention_3",
+  "attention_implementation": "flash_attn3_hopper",
+  "attention_provider": "kernels-community/flash-attn3",
+  "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+  "sdpa_fallback": false,
+  "fa3_forward_calls": 1042972,
+  "fa3_backward_calls": 1042972,
+  "actual_training_kernel_executed": true,
+  "micro_token_budget_final": 16384,
+  "oom_retries": 0,
+  "gradient_checkpointing": false,
+  "communication": "gloo_cpu_float32_adapter_gradients",
+  "peak_allocated_gb": 33.16758394241333,
+  "training_pair_cap": 1000000,
+  "training_token_cap": null,
+  "milestone_pairs": 1000000,
+  "student_previously_finetuned": false,
+  "selection_metadata": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/SELECTION.json"
+}

@@ -1,0 +1,53 @@
+{
+  "trials": [
+    {
+      "name": "E17_E06_REPLAY",
+      "arm": "KD_HYBRID",
+      "gpu": 0,
+      "run_root": "runs/distillation-sharpness-20261106/E17_E06_REPLAY",
+      "config": "runs/distillation-sharpness-20261106/E17_E06_REPLAY/config.json",
+      "mode": "lora_r32",
+      "kind": "replay",
+      "trainer": "scripts/train-distillation-exploration.py"
+    },
+    {
+      "name": "E18_TEMPERATURE_HALF",
+      "arm": "KD_HYBRID",
+      "gpu": 1,
+      "run_root": "runs/distillation-sharpness-20261106/E18_TEMPERATURE_HALF",
+      "config": "runs/distillation-sharpness-20261106/E18_TEMPERATURE_HALF/config.json",
+      "mode": "lora_r32",
+      "kind": "fixed_half",
+      "trainer": "scripts/train-sharpness-exploration.py"
+    },
+    {
+      "name": "E19_ANNEAL1TOHALF",
+      "arm": "KD_HYBRID",
+      "gpu": 2,
+      "run_root": "runs/distillation-sharpness-20261106/E19_ANNEAL1TOHALF",
+      "config": "runs/distillation-sharpness-20261106/E19_ANNEAL1TOHALF/config.json",
+      "mode": "lora_r32",
+      "kind": "anneal_1_to_half",
+      "trainer": "scripts/train-sharpness-exploration.py"
+    },
+    {
+      "name": "E20_R32_LR5E5",
+      "arm": "KD_HYBRID",
+      "gpu": 3,
+      "run_root": "runs/distillation-sharpness-20261106/E20_R32_LR5E5",
+      "config": "runs/distillation-sharpness-20261106/E20_R32_LR5E5/config.json",
+      "mode": "lora_r32",
+      "kind": "lower_lr",
+      "trainer": "scripts/train-distillation-exploration.py"
+    }
+  ],
+  "pairs_per_trial": 1000000,
+  "new_teacher_pairs": 0,
+  "current_best": 23.16,
+  "evaluation_priority": [
+    0,
+    1,
+    2,
+    3
+  ]
+}

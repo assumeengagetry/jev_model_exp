@@ -1,0 +1,22 @@
+{
+  "purpose": "user-authorized quality search after same-seed numerical controls agreed",
+  "pairs_per_trial": 1000000,
+  "new_teacher_pairs": 0,
+  "reference_point": 20.51,
+  "reference_mixed": 22.49,
+  "extra_tests": false,
+  "extra_file_hash_checks": false,
+  "numerical_controls": {
+    "version": "explicit-fa3-torch-numerical-controls-v1",
+    "torch_deterministic_algorithms": true,
+    "warn_only": false,
+    "fa3_backward_deterministic": true,
+    "FLASH_ATTENTION_DETERMINISTIC": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "allow_tf32_unchanged": true,
+    "seed": 42
+  },
+  "bulk_outputs_on_scratch": true
+}

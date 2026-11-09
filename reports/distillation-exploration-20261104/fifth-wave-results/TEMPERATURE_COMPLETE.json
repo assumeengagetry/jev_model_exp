@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "completed_trials": [
+    "E13_STATIC_MATCHED",
+    "E14_TEMPERATURE2",
+    "E15_ANNEAL2TO1",
+    "E16_TEACHER_WARMUP"
+  ],
+  "best_model": "E06_TOOLS_CAL_GUARD",
+  "best_public_index": 23.16,
+  "previous_best_public_index": 23.16,
+  "delta_vs_previous_best": 0.0,
+  "trial_scores": {
+    "E13_STATIC_MATCHED": 20.73,
+    "E14_TEMPERATURE2": 21.75,
+    "E15_ANNEAL2TO1": 22.89,
+    "E16_TEACHER_WARMUP": 22.39
+  },
+  "matched_curriculum_comparison": {
+    "static_matched": 20.73,
+    "teacher_warmup": 22.39,
+    "warmup_minus_static": 1.6600000000000001,
+    "matching_scope": "per-domain cumulative nominal mixing coefficients under actual macro loss reduction; not gradient amounts"
+  },
+  "new_teacher_pairs": 0,
+  "report": "/home/dev/assumeengage/runs/distillation-temperature-20261106/report/REPORT.md"
+}

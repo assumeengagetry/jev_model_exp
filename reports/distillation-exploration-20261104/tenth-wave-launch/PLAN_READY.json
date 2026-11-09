@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "identity": {
+    "version": "original-row-point-v1",
+    "seed": 42,
+    "pairs": 1000000,
+    "relations": 0,
+    "optimizer_steps": 7813,
+    "global_batch_pairs": 128,
+    "plan_policy": "original PairPool.order(seed42,batch128); singleton units only; tail64",
+    "relation_normalization": "disabled for point-only zero-relation plan"
+  },
+  "full_macros": 7812,
+  "last_macro_pairs": 64,
+  "relations": 0
+}

@@ -1,0 +1,9 @@
+{
+  "pid": 291405,
+  "starttime": "103719598",
+  "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+  "launched_beijing": "2026-11-08T11:07:33.247639+08:00",
+  "command": "/home/dev/assumeengage/runs/distillation-repro-20261107/code/run-repro-distillation.py",
+  "mode": "resume_only_remaining_evaluations; all four training complete; E29 score preserved",
+  "log": "/home/dev/assumeengage/runs/distillation-repro-20261107/logs/pipeline-recovery-20261108.log"
+}

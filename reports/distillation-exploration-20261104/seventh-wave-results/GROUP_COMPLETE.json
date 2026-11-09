@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "completed_trials": [
+    "E21_GROUP_POINT",
+    "E22_GROUP_SOURCE_RANK",
+    "E23_GROUP_TEACHER_RANK",
+    "E24_GROUP_MIXED_RANK"
+  ],
+  "best_model": "E24_GROUP_MIXED_RANK",
+  "best_public_index": 23.96,
+  "previous_best_public_index": 23.19,
+  "delta_vs_previous_best": 0.7699999999999996,
+  "trial_scores": {
+    "E21_GROUP_POINT": 22.02,
+    "E22_GROUP_SOURCE_RANK": 22.1,
+    "E23_GROUP_TEACHER_RANK": 21.11,
+    "E24_GROUP_MIXED_RANK": 23.96
+  },
+  "matched_group_comparisons": {
+    "source_rank_minus_group_point": {
+      "left": 22.1,
+      "right": 22.02,
+      "difference": 0.08000000000000185
+    },
+    "teacher_rank_minus_source_rank": {
+      "left": 21.11,
+      "right": 22.1,
+      "difference": -0.990000000000002
+    },
+    "mixed_rank_minus_source_rank": {
+      "left": 23.96,
+      "right": 22.1,
+      "difference": 1.8599999999999994
+    }
+  },
+  "relations_per_trial": 3647,
+  "new_teacher_pairs": 0,
+  "report": "/home/dev/assumeengage/runs/distillation-group-20261106/report/REPORT.md"
+}

@@ -1,0 +1,15 @@
+{
+  "stage": "complete",
+  "updated_utc": "2026-11-08T16:51:09.978081+00:00",
+  "coordinator_pid": 305193,
+  "all_training_domains": [
+    "knowledge",
+    "language",
+    "retrieval",
+    "tools",
+    "arts"
+  ],
+  "extra_tests": false,
+  "hash_checks": false,
+  "final_model": "/tmp/opencode/jev-all-dimension-supervised-20261108/stage2/final"
+}

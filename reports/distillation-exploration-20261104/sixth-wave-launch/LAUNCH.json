@@ -1,0 +1,5 @@
+{
+  "pid": 237826,
+  "launched_beijing": "2026-11-06T13:08:52.722515+08:00",
+  "command": "/home/dev/assumeengage/runs/distillation-sharpness-20261106/code/run-sharpness-exploration.py"
+}

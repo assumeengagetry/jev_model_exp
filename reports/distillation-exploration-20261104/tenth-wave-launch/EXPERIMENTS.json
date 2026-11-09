@@ -1,0 +1,58 @@
+{
+  "trials": [
+    {
+      "name": "E33_SOURCE_RANK_DET",
+      "arm": "KD_HYBRID",
+      "gpu": 0,
+      "run_root": "runs/distillation-controlled-quality-20261108/E33_SOURCE_RANK_DET",
+      "config": "runs/distillation-controlled-quality-20261108/E33_SOURCE_RANK_DET/config.json",
+      "mode": "lora_r32",
+      "kind": "source",
+      "relations": 3647,
+      "trainer": "scripts/train-controlled-quality.py"
+    },
+    {
+      "name": "E34_MIX_TEACHER25_DET",
+      "arm": "KD_HYBRID",
+      "gpu": 1,
+      "run_root": "runs/distillation-controlled-quality-20261108/E34_MIX_TEACHER25_DET",
+      "config": "runs/distillation-controlled-quality-20261108/E34_MIX_TEACHER25_DET/config.json",
+      "mode": "lora_r32",
+      "kind": "mixed",
+      "relations": 3647,
+      "trainer": "scripts/train-controlled-quality.py"
+    },
+    {
+      "name": "E35_MIX_LAMBDA10_DET",
+      "arm": "KD_HYBRID",
+      "gpu": 2,
+      "run_root": "runs/distillation-controlled-quality-20261108/E35_MIX_LAMBDA10_DET",
+      "config": "runs/distillation-controlled-quality-20261108/E35_MIX_LAMBDA10_DET/config.json",
+      "mode": "lora_r32",
+      "kind": "mixed",
+      "relations": 3647,
+      "trainer": "scripts/train-controlled-quality.py"
+    },
+    {
+      "name": "E36_POINT_ROW_ORDER_DET",
+      "arm": "KD_HYBRID",
+      "gpu": 3,
+      "run_root": "runs/distillation-controlled-quality-20261108/E36_POINT_ROW_ORDER_DET",
+      "config": "runs/distillation-controlled-quality-20261108/E36_POINT_ROW_ORDER_DET/config.json",
+      "mode": "lora_r32",
+      "kind": "point",
+      "relations": 0,
+      "trainer": "scripts/train-controlled-quality.py"
+    }
+  ],
+  "pairs_per_trial": 1000000,
+  "new_teacher_pairs": 0,
+  "reference_point": 20.51,
+  "reference_mixed": 22.49,
+  "evaluation_priority": [
+    0,
+    1,
+    2,
+    3
+  ]
+}

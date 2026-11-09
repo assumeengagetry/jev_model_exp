@@ -1,0 +1,9 @@
+{
+  "purpose": "user-authorized rapid KD search with a full E06 replay",
+  "pairs_per_trial": 1000000,
+  "new_teacher_pairs": 0,
+  "previous_best": 23.16,
+  "extra_tests": false,
+  "extra_file_hash_checks": false,
+  "dense_training": false
+}

@@ -1,0 +1,26 @@
+{
+  "stage": "stage2",
+  "step": 19066,
+  "total_steps": 19066,
+  "pairs_seen": 2440407,
+  "effective_tokens": 312593438,
+  "seen_domains": {
+    "knowledge": 655110,
+    "language": 800510,
+    "retrieval": 607108,
+    "arts": 228800,
+    "tools": 148879
+  },
+  "loss_local": 0.10633117303080943,
+  "learning_rate": 0.0,
+  "effective_tokens_per_second": 88701.90510294441,
+  "elapsed_seconds": 5038.684125029016,
+  "attention": "flash_attention_3",
+  "attention_implementation": "flash_attn3_hopper",
+  "attention_provider": "kernels-community/flash-attn3",
+  "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+  "sdpa_fallback": false,
+  "fa3_forward_calls": 1078504,
+  "fa3_backward_calls": 1078504,
+  "actual_training_kernel_executed": true
+}

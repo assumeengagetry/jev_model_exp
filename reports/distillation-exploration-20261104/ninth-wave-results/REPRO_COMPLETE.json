@@ -1,0 +1,91 @@
+{
+  "complete": true,
+  "completed_trials": [
+    "E29_POINT_REPRO_A",
+    "E30_POINT_REPRO_B",
+    "E31_MIXED_REPRO_A",
+    "E32_MIXED_REPRO_B"
+  ],
+  "best_current_model": "E31_MIXED_REPRO_A",
+  "best_current_public_index": 22.49,
+  "historical_highest_single_observation": 23.96,
+  "historical_identical_recipe_replay": 20.51,
+  "trial_scores": {
+    "E29_POINT_REPRO_A": 20.51,
+    "E30_POINT_REPRO_B": 20.51,
+    "E31_MIXED_REPRO_A": 22.49,
+    "E32_MIXED_REPRO_B": 22.49
+  },
+  "duplicate_observations": {
+    "point": {
+      "progress_windows": {
+        "shared_record_count": 392,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "macro_gradient_traces": {
+        "shared_record_count": 12,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "execution_audit_records": {
+        "shared_record_count": 392,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "scope": "recorded numeric observations only; no file/weight hashes or bitwise-model claim",
+      "score_a": 20.51,
+      "score_b": 20.51,
+      "score_b_minus_a": 0.0,
+      "public_score_numbers_equal": true
+    },
+    "mixed": {
+      "progress_windows": {
+        "shared_record_count": 392,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "macro_gradient_traces": {
+        "shared_record_count": 12,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "execution_audit_records": {
+        "shared_record_count": 392,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "scope": "recorded numeric observations only; no file/weight hashes or bitwise-model claim",
+      "score_a": 22.49,
+      "score_b": 22.49,
+      "score_b_minus_a": 0.0,
+      "public_score_numbers_equal": true
+    }
+  },
+  "matched_quality_comparisons": {
+    "A": {
+      "point": 20.51,
+      "mixed": 22.49,
+      "mixed_minus_point": 1.9799999999999969
+    },
+    "B": {
+      "point": 20.51,
+      "mixed": 22.49,
+      "mixed_minus_point": 1.9799999999999969
+    }
+  },
+  "new_teacher_pairs": 0,
+  "report": "/home/dev/assumeengage/runs/distillation-repro-20261107/report/REPORT.md"
+}

@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "identity": {
+    "version": "semantic-atomic-pairwise-v1",
+    "seed": 42,
+    "pairs": 1000000,
+    "relations": 3647,
+    "optimizer_steps": 7813,
+    "global_batch_pairs": 128,
+    "relation_normalization": "lambda*N/(M*actual_macro_pairs)",
+    "relation_policy": "audited closed-set K/R; no Teacher direction filter; disjoint untruncated positive/negative",
+    "plan_policy": "shuffle units; stable 8192-unit length buckets; global singleton fill; shuffle full macros; tail64",
+    "source_audit": "runs/distillation-explore-20261104/SEMANTIC_GROUP_RELATION_AUDIT_20261105.json"
+  },
+  "by_source": {
+    "native/arc": 69,
+    "native/banking77": 190,
+    "native/clinc150": 330,
+    "native/mmlu": 1635,
+    "native/winogrande": 275,
+    "overnight/esci": 628,
+    "overnight/massive": 193,
+    "overnight/openbookqa": 117,
+    "overnight/sciq": 210
+  },
+  "relations": 3647,
+  "relation_pair_coverage_percent": 0.7294,
+  "teacher_direction_agrees": 3434,
+  "teacher_direction_ties": 8,
+  "teacher_direction_is_not_true_accuracy": true,
+  "full_macros": 7812,
+  "last_macro_pairs": 64
+}

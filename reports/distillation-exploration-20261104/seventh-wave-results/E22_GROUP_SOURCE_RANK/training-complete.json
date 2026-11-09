@@ -1,0 +1,97 @@
+{
+  "model": "KD_HYBRID",
+  "complete": true,
+  "pool_pairs": 1000000,
+  "pairs_seen": 1000000,
+  "epochs": 1,
+  "effective_tokens": 314094515,
+  "elapsed_seconds": 9913.110213672975,
+  "effective_tokens_per_second": 31684.75970001575,
+  "seen_domains": {
+    "knowledge": 250000,
+    "retrieval": 250000,
+    "tools": 250000,
+    "arts": 250000
+  },
+  "optimizer_steps": 7813,
+  "global_effective_batch": 128,
+  "student_parent": "models/Qwen3-0.6B-common-pair-init-r32",
+  "active_training_domains": [
+    "knowledge",
+    "retrieval",
+    "tools",
+    "arts"
+  ],
+  "supervision": "KD_HYBRID",
+  "learning_rate": 0.0001,
+  "seed": 42,
+  "exploration_policy": {
+    "method": "semantic_pairwise_group_kd",
+    "base_recipe": {
+      "method": "tools_only_intercept_calibration",
+      "tools_logit_bias": -1.2826099976040561,
+      "other_teacher_probabilities_unchanged": true,
+      "domain_weights": {
+        "knowledge": 0.5,
+        "retrieval": 0.25,
+        "tools": 0.5,
+        "arts": 0.0
+      }
+    },
+    "sampler_identity": {
+      "version": "semantic-atomic-pairwise-v1",
+      "seed": 42,
+      "pairs": 1000000,
+      "relations": 3647,
+      "optimizer_steps": 7813,
+      "global_batch_pairs": 128,
+      "relation_normalization": "lambda*N/(M*actual_macro_pairs)",
+      "relation_policy": "audited closed-set K/R; no Teacher direction filter; disjoint untruncated positive/negative",
+      "plan_policy": "shuffle units; stable 8192-unit length buckets; global singleton fill; shuffle full macros; tail64",
+      "source_audit": "runs/distillation-explore-20261104/SEMANTIC_GROUP_RELATION_AUDIT_20261105.json"
+    },
+    "relation_target": "source",
+    "relation_lambda": 0.05
+  },
+  "loss_implementation": "E06 point BCE plus optional globally normalized atomic relation BCE",
+  "sampler_identity": {
+    "version": "semantic-atomic-pairwise-v1",
+    "seed": 42,
+    "pairs": 1000000,
+    "relations": 3647,
+    "optimizer_steps": 7813,
+    "global_batch_pairs": 128,
+    "relation_normalization": "lambda*N/(M*actual_macro_pairs)",
+    "relation_policy": "audited closed-set K/R; no Teacher direction filter; disjoint untruncated positive/negative",
+    "plan_policy": "shuffle units; stable 8192-unit length buckets; global singleton fill; shuffle full macros; tail64",
+    "source_audit": "runs/distillation-explore-20261104/SEMANTIC_GROUP_RELATION_AUDIT_20261105.json"
+  },
+  "relations_seen": 3647,
+  "relation_target_kind": "source",
+  "relation_lambda": 0.05,
+  "checkpoint_storage_root": "/tmp/opencode/jev-distillation-group-20261106/E22_GROUP_SOURCE_RANK/checkpoints",
+  "mixing_statistics": {
+    "mean_teacher_weight": 0.3125,
+    "all_source_pairs_retained": 1000000
+  },
+  "common_initialization": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+  "precision": "bf16",
+  "attention": "flash_attention_3",
+  "attention_implementation": "flash_attn3_hopper",
+  "attention_provider": "kernels-community/flash-attn3",
+  "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+  "sdpa_fallback": false,
+  "fa3_forward_calls": 1048880,
+  "fa3_backward_calls": 1048880,
+  "actual_training_kernel_executed": true,
+  "micro_token_budget_final": 16384,
+  "oom_retries": 0,
+  "gradient_checkpointing": false,
+  "communication": "gloo_cpu_float32_adapter_gradients",
+  "peak_allocated_gb": 32.84005784988403,
+  "training_pair_cap": 1000000,
+  "training_token_cap": null,
+  "milestone_pairs": 1000000,
+  "student_previously_finetuned": false,
+  "selection_metadata": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/SELECTION.json"
+}

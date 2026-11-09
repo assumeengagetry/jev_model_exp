@@ -1,0 +1,108 @@
+{
+  "observed_beijing": "2026-11-08T11:08:32.537984+08:00",
+  "phase": "evaluating_E30_POINT_REPRO_B",
+  "stage": "running",
+  "error": null,
+  "recovery_coordinator_alive": true,
+  "scratch_pipeline_exists": true,
+  "scratch_runtime_exists": true,
+  "e29_score_preserved": {
+    "complete": true,
+    "model": "E29_POINT_REPRO_A",
+    "requests": 110087,
+    "benchmarks": 37,
+    "counts": {
+      "ok": 110087
+    },
+    "public_score": 20.51,
+    "coverage": 1.0,
+    "latency_scope": "Four-GPU score run; per-row synchronized candidate inference, not isolated latency-v1",
+    "evaluation_inputs": "Locally reconstructed public 0.3 inputs; not a private Full score"
+  },
+  "e30_workers": [
+    {
+      "worker": 0,
+      "progress": {
+        "model": "E30_POINT_REPRO_B",
+        "worker": 0,
+        "new_requests": 400,
+        "terminal_requests_in_shard": 5600,
+        "seconds": 30.265835487050936,
+        "nonpadding_tokens": 61630,
+        "micro_token_budget": 32768
+      },
+      "part_bytes": 11785791,
+      "log_tail": [
+        "You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n",
+        "{\"model\": \"E30_POINT_REPRO_B\", \"worker\": 0, \"new_requests\": 200, \"terminal_requests_in_shard\": 5400, \"seconds\": 16.291060567018576, \"nonpadding_tokens\": 31527, \"micro_token_budget\": 32768}\n",
+        "{\"model\": \"E30_POINT_REPRO_B\", \"worker\": 0, \"new_requests\": 400, \"terminal_requests_in_shard\": 5600, \"seconds\": 30.265835487050936, \"nonpadding_tokens\": 61630, \"micro_token_budget\": 32768}\n"
+      ]
+    },
+    {
+      "worker": 1,
+      "progress": {
+        "model": "E30_POINT_REPRO_B",
+        "worker": 1,
+        "new_requests": 400,
+        "terminal_requests_in_shard": 5002,
+        "seconds": 29.786058203084394,
+        "nonpadding_tokens": 142696,
+        "micro_token_budget": 32768
+      },
+      "part_bytes": 11588758,
+      "log_tail": [
+        "You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n",
+        "{\"model\": \"E30_POINT_REPRO_B\", \"worker\": 1, \"new_requests\": 200, \"terminal_requests_in_shard\": 4802, \"seconds\": 15.930451767984778, \"nonpadding_tokens\": 75017, \"micro_token_budget\": 32768}\n",
+        "{\"model\": \"E30_POINT_REPRO_B\", \"worker\": 1, \"new_requests\": 400, \"terminal_requests_in_shard\": 5002, \"seconds\": 29.786058203084394, \"nonpadding_tokens\": 142696, \"micro_token_budget\": 32768}\n"
+      ]
+    },
+    {
+      "worker": 2,
+      "progress": {
+        "model": "E30_POINT_REPRO_B",
+        "worker": 2,
+        "new_requests": 400,
+        "terminal_requests_in_shard": 5210,
+        "seconds": 28.914373912964948,
+        "nonpadding_tokens": 98695,
+        "micro_token_budget": 32768
+      },
+      "part_bytes": 11665676,
+      "log_tail": [
+        "You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n",
+        "{\"model\": \"E30_POINT_REPRO_B\", \"worker\": 2, \"new_requests\": 200, \"terminal_requests_in_shard\": 5010, \"seconds\": 15.66521271597594, \"nonpadding_tokens\": 66945, \"micro_token_budget\": 32768}\n",
+        "{\"model\": \"E30_POINT_REPRO_B\", \"worker\": 2, \"new_requests\": 400, \"terminal_requests_in_shard\": 5210, \"seconds\": 28.914373912964948, \"nonpadding_tokens\": 98695, \"micro_token_budget\": 32768}\n"
+      ]
+    },
+    {
+      "worker": 3,
+      "progress": {
+        "model": "E30_POINT_REPRO_B",
+        "worker": 3,
+        "new_requests": 400,
+        "terminal_requests_in_shard": 5210,
+        "seconds": 29.460951452027075,
+        "nonpadding_tokens": 98149,
+        "micro_token_budget": 32768
+      },
+      "part_bytes": 11657319,
+      "log_tail": [
+        "You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n",
+        "{\"model\": \"E30_POINT_REPRO_B\", \"worker\": 3, \"new_requests\": 200, \"terminal_requests_in_shard\": 5010, \"seconds\": 15.93657634605188, \"nonpadding_tokens\": 66696, \"micro_token_budget\": 32768}\n",
+        "{\"model\": \"E30_POINT_REPRO_B\", \"worker\": 3, \"new_requests\": 400, \"terminal_requests_in_shard\": 5210, \"seconds\": 29.460951452027075, \"nonpadding_tokens\": 98149, \"micro_token_budget\": 32768}\n"
+      ]
+    }
+  ],
+  "coordinator_log_tail": [
+    "Skipping import of cpp extensions due to incompatible torch version 2.9.1+cu128 for torchao version 0.14.1             Please see https://github.com/pytorch/ao/issues/2919 for more info\n",
+    "{\"event\": \"resource_admission\", \"job\": \"evaluate-E30_POINT_REPRO_B\", \"gpus\": \"0,1,2,3\", \"foreign_or_unadopted_gpu_pids\": [], \"nfs_free_bytes\": 3736076288, \"scratch_free_bytes\": 226847383552}\n"
+  ],
+  "gpus": [
+    "0, 96 %, 4331 MiB, 95830 MiB",
+    "1, 21 %, 1937 MiB, 95830 MiB",
+    "2, 23 %, 1937 MiB, 95830 MiB",
+    "3, 22 %, 1937 MiB, 95830 MiB"
+  ],
+  "nfs_free_gib": 3.48,
+  "scratch_free_gib": 211.21
+}

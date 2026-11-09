@@ -1,0 +1,127 @@
+{
+  "model": "KD_HYBRID",
+  "complete": true,
+  "pool_pairs": 1000000,
+  "pairs_seen": 1000000,
+  "epochs": 1,
+  "effective_tokens": 314094515,
+  "elapsed_seconds": 9794.586607164005,
+  "effective_tokens_per_second": 32068.17475790795,
+  "seen_domains": {
+    "knowledge": 250000,
+    "retrieval": 250000,
+    "tools": 250000,
+    "arts": 250000
+  },
+  "optimizer_steps": 7813,
+  "global_effective_batch": 128,
+  "student_parent": "models/Qwen3-0.6B-common-pair-init-r32",
+  "active_training_domains": [
+    "knowledge",
+    "retrieval",
+    "tools",
+    "arts"
+  ],
+  "supervision": "KD_HYBRID",
+  "learning_rate": 0.0001,
+  "seed": 42,
+  "exploration_policy": {
+    "method": "temperature_and_teacher_curriculum",
+    "base_recipe": {
+      "method": "tools_only_intercept_calibration",
+      "tools_logit_bias": -1.2826099976040561,
+      "other_teacher_probabilities_unchanged": true,
+      "domain_weights": {
+        "knowledge": 0.5,
+        "retrieval": 0.25,
+        "tools": 0.5,
+        "arts": 0.0
+      }
+    },
+    "controls": {
+      "initial_temperature": 2.0,
+      "final_temperature": 1.0,
+      "ramp_steps": 1562,
+      "ramp_fraction": 0.2,
+      "matched_domain_multipliers": {
+        "knowledge": 0.9000728148272545,
+        "retrieval": 0.8995474998240942,
+        "tools": 0.900162478113756,
+        "arts": 0.9003707434672218
+      },
+      "ramp_definition": "min(1, global_step/(ramp_steps-1)); zero-based step",
+      "matched_order": "PairPool.order(seed42,batch128), per-domain loss-weighted selected-index means including tail",
+      "matching_loss_reduction": "w_i=1/actual_macro_pairs; tail64 has twice the per-pair reduction weight",
+      "domain_loss_weight_sums": {
+        "knowledge": 1953.1328125,
+        "retrieval": 1953.1328125,
+        "tools": 1953.375,
+        "arts": 1953.359375
+      },
+      "kind": "teacher_warmup"
+    }
+  },
+  "loss_implementation": "T1 cached effective-target interpolation; T>1 source BCE plus T^2 forward binary KL",
+  "temperature_controls": {
+    "initial_temperature": 2.0,
+    "final_temperature": 1.0,
+    "ramp_steps": 1562,
+    "ramp_fraction": 0.2,
+    "matched_domain_multipliers": {
+      "knowledge": 0.9000728148272545,
+      "retrieval": 0.8995474998240942,
+      "tools": 0.900162478113756,
+      "arts": 0.9003707434672218
+    },
+    "ramp_definition": "min(1, global_step/(ramp_steps-1)); zero-based step",
+    "matched_order": "PairPool.order(seed42,batch128), per-domain loss-weighted selected-index means including tail",
+    "matching_loss_reduction": "w_i=1/actual_macro_pairs; tail64 has twice the per-pair reduction weight",
+    "domain_loss_weight_sums": {
+      "knowledge": 1953.1328125,
+      "retrieval": 1953.1328125,
+      "tools": 1953.375,
+      "arts": 1953.359375
+    },
+    "kind": "teacher_warmup"
+  },
+  "teacher_logit_cache_path": "runs/distillation-temperature-20261106/targets/calibrated-teacher-logits.npy",
+  "source_branch_temperature": 1.0,
+  "kd_teacher_and_student_temperature_scaled": true,
+  "kd_temperature_squared_multiplier": true,
+  "mixing_statistics": {
+    "mean_loss_weighted_teacher_coefficient": 0.28124820799425276,
+    "base_domain_teacher_weights": {
+      "knowledge": 0.5,
+      "retrieval": 0.25,
+      "tools": 0.5,
+      "arts": 0.0
+    },
+    "matched_domain_multipliers": {
+      "knowledge": 0.9000728148272545,
+      "retrieval": 0.8995474998240942,
+      "tools": 0.900162478113756,
+      "arts": 0.9003707434672218
+    },
+    "all_source_pairs_retained": 1000000
+  },
+  "common_initialization": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32",
+  "precision": "bf16",
+  "attention": "flash_attention_3",
+  "attention_implementation": "flash_attn3_hopper",
+  "attention_provider": "kernels-community/flash-attn3",
+  "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+  "sdpa_fallback": false,
+  "fa3_forward_calls": 1042972,
+  "fa3_backward_calls": 1042972,
+  "actual_training_kernel_executed": true,
+  "micro_token_budget_final": 16384,
+  "oom_retries": 0,
+  "gradient_checkpointing": false,
+  "communication": "gloo_cpu_float32_adapter_gradients",
+  "peak_allocated_gb": 33.16758394241333,
+  "training_pair_cap": 1000000,
+  "training_token_cap": null,
+  "milestone_pairs": 1000000,
+  "student_previously_finetuned": false,
+  "selection_metadata": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/SELECTION.json"
+}

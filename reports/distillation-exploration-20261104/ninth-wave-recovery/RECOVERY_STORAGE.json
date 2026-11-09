@@ -1,0 +1,51 @@
+{
+  "prepared_beijing": "2026-11-08T11:03:59.930858+08:00",
+  "operations": [
+    {
+      "path": "/home/dev/assumeengage/runs/distillation-repro-20261107/logs",
+      "scratch": "/tmp/opencode/jev-distillation-repro-20261107/recovery-20261108/logs",
+      "preserved_original": "/home/dev/assumeengage/runs/distillation-repro-20261107/nfs-preserved-20261108/logs"
+    },
+    {
+      "path": "/home/dev/assumeengage/runs/distillation-repro-20261107/report",
+      "scratch": "/tmp/opencode/jev-distillation-repro-20261107/recovery-20261108/report",
+      "preserved_original": "/home/dev/assumeengage/runs/distillation-repro-20261107/nfs-preserved-20261108/report"
+    },
+    {
+      "path": "/home/dev/assumeengage/runs/distillation-repro-20261107/E30_POINT_REPRO_B/evaluation",
+      "scratch": "/tmp/opencode/jev-distillation-repro-20261107/recovery-20261108/E30_POINT_REPRO_B/evaluation",
+      "preserved_original": "/home/dev/assumeengage/runs/distillation-repro-20261107/nfs-preserved-20261108/E30_POINT_REPRO_B/evaluation"
+    },
+    {
+      "path": "/home/dev/assumeengage/runs/distillation-repro-20261107/E30_POINT_REPRO_B/logs",
+      "scratch": "/tmp/opencode/jev-distillation-repro-20261107/recovery-20261108/E30_POINT_REPRO_B/logs",
+      "preserved_original": "/home/dev/assumeengage/runs/distillation-repro-20261107/nfs-preserved-20261108/E30_POINT_REPRO_B/logs"
+    },
+    {
+      "path": "/home/dev/assumeengage/runs/distillation-repro-20261107/E31_MIXED_REPRO_A/evaluation",
+      "scratch": "/tmp/opencode/jev-distillation-repro-20261107/recovery-20261108/E31_MIXED_REPRO_A/evaluation",
+      "preserved_original": null
+    },
+    {
+      "path": "/home/dev/assumeengage/runs/distillation-repro-20261107/E31_MIXED_REPRO_A/logs",
+      "scratch": "/tmp/opencode/jev-distillation-repro-20261107/recovery-20261108/E31_MIXED_REPRO_A/logs",
+      "preserved_original": "/home/dev/assumeengage/runs/distillation-repro-20261107/nfs-preserved-20261108/E31_MIXED_REPRO_A/logs"
+    },
+    {
+      "path": "/home/dev/assumeengage/runs/distillation-repro-20261107/E32_MIXED_REPRO_B/evaluation",
+      "scratch": "/tmp/opencode/jev-distillation-repro-20261107/recovery-20261108/E32_MIXED_REPRO_B/evaluation",
+      "preserved_original": null
+    },
+    {
+      "path": "/home/dev/assumeengage/runs/distillation-repro-20261107/E32_MIXED_REPRO_B/logs",
+      "scratch": "/tmp/opencode/jev-distillation-repro-20261107/recovery-20261108/E32_MIXED_REPRO_B/logs",
+      "preserved_original": "/home/dev/assumeengage/runs/distillation-repro-20261107/nfs-preserved-20261108/E32_MIXED_REPRO_B/logs"
+    }
+  ],
+  "models_unchanged": true,
+  "e29_completed_evaluation_unchanged": true,
+  "original_partials_not_deleted": true,
+  "new_training_started": false,
+  "nfs_free_gib": 3.48,
+  "scratch_free_gib": 211.28
+}

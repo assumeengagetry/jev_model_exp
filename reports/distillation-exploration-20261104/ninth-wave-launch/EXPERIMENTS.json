@@ -1,0 +1,58 @@
+{
+  "trials": [
+    {
+      "name": "E29_POINT_REPRO_A",
+      "arm": "KD_HYBRID",
+      "gpu": 0,
+      "run_root": "runs/distillation-repro-20261107/E29_POINT_REPRO_A",
+      "config": "runs/distillation-repro-20261107/E29_POINT_REPRO_A/config.json",
+      "mode": "lora_r32",
+      "kind": "point",
+      "replica": "A",
+      "trainer": "scripts/train-repro-distillation.py"
+    },
+    {
+      "name": "E30_POINT_REPRO_B",
+      "arm": "KD_HYBRID",
+      "gpu": 1,
+      "run_root": "runs/distillation-repro-20261107/E30_POINT_REPRO_B",
+      "config": "runs/distillation-repro-20261107/E30_POINT_REPRO_B/config.json",
+      "mode": "lora_r32",
+      "kind": "point",
+      "replica": "B",
+      "trainer": "scripts/train-repro-distillation.py"
+    },
+    {
+      "name": "E31_MIXED_REPRO_A",
+      "arm": "KD_HYBRID",
+      "gpu": 2,
+      "run_root": "runs/distillation-repro-20261107/E31_MIXED_REPRO_A",
+      "config": "runs/distillation-repro-20261107/E31_MIXED_REPRO_A/config.json",
+      "mode": "lora_r32",
+      "kind": "mixed",
+      "replica": "A",
+      "trainer": "scripts/train-repro-distillation.py"
+    },
+    {
+      "name": "E32_MIXED_REPRO_B",
+      "arm": "KD_HYBRID",
+      "gpu": 3,
+      "run_root": "runs/distillation-repro-20261107/E32_MIXED_REPRO_B",
+      "config": "runs/distillation-repro-20261107/E32_MIXED_REPRO_B/config.json",
+      "mode": "lora_r32",
+      "kind": "mixed",
+      "replica": "B",
+      "trainer": "scripts/train-repro-distillation.py"
+    }
+  ],
+  "pairs_per_trial": 1000000,
+  "relations_per_trial": 3647,
+  "new_teacher_pairs": 0,
+  "highest_single_observation": 23.96,
+  "evaluation_priority": [
+    0,
+    1,
+    2,
+    3
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "completed_trials": [
+    "E29_POINT_REPRO_A"
+  ],
+  "best_current_model": "E29_POINT_REPRO_A",
+  "best_current_public_index": 20.51,
+  "historical_highest_single_observation": 23.96,
+  "historical_identical_recipe_replay": 20.51,
+  "trial_scores": {
+    "E29_POINT_REPRO_A": 20.51
+  },
+  "duplicate_observations": {
+    "point": {
+      "progress_windows": {
+        "shared_record_count": 392,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "macro_gradient_traces": {
+        "shared_record_count": 12,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "execution_audit_records": {
+        "shared_record_count": 392,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "scope": "recorded numeric observations only; no file/weight hashes or bitwise-model claim"
+    },
+    "mixed": {
+      "progress_windows": {
+        "shared_record_count": 392,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "macro_gradient_traces": {
+        "shared_record_count": 12,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "execution_audit_records": {
+        "shared_record_count": 392,
+        "same_recorded_steps": true,
+        "recorded_values_equal": true,
+        "first_different_step": null,
+        "different_fields_at_first_step": []
+      },
+      "scope": "recorded numeric observations only; no file/weight hashes or bitwise-model claim"
+    }
+  },
+  "matched_quality_comparisons": {},
+  "new_teacher_pairs": 0,
+  "report": "/home/dev/assumeengage/runs/distillation-repro-20261107/report/REPORT.md"
+}

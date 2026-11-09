@@ -1,0 +1,11 @@
+{
+  "purpose": "user-authorized winning mixed-ranking recipe refinements",
+  "pairs_per_trial": 1000000,
+  "relations_per_trial": 3647,
+  "new_teacher_pairs": 0,
+  "previous_best": 23.96,
+  "extra_tests": false,
+  "extra_file_hash_checks": false,
+  "sampler_reused": "runs/distillation-group-20261106/plan",
+  "scratch_checkpoint_root": "/tmp/opencode/jev-distillation-group-refine-20261107"
+}

@@ -1,0 +1,92 @@
+{
+  "trials": [
+    {
+      "name": "E25_MIXED_REPLAY",
+      "arm": "KD_HYBRID",
+      "gpu": 0,
+      "run_root": "runs/distillation-group-refine-20261107/E25_MIXED_REPLAY",
+      "config": "runs/distillation-group-refine-20261107/E25_MIXED_REPLAY/config.json",
+      "mode": "lora_r32",
+      "kind": "mixed",
+      "trainer": "scripts/train-group-refinement.py",
+      "relative_teacher_fraction": 0.5,
+      "relation_lambda": 0.05,
+      "changed_config_fields": [
+        "checkpoint_storage_identity",
+        "checkpoint_storage_root",
+        "effective_target_ready_path",
+        "run_root"
+      ]
+    },
+    {
+      "name": "E26_REL_TEACHER25",
+      "arm": "KD_HYBRID",
+      "gpu": 1,
+      "run_root": "runs/distillation-group-refine-20261107/E26_REL_TEACHER25",
+      "config": "runs/distillation-group-refine-20261107/E26_REL_TEACHER25/config.json",
+      "mode": "lora_r32",
+      "kind": "mixed",
+      "trainer": "scripts/train-group-refinement.py",
+      "relative_teacher_fraction": 0.25,
+      "relation_lambda": 0.05,
+      "changed_config_fields": [
+        "checkpoint_storage_identity",
+        "checkpoint_storage_root",
+        "effective_target_ready_path",
+        "exploration_policy",
+        "relative_teacher_fraction",
+        "run_root"
+      ]
+    },
+    {
+      "name": "E27_REL_TEACHER75",
+      "arm": "KD_HYBRID",
+      "gpu": 2,
+      "run_root": "runs/distillation-group-refine-20261107/E27_REL_TEACHER75",
+      "config": "runs/distillation-group-refine-20261107/E27_REL_TEACHER75/config.json",
+      "mode": "lora_r32",
+      "kind": "mixed",
+      "trainer": "scripts/train-group-refinement.py",
+      "relative_teacher_fraction": 0.75,
+      "relation_lambda": 0.05,
+      "changed_config_fields": [
+        "checkpoint_storage_identity",
+        "checkpoint_storage_root",
+        "effective_target_ready_path",
+        "exploration_policy",
+        "relative_teacher_fraction",
+        "run_root"
+      ]
+    },
+    {
+      "name": "E28_REL_LAMBDA10",
+      "arm": "KD_HYBRID",
+      "gpu": 3,
+      "run_root": "runs/distillation-group-refine-20261107/E28_REL_LAMBDA10",
+      "config": "runs/distillation-group-refine-20261107/E28_REL_LAMBDA10/config.json",
+      "mode": "lora_r32",
+      "kind": "mixed",
+      "trainer": "scripts/train-group-refinement.py",
+      "relative_teacher_fraction": 0.5,
+      "relation_lambda": 0.1,
+      "changed_config_fields": [
+        "checkpoint_storage_identity",
+        "checkpoint_storage_root",
+        "effective_target_ready_path",
+        "exploration_policy",
+        "relation_lambda",
+        "run_root"
+      ]
+    }
+  ],
+  "pairs_per_trial": 1000000,
+  "relations_per_trial": 3647,
+  "new_teacher_pairs": 0,
+  "current_best": 23.96,
+  "evaluation_priority": [
+    0,
+    1,
+    2,
+    3
+  ]
+}

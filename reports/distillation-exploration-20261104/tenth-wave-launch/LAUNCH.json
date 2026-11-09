@@ -1,0 +1,7 @@
+{
+  "pid": 297005,
+  "starttime": "105371221",
+  "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+  "launched_beijing": "2026-11-08T15:42:49.470089+08:00",
+  "command": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/code/run-controlled-quality.py"
+}

@@ -1,0 +1,65 @@
+{
+  "complete": true,
+  "model": "Qwen3-0.6B-all-dimensions",
+  "final_model": "/tmp/opencode/jev-all-dimension-supervised-20261108/stage2/final",
+  "all_training_domains": [
+    "knowledge",
+    "language",
+    "retrieval",
+    "tools",
+    "arts"
+  ],
+  "stages": [
+    {
+      "complete": true,
+      "stage": "stage1",
+      "pairs_seen": 1832241,
+      "effective_tokens": 399794723,
+      "optimizer_steps": 14315,
+      "seen_domains": {
+        "knowledge": 160477,
+        "language": 1456971,
+        "retrieval": 179486,
+        "arts": 35307
+      },
+      "elapsed_seconds": 4487.20380380284,
+      "learning_rate": 0.0001,
+      "lora_rank": 16,
+      "source_labels_only": true,
+      "attention": "flash_attention_3",
+      "attention_implementation": "flash_attn3_hopper",
+      "attention_provider": "kernels-community/flash-attn3",
+      "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+      "sdpa_fallback": false,
+      "fa3_forward_calls": 498764,
+      "fa3_backward_calls": 498764,
+      "actual_training_kernel_executed": true
+    },
+    {
+      "complete": true,
+      "stage": "stage2",
+      "pairs_seen": 2440407,
+      "effective_tokens": 312593438,
+      "optimizer_steps": 19066,
+      "seen_domains": {
+        "knowledge": 655110,
+        "language": 800510,
+        "retrieval": 607108,
+        "arts": 228800,
+        "tools": 148879
+      },
+      "elapsed_seconds": 5038.791790280957,
+      "learning_rate": 5e-05,
+      "lora_rank": 32,
+      "source_labels_only": true,
+      "attention": "flash_attention_3",
+      "attention_implementation": "flash_attn3_hopper",
+      "attention_provider": "kernels-community/flash-attn3",
+      "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+      "sdpa_fallback": false,
+      "fa3_forward_calls": 1078504,
+      "fa3_backward_calls": 1078504,
+      "actual_training_kernel_executed": true
+    }
+  ]
+}

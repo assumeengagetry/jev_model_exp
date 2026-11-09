@@ -1,0 +1,53 @@
+{
+  "trials": [
+    {
+      "name": "E21_GROUP_POINT",
+      "arm": "KD_HYBRID",
+      "gpu": 0,
+      "run_root": "runs/distillation-group-20261106/E21_GROUP_POINT",
+      "config": "runs/distillation-group-20261106/E21_GROUP_POINT/config.json",
+      "mode": "lora_r32",
+      "trainer": "scripts/train-group-distillation.py",
+      "kind": "point"
+    },
+    {
+      "name": "E22_GROUP_SOURCE_RANK",
+      "arm": "KD_HYBRID",
+      "gpu": 1,
+      "run_root": "runs/distillation-group-20261106/E22_GROUP_SOURCE_RANK",
+      "config": "runs/distillation-group-20261106/E22_GROUP_SOURCE_RANK/config.json",
+      "mode": "lora_r32",
+      "trainer": "scripts/train-group-distillation.py",
+      "kind": "source"
+    },
+    {
+      "name": "E23_GROUP_TEACHER_RANK",
+      "arm": "KD_HYBRID",
+      "gpu": 2,
+      "run_root": "runs/distillation-group-20261106/E23_GROUP_TEACHER_RANK",
+      "config": "runs/distillation-group-20261106/E23_GROUP_TEACHER_RANK/config.json",
+      "mode": "lora_r32",
+      "trainer": "scripts/train-group-distillation.py",
+      "kind": "teacher"
+    },
+    {
+      "name": "E24_GROUP_MIXED_RANK",
+      "arm": "KD_HYBRID",
+      "gpu": 3,
+      "run_root": "runs/distillation-group-20261106/E24_GROUP_MIXED_RANK",
+      "config": "runs/distillation-group-20261106/E24_GROUP_MIXED_RANK/config.json",
+      "mode": "lora_r32",
+      "trainer": "scripts/train-group-distillation.py",
+      "kind": "mixed"
+    }
+  ],
+  "pairs_per_trial": 1000000,
+  "new_teacher_pairs": 0,
+  "current_best": 23.19,
+  "evaluation_priority": [
+    0,
+    1,
+    2,
+    3
+  ]
+}

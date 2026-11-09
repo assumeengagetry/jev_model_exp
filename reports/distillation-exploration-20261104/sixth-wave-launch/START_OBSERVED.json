@@ -1,0 +1,105 @@
+{
+  "observed_beijing": "2026-11-06T13:09:44.707487+08:00",
+  "phase": "training_sharpness_replay_wave",
+  "error": null,
+  "available_disk_gib": 9.14,
+  "trials": [
+    {
+      "name": "E17_E06_REPLAY",
+      "gpu": 0,
+      "kind": "replay",
+      "learning_rate": 0.0001,
+      "student_parent": "models/Qwen3-0.6B-common-pair-init-r32",
+      "changed_config_fields_vs_e06": [
+        "run_root"
+      ],
+      "resume_step": 0,
+      "progress": {
+        "step": 20,
+        "total_steps": 7813,
+        "pairs_seen": 2560,
+        "learning_rate": 8.547008547008548e-06,
+        "kd_temperature": null,
+        "teacher_global_scale": null,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 2548,
+        "fa3_backward_calls": 2548,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E18_TEMPERATURE_HALF",
+      "gpu": 1,
+      "kind": "fixed_half",
+      "learning_rate": 0.0001,
+      "student_parent": "models/Qwen3-0.6B-common-pair-init-r32",
+      "resume_step": 0,
+      "progress": {
+        "step": 20,
+        "total_steps": 7813,
+        "pairs_seen": 2560,
+        "learning_rate": 8.547008547008548e-06,
+        "kd_temperature": 0.5,
+        "teacher_global_scale": 1.0,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 2548,
+        "fa3_backward_calls": 2548,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E19_ANNEAL1TOHALF",
+      "gpu": 2,
+      "kind": "anneal_1_to_half",
+      "learning_rate": 0.0001,
+      "student_parent": "models/Qwen3-0.6B-common-pair-init-r32",
+      "resume_step": 0,
+      "progress": {
+        "step": 20,
+        "total_steps": 7813,
+        "pairs_seen": 2560,
+        "learning_rate": 8.547008547008548e-06,
+        "kd_temperature": 0.998783922171019,
+        "teacher_global_scale": 1.0,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 2548,
+        "fa3_backward_calls": 2548,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E20_R32_LR5E5",
+      "gpu": 3,
+      "kind": "lower_lr",
+      "learning_rate": 5e-05,
+      "student_parent": "models/Qwen3-0.6B-common-pair-init-r32",
+      "changed_config_fields_vs_e06": [
+        "learning_rate",
+        "run_root"
+      ],
+      "resume_step": 0,
+      "progress": {
+        "step": 20,
+        "total_steps": 7813,
+        "pairs_seen": 2560,
+        "learning_rate": 4.273504273504274e-06,
+        "kd_temperature": null,
+        "teacher_global_scale": null,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 2548,
+        "fa3_backward_calls": 2548,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    }
+  ],
+  "gpus": [
+    "0, 97 %, 44409 MiB, 95830 MiB",
+    "1, 93 %, 44409 MiB, 95830 MiB",
+    "2, 100 %, 44409 MiB, 95830 MiB",
+    "3, 93 %, 44409 MiB, 95830 MiB"
+  ]
+}

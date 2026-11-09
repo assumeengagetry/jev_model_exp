@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "completed_trials": [
+    "E17_E06_REPLAY",
+    "E18_TEMPERATURE_HALF",
+    "E19_ANNEAL1TOHALF",
+    "E20_R32_LR5E5"
+  ],
+  "best_model": "E17_E06_REPLAY",
+  "best_public_index": 23.19,
+  "previous_best_public_index": 23.16,
+  "delta_vs_previous_best": 0.030000000000001137,
+  "trial_scores": {
+    "E17_E06_REPLAY": 23.19,
+    "E18_TEMPERATURE_HALF": 23.07,
+    "E19_ANNEAL1TOHALF": 20.12,
+    "E20_R32_LR5E5": 19.32
+  },
+  "replay_observation": {
+    "historical_e06": 23.16,
+    "replay": 23.19,
+    "replay_minus_historical": 0.030000000000001137,
+    "scope": "one identical-seed full replay; not variance estimation or statistical significance"
+  },
+  "delta_vs_replay": {
+    "E17_E06_REPLAY": 0.0,
+    "E18_TEMPERATURE_HALF": -0.120000000000001,
+    "E19_ANNEAL1TOHALF": -3.0700000000000003,
+    "E20_R32_LR5E5": -3.870000000000001
+  },
+  "new_teacher_pairs": 0,
+  "report": "/home/dev/assumeengage/runs/distillation-sharpness-20261106/report/REPORT.md"
+}

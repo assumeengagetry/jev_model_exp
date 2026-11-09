@@ -51,9 +51,9 @@ HH-RLHF的chosen／rejected是相对偏好，不能把rejected解释为绝对错
 
 ## 对后续实验的影响
 
-- 第三波已完成、最好推进至23.16；第四波优先校准强度局部搜索、r64组合及匹配HARD。排序支线暂不占用GPU，不影响这些正式训练。
-- 排序支线若启动，优先检验上述K/R闭集关系，明确辅助项只有0.73%的pair覆盖，不强凑Tools或加入当前Teacher较弱的Arts偏好。
-- 必须共用atomic二行unit与sampler plan，配置组批HARD／HYBRID以及来源排序／Teacher排序控制；不能让改变batching的收益冒充Teacher收益。
+- 第七波单次评分为混合23.96、纯来源22.10、纯Teacher21.11、组批对照22.02；但第八波混合相同配方重跑仅20.51，未稳定复现。因此此前+1.86只保留为单次对照观察，不能宣称稳定Teacher排序收益。
+- 第七／八波均只用上述K/R闭集关系，辅助项只有0.73%的pair覆盖，没有强凑Tools或Arts偏好；均完整100万pair、3647关系及37项评分、coverage100%。第九波暂停系数扫描，保持同一关系集合，在显式数值控制下做point／mixed各两次同seed完整训练；不放宽负例准入。
+- 四臂统一atomic二行unit与sampler plan，pointwise均用E06，分别为无关系辅助／来源排序／Teacher排序／混合排序。相对原始建议，本波不加组批HARD：目标是识别已有最佳pointwise上的额外关系收益，不声称完整KD对HARD净增益。不能让batching收益冒充Teacher收益。
 - **Teacher方向过滤不是默认步骤。** 如果以后只保留Teacher与来源同向关系，来源排序对照也必须使用完全相同的筛选集合；不能只在Teacher臂筛选后直接宣称蒸馏更有效。
 - 关系数、来源一致率均不能替代真实训练和37项正式benchmark的效果验证。
 
@@ -62,4 +62,4 @@ HH-RLHF的chosen／rejected是相对偏好，不能把rejected解释为绝对错
 - 原始统计：[SEMANTIC_GROUP_RELATION_AUDIT_20261105.json](SEMANTIC_GROUP_RELATION_AUDIT_20261105.json)。
 - 已保留的两端selected-index：[SEMANTIC_GROUP_RELATIONS_20261105.npy](SEMANTIC_GROUP_RELATIONS_20261105.npy)，包含K/R闭集与HH-RLHF两类，不能把整份数组当作已经决定使用的Teacher训练关系。
 - 来源语义证据来自本地缓存快照的`build-global-pair-pool.py`、`prepare-main-extra-pairs.py`、`prepare-overnight-pairs.py`及`pair_training_runtime.py`。主代理已阅读关键闭集转换、隐式工具负例、全局去重及截断实现；未证明本地源码快照与远端历史转换版本完全一致。
-- 当前没有排序训练结果；不把源码审计或这些计数称作排序蒸馏成功。
+- 第七／八波都已实际训练并正式评分；23.96仍是最高单次但重跑20.51，不能称稳定结果。完整结果见上级目录seventh-wave-results与eighth-wave-results；数值变化根因未确认，不把FA3默认参数直接当成已证原因。

@@ -1,0 +1,170 @@
+{
+  "observed_beijing": "2026-11-07T14:53:53.065461+08:00",
+  "e24_e25_changed_config_fields": [
+    "checkpoint_storage_identity",
+    "checkpoint_storage_root",
+    "effective_target_ready_path",
+    "run_root"
+  ],
+  "training_windows": {
+    "E24": [
+      {
+        "step": 1,
+        "loss": 0.65743687748909,
+        "learning_rate": 4.273504273504274e-07,
+        "pairs_seen": 128,
+        "effective_tokens": 15872,
+        "relations_seen": 0,
+        "fa3_forward_calls": 112,
+        "fa3_backward_calls": 112,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      },
+      {
+        "step": 20,
+        "loss": 0.6735575391273749,
+        "learning_rate": 8.547008547008548e-06,
+        "pairs_seen": 2560,
+        "effective_tokens": 619061,
+        "relations_seen": 7,
+        "fa3_forward_calls": 2352,
+        "fa3_backward_calls": 2352,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      },
+      {
+        "step": 40,
+        "loss": 0.5933878010604531,
+        "learning_rate": 1.7094017094017095e-05,
+        "pairs_seen": 5120,
+        "effective_tokens": 1400115,
+        "relations_seen": 18,
+        "fa3_forward_calls": 5068,
+        "fa3_backward_calls": 5068,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      },
+      {
+        "step": 1000,
+        "loss": 0.4300453412346542,
+        "learning_rate": 9.750068081730478e-05,
+        "pairs_seen": 128000,
+        "effective_tokens": 40019863,
+        "relations_seen": 489,
+        "fa3_forward_calls": 133756,
+        "fa3_backward_calls": 133756,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      },
+      {
+        "step": 4000,
+        "loss": 0.3171237424015999,
+        "learning_rate": 5.0487044859531406e-05,
+        "pairs_seen": 512000,
+        "effective_tokens": 162925002,
+        "relations_seen": 1845,
+        "fa3_forward_calls": 540148,
+        "fa3_backward_calls": 540148,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      },
+      {
+        "step": 7813,
+        "loss": 0.32340517826378345,
+        "learning_rate": 0.0,
+        "pairs_seen": 1000000,
+        "effective_tokens": 314094515,
+        "relations_seen": 3647,
+        "fa3_forward_calls": 1048880,
+        "fa3_backward_calls": 1048880,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      }
+    ],
+    "E25": [
+      {
+        "step": 1,
+        "loss": 0.65743687748909,
+        "learning_rate": 4.273504273504274e-07,
+        "pairs_seen": 128,
+        "effective_tokens": 15872,
+        "relations_seen": 0,
+        "fa3_forward_calls": 112,
+        "fa3_backward_calls": 112,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      },
+      {
+        "step": 20,
+        "loss": 0.672676500717276,
+        "learning_rate": 8.547008547008548e-06,
+        "pairs_seen": 2560,
+        "effective_tokens": 619061,
+        "relations_seen": 7,
+        "fa3_forward_calls": 2352,
+        "fa3_backward_calls": 2352,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      },
+      {
+        "step": 40,
+        "loss": 0.5929798650555312,
+        "learning_rate": 1.7094017094017095e-05,
+        "pairs_seen": 5120,
+        "effective_tokens": 1400115,
+        "relations_seen": 18,
+        "fa3_forward_calls": 5068,
+        "fa3_backward_calls": 5068,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      },
+      {
+        "step": 1000,
+        "loss": 0.4275485121179372,
+        "learning_rate": 9.750068081730478e-05,
+        "pairs_seen": 128000,
+        "effective_tokens": 40019863,
+        "relations_seen": 489,
+        "fa3_forward_calls": 133756,
+        "fa3_backward_calls": 133756,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      },
+      {
+        "step": 4000,
+        "loss": 0.34676426714286207,
+        "learning_rate": 5.0487044859531406e-05,
+        "pairs_seen": 512000,
+        "effective_tokens": 162925002,
+        "relations_seen": 1845,
+        "fa3_forward_calls": 540148,
+        "fa3_backward_calls": 540148,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      },
+      {
+        "step": 7813,
+        "loss": 0.33062709145247937,
+        "learning_rate": 0.0,
+        "pairs_seen": 1000000,
+        "effective_tokens": 314094515,
+        "relations_seen": 3647,
+        "fa3_forward_calls": 1048880,
+        "fa3_backward_calls": 1048880,
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false
+      }
+    ]
+  },
+  "historical_scores": {
+    "E24": 23.96,
+    "E25": 20.51
+  },
+  "gpu_placement_difference": {
+    "E24": 3,
+    "E25": 0
+  },
+  "specific_numerical_root_cause_confirmed": false,
+  "same_data_and_calls_do_not_prove_operator_level_cause": true,
+  "no_tests_smokes_or_hashes_run": true
+}

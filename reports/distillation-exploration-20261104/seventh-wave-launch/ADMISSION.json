@@ -1,0 +1,9 @@
+{
+  "purpose": "user-authorized semantic group KD exploration",
+  "pairs_per_trial": 1000000,
+  "new_teacher_pairs": 0,
+  "previous_best": 23.19,
+  "extra_tests": false,
+  "extra_file_hash_checks": false,
+  "scratch_checkpoint_root": "/tmp/opencode/jev-distillation-group-20261106"
+}

@@ -1,0 +1,37 @@
+{
+  "complete": true,
+  "stages": [
+    {
+      "name": "stage1",
+      "rank": 16,
+      "alpha": 32,
+      "learning_rate": 0.0001,
+      "pairs": 1832241,
+      "tokens": 399794723,
+      "order_path": "/tmp/opencode/jev-all-dimension-supervised-20261108/schedule/stage1-order.npy",
+      "epochs": 1
+    },
+    {
+      "name": "stage2",
+      "rank": 32,
+      "alpha": 64,
+      "learning_rate": 5e-05,
+      "pairs": 2440407,
+      "tokens": 312593438,
+      "order_path": "/tmp/opencode/jev-all-dimension-supervised-20261108/schedule/stage2-order.npy",
+      "epochs": null,
+      "generic_task_token_ratio": "20:80",
+      "task_domain_token_allocation": "equal",
+      "source_weight": "sqrt(original_group_count)",
+      "english_sarcasm_fraction_of_language_task_tokens": 0.05,
+      "sarcasm_balance": "native classes by token budget; natural candidate pairs retained"
+    }
+  ],
+  "all_training_domains": [
+    "knowledge",
+    "language",
+    "retrieval",
+    "tools",
+    "arts"
+  ]
+}

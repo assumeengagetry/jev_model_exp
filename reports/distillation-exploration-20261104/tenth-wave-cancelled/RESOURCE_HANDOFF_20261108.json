@@ -1,0 +1,55 @@
+{
+  "recorded_beijing": "2026-11-08T21:24:48.180472+08:00",
+  "target_session": "ses_e749dc3c2ffev4nW5qgrukOIiC",
+  "message_receipt": "msg_1bb53b663001wu7IFt3UelpuWt",
+  "next_objective": "independent raw-Qwen two-stage original-label canonical plus five-domain formal training",
+  "this_owner_will_start_no_additional_training": true,
+  "duplicate_five_domain_training_started_by_this_owner": false,
+  "remaining_committed_evaluations": [
+    "E34_MIX_TEACHER25_DET",
+    "E35_MIX_LAMBDA10_DET",
+    "E36_POINT_ROW_ORDER_DET"
+  ],
+  "gpu0_priority_for_new_training_after": "CONTROLLED_QUALITY_COMPLETE.json exists and GPU0 independently observed idle",
+  "gpu_reservation_scope": "logical queue agreement by this owner, not an exclusive machine-wide lock",
+  "existing_jobs_stopped_or_restarted": false,
+  "existing_four_gpu_scoring_queue_changed": false,
+  "four_gpu_confirmation": {
+    "recorded_beijing": "2026-11-08T21:32:39.600889+08:00",
+    "gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "start_only_after": "current wave complete AND nvidia-smi reports no compute processes",
+    "new_task_coordinator_pid_reported_by_other_implementer": 303949,
+    "new_task_root_reported": "/tmp/opencode/jev-all-dimension-supervised-20261108",
+    "this_owner_has_no_other_committed_followup_gpu_training": true,
+    "reply_receipt": "msg_1bb5ba78a001sZwBzKixH3Ltgo",
+    "no_running_jobs_modified_stopped_or_restarted": true
+  },
+  "latest_user_cancelled_old_scoring": {
+    "cancelled": true,
+    "old_complete_wait_condition_superseded": true,
+    "old_coordinator_stopped": 297005,
+    "old_evaluation_wrapper_stopped": 302773,
+    "old_worker_pids_stopped": [
+      302782,
+      302783,
+      302784,
+      302785
+    ],
+    "old_gpu_contexts_released": true,
+    "new_coordinator_pid": 305193,
+    "new_worker_pids_read_only_verified": [
+      305288,
+      305289,
+      305290,
+      305291
+    ],
+    "new_task_not_modified_or_stopped": true,
+    "do_not_resume_old_queue": true,
+    "reply_receipt": "msg_1bb823b4b001PXzCIlckYywLQj"
+  }
+}

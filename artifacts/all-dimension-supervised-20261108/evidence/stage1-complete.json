@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "stage": "stage1",
+  "pairs_seen": 1832241,
+  "effective_tokens": 399794723,
+  "optimizer_steps": 14315,
+  "seen_domains": {
+    "knowledge": 160477,
+    "language": 1456971,
+    "retrieval": 179486,
+    "arts": 35307
+  },
+  "elapsed_seconds": 4487.20380380284,
+  "learning_rate": 0.0001,
+  "lora_rank": 16,
+  "source_labels_only": true,
+  "attention": "flash_attention_3",
+  "attention_implementation": "flash_attn3_hopper",
+  "attention_provider": "kernels-community/flash-attn3",
+  "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+  "sdpa_fallback": false,
+  "fa3_forward_calls": 498764,
+  "fa3_backward_calls": 498764,
+  "actual_training_kernel_executed": true
+}

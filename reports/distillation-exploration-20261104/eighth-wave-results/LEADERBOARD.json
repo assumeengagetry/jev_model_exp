@@ -1,0 +1,44 @@
+{
+  "completed_trials": [
+    "E25_MIXED_REPLAY",
+    "E26_REL_TEACHER25",
+    "E27_REL_TEACHER75",
+    "E28_REL_LAMBDA10"
+  ],
+  "best_model": "E24_GROUP_MIXED_RANK",
+  "best_public_index": 23.96,
+  "previous_best_public_index": 23.96,
+  "delta_vs_previous_best": 0.0,
+  "trial_scores": {
+    "E25_MIXED_REPLAY": 20.51,
+    "E26_REL_TEACHER25": 22.68,
+    "E27_REL_TEACHER75": 21.73,
+    "E28_REL_LAMBDA10": 22.0
+  },
+  "comparisons": {
+    "E25_MIXED_REPLAY": {
+      "public_index": 20.51,
+      "delta_vs_historical_best": -3.4499999999999993,
+      "delta_vs_current_replay": 0.0
+    },
+    "E26_REL_TEACHER25": {
+      "public_index": 22.68,
+      "delta_vs_historical_best": -1.2800000000000011,
+      "delta_vs_current_replay": 2.169999999999998
+    },
+    "E27_REL_TEACHER75": {
+      "public_index": 21.73,
+      "delta_vs_historical_best": -2.2300000000000004,
+      "delta_vs_current_replay": 1.2199999999999989
+    },
+    "E28_REL_LAMBDA10": {
+      "public_index": 22.0,
+      "delta_vs_historical_best": -1.9600000000000009,
+      "delta_vs_current_replay": 1.4899999999999984
+    }
+  },
+  "replay_score": 20.51,
+  "relations_per_trial": 3647,
+  "new_teacher_pairs": 0,
+  "report": "/home/dev/assumeengage/runs/distillation-group-refine-20261107/report/REPORT.md"
+}

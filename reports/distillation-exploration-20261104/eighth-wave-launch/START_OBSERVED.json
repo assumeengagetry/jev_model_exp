@@ -1,0 +1,109 @@
+{
+  "observed_beijing": "2026-11-07T06:19:06.096200+08:00",
+  "phase": "training_mixed_group_refinement_wave",
+  "error": null,
+  "nfs_free_gib": 5.12,
+  "scratch_free_gib": 214.12,
+  "trials": [
+    {
+      "name": "E25_MIXED_REPLAY",
+      "gpu": 0,
+      "sampler": "runs/distillation-group-20261106/plan",
+      "checkpoint_link": "/tmp/opencode/jev-distillation-group-refine-20261107/E25_MIXED_REPLAY/checkpoints",
+      "resume_step": 0,
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1400115,
+        "relations_seen": 18,
+        "total_relations": 3647,
+        "relative_teacher_fraction": 0.5,
+        "relation_lambda": 0.05,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 5068,
+        "fa3_backward_calls": 5068,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E26_REL_TEACHER25",
+      "gpu": 1,
+      "sampler": "runs/distillation-group-20261106/plan",
+      "checkpoint_link": "/tmp/opencode/jev-distillation-group-refine-20261107/E26_REL_TEACHER25/checkpoints",
+      "resume_step": 0,
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1400115,
+        "relations_seen": 18,
+        "total_relations": 3647,
+        "relative_teacher_fraction": 0.25,
+        "relation_lambda": 0.05,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 5068,
+        "fa3_backward_calls": 5068,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E27_REL_TEACHER75",
+      "gpu": 2,
+      "sampler": "runs/distillation-group-20261106/plan",
+      "checkpoint_link": "/tmp/opencode/jev-distillation-group-refine-20261107/E27_REL_TEACHER75/checkpoints",
+      "resume_step": 0,
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1400115,
+        "relations_seen": 18,
+        "total_relations": 3647,
+        "relative_teacher_fraction": 0.75,
+        "relation_lambda": 0.05,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 5068,
+        "fa3_backward_calls": 5068,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E28_REL_LAMBDA10",
+      "gpu": 3,
+      "sampler": "runs/distillation-group-20261106/plan",
+      "checkpoint_link": "/tmp/opencode/jev-distillation-group-refine-20261107/E28_REL_LAMBDA10/checkpoints",
+      "resume_step": 0,
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1400115,
+        "relations_seen": 18,
+        "total_relations": 3647,
+        "relative_teacher_fraction": 0.5,
+        "relation_lambda": 0.1,
+        "actual_training_kernel_executed": true,
+        "fa3_forward_calls": 5068,
+        "fa3_backward_calls": 5068,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    }
+  ],
+  "pipeline_log_tail": [
+    "{\"event\": \"resource_admission\", \"job\": \"E25_MIXED_REPLAY\", \"gpus\": \"0\", \"foreign_or_unadopted_gpu_pids\": [], \"nfs_free_bytes\": 5502926848, \"scratch_free_bytes\": 229904277504}\n",
+    "{\"event\": \"resource_admission\", \"job\": \"E26_REL_TEACHER25\", \"gpus\": \"1\", \"foreign_or_unadopted_gpu_pids\": [], \"nfs_free_bytes\": 5502926848, \"scratch_free_bytes\": 229904281600}\n",
+    "{\"event\": \"resource_admission\", \"job\": \"E27_REL_TEACHER75\", \"gpus\": \"2\", \"foreign_or_unadopted_gpu_pids\": [], \"nfs_free_bytes\": 5502926848, \"scratch_free_bytes\": 229904257024}\n",
+    "{\"event\": \"resource_admission\", \"job\": \"E28_REL_LAMBDA10\", \"gpus\": \"3\", \"foreign_or_unadopted_gpu_pids\": [], \"nfs_free_bytes\": 5502926848, \"scratch_free_bytes\": 229904257024}\n"
+  ],
+  "gpus": [
+    "0, 41 %, 49107 MiB, 95830 MiB",
+    "1, 52 %, 49107 MiB, 95830 MiB",
+    "2, 51 %, 49107 MiB, 95830 MiB",
+    "3, 51 %, 49107 MiB, 95830 MiB"
+  ]
+}

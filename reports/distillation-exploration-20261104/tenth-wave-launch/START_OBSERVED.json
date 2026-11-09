@@ -1,0 +1,115 @@
+{
+  "observed_beijing": "2026-11-08T15:44:15.734701+08:00",
+  "phase": "training_controlled_quality_wave",
+  "stage": "running",
+  "error": null,
+  "scratch_pipeline_exists": true,
+  "nfs_free_gib": 3.47,
+  "scratch_free_gib": 210.49,
+  "trials": [
+    {
+      "name": "E33_SOURCE_RANK_DET",
+      "gpu": 0,
+      "relation_count": 3647,
+      "kind": "source",
+      "evaluation_storage": "/tmp/opencode/jev-distillation-controlled-quality-20261108/E33_SOURCE_RANK_DET/evaluation",
+      "resume_step": 0,
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1400115,
+        "relations_seen": 18,
+        "total_relations": 3647,
+        "relative_teacher_fraction": 0.5,
+        "relation_lambda": 0.05,
+        "actual_deterministic_fa3_backward_executed": true,
+        "fa3_deterministic_backward_calls": 5068,
+        "torch_deterministic_algorithms": true,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E34_MIX_TEACHER25_DET",
+      "gpu": 1,
+      "relation_count": 3647,
+      "kind": "mixed",
+      "evaluation_storage": "/tmp/opencode/jev-distillation-controlled-quality-20261108/E34_MIX_TEACHER25_DET/evaluation",
+      "resume_step": 0,
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1400115,
+        "relations_seen": 18,
+        "total_relations": 3647,
+        "relative_teacher_fraction": 0.25,
+        "relation_lambda": 0.05,
+        "actual_deterministic_fa3_backward_executed": true,
+        "fa3_deterministic_backward_calls": 5068,
+        "torch_deterministic_algorithms": true,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E35_MIX_LAMBDA10_DET",
+      "gpu": 2,
+      "relation_count": 3647,
+      "kind": "mixed",
+      "evaluation_storage": "/tmp/opencode/jev-distillation-controlled-quality-20261108/E35_MIX_LAMBDA10_DET/evaluation",
+      "resume_step": 0,
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1400115,
+        "relations_seen": 18,
+        "total_relations": 3647,
+        "relative_teacher_fraction": 0.5,
+        "relation_lambda": 0.1,
+        "actual_deterministic_fa3_backward_executed": true,
+        "fa3_deterministic_backward_calls": 5068,
+        "torch_deterministic_algorithms": true,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    },
+    {
+      "name": "E36_POINT_ROW_ORDER_DET",
+      "gpu": 3,
+      "relation_count": 0,
+      "kind": "point",
+      "evaluation_storage": "/tmp/opencode/jev-distillation-controlled-quality-20261108/E36_POINT_ROW_ORDER_DET/evaluation",
+      "resume_step": 0,
+      "progress": {
+        "step": 40,
+        "total_steps": 7813,
+        "pairs_seen": 5120,
+        "effective_tokens": 1660643,
+        "relations_seen": 0,
+        "total_relations": 0,
+        "relative_teacher_fraction": 0.5,
+        "relation_lambda": 0.05,
+        "actual_deterministic_fa3_backward_executed": true,
+        "fa3_deterministic_backward_calls": 5432,
+        "torch_deterministic_algorithms": true,
+        "sdpa_fallback": false
+      },
+      "observed_oom_events": 0
+    }
+  ],
+  "coordinator_log_tail": [
+    "{\"event\": \"resource_admission\", \"job\": \"E33_SOURCE_RANK_DET\", \"gpus\": \"0\", \"foreign_or_unadopted_gpu_pids\": [], \"nfs_free_bytes\": 3727687680, \"scratch_free_bytes\": 226017361920}\n",
+    "{\"event\": \"resource_admission\", \"job\": \"E34_MIX_TEACHER25_DET\", \"gpus\": \"1\", \"foreign_or_unadopted_gpu_pids\": [], \"nfs_free_bytes\": 3727687680, \"scratch_free_bytes\": 226017308672}\n",
+    "{\"event\": \"resource_admission\", \"job\": \"E35_MIX_LAMBDA10_DET\", \"gpus\": \"2\", \"foreign_or_unadopted_gpu_pids\": [], \"nfs_free_bytes\": 3727687680, \"scratch_free_bytes\": 226017308672}\n",
+    "{\"event\": \"resource_admission\", \"job\": \"E36_POINT_ROW_ORDER_DET\", \"gpus\": \"3\", \"foreign_or_unadopted_gpu_pids\": [], \"nfs_free_bytes\": 3727687680, \"scratch_free_bytes\": 226017308672}\n"
+  ],
+  "gpus": [
+    "0, 100 %, 49053 MiB, 95830 MiB",
+    "1, 96 %, 49053 MiB, 95830 MiB",
+    "2, 94 %, 49053 MiB, 95830 MiB",
+    "3, 34 %, 40765 MiB, 95830 MiB"
+  ]
+}

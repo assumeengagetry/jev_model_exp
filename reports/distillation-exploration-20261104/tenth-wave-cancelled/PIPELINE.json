@@ -1,0 +1,69 @@
+{
+  "stage": "cancelled",
+  "phase": "user_cancelled_scoring_for_five_domain_training",
+  "updated_utc": "2026-11-08T14:11:37.155236+00:00",
+  "jobs": {
+    "E33_SOURCE_RANK_DET": {
+      "pid": 297008,
+      "starttime": "105371240",
+      "marker": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/E33_SOURCE_RANK_DET/KD_HYBRID/complete.json",
+      "log": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/logs/E33_SOURCE_RANK_DET.log",
+      "gpus": "0",
+      "config": "runs/distillation-controlled-quality-20261108/E33_SOURCE_RANK_DET/config.json",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "E34_MIX_TEACHER25_DET": {
+      "pid": 297014,
+      "starttime": "105371259",
+      "marker": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/E34_MIX_TEACHER25_DET/KD_HYBRID/complete.json",
+      "log": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/logs/E34_MIX_TEACHER25_DET.log",
+      "gpus": "1",
+      "config": "runs/distillation-controlled-quality-20261108/E34_MIX_TEACHER25_DET/config.json",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "E35_MIX_LAMBDA10_DET": {
+      "pid": 297020,
+      "starttime": "105371278",
+      "marker": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/E35_MIX_LAMBDA10_DET/KD_HYBRID/complete.json",
+      "log": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/logs/E35_MIX_LAMBDA10_DET.log",
+      "gpus": "2",
+      "config": "runs/distillation-controlled-quality-20261108/E35_MIX_LAMBDA10_DET/config.json",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "E36_POINT_ROW_ORDER_DET": {
+      "pid": 297026,
+      "starttime": "105371297",
+      "marker": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/E36_POINT_ROW_ORDER_DET/KD_HYBRID/complete.json",
+      "log": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/logs/E36_POINT_ROW_ORDER_DET.log",
+      "gpus": "3",
+      "config": "runs/distillation-controlled-quality-20261108/E36_POINT_ROW_ORDER_DET/config.json",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "evaluate-E33_SOURCE_RANK_DET": {
+      "pid": 300902,
+      "starttime": "106602311",
+      "marker": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/E33_SOURCE_RANK_DET/evaluation/E33_SOURCE_RANK_DET/complete.json",
+      "log": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/logs/evaluate-E33_SOURCE_RANK_DET.log",
+      "gpus": "0,1,2,3",
+      "config": "runs/distillation-controlled-quality-20261108/E33_SOURCE_RANK_DET/config.json",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "evaluate-E34_MIX_TEACHER25_DET": {
+      "pid": 302773,
+      "starttime": "107192417",
+      "marker": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/E34_MIX_TEACHER25_DET/evaluation/E34_MIX_TEACHER25_DET/complete.json",
+      "log": "/home/dev/assumeengage/runs/distillation-controlled-quality-20261108/logs/evaluate-E34_MIX_TEACHER25_DET.log",
+      "gpus": "0,1,2,3",
+      "config": "runs/distillation-controlled-quality-20261108/E34_MIX_TEACHER25_DET/config.json",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    }
+  },
+  "pairs_per_trial": 1000000,
+  "new_teacher_pairs": 0,
+  "available_disk_bytes": 3404726272,
+  "available_scratch_bytes": 223430193152,
+  "cancelled_by_user": true,
+  "complete": false,
+  "error": null,
+  "cancellation_record": "/tmp/opencode/jev-distillation-controlled-quality-20261108/USER_CANCELLED.json"
+}
