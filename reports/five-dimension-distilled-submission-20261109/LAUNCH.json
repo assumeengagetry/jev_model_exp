@@ -1,0 +1,15 @@
+{
+  "pid": 323791,
+  "starttime": "114137420",
+  "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+  "run_root": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2",
+  "new_teacher_unique_pairs": 244710,
+  "language_pairs": 250308,
+  "total_pairs": 1250308,
+  "effective_student_tokens": 366985783,
+  "old_four_pairs_preserved": 1000000,
+  "tests": false,
+  "extra_hashes": false,
+  "official_public_run_authorized": true,
+  "uploaded": false
+}

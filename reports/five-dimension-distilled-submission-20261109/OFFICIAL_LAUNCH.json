@@ -1,0 +1,12 @@
+{
+  "pid": 324276,
+  "starttime": "114210018",
+  "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+  "run_root": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2",
+  "wait_for_own_training_complete": true,
+  "full_public_edition": "0.3",
+  "official_commit": "25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d",
+  "extra_tests": false,
+  "upload": false,
+  "paid_jobs": false
+}

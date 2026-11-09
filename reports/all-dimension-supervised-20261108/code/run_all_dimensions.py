@@ -24,6 +24,9 @@ def main():
     path = Path(parser.parse_args().config).resolve()
     cfg = json.loads(path.read_text())
     root = Path(cfg['run_root'])
+    if (root / 'NO_AUTOMATIC_RESUME').exists():
+        print('Training is paused by the user; no preparation or worker launch performed.', flush=True)
+        return
     code = Path(__file__).resolve().parent
     lock = (root / 'PIPELINE.lock').open('a+')
     fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)

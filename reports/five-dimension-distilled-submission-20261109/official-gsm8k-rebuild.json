@@ -1,0 +1,14 @@
+{
+  "out": "/tmp/opencode/jev-five-dimension-distilled-20261109/official-gsm8k-rebuilt/gsm8k-rows.jsonl.gz",
+  "requests": 2638,
+  "tracks": {
+    "GSM8K-10choice": 1319,
+    "GSM8K-4choice": 1319
+  },
+  "answer_groups": 132,
+  "gsm8k_sha256": "759334894858a37d6bd7bd07298eac8e55da236e31dad327ccd06a9979f4738a",
+  "old_local_differing_top_level_fields": {
+    "_evaluation": 2638,
+    "metadata": 2638
+  }
+}

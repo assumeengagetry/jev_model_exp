@@ -38,6 +38,8 @@ def main():
     parser.add_argument('--config', required=True)
     cfg = json.loads(Path(parser.parse_args().config).read_text())
     root = Path(cfg['run_root'])
+    if (root / 'NO_AUTOMATIC_RESUME').exists():
+        raise RuntimeError('Training is paused by the user; new authorization is required before resuming')
     rank = int(os.environ.get('RANK', '0'))
     world = int(os.environ.get('WORLD_SIZE', '1'))
     local = int(os.environ.get('LOCAL_RANK', '0'))

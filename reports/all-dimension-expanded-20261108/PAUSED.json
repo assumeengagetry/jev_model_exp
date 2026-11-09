@@ -1,0 +1,95 @@
+{
+  "stage": "paused_by_user",
+  "complete": false,
+  "paused_utc": "2026-11-09T06:43:39.772975+00:00",
+  "automatic_resume_authorized": false,
+  "coordinator_pid": 316100,
+  "launcher_pid": 316136,
+  "worker_pids": [
+    316144,
+    316145,
+    316146,
+    316147
+  ],
+  "signalled": [
+    {
+      "pid": 316136,
+      "signal": "SIGTERM"
+    }
+  ],
+  "exit_observations": {
+    "316100": true,
+    "316136": true,
+    "316144": true,
+    "316145": true,
+    "316146": true,
+    "316147": true
+  },
+  "latest_checkpoint": {
+    "path": "/tmp/opencode/jev-all-dimension-expanded-20261108/checkpoints/stage2/step-000068000",
+    "step": 68000
+  },
+  "last_observed_progress": {
+    "stage": "stage2",
+    "step": 68180,
+    "total_steps": 381166,
+    "pairs_seen": 8727040,
+    "effective_tokens": 1117589917,
+    "seen_domains": {
+      "knowledge": 2343759,
+      "language": 2859313,
+      "retrieval": 2171103,
+      "arts": 820204,
+      "tools": 532661
+    },
+    "loss_local": 0.11466436088085175,
+    "learning_rate": 4.7149796377537346e-05,
+    "effective_tokens_per_second": 58723.303583912595,
+    "elapsed_seconds": 18020.116984301014,
+    "attention": "flash_attention_3",
+    "attention_implementation": "flash_attn3_hopper",
+    "attention_provider": "kernels-community/flash-attn3",
+    "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+    "sdpa_fallback": false,
+    "fa3_forward_calls": 2073540,
+    "fa3_backward_calls": 2073540,
+    "actual_training_kernel_executed": true
+  },
+  "old_models_and_optimizer_states_preserved": true,
+  "reason": "User reprioritized a new distillation leaderboard model; no new training authorized in this session.",
+  "recoverable_checkpoint": {
+    "checkpoint": "/tmp/opencode/jev-all-dimension-expanded-20261108/checkpoints/stage2/step-000068000",
+    "stage": "stage2",
+    "step": 68000,
+    "pairs_seen": 8704000,
+    "effective_tokens": 1114544353,
+    "elapsed_seconds": 17971.602933701128,
+    "optimizer_state_saved": true,
+    "scheduler_state_saved": true,
+    "torch_rng_saved": true,
+    "cuda_rng_saved": true,
+    "checkpoint_files": [
+      {
+        "name": "README.md",
+        "bytes": 5204
+      },
+      {
+        "name": "adapter_config.json",
+        "bytes": 1143
+      },
+      {
+        "name": "adapter_model.safetensors",
+        "bytes": 80800744
+      },
+      {
+        "name": "config.json",
+        "bytes": 1566
+      },
+      {
+        "name": "training_state.pt",
+        "bytes": 161849240
+      }
+    ]
+  },
+  "unsaved_optimizer_steps_after_checkpoint": 180
+}

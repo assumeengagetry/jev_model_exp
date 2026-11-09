@@ -1,0 +1,235 @@
+{
+  "complete": true,
+  "run_root": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2",
+  "selected_pairs": 1250308,
+  "selection_seed": 42,
+  "domains": {
+    "knowledge": {
+      "pairs": 250000,
+      "max_length": 4096,
+      "effective_training_tokens": 42371145,
+      "positive_pairs": 62537,
+      "negative_pairs": 183666,
+      "soft_original_pairs": 3797
+    },
+    "retrieval": {
+      "pairs": 250000,
+      "max_length": 4096,
+      "effective_training_tokens": 35539055,
+      "positive_pairs": 18459,
+      "negative_pairs": 231528,
+      "soft_original_pairs": 13
+    },
+    "tools": {
+      "pairs": 250000,
+      "max_length": 4096,
+      "effective_training_tokens": 109292378,
+      "positive_pairs": 85191,
+      "negative_pairs": 159022,
+      "soft_original_pairs": 5787
+    },
+    "arts": {
+      "pairs": 250000,
+      "max_length": 4096,
+      "effective_training_tokens": 126891937,
+      "positive_pairs": 82455,
+      "negative_pairs": 163160,
+      "soft_original_pairs": 4385
+    },
+    "language": {
+      "pairs": 250308,
+      "max_length": 4096,
+      "effective_training_tokens": 52891268,
+      "unique_pairs": 244710
+    }
+  },
+  "active_training_domains": [
+    "knowledge",
+    "retrieval",
+    "tools",
+    "arts",
+    "language"
+  ],
+  "effective_student_tokens": 366985783,
+  "student_parent": "models/Qwen3-0.6B-common-pair-init-r32",
+  "source_index_order": "unchanged K/R/Tools/Arts million, then selected language multiset",
+  "language_sampling": {
+    "anli": {
+      "quota_pairs": 94887,
+      "pairs": 94887,
+      "unique_groups": 31629,
+      "available_groups": 162601,
+      "replacement": false,
+      "selected_questions_by_round": {
+        "train_r3": 19594,
+        "train_r2": 8749,
+        "train_r1": 3286
+      }
+    },
+    "hellaswag": {
+      "quota_pairs": 46951,
+      "pairs": 46952,
+      "unique_groups": 11738,
+      "available_groups": 39811,
+      "replacement": false
+    },
+    "acos_laptop-acos": {
+      "quota_pairs": 12713,
+      "pairs": 12996,
+      "unique_groups": 38,
+      "available_groups": 2919,
+      "replacement": false
+    },
+    "acos_restaurant-acos": {
+      "quota_pairs": 9192,
+      "pairs": 9216,
+      "unique_groups": 256,
+      "available_groups": 1526,
+      "replacement": false
+    },
+    "ragtruth": {
+      "quota_pairs": 28848,
+      "pairs": 28848,
+      "unique_groups": 14424,
+      "available_groups": 15029,
+      "replacement": false
+    },
+    "contractnli": {
+      "quota_pairs": 16521,
+      "pairs": 16521,
+      "unique_groups": 5507,
+      "available_groups": 5507,
+      "replacement": false
+    },
+    "nli4ct": {
+      "quota_pairs": 3368,
+      "pairs": 3368,
+      "unique_groups": 1684,
+      "available_groups": 1684,
+      "replacement": false
+    },
+    "vast": {
+      "quota_pairs": 25020,
+      "pairs": 25020,
+      "unique_groups": 8340,
+      "available_groups": 11305,
+      "replacement": false
+    },
+    "isarcasm_native_class_0": {
+      "quota_pairs": 6250,
+      "pairs": 6250,
+      "group_exposures": 3125,
+      "unique_groups": 2589,
+      "available_groups": 2589,
+      "replacement": true
+    },
+    "isarcasm_native_class_1": {
+      "quota_pairs": 6250,
+      "pairs": 6250,
+      "group_exposures": 3125,
+      "unique_groups": 862,
+      "available_groups": 862,
+      "replacement": true
+    }
+  },
+  "language_source_files": [
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/extra-pairs/language/anli.parquet",
+      "bytes": 12562549,
+      "mtime_ns": 1793371641043084117
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/extra-pairs/language/hellaswag.parquet",
+      "bytes": 13342393,
+      "mtime_ns": 1793371636007173266
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/extra-pairs/language/acos_laptop-acos.parquet",
+      "bytes": 949114,
+      "mtime_ns": 1793371673490509712
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/extra-pairs/language/acos_restaurant-acos.parquet",
+      "bytes": 82443,
+      "mtime_ns": 1793371673642507021
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/extra-pairs/language/ragtruth.parquet",
+      "bytes": 6045411,
+      "mtime_ns": 1793371670934554959
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/extra-pairs/language/contractnli.parquet",
+      "bytes": 634575,
+      "mtime_ns": 1793371641327079089
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/extra-pairs/language/nli4ct.parquet",
+      "bytes": 865707,
+      "mtime_ns": 1793371669570579105
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/extra-pairs/language/vast.parquet",
+      "bytes": 1167687,
+      "mtime_ns": 1793371669126586965
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/extra-pairs/language/isarcasm.parquet",
+      "bytes": 448011,
+      "mtime_ns": 1793371669250584769
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/benchmarks-train/language/isarcasm/train/train.En.csv",
+      "bytes": 491395,
+      "mtime_ns": 1793352590631610113
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/benchmarks-train/language/anli/plain_text/train_r1-00000-of-00001.parquet",
+      "bytes": 3140120,
+      "mtime_ns": 1793352541796470190
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/benchmarks-train/language/anli/plain_text/train_r2-00000-of-00001.parquet",
+      "bytes": 6527557,
+      "mtime_ns": 1793352541756470895
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/benchmarks-train/language/anli/plain_text/train_r3-00000-of-00001.parquet",
+      "bytes": 14333467,
+      "mtime_ns": 1793352546520386994
+    }
+  ],
+  "dropped_groups": {
+    "acos_laptop-acos_changed_labels_after_global_dedup": 2,
+    "contractnli_changed_labels_after_global_dedup": 397,
+    "hellaswag_changed_labels_after_global_dedup": 1,
+    "hellaswag_incomplete_after_global_dedup": 93,
+    "sarcasm_non_english_or_non_core": 8304,
+    "isarcasm_changed_labels_after_global_dedup": 5,
+    "nli4ct_changed_labels_after_global_dedup": 8,
+    "vast_changed_labels_after_global_dedup": 467
+  },
+  "native_anli_identity": {
+    "raw_train_questions_by_round": {
+      "train_r1": 16946,
+      "train_r2": 45460,
+      "train_r3": 100459
+    },
+    "intact_admitted_questions_by_round": {
+      "train_r1": 16940,
+      "train_r2": 45398,
+      "train_r3": 100263
+    },
+    "rejected": {
+      "ambiguous_or_unmapped_native_question": 132
+    },
+    "identity": "native train filename + row index, exact premise/hypothesis and complete labeled criteria",
+    "cache_group_id": "2**31 + state_id; independent of legacy round-colliding group IDs"
+  },
+  "old_four_pool": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103",
+  "old_teacher": {
+    "path": "/home/dev/assumeengage/runs/distillation-fresh-qwen-1m-20261103/teacher-labels/prob-match.npy",
+    "bytes": 4000128,
+    "mtime_ns": 1793739651510538199
+  }
+}

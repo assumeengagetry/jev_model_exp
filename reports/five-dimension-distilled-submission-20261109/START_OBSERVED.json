@@ -1,0 +1,77 @@
+{
+  "observed_utc": "2026-11-09T08:17:13.936345+00:00",
+  "pipeline": {
+    "stage": "labeling_native_language",
+    "complete": false,
+    "updated_utc": "2026-11-09T08:17:12.657702+00:00",
+    "coordinator": {
+      "pid": 323791,
+      "starttime": "114137420",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "children": {
+      "prepare": null,
+      "teacher-0": {
+        "pid": 323799,
+        "starttime": "114139439",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "teacher-1": {
+        "pid": 323805,
+        "starttime": "114139455",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "teacher-2": {
+        "pid": 323811,
+        "starttime": "114139469",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      }
+    }
+  },
+  "training_coordinator_alive": true,
+  "teacher": [
+    {
+      "rank": 0,
+      "status": "labeling",
+      "valid_pairs": 9968,
+      "remaining_pairs": 71602,
+      "oom_retries": 0,
+      "seconds": 720.877961877035,
+      "error": null
+    },
+    {
+      "rank": 1,
+      "status": "labeling",
+      "valid_pairs": 9920,
+      "remaining_pairs": 71650,
+      "oom_retries": 0,
+      "seconds": 725.0662448341027,
+      "error": null
+    },
+    {
+      "rank": 2,
+      "status": "labeling",
+      "valid_pairs": 9872,
+      "remaining_pairs": 71698,
+      "oom_retries": 0,
+      "seconds": 724.2129814438522,
+      "error": null
+    }
+  ],
+  "official_status": {
+    "stage": "waiting_for_completed_five_dimension_final",
+    "complete": false,
+    "updated_utc": "2026-11-09T08:16:57.518235+00:00",
+    "upstream_commit": "25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d"
+  },
+  "official_coordinator_alive": true,
+  "student_complete": false,
+  "official_complete": false,
+  "old_expanded_pids_still_present": [],
+  "teacher_valid_pairs": 29760,
+  "gpu_processes": [
+    "323799, /home/dev/assumeengage/envs/knowline/bin/python, 64566",
+    "323805, /home/dev/assumeengage/envs/knowline/bin/python, 65514",
+    "323811, /home/dev/assumeengage/envs/knowline/bin/python, 65576"
+  ]
+}

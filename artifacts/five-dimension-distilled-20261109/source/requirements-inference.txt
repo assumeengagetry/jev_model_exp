@@ -1,0 +1,7 @@
+# Versions used by the submitted classifier; install a CUDA-compatible Torch wheel.
+torch==2.9.1
+transformers==4.57.6
+peft==0.18.1
+numpy==2.4.6
+# Install the unmodified Decision Index kit separately at commit
+# 25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d.
