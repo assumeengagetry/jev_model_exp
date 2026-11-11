@@ -1,0 +1,729 @@
+{
+  "scope": "read-only aggregation of both actual completed official result files; no new model work",
+  "old_inference_wall_seconds": 33609.1,
+  "new_inference_wall_seconds": 12157.2,
+  "inference_wall_speedup": 2.764542822360412,
+  "remaining_speedup_to_30_minutes": 6.7540000000000004,
+  "final_runtime_counters_including_upstream_warmup": {
+    "event": "optimized_engine_final_runtime",
+    "sealed_graph_shapes": [
+      [
+        "full",
+        2,
+        64
+      ],
+      [
+        "full",
+        2,
+        128
+      ],
+      [
+        "full",
+        2,
+        256
+      ],
+      [
+        "full",
+        2,
+        512
+      ],
+      [
+        "full",
+        4,
+        64
+      ],
+      [
+        "full",
+        4,
+        128
+      ],
+      [
+        "full",
+        4,
+        256
+      ],
+      [
+        "full",
+        4,
+        512
+      ],
+      [
+        "full",
+        8,
+        64
+      ],
+      [
+        "full",
+        8,
+        128
+      ],
+      [
+        "full",
+        8,
+        256
+      ],
+      [
+        "full",
+        8,
+        512
+      ],
+      [
+        "prefix",
+        64
+      ],
+      [
+        "prefix",
+        128
+      ],
+      [
+        "prefix",
+        256
+      ],
+      [
+        "prefix",
+        512
+      ],
+      [
+        "prefix",
+        1024
+      ],
+      [
+        "prefix",
+        2048
+      ],
+      [
+        "prefix",
+        4096
+      ],
+      [
+        "fork",
+        256,
+        8,
+        8
+      ],
+      [
+        "fork",
+        256,
+        8,
+        32
+      ],
+      [
+        "fork",
+        256,
+        32,
+        8
+      ],
+      [
+        "fork",
+        256,
+        32,
+        32
+      ],
+      [
+        "fork",
+        1024,
+        8,
+        8
+      ],
+      [
+        "fork",
+        1024,
+        8,
+        32
+      ],
+      [
+        "fork",
+        1024,
+        32,
+        8
+      ],
+      [
+        "fork",
+        1024,
+        32,
+        32
+      ],
+      [
+        "fork",
+        4096,
+        8,
+        8
+      ],
+      [
+        "fork",
+        4096,
+        8,
+        32
+      ],
+      [
+        "fork",
+        4096,
+        32,
+        8
+      ],
+      [
+        "fork",
+        4096,
+        32,
+        32
+      ]
+    ],
+    "graph_startup_seconds": 6.0847784269135445,
+    "graph_counts": {
+      "full_graph_waves": 230306,
+      "full_eager_waves": 27253,
+      "prefix_graph_calls": 63385,
+      "unique_prefix_tokens": 101123828,
+      "fork_graph_waves": 104875,
+      "suffix_tokens": 17231476,
+      "prefix_eager_calls": 2317,
+      "fork_eager_waves": 15618
+    },
+    "prefix_cache_capacity_tokens": 40960,
+    "prefix_cache_lifetime": "one field; writer overwritten before every fork",
+    "reserved_gib": 15.900390625
+  },
+  "benchmarks_by_new_cost": [
+    {
+      "benchmark": "6:RouterBench",
+      "requests": 10000,
+      "fields": 20000,
+      "fields_per_request": 2.0,
+      "old_seconds": 7137.70807000529,
+      "new_seconds": 3108.3737100863364,
+      "speedup": 2.2962837598465717,
+      "new_request_time_share": 0.2563654740496006,
+      "choice_changes": 679
+    },
+    {
+      "benchmark": "22:POP909-CL",
+      "requests": 2000,
+      "fields": 2000,
+      "fields_per_request": 1.0,
+      "old_seconds": 8362.639132213313,
+      "new_seconds": 1970.9855077557731,
+      "speedup": 4.242871953805119,
+      "new_request_time_share": 0.16255852132614607,
+      "choice_changes": 170
+    },
+    {
+      "benchmark": "38:ACOS",
+      "requests": 1565,
+      "fields": 91092,
+      "fields_per_request": 58.20575079872204,
+      "old_seconds": 442.21268443134613,
+      "new_seconds": 964.9696218520403,
+      "speedup": 0.45826591264357025,
+      "new_request_time_share": 0.07958659981804148,
+      "choice_changes": 394
+    },
+    {
+      "benchmark": "2:ToolRet",
+      "requests": 1013,
+      "fields": 30047,
+      "fields_per_request": 29.661401776900295,
+      "old_seconds": 1588.5196308619343,
+      "new_seconds": 862.3122917509172,
+      "speedup": 1.8421628058165096,
+      "new_request_time_share": 0.0711198588304175,
+      "choice_changes": 152
+    },
+    {
+      "benchmark": "33:SATA-Bench",
+      "requests": 1650,
+      "fields": 15517,
+      "fields_per_request": 9.404242424242424,
+      "old_seconds": 366.15462731174193,
+      "new_seconds": 544.8981463313103,
+      "speedup": 0.6719689354368105,
+      "new_request_time_share": 0.044940886978835935,
+      "choice_changes": 98
+    },
+    {
+      "benchmark": "5:CLINC150+OOS",
+      "requests": 5500,
+      "fields": 5500,
+      "fields_per_request": 1.0,
+      "old_seconds": 1912.9359832571354,
+      "new_seconds": 535.2322953476105,
+      "speedup": 3.5740294445699794,
+      "new_request_time_share": 0.044143688604171984,
+      "choice_changes": 44
+    },
+    {
+      "benchmark": "36:BRIGHT",
+      "requests": 307,
+      "fields": 9824,
+      "fields_per_request": 32.0,
+      "old_seconds": 344.86343620577827,
+      "new_seconds": 413.4671370596625,
+      "speedup": 0.8340770167569935,
+      "new_request_time_share": 0.03410101502669297,
+      "choice_changes": 16
+    },
+    {
+      "benchmark": "57:MMLU-Pro",
+      "requests": 12032,
+      "fields": 12032,
+      "fields_per_request": 1.0,
+      "old_seconds": 847.938638297841,
+      "new_seconds": 412.23616494145244,
+      "speedup": 2.0569244292728874,
+      "new_request_time_share": 0.03399948966968627,
+      "choice_changes": 190
+    },
+    {
+      "benchmark": "3:API-Bank",
+      "requests": 508,
+      "fields": 508,
+      "fields_per_request": 1.0,
+      "old_seconds": 4088.5013869579416,
+      "new_seconds": 329.9740481947083,
+      "speedup": 12.390372543920282,
+      "new_request_time_share": 0.027214859337860154,
+      "choice_changes": 8
+    },
+    {
+      "benchmark": "56:PhishNChips phishing decisions",
+      "requests": 2000,
+      "fields": 18000,
+      "fields_per_request": 9.0,
+      "old_seconds": 151.37706571118906,
+      "new_seconds": 226.85009923111647,
+      "speedup": 0.6672999757296338,
+      "new_request_time_share": 0.018709633606432987,
+      "choice_changes": 4
+    },
+    {
+      "benchmark": "1:BFCL",
+      "requests": 1694,
+      "fields": 4768,
+      "fields_per_request": 2.8146399055489963,
+      "old_seconds": 203.6328390482813,
+      "new_seconds": 223.04994438635185,
+      "speedup": 0.9129472755911673,
+      "new_request_time_share": 0.018396212959784646,
+      "choice_changes": 8
+    },
+    {
+      "benchmark": "4:BANKING77",
+      "requests": 3080,
+      "fields": 3080,
+      "fields_per_request": 1.0,
+      "old_seconds": 645.0563076520339,
+      "new_seconds": 197.22722084401175,
+      "speedup": 3.2706251443973495,
+      "new_request_time_share": 0.016266464293881816,
+      "choice_changes": 35
+    },
+    {
+      "benchmark": "31:ChessBench",
+      "requests": 5000,
+      "fields": 5000,
+      "fields_per_request": 1.0,
+      "old_seconds": 537.8816575033125,
+      "new_seconds": 189.78209557873197,
+      "speedup": 2.8342065454755705,
+      "new_request_time_share": 0.015652421953413334,
+      "choice_changes": 339
+    },
+    {
+      "benchmark": "24:MMLU",
+      "requests": 14042,
+      "fields": 14042,
+      "fields_per_request": 1.0,
+      "old_seconds": 982.5448650054168,
+      "new_seconds": 175.83580971206538,
+      "speedup": 5.587854184050186,
+      "new_request_time_share": 0.014502191472490912,
+      "choice_changes": 58
+    },
+    {
+      "benchmark": "62:When2Call MCQ",
+      "requests": 3652,
+      "fields": 3652,
+      "fields_per_request": 1.0,
+      "old_seconds": 278.91639955248684,
+      "new_seconds": 168.28956993413158,
+      "speedup": 1.6573599876787048,
+      "new_request_time_share": 0.013879809636071307,
+      "choice_changes": 37
+    },
+    {
+      "benchmark": "42:NLI4CT",
+      "requests": 5500,
+      "fields": 5500,
+      "fields_per_request": 1.0,
+      "old_seconds": 393.544289292302,
+      "new_seconds": 163.6096837243531,
+      "speedup": 2.405385062386276,
+      "new_request_time_share": 0.01349383247934303,
+      "choice_changes": 4
+    },
+    {
+      "benchmark": "11:ContractNLI",
+      "requests": 123,
+      "fields": 2091,
+      "fields_per_request": 17.0,
+      "old_seconds": 239.51298216846772,
+      "new_seconds": 152.53548625693657,
+      "speedup": 1.5702115491015838,
+      "new_request_time_share": 0.012580479662646395,
+      "choice_changes": 33
+    },
+    {
+      "benchmark": "29:HellaSwag",
+      "requests": 10042,
+      "fields": 10042,
+      "fields_per_request": 1.0,
+      "old_seconds": 710.5747045963071,
+      "new_seconds": 142.18388366582803,
+      "speedup": 4.997575578019495,
+      "new_request_time_share": 0.011726723405208193,
+      "choice_changes": 9
+    },
+    {
+      "benchmark": "10:SGD/SGD-X",
+      "requests": 2500,
+      "fields": 2500,
+      "fields_per_request": 1.0,
+      "old_seconds": 183.45103673730046,
+      "new_seconds": 134.55893471394666,
+      "speedup": 1.363350840487044,
+      "new_request_time_share": 0.011097849970102868,
+      "choice_changes": 2
+    },
+    {
+      "benchmark": "37:Amazon ESCI",
+      "requests": 5000,
+      "fields": 5000,
+      "fields_per_request": 1.0,
+      "old_seconds": 355.7919319253415,
+      "new_seconds": 121.84114969614893,
+      "speedup": 2.920129470319559,
+      "new_request_time_share": 0.01004894102637806,
+      "choice_changes": 7
+    },
+    {
+      "benchmark": "40:iSarcasmEval",
+      "requests": 4600,
+      "fields": 11600,
+      "fields_per_request": 2.5217391304347827,
+      "old_seconds": 318.91966891055927,
+      "new_seconds": 113.17354396660812,
+      "speedup": 2.8179701521466587,
+      "new_request_time_share": 0.009334073684488515,
+      "choice_changes": 70
+    },
+    {
+      "benchmark": "59:RAGTruth response-level hallucination",
+      "requests": 2700,
+      "fields": 2700,
+      "fields_per_request": 1.0,
+      "old_seconds": 194.28639471437782,
+      "new_seconds": 112.46960068913177,
+      "speedup": 1.7274569619162188,
+      "new_request_time_share": 0.00927601542995861,
+      "choice_changes": 0
+    },
+    {
+      "benchmark": "58:BBH fixed-option tasks",
+      "requests": 5507,
+      "fields": 5507,
+      "fields_per_request": 1.0,
+      "old_seconds": 383.9124938522,
+      "new_seconds": 91.02845108439215,
+      "speedup": 4.217500015421289,
+      "new_request_time_share": 0.007507640390383719,
+      "choice_changes": 60
+    },
+    {
+      "benchmark": "61:HoVer claim verification",
+      "requests": 4000,
+      "fields": 4000,
+      "fields_per_request": 1.0,
+      "old_seconds": 284.23828859068453,
+      "new_seconds": 88.46960478206165,
+      "speedup": 3.2128355189433093,
+      "new_request_time_share": 0.007296597605152208,
+      "choice_changes": 0
+    },
+    {
+      "benchmark": "50:Habermas Machine",
+      "requests": 1676,
+      "fields": 1676,
+      "fields_per_request": 1.0,
+      "old_seconds": 122.95758936810307,
+      "new_seconds": 81.10279363044538,
+      "speedup": 1.5160709497674532,
+      "new_request_time_share": 0.006689014280473551,
+      "choice_changes": 15
+    },
+    {
+      "benchmark": "23:cfcolor",
+      "requests": 5000,
+      "fields": 5000,
+      "fields_per_request": 1.0,
+      "old_seconds": 347.7998677950818,
+      "new_seconds": 78.47982566710562,
+      "speedup": 4.431710504434265,
+      "new_request_time_share": 0.006472683012725235,
+      "choice_changes": 2
+    },
+    {
+      "benchmark": "9:Home appliance simulator",
+      "requests": 88,
+      "fields": 1590,
+      "fields_per_request": 18.068181818181817,
+      "old_seconds": 55.4584360702429,
+      "new_seconds": 77.29202782711945,
+      "speedup": 0.7175181920998093,
+      "new_request_time_share": 0.006374718486987856,
+      "choice_changes": 8
+    },
+    {
+      "benchmark": "20:BPoMP",
+      "requests": 5000,
+      "fields": 5000,
+      "fields_per_request": 1.0,
+      "old_seconds": 349.94038872467354,
+      "new_seconds": 60.94822030607611,
+      "speedup": 5.741601427692335,
+      "new_request_time_share": 0.0050267505932588465,
+      "choice_changes": 5
+    },
+    {
+      "benchmark": "30:GSM8K",
+      "requests": 2638,
+      "fields": 2638,
+      "fields_per_request": 1.0,
+      "old_seconds": 183.978406725917,
+      "new_seconds": 57.698462835745886,
+      "speedup": 3.1886188588708295,
+      "new_request_time_share": 0.004758724386588769,
+      "choice_changes": 52
+    },
+    {
+      "benchmark": "44:CLadder",
+      "requests": 5000,
+      "fields": 5000,
+      "fields_per_request": 1.0,
+      "old_seconds": 346.0491216473747,
+      "new_seconds": 57.67704112478532,
+      "speedup": 5.999772438025924,
+      "new_request_time_share": 0.004756957614766082,
+      "choice_changes": 15
+    },
+    {
+      "benchmark": "41:VAST",
+      "requests": 3006,
+      "fields": 3006,
+      "fields_per_request": 1.0,
+      "old_seconds": 209.30058404244483,
+      "new_seconds": 44.24994361354038,
+      "speedup": 4.729962728775079,
+      "new_request_time_share": 0.0036495475863609354,
+      "choice_changes": 3
+    },
+    {
+      "benchmark": "12:ANLI",
+      "requests": 3200,
+      "fields": 3200,
+      "fields_per_request": 1.0,
+      "old_seconds": 224.17477657576092,
+      "new_seconds": 43.95080090453848,
+      "speedup": 5.100584561875686,
+      "new_request_time_share": 0.0036248755650550987,
+      "choice_changes": 6
+    },
+    {
+      "benchmark": "32:MuSR",
+      "requests": 756,
+      "fields": 756,
+      "fields_per_request": 1.0,
+      "old_seconds": 55.29724708432332,
+      "new_seconds": 35.75417465693317,
+      "speedup": 1.5465955406580894,
+      "new_request_time_share": 0.002948852612359244,
+      "choice_changes": 17
+    },
+    {
+      "benchmark": "39:FinEntity",
+      "requests": 979,
+      "fields": 2129,
+      "fields_per_request": 2.174668028600613,
+      "old_seconds": 69.64448113343678,
+      "new_seconds": 30.46522255963646,
+      "speedup": 2.2860322453612776,
+      "new_request_time_share": 0.002512642285637802,
+      "choice_changes": 4
+    },
+    {
+      "benchmark": "21:Humicroedit",
+      "requests": 2628,
+      "fields": 2628,
+      "fields_per_request": 1.0,
+      "old_seconds": 181.94222430302761,
+      "new_seconds": 27.41348750074394,
+      "speedup": 6.636960156860382,
+      "new_request_time_share": 0.002260948127207593,
+      "choice_changes": 8
+    },
+    {
+      "benchmark": "26:ARC-Easy",
+      "requests": 2376,
+      "fields": 2376,
+      "fields_per_request": 1.0,
+      "old_seconds": 165.53379467641935,
+      "new_seconds": 25.37745216442272,
+      "speedup": 6.522868946965656,
+      "new_request_time_share": 0.0020930245720430407,
+      "choice_changes": 9
+    },
+    {
+      "benchmark": "45:HLE",
+      "requests": 513,
+      "fields": 513,
+      "fields_per_request": 1.0,
+      "old_seconds": 42.64576842682436,
+      "new_seconds": 15.70135018764995,
+      "speedup": 2.716057403800076,
+      "new_request_time_share": 0.001294980738967793,
+      "choice_changes": 7
+    },
+    {
+      "benchmark": "27:ARC-Challenge",
+      "requests": 1172,
+      "fields": 1172,
+      "fields_per_request": 1.0,
+      "old_seconds": 81.56655336567201,
+      "new_seconds": 12.722489021485671,
+      "speedup": 6.4112103557663005,
+      "new_request_time_share": 0.0010492969099887995,
+      "choice_changes": 2
+    },
+    {
+      "benchmark": "28:WinoGrande",
+      "requests": 1267,
+      "fields": 1267,
+      "fields_per_request": 1.0,
+      "old_seconds": 87.33245643018745,
+      "new_seconds": 12.415125062456354,
+      "speedup": 7.034359782188821,
+      "new_request_time_share": 0.0010239468348653923,
+      "choice_changes": 0
+    },
+    {
+      "benchmark": "64:New Yorker caption matching",
+      "requests": 528,
+      "fields": 528,
+      "fields_per_request": 1.0,
+      "old_seconds": 36.640023331623524,
+      "new_seconds": 9.1263174994383,
+      "speedup": 4.014765356769432,
+      "new_request_time_share": 0.000752699942249119,
+      "choice_changes": 0
+    },
+    {
+      "benchmark": "43:CRUXEval",
+      "requests": 570,
+      "fields": 570,
+      "fields_per_request": 1.0,
+      "old_seconds": 40.10762654640712,
+      "new_seconds": 7.82186084985733,
+      "speedup": 5.127632326409729,
+      "new_request_time_share": 0.000645113892907037,
+      "choice_changes": 4
+    },
+    {
+      "benchmark": "25:GPQA Diamond",
+      "requests": 198,
+      "fields": 198,
+      "fields_per_request": 1.0,
+      "old_seconds": 13.936038067098707,
+      "new_seconds": 3.0361716584302485,
+      "speedup": 4.590003344640886,
+      "new_request_time_share": 0.00025041055519923734,
+      "choice_changes": 1
+    },
+    {
+      "benchmark": "34:SimpleBench",
+      "requests": 10,
+      "fields": 10,
+      "fields_per_request": 1.0,
+      "old_seconds": 0.7106032816227525,
+      "new_seconds": 0.18830727692693472,
+      "speedup": 3.7736368621509744,
+      "new_request_time_share": 1.5530785169014365e-05,
+      "choice_changes": 0
+    }
+  ],
+  "regressed_benchmarks": [
+    {
+      "benchmark": "1:BFCL",
+      "requests": 1694,
+      "fields": 4768,
+      "fields_per_request": 2.8146399055489963,
+      "old_seconds": 203.6328390482813,
+      "new_seconds": 223.04994438635185,
+      "speedup": 0.9129472755911673,
+      "new_request_time_share": 0.018396212959784646,
+      "choice_changes": 8
+    },
+    {
+      "benchmark": "33:SATA-Bench",
+      "requests": 1650,
+      "fields": 15517,
+      "fields_per_request": 9.404242424242424,
+      "old_seconds": 366.15462731174193,
+      "new_seconds": 544.8981463313103,
+      "speedup": 0.6719689354368105,
+      "new_request_time_share": 0.044940886978835935,
+      "choice_changes": 98
+    },
+    {
+      "benchmark": "36:BRIGHT",
+      "requests": 307,
+      "fields": 9824,
+      "fields_per_request": 32.0,
+      "old_seconds": 344.86343620577827,
+      "new_seconds": 413.4671370596625,
+      "speedup": 0.8340770167569935,
+      "new_request_time_share": 0.03410101502669297,
+      "choice_changes": 16
+    },
+    {
+      "benchmark": "38:ACOS",
+      "requests": 1565,
+      "fields": 91092,
+      "fields_per_request": 58.20575079872204,
+      "old_seconds": 442.21268443134613,
+      "new_seconds": 964.9696218520403,
+      "speedup": 0.45826591264357025,
+      "new_request_time_share": 0.07958659981804148,
+      "choice_changes": 394
+    },
+    {
+      "benchmark": "56:PhishNChips phishing decisions",
+      "requests": 2000,
+      "fields": 18000,
+      "fields_per_request": 9.0,
+      "old_seconds": 151.37706571118906,
+      "new_seconds": 226.85009923111647,
+      "speedup": 0.6672999757296338,
+      "new_request_time_share": 0.018709633606432987,
+      "choice_changes": 4
+    },
+    {
+      "benchmark": "9:Home appliance simulator",
+      "requests": 88,
+      "fields": 1590,
+      "fields_per_request": 18.068181818181817,
+      "old_seconds": 55.4584360702429,
+      "new_seconds": 77.29202782711945,
+      "speedup": 0.7175181920998093,
+      "new_request_time_share": 0.006374718486987856,
+      "choice_changes": 8
+    }
+  ]
+}

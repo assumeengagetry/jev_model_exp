@@ -1,5 +1,7 @@
 # 证据与图表
 
+**近期证据：[当前模型与两段训练](06-五维训练与Readout/current-scheme-20261110/CURRENT_STATE.json) · [Readout聚合结果](06-五维训练与Readout/readout-study-20261108/final-20261110/RESULTS.json) · [加速版public结果](05-Attention与效率/inference-prefix-graphs-20261110/results/scores.json)。**
+
 [返回总入口](../README.md)
 
 - [蒸馏](01-蒸馏/README.md)：0 份文档，399 个原始归档文件。

@@ -1,5 +1,7 @@
 # 五维蒸馏参榜候选：准备记录
 
+> **后续状态：五维KD已完成并继续联合续训；最终joint权重原正式public24.97、加速版24.99。请读[当前完整方案](../current-scheme-20261110/README.md)和[联合段结果](../../../01-研究结论/06-五维训练与Readout/joint-generic-continuation-20261109/README.md)。本页“Teacher／Student仍进行中”等保留为历史观察，不代表当前未完成。**
+
 用户于 2026-11-09 将最高分蒸馏配方的五维补全模型提升为优先任务，并要求先暂停原始标签扩大续训。
 
 - 训练设计：[docs/superpowers/specs/2026-11-09-five-dimension-distilled-submission-design.md](../2026-11-09-five-dimension-distilled-submission-design.md)。
@@ -17,3 +19,7 @@
 更新至08:17 UTC：Teacher已持久化29,760／244,710条（约12.2%），OOM0；训练协调器仍存活。官方协调器324276已部署并存活，阶段waiting_for_completed_five_dimension_final；不会提前加载Student或启动额外评测。`START_OBSERVED.json`保存此次独立观测，`OFFICIAL_LAUNCH.json`／`OFFICIAL_STATUS.json`保存真实等待队列证据。
 
 推理／官方队列的独立静态审查已完成；据此补齐单候选OOM整体拒绝、信号受保护启动与子进程继承锁、只读冻结模型/实际基座/Engine及运行前后来源复核、完整结果幂等跳过。没有运行用户禁止的额外测试。正式结果、最终导出和后续实际执行路径不能以静态审查冒充通过。
+
+更新至2026-11-09 11:27/11:32 UTC：语言Teacher244,710条已完整结束，merge/targets完成，Student327929已真实训练至观察920／9769步、117,760pair／35,816,310token；实际FA3确定性前后向均123,200次、无SDPA回退。主协调器仍存活，官方协调器仍等待新final。独立记录见 `STUDENT_OBSERVED_READOUT_HANDOFF.json`。低优先级readout研究仅使用另一独立目录做CPU准备，未修改或暂停本主任务。
+
+**2026-11-09最新执行方向已变更**：用户要求本五维KD继续完成，随后从其final接“通用原标签＋五维原蒸馏目标”联合续训，仅对后者fixed final做那一次完整官方public0.3。13:34UTC旧official等待器已按精确身份退出，无评测child／旧final结果；13:54UTC旧入口加入deferral guard并保留原件，防止误调用。当前Student未停，13:53UTC真实6,580／9,769步。后续新阶段状态见 `reports/joint-generic-continuation-20261109/README.md`；此前“旧final后立即official”的叙述已被本用户指令取代，旧状态文件仅为历史证据。

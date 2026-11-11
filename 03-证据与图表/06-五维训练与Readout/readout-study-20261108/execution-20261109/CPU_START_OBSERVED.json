@@ -1,0 +1,76 @@
+{
+  "observed_utc": "2026-11-09T11:00:21.999560+00:00",
+  "readout_queue": {
+    "stage": "waiting_for_complete_cpu_data",
+    "complete": false,
+    "updated_utc": "2026-11-09T11:00:21.343587+00:00",
+    "priority": "below_main_distillation_and_official_run",
+    "coordinator": {
+      "pid": 327760,
+      "starttime": "115190384",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "worker": null
+  },
+  "readout_queue_alive": true,
+  "cpu_preparation": {
+    "stage": "running_original_complete_question_preparation",
+    "complete": false,
+    "supervisor": {
+      "pid": 327689,
+      "starttime": "115172362",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "worker": {
+      "pid": 327690,
+      "starttime": "115172364",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "gpu": null,
+    "cpu_threads_max": 2,
+    "nice": 19,
+    "io_class": "idle",
+    "started_utc": "2026-11-09T10:56:20.907303+00:00"
+  },
+  "cpu_worker_alive": true,
+  "cpu_controls": {
+    "Name": "python",
+    "Threads": "3",
+    "Cpus_allowed_list": "0-1",
+    "VmRSS": "414936 kB",
+    "nice": "19"
+  },
+  "data_complete": false,
+  "readout_gpu_worker_exists": false,
+  "main_phase": "labeling_native_language",
+  "main_coordinator_alive": true,
+  "main_children": {
+    "prepare": null,
+    "teacher-0": {
+      "pid": 323799,
+      "starttime": "114139439",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "teacher-1": {
+      "pid": 323805,
+      "starttime": "114139455",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "teacher-2": {
+      "pid": 323811,
+      "starttime": "114139469",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    }
+  },
+  "main_official_status": {
+    "stage": "waiting_for_completed_five_dimension_final",
+    "complete": false,
+    "updated_utc": "2026-11-09T11:00:06.205979+00:00",
+    "upstream_commit": "25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d"
+  },
+  "gpu_processes": [
+    "323799, /home/dev/assumeengage/envs/knowline/bin/python, 64572",
+    "323805, /home/dev/assumeengage/envs/knowline/bin/python, 65522",
+    "323811, /home/dev/assumeengage/envs/knowline/bin/python, 65582"
+  ]
+}

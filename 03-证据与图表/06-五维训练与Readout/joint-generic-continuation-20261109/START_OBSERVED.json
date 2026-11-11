@@ -1,0 +1,123 @@
+{
+  "observed_utc": "2026-11-09T14:18:55.750868+00:00",
+  "own_coordinator_alive": true,
+  "pipeline": {
+    "stage": "preparing_joint_original_generic_data",
+    "complete": false,
+    "updated_utc": "2026-11-09T14:18:49.804990+00:00",
+    "coordinator": {
+      "pid": 343153,
+      "starttime": "116371109",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "children": {
+      "prepare": {
+        "pid": 343155,
+        "starttime": "116371252",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      }
+    }
+  },
+  "source_progress": {
+    "step": 7640,
+    "total_steps": 9769,
+    "pairs_seen": 977920,
+    "effective_tokens": 287001542,
+    "actual_deterministic_fa3_backward_executed": true
+  },
+  "source_pipeline": {
+    "stage": "training_five_dimension_distilled",
+    "complete": false,
+    "updated_utc": "2026-11-09T14:18:53.104635+00:00",
+    "coordinator": {
+      "pid": 323791,
+      "starttime": "114137420",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "children": {
+      "prepare": null,
+      "teacher-0": null,
+      "teacher-1": null,
+      "teacher-2": null,
+      "teacher-merge": null,
+      "targets": null,
+      "student": {
+        "pid": 327929,
+        "starttime": "115236499",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      }
+    }
+  },
+  "new_code_files_exactly_match": {
+    "code/.keep": true,
+    "code/decision_engine.py": true,
+    "code/joint_control.py": true,
+    "code/joint_data.py": true,
+    "code/prepare_joint.py": true,
+    "code/requirements-inference.txt": true,
+    "code/run_joint.py": true,
+    "code/run_official_joint.py": true,
+    "code/train_joint.py": true
+  },
+  "lock_records": [
+    {
+      "file": "PIPELINE.lock",
+      "record": [
+        "21: FLOCK  ADVISORY  WRITE 343153 00:4632:204430510 0 EOF"
+      ]
+    },
+    {
+      "file": "PREPARE.lock",
+      "record": [
+        "27: FLOCK  ADVISORY  WRITE 343155 00:4632:204430518 0 EOF"
+      ]
+    }
+  ],
+  "preparation_events": [
+    {
+      "event": "task_inputs_indexed",
+      "domain": "tools",
+      "pairs": 750000,
+      "tokens": 187202578,
+      "unique_inputs": 750000
+    },
+    {
+      "event": "task_inputs_indexed",
+      "domain": "arts",
+      "pairs": 1000000,
+      "tokens": 314094515,
+      "unique_inputs": 1000000
+    },
+    {
+      "event": "task_inputs_indexed",
+      "domain": "language",
+      "pairs": 1250308,
+      "tokens": 366985783,
+      "unique_inputs": 1244710
+    },
+    {
+      "event": "canonical_shard_indexed",
+      "file": "train-00000-of-00005.parquet",
+      "raw_rows": 379999,
+      "invalid_text_or_source": 27
+    },
+    {
+      "event": "canonical_shard_indexed",
+      "file": "train-00001-of-00005.parquet",
+      "raw_rows": 759998,
+      "invalid_text_or_source": 40
+    },
+    {
+      "event": "canonical_shard_indexed",
+      "file": "train-00002-of-00005.parquet",
+      "raw_rows": 1139997,
+      "invalid_text_or_source": 64
+    }
+  ],
+  "data_ready": {},
+  "training_complete": {},
+  "official_complete": {},
+  "old_official_deferred": true,
+  "gpu_processes": "GPU-43241aa5-89e9-5b7e-a5dc-bd4909f1d291, 327929, 37866",
+  "scratch_free_bytes": 201050652672
+}

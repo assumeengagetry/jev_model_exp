@@ -1,0 +1,37 @@
+{
+  "complete": true,
+  "public_index": 24.99,
+  "original_public_index": 24.97,
+  "score_file": {
+    "path": "/tmp/opencode/jev-inference-prefix-graphs-20261110/runs/public-prefix-graphs-v1/scores.json",
+    "resolved": "/tmp/opencode/jev-inference-prefix-graphs-20261110/runs/public-prefix-graphs-v1/scores.json",
+    "bytes": 32079,
+    "mtime_ns": 1794317845987805944
+  },
+  "run_status": {
+    "time": "2026-11-10T13:36:43.341755+00:00",
+    "event": "complete",
+    "engine": "fast_pair_engine:FastPairClassifierEngine",
+    "completed": 140620,
+    "counts": {
+      "ok": 140620
+    },
+    "elapsed_seconds": 12157.2
+  },
+  "binding_file": {
+    "path": "/tmp/opencode/jev-inference-prefix-graphs-20261110/BINDING.json",
+    "resolved": "/tmp/opencode/jev-inference-prefix-graphs-20261110/BINDING.json",
+    "bytes": 105873,
+    "mtime_ns": 1794305626711230982
+  },
+  "comparison_file": {
+    "path": "/tmp/opencode/jev-inference-prefix-graphs-20261110/COMPARISON.json",
+    "resolved": "/tmp/opencode/jev-inference-prefix-graphs-20261110/COMPARISON.json",
+    "bytes": 14322,
+    "mtime_ns": 1794317866639386574
+  },
+  "pipeline_wall_seconds_including_load_and_scoring": 12220.82918005297,
+  "completed_utc": "2026-11-10T13:37:46.801069+00:00",
+  "private_full_score": null,
+  "uploaded": false
+}

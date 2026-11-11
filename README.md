@@ -2,6 +2,16 @@
 
 这里集中保存研究结论、研究路径，以及支撑结论的表格、图和精简证据。整理日期：2026-11-09。
 
+## 当前方案与近期结果（截至2026-11-10）
+
+**从头读：[当前方案完整说明](02-研究路径/06-五维训练与Readout/current-scheme-20261110/README.md)。** 按没有参与过对话、没有AI帮助也能理解的标准，分别写清任务、模型、数据、Teacher、损失、两段训练、正式推理、计分和人工复现缺口。
+
+- [数据与训练每一步](02-研究路径/06-五维训练与Readout/current-scheme-20261110/DATA-AND-TRAINING.md) · [推理与评测](02-研究路径/06-五维训练与Readout/current-scheme-20261110/INFERENCE-AND-EVALUATION.md) · [人工复现手册](02-研究路径/06-五维训练与Readout/current-scheme-20261110/REPRODUCTION.md)。
+- [为何仍未到28：事实、假设与缺失证据](01-研究结论/06-五维训练与Readout/current-scheme-20261110/BOTTLENECKS.md)。
+- 当前joint final原正式public **24.97**；同权重加速版 **24.99、整套3h22m37.2s、2.765×**，不是private Full，也不是逐位无损加速。
+- [Readout两层四臂最终报告](01-研究结论/06-五维训练与Readout/readout-study-20261108/FINAL-REPORT-20261110.md)：已完成并核验20来源；Cptr内部质量有信号，但换序明显弱于原pair，未替换正式模型。
+- [近期全部报告导航](01-研究结论/近期实验-20261110.md)。本次只发布文档与聚合证据；实际执行源码按研究库规则留在库外辅助归档，不发布模型权重、原始语料或逐请求预测。
+
 | 分类 | 内容 |
 |---|---|
 | [01 研究结论](01-研究结论/README.md) | 实验结果、复核报告、数据与外部方法调研结论 |
@@ -17,14 +27,14 @@
 | 专科与融合 | [研究结论](01-研究结论/03-专科与融合/five-specialists-20261030/report/REPORT.md) | [研究路径](02-研究路径/03-专科与融合/five-area-training-plan.md) | 四专科、混合、固定融合；另有 SLERP 和 SAMerging 对照。 |
 | 数据与评测 | [研究结论](01-研究结论/04-数据与评测/benchmark-data-mining-20261031/REPORT.md) | [研究路径](02-研究路径/04-数据与评测/benchmark-data-mining-20261031/PLAN.md) | 任务画像、训练来源核查、数据转换与评测隔离。 |
 | Attention 与效率 | [研究结论](01-研究结论/05-Attention与效率/2026-11-09-attention-audit/attention-survey.md) | [研究路径](02-研究路径/05-Attention与效率/2026-11-09-attention-audit/nine-source-check.md) | 公开资料与源码静态核查；效率实测单独保留。 |
-| 五维训练与 Readout | [研究结论](01-研究结论/06-五维训练与Readout/a800-qwen-native-readout-20261105/report/REPORT.md) | [研究路径](02-研究路径/06-五维训练与Readout/readout-study-20261108/EXPERIMENT-DESIGN.md) | 既有读出诊断已完成；新训练、适配方案按各自本地记录看状态。 |
+| 五维训练与 Readout | [最新结论](01-研究结论/06-五维训练与Readout/readout-study-20261108/FINAL-REPORT-20261110.md) | [当前完整方案](02-研究路径/06-五维训练与Readout/current-scheme-20261110/README.md) | joint两段训练及两次public已完成；readout内部研究已完成，不与正式Index混排。 |
 
 ## 当前阅读顺序与边界
 
 - 蒸馏先看[探索总报告](01-研究结论/01-蒸馏/distillation-exploration-20261104/REPORT.md)及[第九波完整结果](01-研究结论/01-蒸馏/distillation-exploration-20261104/ninth-wave-results/report/REPORT.md)：受控重复中 point 为 20.51、mixed 为 22.49；历史最高单次 23.96 未稳定复现。旧汇总保留其原观察日期，不作为当前统一排名。
 - Attention 先看[最终综述](01-研究结论/05-Attention与效率/2026-11-09-attention-audit/attention-survey.md)和[逐项证据清单](01-研究结论/05-Attention与效率/2026-11-09-attention-audit/attention-inventory.md)：依据公开资料与源码静态核查，未运行模型；证据不足的条目保持“未确认”。
 - 样本比例先看[RATIO-REVIEW](01-研究结论/02-Language/lu-pair-ratio-screen-20261029T133342Z/RATIO-REVIEW.md)；它更正了早期阶段稿的预算口径。
-- [五维原标签训练](02-研究路径/06-五维训练与Readout/all-dimension-supervised-20261108/STATUS.md)是“训练完成、未评测”；[扩大训练](02-研究路径/06-五维训练与Readout/all-dimension-expanded-20261108/STATUS.md)是暂停记录；[五维蒸馏参榜准备](02-研究路径/06-五维训练与Readout/five-dimension-distilled-submission-20261109/README.md)尚无归档最终成绩。这里只整理本地记录，不代表实时运行状态。
+- [五维原标签训练](02-研究路径/06-五维训练与Readout/all-dimension-supervised-20261108/STATUS.md)是另一条“训练完成、未完整public评测”路线；[扩大训练](02-研究路径/06-五维训练与Readout/all-dimension-expanded-20261108/STATUS.md)仍暂停。[五维蒸馏准备](02-研究路径/06-五维训练与Readout/five-dimension-distilled-submission-20261109/README.md)的后续joint正式成绩已归档，优先看[当前结果](01-研究结论/06-五维训练与Readout/joint-generic-continuation-20261109/README.md)，不以历史进行中快照覆盖终点。
 - 完整公共 37 项、冻结 pilot、历史 Language 九项使用不同口径，不跨口径直接排名。计划和早期草案不等于验证结论。
 
 ## 表格、图和阅读版

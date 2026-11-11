@@ -1,5 +1,10 @@
 # Attention与效率 · 证据与图表
 
+## 2026-11-10新增
+
+- [加速版原生分数](inference-prefix-graphs-20261110/results/scores.json)、[全量输出对比聚合](inference-prefix-graphs-20261110/results/COMPARISON.json)、[直接完成核验](inference-prefix-graphs-20261110/results/FINAL_VERIFICATION.json)。
+- [逐任务耗时审计](inference-prefix-graphs-20261110/results/TIMING_AUDIT.json) · [实际GPU／驱动／Python／包版本](inference-prefix-graphs-20261110/results/RUNTIME.json)。
+
 [返回分类](../README.md) · [返回总入口](../../README.md)
 
 

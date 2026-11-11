@@ -1,5 +1,10 @@
 # Attention与效率 · 研究路径
 
+## 2026-11-10新增
+
+- [共享前缀＋Graph实际实施计划](2026-11-10-inference-prefix-graphs.md)，对应[已完成的完整public结果](../../01-研究结论/05-Attention与效率/inference-prefix-graphs-20261110/README.md)。
+- [当前方案推理全过程与限制](../06-五维训练与Readout/current-scheme-20261110/INFERENCE-AND-EVALUATION.md)，源码按库外辅助归档规则保留。
+
 [返回分类](../README.md) · [返回总入口](../../README.md)
 
 ## 文档

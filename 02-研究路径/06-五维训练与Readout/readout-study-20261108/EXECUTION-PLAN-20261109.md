@@ -1,5 +1,7 @@
 # 已训五维主干Readout适配 Implementation Plan
 
+> **后续实际执行与两层比较均已完成。请以[最终报告](../../../01-研究结论/06-五维训练与Readout/readout-study-20261108/FINAL-REPORT-20261110.md)为当前结果；下列勾选和“未评分”保留历史计划修订状态，不代表当前仍在等待。**
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development with isolated file ownership, or superpowers:executing-plans for controller-owned integration. Steps use checkbox (`- [ ]`) syntax for tracking. User's no-tests/no-smoke/no-hash/no-publish constraints override generic test/commit workflows.
 
 **Goal:** 实际推进同一保留stage2-final起点的两层四臂Readout有界对照，不影响五维蒸馏参榜主任务。
@@ -34,8 +36,8 @@
 **Files:** controller owns `code/readout_common.py`、`code/run_readout_queue.py`、`code/admit_readout.py`。
 **Interfaces:** common `build_codebook(tokenizer)->dict`、`compile_record(record,tokenizer,book)->dict`、`reverse_record(record)->dict`；记录字段见任务2。
 - [x] 实时核对主任务：09:39 UTC仍Teacher，GPU0/1/2，GPU3空闲；官方等待，未动主任务。
-- [ ] 快照核对stage2 adapter/base来源、rank32/config/tensor形状及原训练完成身份，不算模型hash。
-- [ ] 实现固定共同模板／codebook／索引与只允许自有短窗口的资源门槛；当前Teacher阶段只做CPU。
+- [x] 快照核对stage2 adapter/base来源、完整393-key/rank32/config/tensor形状及原训练完成身份；实际CPU v2重新准入成功，无模型hash。
+- [x] 实现固定共同模板／codebook／索引与自有短窗口资源门槛；Task1静态审查修复及复审完成，255码实际CPU准入成功。工作器尚未批准，未进行readout GPU计算。
 
 ### Task 2: 原始完整题CPU准备（独立实施者）
 
@@ -45,11 +47,11 @@
 
 每条JSON记录字段固定：`id, case_id, source, domain, kind, state, question, options, target, source_location`；`options`为完整字符串列表，`target`为同长度合法原生概率分布，noul统一false/true顺序。编译后增加`input_ids, option_end_indices, decide_index, tokens`，或`unsupported_reason`；不支持记录不删除原候选。domain为knowledge/language/retrieval/tools/arts/generic。
 
-- [ ] 从原始 `/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-*.parquet` 和 `/home/dev/assumeengage/datasets/zero-shot-label-nli-http/data/train-*.parquet` 读取，禁止global-pool反拼。typed原字段state/kind/id/options/target/question/source/variant/split/group_id/question_id/license/license_use；原schema已读取。
-- [ ] 每typed shard最多65,536行、每domain最多6,000完整题 reservoir；canonical总扫描最多100,000行、最多20,000题 reservoir；最多2 CPU线程和nice19/idle I/O。记录扫描上限与源文件元数据，不声称全库代表性。
-- [ ] 合并同state与同来源case/group进行适配切分，raw官方test/dev/validation不进入适配训练；typed n=1 noul目标保留，不把多正choice强归一化；语义不明按整题登记拒绝。
-- [ ] 任务每维200题留出、generic100；逆序每维30题，timing每维25题在dev标记。训练20:80按完整prompt token、每维0.8M/generic1M预算，完整题前缀不超5M；超4096训练整题拒绝但登记coverage，留出完整输入上限40960/K255。
-- [ ] 同一物化训练清单供两层所有分支；以macro16写节点1M/3M/5M的真实题数/token/更新数。原始文本与token只留私有scratch，不进Git或公开报告。
+- [x] 从原始typed/full及canonical原始train读取并保留完整候选；生产准备退出0，没有global-pool反拼。
+- [x] 执行有界扫描/reservoir、2核硬亲和性、受限线程池及nice19/idle；源元数据/扫描范围记录在私有manifest，不声称全库代表性。
+- [x] 执行规范化state/来源case/group隔离及完整input_ids跨split交集检查；原始官方heldout不入适配训练，软noul保留、多正未知choice/K1整题拒绝，未按pair合并标签。
+- [x] 实际dev五维各200+generic100、逆序150、timing125；训练各域token配额满足上限，真实总计4999571token。
+- [x] 物化共同16992题/1062macro，节点实际212/633/1062更新；raw/text/token只留私有scratch，未复制到Git报告。
 
 ### Task 3: 两层四臂工作器与有界正式比较
 
@@ -63,7 +65,9 @@
 ### Task 4: 审查、部署、阶段报告
 
 **Files:** 本plan与 `EXECUTION-STATUS-20261109.md`，远端独立控制文件。
-- [ ] 数据实现任务审查与整体只读代码审查；按用户要求不跑测试，以生产CPU准入和真实执行补证。
-- [ ] 实际低优先级CPU准备；读取完整计数与共同身份，未完成不标ready。
+- [ ] 数据和资源实现均已静态修复复审；Task3工作器及metrics整体审查进行中。无额外测试，以真实CPU/GPU执行补证。
+- [x] 实际低优先级CPU准备退出0，完整计数和双READY标志已独立读回。
 - [ ] 挂接独立GPU3窗口队列并核对真实等待状态；合适窗口实际推进，不把排队当训练。
 - [ ] 分别报告已准备/已训练/已评分、预算实际数、负结果与资源使用；不预填胜者。
+
+截至11:27/11:32 UTC：CPU数据已准备，readout queue327760存活并等待工作器审阅；readout仍未训练/未评分。主任务Teacher已完整结束，Student327929已真实训练至观察920/9769步，确定性FA3前后向实际执行；未改动或暂停主任务。

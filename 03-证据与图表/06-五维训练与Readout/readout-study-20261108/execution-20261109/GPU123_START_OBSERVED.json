@@ -1,0 +1,126 @@
+{
+  "observed_utc": "2026-11-10T03:13:14.005814+00:00",
+  "queue_stage": "running_allocated_gpu123_workers",
+  "coordinator": {
+    "pid": 361386,
+    "starttime": "121012841",
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+  },
+  "coordinator_alive": true,
+  "slots": {
+    "features": {
+      "pid": 361393,
+      "alive": true,
+      "job": "features",
+      "arm": null,
+      "physical_gpu": 3,
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "committed_counters": {
+        "cursor": 3821,
+        "macro_steps": 0,
+        "questions": 3821,
+        "tokens": 1122560,
+        "updates": 0
+      },
+      "actual_fa3_forward_logged": true,
+      "actual_fa3_backward_logged": false,
+      "deterministic_backward_logged": false
+    },
+    "lora-Bcopy": {
+      "pid": 361401,
+      "alive": true,
+      "job": "lora",
+      "arm": "Bcopy",
+      "physical_gpu": 2,
+      "cpu_affinity": [
+        4,
+        5
+      ],
+      "committed_counters": {
+        "cursor": 256,
+        "macro_steps": 16,
+        "questions": 256,
+        "tokens": 76635,
+        "updates": 16
+      },
+      "actual_fa3_forward_logged": true,
+      "actual_fa3_backward_logged": true,
+      "deterministic_backward_logged": true
+    },
+    "lora-Cptr": {
+      "pid": 361397,
+      "alive": true,
+      "job": "lora",
+      "arm": "Cptr",
+      "physical_gpu": 1,
+      "cpu_affinity": [
+        2,
+        3
+      ],
+      "committed_counters": {
+        "cursor": 256,
+        "macro_steps": 16,
+        "questions": 256,
+        "tokens": 76635,
+        "updates": 16
+      },
+      "actual_fa3_forward_logged": true,
+      "actual_fa3_backward_logged": true,
+      "deterministic_backward_logged": true
+    }
+  },
+  "original_review_code_config_all_match": true,
+  "prior_feature_anchor_files_preserved": true,
+  "original_unadapted_head_files_preserved": true,
+  "initial_identity_file_preserved": true,
+  "data_file_metadata_preserved": true,
+  "lock_records": [
+    {
+      "file": "QUEUE.lock",
+      "locks": [
+        "66: FLOCK  ADVISORY  WRITE 361386 00:4632:1746942920 0 EOF"
+      ]
+    },
+    {
+      "file": "admin-gpu123/GPU1.lock",
+      "locks": [
+        "64: FLOCK  ADVISORY  WRITE 361386 00:4632:69737004 0 EOF"
+      ]
+    },
+    {
+      "file": "admin-gpu123/GPU2.lock",
+      "locks": [
+        "63: FLOCK  ADVISORY  WRITE 361386 00:4632:69737005 0 EOF"
+      ]
+    },
+    {
+      "file": "admin-gpu123/GPU3.lock",
+      "locks": [
+        "65: FLOCK  ADVISORY  WRITE 361386 00:4632:69736999 0 EOF"
+      ]
+    }
+  ],
+  "main_official_child": {
+    "pid": 352088,
+    "starttime": "118654722",
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+  },
+  "main_official_alive": true,
+  "main_official_progress": {
+    "time": "2026-11-10T03:12:51.026013+00:00",
+    "event": "progress",
+    "engine": "decision_engine:PairClassifierEngine",
+    "completed": 36990,
+    "counts": {
+      "ok": 36990
+    },
+    "elapsed_seconds": 23754.4
+  },
+  "blocked": {},
+  "study_complete": false,
+  "uploaded": false,
+  "gpu_processes": "GPU-43241aa5-89e9-5b7e-a5dc-bd4909f1d291, 352088, 22998\nGPU-e1f6e14d-5cb2-3c33-6da8-63bffdca174b, 361397, 2794\nGPU-16c2eecc-d93f-08f7-e1b0-13d23ffd23d0, 361401, 2794\nGPU-52480c01-119c-f065-33d8-cb016eac9c39, 361393, 2192"
+}

@@ -1,0 +1,24 @@
+{
+  "observed_utc": "2026-11-09T12:11:44.725521+00:00",
+  "deployment_source_text_equal": true,
+  "code_files": [
+    "admit_readout.py",
+    "prepare_readout_data.py",
+    "readout_common.py",
+    "readout_metrics.py",
+    "readout_model.py",
+    "readout_worker.py",
+    "run_readout_queue.py"
+  ],
+  "frozen_data_file_metadata_match": true,
+  "initial_identity_version": "readout-init-identity-v2",
+  "initial_lora_pairs": 196,
+  "review_approved": false,
+  "admission": {
+    "reason": "worker_review_not_explicitly_approved"
+  },
+  "gpu_work_started": false,
+  "model_inference": false,
+  "extra_tests": false,
+  "extra_hashes": false
+}

@@ -1,3 +1,5 @@
+> **阅读提示：本文是早期社区／榜单调研及当时的建议，不是当前实际执行配方。当前Qwen3-0.6B＋pair classifier方案、两段训练、24.97／24.99正式结果和readout研究，请读[从零完整说明](../06-五维训练与Readout/current-scheme-20261110/README.md)。不要将下文建议的27B、双向attention、255-way head或历史榜单规则误当成我们已经实现／验证的内容。**
+
 ## TL;DR
 
 1. Jev 既不是 encoder-only，也不是 diffusion。它是 TypeSafe AI 的闭源 transformer 判别式决策模型：输入 `state` + 一组 typed `questions`，一次前向把每个问题的概率分布并行读出，没有 token 级 autoregressive 解码；训练方法官方称 RLCD，细节未公开（[TypeSafe 发布博客](https://typesafe.ai/blog/introducing-system-one-models-and-jev)、[Wikipedia](https://en.wikipedia.org/wiki/Jev_\(AI_model\))）。
@@ -280,7 +282,6 @@ Archer Hume 通过 API 探测给出的重建（[Jev's Architecture Unmasked](htt
 5. [Sieve-31B card](https://huggingface.co/sthanika-ai/Sieve-31B)、[Bobcat 1.3 card](https://huggingface.co/sanghwa-na/bobcat-1.3)（loss 配方与超参）。
 
 6. [Archer Hume 的架构逆向](https://archerhume.com/posts/jevs-architecture-unmasked/)、[TypeSafe ML primer](https://docs.typesafe.ai/introduction/machine-learning-primer.md)（理解 Jev 本身）。
-
 
 
 

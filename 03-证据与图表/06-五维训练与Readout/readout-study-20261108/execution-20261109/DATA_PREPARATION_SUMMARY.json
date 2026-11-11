@@ -1,0 +1,161 @@
+{
+  "observed_utc": "2026-11-09T11:31:08.924518+00:00",
+  "complete": true,
+  "DATA_READY": true,
+  "version": "readout-original-complete-v2-review1-20261109",
+  "status": "ready",
+  "counts": {
+    "dev": {
+      "arts": 200,
+      "generic": 100,
+      "knowledge": 200,
+      "language": 200,
+      "retrieval": 200,
+      "tools": 200
+    },
+    "reverse": {
+      "arts": 30,
+      "generic": 0,
+      "knowledge": 30,
+      "language": 30,
+      "retrieval": 30,
+      "tools": 30
+    },
+    "timing": {
+      "arts": 25,
+      "generic": 0,
+      "knowledge": 25,
+      "language": 25,
+      "retrieval": 25,
+      "tools": 25
+    },
+    "train": {
+      "arts": 1669,
+      "generic": 5427,
+      "knowledge": 4103,
+      "language": 3281,
+      "retrieval": 1231,
+      "tools": 1281
+    }
+  },
+  "incomplete_reasons": [],
+  "schedule": {
+    "discarded_final_incomplete_macro": {
+      "questions": 5,
+      "tokens": 339
+    },
+    "domains": {
+      "arts": {
+        "actual_token_fraction": 0.15999632768491537,
+        "eligible_unique_inventory": 5774,
+        "minimum_prompt_tokens": 60,
+        "questions": 1669,
+        "resampled_questions": 0,
+        "token_budget": 800000,
+        "tokens": 799913,
+        "unique_questions": 1669,
+        "unused_token_budget": 87
+      },
+      "generic": {
+        "actual_token_fraction": 0.19999375946456205,
+        "eligible_unique_inventory": 19654,
+        "minimum_prompt_tokens": 43,
+        "questions": 5427,
+        "resampled_questions": 0,
+        "token_budget": 1000000,
+        "tokens": 999883,
+        "unique_questions": 5427,
+        "unused_token_budget": 117
+      },
+      "knowledge": {
+        "actual_token_fraction": 0.15999292739317034,
+        "eligible_unique_inventory": 5794,
+        "minimum_prompt_tokens": 51,
+        "questions": 4103,
+        "resampled_questions": 0,
+        "token_budget": 800000,
+        "tokens": 799896,
+        "unique_questions": 4103,
+        "unused_token_budget": 104
+      },
+      "language": {
+        "actual_token_fraction": 0.16000072806246776,
+        "eligible_unique_inventory": 5752,
+        "minimum_prompt_tokens": 49,
+        "questions": 3281,
+        "resampled_questions": 0,
+        "token_budget": 800000,
+        "tokens": 799935,
+        "unique_questions": 3281,
+        "unused_token_budget": 65
+      },
+      "retrieval": {
+        "actual_token_fraction": 0.16000512844002016,
+        "eligible_unique_inventory": 5721,
+        "minimum_prompt_tokens": 51,
+        "questions": 1231,
+        "resampled_questions": 0,
+        "token_budget": 800000,
+        "tokens": 799957,
+        "unique_questions": 1231,
+        "unused_token_budget": 43
+      },
+      "tools": {
+        "actual_token_fraction": 0.16001112895486433,
+        "eligible_unique_inventory": 5711,
+        "minimum_prompt_tokens": 87,
+        "questions": 1281,
+        "resampled_questions": 0,
+        "token_budget": 800000,
+        "tokens": 799987,
+        "unique_questions": 1281,
+        "unused_token_budget": 13
+      }
+    },
+    "loss_basis": "one supervised complete question, not token-weighted loss",
+    "macro_questions": 16,
+    "manifest": "data/train.jsonl",
+    "max_train_tokens": 5000000,
+    "micro_questions": 1,
+    "mixture_basis": "complete prompt tokens; generic20%, each task16% upper quotas",
+    "node_rule": "Largest actual complete macro prefix at or below each node budget",
+    "nodes": [
+      {
+        "budget_available_in_config": true,
+        "budget_tokens": 1000000,
+        "distinct_from_previous": true,
+        "questions": 3392,
+        "tokens": 998583,
+        "updates": 212
+      },
+      {
+        "budget_available_in_config": true,
+        "budget_tokens": 3000000,
+        "distinct_from_previous": true,
+        "questions": 10128,
+        "tokens": 2999833,
+        "updates": 633
+      },
+      {
+        "budget_available_in_config": true,
+        "budget_tokens": 5000000,
+        "distinct_from_previous": true,
+        "questions": 16992,
+        "tokens": 4999571,
+        "updates": 1062
+      }
+    ],
+    "questions": 16992,
+    "resampling": "Only legal train inventory; shuffled seeded decks, every repeated exposure marked",
+    "seed": 42,
+    "shared_physical_order_for_all_layers_and_arms": true,
+    "tokens": 4999571,
+    "updates": 1062,
+    "version": "readout-original-complete-v2-review1-20261109"
+  },
+  "cpu_preparation_returncode": 0,
+  "source_scope": "original complete typed/native questions and canonical raw train; no dedup pair reconstruction",
+  "evaluation_scope": "adaptation holdout; not official public Index",
+  "readout_trained": false,
+  "readout_scored": false
+}

@@ -1,0 +1,468 @@
+{
+  "source": "existing old and newly produced official outputs; no extra model execution",
+  "counts": {
+    "requests": 140620,
+    "fields": 323259,
+    "choice_fields": 308559,
+    "probabilities": 2506535,
+    "probability_absolute_difference_sum": 3022.1721869197854,
+    "choice_changes": 2575,
+    "noul_fields": 14700,
+    "noul_threshold_changes": 82
+  },
+  "max_probability_absolute_difference": 0.22506255834734373,
+  "mean_probability_absolute_difference": 0.0012057171301895985,
+  "choice_agreement": 0.991654756464728,
+  "sum_old_request_seconds": 33570.13050239864,
+  "sum_new_request_seconds": 12124.775075932965,
+  "request_time_speedup": 2.7687219179045695,
+  "attempt_audit": {
+    "original": {
+      "counts": {
+        "attempt_records": 140620,
+        "all_attempt_wall_ms": 33570130.50239864,
+        "unique_requests": 140620
+      },
+      "final_status_counts": {
+        "ok": 140620
+      }
+    },
+    "optimized": {
+      "counts": {
+        "attempt_records": 140620,
+        "all_attempt_wall_ms": 12124775.075932965,
+        "unique_requests": 140620
+      },
+      "final_status_counts": {
+        "ok": 140620
+      }
+    }
+  },
+  "join": "run_id; final records, payload-checked error-only retries; order-independent",
+  "benchmarks": {
+    "10:SGD/SGD-X": {
+      "requests": 2500,
+      "old_wall_ms": 183451.03673730046,
+      "new_wall_ms": 134558.93471394666,
+      "fields": 2500,
+      "choice_fields": 2500,
+      "probability_absolute_difference_sum": 32.62849939371691,
+      "probabilities": 7233,
+      "choice_changes": 2
+    },
+    "11:ContractNLI": {
+      "requests": 123,
+      "old_wall_ms": 239512.98216846772,
+      "new_wall_ms": 152535.48625693657,
+      "fields": 2091,
+      "choice_fields": 2091,
+      "probability_absolute_difference_sum": 34.56004125849238,
+      "probabilities": 6273,
+      "choice_changes": 33
+    },
+    "12:ANLI": {
+      "requests": 3200,
+      "old_wall_ms": 224174.77657576092,
+      "new_wall_ms": 43950.80090453848,
+      "fields": 3200,
+      "choice_fields": 3200,
+      "probability_absolute_difference_sum": 12.899291906484226,
+      "probabilities": 9600,
+      "choice_changes": 6
+    },
+    "1:BFCL": {
+      "requests": 1694,
+      "old_wall_ms": 203632.8390482813,
+      "new_wall_ms": 223049.94438635185,
+      "fields": 4768,
+      "choice_fields": 4768,
+      "probability_absolute_difference_sum": 14.313502022636325,
+      "probabilities": 9536,
+      "choice_changes": 8
+    },
+    "20:BPoMP": {
+      "requests": 5000,
+      "old_wall_ms": 349940.38872467354,
+      "new_wall_ms": 60948.22030607611,
+      "fields": 5000,
+      "choice_fields": 5000,
+      "probability_absolute_difference_sum": 1.3098435992978577,
+      "probabilities": 10000,
+      "choice_changes": 5
+    },
+    "21:Humicroedit": {
+      "requests": 2628,
+      "old_wall_ms": 181942.22430302761,
+      "new_wall_ms": 27413.48750074394,
+      "fields": 2628,
+      "choice_fields": 2628,
+      "probability_absolute_difference_sum": 8.81909376868385,
+      "probabilities": 5256,
+      "choice_changes": 8
+    },
+    "22:POP909-CL": {
+      "requests": 2000,
+      "old_wall_ms": 8362639.132213313,
+      "new_wall_ms": 1970985.5077557731,
+      "fields": 2000,
+      "choice_fields": 2000,
+      "probability_absolute_difference_sum": 45.96613027153148,
+      "probabilities": 258000,
+      "choice_changes": 170
+    },
+    "23:cfcolor": {
+      "requests": 5000,
+      "old_wall_ms": 347799.8677950818,
+      "new_wall_ms": 78479.82566710562,
+      "fields": 5000,
+      "choice_fields": 5000,
+      "probability_absolute_difference_sum": 0.8520051770577911,
+      "probabilities": 10000,
+      "choice_changes": 2
+    },
+    "24:MMLU": {
+      "requests": 14042,
+      "old_wall_ms": 982544.8650054168,
+      "new_wall_ms": 175835.80971206538,
+      "fields": 14042,
+      "choice_fields": 14042,
+      "probability_absolute_difference_sum": 55.53541721516794,
+      "probabilities": 56168,
+      "choice_changes": 58
+    },
+    "25:GPQA Diamond": {
+      "requests": 198,
+      "old_wall_ms": 13936.038067098707,
+      "new_wall_ms": 3036.1716584302485,
+      "fields": 198,
+      "choice_fields": 198,
+      "probability_absolute_difference_sum": 0.2645205088593897,
+      "probabilities": 792,
+      "choice_changes": 1
+    },
+    "26:ARC-Easy": {
+      "requests": 2376,
+      "old_wall_ms": 165533.79467641935,
+      "new_wall_ms": 25377.45216442272,
+      "fields": 2376,
+      "choice_fields": 2376,
+      "probability_absolute_difference_sum": 10.898199724916797,
+      "probabilities": 9501,
+      "choice_changes": 9
+    },
+    "27:ARC-Challenge": {
+      "requests": 1172,
+      "old_wall_ms": 81566.553365672,
+      "new_wall_ms": 12722.489021485671,
+      "fields": 1172,
+      "choice_fields": 1172,
+      "probability_absolute_difference_sum": 5.784848204853106,
+      "probabilities": 4687,
+      "choice_changes": 2
+    },
+    "28:WinoGrande": {
+      "requests": 1267,
+      "old_wall_ms": 87332.45643018745,
+      "new_wall_ms": 12415.125062456354,
+      "fields": 1267,
+      "choice_fields": 1267,
+      "probability_absolute_difference_sum": 0.645916398967933,
+      "probabilities": 2534
+    },
+    "29:HellaSwag": {
+      "requests": 10042,
+      "old_wall_ms": 710574.7045963071,
+      "new_wall_ms": 142183.88366582803,
+      "fields": 10042,
+      "choice_fields": 10042,
+      "probability_absolute_difference_sum": 11.682684286128579,
+      "probabilities": 40168,
+      "choice_changes": 9
+    },
+    "2:ToolRet": {
+      "requests": 1013,
+      "old_wall_ms": 1588519.6308619343,
+      "new_wall_ms": 862312.2917509172,
+      "fields": 30047,
+      "choice_fields": 30047,
+      "probability_absolute_difference_sum": 249.77700818708126,
+      "probabilities": 60094,
+      "choice_changes": 152
+    },
+    "30:GSM8K": {
+      "requests": 2638,
+      "old_wall_ms": 183978.406725917,
+      "new_wall_ms": 57698.462835745886,
+      "fields": 2638,
+      "choice_fields": 2638,
+      "probability_absolute_difference_sum": 14.155049921166407,
+      "probabilities": 18466,
+      "choice_changes": 52
+    },
+    "31:ChessBench": {
+      "requests": 5000,
+      "old_wall_ms": 537881.6575033125,
+      "new_wall_ms": 189782.09557873197,
+      "fields": 5000,
+      "choice_fields": 5000,
+      "probability_absolute_difference_sum": 85.66352535020667,
+      "probabilities": 147635,
+      "choice_changes": 339
+    },
+    "32:MuSR": {
+      "requests": 756,
+      "old_wall_ms": 55297.24708432332,
+      "new_wall_ms": 35754.17465693317,
+      "fields": 756,
+      "choice_fields": 756,
+      "probability_absolute_difference_sum": 13.279831894437038,
+      "probabilities": 2198,
+      "choice_changes": 17
+    },
+    "33:SATA-Bench": {
+      "requests": 1650,
+      "old_wall_ms": 366154.62731174193,
+      "new_wall_ms": 544898.1463313103,
+      "fields": 15517,
+      "choice_fields": 15517,
+      "probability_absolute_difference_sum": 185.69406287023787,
+      "probabilities": 31034,
+      "choice_changes": 98
+    },
+    "34:SimpleBench": {
+      "requests": 10,
+      "old_wall_ms": 710.6032816227525,
+      "new_wall_ms": 188.30727692693472,
+      "fields": 10,
+      "choice_fields": 10,
+      "probability_absolute_difference_sum": 0.004237263924227845,
+      "probabilities": 60
+    },
+    "36:BRIGHT": {
+      "requests": 307,
+      "old_wall_ms": 344863.4362057783,
+      "new_wall_ms": 413467.1370596625,
+      "fields": 9824,
+      "choice_fields": 9824,
+      "probability_absolute_difference_sum": 57.49001414135838,
+      "probabilities": 19648,
+      "choice_changes": 16
+    },
+    "37:Amazon ESCI": {
+      "requests": 5000,
+      "old_wall_ms": 355791.9319253415,
+      "new_wall_ms": 121841.14969614893,
+      "fields": 5000,
+      "choice_fields": 5000,
+      "probability_absolute_difference_sum": 20.662324297607643,
+      "probabilities": 20000,
+      "choice_changes": 7
+    },
+    "38:ACOS": {
+      "requests": 1565,
+      "old_wall_ms": 442212.68443134613,
+      "new_wall_ms": 964969.6218520403,
+      "fields": 91092,
+      "choice_fields": 91092,
+      "probability_absolute_difference_sum": 993.1542379712905,
+      "probabilities": 182184,
+      "choice_changes": 394
+    },
+    "39:FinEntity": {
+      "requests": 979,
+      "old_wall_ms": 69644.48113343678,
+      "new_wall_ms": 30465.22255963646,
+      "fields": 2129,
+      "choice_fields": 2129,
+      "probability_absolute_difference_sum": 3.5369068177734335,
+      "probabilities": 6387,
+      "choice_changes": 4
+    },
+    "3:API-Bank": {
+      "requests": 508,
+      "old_wall_ms": 4088501.3869579416,
+      "new_wall_ms": 329974.0481947083,
+      "fields": 508,
+      "choice_fields": 508,
+      "probability_absolute_difference_sum": 14.64169647975809,
+      "probabilities": 26924,
+      "choice_changes": 8
+    },
+    "40:iSarcasmEval": {
+      "requests": 4600,
+      "old_wall_ms": 318919.66891055927,
+      "new_wall_ms": 113173.54396660812,
+      "fields": 11600,
+      "choice_fields": 11600,
+      "probability_absolute_difference_sum": 110.43253804169429,
+      "probabilities": 23200,
+      "choice_changes": 70
+    },
+    "41:VAST": {
+      "requests": 3006,
+      "old_wall_ms": 209300.58404244483,
+      "new_wall_ms": 44249.94361354038,
+      "fields": 3006,
+      "choice_fields": 3006,
+      "probability_absolute_difference_sum": 9.422256856196135,
+      "probabilities": 9018,
+      "choice_changes": 3
+    },
+    "42:NLI4CT": {
+      "requests": 5500,
+      "old_wall_ms": 393544.289292302,
+      "new_wall_ms": 163609.6837243531,
+      "fields": 5500,
+      "choice_fields": 5500,
+      "probability_absolute_difference_sum": 11.048718637183349,
+      "probabilities": 11000,
+      "choice_changes": 4
+    },
+    "43:CRUXEval": {
+      "requests": 570,
+      "old_wall_ms": 40107.62654640712,
+      "new_wall_ms": 7821.86084985733,
+      "fields": 570,
+      "choice_fields": 570,
+      "probability_absolute_difference_sum": 1.8458408121579841,
+      "probabilities": 1824,
+      "choice_changes": 4
+    },
+    "44:CLadder": {
+      "requests": 5000,
+      "old_wall_ms": 346049.1216473747,
+      "new_wall_ms": 57677.04112478532,
+      "fields": 5000,
+      "choice_fields": 5000,
+      "probability_absolute_difference_sum": 23.16941747343627,
+      "probabilities": 10000,
+      "choice_changes": 15
+    },
+    "45:HLE": {
+      "requests": 513,
+      "old_wall_ms": 42645.76842682436,
+      "new_wall_ms": 15701.35018764995,
+      "fields": 513,
+      "choice_fields": 513,
+      "probability_absolute_difference_sum": 3.1600052895031405,
+      "probabilities": 3576,
+      "choice_changes": 7
+    },
+    "4:BANKING77": {
+      "requests": 3080,
+      "old_wall_ms": 645056.3076520339,
+      "new_wall_ms": 197227.22084401175,
+      "fields": 3080,
+      "choice_fields": 3080,
+      "probability_absolute_difference_sum": 56.164314491906616,
+      "probabilities": 237160,
+      "choice_changes": 35
+    },
+    "50:Habermas Machine": {
+      "requests": 1676,
+      "old_wall_ms": 122957.58936810307,
+      "new_wall_ms": 81102.79363044538,
+      "fields": 1676,
+      "choice_fields": 1676,
+      "probability_absolute_difference_sum": 15.24138713712905,
+      "probabilities": 6311,
+      "choice_changes": 15
+    },
+    "56:PhishNChips phishing decisions": {
+      "requests": 2000,
+      "old_wall_ms": 151377.06571118906,
+      "new_wall_ms": 226850.09923111647,
+      "fields": 18000,
+      "choice_fields": 6000,
+      "probability_absolute_difference_sum": 111.75608477827808,
+      "probabilities": 36000,
+      "choice_changes": 4
+    },
+    "57:MMLU-Pro": {
+      "requests": 12032,
+      "old_wall_ms": 847938.638297841,
+      "new_wall_ms": 412236.16494145244,
+      "fields": 12032,
+      "choice_fields": 12032,
+      "probability_absolute_difference_sum": 47.42299292057784,
+      "probabilities": 113990,
+      "choice_changes": 190
+    },
+    "58:BBH fixed-option tasks": {
+      "requests": 5507,
+      "old_wall_ms": 383912.4938522,
+      "new_wall_ms": 91028.45108439215,
+      "fields": 5507,
+      "choice_fields": 5507,
+      "probability_absolute_difference_sum": 51.39507868804036,
+      "probabilities": 24710,
+      "choice_changes": 60
+    },
+    "59:RAGTruth response-level hallucination": {
+      "requests": 2700,
+      "old_wall_ms": 194286.39471437782,
+      "new_wall_ms": 112469.60068913177,
+      "fields": 2700,
+      "probability_absolute_difference_sum": 6.533549376365475,
+      "probabilities": 5400
+    },
+    "5:CLINC150+OOS": {
+      "requests": 5500,
+      "old_wall_ms": 1912935.9832571354,
+      "new_wall_ms": 535232.2953476105,
+      "fields": 5500,
+      "choice_fields": 5500,
+      "probability_absolute_difference_sum": 101.37193927481746,
+      "probabilities": 830500,
+      "choice_changes": 44
+    },
+    "61:HoVer claim verification": {
+      "requests": 4000,
+      "old_wall_ms": 284238.28859068453,
+      "new_wall_ms": 88469.60478206165,
+      "fields": 4000,
+      "choice_fields": 4000,
+      "probability_absolute_difference_sum": 0.10855463169146048,
+      "probabilities": 8000
+    },
+    "62:When2Call MCQ": {
+      "requests": 3652,
+      "old_wall_ms": 278916.39955248684,
+      "new_wall_ms": 168289.56993413158,
+      "fields": 3652,
+      "choice_fields": 3652,
+      "probability_absolute_difference_sum": 41.582723688344345,
+      "probabilities": 14608,
+      "choice_changes": 37
+    },
+    "64:New Yorker caption matching": {
+      "requests": 528,
+      "old_wall_ms": 36640.023331623524,
+      "new_wall_ms": 9126.3174994383,
+      "fields": 528,
+      "choice_fields": 528,
+      "probability_absolute_difference_sum": 0.26046527632040206,
+      "probabilities": 2640
+    },
+    "6:RouterBench": {
+      "requests": 10000,
+      "old_wall_ms": 7137708.07000529,
+      "new_wall_ms": 3108373.7100863364,
+      "fields": 20000,
+      "choice_fields": 20000,
+      "choice_changes": 679,
+      "probability_absolute_difference_sum": 535.9636497094494,
+      "probabilities": 220000
+    },
+    "9:Home appliance simulator": {
+      "requests": 88,
+      "old_wall_ms": 55458.4360702429,
+      "new_wall_ms": 77292.02782711945,
+      "fields": 1590,
+      "choice_fields": 1590,
+      "probability_absolute_difference_sum": 21.07378090502927,
+      "probabilities": 4220,
+      "choice_changes": 8
+    }
+  }
+}

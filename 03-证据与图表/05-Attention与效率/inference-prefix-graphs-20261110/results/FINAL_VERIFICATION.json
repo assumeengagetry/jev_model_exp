@@ -1,0 +1,20 @@
+{
+  "observed_utc": "2026-11-10T13:41:44.827206+00:00",
+  "scope": "direct read-only completion/provenance/result verification; no model forward, tests, compile or extra hash",
+  "checks": {
+    "receipt_complete": true,
+    "official_complete": true,
+    "all_executed_ok": true,
+    "all_scored_ok": true,
+    "scores_metadata": true,
+    "binding_metadata": true,
+    "comparison_metadata": true,
+    "old_model_suite_completion_unchanged": true,
+    "source_bytes_unchanged": true,
+    "frozen_source_bytes_unchanged": true,
+    "run_binding_same": true,
+    "comparison_all_requests": true,
+    "logical_input_token_counts_same": true,
+    "score_matches_receipt": true
+  }
+}

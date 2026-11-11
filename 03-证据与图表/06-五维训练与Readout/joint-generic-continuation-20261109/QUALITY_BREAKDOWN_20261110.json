@@ -1,0 +1,508 @@
+{
+  "current_public_index": 24.97,
+  "target": 28,
+  "shortfall": 3.030000000000001,
+  "current_area_skills": {
+    "knowledge": 9.24,
+    "language": 32.43,
+    "retrieval": 36.059999999999995,
+    "tools": 31.929999999999996,
+    "arts": 11.42
+  },
+  "exact_official_area_weights": {
+    "knowledge": 0.258494,
+    "language": 0.258494,
+    "retrieval": 0.200229,
+    "tools": 0.182783,
+    "arts": 0.1
+  },
+  "comparisons": {
+    "historical_peak_E24": {
+      "old_reported_index": 23.96,
+      "current_reported_index": 24.97,
+      "areas": [
+        {
+          "area": "knowledge",
+          "old_skill": 8.129999999999999,
+          "new_skill": 9.24,
+          "skill_delta": 1.1100000000000012,
+          "overall_weight": 0.258494,
+          "overall_delta_contribution": 0.28692834000000034
+        },
+        {
+          "area": "language",
+          "old_skill": 13.950000000000001,
+          "new_skill": 32.43,
+          "skill_delta": 18.479999999999997,
+          "overall_weight": 0.258494,
+          "overall_delta_contribution": 4.7769691199999995
+        },
+        {
+          "area": "retrieval",
+          "old_skill": 41.04,
+          "new_skill": 36.059999999999995,
+          "skill_delta": -4.980000000000004,
+          "overall_weight": 0.200229,
+          "overall_delta_contribution": -0.9971404200000007
+        },
+        {
+          "area": "tools",
+          "old_skill": 48.58,
+          "new_skill": 31.929999999999996,
+          "skill_delta": -16.650000000000002,
+          "overall_weight": 0.182783,
+          "overall_delta_contribution": -3.0433369500000005
+        },
+        {
+          "area": "arts",
+          "old_skill": 11.52,
+          "new_skill": 11.42,
+          "skill_delta": -0.09999999999999964,
+          "overall_weight": 0.1,
+          "overall_delta_contribution": -0.009999999999999966
+        }
+      ],
+      "sum_delta_from_rounded_areas": 1.0134200899999988,
+      "hypothetical_index_if_only_language_changed": 28.73696912,
+      "hypothetical_index_if_language35_05_and_other_old_areas_held": 29.414223399999997,
+      "largest_benchmark_negative_contributions": [
+        {
+          "benchmark_id": 1,
+          "dataset": "BFCL",
+          "area": "tools",
+          "old_raw": 0.8093,
+          "new_raw": 0.3294,
+          "old_skill": 74.26,
+          "new_skill": 9.47,
+          "overall_delta_contribution": -2.6316690155555555
+        },
+        {
+          "benchmark_id": 56,
+          "dataset": "PhishNChips phishing decisions",
+          "area": "retrieval",
+          "old_raw": 0.6855,
+          "new_raw": 0.503,
+          "old_skill": 37.1,
+          "new_skill": 0.6,
+          "overall_delta_contribution": -1.1073270454545454
+        },
+        {
+          "benchmark_id": 3,
+          "dataset": "API-Bank",
+          "area": "tools",
+          "old_raw": 0.5453,
+          "new_raw": 0.4449,
+          "old_skill": 53.65,
+          "new_skill": 43.419999999999995,
+          "overall_delta_contribution": -0.4155266866666666
+        },
+        {
+          "benchmark_id": 20,
+          "dataset": "BPoMP",
+          "area": "arts",
+          "old_raw": 0.6134,
+          "new_raw": 0.5091,
+          "old_skill": 22.68,
+          "new_skill": 1.82,
+          "overall_delta_contribution": -0.3476666666666666
+        },
+        {
+          "benchmark_id": 37,
+          "dataset": "Amazon ESCI",
+          "area": "retrieval",
+          "old_raw": 0.4116,
+          "new_raw": 0.3542,
+          "old_skill": 26.200000000000003,
+          "new_skill": 19.0,
+          "overall_delta_contribution": -0.21843163636363638
+        },
+        {
+          "benchmark_id": 36,
+          "dataset": "BRIGHT",
+          "area": "retrieval",
+          "old_raw": 0.3605,
+          "new_raw": 0.3486,
+          "old_skill": 27.66,
+          "new_skill": 26.31,
+          "overall_delta_contribution": -0.049147118181818224
+        },
+        {
+          "benchmark_id": 4,
+          "dataset": "BANKING77",
+          "area": "retrieval",
+          "old_raw": 0.6839,
+          "new_raw": 0.673,
+          "old_skill": 67.97999999999999,
+          "new_skill": 66.88,
+          "overall_delta_contribution": -0.040045800000000034
+        },
+        {
+          "benchmark_id": 50,
+          "dataset": "Habermas Machine",
+          "area": "arts",
+          "old_raw": 0.3699,
+          "new_raw": 0.3544,
+          "old_skill": 8.559999999999999,
+          "new_skill": 6.3,
+          "overall_delta_contribution": -0.03766666666666666
+        }
+      ],
+      "largest_benchmark_positive_contributions": [
+        {
+          "benchmark_id": 59,
+          "dataset": "RAGTruth response-level hallucination",
+          "area": "language",
+          "old_raw": 0.2355,
+          "new_raw": 0.7661,
+          "old_skill": 0.0,
+          "new_skill": 51.5,
+          "overall_delta_contribution": 1.4162171276595743
+        },
+        {
+          "benchmark_id": 29,
+          "dataset": "HellaSwag",
+          "area": "language",
+          "old_raw": 0.4831,
+          "new_raw": 0.7098,
+          "old_skill": 31.080000000000002,
+          "new_skill": 61.309999999999995,
+          "overall_delta_contribution": 0.9975668451063828
+        },
+        {
+          "benchmark_id": 12,
+          "dataset": "ANLI",
+          "area": "language",
+          "old_raw": 0.3658,
+          "new_raw": 0.4909,
+          "old_skill": 5.0,
+          "new_skill": 23.74,
+          "overall_delta_contribution": 0.6184056459574468
+        },
+        {
+          "benchmark_id": 11,
+          "dataset": "ContractNLI",
+          "area": "language",
+          "old_raw": 0.3978,
+          "new_raw": 0.5195,
+          "old_skill": 12.91,
+          "new_skill": 30.509999999999998,
+          "overall_delta_contribution": 0.4839887659574467
+        },
+        {
+          "benchmark_id": 61,
+          "dataset": "HoVer claim verification",
+          "area": "retrieval",
+          "old_raw": 0.531,
+          "new_raw": 0.5925,
+          "old_skill": 6.2,
+          "new_skill": 18.5,
+          "overall_delta_contribution": 0.37315404545454545
+        },
+        {
+          "benchmark_id": 41,
+          "dataset": "VAST",
+          "area": "language",
+          "old_raw": 0.3511,
+          "new_raw": 0.4314,
+          "old_skill": 2.67,
+          "new_skill": 14.71,
+          "overall_delta_contribution": 0.33109231489361707
+        }
+      ]
+    },
+    "controlled_E31": {
+      "old_reported_index": 22.49,
+      "current_reported_index": 24.97,
+      "areas": [
+        {
+          "area": "knowledge",
+          "old_skill": 8.540000000000001,
+          "new_skill": 9.24,
+          "skill_delta": 0.6999999999999993,
+          "overall_weight": 0.258494,
+          "overall_delta_contribution": 0.18094579999999982
+        },
+        {
+          "area": "language",
+          "old_skill": 13.81,
+          "new_skill": 32.43,
+          "skill_delta": 18.619999999999997,
+          "overall_weight": 0.258494,
+          "overall_delta_contribution": 4.81315828
+        },
+        {
+          "area": "retrieval",
+          "old_skill": 37.09,
+          "new_skill": 36.059999999999995,
+          "skill_delta": -1.0300000000000082,
+          "overall_weight": 0.200229,
+          "overall_delta_contribution": -0.20623587000000165
+        },
+        {
+          "area": "tools",
+          "old_skill": 43.309999999999995,
+          "new_skill": 31.929999999999996,
+          "skill_delta": -11.379999999999999,
+          "overall_weight": 0.182783,
+          "overall_delta_contribution": -2.08007054
+        },
+        {
+          "area": "arts",
+          "old_skill": 13.700000000000001,
+          "new_skill": 11.42,
+          "skill_delta": -2.280000000000001,
+          "overall_weight": 0.1,
+          "overall_delta_contribution": -0.22800000000000012
+        }
+      ],
+      "sum_delta_from_rounded_areas": 2.4797976699999977,
+      "hypothetical_index_if_only_language_changed": 27.303158279999998,
+      "hypothetical_index_if_language35_05_and_other_old_areas_held": 27.980412559999998,
+      "largest_benchmark_negative_contributions": [
+        {
+          "benchmark_id": 1,
+          "dataset": "BFCL",
+          "area": "tools",
+          "old_raw": 0.6877,
+          "new_raw": 0.3294,
+          "old_skill": 57.84,
+          "new_skill": 9.47,
+          "overall_delta_contribution": -1.964714157777778
+        },
+        {
+          "benchmark_id": 56,
+          "dataset": "PhishNChips phishing decisions",
+          "area": "retrieval",
+          "old_raw": 0.6515,
+          "new_raw": 0.503,
+          "old_skill": 30.3,
+          "new_skill": 0.6,
+          "overall_delta_contribution": -0.9010305
+        },
+        {
+          "benchmark_id": 20,
+          "dataset": "BPoMP",
+          "area": "arts",
+          "old_raw": 0.5656,
+          "new_raw": 0.5091,
+          "old_skill": 13.11,
+          "new_skill": 1.82,
+          "overall_delta_contribution": -0.18816666666666668
+        },
+        {
+          "benchmark_id": 3,
+          "dataset": "API-Bank",
+          "area": "tools",
+          "old_raw": 0.4803,
+          "new_raw": 0.4449,
+          "old_skill": 47.03,
+          "new_skill": 43.419999999999995,
+          "overall_delta_contribution": -0.14663258444444455
+        },
+        {
+          "benchmark_id": 58,
+          "dataset": "BBH fixed-option tasks",
+          "area": "knowledge",
+          "old_raw": 0.4255,
+          "new_raw": 0.4107,
+          "old_skill": 16.73,
+          "new_skill": 14.580000000000002,
+          "overall_delta_contribution": -0.055576209999999966
+        },
+        {
+          "benchmark_id": 36,
+          "dataset": "BRIGHT",
+          "area": "retrieval",
+          "old_raw": 0.3603,
+          "new_raw": 0.3486,
+          "old_skill": 27.63,
+          "new_skill": 26.31,
+          "overall_delta_contribution": -0.04805495999999996
+        },
+        {
+          "benchmark_id": 50,
+          "dataset": "Habermas Machine",
+          "area": "arts",
+          "old_raw": 0.3717,
+          "new_raw": 0.3544,
+          "old_skill": 8.82,
+          "new_skill": 6.3,
+          "overall_delta_contribution": -0.042
+        },
+        {
+          "benchmark_id": 64,
+          "dataset": "New Yorker caption matching",
+          "area": "arts",
+          "old_raw": 0.375,
+          "new_raw": 0.3636,
+          "old_skill": 21.87,
+          "new_skill": 20.45,
+          "overall_delta_contribution": -0.023666666666666697
+        }
+      ],
+      "largest_benchmark_positive_contributions": [
+        {
+          "benchmark_id": 59,
+          "dataset": "RAGTruth response-level hallucination",
+          "area": "language",
+          "old_raw": 0.1772,
+          "new_raw": 0.7661,
+          "old_skill": 0.0,
+          "new_skill": 51.5,
+          "overall_delta_contribution": 1.4162171276595743
+        },
+        {
+          "benchmark_id": 29,
+          "dataset": "HellaSwag",
+          "area": "language",
+          "old_raw": 0.4855,
+          "new_raw": 0.7098,
+          "old_skill": 31.4,
+          "new_skill": 61.309999999999995,
+          "overall_delta_contribution": 0.9870070902127659
+        },
+        {
+          "benchmark_id": 11,
+          "dataset": "ContractNLI",
+          "area": "language",
+          "old_raw": 0.3432,
+          "new_raw": 0.5195,
+          "old_skill": 5.0200000000000005,
+          "new_skill": 30.509999999999998,
+          "overall_delta_contribution": 0.700958729787234
+        },
+        {
+          "benchmark_id": 12,
+          "dataset": "ANLI",
+          "area": "language",
+          "old_raw": 0.3544,
+          "new_raw": 0.4909,
+          "old_skill": 3.3000000000000003,
+          "new_skill": 23.74,
+          "overall_delta_contribution": 0.6745043438297872
+        },
+        {
+          "benchmark_id": 61,
+          "dataset": "HoVer claim verification",
+          "area": "retrieval",
+          "old_raw": 0.5122,
+          "new_raw": 0.5925,
+          "old_skill": 2.44,
+          "new_skill": 18.5,
+          "overall_delta_contribution": 0.48722389999999993
+        },
+        {
+          "benchmark_id": 38,
+          "dataset": "ACOS",
+          "area": "language",
+          "old_raw": 0.0641,
+          "new_raw": 0.1766,
+          "old_skill": 3.42,
+          "new_skill": 15.03,
+          "overall_delta_contribution": 0.319267589361702
+        }
+      ]
+    }
+  },
+  "if_only_language_improves_needed_skill_gain": 11.721742090725515,
+  "if_only_tools_improves_needed_skill_gain": 16.577033969242223,
+  "home_appliance_detail": [
+    {
+      "catalog_id": 9,
+      "dataset": "Home appliance simulator",
+      "requests": 88,
+      "answered": 88,
+      "unsupported": 0,
+      "errors": 0,
+      "abstained": 0,
+      "pending": 0,
+      "scored_requests": 88,
+      "metric": "case exact accuracy",
+      "score": 0,
+      "reference_same_cases": null,
+      "median_ms": 624.4233039906248,
+      "detail": {
+        "field_accuracy": 0.21761006289308177,
+        "case_exact_accuracy": 0,
+        "custom_metrics": {},
+        "subgroups": {
+          "outcome": {
+            "n": 88,
+            "mean": 0.5113636363636364
+          },
+          "post_0": {
+            "n": 69,
+            "mean": 0.4927536231884058
+          },
+          "post_1": {
+            "n": 25,
+            "mean": 0.4
+          },
+          "resolution": {
+            "n": 88,
+            "mean": 0.23863636363636365
+          },
+          "state_read": {
+            "n": 88,
+            "mean": 0.5681818181818182
+          },
+          "target_member": {
+            "n": 1232,
+            "mean": 0.15097402597402598
+          }
+        }
+      }
+    }
+  ],
+  "joint_recipe": {
+    "student_parent": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final",
+    "pairs": 1667242,
+    "effective_student_tokens": 458731913,
+    "selected_domain_pairs": {
+      "knowledge": 250000,
+      "retrieval": 250000,
+      "tools": 250000,
+      "arts": 250000,
+      "language": 250308,
+      "generic": 416934
+    },
+    "learning_rate": 2e-05,
+    "fresh_optimizer_for_continuation": true,
+    "exploration_policy": {
+      "method": "original_generic_plus_unchanged_five_domain_KD_continuation_v1",
+      "source_policy": {
+        "method": "E24_five_dimension_extension",
+        "base_recipe": {
+          "method": "tools_only_intercept_calibration",
+          "tools_logit_bias": -1.2826099976040561,
+          "other_teacher_probabilities_unchanged": true,
+          "domain_weights": {
+            "knowledge": 0.5,
+            "retrieval": 0.25,
+            "tools": 0.5,
+            "arts": 0.0
+          }
+        },
+        "language_teacher_fraction": 0.5,
+        "language_sampling": "native-9task-sqrt-capped-core-English-SAR5-pair-v1",
+        "relation_target": "mixed",
+        "relation_lambda": 0.05,
+        "relative_teacher_fraction": 0.5
+      },
+      "generic_target": "unaltered original 0->1;1/2->0",
+      "task_epoch_replay": 1,
+      "generic_token_cap": 91746445,
+      "relative_teacher_fraction": 0.5,
+      "relation_lambda": 0.05
+    }
+  },
+  "generic_token_fraction": 0.19999944935158676,
+  "generic_pair_fraction": 0.2500740744295069,
+  "boundaries": [
+    "Descriptive accounting only, not causal ablation",
+    "Historical scores use37-index-benchmark wrapper; current uses unchanged official full pipeline including6display-only benchmarks",
+    "Old classifier loaders may downcast saved FP32 score into BF16; current admission preserves saved tensors exactly. Effect size unmeasured, no inference rerun authorized.",
+    "No source-five-KD-only official score was run, so cannot identify marginal generic-continuation effect",
+    "Rounded reported skills introduce small reconstruction differences; native final score24.97 remains untouched"
+  ]
+}

@@ -1,0 +1,1 @@
+{"root": "/tmp/opencode/jev-inference-prefix-graphs-20261110", "deployed": ["compare_results.py", "fast_pair_engine.py", "prefix_graph_runtime.py", "run_public.py"], "source_text_equality": true, "model_loaded": false, "launched": false}

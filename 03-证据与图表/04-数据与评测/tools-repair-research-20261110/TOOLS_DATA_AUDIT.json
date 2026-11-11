@@ -1,0 +1,29 @@
+{
+  "scope": "Read-only aggregation of existing selected Tools arrays and current deduplicated global pool; no model/tokenizer/inference/hash/data writes",
+  "selected_pairs": 250000,
+  "selected_tokens": 109292378,
+  "original_positive": 85191,
+  "original_negative": 159022,
+  "original_soft": 5787,
+  "sources": {
+    "generated/workflow_policy": 63014,
+    "typed_full/procedural-typed-decisions total": 82036,
+    "native/glaive": 52463,
+    "overnight/xlam": 36092,
+    "native/when2call": 16395
+  },
+  "generated_or_procedural_pair_fraction": 0.5802,
+  "selected_bfcl_named_source_pairs": 0,
+  "group_completeness_reference": "source_id + group_id + prefix_id against deduplicated global pool, not original native completeness or negative reliability",
+  "group_completeness": [
+    {"source": "native/glaive", "selected_units": 49880, "complete_relative_to_global_pool": 22124, "partial_relative_to_global_pool": 27756, "singleton_selected_units": 47297},
+    {"source": "overnight/xlam", "selected_units": 27763, "complete_relative_to_global_pool": 437, "partial_relative_to_global_pool": 27326, "singleton_selected_units": 20785},
+    {"source": "native/when2call", "selected_units": 13730, "complete_relative_to_global_pool": 3227, "partial_relative_to_global_pool": 10503, "singleton_selected_units": 11407}
+  ],
+  "warnings": [
+    "No BFCL-named source here does not prove every upstream dataset has no related content.",
+    "Pair imbalance alone does not prove wrong labels or explain the observed recall loss.",
+    "Partial global groups must not be reconstructed as native complete cases.",
+    "No original source labels/targets or artifacts were deleted or modified."
+  ]
+}

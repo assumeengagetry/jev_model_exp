@@ -1,5 +1,10 @@
 # 数据与评测 · 研究结论
 
+## 2026-11-10新增
+
+- [Tools回退：错误形态、数据语义与修复候选](tools-repair-research-20261110/README.md)：只读研究完成，未启动修复训练，不将BFCL公开测试当train。
+- [当前方案数据、Teacher和监督定义](../../02-研究路径/06-五维训练与Readout/current-scheme-20261110/DATA-AND-TRAINING.md)。
+
 [返回分类](../README.md) · [返回总入口](../../README.md)
 
 ## 文档

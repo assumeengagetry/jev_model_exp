@@ -1,0 +1,80 @@
+{
+  "observed_utc": "2026-11-09T11:31:08.925041+00:00",
+  "pipeline": {
+    "stage": "training_five_dimension_distilled",
+    "complete": false,
+    "updated_utc": "2026-11-09T11:31:03.597706+00:00",
+    "coordinator": {
+      "pid": 323791,
+      "starttime": "114137420",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "children": {
+      "prepare": null,
+      "teacher-0": null,
+      "teacher-1": null,
+      "teacher-2": null,
+      "teacher-merge": null,
+      "targets": null,
+      "student": {
+        "pid": 327929,
+        "starttime": "115236499",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      }
+    }
+  },
+  "student_progress": {
+    "event": "formal_optimizer_progress",
+    "model": "KD_HYBRID",
+    "step": 920,
+    "total_steps": 9769,
+    "pairs_seen": 117760,
+    "effective_tokens": 35816310,
+    "loss": 0.4908040568232536,
+    "learning_rate": 9.892363307425787e-05,
+    "relations_seen": 314,
+    "total_relations": 3647,
+    "macro_relations": 0,
+    "relation_target_kind": "mixed",
+    "relative_teacher_fraction": 0.5,
+    "relation_lambda": 0.05,
+    "effective_tokens_per_second": 25883.126023520304,
+    "elapsed_seconds": 1417.0134477228858,
+    "attention": "flash_attention_3",
+    "attention_implementation": "flash_attn3_hopper",
+    "attention_provider": "kernels-community/flash-attn3",
+    "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+    "sdpa_fallback": false,
+    "fa3_forward_calls": 123200,
+    "fa3_backward_calls": 123200,
+    "actual_training_kernel_executed": true,
+    "torch_deterministic_algorithms": true,
+    "fa3_deterministic_forward_calls": 123200,
+    "fa3_deterministic_backward_calls": 123200,
+    "actual_deterministic_fa3_backward_executed": true,
+    "cublas_workspace_config": ":4096:8",
+    "attention_current_process": {
+      "attention": "flash_attention_3",
+      "attention_implementation": "flash_attn3_hopper",
+      "attention_provider": "kernels-community/flash-attn3",
+      "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+      "sdpa_fallback": false,
+      "fa3_forward_calls": 123200,
+      "fa3_backward_calls": 123200,
+      "actual_training_kernel_executed": true,
+      "torch_deterministic_algorithms": true,
+      "fa3_deterministic_forward_calls": 123200,
+      "fa3_deterministic_backward_calls": 123200,
+      "actual_deterministic_fa3_backward_executed": true,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+  },
+  "teacher_complete": true,
+  "official_status": {
+    "stage": "waiting_for_completed_five_dimension_final",
+    "complete": false,
+    "updated_utc": "2026-11-09T11:31:07.827074+00:00",
+    "upstream_commit": "25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d"
+  }
+}

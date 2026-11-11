@@ -4,6 +4,10 @@
 
 ## 文档
 
+- **[当前方案从零完整说明](current-scheme-20261110/README.md)** · [数据与训练](current-scheme-20261110/DATA-AND-TRAINING.md) · [推理与评测](current-scheme-20261110/INFERENCE-AND-EVALUATION.md) · [人工复现](current-scheme-20261110/REPRODUCTION.md)。
+- [最新结果与readout最终结论](../../01-研究结论/近期实验-20261110.md)，优先于下列旧阶段快照。
+- [joint联合续训设计](2026-11-09-joint-generic-continuation-design.md) · [实施计划](2026-11-09-joint-generic-continuation.md)。
+
 - [五维扩大训练：暂停检查点](all-dimension-expanded-20261108/README.md)
 - [Qwen3-0.6B 五维原始标签模型](all-dimension-supervised-20261108/README.md)
 - [发布前来源与复现边界](five-dimension-distilled-20261109/PROVENANCE-NOTES.md)

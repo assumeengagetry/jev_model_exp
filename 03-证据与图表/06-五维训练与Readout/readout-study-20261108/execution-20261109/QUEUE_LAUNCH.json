@@ -1,0 +1,15 @@
+{
+  "pid": 327760,
+  "starttime": "115190384",
+  "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+  "root": "/tmp/opencode/jev-readout-adaptation-20261109",
+  "priority": "below_main_distillation_and_official_run",
+  "gpu_candidate": 3,
+  "window_total_seconds": 600,
+  "require_complete_cpu_data": true,
+  "require_bound_worker_review": true,
+  "gpu_work_started": false,
+  "extra_tests": false,
+  "extra_hashes": false,
+  "main_modified": false
+}

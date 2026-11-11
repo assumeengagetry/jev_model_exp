@@ -1,5 +1,11 @@
 # Attention与效率 · 研究结论
 
+## 2026-11-10新增
+
+- [同joint final共享前缀＋CUDA Graph完整public结果](inference-prefix-graphs-20261110/README.md)：24.99、整套2.765×、输出漂移及调度退步。
+- [原正式9h20m耗时解释](joint-generic-continuation-20261109/OFFICIAL-TIMING-EXPLAINED-20261110.md)。
+- [参赛者推理后端调研](inference-backend-survey-20261110/README.md)：源码事实与我方未验证适配边界。
+
 [返回分类](../README.md) · [返回总入口](../../README.md)
 
 ## 文档

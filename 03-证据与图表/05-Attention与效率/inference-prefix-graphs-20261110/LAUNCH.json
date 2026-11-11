@@ -1,0 +1,19 @@
+{
+  "launched_utc": "2026-11-10T10:13:46.450134+00:00",
+  "pid": 618837,
+  "starttime": "123556919",
+  "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+  "root": "/tmp/opencode/jev-inference-prefix-graphs-20261110",
+  "deployment": {
+    "observed_utc": "2026-11-10T10:13:46.448806+00:00",
+    "files": [
+      "compare_results.py",
+      "fast_pair_engine.py",
+      "prefix_graph_runtime.py",
+      "run_public.py"
+    ],
+    "exact_source_bytes_equal": true,
+    "extra_tests_or_hashes": false
+  },
+  "uploaded": false
+}

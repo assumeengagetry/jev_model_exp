@@ -1,0 +1,81 @@
+{
+  "observed_utc": "2026-11-10T08:34:31.150618+00:00",
+  "scope": "existing BFCL predictions only, no model/tokenizer/new inference/calibration fit/threshold sweep/hash",
+  "summaries": {
+    "controlled_old": {
+      "fields": 4768,
+      "TP": 1179,
+      "FP": 54,
+      "FN": 515,
+      "TN": 3020,
+      "positive_precision": 0.9562043795620438,
+      "positive_recall": 0.6959858323494688,
+      "roc_auc_fixed_scores": 0.9537028964411114,
+      "brier_fixed_scores": 0.09146995452495198,
+      "positive_probability_quantiles": {
+        "0.1": 0.09951396066459814,
+        "0.25": 0.3814499554705457,
+        "0.5": 0.7868276446877355,
+        "0.75": 0.9352282990285242,
+        "0.9": 0.9738443816461771
+      },
+      "negative_probability_quantiles": {
+        "0.1": 0.0006263341581094201,
+        "0.25": 0.001648482941851288,
+        "0.5": 0.008694534427884813,
+        "0.75": 0.048450960470269984,
+        "0.9": 0.1555268532844357
+      },
+      "probability_exact_endpoints": 0,
+      "cases_with_no_predicted_tool": 485,
+      "cases": 1694
+    },
+    "current_joint": {
+      "fields": 4768,
+      "TP": 559,
+      "FP": 16,
+      "FN": 1135,
+      "TN": 3058,
+      "positive_precision": 0.9721739130434782,
+      "positive_recall": 0.3299881936245573,
+      "roc_auc_fixed_scores": 0.9104209506705514,
+      "brier_fixed_scores": 0.19762561807918402,
+      "positive_probability_quantiles": {
+        "0.1": 0.006564249220774553,
+        "0.25": 0.030157409732605497,
+        "0.5": 0.20713451662043558,
+        "0.75": 0.6524075276238224,
+        "0.9": 0.9302050734936125
+      },
+      "negative_probability_quantiles": {
+        "0.1": 0.00037702856669512123,
+        "0.25": 0.0009547317110805592,
+        "0.5": 0.002822832897761561,
+        "0.75": 0.009268013380914325,
+        "0.9": 0.028544151696160362
+      },
+      "probability_exact_endpoints": 0,
+      "cases_with_no_predicted_tool": 1120,
+      "cases": 1694
+    }
+  },
+  "paired_log_odds_shift": {
+    "mean": -1.552371103141532,
+    "median": -1.4736328125,
+    "by_gold_class": {
+      "False": {
+        "mean": -1.135513065926968,
+        "median": -1.09765625,
+        "p25": -2.25341796875,
+        "p75": -0.0234375
+      },
+      "True": {
+        "mean": -2.3088183324199076,
+        "median": -2.1826171875,
+        "p25": -3.52685546875,
+        "p75": -1.0195312499999925
+      }
+    }
+  },
+  "interpretation_limit": "AUROC and log-odds are descriptive diagnostics, not a fitted repair or causal attribution; no new threshold/temperature was selected"
+}

@@ -1,0 +1,528 @@
+{
+  "observed_utc": "2026-11-10T05:54:40.383501+00:00",
+  "scope": "read-only aggregation of the existing sole official run; no new model forward, tokenizer run, hash, profiler, or backend change",
+  "result_snapshot_unique_requests": 138546,
+  "result_snapshot_status_counts": {
+    "ok": 138546
+  },
+  "runner_total_requests": 140620,
+  "final_scoreable_requests": 140178,
+  "first_request_started_utc": "2026-11-09T20:36:56.634284+00:00",
+  "last_snapshot_completed_utc": "2026-11-10T05:54:40.247054+00:00",
+  "runner_ready_utc": "2026-11-09T20:36:56.632739+00:00",
+  "ready_to_snapshot_last_seconds": 33463.614315,
+  "recorded_request_seconds_sum": 33425.329869536305,
+  "outside_request_timer_seconds": 38.28444546369428,
+  "model_loaded_seconds": 7.570855692960322,
+  "event_counts": {
+    "loading": 1,
+    "ready": 1,
+    "progress": 13854
+  },
+  "mean_request_ms": 241.25799279327046,
+  "median_request_ms": 70.4735234612599,
+  "p80_request_ms": 124.74419316276908,
+  "p95_request_ms": 678.3520490862429,
+  "total_candidate_pairs": 2490325,
+  "total_reported_input_tokens": 1554056650,
+  "by_benchmark": [
+    {
+      "dataset": "POP909-CL",
+      "requests": 2000,
+      "request_seconds_sum": 8362.639132213313,
+      "mean_request_ms": 4181.319566106657,
+      "median_request_ms": 3884.3810479156673,
+      "max_request_ms": 76185.2056318894,
+      "candidate_pairs": 258000,
+      "input_tokens": 565000478
+    },
+    {
+      "dataset": "RouterBench",
+      "requests": 10000,
+      "request_seconds_sum": 7137.70807000529,
+      "mean_request_ms": 713.770807000529,
+      "median_request_ms": 661.7076459806412,
+      "max_request_ms": 2304.7032540198416,
+      "candidate_pairs": 220000,
+      "input_tokens": 484511674
+    },
+    {
+      "dataset": "API-Bank",
+      "requests": 508,
+      "request_seconds_sum": 4088.5013869579416,
+      "mean_request_ms": 8048.231076688861,
+      "median_request_ms": 8263.906754553318,
+      "max_request_ms": 10526.397046865895,
+      "candidate_pairs": 26924,
+      "input_tokens": 181538030
+    },
+    {
+      "dataset": "CLINC150+OOS",
+      "requests": 5500,
+      "request_seconds_sum": 1912.9359832571354,
+      "mean_request_ms": 347.80654241038826,
+      "median_request_ms": 348.2901833485812,
+      "max_request_ms": 605.9478370007128,
+      "candidate_pairs": 830500,
+      "input_tokens": 40031055
+    },
+    {
+      "dataset": "ToolRet",
+      "requests": 1013,
+      "request_seconds_sum": 1588.5196308619343,
+      "mean_request_ms": 1568.1338902881878,
+      "median_request_ms": 434.3049321323633,
+      "max_request_ms": 7219.706890871748,
+      "candidate_pairs": 60094,
+      "input_tokens": 48389276
+    },
+    {
+      "dataset": "MMLU",
+      "requests": 14042,
+      "request_seconds_sum": 982.5448650054168,
+      "mean_request_ms": 69.97186049034445,
+      "median_request_ms": 69.74828999955207,
+      "max_request_ms": 327.0004531368613,
+      "candidate_pairs": 56168,
+      "input_tokens": 4964514
+    },
+    {
+      "dataset": "MMLU-Pro",
+      "requests": 12032,
+      "request_seconds_sum": 847.938638297841,
+      "mean_request_ms": 70.47362352874343,
+      "median_request_ms": 70.18902094569057,
+      "max_request_ms": 330.868611112237,
+      "candidate_pairs": 113990,
+      "input_tokens": 11555437
+    },
+    {
+      "dataset": "HellaSwag",
+      "requests": 10042,
+      "request_seconds_sum": 710.5747045963071,
+      "mean_request_ms": 70.76027729499175,
+      "median_request_ms": 70.23625238798559,
+      "max_request_ms": 330.5542850866914,
+      "candidate_pairs": 40168,
+      "input_tokens": 4529915
+    },
+    {
+      "dataset": "BANKING77",
+      "requests": 3080,
+      "request_seconds_sum": 645.0563076520339,
+      "mean_request_ms": 209.4338661207902,
+      "median_request_ms": 209.07143549993634,
+      "max_request_ms": 454.9140438903123,
+      "candidate_pairs": 237160,
+      "input_tokens": 10612063
+    },
+    {
+      "dataset": "ChessBench",
+      "requests": 5000,
+      "request_seconds_sum": 537.8816575033125,
+      "mean_request_ms": 107.57633150066249,
+      "median_request_ms": 77.24025438074023,
+      "max_request_ms": 403.7044448778033,
+      "candidate_pairs": 147635,
+      "input_tokens": 31809756
+    },
+    {
+      "dataset": "ACOS",
+      "requests": 1565,
+      "request_seconds_sum": 442.21268443134613,
+      "mean_request_ms": 282.5640156110838,
+      "median_request_ms": 300.92325899749994,
+      "max_request_ms": 558.6598289664835,
+      "candidate_pairs": 182184,
+      "input_tokens": 21762564
+    },
+    {
+      "dataset": "NLI4CT",
+      "requests": 5500,
+      "request_seconds_sum": 393.544289292302,
+      "mean_request_ms": 71.5535071440549,
+      "median_request_ms": 70.8629289874807,
+      "max_request_ms": 112.27970803156495,
+      "candidate_pairs": 11000,
+      "input_tokens": 6599400
+    },
+    {
+      "dataset": "BBH fixed-option tasks",
+      "requests": 5507,
+      "request_seconds_sum": 383.9124938522,
+      "mean_request_ms": 69.71354527913564,
+      "median_request_ms": 69.68689104542136,
+      "max_request_ms": 327.8597330208868,
+      "candidate_pairs": 24710,
+      "input_tokens": 3931980
+    },
+    {
+      "dataset": "SATA-Bench",
+      "requests": 1650,
+      "request_seconds_sum": 366.15462731174193,
+      "mean_request_ms": 221.91189534044966,
+      "median_request_ms": 88.83766690269113,
+      "max_request_ms": 3348.375250818208,
+      "candidate_pairs": 31034,
+      "input_tokens": 24564952
+    },
+    {
+      "dataset": "Amazon ESCI",
+      "requests": 5000,
+      "request_seconds_sum": 355.7919319253415,
+      "mean_request_ms": 71.1583863850683,
+      "median_request_ms": 70.71869447827339,
+      "max_request_ms": 140.9595140721649,
+      "candidate_pairs": 20000,
+      "input_tokens": 7886416
+    },
+    {
+      "dataset": "BPoMP",
+      "requests": 5000,
+      "request_seconds_sum": 349.94038872467354,
+      "mean_request_ms": 69.98807774493471,
+      "median_request_ms": 69.97213896829635,
+      "max_request_ms": 322.19879794865847,
+      "candidate_pairs": 10000,
+      "input_tokens": 1905812
+    },
+    {
+      "dataset": "cfcolor",
+      "requests": 5000,
+      "request_seconds_sum": 347.7998677950818,
+      "mean_request_ms": 69.55997355901636,
+      "median_request_ms": 69.35498700477183,
+      "max_request_ms": 334.4608030747622,
+      "candidate_pairs": 10000,
+      "input_tokens": 4671216
+    },
+    {
+      "dataset": "CLadder",
+      "requests": 5000,
+      "request_seconds_sum": 346.0491216473747,
+      "mean_request_ms": 69.20982432947494,
+      "median_request_ms": 69.54880303237587,
+      "max_request_ms": 88.69762206450105,
+      "candidate_pairs": 10000,
+      "input_tokens": 1473098
+    },
+    {
+      "dataset": "BRIGHT",
+      "requests": 307,
+      "request_seconds_sum": 344.86343620577827,
+      "mean_request_ms": 1123.3336684227306,
+      "median_request_ms": 828.2203641720116,
+      "max_request_ms": 14619.32092695497,
+      "candidate_pairs": 19648,
+      "input_tokens": 20010886
+    },
+    {
+      "dataset": "iSarcasmEval",
+      "requests": 4600,
+      "request_seconds_sum": 318.91966891055927,
+      "mean_request_ms": 69.33036280664332,
+      "median_request_ms": 69.30832844227552,
+      "max_request_ms": 99.12936692126095,
+      "candidate_pairs": 23200,
+      "input_tokens": 1159010
+    },
+    {
+      "dataset": "HoVer claim verification",
+      "requests": 4000,
+      "request_seconds_sum": 284.23828859068453,
+      "mean_request_ms": 71.05957214767113,
+      "median_request_ms": 70.88200247380883,
+      "max_request_ms": 94.30835396051407,
+      "candidate_pairs": 8000,
+      "input_tokens": 3468604
+    },
+    {
+      "dataset": "When2Call MCQ",
+      "requests": 3652,
+      "request_seconds_sum": 278.91639955248684,
+      "mean_request_ms": 76.3736033823896,
+      "median_request_ms": 72.06519844476134,
+      "max_request_ms": 424.0025049075484,
+      "candidate_pairs": 14608,
+      "input_tokens": 11130783
+    },
+    {
+      "dataset": "ContractNLI",
+      "requests": 123,
+      "request_seconds_sum": 239.51298216846772,
+      "mean_request_ms": 1947.2600176298188,
+      "median_request_ms": 1455.8250228874385,
+      "max_request_ms": 11117.687993915752,
+      "candidate_pairs": 6273,
+      "input_tokens": 14031852
+    },
+    {
+      "dataset": "ANLI",
+      "requests": 3200,
+      "request_seconds_sum": 224.17477657576092,
+      "mean_request_ms": 70.05461767992529,
+      "median_request_ms": 69.88862319849432,
+      "max_request_ms": 91.4351639803499,
+      "candidate_pairs": 9600,
+      "input_tokens": 1251875
+    },
+    {
+      "dataset": "VAST",
+      "requests": 3006,
+      "request_seconds_sum": 209.30058404244483,
+      "mean_request_ms": 69.62760613521118,
+      "median_request_ms": 69.82207053806633,
+      "max_request_ms": 333.8529870379716,
+      "candidate_pairs": 9018,
+      "input_tokens": 1440864
+    },
+    {
+      "dataset": "BFCL",
+      "requests": 1694,
+      "request_seconds_sum": 203.6328390482813,
+      "mean_request_ms": 120.2082875137434,
+      "median_request_ms": 74.37275839038193,
+      "max_request_ms": 7584.766208892688,
+      "candidate_pairs": 9536,
+      "input_tokens": 10389444
+    },
+    {
+      "dataset": "RAGTruth response-level hallucination",
+      "requests": 2700,
+      "request_seconds_sum": 194.28639471437782,
+      "mean_request_ms": 71.95792396828809,
+      "median_request_ms": 71.46091700997204,
+      "max_request_ms": 340.56215011514723,
+      "candidate_pairs": 5400,
+      "input_tokens": 4609984
+    },
+    {
+      "dataset": "SGD/SGD-X",
+      "requests": 2500,
+      "request_seconds_sum": 183.45103673730046,
+      "mean_request_ms": 73.38041469492018,
+      "median_request_ms": 72.64165859669447,
+      "max_request_ms": 325.90951514430344,
+      "candidate_pairs": 7233,
+      "input_tokens": 8623048
+    },
+    {
+      "dataset": "Humicroedit",
+      "requests": 2628,
+      "request_seconds_sum": 181.94222430302761,
+      "mean_request_ms": 69.23220102854933,
+      "median_request_ms": 69.22514853067696,
+      "max_request_ms": 94.93485908024013,
+      "candidate_pairs": 5256,
+      "input_tokens": 409632
+    },
+    {
+      "dataset": "ARC-Easy",
+      "requests": 2376,
+      "request_seconds_sum": 165.53379467641935,
+      "mean_request_ms": 69.66910550354349,
+      "median_request_ms": 69.45020996499807,
+      "max_request_ms": 322.1831738483161,
+      "candidate_pairs": 9501,
+      "input_tokens": 436417
+    },
+    {
+      "dataset": "PhishNChips phishing decisions",
+      "requests": 2000,
+      "request_seconds_sum": 151.37706571118906,
+      "mean_request_ms": 75.68853285559453,
+      "median_request_ms": 74.85576847102493,
+      "max_request_ms": 338.9166039414704,
+      "candidate_pairs": 36000,
+      "input_tokens": 7824942
+    },
+    {
+      "dataset": "Habermas Machine",
+      "requests": 1676,
+      "request_seconds_sum": 122.95758936810307,
+      "mean_request_ms": 73.36371680674408,
+      "median_request_ms": 72.83413258846849,
+      "max_request_ms": 335.2837811689824,
+      "candidate_pairs": 6311,
+      "input_tokens": 3697928
+    },
+    {
+      "dataset": "WinoGrande",
+      "requests": 1267,
+      "request_seconds_sum": 87.33245643018745,
+      "mean_request_ms": 68.92853704040051,
+      "median_request_ms": 69.00039198808372,
+      "max_request_ms": 81.68598916381598,
+      "candidate_pairs": 2534,
+      "input_tokens": 123982
+    },
+    {
+      "dataset": "ARC-Challenge",
+      "requests": 1172,
+      "request_seconds_sum": 81.56655336567201,
+      "mean_request_ms": 69.59603529494198,
+      "median_request_ms": 69.44764754734933,
+      "max_request_ms": 92.01034996658564,
+      "candidate_pairs": 4687,
+      "input_tokens": 239840
+    },
+    {
+      "dataset": "FinEntity",
+      "requests": 979,
+      "request_seconds_sum": 69.64448113343678,
+      "mean_request_ms": 71.13838726602327,
+      "median_request_ms": 70.44880511239171,
+      "max_request_ms": 312.17579916119576,
+      "candidate_pairs": 6387,
+      "input_tokens": 908424
+    },
+    {
+      "dataset": "Home appliance simulator",
+      "requests": 88,
+      "request_seconds_sum": 55.4584360702429,
+      "mean_request_ms": 630.2095007982148,
+      "median_request_ms": 624.4233039906248,
+      "max_request_ms": 716.5712001733482,
+      "candidate_pairs": 4220,
+      "input_tokens": 4368660
+    },
+    {
+      "dataset": "MuSR",
+      "requests": 756,
+      "request_seconds_sum": 55.29724708432332,
+      "mean_request_ms": 73.14450672529539,
+      "median_request_ms": 72.8380709188059,
+      "max_request_ms": 100.88580707088113,
+      "candidate_pairs": 2198,
+      "input_tokens": 2038258
+    },
+    {
+      "dataset": "HLE",
+      "requests": 513,
+      "request_seconds_sum": 42.64576842682436,
+      "mean_request_ms": 83.13015287879992,
+      "median_request_ms": 70.74552611447871,
+      "max_request_ms": 1121.869897004217,
+      "candidate_pairs": 3576,
+      "input_tokens": 1192079
+    },
+    {
+      "dataset": "CRUXEval",
+      "requests": 570,
+      "request_seconds_sum": 40.10762654640712,
+      "mean_request_ms": 70.36425709895985,
+      "median_request_ms": 69.74313443060964,
+      "max_request_ms": 337.6817961689085,
+      "candidate_pairs": 1824,
+      "input_tokens": 226842
+    },
+    {
+      "dataset": "GSM8K",
+      "requests": 564,
+      "request_seconds_sum": 39.177773863542825,
+      "mean_request_ms": 69.464138055927,
+      "median_request_ms": 69.65407857205719,
+      "max_request_ms": 81.51859603822231,
+      "candidate_pairs": 2256,
+      "input_tokens": 283083
+    },
+    {
+      "dataset": "New Yorker caption matching",
+      "requests": 528,
+      "request_seconds_sum": 36.640023331623524,
+      "mean_request_ms": 69.39398358262031,
+      "median_request_ms": 69.30510606616735,
+      "max_request_ms": 76.14770205691457,
+      "candidate_pairs": 2640,
+      "input_tokens": 321495
+    },
+    {
+      "dataset": "GPQA Diamond",
+      "requests": 198,
+      "request_seconds_sum": 13.936038067098707,
+      "mean_request_ms": 70.38403064191266,
+      "median_request_ms": 70.2350934734568,
+      "max_request_ms": 84.37458914704621,
+      "candidate_pairs": 792,
+      "input_tokens": 123456
+    },
+    {
+      "dataset": "SimpleBench",
+      "requests": 10,
+      "request_seconds_sum": 0.7106032816227525,
+      "mean_request_ms": 71.06032816227525,
+      "median_request_ms": 71.40707096550614,
+      "max_request_ms": 72.35708390362561,
+      "candidate_pairs": 60,
+      "input_tokens": 7626
+    }
+  ],
+  "latest_status": {
+    "time": "2026-11-10T05:54:39.826707+00:00",
+    "event": "progress",
+    "engine": "decision_engine:PairClassifierEngine",
+    "completed": 138540,
+    "counts": {
+      "ok": 138540
+    },
+    "elapsed_seconds": 33463.2
+  },
+  "remaining_requests_at_latest_status": 2080,
+  "recent_rates": [
+    {
+      "window_seconds": 300.09999999999854,
+      "completed_requests": 4090,
+      "requests_per_second": 13.628790403199,
+      "remaining_seconds_at_same_mix": 152.6180929095347
+    },
+    {
+      "window_seconds": 900.5999999999985,
+      "completed_requests": 12280,
+      "requests_per_second": 13.635354208305596,
+      "remaining_seconds_at_same_mix": 152.54462540716588
+    },
+    {
+      "window_seconds": 3600.199999999997,
+      "completed_requests": 50390,
+      "requests_per_second": 13.996444641964347,
+      "remaining_seconds_at_same_mix": 148.60916848581056
+    }
+  ],
+  "thread_cpu_seconds_top": [
+    {
+      "tid": 352088,
+      "cpu_seconds": 33456.04
+    },
+    {
+      "tid": 352110,
+      "cpu_seconds": 3.92
+    },
+    {
+      "tid": 352111,
+      "cpu_seconds": 2.29
+    },
+    {
+      "tid": 352107,
+      "cpu_seconds": 0.28
+    },
+    {
+      "tid": 352109,
+      "cpu_seconds": 0.28
+    }
+  ],
+  "official_complete": false,
+  "official_status": {
+    "stage": "running_official_public_0.3",
+    "complete": false,
+    "updated_utc": "2026-11-09T20:36:44.475134+00:00",
+    "upstream_commit": "25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d",
+    "run": "/tmp/opencode/jev-joint-generic-continuation-20261109/runs/joint-generic-task-KD",
+    "checkpoint": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final"
+  },
+  "scores": {
+    "complete": null,
+    "completed": null,
+    "decision_index": null,
+    "edition": null
+  }
+}

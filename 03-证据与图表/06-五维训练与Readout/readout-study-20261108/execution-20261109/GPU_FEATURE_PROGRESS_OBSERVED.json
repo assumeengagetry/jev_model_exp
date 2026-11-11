@@ -1,0 +1,50 @@
+{
+  "cursor": 264,
+  "questions": 264,
+  "tokens": 78941,
+  "updates": 0,
+  "macro_steps": 0,
+  "backbone_input_tokens": 78941,
+  "backbone_model_calls": 264,
+  "yield_reason": {
+    "reason": "no_stable_main_student_window",
+    "main_stage": "training_five_dimension_distilled",
+    "official_stage": "waiting_for_completed_five_dimension_final",
+    "student_step": null
+  },
+  "attention": {
+    "attention": "flash_attention_3",
+    "attention_implementation": "flash_attn3_hopper",
+    "attention_provider": "kernels-community/flash-attn3",
+    "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+    "sdpa_fallback": false,
+    "fa3_forward_calls": 7392,
+    "fa3_backward_calls": 0,
+    "actual_training_kernel_executed": false,
+    "torch_deterministic_algorithms": true,
+    "fa3_deterministic_forward_calls": 7392,
+    "fa3_deterministic_backward_calls": 0,
+    "actual_deterministic_fa3_backward_executed": false,
+    "cublas_workspace_config": ":4096:8",
+    "attention_current_process": {
+      "attention": "flash_attention_3",
+      "attention_implementation": "flash_attn3_hopper",
+      "attention_provider": "kernels-community/flash-attn3",
+      "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+      "sdpa_fallback": false,
+      "fa3_forward_calls": 2100,
+      "fa3_backward_calls": 0,
+      "actual_training_kernel_executed": false,
+      "torch_deterministic_algorithms": true,
+      "fa3_deterministic_forward_calls": 2100,
+      "fa3_deterministic_backward_calls": 0,
+      "actual_deterministic_fa3_backward_executed": false,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+  },
+  "elapsed_active_seconds": 68.21962721622549,
+  "checkpoint": "/tmp/opencode/jev-readout-adaptation-20261109/results/features/checkpoints/checkpoint-1794228801468702036-670d7af3d96d454583415a143e863541",
+  "chunks": 17,
+  "gpu_model_loaded_by_inspection": false
+}

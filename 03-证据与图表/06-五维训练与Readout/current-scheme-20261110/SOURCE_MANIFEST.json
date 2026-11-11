@@ -1,0 +1,231 @@
+{
+  "observed_utc": "2026-11-11T02:52:20.198348+00:00",
+  "scope": "exact source copies kept in sibling auxiliary archive; research Git repository contains documents/aggregate evidence only",
+  "files": [
+    {
+      "source_role": "five_dimension",
+      "name": "decision_engine.py",
+      "bytes": 8068,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/five_dimension/decision_engine.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "five_dimension",
+      "name": "label_language.py",
+      "bytes": 2500,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/five_dimension/label_language.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "five_dimension",
+      "name": "prepare_five_dimension.py",
+      "bytes": 23678,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/five_dimension/prepare_five_dimension.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "five_dimension",
+      "name": "run_official.before-joint-continuation.py",
+      "bytes": 10289,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/five_dimension/run_official.before-joint-continuation.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "five_dimension",
+      "name": "run_official.py",
+      "bytes": 10562,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/five_dimension/run_official.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "five_dimension",
+      "name": "run_pipeline.py",
+      "bytes": 6322,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/five_dimension/run_pipeline.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "five_dimension",
+      "name": "train_five_dimension.py",
+      "bytes": 28740,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/five_dimension/train_five_dimension.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "joint",
+      "name": "decision_engine.py",
+      "bytes": 8695,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/joint/decision_engine.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "joint",
+      "name": "joint_control.py",
+      "bytes": 6992,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/joint/joint_control.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "joint",
+      "name": "joint_data.py",
+      "bytes": 5869,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/joint/joint_data.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "joint",
+      "name": "prepare_joint.py",
+      "bytes": 20134,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/joint/prepare_joint.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "joint",
+      "name": "run_joint.py",
+      "bytes": 6956,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/joint/run_joint.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "joint",
+      "name": "run_official_joint.py",
+      "bytes": 12984,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/joint/run_official_joint.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "joint",
+      "name": "train_joint.py",
+      "bytes": 31072,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/joint/train_joint.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "source-20261110",
+      "name": "admit_readout.py",
+      "bytes": 13728,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/readout-study-20261108/source-20261110/admit_readout.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "source-20261110",
+      "name": "prepare_readout_data.py",
+      "bytes": 54770,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/readout-study-20261108/source-20261110/prepare_readout_data.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "source-20261110",
+      "name": "readout_common.py",
+      "bytes": 19121,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/readout-study-20261108/source-20261110/readout_common.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "source-20261110",
+      "name": "readout_completion.py",
+      "bytes": 9347,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/readout-study-20261108/source-20261110/readout_completion.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "source-20261110",
+      "name": "readout_metrics.py",
+      "bytes": 10099,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/readout-study-20261108/source-20261110/readout_metrics.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "source-20261110",
+      "name": "readout_model.py",
+      "bytes": 14545,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/readout-study-20261108/source-20261110/readout_model.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "source-20261110",
+      "name": "readout_worker.py",
+      "bytes": 102143,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/readout-study-20261108/source-20261110/readout_worker.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "source-20261110",
+      "name": "run_readout_queue.py",
+      "bytes": 23575,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/readout-study-20261108/source-20261110/run_readout_queue.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "shared",
+      "name": "pair_data_common.py",
+      "bytes": 3069,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/shared/pair_data_common.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "shared",
+      "name": "pair_training_runtime.py",
+      "bytes": 6356,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/shared/pair_training_runtime.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "shared",
+      "name": "group_training_runtime.py",
+      "bytes": 5774,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/shared/group_training_runtime.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "shared",
+      "name": "student_flash_attention3_repro.py",
+      "bytes": 5063,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/shared/student_flash_attention3_repro.py",
+      "publicly_included": false
+    },
+    {
+      "source_role": "shared",
+      "name": "label-knowline-pairs.py",
+      "bytes": 40953,
+      "byte_equal_to_collected_remote_text": true,
+      "local_archive_relative": "draft-before-pull/reports/current-scheme-20261110/source/shared/label-knowline-pairs.py",
+      "publicly_included": false
+    },
+    {
+      "local_archive_relative": "extra-shared/student_flash_attention3.py",
+      "name": "student_flash_attention3.py",
+      "source_role": "shared-native-fa3",
+      "bytes": 5511,
+      "byte_equal_to_collected_remote_text": true,
+      "publicly_included": false
+    }
+  ],
+  "local_archive": "jev-辅助归档/2026-11-10方案说明与近期报告"
+}

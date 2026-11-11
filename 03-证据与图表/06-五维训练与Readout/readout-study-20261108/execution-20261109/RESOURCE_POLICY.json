@@ -1,0 +1,33 @@
+{
+  "readout_gpu": 3,
+  "main_teacher_gpus": [
+    0,
+    1,
+    2
+  ],
+  "main_student_gpus": [
+    0
+  ],
+  "main_official_gpus": [
+    0
+  ],
+  "main_code_files": [
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/code/run_pipeline.py",
+      "bytes": 6322,
+      "mtime_ns": 1794211350467003307
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/code/run_official.py",
+      "bytes": 10289,
+      "mtime_ns": 1794212140670974348
+    }
+  ],
+  "max_window_seconds": 600,
+  "main_stable_min_step": 200,
+  "main_tail_reserve_steps": 500,
+  "observed_utc": "2026-11-09T10:05:22.689177+00:00",
+  "reservation_scope": "actual main launch code and explicit GPU3_RESERVED flag; recheck external GPU processes at each window",
+  "no_global_scheduler_claim": true,
+  "main_task_modified": false
+}
