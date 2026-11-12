@@ -1,52 +1,54 @@
-# 一次请求如何评分、如何加速、最终怎样计分
+# 推理、加速与计分
 
-[返回总说明](README.md)。这里只描述已保存的两个正式运行，不把待做的 Mac 单文件共享前缀草稿当作已部署代码。
+[返回总览](README.md)。本文描述已保存的两次正式 public 运行；文中提到的 `.py` 文件均在[库外辅助归档](SOURCE-ARCHIVE.md)。
 
-## 1. 原正式 Engine 的每一步
+## 结论
 
-实际源码：decision_engine.py（库外源码），类 `PairClassifierEngine`。
+- **同一权重，加速 Engine 把 public 整套从 9h20m 缩短到 3h22m，约 2.8 倍；Public Index 从 24.97 到 24.99，基本不变。**
+- **两版输出不是逐位一致。** choice 字段 99.2% 选择相同，单个概率最大相差 0.23。
+- **43 项 benchmark 中有 6 项变慢，都是每请求多字段的任务。** 加速版逐字段打分，丢掉了原版的跨字段合批；ACOS 的耗时增至原来的约 2.2 倍。
+- **距离 30 分钟的目标还差约 6.8 倍。** 加速版的耗时集中在 RouterBench 和 POP909，两项合计约占 42%。
 
-### 1.1 模型加载
+## 1. 原 Engine：整个请求的候选一起合批，逐个打分后题内 softmax
 
-1. 从 final 读取保存的 tokenizer、模型 config。
-2. 用实际基座构建 `AutoModelForSequenceClassification`，BF16、`attn_implementation='sdpa'`、`trust_remote_code=False`。
-3. **先 `base.score.float()` 再加载 PEFT**，保留 FP32 保存头；加载为不可训练。
-4. 与 `adapter_model.safetensors` 逐 key、dtype、tensor 精确比较；缺少头或加载舍入会阻止运行。
-5. `.to(cuda).eval()`，关闭通用 `use_cache`，读取40,960上下文、pad和EOS。
-6. 四个 CPU 计算线程，允许 TF32；模型一次加载，计入加载时间而不是每请求重新加载。
+源码为 `decision_engine.py` 的 `PairClassifierEngine`。
 
-依赖锁定为Torch2.9.1、Transformers4.57.6、PEFT0.18.1、NumPy2.4.6；原 `requirements-inference.txt` 未单独pin safetensors。本次从加速运行原binding补齐[实际运行环境](../../../03-证据与图表/05-Attention与效率/inference-prefix-graphs-20261110/results/RUNTIME.json)：**NVIDIA H800 NVL，95,830MiB显存，驱动590.44.01，Python3.11.18，safetensors0.8.0**。原GPU UUID已去掉；该记录不是另一时期的旧环境快照。执行源码位置见[库外归档说明](SOURCE-ARCHIVE.md)。
+### 1.1 加载
 
-### 1.2 规范化与渲染
+1. 从 final 读取 tokenizer 和模型 config。
+2. 用实际基座构建 `AutoModelForSequenceClassification`：BF16、`attn_implementation='sdpa'`、`trust_remote_code=False`。
+3. 先执行 `base.score.float()` 再加载 PEFT，保住 FP32 的分类头。
+4. 与 `adapter_model.safetensors` 逐 key、dtype、tensor 比较，不一致则拒绝运行。
+5. `.to(cuda).eval()`，关闭 `use_cache`，读取 40,960 的上下文上限以及 pad、EOS。
+6. 使用 4 个 CPU 线程，允许 TF32。模型只加载一次。
 
-遍历 `questions` 的原字段顺序，读取原候选字典的顺序。`noul` 没有显式 criteria 时使用 `{'true':'Yes.','false':'No.'}`。
+依赖版本为 Torch 2.9.1、Transformers 4.57.6、PEFT 0.18.1、NumPy 2.4.6。加速运行记录的[环境](../../../03-证据与图表/05-Attention与效率/inference-prefix-graphs-20261110/results/RUNTIME.json)是 NVIDIA H800 NVL（95,830 MiB）、驱动 590.44.01、Python 3.11.18、safetensors 0.8.0。
 
-对每个字段，按[训练文档](DATA-AND-TRAINING.md)的**同一模板和正则**构造 prefix；独立 tokenize prefix 和每个 candidate，均 `add_special_tokens=False,truncation=False`，最后加EOS。
+### 1.2 渲染与分词
 
-CPU `lru_cache(maxsize=2048)` 只缓存文本对应 token IDs，**不是预测概率缓存**；不会跨请求复用答案。候选列表引用只在原正则条件下加入 prefix，不按任务名调 prompt。
+- 按 `questions` 的原字段顺序和候选字典的原顺序处理。`noul` 没有显式 criteria 时使用 `{'true':'Yes.','false':'No.'}`。
+- 模板和 `criteria_context` 的触发正则与[训练](DATA-AND-TRAINING.md)相同。prefix 和每个 candidate 各自分词，`add_special_tokens=False, truncation=False`，末尾加 EOS。
+- CPU 上的 `lru_cache(maxsize=2048)` 只缓存文本对应的 token ID，不缓存预测结果。
 
-### 1.3 原版在整个请求范围合批
+### 1.3 合批
 
-原版先收集一个 request 的**所有字段的全部候选**，再一次调用 `score(rows)`。这允许不同短字段的候选合成一个 microbatch。
+原版先收集一个 request 中所有字段的全部候选，再一次性调用 `score(rows)`，不同短字段的候选可以进入同一个 microbatch。
 
-- 按完整候选长度稳定排序，保留逆映射恢复原顺序。
-- microbatch 最大32个候选。
-- 按向上取8倍数的 padded width 限制32,768 padded token。
-- 每个 singleton 仍允许越过批预算，先按完整候选尝试；批预算不是上下文截断阈值。
-- 右填充 pad，显式2D attention mask。
-- `torch.inference_mode()`；完整分类 forward 在 BF16 autocast 内。
+| 项目 | 设置 |
+|---|---|
+| 排序 | 按完整候选长度稳定排序，打分后恢复原顺序 |
+| Microbatch | 最多 32 个候选，且不超过 32,768 padded token（宽度向上取 8 的倍数） |
+| 单个超长候选 | 允许超出批预算，单独尝试 |
+| Padding / mask | 右填充，显式 2D attention mask |
+| 执行 | `torch.inference_mode()`，整个分类 forward 在 BF16 autocast 内 |
+| 超过 40,960 token | 整个请求返回 `Unsupported`，不截断、不丢弃候选 |
+| OOM | 释放并减半 token 预算后重试；单候选仍 OOM 则整个请求 `Unsupported` |
 
-超过40,960的任何完整候选会让请求明确 Unsupported，**不会截断它、删它或只给其它候选归一化**。
+### 1.4 分类位置
 
-多候选批 OOM 后释放张量、GC、`empty_cache()`，减半 token budget 并重试当前未完成位置；单候选仍 OOM 就整请求 Unsupported，不拿部分候选答案充当完整结果。
+HF 的 sequence-classification 路径先在每个 token 上做投影，再取最右的非 pad 位置。本方案在末尾附加的 EOS（151645）与 pad（151643）不同，因此取到的是 EOS 位置。
 
-### 1.4 哪个位置的 hidden 用来分类
-
-HF sequence-classification 路径先在各 token 投影，再按最右非 pad 位置取最终 logits；本方案附加的终末EOS不是pad，因此正常情况下是该EOS位置。
-
-候选正文包含什么、实际 pad/eos ID是什么都重要，不能用“取数组最后一列”处理右填充，也不能只凭 `attention_mask.sum()` 对任意模型重写 pooling。
-
-### 1.5 从二分类分数变成整题分布
+### 1.5 从 margin 到题内分布
 
 对字段 f 的每个候选 i：
 
@@ -55,45 +57,37 @@ m_i = float(logit_i[match]) - float(logit_i[not_match])
 p_i = exp(m_i-max(m)) / sum_j exp(m_j-max(m))
 ```
 
-需要区分三个量：
+三个容易混淆的量：
 
-1. 训练中单个 pair 的 `sigmoid(m_i)`；
-2. 正式一题各候选之间的 `softmax(m)`；
-3. Teacher 给某个 pair 的独立 `P(match)`。
+| 量 | 计算 | 用途 |
+|---|---|---|
+| pair 概率 | `sigmoid(m_i)` | 训练时的 BCE |
+| 题内分布 | 本题全部候选的 `softmax(m)` | 正式输出 |
+| Teacher 概率 | 每个 pair 独立的 `P(match)` | 训练目标 |
 
-它们不相同。正式不能先把每个 m sigmoid 成概率，再 softmax这些概率；也不能把所有字段的候选混在同一个 softmax。
+正式输出直接对 margin 做 softmax，不经过 sigmoid；softmax 的范围是一个字段的全部候选，不跨字段。
 
-- `choice` 返回 argmax 对应原候选 key 和所有候选概率。
-- `noul` 要求恰好两个候选、且唯一一个 key 是 true/yes/1，返回该候选概率。
-- 二候选 `noul` 有 `P(true)=sigmoid(m_true-m_false)`，**不是单独 `sigmoid(m_true)`**。
-- 当前没有额外推理温度、截距、按 K 校准、旋转平均、投票或正确性重试。
+- `choice` 返回 argmax 对应的原候选 key 和全部候选的概率。
+- `noul` 要求恰好两个候选，其中一个 key 为 true/yes/1，返回该候选的概率。两个候选的 softmax 等价于 `P(true) = sigmoid(m_true − m_false)`。
+- 没有推理温度、截距、按候选数校准、旋转平均、投票或重试。
 
-概率必须覆盖全部原始候选，有限并归一化；不筛选、top-k或把多个小softmax拼成一个完整分布。
-
-### 1.6 usage 的含义
+### 1.6 usage
 
 ```text
 usage.input_tokens = sum_over_all_candidates(len(prefix)+len(candidate)+1 EOS)
 ```
 
-这是原模型的**逻辑输入曝光**。共享前缀后实际送入计算的 token 可减少，但 usage 仍按原逻辑算，不把缓存节省偷算成输入变少。padding不计入 usage；GPU实际计算会受padding影响。
+usage 统计逻辑输入量，不含 padding。加速版共享 prefix 后实际计算的 token 减少，usage 仍按这个公式计。
 
-## 2. 加速版没有改权重，但改了执行
+## 2. 加速 Engine：同字段共享 prefix，固定形状走 CUDA Graph
 
-实际源码：
+源码为 `fast_pair_engine.py`、`prefix_graph_runtime.py`、`run_public.py`、`compare_results.py`。
 
-- fast_pair_engine.py（库外源码）
-- prefix_graph_runtime.py（库外源码）
-- run_public.py（库外源码）
-- compare_results.py（库外源码）
+权重、基座、未合并的 LoRA、分类头、分词边界、EOS、causal 语义、margin 和 softmax 公式都与原版相同。没有新训练，没有量化，也没有改 prompt。
 
-### 2.1 已保留的部分
+### 2.1 LoRA 推理包装
 
-同一 joint final、实际基座、未合并LoRA、保存分类头、独立分词边界、EOS、causal语义、整题完整候选、margin及softmax公式。没有新训练、LM字母读出、指针头、量化或prompt改写。
-
-### 2.2 LoRA 推理包装
-
-`resolve_lora` 将196个已加载 vanilla PEFT Linear包装为 `InferenceLoRA`，提前解析唯一活跃的default adapter，仍计算：
+`resolve_lora` 把 196 个 PEFT Linear 包装为 `InferenceLoRA`，提前解析唯一活跃的 default adapter，计算保持不变：
 
 ```text
 result = base(x)
@@ -101,116 +95,107 @@ x = x.to(A.weight.dtype)
 output = (result + B(A(x))*scale).to(result.dtype)
 ```
 
-不 merge 低秩权重，也不是把FP32分支偷偷换成BF16常量。它拒绝多活跃adapter、merged、非vanilla variant或非零dropout等不匹配状态。
+低秩分支仍以 FP32 单独计算，不 merge。遇到多个活跃 adapter、已 merge、非 vanilla 变体或非零 dropout 时拒绝运行。
 
-### 2.3 同字段共享 prefix
+### 2.2 同字段共享 prefix
 
-当候选数>1且 `(N-1)*prefix_length >= 1024` 时走共享路径；否则走完整候选路径。**1024是这份已执行版本的阈值，不是另一个待实现草稿中4096的默认值。**
+候选数大于 1 且 `(N-1)*prefix_length >= 1024` 时走共享路径，否则走完整候选路径。步骤：
 
-1. prefix单独前向一次，将每层KV写入固定buffer。
-2. 每个候选后缀含正文＋EOS，分批接在同一个prefix之后。
-3. 每波通过 `expand` 只读视图广播prefix KV，再 `torch.cat` 与新后缀KV组成独立分支，不修改共享prefix。
-4. 显式4D causal mask屏蔽物理prefix填充、后缀padding和后缀未来位置。
-5. 后缀RoPE语义位置为真实prefix长度＋局部后缀位置，不是物理桶宽＋后缀位置。
-6. 使用真实后缀length选EOS位置，继续保存head和原autocast策略。
+1. prefix 单独 forward 一次，把每层的 KV 写入固定 buffer。
+2. 每个候选的后缀（正文 + EOS）分批接在同一个 prefix 之后。
+3. 每一波用 `expand` 的只读视图广播 prefix KV，再与新后缀的 KV 拼接，共享的 prefix 不被修改。
+4. 显式 4D causal mask 屏蔽 prefix 的物理填充、后缀 padding 和后缀的未来位置。
+5. 后缀的 RoPE 位置为“真实 prefix 长度 + 后缀内位置”，与物理桶宽无关。
+6. 按真实后缀长度取 EOS 位置，分类头和 autocast 策略不变。
 
-这里用了 `PrefixWriter/PrefixFork` 自定义cache接口包装，**不是已实现 HF DynamicCache 的跨问题 LCP/crop方案**。
+缓存接口是自定义的 `PrefixWriter/PrefixFork`。buffer 只覆盖一个字段，下一个字段重写。同一请求的相邻问题之间、不同请求之间都不复用 KV，也没有输出缓存。
 
-当前buffer覆盖一个字段，下一字段重写；没有同请求相邻问题的LCP复用、没有跨请求内容KV字典、也没有输出缓存。
+### 2.3 固定的 CUDA Graph 池
 
-### 2.4 固定CUDA Graph池
+CUDA Graph 把固定形状的 CUDA 执行预先捕获下来，减少每次的 Python 和 launch 调度开销，计算内容不变。
 
-CUDA Graph把固定形状的CUDA执行预先捕获，减少每次Python/launch调度成本；不是改变模型的数学任务。
+| 路径 | 预定义形状 | 数量 |
+|---|---|---:|
+| full | batch = (2, 4, 8)，width = (64, 128, 256, 512) | 12 |
+| prefix | width = (64, 128, 256, 512, 1024, 2048, 4096) | 7 |
+| fork | physical prefix = (256, 1024, 4096)，batch = (8, 32)，suffix = (8, 32) | 12 |
+| 合计 | 本次全部捕获 | 31 |
 
-| 路径 | 预定义形状 |
-|---|---|
-| full | batch=(2,4,8)，width=(64,128,256,512)，12种 |
-| prefix | width=(64,128,256,512,1024,2048,4096)，7种 |
-| fork | physical prefix=(256,1024,4096)，batch=(8,32)，suffix=(8,32)，12种 |
-| 总数 | 最多31种；本次实际31种全部捕获 |
+- 初始化时每个形状先执行 3 次再捕获一次，这些执行不属于评测样本。
+- `graph_reserved_gib=32` 是开始捕获前检查 reserved 的阈值，不是显存硬上限。
+- 捕获完成后形状池封存；没有命中的形状走 eager，请求期间不再捕获。
+- 输入 buffer 固定，replay 的输出立即 clone，避免被下一波覆盖。
+- autocast 设 `cache_enabled=False`。prefix 的 KV buffer 按声明上下文一次分配，随 runtime 存在，不会增长。
 
-- 初始化时每形状先执行3次准备，再capture一次；它们是Graph初始化，不是额外公共评测样本。
-- `graph_reserved_gib=32` 是启动捕获前检查reserved阈值，不是总显存严格硬上限：一个shape的捕获仍可越过阈值。
-- 捕获后shape池封存；miss走eager，不在请求中偷偷compile/capture。
-- 固定输入buffer，replay输出及时clone，防后续波次覆盖尚未读取的输出。
-- autocast `cache_enabled=False`，避免借用短命临时weight-cast buffer。
-- prefix固定KV buffer按声明context分配，生命周期为runtime；不存在“缓存无限增长”。
+### 2.4 与原版的两处差别
 
-### 2.5 已知实现差别与限制
+- **没有跨字段合批。** 加速版逐字段调用 `score_field`。共享 prefix 减少了字段内的重复计算，但一个请求含很多短字段时，调用次数变多。
+- **共享路径没有原版的 OOM 处理。** 共享 prefill 和 fork 阶段没有对半重试，也没有退回原 Engine 的 fallback。本次 public 全部成功；其他输入或显存压力下的表现没有验证。
 
-**新引擎逐字段调用 `score_field`，丢掉了原版跨字段合批。** ACOS/BRIGHT/SATA这类多短字段请求因此可能变慢。共享减少某字段内重复前缀，不自动补偿所有调用碎片化。
+## 3. 两次 public：分数基本不变，耗时 9h20m → 3h22m
 
-新版本也**没有实现与原版完全相同的共享OOM整题fallback／对半重试路径**；原源码中共享prefill及fork没有统一捕获并退回原Engine。此次实际完整public全成功，不等于证明所有外部输入／显存压力下的失败集合不扩大。若要把它作为通用稳健替代版，必须另立有界验收；本次报告不顺手修改正在归档的数值代码。
-
-## 3. 两次正式 public 的事实
-
-两次都使用固定 upstream commit：
-
-```text
-25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d
-edition: 0.3
-```
-
-原冻结套件基础110,201请求＋新增30,419请求＝**140,620**；固定排除442后计分**140,178**。有43个展示benchmark，其中37个计入该public指数；不能把新展示项误算成指数额外得分项。
+两次都使用 upstream commit `25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d`，edition 0.3。套件共 140,620 个请求（原冻结套件 110,201 + 新增 30,419），固定排除 442 个后计分 140,178 个。展示 43 个 benchmark，其中 37 个计入 Index。
 
 | 指标 | 原 Engine | 加速 Engine |
 |---|---:|---:|
-| Public Index | 24.97 | **24.99** |
-| Raw Index | 44.15 | 44.18 |
-| 完整执行请求／成功 | 140,620／140,620 | 140,620／140,620 |
-| 计分请求／成功 | 140,178／140,178 | 140,178／140,178 |
-| 实际推理墙钟 | 33,609.1秒 | **12,157.2秒** |
-| 请求median | 70.5ms | 16.6ms |
-| 请求mean | 238.7ms | 86.2ms |
-| 请求p95 | 676.5ms | 328.4ms |
-| Knowledge Skill | 9.24 | 9.27 |
-| Language Skill | 32.43 | 32.42 |
-| Retrieval Skill | 36.06 | 36.14 |
-| Tools Skill | 31.93 | 31.94 |
-| Arts Skill | 11.42 | 11.43 |
+| Public Index | 24.97 | 24.99 |
+| Raw Index | 44.2 | 44.2 |
+| Knowledge Skill | 9.2 | 9.3 |
+| Language Skill | 32.4 | 32.4 |
+| Retrieval Skill | 36.1 | 36.1 |
+| Tools Skill | 31.9 | 31.9 |
+| Arts Skill | 11.4 | 11.4 |
+| 执行请求 / 成功 | 140,620 / 140,620 | 140,620 / 140,620 |
+| 计分请求 / 成功 | 140,178 / 140,178 | 140,178 / 140,178 |
+| 推理耗时 | 9h20m | 3h22m |
+| 请求 median | 70.5 ms | 16.6 ms |
+| 请求 mean | 238.7 ms | 86.2 ms |
+| 请求 p95 | 676.5 ms | 328.4 ms |
 
-旧运行读取模型7.57秒，只加载一次；新模型加载含Graph初始化15.029秒，其中Graph捕获6.085秒。新pipeline含加载／初始化／评分总墙钟12,220.829秒。不能把3小时说成“模型启动慢”，也不能把评分耗时混进request latency。
+推理耗时不含模型加载。原版加载模型约 7.6 秒；加速版加载加初始化约 15.0 秒，其中 Graph 捕获约 6.1 秒。加速版 pipeline 含加载、初始化和计分的总耗时约 3h24m。
 
-原生结果：[旧scores](../../../03-证据与图表/06-五维训练与Readout/joint-generic-continuation-20261109/scores.json)、[新scores](../../../03-证据与图表/05-Attention与效率/inference-prefix-graphs-20261110/results/scores.json)。完整耗时解释：[原版](../../../01-研究结论/05-Attention与效率/joint-generic-continuation-20261109/OFFICIAL-TIMING-EXPLAINED-20261110.md)、[新版](../../../01-研究结论/05-Attention与效率/inference-prefix-graphs-20261110/README.md)。
+原生分数：[原版 scores](../../../03-证据与图表/06-五维训练与Readout/joint-generic-continuation-20261109/scores.json)、[加速版 scores](../../../03-证据与图表/05-Attention与效率/inference-prefix-graphs-20261110/results/scores.json)。耗时说明：[原版](../../../01-研究结论/05-Attention与效率/joint-generic-continuation-20261109/OFFICIAL-TIMING-EXPLAINED-20261110.md)、[加速版](../../../01-研究结论/05-Attention与效率/inference-prefix-graphs-20261110/README.md)。
 
-### 3.1 不能叫逐位无损
+### 3.1 两版输出有 0.8% 的选择不同
 
-两次已有输出按完整run_id/payload/字段/候选对齐，逻辑输入token差为0，无旧预测复用：
+两次输出按 run_id、payload、字段、候选逐项对齐，逻辑输入 token 完全相同。
 
-- 308,559个choice字段，2,575个选择变化，**一致率99.1655%**。
-- 14,700个noul字段，82个跨越0.5阈值。
-- 2,506,535个概率，平均绝对差0.001205717，最大绝对差**0.225062558**。
+| 对比项 | 数量 | 差异 |
+|---|---:|---|
+| choice 字段 | 308,559 | 2,575 个选择改变，一致率 99.2% |
+| noul 字段 | 14,700 | 82 个跨过 0.5 阈值 |
+| 概率值 | 2,506,535 | 平均绝对差 0.001，最大 0.23 |
 
-数学评分函数相同，不保证BF16在不同batch、mask、cache和kernel路径下相同。**也没有逐项隔离证明所有漂移都只是舍入**，不能把最大22.5个百分点的差别用“小数误差”一笔带过。
+两版的评分公式相同，但 batch、mask、cache 和 kernel 路径不同，BF16 下的数值不保证一致。这些差异没有逐项归因，最大 0.23 的概率差不能只当作舍入误差。前 500 个请求两版完全一致，这只在该短题子集上成立。
 
-0.02总分差只说明这两份实际输出的本次评分很接近，不是统计显著提升、跨seed验证或通用等价证明。首500条完全相同只对那个短题子集成立。
+总分相差 0.02，两版的整体得分接近，没有体现出能力变化。
 
-### 3.2 为什么快了仍要3小时
+### 3.2 长任务大幅提速，多字段短请求变慢
 
-整体加速 **2.765×**；若目标30分钟，还需要在新版本上约 **6.754×**，不是再优化几个毫秒就自然达到。
+| Benchmark | 每请求字段数 | 原 Engine | 加速 Engine | 原 / 加速 | 占加速版请求耗时 |
+|---|---:|---:|---:|---:|---:|
+| RouterBench | 2.0 | 119 分钟 | 52 分钟 | 2.3× | 26% |
+| POP909 | 1.0 | 139 分钟 | 33 分钟 | 4.2× | 16% |
+| API-Bank | 1.0 | 68 分钟 | 5.5 分钟 | 12.4× | 3% |
+| ACOS | 58.2 | 7.4 分钟 | 16.1 分钟 | 0.46×（变慢） | 8% |
+| SATA-Bench | 9.4 | 6.1 分钟 | 9.1 分钟 | 0.67×（变慢） | 4% |
+| BRIGHT | 32.0 | 5.7 分钟 | 6.9 分钟 | 0.83×（变慢） | 3% |
 
-| 任务 | 旧请求总耗时 | 新请求总耗时 | 旧／新 |
-|---|---:|---:|---:|
-| RouterBench | 1h58m57.7s | 51m48.4s | 2.30× |
-| POP909 | 2h19m22.6s | 32m51.0s | 4.24× |
-| API-Bank | 1h08m08.5s | 5m30.0s | 12.39× |
-| ACOS | 7m22.2s | 16m05.0s | 0.46×，变慢 |
-| SATA | 6m06.2s | 9m04.9s | 0.67×，变慢 |
-| BRIGHT | 5m44.9s | 6m53.5s | 0.83×，变慢 |
+原版每个候选都重算一遍 prefix，这是原先耗时的主要来源，共享 prefix 后 API-Bank 快了约 12 倍。变慢的 6 项（上表 3 项，加 PhishNChips、Home appliance simulator、BFCL）都是每请求多字段的任务；ToolRet、ContractNLI 等多字段任务仍然变快。
 
-原始模型每候选重算prefix的成本是真实大头；修复一部分后，新的长尾与逐field碎片化又显现。没有额外profiler，不虚构GPU/CPU占比或断言恢复跨field合批就一定30分钟。
+整套加速约 2.8 倍。要达到 30 分钟，还需要在加速版基础上再快约 6.8 倍。本轮没有做 profiler 分析，GPU 与 CPU 的耗时占比未知。
 
-## 4. Public Index到底是什么
+## 4. Public Index：原生指标 → Skill → area 加权
 
-按本次固定kit，不同benchmark先计算自己的原生指标，做coverage调整，再按其chance／track规则得到Skill；常见形式为：
+每个 benchmark 先算自己的原生指标并做 coverage 调整，再按 chance 和 track 规则换算成 Skill，常见形式为：
 
 ```text
 skill = clip((score - chance)/(1 - chance), 0, 1)
 ```
 
-不能把所有原生指标都叫accuracy：例如有F1、相关性、整case准确率和不同track聚合。area内部gold任务权重1.2，其余1.0，再按固定area权重合成指数：
+原生指标包括 accuracy、F1、相关性和整 case 准确率等。area 内 gold 任务的权重为 1.2，其余为 1.0；area 之间按固定权重合成：
 
-| Area | 固定权重 |
+| Area | 权重 |
 |---|---:|
 | Knowledge | 0.258494 |
 | Language | 0.258494 |
@@ -218,16 +203,23 @@ skill = clip((score - chance)/(1 - chance), 0, 1)
 | Tools | 0.182783 |
 | Arts | 0.1 |
 
-`Index = 100 * sum(weight_area*skill_area)`。因此一个小任务raw涨10个百分点，不等于总分涨10分；接近随机的任务raw看着50%，Skill可能约0。
+```text
+Index = 100 * sum(weight_area * skill_area)
+```
 
-**24.99 是这个固定 public0.3 的结果。** 当前线上榜单private Full怎么加权、是否已变版，不能从早期调研或该kit旧note外推；我们没有private Full、官方名次或维护者指定硬件验收结果。
+两点直接影响对分数的理解：
 
-官方的完整输入校验和suite来源记录照常保留；本次文档没有额外跑模型／语料hash，也没有修改kit绕过其内置校验。
+- 单个小任务的原生指标提高 10 个百分点，经 area 内平均和 area 权重后，对总分的贡献远小于 10 分。
+- 接近随机水平的任务，原生指标看起来有 50%，Skill 可能接近 0。
 
-## 5. 三种“速度”不能混着比较
+24.99 是固定 public 0.3 套件上的结果。目前没有 private Full 分数、官方名次或指定硬件上的验收结果。
 
-1. **正式public整套墙钟：** 原9h20m，新3h22m，实际整套收益2.765×。
-2. **readout内部完整请求：** 同GPU3同125题；包含各自包装和安全检查，非同一正式模型。
-3. **冻结feature后的head训练耗时：** 已缓存hidden，只训头；绝不是用户真实请求端到端延迟。
+## 5. 三种速度口径各自独立
 
-新的readout/Cptr不能直接拿内部94ms去对比正式16.6ms中位数，样本、起点、attention、精度和控制开销都不同。详见 [readout最终报告](../../../01-研究结论/06-五维训练与Readout/readout-study-20261108/FINAL-REPORT-20261110.md)。
+| 口径 | 数值 | 测量范围 |
+|---|---|---|
+| 正式 public 整套 | 9h20m → 3h22m，约 2.8 倍 | joint final，140,620 个请求的推理耗时 |
+| readout 内部完整请求 | median 约 94 ms | 原标签 stage2 起点，GPU3 上 125 题，含各自的包装和安全检查 |
+| 冻结 feature 后的 head 训练 | — | hidden 已缓存，只训 head，不是请求延迟 |
+
+readout 的 94 ms 与正式加速版的 16.6 ms median 来自不同的模型起点、样本、attention 实现和精度设置，两者不能直接比较。详见 [readout 最终报告](../../../01-研究结论/06-五维训练与Readout/readout-study-20261108/FINAL-REPORT-20261110.md)。
