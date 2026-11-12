@@ -446,4 +446,4 @@ mkdir -p /tmp/attn-regen && python -B code/checks/make_patched.py code/baseline 
 
 检查时的环境是 uv 建的临时虚拟环境，不在仓库里：Python 3.12.13、Torch 2.9.1、Transformers 4.57.6、PEFT 0.18.1、NumPy 2.5.4。
 
-仓库的 `.gitignore` 按资料库规则忽略所有 `*.py`，所以 `code/` 下的文件在磁盘上，但不会进入提交；能被 Git 跟踪的只有本文件。本文件含模块全文和三份 diff，足以还原模块和补丁文件；检查脚本只存在于 `code/checks/`。没有修改 `.gitignore`，没有提交，本目录的索引 README 没有更新。
+仓库的 `.gitignore` 按资料库规则忽略所有 `*.py`。用户要求（2026-11-12）为本目录加例外：`.gitignore` 末尾新增一条规则，只放行本目录 `code/` 下的 `*.py`，其它位置的规则不变。这 13 个文件现在可以被 Git 跟踪。尚未提交；本目录的索引 README 和[整理记录](../../../整理记录.md)里“脚本进入库外辅助归档”的说明没有更新。

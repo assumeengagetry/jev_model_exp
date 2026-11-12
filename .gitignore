@@ -82,3 +82,7 @@ added_tokens.json
 special_tokens_map.json
 requirements*.txt
 *.jsonl
+
+# Exception to the policy above (user request, 2026-11-12): the attention-mask patch keeps
+# its module, patched scripts and CPU checks next to its note.
+!/02-研究路径/05-Attention与效率/2026-11-10-attention-mask-modes/code/**/*.py
