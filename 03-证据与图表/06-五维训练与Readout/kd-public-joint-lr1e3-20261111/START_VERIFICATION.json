@@ -1,0 +1,148 @@
+{
+  "observed_utc": "2026-11-11T17:32:01.316029+00:00",
+  "experiment_complete": false,
+  "pipeline_stage": "running_kd_full_public",
+  "coordinator_alive": true,
+  "manager_alive": true,
+  "deployed_source_byte_equality": true,
+  "bound_source_files": 281,
+  "production_ready": {
+    "complete": true,
+    "requests": 140620,
+    "scored_requests": 140178,
+    "excluded_requests": 442,
+    "shard_requests": [
+      35155,
+      35155,
+      35155,
+      35155
+    ],
+    "official_suite_match": true,
+    "official_exclusions_match": true,
+    "training_pairs": 1667242,
+    "training_tokens": 458731913,
+    "training_steps": 13026,
+    "rank_training_rows": [
+      416842,
+      416841,
+      416837,
+      416722
+    ],
+    "rank_training_relations": [
+      936,
+      885,
+      944,
+      882
+    ],
+    "maximum_rank_macro_pairs": [
+      33,
+      33,
+      33,
+      32
+    ]
+  },
+  "workers": [
+    {
+      "rank": 0,
+      "expected_requests": 35155,
+      "registered_process_alive": true,
+      "owner_matches_registry": true,
+      "compute_process_is_registered_worker": true,
+      "official_event": "progress",
+      "official_completed": 520,
+      "official_counts": {
+        "ok": 520
+      },
+      "actual_complete_output_lines": 529,
+      "actual_output_counts": {
+        "ok": 529
+      },
+      "response_model_names": [
+        "qwen3-0.6b-five-domain-kd-final-kernel-v2"
+      ],
+      "expected_response_model": "qwen3-0.6b-five-domain-kd-final-kernel-v2",
+      "environment_bound_to_kd_snapshot": true,
+      "environment_experiment_stage": "kd",
+      "loaded_seconds": 25.85409114207141
+    },
+    {
+      "rank": 1,
+      "expected_requests": 35155,
+      "registered_process_alive": true,
+      "owner_matches_registry": true,
+      "compute_process_is_registered_worker": true,
+      "official_event": "progress",
+      "official_completed": 540,
+      "official_counts": {
+        "ok": 540
+      },
+      "actual_complete_output_lines": 547,
+      "actual_output_counts": {
+        "ok": 547
+      },
+      "response_model_names": [
+        "qwen3-0.6b-five-domain-kd-final-kernel-v2"
+      ],
+      "expected_response_model": "qwen3-0.6b-five-domain-kd-final-kernel-v2",
+      "environment_bound_to_kd_snapshot": true,
+      "environment_experiment_stage": "kd",
+      "loaded_seconds": 25.842233581934124
+    },
+    {
+      "rank": 2,
+      "expected_requests": 35155,
+      "registered_process_alive": true,
+      "owner_matches_registry": true,
+      "compute_process_is_registered_worker": true,
+      "official_event": "progress",
+      "official_completed": 530,
+      "official_counts": {
+        "ok": 530
+      },
+      "actual_complete_output_lines": 531,
+      "actual_output_counts": {
+        "ok": 531
+      },
+      "response_model_names": [
+        "qwen3-0.6b-five-domain-kd-final-kernel-v2"
+      ],
+      "expected_response_model": "qwen3-0.6b-five-domain-kd-final-kernel-v2",
+      "environment_bound_to_kd_snapshot": true,
+      "environment_experiment_stage": "kd",
+      "loaded_seconds": 26.05546441511251
+    },
+    {
+      "rank": 3,
+      "expected_requests": 35155,
+      "registered_process_alive": true,
+      "owner_matches_registry": true,
+      "compute_process_is_registered_worker": true,
+      "official_event": "progress",
+      "official_completed": 530,
+      "official_counts": {
+        "ok": 530
+      },
+      "actual_complete_output_lines": 533,
+      "actual_output_counts": {
+        "ok": 533
+      },
+      "response_model_names": [
+        "qwen3-0.6b-five-domain-kd-final-kernel-v2"
+      ],
+      "expected_response_model": "qwen3-0.6b-five-domain-kd-final-kernel-v2",
+      "environment_bound_to_kd_snapshot": true,
+      "environment_experiment_stage": "kd",
+      "loaded_seconds": 25.8565941688139
+    }
+  ],
+  "actual_completed_requests_at_read": 2140,
+  "training_started": false,
+  "new_public_scores_exist": false,
+  "gpu": [
+    "0, 18399, 100",
+    "1, 18279, 100",
+    "2, 18799, 41",
+    "3, 19807, 100"
+  ],
+  "scope": "Read-only production admission and actual partial progress; not tests, not final score, not latency admission."
+}

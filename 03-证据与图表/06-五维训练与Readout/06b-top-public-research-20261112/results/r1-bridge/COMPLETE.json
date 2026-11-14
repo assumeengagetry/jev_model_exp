@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "role": "eval_only_recovery",
+  "public_index": 24.67,
+  "training_root": "/tmp/opencode/jev-06b-research-20261112-r1-bridge",
+  "training_receipt": {
+    "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/TRAINING_COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/TRAINING_COMPLETE.json",
+    "bytes": 12591,
+    "mtime_ns": 1794465450960201544
+  },
+  "public_receipt": {
+    "path": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/COMPLETE.json",
+    "bytes": 11796,
+    "mtime_ns": 1794467484410783078
+  },
+  "original_stop_preserved": true,
+  "original_pipeline_still_blocked": true,
+  "retrained": false,
+  "completed_utc": "2026-11-12T07:11:24.921713+00:00",
+  "uploaded": false,
+  "private_full_score": null
+}

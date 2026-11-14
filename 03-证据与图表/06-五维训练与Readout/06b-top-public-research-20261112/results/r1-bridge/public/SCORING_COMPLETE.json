@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "stage": "joint_bridge",
+  "results": {
+    "path": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/results.jsonl",
+    "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/results.jsonl",
+    "bytes": 627479083,
+    "mtime_ns": 1794467441743622682
+  },
+  "binding_file": {
+    "path": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/BINDING.json",
+    "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/BINDING.json",
+    "bytes": 5350,
+    "mtime_ns": 1794466523490103997
+  },
+  "files": [
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/scores.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/scores.json",
+      "bytes": 32039,
+      "mtime_ns": 1794467483518800633
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/benchmark-summary.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/benchmark-summary.json",
+      "bytes": 34938,
+      "mtime_ns": 1794467462495214366
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/index.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery/eval/joint_bridge/index.json",
+      "bytes": 10017,
+      "mtime_ns": 1794467471115044740
+    }
+  ]
+}

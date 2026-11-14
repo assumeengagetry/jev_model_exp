@@ -1,0 +1,79 @@
+{
+  "stage": "executions_finished",
+  "execution_complete": true,
+  "all_numerically_accepted": false,
+  "tasks": {
+    "causal": {
+      "gpu": 0,
+      "process": {
+        "pid": 694451,
+        "starttime": "141142444",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "failed",
+      "exit_code": 1,
+      "mechanism_receipt": {
+        "complete": false,
+        "mode": "causal",
+        "actual_macro": 0,
+        "pairs": 128,
+        "real_tokens": 45216,
+        "training_layout_pass": true,
+        "isolation_pass": false,
+        "prefix_pass": true,
+        "four_rank_training_verified": false,
+        "new_public_score": null,
+        "clean_training": false
+      }
+    },
+    "bidirectional": {
+      "gpu": 1,
+      "process": {
+        "pid": 694457,
+        "starttime": "141142459",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "failed",
+      "exit_code": 1,
+      "mechanism_receipt": {
+        "complete": false,
+        "mode": "bidirectional",
+        "actual_macro": 0,
+        "pairs": 128,
+        "real_tokens": 45216,
+        "training_layout_pass": true,
+        "isolation_pass": false,
+        "prefix_pass": true,
+        "four_rank_training_verified": false,
+        "new_public_score": null,
+        "clean_training": false
+      }
+    },
+    "prefix_block": {
+      "gpu": 2,
+      "process": {
+        "pid": 694463,
+        "starttime": "141142473",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "failed",
+      "exit_code": 1,
+      "mechanism_receipt": {
+        "complete": false,
+        "mode": "prefix_block",
+        "actual_macro": 0,
+        "pairs": 128,
+        "real_tokens": 45216,
+        "training_layout_pass": true,
+        "isolation_pass": false,
+        "prefix_pass": false,
+        "four_rank_training_verified": false,
+        "new_public_score": null,
+        "clean_training": false
+      }
+    }
+  },
+  "public_score": null,
+  "clean_training_admitted": false,
+  "utc": "2026-11-12T11:05:01.357577+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "assigned_gpus": [
+    0,
+    1
+  ],
+  "config": {
+    "bytes": 1079028,
+    "mtime_ns": 1794513153404335658,
+    "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/config.json",
+    "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/config.json"
+  },
+  "fixed_weights_only": true,
+  "gpus2_3_touched": false,
+  "launched_utc": "2026-11-12T19:55:03.512138+00:00",
+  "no_automatic_restart": true,
+  "no_training_or_dense_reference_rerun": true,
+  "owner": {
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+    "pid": 746922,
+    "starttime": "144324625"
+  },
+  "root": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1",
+  "source": {
+    "bytes": 38413,
+    "mtime_ns": 1794513153092341957,
+    "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/ops.py",
+    "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/ops.py"
+  }
+}

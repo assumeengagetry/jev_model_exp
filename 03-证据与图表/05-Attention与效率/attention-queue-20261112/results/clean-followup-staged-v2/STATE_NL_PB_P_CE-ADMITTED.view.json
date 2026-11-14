@@ -1,0 +1,106 @@
+{
+  "arm": "STATE_NL_PB_P_CE",
+  "authorization": {
+    "bytes": 1545202,
+    "mtime_ns": 1794506338729476264,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json"
+  },
+  "budget": {
+    "admitted": [],
+    "arm_cap_bytes": 26843545600,
+    "candidate": [
+      "STATE_NL_PB_P_CE"
+    ],
+    "evidence_bytes": 5368709120,
+    "fits": true,
+    "free_bytes": 157050576896,
+    "outstanding_bytes": {
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": 0,
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": 25944728926,
+      "/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42": 0,
+      "/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42": 0
+    },
+    "pending_unreserved": [
+      "STATE_NL_PB_P_CE",
+      "JPAIR_P_BCE_RANK"
+    ],
+    "projection_only": true,
+    "required_free_bytes": 52788274526,
+    "retained_bytes": {
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": 898731759,
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": 898816674,
+      "/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42": 10969676192,
+      "/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42": 10969676860
+    },
+    "shared_floor_bytes": 21474836480,
+    "system_wide_reservation": false
+  },
+  "capacity_reserved": true,
+  "gpu": 2,
+  "lease": {
+    "bytes": 2072,
+    "mtime_ns": 1794506383844572534,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/gpu2-SUCCESSOR.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/gpu2-SUCCESSOR.json"
+  },
+  "manifest": {
+    "bytes": 36635667,
+    "mtime_ns": 1794506180204650656,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json"
+  },
+  "next_macro_index": 1,
+  "owner": {
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+    "pid": 741840,
+    "starttime": "143631476"
+  },
+  "repeat_macro0_allowed": false,
+  "source": {
+    "bytes": 52406,
+    "mtime_ns": 1794506177816698461,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/source/staged_queue.py",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/source/staged_queue.py"
+  },
+  "uuid": "GPU-16c2eecc-d93f-08f7-e1b0-13d23ffd23d0",
+  "binding": {
+    "checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/checkpoint-m0000001-s00002",
+    "complete": {
+      "bytes": 772717,
+      "mtime_ns": 1794501895840104165,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+    },
+    "ledger": {
+      "bytes": 476071,
+      "mtime_ns": 1794501895844104083,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/ledger.jsonl",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/ledger.jsonl"
+    },
+    "next_macro_index": 1,
+    "pin_file": {
+      "bytes": 306,
+      "mtime_ns": 1794501914015728620,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/STATE_NL_PB_P_CE/RESUME_COMPLETE_PIN.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/STATE_NL_PB_P_CE/RESUME_COMPLETE_PIN.json"
+    },
+    "repeat_macro0_allowed": false,
+    "report": {
+      "bytes": 3778749,
+      "mtime_ns": 1794501914099726884,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/STATE_NL_PB_P_CE/FIRST_PRIMARY_VERIFICATION.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/STATE_NL_PB_P_CE/FIRST_PRIMARY_VERIFICATION.json"
+    }
+  },
+  "archive_kind": "admission-view-repeated-scope-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/STATE_NL_PB_P_CE-ADMITTED.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/STATE_NL_PB_P_CE-ADMITTED.json",
+    "bytes": 774257,
+    "mtime_ns": 1794506384112567166
+  },
+  "elided_keys": [
+    "binding.scope"
+  ]
+}

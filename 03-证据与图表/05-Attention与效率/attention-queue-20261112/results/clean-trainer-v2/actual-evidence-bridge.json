@@ -1,0 +1,843 @@
+{
+  "version": "lossless-primary-actual-result-bridge-v1",
+  "actual_results": {
+    "causal": {
+      "train_layout": {
+        "complete": true,
+        "passed": true,
+        "actual_model_run": true,
+        "mode": "causal",
+        "precision": {
+          "matmul_allow_tf32": true,
+          "cudnn_allow_tf32": true,
+          "allow_bf16_reduced_precision_reduction": true,
+          "float32_matmul_precision": "high",
+          "cublas_workspace_config": ":4096:8",
+          "autocast_cache_enabled": true
+        },
+        "core_files": [
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "bytes": 353,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "bytes": 4613,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "bytes": 11475,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "bytes": 9558,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "bytes": 7589,
+            "mtime_ns": 1794478843092492117
+          }
+        ],
+        "native_files": [
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "bytes": 768,
+            "mtime_ns": 1793689560295719868
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "bytes": 709,
+            "mtime_ns": 1793689560299719799
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "bytes": 387,
+            "mtime_ns": 1793689465589373099
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "bytes": 804184680,
+            "mtime_ns": 1793689547947935422
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "bytes": 1389499,
+            "mtime_ns": 1793688805168897960
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "bytes": 234,
+            "mtime_ns": 1793689550007899462
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "bytes": 1030,
+            "mtime_ns": 1793689551939865735
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "bytes": 952,
+            "mtime_ns": 1793689553755834035
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "bytes": 41297,
+            "mtime_ns": 1793689555667800658
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "bytes": 159,
+            "mtime_ns": 1793689557663765814
+          }
+        ],
+        "backend": "native-fa3",
+        "SDPA_fallback": false,
+        "frozen_tolerance_contract": "unchanged logits RMS<=.01*max(refRMS,.001), maxabs<=.02+.02*maxabsref; gradients/actualstep L2<=.02*refnorm+1e-7*sqrt(N), cosine>=.999; same-geometry content control bitwise exact",
+        "layouts": [
+          "dense",
+          "packed"
+        ],
+        "gradient_keys": 393,
+        "native_gqa": true,
+        "head_all_tokens_before_eos": true,
+        "logits_pass": true,
+        "gradients_pass": true,
+        "optimizer_step_pass": true,
+        "dense_reference": "actual exact-commit HF+native FA3 dense; packed current core; supplemental same-geometry dense/packed/HF tensor equality in precision-v2",
+        "original_training_receipt": {
+          "path": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/causal/TRAINING.json",
+          "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/causal/TRAINING.json",
+          "bytes": 805326,
+          "mtime_ns": 1794481495094452831
+        },
+        "original_overall_failure_preserved": {
+          "path": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/causal/COMPLETE.json",
+          "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/causal/COMPLETE.json",
+          "bytes": 282,
+          "mtime_ns": 1794481497774398283
+        }
+      },
+      "full_row_geometry_isolation": {
+        "complete": true,
+        "passed": true,
+        "actual_model_run": true,
+        "mode": "causal",
+        "precision": {
+          "matmul_allow_tf32": true,
+          "cudnn_allow_tf32": true,
+          "allow_bf16_reduced_precision_reduction": true,
+          "float32_matmul_precision": "high",
+          "cublas_workspace_config": ":4096:8",
+          "autocast_cache_enabled": true
+        },
+        "core_files": [
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "bytes": 353,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "bytes": 4613,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "bytes": 11475,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "bytes": 9558,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "bytes": 7589,
+            "mtime_ns": 1794478843092492117
+          }
+        ],
+        "native_files": [
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "bytes": 768,
+            "mtime_ns": 1793689560295719868
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "bytes": 709,
+            "mtime_ns": 1793689560299719799
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "bytes": 387,
+            "mtime_ns": 1793689465589373099
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "bytes": 804184680,
+            "mtime_ns": 1793689547947935422
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "bytes": 1389499,
+            "mtime_ns": 1793688805168897960
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "bytes": 234,
+            "mtime_ns": 1793689550007899462
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "bytes": 1030,
+            "mtime_ns": 1793689551939865735
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "bytes": 952,
+            "mtime_ns": 1793689553755834035
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "bytes": 41297,
+            "mtime_ns": 1793689555667800658
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "bytes": 159,
+            "mtime_ns": 1793689557663765814
+          }
+        ],
+        "backend": "native-fa3",
+        "SDPA_fallback": false,
+        "frozen_tolerance_contract": "unchanged logits RMS<=.01*max(refRMS,.001), maxabs<=.02+.02*maxabsref; gradients/actualstep L2<=.02*refnorm+1e-7*sqrt(N), cosine>=.999; same-geometry content control bitwise exact",
+        "layouts": [
+          "packed"
+        ],
+        "control_policy": "same-target-micro-geometry-neighbor-append-B-or-C",
+        "target_pairs": 128,
+        "target_real_tokens": 45216,
+        "micro_waves": 4,
+        "gradient_keys": 393,
+        "layer_realT_verified": 28,
+        "neighbor_B_logits_bitwise_equal": true,
+        "neighbor_C_logits_bitwise_equal": true,
+        "neighbor_B_VJP_bitwise_equal": true,
+        "neighbor_C_VJP_bitwise_equal": true,
+        "optimizer_step_performed": false,
+        "teacher_used": false,
+        "public_gold_used": false,
+        "original_result": {
+          "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/causal/VJP_COMPARISON.json",
+          "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/causal/VJP_COMPARISON.json",
+          "bytes": 53579,
+          "mtime_ns": 1794485925447710985
+        },
+        "original_completion": {
+          "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/causal/COMPLETE.json",
+          "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/causal/COMPLETE.json",
+          "bytes": 384,
+          "mtime_ns": 1794485925471710494
+        }
+      }
+    },
+    "bidirectional": {
+      "train_layout": {
+        "complete": true,
+        "passed": true,
+        "actual_model_run": true,
+        "mode": "bidirectional",
+        "precision": {
+          "matmul_allow_tf32": true,
+          "cudnn_allow_tf32": true,
+          "allow_bf16_reduced_precision_reduction": true,
+          "float32_matmul_precision": "high",
+          "cublas_workspace_config": ":4096:8",
+          "autocast_cache_enabled": true
+        },
+        "core_files": [
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "bytes": 353,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "bytes": 4613,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "bytes": 11475,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "bytes": 9558,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "bytes": 7589,
+            "mtime_ns": 1794478843092492117
+          }
+        ],
+        "native_files": [
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "bytes": 768,
+            "mtime_ns": 1793689560295719868
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "bytes": 709,
+            "mtime_ns": 1793689560299719799
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "bytes": 387,
+            "mtime_ns": 1793689465589373099
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "bytes": 804184680,
+            "mtime_ns": 1793689547947935422
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "bytes": 1389499,
+            "mtime_ns": 1793688805168897960
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "bytes": 234,
+            "mtime_ns": 1793689550007899462
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "bytes": 1030,
+            "mtime_ns": 1793689551939865735
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "bytes": 952,
+            "mtime_ns": 1793689553755834035
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "bytes": 41297,
+            "mtime_ns": 1793689555667800658
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "bytes": 159,
+            "mtime_ns": 1793689557663765814
+          }
+        ],
+        "backend": "native-fa3",
+        "SDPA_fallback": false,
+        "frozen_tolerance_contract": "unchanged logits RMS<=.01*max(refRMS,.001), maxabs<=.02+.02*maxabsref; gradients/actualstep L2<=.02*refnorm+1e-7*sqrt(N), cosine>=.999; same-geometry content control bitwise exact",
+        "layouts": [
+          "dense",
+          "packed"
+        ],
+        "gradient_keys": 393,
+        "native_gqa": true,
+        "head_all_tokens_before_eos": true,
+        "logits_pass": true,
+        "gradients_pass": true,
+        "optimizer_step_pass": true,
+        "dense_reference": "actual exact-commit HF+native FA3 dense; packed current core; supplemental same-geometry dense/packed/HF tensor equality in precision-v2",
+        "original_training_receipt": {
+          "path": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/bidirectional/TRAINING.json",
+          "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/bidirectional/TRAINING.json",
+          "bytes": 803262,
+          "mtime_ns": 1794481495218450307
+        },
+        "original_overall_failure_preserved": {
+          "path": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/bidirectional/COMPLETE.json",
+          "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/bidirectional/COMPLETE.json",
+          "bytes": 289,
+          "mtime_ns": 1794481495718440131
+        }
+      },
+      "full_row_geometry_isolation": {
+        "complete": true,
+        "passed": true,
+        "actual_model_run": true,
+        "mode": "bidirectional",
+        "precision": {
+          "matmul_allow_tf32": true,
+          "cudnn_allow_tf32": true,
+          "allow_bf16_reduced_precision_reduction": true,
+          "float32_matmul_precision": "high",
+          "cublas_workspace_config": ":4096:8",
+          "autocast_cache_enabled": true
+        },
+        "core_files": [
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "bytes": 353,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "bytes": 4613,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "bytes": 11475,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "bytes": 9558,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "bytes": 7589,
+            "mtime_ns": 1794478843092492117
+          }
+        ],
+        "native_files": [
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "bytes": 768,
+            "mtime_ns": 1793689560295719868
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "bytes": 709,
+            "mtime_ns": 1793689560299719799
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "bytes": 387,
+            "mtime_ns": 1793689465589373099
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "bytes": 804184680,
+            "mtime_ns": 1793689547947935422
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "bytes": 1389499,
+            "mtime_ns": 1793688805168897960
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "bytes": 234,
+            "mtime_ns": 1793689550007899462
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "bytes": 1030,
+            "mtime_ns": 1793689551939865735
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "bytes": 952,
+            "mtime_ns": 1793689553755834035
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "bytes": 41297,
+            "mtime_ns": 1793689555667800658
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "bytes": 159,
+            "mtime_ns": 1793689557663765814
+          }
+        ],
+        "backend": "native-fa3",
+        "SDPA_fallback": false,
+        "frozen_tolerance_contract": "unchanged logits RMS<=.01*max(refRMS,.001), maxabs<=.02+.02*maxabsref; gradients/actualstep L2<=.02*refnorm+1e-7*sqrt(N), cosine>=.999; same-geometry content control bitwise exact",
+        "layouts": [
+          "packed"
+        ],
+        "control_policy": "same-target-micro-geometry-neighbor-append-B-or-C",
+        "target_pairs": 128,
+        "target_real_tokens": 45216,
+        "micro_waves": 4,
+        "gradient_keys": 393,
+        "layer_realT_verified": 28,
+        "neighbor_B_logits_bitwise_equal": true,
+        "neighbor_C_logits_bitwise_equal": true,
+        "neighbor_B_VJP_bitwise_equal": true,
+        "neighbor_C_VJP_bitwise_equal": true,
+        "optimizer_step_performed": false,
+        "teacher_used": false,
+        "public_gold_used": false,
+        "original_result": {
+          "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/bidirectional/VJP_COMPARISON.json",
+          "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/bidirectional/VJP_COMPARISON.json",
+          "bytes": 53579,
+          "mtime_ns": 1794485925931701087
+        },
+        "original_completion": {
+          "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/bidirectional/COMPLETE.json",
+          "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/bidirectional/COMPLETE.json",
+          "bytes": 391,
+          "mtime_ns": 1794485925959700514
+        }
+      }
+    },
+    "prefix_block": {
+      "train_layout": {
+        "complete": true,
+        "passed": true,
+        "actual_model_run": true,
+        "mode": "prefix_block",
+        "precision": {
+          "matmul_allow_tf32": true,
+          "cudnn_allow_tf32": true,
+          "allow_bf16_reduced_precision_reduction": true,
+          "float32_matmul_precision": "high",
+          "cublas_workspace_config": ":4096:8",
+          "autocast_cache_enabled": true
+        },
+        "core_files": [
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "bytes": 353,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "bytes": 4613,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "bytes": 11475,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "bytes": 9558,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "bytes": 7589,
+            "mtime_ns": 1794478843092492117
+          }
+        ],
+        "native_files": [
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "bytes": 768,
+            "mtime_ns": 1793689560295719868
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "bytes": 709,
+            "mtime_ns": 1793689560299719799
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "bytes": 387,
+            "mtime_ns": 1793689465589373099
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "bytes": 804184680,
+            "mtime_ns": 1793689547947935422
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "bytes": 1389499,
+            "mtime_ns": 1793688805168897960
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "bytes": 234,
+            "mtime_ns": 1793689550007899462
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "bytes": 1030,
+            "mtime_ns": 1793689551939865735
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "bytes": 952,
+            "mtime_ns": 1793689553755834035
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "bytes": 41297,
+            "mtime_ns": 1793689555667800658
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "bytes": 159,
+            "mtime_ns": 1793689557663765814
+          }
+        ],
+        "backend": "native-fa3",
+        "SDPA_fallback": false,
+        "frozen_tolerance_contract": "unchanged logits RMS<=.01*max(refRMS,.001), maxabs<=.02+.02*maxabsref; gradients/actualstep L2<=.02*refnorm+1e-7*sqrt(N), cosine>=.999; same-geometry content control bitwise exact",
+        "layouts": [
+          "dense",
+          "packed"
+        ],
+        "gradient_keys": 393,
+        "native_gqa": true,
+        "head_all_tokens_before_eos": true,
+        "logits_pass": true,
+        "gradients_pass": true,
+        "optimizer_step_pass": true,
+        "dense_reference": "actual exact-commit HF+native FA3 dense; packed current core; supplemental same-geometry dense/packed/HF tensor equality in precision-v2",
+        "original_training_receipt": {
+          "path": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/prefix_block/TRAINING.json",
+          "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/prefix_block/TRAINING.json",
+          "bytes": 804247,
+          "mtime_ns": 1794481495406446481
+        },
+        "original_overall_failure_preserved": {
+          "path": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/prefix_block/COMPLETE.json",
+          "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/runs/prefix_block/COMPLETE.json",
+          "bytes": 289,
+          "mtime_ns": 1794481498166390304
+        }
+      },
+      "full_row_geometry_isolation": {
+        "complete": true,
+        "passed": true,
+        "actual_model_run": true,
+        "mode": "prefix_block",
+        "precision": {
+          "matmul_allow_tf32": true,
+          "cudnn_allow_tf32": true,
+          "allow_bf16_reduced_precision_reduction": true,
+          "float32_matmul_precision": "high",
+          "cublas_workspace_config": ":4096:8",
+          "autocast_cache_enabled": true
+        },
+        "core_files": [
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+            "bytes": 353,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+            "bytes": 4613,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+            "bytes": 11475,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+            "bytes": 9558,
+            "mtime_ns": 1794478843092492117
+          },
+          {
+            "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+            "bytes": 7589,
+            "mtime_ns": 1794478843092492117
+          }
+        ],
+        "native_files": [
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/ASSETS.json",
+            "bytes": 768,
+            "mtime_ns": 1793689560295719868
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/READY.json",
+            "bytes": 709,
+            "mtime_ns": 1793689560299719799
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/__init__.py",
+            "bytes": 387,
+            "mtime_ns": 1793689465589373099
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so",
+            "bytes": 804184680,
+            "mtime_ns": 1793689547947935422
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_flash_attn3_cuda_2d990fe.abi3.so.part",
+            "bytes": 1389499,
+            "mtime_ns": 1793688805168897960
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/_ops.py",
+            "bytes": 234,
+            "mtime_ns": 1793689550007899462
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn3/__init__.py",
+            "bytes": 1030,
+            "mtime_ns": 1793689551939865735
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_config.py",
+            "bytes": 952,
+            "mtime_ns": 1793689553755834035
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/flash_attn_interface.py",
+            "bytes": 41297,
+            "mtime_ns": 1793689555667800658
+          },
+          {
+            "path": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "resolved": "/home/dev/assumeengage/cache/attention-kernels/flash-attn3-torch29-cu128/metadata.json",
+            "bytes": 159,
+            "mtime_ns": 1793689557663765814
+          }
+        ],
+        "backend": "native-fa3",
+        "SDPA_fallback": false,
+        "frozen_tolerance_contract": "unchanged logits RMS<=.01*max(refRMS,.001), maxabs<=.02+.02*maxabsref; gradients/actualstep L2<=.02*refnorm+1e-7*sqrt(N), cosine>=.999; same-geometry content control bitwise exact",
+        "layouts": [
+          "packed"
+        ],
+        "control_policy": "same-target-micro-geometry-neighbor-append-B-or-C",
+        "target_pairs": 128,
+        "target_real_tokens": 45216,
+        "micro_waves": 4,
+        "gradient_keys": 393,
+        "layer_realT_verified": 28,
+        "neighbor_B_logits_bitwise_equal": true,
+        "neighbor_C_logits_bitwise_equal": true,
+        "neighbor_B_VJP_bitwise_equal": true,
+        "neighbor_C_VJP_bitwise_equal": true,
+        "optimizer_step_performed": false,
+        "teacher_used": false,
+        "public_gold_used": false,
+        "original_result": {
+          "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/prefix_block/VJP_COMPARISON.json",
+          "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/prefix_block/VJP_COMPARISON.json",
+          "bytes": 53579,
+          "mtime_ns": 1794485925963700432
+        },
+        "original_completion": {
+          "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/prefix_block/COMPLETE.json",
+          "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/prefix_block/COMPLETE.json",
+          "bytes": 390,
+          "mtime_ns": 1794485925991699860
+        }
+      }
+    }
+  },
+  "original_primary_report": {
+    "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/FINAL_PRIMARY_VERIFICATION.json",
+    "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/FINAL_PRIMARY_VERIFICATION.json",
+    "bytes": 6716,
+    "mtime_ns": 1794485976786660998
+  },
+  "interpretation": "train-only, original solo/mixed and prefix serving failures unchanged",
+  "precision_provenance": {
+    "matmul_tf32_and_bf16_reduction": "actual prior controls + precision-v2 INPUT.json",
+    "float32_high_and_workspace": "actual precision-v2 INPUT and strict FA3 registration",
+    "autocast_cache_enabled": "same default cache_enabled=True now explicit; separate per-forward scopes",
+    "cudnn_allow_tf32": "existing Torch default made explicit; fullrow core contains no cuDNN convolution/RNN operators"
+  }
+}

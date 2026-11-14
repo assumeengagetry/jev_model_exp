@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "scope": "saved375rawold-newnumericrecountonly; no forward or tensor audit rerun",
+  "arms": {
+    "C_D_BCE": {
+      "execution_complete": true,
+      "weights393_before_after_exact": true,
+      "numeric_bad_cases_independently_recounted": 34,
+      "flips": 1,
+      "outside_band": 0,
+      "eligible_packed_candidate": false,
+      "actual_packed_mass": 0.5633714343865093
+    },
+    "C_D_CE": {
+      "execution_complete": true,
+      "weights393_before_after_exact": true,
+      "numeric_bad_cases_independently_recounted": 34,
+      "flips": 0,
+      "outside_band": 0,
+      "eligible_packed_candidate": false,
+      "actual_packed_mass": 0.616935384317238
+    }
+  },
+  "model_forward_calls": 0,
+  "optimizer_steps": 0,
+  "D_confirm_opened": false,
+  "public_run": false
+}

@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "config": {
+    "bytes": 47824,
+    "mtime_ns": 1794521902973975393,
+    "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/config.json",
+    "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/config.json"
+  },
+  "confirm_opened": false,
+  "exact_byte_readback": true,
+  "frozen_candidates_unchanged": true,
+  "main_reviewed": true,
+  "model_forward_calls": 0,
+  "no_workers_launched": true,
+  "public_payload_opened": false,
+  "source_binding": {
+    "bytes": 1802947,
+    "mtime_ns": 1794521902949975890,
+    "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/SOURCE_SNAPSHOT.json",
+    "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/SOURCE_SNAPSHOT.json"
+  },
+  "source_files": [
+    {
+      "bytes": 44784,
+      "mtime_ns": 1794521901666002525,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/common.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/common.py"
+    },
+    {
+      "bytes": 30846,
+      "mtime_ns": 1794521901670002442,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/backend.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/backend.py"
+    },
+    {
+      "bytes": 61547,
+      "mtime_ns": 1794521901670002442,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/evaluate.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/evaluate.py"
+    },
+    {
+      "bytes": 43844,
+      "mtime_ns": 1794521901674002358,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/ops.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/ops.py"
+    }
+  ]
+}

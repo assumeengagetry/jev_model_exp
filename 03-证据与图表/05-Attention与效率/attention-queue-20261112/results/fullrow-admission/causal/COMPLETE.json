@@ -1,0 +1,13 @@
+{
+  "execution_complete": true,
+  "same_geometry_content_isolation_pass": true,
+  "original_target_rows": 128,
+  "original_target_tokens": 45216,
+  "mode": "causal",
+  "all_393_gradients_bitwise_equal": true,
+  "weight_updates": 0,
+  "elapsed_seconds": 13.373709534993395,
+  "fullrow_only": true,
+  "old_solo_mixed_failure_regraded": false,
+  "prefix_cache_serving_admitted": false
+}

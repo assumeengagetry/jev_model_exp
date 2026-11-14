@@ -1,0 +1,24 @@
+{
+  "owner": {
+    "pid": 735518,
+    "starttime": "143180023",
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+  },
+  "ops_bundle": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/OPS_BUNDLE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/OPS_BUNDLE.json",
+    "bytes": 1871837,
+    "mtime_ns": 1794501803326015917
+  },
+  "source": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/ops/side_queue.py",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/ops/side_queue.py",
+    "bytes": 51483,
+    "mtime_ns": 1794501803290016660
+  },
+  "root": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1",
+  "system_python": "/usr/bin/python3",
+  "launched_utc": "2026-11-12T16:44:17.493738+00:00",
+  "no_automatic_restart": true,
+  "resume_requires_main_external_authorization": true
+}

@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-12T13:05:09.697866+00:00",
+  "four_live_owned_training_workers": true,
+  "macro0_not_repeated": true,
+  "arms": {
+    "C_D_BCE": {
+      "exact_resume_worker_live": true,
+      "explicit_own_resume_count": 1,
+      "macro0_started_count": 1,
+      "first_post_resume_macro_index": 1,
+      "completed_macro_updates_at_admission": 45,
+      "last_completed_logical_tokens": 1100788,
+      "no_failure_marker": true,
+      "resume_checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000001-s00002"
+    },
+    "C_P_BCE": {
+      "exact_resume_worker_live": true,
+      "explicit_own_resume_count": 1,
+      "macro0_started_count": 1,
+      "first_post_resume_macro_index": 1,
+      "completed_macro_updates_at_admission": 53,
+      "last_completed_logical_tokens": 1303503,
+      "no_failure_marker": true,
+      "resume_checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000001-s00002"
+    },
+    "C_D_CE": {
+      "exact_resume_worker_live": true,
+      "explicit_own_resume_count": 1,
+      "macro0_started_count": 1,
+      "first_post_resume_macro_index": 1,
+      "completed_macro_updates_at_admission": 46,
+      "last_completed_logical_tokens": 1149912,
+      "no_failure_marker": true,
+      "resume_checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000001-s00002"
+    },
+    "C_P_CE": {
+      "exact_resume_worker_live": true,
+      "explicit_own_resume_count": 1,
+      "macro0_started_count": 1,
+      "first_post_resume_macro_index": 1,
+      "completed_macro_updates_at_admission": 52,
+      "last_completed_logical_tokens": 1265482,
+      "no_failure_marker": true,
+      "resume_checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000001-s00002"
+    }
+  },
+  "scope": "one-time actual resume admission, not completion or model quality result"
+}

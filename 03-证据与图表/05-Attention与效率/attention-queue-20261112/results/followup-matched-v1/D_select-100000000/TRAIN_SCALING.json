@@ -1,0 +1,338 @@
+{
+  "version": "saved-training-scaling-prefix-v1",
+  "complete": true,
+  "frozen_node": {
+    "cap": 100000000,
+    "cases": 56912,
+    "logical_pair_tokens": 99824365,
+    "macro_updates": 3557
+  },
+  "quality_primary": {
+    "path": "/tmp/opencode/jev-followup-select-analysis-20261112-v1/FOLLOWUP_SELECT_PRIMARY-cap100000000.json",
+    "resolved": "/tmp/opencode/jev-followup-select-analysis-20261112-v1/FOLLOWUP_SELECT_PRIMARY-cap100000000.json",
+    "bytes": 233795,
+    "mtime_ns": 1794515237374223529
+  },
+  "quality_analysis_source": {
+    "path": "/tmp/opencode/jev-followup-select-analysis-20261112-v1/verify_followup_node.py",
+    "resolved": "/tmp/opencode/jev-followup-select-analysis-20261112-v1/verify_followup_node.py",
+    "bytes": 55442,
+    "mtime_ns": 1794508480002352611
+  },
+  "scaling_analysis_source": {
+    "path": "/tmp/opencode/jev-followup-select-analysis-20261112-v1/analyze_train_scaling.py",
+    "resolved": "/tmp/opencode/jev-followup-select-analysis-20261112-v1/analyze_train_scaling.py",
+    "bytes": 8185,
+    "mtime_ns": 1794508949152871361
+  },
+  "arms": {
+    "C_P_CE": {
+      "actual_macro_updates": 3557,
+      "case_occurrences": 56912,
+      "logical_pair_tokens": 99824365,
+      "known_field_occurrences": 79599,
+      "candidate_occurrences": 392983,
+      "known_K1_field_occurrences": 0,
+      "positive_LR_calls": 3556,
+      "clip_engaged_macros": 3557,
+      "clip_engaged_macro_fraction": 1.0,
+      "preclip_parameter_gradient_l2": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 15.29897543872579,
+        "median": 13.128844261169434,
+        "min": 4.356994152069092,
+        "max": 63.22492980957031
+      },
+      "recorded_scalar_clip_factor": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 0.08069304507815765,
+        "median": 0.07616816103070792,
+        "min": 0.015816545580918703,
+        "max": 0.22951597720394762
+      },
+      "actual_used_lr": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 1e-05,
+        "median": 1e-05,
+        "min": 0.0,
+        "max": 1.9999999999999998e-05
+      },
+      "training_objective_over_changing_weights_not_quality": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 0.6702844571004867,
+        "median": 0.632651686668396,
+        "min": 0.09379542618989944,
+        "max": 1.7744379043579102
+      }
+    },
+    "C_P_BCE": {
+      "actual_macro_updates": 3557,
+      "case_occurrences": 56912,
+      "logical_pair_tokens": 99824365,
+      "known_field_occurrences": 79599,
+      "candidate_occurrences": 392983,
+      "known_K1_field_occurrences": 0,
+      "positive_LR_calls": 3556,
+      "clip_engaged_macros": 3557,
+      "clip_engaged_macro_fraction": 1.0,
+      "preclip_parameter_gradient_l2": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 8.806445892620596,
+        "median": 7.450782299041748,
+        "min": 1.237255573272705,
+        "max": 163.16409301757812
+      },
+      "recorded_scalar_clip_factor": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 0.14834489877103388,
+        "median": 0.13421407654261142,
+        "min": 0.006128799390705821,
+        "max": 0.8082397956915837
+      },
+      "actual_used_lr": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 1e-05,
+        "median": 1e-05,
+        "min": 0.0,
+        "max": 1.9999999999999998e-05
+      },
+      "training_objective_over_changing_weights_not_quality": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 0.4287995758361953,
+        "median": 0.4197138249874115,
+        "min": 0.12882056832313538,
+        "max": 1.9248453378677368
+      }
+    },
+    "PB_P_CE": {
+      "actual_macro_updates": 3557,
+      "case_occurrences": 56912,
+      "logical_pair_tokens": 99824365,
+      "known_field_occurrences": 79599,
+      "candidate_occurrences": 392983,
+      "known_K1_field_occurrences": 0,
+      "positive_LR_calls": 3556,
+      "clip_engaged_macros": 3557,
+      "clip_engaged_macro_fraction": 1.0,
+      "preclip_parameter_gradient_l2": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 19.832342433500465,
+        "median": 17.86039161682129,
+        "min": 4.534305572509766,
+        "max": 94.4702377319336
+      },
+      "recorded_scalar_clip_factor": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 0.06386310674619484,
+        "median": 0.05598981060798065,
+        "min": 0.010585344267389598,
+        "max": 0.22054088844868158
+      },
+      "actual_used_lr": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 1e-05,
+        "median": 1e-05,
+        "min": 0.0,
+        "max": 1.9999999999999998e-05
+      },
+      "training_objective_over_changing_weights_not_quality": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 0.8914101034872043,
+        "median": 0.8804000616073608,
+        "min": 0.2434806376695633,
+        "max": 2.109194755554199
+      }
+    },
+    "STATE_NL_PB_P_CE": {
+      "actual_macro_updates": 3557,
+      "case_occurrences": 56912,
+      "logical_pair_tokens": 99824365,
+      "known_field_occurrences": 79599,
+      "candidate_occurrences": 392983,
+      "known_K1_field_occurrences": 0,
+      "positive_LR_calls": 3556,
+      "clip_engaged_macros": 3557,
+      "clip_engaged_macro_fraction": 1.0,
+      "preclip_parameter_gradient_l2": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 15.779777791817134,
+        "median": 13.709508895874023,
+        "min": 3.076632261276245,
+        "max": 78.98904418945312
+      },
+      "recorded_scalar_clip_factor": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 0.08799603820474663,
+        "median": 0.07294206777595728,
+        "min": 0.012659983388855083,
+        "max": 0.3250306146612941
+      },
+      "actual_used_lr": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 1e-05,
+        "median": 1e-05,
+        "min": 0.0,
+        "max": 1.9999999999999998e-05
+      },
+      "training_objective_over_changing_weights_not_quality": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 0.9619530599741309,
+        "median": 0.9544563889503479,
+        "min": 0.32464340329170227,
+        "max": 2.523944139480591
+      },
+      "raw_field_occurrences": 84846,
+      "unknown_field_occurrences_retained_no_forward": 5247
+    },
+    "JPAIR_P_BCE_RANK": {
+      "actual_macro_updates": 3557,
+      "case_occurrences": 56912,
+      "logical_pair_tokens": 99824365,
+      "known_field_occurrences": 79599,
+      "candidate_occurrences": 392983,
+      "known_K1_field_occurrences": 0,
+      "positive_LR_calls": 3556,
+      "clip_engaged_macros": 3557,
+      "clip_engaged_macro_fraction": 1.0,
+      "preclip_parameter_gradient_l2": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 21.44422709583264,
+        "median": 19.321334838867188,
+        "min": 5.626927852630615,
+        "max": 162.68740844726562
+      },
+      "recorded_scalar_clip_factor": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 0.054899957195671686,
+        "median": 0.05175625579616394,
+        "min": 0.006146757166996045,
+        "max": 0.17771683740634028
+      },
+      "actual_used_lr": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 1e-05,
+        "median": 1e-05,
+        "min": 0.0,
+        "max": 1.9999999999999998e-05
+      },
+      "training_objective_over_changing_weights_not_quality": {
+        "observed": 3557,
+        "null": 0,
+        "mean": 1.0002613569499068,
+        "median": 0.9508433938026428,
+        "min": 0.14777231216430664,
+        "max": 3.4472086429595947
+      },
+      "raw_field_occurrences": 84846,
+      "unknown_field_occurrences_retained_no_forward": 5247,
+      "rank_actual_occurrence_counts": {
+        "hard_positive_candidates": 72430,
+        "hard_negative_candidates": 303260,
+        "soft_candidates": 17293,
+        "rank_active_fields": 72430,
+        "rank_zero_fields": 7169,
+        "rank_zero_no_positive_fields": 7169,
+        "rank_zero_no_negative_fields": 5117,
+        "rank_zero_K1_fields": 0,
+        "rank_zero_soft_only_fields": 5117,
+        "no_rank_cases": 5794
+      },
+      "rank_active_known_field_fraction": 0.9099360544730462,
+      "rank_zero_reasons_overlap_not_a_denominator_partition": true,
+      "actual_component_scalars_and_dL_dmargin_norms": {
+        "macro_bce_loss": {
+          "observed": 3557,
+          "null": 0,
+          "mean": 0.434366178262894,
+          "median": 0.42357590794563293,
+          "min": 0.12364751100540161,
+          "max": 1.9123061895370483
+        },
+        "macro_rank_loss": {
+          "observed": 3557,
+          "null": 0,
+          "mean": 0.5658951785089696,
+          "median": 0.5296602249145508,
+          "min": 0.019445903599262238,
+          "max": 1.8693218231201172
+        },
+        "macro_total_loss": {
+          "observed": 3557,
+          "null": 0,
+          "mean": 1.0002613569499068,
+          "median": 0.9508433938026428,
+          "min": 0.14777231216430664,
+          "max": 3.4472086429595947
+        },
+        "margin_bce_l2": {
+          "observed": 3557,
+          "null": 0,
+          "mean": 0.04881595496760149,
+          "median": 0.04890792563675116,
+          "min": 0.0204514350837312,
+          "max": 0.09897064530849253
+        },
+        "margin_rank_l2": {
+          "observed": 3557,
+          "null": 0,
+          "mean": 0.12030815704016617,
+          "median": 0.11957679588250401,
+          "min": 0.0120256960249899,
+          "max": 0.20827869172798416
+        },
+        "margin_total_l2": {
+          "observed": 3557,
+          "null": 0,
+          "mean": 0.16186032844226067,
+          "median": 0.16075003718653613,
+          "min": 0.03255970000270511,
+          "max": 0.2691087999333441
+        },
+        "margin_rank_over_bce_l2": {
+          "observed": 3557,
+          "null": 0,
+          "mean": 2.455776449964004,
+          "median": 2.4578220059332767,
+          "min": 0.3745090482186665,
+          "max": 4.159240798719733
+        },
+        "margin_total_over_bce_l2": {
+          "observed": 3557,
+          "null": 0,
+          "mean": 3.30078105887098,
+          "median": 3.3067175303199505,
+          "min": 1.2373445956075262,
+          "max": 4.932449335882442
+        }
+      },
+      "component_norms_are_not_393_parameter_gradient_norms": true
+    }
+  },
+  "statistical_unit": "actual completed macro / case occurrence, not unique case or dev quality",
+  "diagnostic_only_no_optimizer_protocol_adaptation": true,
+  "scope": "loss/scale/clip diagnostics on already-saved actual complete exposure prefixes; not directional causality proof",
+  "model_forward_calls": 0,
+  "optimizer_steps": 0,
+  "evaluator_started": false,
+  "D_confirm_opened": false,
+  "public_run": false
+}

@@ -1,0 +1,123 @@
+{
+  "observed_utc": "2026-11-11T19:36:35.983147+00:00",
+  "complete": true,
+  "checks": {
+    "all_three_source_bound_receipts": true,
+    "full_actual_output_accounting": true,
+    "same_logical_input_budget": true,
+    "original_assets_metadata_unchanged": true,
+    "new_code_matches_binding": true,
+    "four_v2_numerical_files_unchanged": true,
+    "actual_fa3_backward_and_full_training_exposure": true,
+    "final_adapter_header_complete": true,
+    "all_logged_training_losses_finite": true,
+    "own_processes_exited": true
+  },
+  "source_bound_files": 281,
+  "public_accounting": {
+    "kd": {
+      "complete_full_accounting": true,
+      "requests": 140620,
+      "counts": {
+        "ok": 140620
+      },
+      "excluded_requests": 442,
+      "scoreable_requests": 140178,
+      "shard_counts": {
+        "0": 35155,
+        "1": 35155,
+        "2": 35155,
+        "3": 35155
+      },
+      "response_models": {
+        "qwen3-0.6b-five-domain-kd-final-kernel-v2": 140620
+      },
+      "request_order_metadata_payload_and_shards_exact": true,
+      "fields": 323259,
+      "logical_candidate_pairs": 2506535,
+      "logical_input_tokens": 1556124407,
+      "uniform_fields_exact": 2034,
+      "uniform_fields_within_1e6": 2034,
+      "uniform_field_fraction_within_1e6": 0.0062921681994932855,
+      "choice_fields": 308559,
+      "choice_first_option": 110717,
+      "choice_first_option_fraction": 0.3588195450464903
+    },
+    "joint_lr1e3": {
+      "complete_full_accounting": true,
+      "requests": 140620,
+      "counts": {
+        "ok": 140620
+      },
+      "excluded_requests": 442,
+      "scoreable_requests": 140178,
+      "shard_counts": {
+        "0": 35155,
+        "1": 35155,
+        "2": 35155,
+        "3": 35155
+      },
+      "response_models": {
+        "qwen3-0.6b-joint-lr1e3-kernel-v2": 140620
+      },
+      "request_order_metadata_payload_and_shards_exact": true,
+      "fields": 323259,
+      "logical_candidate_pairs": 2506535,
+      "logical_input_tokens": 1556124407,
+      "uniform_fields_exact": 83994,
+      "uniform_fields_within_1e6": 84023,
+      "uniform_field_fraction_within_1e6": 0.259924704339245,
+      "choice_fields": 308559,
+      "choice_first_option": 162369,
+      "choice_first_option_fraction": 0.5262170281858575
+    }
+  },
+  "training_log": {
+    "progress_records": 653,
+    "all_logged_losses_finite": true,
+    "first_logged_loss": 0.45956142246723175,
+    "final_logged_loss": 0.5266403570061639,
+    "minimum_logged_loss": 0.31264093704521656,
+    "maximum_logged_loss": 1.685039222240448,
+    "mean_last_50_logged_losses": 0.6434712964580173,
+    "final_learning_rate": 0.0,
+    "oom_retries": 0
+  },
+  "final_adapter_header": {
+    "bytes": 80800744,
+    "tensor_count": 393,
+    "lora_A": 196,
+    "lora_B": 196,
+    "score": {
+      "base_model.model.score.weight": {
+        "dtype": "F32",
+        "shape": [
+          2,
+          1024
+        ]
+      }
+    },
+    "payload_extent_matches_file": true
+  },
+  "timing": {
+    "launched_utc": "2026-11-11T17:30:17.087920+00:00",
+    "completed_utc": "2026-11-11T19:32:40.855623+00:00",
+    "experiment_wall_seconds": 7343.767703,
+    "kd_parallel_pipeline_seconds": 994.2381256660447,
+    "joint_training_seconds": 5324.349455240881,
+    "joint_parallel_pipeline_seconds": 987.1287293040659
+  },
+  "public_indices": {
+    "kd": 24.38,
+    "joint_lr1e3": 0.81
+  },
+  "gpus_at_read": [
+    "0, 0, 0",
+    "1, 0, 0",
+    "2, 0, 0",
+    "3, 0, 0"
+  ],
+  "private_full_score": null,
+  "uploaded": false,
+  "scope": "Read-only complete existing output/metadata/log verification; no new model execution, tests, smoke, scorer rerun, or extra model/corpus hash. Uniformity describes saved outputs only, not a proved causal mechanism."
+}

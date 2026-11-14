@@ -1,0 +1,74 @@
+{
+  "macro_index": 0,
+  "cases": 16,
+  "logical_pair_tokens": 20947,
+  "objective": 1.410884141921997,
+  "bookkeeping": {
+    "K1_fields": 0,
+    "cases": 16,
+    "known_candidates": 60,
+    "known_fields": 19
+  },
+  "coverage": {
+    "case_occurrences": 16,
+    "cases_with_known_fields": 16,
+    "cases_with_unknown_fields": 0,
+    "forwarded_complete_candidates": 60,
+    "known_fields": 19,
+    "raw_fields": 19,
+    "unknown_fields_retained_no_forward": 0
+  },
+  "micro_waves_per_pass": 3,
+  "first_replay_logits_and_margins_bitwise_equal": true,
+  "RNG_unchanged_zero_dropout": true,
+  "gradient_keys": 393,
+  "all393_gradients_finite": true,
+  "preclip_l2": 60.06382751464844,
+  "clip_norm": 1.0,
+  "clip_factor": 0.016648955365143246,
+  "used_lr": 1.869158878504673e-07,
+  "optimizer_steps": 1,
+  "trainable_parameters_after_update_finite": true,
+  "actual_completed_forward_real_tokens_this_macro": 41894,
+  "actual_completed_backward_real_tokens_this_macro": 20947,
+  "runtime_after": {
+    "backward_counter_scope": "autograd native backward invoked by each replay wave; not separately instrumented",
+    "execution": "native-FA3-full-row-no-SDPA-no-fork",
+    "forward": {
+      "train_first.attempted_real_tokens": 20947,
+      "train_first.attempted_tokenwise_rows_per_operator": 20947,
+      "train_first.attempted_waves": 3,
+      "train_first.completed_native_FA3_calls": 168,
+      "train_first.completed_real_tokens": 20947,
+      "train_first.completed_tokenwise_rows_per_operator": 20947,
+      "train_first.completed_waves": 3,
+      "train_replay.attempted_real_tokens": 20947,
+      "train_replay.attempted_tokenwise_rows_per_operator": 20947,
+      "train_replay.attempted_waves": 3,
+      "train_replay.backward_real_tokens": 20947,
+      "train_replay.completed_backward_waves": 3,
+      "train_replay.completed_native_FA3_calls": 168,
+      "train_replay.completed_real_tokens": 20947,
+      "train_replay.completed_tokenwise_rows_per_operator": 20947,
+      "train_replay.completed_waves": 3
+    },
+    "layout": "packed",
+    "mode": "prefix_block",
+    "native_forward_calls": {
+      "attempted_calls": 336,
+      "attempted_query_tokens": 1173032,
+      "completed_calls": 336,
+      "completed_key_tokens": 1814288,
+      "completed_noncausal_calls": 336,
+      "completed_query_tokens": 1173032
+    },
+    "prefix_cache": false
+  },
+  "archive_kind": "actual-macro-aggregate-view-per-key-gradientstats-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/first-actual-macro/ACTUAL_MACRO.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/first-actual-macro/ACTUAL_MACRO.json",
+    "bytes": 123659,
+    "mtime_ns": 1794501894424133423
+  }
+}

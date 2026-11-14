@@ -1,0 +1,41 @@
+{
+  "supported": true,
+  "prefix_length": 333,
+  "candidate_count": 2,
+  "suffix_lengths": [
+    11,
+    12
+  ],
+  "numerical_contract": "raw two-class logits, same frozen contract",
+  "raw_full_vs_fork": {
+    "pass": false,
+    "relative_l2": 0.03171459792662198,
+    "max_abs": 0.03515625,
+    "cosine": 0.9995260246913015,
+    "reference_rms": 0.7492067592643845
+  },
+  "raw_reverse": {
+    "pass": true,
+    "relative_l2": 0.0,
+    "max_abs": 0.0,
+    "cosine": 1.0,
+    "reference_rms": 0.7545618556852551
+  },
+  "prefix_immutable": true,
+  "margin_full_vs_fork": {
+    "pass": false,
+    "relative_l2": 0.05230008067574575,
+    "max_abs": 0.0625,
+    "cosine": 0.999940622783815,
+    "reference_rms": 0.8450115803483711
+  },
+  "A_B_A_repeat_exact": true,
+  "B_owner_executed": true,
+  "runtime_margin_vs_full": {
+    "pass": false,
+    "relative_l2": 0.05230008067574575,
+    "max_abs": 0.0625,
+    "cosine": 0.999940622783815,
+    "reference_rms": 0.8450115803483711
+  }
+}

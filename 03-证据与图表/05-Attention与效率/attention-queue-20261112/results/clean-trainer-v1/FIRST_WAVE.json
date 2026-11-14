@@ -1,0 +1,58 @@
+{
+  "stage": "first_wave_exited",
+  "arms": {
+    "C_D_BCE": {
+      "gpu": 0,
+      "process": {
+        "pid": 698343,
+        "starttime": "141794316",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "failed",
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-v1/C_D_BCE-seed42",
+      "exit_code": 1,
+      "checkpoint_markers": []
+    },
+    "C_P_BCE": {
+      "gpu": 1,
+      "process": {
+        "pid": 698346,
+        "starttime": "141794330",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "failed",
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-v1/C_P_BCE-seed42",
+      "exit_code": 1,
+      "checkpoint_markers": []
+    },
+    "C_D_CE": {
+      "gpu": 2,
+      "process": {
+        "pid": 698349,
+        "starttime": "141794345",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "failed",
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-v1/C_D_CE-seed42",
+      "exit_code": 1,
+      "checkpoint_markers": []
+    },
+    "C_P_CE": {
+      "gpu": 3,
+      "process": {
+        "pid": 698352,
+        "starttime": "141794359",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "failed",
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-v1/C_P_CE-seed42",
+      "exit_code": 1,
+      "checkpoint_markers": []
+    }
+  },
+  "execution_complete": true,
+  "all_paused_at_cursor1": false,
+  "automatic_continuation": false,
+  "primary_actual_macro_review_required": true,
+  "utc": "2026-11-12T12:53:37.442070+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "authorization_created": false,
+  "complete": true,
+  "config": {
+    "bytes": 27297380,
+    "mtime_ns": 1794506179556663628,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/analysis-config.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/analysis-config.json"
+  },
+  "exact_byte_readback": true,
+  "manifest": {
+    "bytes": 36635667,
+    "mtime_ns": 1794506180204650656,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json"
+  },
+  "old_data_written": false,
+  "queue_launched": false,
+  "readback_launched": false
+}

@@ -1,0 +1,45 @@
+{
+  "source_snapshot_is_not_git_checkout": true,
+  "declared_pinned_revision": "25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d",
+  "matched_existing_SDK_source_pins": {
+    "decision_index/runner.py": true,
+    "decision_index/engines/base.py": true,
+    "decision_index/suite/io.py": true,
+    "decision_index/pipeline.py": true,
+    "pyproject.toml": true
+  },
+  "old_model_readiness_or_weights_reused": false,
+  "model_or_dataset_payload_read": false,
+  "source_pins": {
+    "decision_index/runner.py": {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/runner.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/runner.py",
+      "bytes": 5363,
+      "mtime_ns": 1794210609000000000
+    },
+    "decision_index/engines/base.py": {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/engines/base.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/engines/base.py",
+      "bytes": 2992,
+      "mtime_ns": 1794210609000000000
+    },
+    "decision_index/suite/io.py": {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/io.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/io.py",
+      "bytes": 5214,
+      "mtime_ns": 1794210609000000000
+    },
+    "decision_index/pipeline.py": {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/pipeline.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/pipeline.py",
+      "bytes": 7532,
+      "mtime_ns": 1794210609000000000
+    },
+    "pyproject.toml": {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/pyproject.toml",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/pyproject.toml",
+      "bytes": 973,
+      "mtime_ns": 1794210609000000000
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "aggregate_RMS_used_as_gate": false,
+  "case_count": 375,
+  "choice_flips": 0,
+  "eligible_packed_candidate": false,
+  "max_case_error_RMS": {
+    "logits": 0.17931559678944028,
+    "margins": 0.35537215377091835
+  },
+  "max_case_error_maxabs": {
+    "logits": 0.296875,
+    "margins": 0.56640625
+  },
+  "max_field_probability_absolute_difference": 0.07628801992817524,
+  "numeric_bad_cases": 34,
+  "numerical_acceptance": false,
+  "outside_reference_band_flips": 0,
+  "retry": false,
+  "scope": "fixed-weights-original375-select-only-not-public-or-global-geometry",
+  "tolerance_relaxed": false,
+  "violation_counts": {
+    "logits.RMS_pass": 34,
+    "logits.maxabs_pass": 22,
+    "margins.RMS_pass": 33,
+    "margins.maxabs_pass": 24
+  },
+  "archive_kind": "aggregate-view-private-case-or-repeated-scope-elided",
+  "elided_keys": [
+    "per_case"
+  ],
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/NUMERICAL.json",
+    "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/NUMERICAL.json",
+    "bytes": 189152,
+    "mtime_ns": 1794513363320097552
+  }
+}

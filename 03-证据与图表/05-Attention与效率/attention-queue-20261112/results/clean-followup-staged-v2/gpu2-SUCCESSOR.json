@@ -1,0 +1,53 @@
+{
+  "advisory_only": true,
+  "authorization": {
+    "bytes": 1545202,
+    "mtime_ns": 1794506338729476264,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json"
+  },
+  "control_root": "/tmp/opencode/jev-clean-followup-staged-20261112-v2",
+  "data_root": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1",
+  "gpu": 2,
+  "manifest": {
+    "bytes": 36635667,
+    "mtime_ns": 1794506180204650656,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json"
+  },
+  "old_lease": {
+    "device": 73400370,
+    "entry": {
+      "base64": "eyJhZHZpc29yeV9vbmx5IjogdHJ1ZSwgImJ1bmRsZSI6IHsiYnl0ZXMiOiAxODcxODM3LCAibXRpbWVfbnMiOiAxNzk0NTAxODAzMzI2MDE1OTE3LCAicGF0aCI6ICIvdG1wL29wZW5jb2RlL2pldi1jbGVhbi10cmFpbmVyLTIwMjYxMTEyLWZvbGxvd3VwLXYxL09QU19CVU5ETEUuanNvbiIsICJyZXNvbHZlZCI6ICIvdG1wL29wZW5jb2RlL2pldi1jbGVhbi10cmFpbmVyLTIwMjYxMTEyLWZvbGxvd3VwLXYxL09QU19CVU5ETEUuanNvbiJ9LCAiZ3B1IjogMiwgIm93bmVyIjogeyJib290X2lkIjogIjNjNjgzMzJhLWYzYTYtNDgyZC1iM2FkLTViNGI2NjY4ZGZkOSIsICJwaWQiOiA3MzU1MTgsICJzdGFydHRpbWUiOiAiMTQzMTgwMDIzIn0sICJyb290IjogIi90bXAvb3BlbmNvZGUvamV2LWNsZWFuLXRyYWluZXItMjAyNjExMTItZm9sbG93dXAtdjEiLCAidXVpZCI6ICJHUFUtMTZjMmVlY2MtZDkzZi0wOGY3LWUxYjAtMTNkMjNmZmQyM2QwIn0K",
+      "stat": {
+        "bytes": 480,
+        "mtime_ns": 1794501863496772481,
+        "path": "/tmp/opencode/jev-owned-h800-leases-20261112/gpu2.lock",
+        "resolved": "/tmp/opencode/jev-owned-h800-leases-20261112/gpu2.lock"
+      }
+    },
+    "inode": 1141032671,
+    "mode": 384,
+    "nlink": 1,
+    "uid": 0
+  },
+  "old_metadata_written": false,
+  "old_owner": {
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+    "pid": 735518,
+    "starttime": "143180023"
+  },
+  "owner": {
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+    "pid": 741840,
+    "starttime": "143631476"
+  },
+  "same_inode_fd_held": true,
+  "source": {
+    "bytes": 52406,
+    "mtime_ns": 1794506177816698461,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/source/staged_queue.py",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/source/staged_queue.py"
+  },
+  "uuid": "GPU-16c2eecc-d93f-08f7-e1b0-13d23ffd23d0"
+}

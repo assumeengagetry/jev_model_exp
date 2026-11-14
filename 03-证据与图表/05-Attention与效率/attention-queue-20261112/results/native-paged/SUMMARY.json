@@ -1,0 +1,172 @@
+{
+  "causal": {
+    "full_vs_paged_raw": {
+      "pass": true,
+      "relative_rms": 0.007127281071105059,
+      "max_abs": 0.015625,
+      "bitwise_equal": false
+    },
+    "full_vs_paged_margin": {
+      "pass": true,
+      "relative_rms": 0.006002692708136946,
+      "max_abs": 0.01953125,
+      "bitwise_equal": false
+    },
+    "full_vs_triton_raw": {
+      "pass": true,
+      "relative_rms": 0.005607714758492567,
+      "max_abs": 0.0078125,
+      "bitwise_equal": false
+    },
+    "full_vs_triton_margin": {
+      "pass": true,
+      "relative_rms": 0.005573360262052067,
+      "max_abs": 0.015625,
+      "bitwise_equal": false
+    },
+    "paged_reverse": {
+      "pass": true,
+      "relative_rms": 0.0,
+      "max_abs": 0.0,
+      "bitwise_equal": true
+    },
+    "paged_repeat_exact": true,
+    "prefix_immutable": true,
+    "prefix_copied_exactly_once_per_layer": true,
+    "no_grad_context_rejected_before_write": true,
+    "structure": {
+      "owner_valid": true,
+      "mode": "causal",
+      "layers": 28,
+      "actual_prefix_rows": 333,
+      "actual_suffix_capacity_rows": 23,
+      "backing_shape_per_k_or_v": [
+        356,
+        8,
+        128
+      ],
+      "paged_shape_per_k_or_v": [
+        356,
+        1,
+        8,
+        128
+      ],
+      "prefix_view_shape_per_k_or_v": [
+        333,
+        8,
+        128
+      ],
+      "configured_kv_bytes_all_layers": 40828928,
+      "configured_prefix_bytes_within_backing": 38191104,
+      "configured_suffix_capacity_bytes_within_backing": 2637824,
+      "owner_retained_backing_bytes": 40828928,
+      "active_wave_actual_sumS": null,
+      "active_wave_metadata_bytes": null,
+      "num_splits": 1,
+      "counts": {
+        "prefix_k_copy_submissions": 28,
+        "prefix_v_copy_submissions": 28,
+        "bound_page_table_waves": 3,
+        "suffix_k_copy_submissions": 84,
+        "suffix_v_copy_submissions": 84,
+        "native_cache_call_attempts": 84,
+        "native_cache_call_returns": 84,
+        "waves_with_all_28_native_calls_returned": 3
+      },
+      "counts_semantics": "host API submissions/returns; no GPU completion or kernel-launch proof",
+      "native_backward": "unsupported and not instrumented",
+      "tokenwise_rows": "caller-owned; no tokenwise operators run or measured in this module",
+      "gpu_api_and_numerical_admission": "not established by this module; external evidence required"
+    },
+    "actual_prefix_rows": 333,
+    "actual_suffix_lengths": [
+      11,
+      12
+    ]
+  },
+  "prefix_block": {
+    "full_vs_paged_raw": {
+      "pass": false,
+      "relative_rms": 0.05560758706191182,
+      "max_abs": 0.05859375,
+      "bitwise_equal": false
+    },
+    "full_vs_paged_margin": {
+      "pass": false,
+      "relative_rms": 0.04903132563351164,
+      "max_abs": 0.046875,
+      "bitwise_equal": false
+    },
+    "full_vs_triton_raw": {
+      "pass": false,
+      "relative_rms": 0.03171459792662198,
+      "max_abs": 0.03515625,
+      "bitwise_equal": false
+    },
+    "full_vs_triton_margin": {
+      "pass": false,
+      "relative_rms": 0.05230008067574574,
+      "max_abs": 0.0625,
+      "bitwise_equal": false
+    },
+    "paged_reverse": {
+      "pass": true,
+      "relative_rms": 0.0,
+      "max_abs": 0.0,
+      "bitwise_equal": true
+    },
+    "paged_repeat_exact": true,
+    "prefix_immutable": true,
+    "prefix_copied_exactly_once_per_layer": true,
+    "no_grad_context_rejected_before_write": true,
+    "structure": {
+      "owner_valid": true,
+      "mode": "prefix_block",
+      "layers": 28,
+      "actual_prefix_rows": 333,
+      "actual_suffix_capacity_rows": 23,
+      "backing_shape_per_k_or_v": [
+        356,
+        8,
+        128
+      ],
+      "paged_shape_per_k_or_v": [
+        356,
+        1,
+        8,
+        128
+      ],
+      "prefix_view_shape_per_k_or_v": [
+        333,
+        8,
+        128
+      ],
+      "configured_kv_bytes_all_layers": 40828928,
+      "configured_prefix_bytes_within_backing": 38191104,
+      "configured_suffix_capacity_bytes_within_backing": 2637824,
+      "owner_retained_backing_bytes": 40828928,
+      "active_wave_actual_sumS": null,
+      "active_wave_metadata_bytes": null,
+      "num_splits": 1,
+      "counts": {
+        "prefix_k_copy_submissions": 28,
+        "prefix_v_copy_submissions": 28,
+        "bound_page_table_waves": 3,
+        "suffix_k_copy_submissions": 84,
+        "suffix_v_copy_submissions": 84,
+        "native_cache_call_attempts": 84,
+        "native_cache_call_returns": 84,
+        "waves_with_all_28_native_calls_returned": 3
+      },
+      "counts_semantics": "host API submissions/returns; no GPU completion or kernel-launch proof",
+      "native_backward": "unsupported and not instrumented",
+      "tokenwise_rows": "caller-owned; no tokenwise operators run or measured in this module",
+      "gpu_api_and_numerical_admission": "not established by this module; external evidence required"
+    },
+    "actual_prefix_rows": 333,
+    "actual_suffix_lengths": [
+      11,
+      12
+    ]
+  }
+}

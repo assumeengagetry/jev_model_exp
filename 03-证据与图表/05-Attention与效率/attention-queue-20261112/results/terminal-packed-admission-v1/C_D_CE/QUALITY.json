@@ -1,0 +1,233 @@
+{
+  "actual_packed": {
+    "absolute_tolerance": 1e-12,
+    "all_raw_field_case_domain_summary_metrics_recomputed": true,
+    "complete_onehot_case_exact": 0.5984555984555985,
+    "complete_onehot_case_exact_denominator": 259,
+    "coverage": {
+      "cases": 375,
+      "cases_with_all_known_fields_supported": 375,
+      "cases_with_any_supported_known_field": 375,
+      "complete_onehot_case_exact_supported": 259,
+      "forwarded_complete_candidates": 5190,
+      "known_fields": 615,
+      "supported_known_fields": 615,
+      "unknown_fields_retained_no_forward": 90
+    },
+    "field_domain_case_means_secondary_not_selection_metric": {
+      "arts": {
+        "Brier_sum": 0.5852922693734817,
+        "NLL": 0.9268595398655596,
+        "argmax_target_mass": 0.6066666666666667,
+        "cases_with_known_field_in_domain": 75,
+        "known_field_coverage": 1.0
+      },
+      "knowledge": {
+        "Brier_sum": 0.6359149661043055,
+        "NLL": 1.401877892241127,
+        "argmax_target_mass": 0.553522144098559,
+        "cases_with_known_field_in_domain": 75,
+        "known_field_coverage": 1.0
+      },
+      "language": {
+        "Brier_sum": 0.5291757200491858,
+        "NLL": 1.3108313229579651,
+        "argmax_target_mass": 0.622220312291655,
+        "cases_with_known_field_in_domain": 75,
+        "known_field_coverage": 1.0
+      },
+      "retrieval": {
+        "Brier_sum": 0.42271024187057127,
+        "NLL": 1.1951549673897905,
+        "argmax_target_mass": 0.7244444444444443,
+        "cases_with_known_field_in_domain": 75,
+        "known_field_coverage": 1.0
+      },
+      "tools": {
+        "Brier_sum": 0.5021848435746932,
+        "NLL": 0.9960175845355711,
+        "argmax_target_mass": 0.5778233540848655,
+        "cases_with_known_field_in_domain": 75,
+        "known_field_coverage": 1.0
+      }
+    },
+    "five_domain_case_means": {
+      "coverage_adjusted_argmax_target_mass": 0.616935384317238,
+      "known_field_coverage": 1.0,
+      "supported_known_field_Brier_sum": 0.5350556081944475,
+      "supported_known_field_NLL": 1.1661482613980028,
+      "supported_known_field_argmax_target_mass": 0.616935384317238,
+      "supported_known_field_normalized_NLL": 0.9907881162590169
+    },
+    "native_q_renormalized": false,
+    "per_domain": {
+      "arts": {
+        "cases": 75,
+        "coverage_adjusted_argmax_target_mass": 0.6066666666666667,
+        "known_field_coverage": 1.0,
+        "supported_known_field_Brier_sum": 0.5852922693734817,
+        "supported_known_field_NLL": 0.9268595398655596,
+        "supported_known_field_argmax_target_mass": 0.6066666666666667,
+        "supported_known_field_normalized_NLL": 1.2341683886120243
+      },
+      "knowledge": {
+        "cases": 75,
+        "coverage_adjusted_argmax_target_mass": 0.553522144098559,
+        "known_field_coverage": 1.0,
+        "supported_known_field_Brier_sum": 0.6359149661043055,
+        "supported_known_field_NLL": 1.401877892241127,
+        "supported_known_field_argmax_target_mass": 0.553522144098559,
+        "supported_known_field_normalized_NLL": 1.1781372890641002
+      },
+      "language": {
+        "cases": 75,
+        "coverage_adjusted_argmax_target_mass": 0.622220312291655,
+        "known_field_coverage": 1.0,
+        "supported_known_field_Brier_sum": 0.5291757200491858,
+        "supported_known_field_NLL": 1.3108313229579651,
+        "supported_known_field_argmax_target_mass": 0.622220312291655,
+        "supported_known_field_normalized_NLL": 1.0889682322175362
+      },
+      "retrieval": {
+        "cases": 75,
+        "coverage_adjusted_argmax_target_mass": 0.7244444444444443,
+        "known_field_coverage": 1.0,
+        "supported_known_field_Brier_sum": 0.42271024187057127,
+        "supported_known_field_NLL": 1.1951549673897905,
+        "supported_known_field_argmax_target_mass": 0.7244444444444443,
+        "supported_known_field_normalized_NLL": 0.6130530621893568
+      },
+      "tools": {
+        "cases": 75,
+        "coverage_adjusted_argmax_target_mass": 0.5778233540848655,
+        "known_field_coverage": 1.0,
+        "supported_known_field_Brier_sum": 0.5021848435746932,
+        "supported_known_field_NLL": 0.9960175845355711,
+        "supported_known_field_argmax_target_mass": 0.5778233540848655,
+        "supported_known_field_normalized_NLL": 0.8396136092120668
+      }
+    },
+    "real_tokens": 1554484
+  },
+  "dense_reference_rerun": false,
+  "dense_saved_reference": {
+    "absolute_tolerance": 1e-12,
+    "all_raw_field_case_domain_summary_metrics_recomputed": true,
+    "complete_onehot_case_exact": 0.5984555984555985,
+    "complete_onehot_case_exact_denominator": 259,
+    "coverage": {
+      "cases": 375,
+      "cases_with_all_known_fields_supported": 375,
+      "cases_with_any_supported_known_field": 375,
+      "complete_onehot_case_exact_supported": 259,
+      "forwarded_complete_candidates": 5190,
+      "known_fields": 615,
+      "supported_known_fields": 615,
+      "unknown_fields_retained_no_forward": 90
+    },
+    "field_domain_case_means_secondary_not_selection_metric": {
+      "arts": {
+        "Brier_sum": 0.5831975033895419,
+        "NLL": 0.9220688598754432,
+        "argmax_target_mass": 0.6066666666666667,
+        "cases_with_known_field_in_domain": 75,
+        "known_field_coverage": 1.0
+      },
+      "knowledge": {
+        "Brier_sum": 0.6426759073384565,
+        "NLL": 1.417643576295199,
+        "argmax_target_mass": 0.553522144098559,
+        "cases_with_known_field_in_domain": 75,
+        "known_field_coverage": 1.0
+      },
+      "language": {
+        "Brier_sum": 0.5336507069133325,
+        "NLL": 1.321967901890646,
+        "argmax_target_mass": 0.622220312291655,
+        "cases_with_known_field_in_domain": 75,
+        "known_field_coverage": 1.0
+      },
+      "retrieval": {
+        "Brier_sum": 0.4242517616792729,
+        "NLL": 1.1974019041962785,
+        "argmax_target_mass": 0.7244444444444443,
+        "cases_with_known_field_in_domain": 75,
+        "known_field_coverage": 1.0
+      },
+      "tools": {
+        "Brier_sum": 0.5022550803118624,
+        "NLL": 0.9961288361358672,
+        "argmax_target_mass": 0.5778233540848655,
+        "cases_with_known_field_in_domain": 75,
+        "known_field_coverage": 1.0
+      }
+    },
+    "five_domain_case_means": {
+      "coverage_adjusted_argmax_target_mass": 0.616935384317238,
+      "known_field_coverage": 1.0,
+      "supported_known_field_Brier_sum": 0.5372061919264932,
+      "supported_known_field_NLL": 1.1710422156786868,
+      "supported_known_field_argmax_target_mass": 0.616935384317238,
+      "supported_known_field_normalized_NLL": 0.9941092859772048
+    },
+    "native_q_renormalized": false,
+    "per_domain": {
+      "arts": {
+        "cases": 75,
+        "coverage_adjusted_argmax_target_mass": 0.6066666666666667,
+        "known_field_coverage": 1.0,
+        "supported_known_field_Brier_sum": 0.5831975033895419,
+        "supported_known_field_NLL": 0.9220688598754432,
+        "supported_known_field_argmax_target_mass": 0.6066666666666667,
+        "supported_known_field_normalized_NLL": 1.228201471359931
+      },
+      "knowledge": {
+        "cases": 75,
+        "coverage_adjusted_argmax_target_mass": 0.553522144098559,
+        "known_field_coverage": 1.0,
+        "supported_known_field_Brier_sum": 0.6426759073384565,
+        "supported_known_field_NLL": 1.417643576295199,
+        "supported_known_field_argmax_target_mass": 0.553522144098559,
+        "supported_known_field_normalized_NLL": 1.1896384166099663
+      },
+      "language": {
+        "cases": 75,
+        "coverage_adjusted_argmax_target_mass": 0.622220312291655,
+        "known_field_coverage": 1.0,
+        "supported_known_field_Brier_sum": 0.5336507069133325,
+        "supported_known_field_NLL": 1.321967901890646,
+        "supported_known_field_argmax_target_mass": 0.622220312291655,
+        "supported_known_field_normalized_NLL": 1.0985419774458856
+      },
+      "retrieval": {
+        "cases": 75,
+        "coverage_adjusted_argmax_target_mass": 0.7244444444444443,
+        "known_field_coverage": 1.0,
+        "supported_known_field_Brier_sum": 0.4242517616792729,
+        "supported_known_field_NLL": 1.1974019041962785,
+        "supported_known_field_argmax_target_mass": 0.7244444444444443,
+        "supported_known_field_normalized_NLL": 0.6144011859977281
+      },
+      "tools": {
+        "cases": 75,
+        "coverage_adjusted_argmax_target_mass": 0.5778233540848655,
+        "known_field_coverage": 1.0,
+        "supported_known_field_Brier_sum": 0.5022550803118624,
+        "supported_known_field_NLL": 0.9961288361358672,
+        "supported_known_field_argmax_target_mass": 0.5778233540848655,
+        "supported_known_field_normalized_NLL": 0.8397633784725128
+      }
+    },
+    "real_tokens": 1554484
+  },
+  "five_domain_delta_packed_minus_dense": {
+    "coverage_adjusted_argmax_target_mass": 0.0,
+    "known_field_coverage": 0.0,
+    "supported_known_field_Brier_sum": -0.0021505837320456855,
+    "supported_known_field_NLL": -0.004893954280684065,
+    "supported_known_field_argmax_target_mass": 0.0,
+    "supported_known_field_normalized_NLL": -0.0033211697181879662
+  },
+  "kind": "fixed-weight-layout-delta-not-learning-gain",
+  "winner_selected": false
+}

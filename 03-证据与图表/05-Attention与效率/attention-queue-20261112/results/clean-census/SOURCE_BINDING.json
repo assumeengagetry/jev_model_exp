@@ -1,0 +1,1998 @@
+{
+  "files": [
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/global-pool/MANIFEST.json",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/global-pool/MANIFEST.json",
+      "bytes": 4767,
+      "mtime_ns": 1793373722862405889
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/global-pool/SOURCES.json",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/global-pool/SOURCES.json",
+      "bytes": 301147,
+      "mtime_ns": 1793373722862405889
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/global-pool/inputs.parquet",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/global-pool/inputs.parquet",
+      "bytes": 1316149686,
+      "mtime_ns": 1793373717174505986
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/normalized/typed-full/inputs.parquet",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/normalized/typed-full/inputs.parquet",
+      "bytes": 630975689,
+      "mtime_ns": 1793366197390986527
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/tokenized/global-new/MANIFEST.json",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/tokenized/global-new/MANIFEST.json",
+      "bytes": 984,
+      "mtime_ns": 1793373890543453781
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/tokenized/global-new/prefix_ids.bin",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/tokenized/global-new/prefix_ids.bin",
+      "bytes": 5148478336,
+      "mtime_ns": 1793373852696120819
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/tokenized/global-new/prefix_offsets.bin",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/tokenized/global-new/prefix_offsets.bin",
+      "bytes": 39995256,
+      "mtime_ns": 1793373852848118144
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/tokenized/global-new/suffix_ids.bin",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/tokenized/global-new/suffix_ids.bin",
+      "bytes": 216444628,
+      "mtime_ns": 1793373859420002458
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/tokenized/global-new/suffix_offsets.bin",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/tokenized/global-new/suffix_offsets.bin",
+      "bytes": 6725176,
+      "mtime_ns": 1793373859520000695
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/tokenized/typed-full/MANIFEST.json",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/tokenized/typed-full/MANIFEST.json",
+      "bytes": 993,
+      "mtime_ns": 1793368020727289752
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/tokenized/typed-full/prefix_ids.bin",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/tokenized/typed-full/prefix_ids.bin",
+      "bytes": 2449534456,
+      "mtime_ns": 1793367915821116251
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/tokenized/typed-full/prefix_offsets.bin",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/tokenized/typed-full/prefix_offsets.bin",
+      "bytes": 19206672,
+      "mtime_ns": 1793367915893114997
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/tokenized/typed-full/suffix_ids.bin",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/tokenized/typed-full/suffix_ids.bin",
+      "bytes": 215328428,
+      "mtime_ns": 1793367923000991266
+    },
+    {
+      "path": "/home/dev/assumeengage/cache/pair-training/tokenized/typed-full/suffix_offsets.bin",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/tokenized/typed-full/suffix_offsets.bin",
+      "bytes": 10792024,
+      "mtime_ns": 1793367923104989456
+    },
+    {
+      "path": "/home/dev/assumeengage/config/source-domain-overrides.json",
+      "resolved": "/home/dev/assumeengage/config/source-domain-overrides.json",
+      "bytes": 820,
+      "mtime_ns": 1793371903566438029
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00000-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00000-of-00013.parquet",
+      "bytes": 92567139,
+      "mtime_ns": 1793361068789360729
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00001-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00001-of-00013.parquet",
+      "bytes": 91841649,
+      "mtime_ns": 1793361104284734279
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00002-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00002-of-00013.parquet",
+      "bytes": 92124179,
+      "mtime_ns": 1793361147363973958
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00003-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00003-of-00013.parquet",
+      "bytes": 92588076,
+      "mtime_ns": 1793361105672709783
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00004-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00004-of-00013.parquet",
+      "bytes": 92209176,
+      "mtime_ns": 1793361124476377907
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00005-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00005-of-00013.parquet",
+      "bytes": 91479779,
+      "mtime_ns": 1793361145496006926
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00006-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00006-of-00013.parquet",
+      "bytes": 91998795,
+      "mtime_ns": 1793361207094919682
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00007-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00007-of-00013.parquet",
+      "bytes": 91662667,
+      "mtime_ns": 1793361181263375629
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00008-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00008-of-00013.parquet",
+      "bytes": 92038322,
+      "mtime_ns": 1793361206694926743
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00009-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00009-of-00013.parquet",
+      "bytes": 91996419,
+      "mtime_ns": 1793361232506471129
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00010-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00010-of-00013.parquet",
+      "bytes": 92128326,
+      "mtime_ns": 1793361206566929001
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00011-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00011-of-00013.parquet",
+      "bytes": 91215179,
+      "mtime_ns": 1793361210910852326
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00012-of-00013.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00012-of-00013.parquet",
+      "bytes": 93101906,
+      "mtime_ns": 1793361222658644958
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-tasksource-addition-167c5ad6fb79.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-tasksource-addition-167c5ad6fb79.parquet",
+      "bytes": 31257875,
+      "mtime_ns": 1793361230282510387
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-webinstruct-05e8b528d68c.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-webinstruct-05e8b528d68c.parquet",
+      "bytes": 6030383,
+      "mtime_ns": 1793361223466630697
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/validation-00000-of-00001.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/validation-00000-of-00001.parquet",
+      "bytes": 5737942,
+      "mtime_ns": 1793361225238599419
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/validation-tasksource-addition-167c5ad6fb79.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/validation-tasksource-addition-167c5ad6fb79.parquet",
+      "bytes": 3294308,
+      "mtime_ns": 1793361227194564896
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/zero-shot-label-nli-http/data/train-00000-of-00005.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/zero-shot-label-nli-http/data/train-00000-of-00005.parquet",
+      "bytes": 219742758,
+      "mtime_ns": 1793365860792872339
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/zero-shot-label-nli-http/data/train-00001-of-00005.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/zero-shot-label-nli-http/data/train-00001-of-00005.parquet",
+      "bytes": 245536038,
+      "mtime_ns": 1793365904028116608
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/zero-shot-label-nli-http/data/train-00002-of-00005.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/zero-shot-label-nli-http/data/train-00002-of-00005.parquet",
+      "bytes": 251459043,
+      "mtime_ns": 1793365205284342689
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/zero-shot-label-nli-http/data/train-00003-of-00005.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/zero-shot-label-nli-http/data/train-00003-of-00005.parquet",
+      "bytes": 216765054,
+      "mtime_ns": 1793365358777640214
+    },
+    {
+      "path": "/home/dev/assumeengage/datasets/zero-shot-label-nli-http/data/train-00004-of-00005.parquet",
+      "resolved": "/home/dev/assumeengage/datasets/zero-shot-label-nli-http/data/train-00004-of-00005.parquet",
+      "bytes": 207449792,
+      "mtime_ns": 1793365556562187429
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/README.md",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/README.md",
+      "bytes": 5204,
+      "mtime_ns": 1793359031101260774
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/adapter_config.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/adapter_config.json",
+      "bytes": 1112,
+      "mtime_ns": 1793359031273257750
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/adapter_model.safetensors",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/adapter_model.safetensors",
+      "bytes": 80796648,
+      "mtime_ns": 1793359031237258382
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/added_tokens.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/added_tokens.json",
+      "bytes": 707,
+      "mtime_ns": 1793359031277257679
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/chat_template.jinja",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/chat_template.jinja",
+      "bytes": 4168,
+      "mtime_ns": 1793359031273257750
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/config.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/config.json",
+      "bytes": 1566,
+      "mtime_ns": 1793359031273257750
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/initialization.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/initialization.json",
+      "bytes": 465,
+      "mtime_ns": 1793359031433254937
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/merges.txt",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1793359031337256624
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/special_tokens_map.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/special_tokens_map.json",
+      "bytes": 613,
+      "mtime_ns": 1793359031277257679
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/tokenizer.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1793359031425255077
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/tokenizer_config.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/tokenizer_config.json",
+      "bytes": 5404,
+      "mtime_ns": 1793359031277257679
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/vocab.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B-common-pair-init-r32/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1793359031341256554
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/.gitattributes",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/.gitattributes",
+      "bytes": 2127,
+      "mtime_ns": 1793344465483257818
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/DOWNLOAD.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/DOWNLOAD.json",
+      "bytes": 1186,
+      "mtime_ns": 1793344598916499089
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/LICENSE",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/LICENSE",
+      "bytes": 11343,
+      "mtime_ns": 1793344465555256329
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/README.md",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/README.md",
+      "bytes": 13965,
+      "mtime_ns": 1793344464819271548
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/config.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/config.json",
+      "bytes": 726,
+      "mtime_ns": 1793344466179243427
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/configuration.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/configuration.json",
+      "bytes": 73,
+      "mtime_ns": 1793344465447258563
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/generation_config.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/generation_config.json",
+      "bytes": 239,
+      "mtime_ns": 1793344464911269646
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/merges.txt",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1793344465403259472
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/model.safetensors",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/model.safetensors",
+      "bytes": 1503300328,
+      "mtime_ns": 1793344598912499173
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/tokenizer.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1793344466091245247
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/tokenizer_config.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/tokenizer_config.json",
+      "bytes": 9732,
+      "mtime_ns": 1793344466987226720
+    },
+    {
+      "path": "/home/dev/assumeengage/models/Qwen3-0.6B/vocab.json",
+      "resolved": "/home/dev/assumeengage/models/Qwen3-0.6B/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1793344466823230111
+    },
+    {
+      "path": "/home/dev/assumeengage/scripts/build-global-pair-pool.py",
+      "resolved": "/home/dev/assumeengage/scripts/build-global-pair-pool.py",
+      "bytes": 10775,
+      "mtime_ns": 1793372402757608795
+    },
+    {
+      "path": "/home/dev/assumeengage/scripts/group_training_runtime.py",
+      "resolved": "/home/dev/assumeengage/scripts/group_training_runtime.py",
+      "bytes": 5774,
+      "mtime_ns": 1793972571307063906
+    },
+    {
+      "path": "/home/dev/assumeengage/scripts/pair_data_common.py",
+      "resolved": "/home/dev/assumeengage/scripts/pair_data_common.py",
+      "bytes": 3069,
+      "mtime_ns": 1793365839389246426
+    },
+    {
+      "path": "/home/dev/assumeengage/scripts/pair_training_runtime.py",
+      "resolved": "/home/dev/assumeengage/scripts/pair_training_runtime.py",
+      "bytes": 6356,
+      "mtime_ns": 1793461802557586667
+    },
+    {
+      "path": "/home/dev/assumeengage/scripts/prepare-typed-pairs.py",
+      "resolved": "/home/dev/assumeengage/scripts/prepare-typed-pairs.py",
+      "bytes": 6675,
+      "mtime_ns": 1793365511206979397
+    },
+    {
+      "path": "/home/dev/assumeengage/scripts/student_flash_attention3.py",
+      "resolved": "/home/dev/assumeengage/scripts/student_flash_attention3.py",
+      "bytes": 5511,
+      "mtime_ns": 1793689912801565505
+    },
+    {
+      "path": "/home/dev/assumeengage/scripts/student_flash_attention3_repro.py",
+      "resolved": "/home/dev/assumeengage/scripts/student_flash_attention3_repro.py",
+      "bytes": 5063,
+      "mtime_ns": 1794034580976005123
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/CODE_BINDING.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/CODE_BINDING.json",
+      "bytes": 37753,
+      "mtime_ns": 1794463088348629555
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/COMPLETE.json",
+      "bytes": 2464,
+      "mtime_ns": 1794463757747204181
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/RUNTIME.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/RUNTIME.json",
+      "bytes": 272,
+      "mtime_ns": 1794463148975415870
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/SOURCE_BINDING.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/SOURCE_BINDING.json",
+      "bytes": 95011,
+      "mtime_ns": 1794463182374747051
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/SUMMARY.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/SUMMARY.json",
+      "bytes": 5032,
+      "mtime_ns": 1794463757743204261
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/case-graph.sqlite3",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/case-graph.sqlite3",
+      "bytes": 4636049408,
+      "mtime_ns": 1794463700528353786
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/flags-uint8.bin",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/flags-uint8.bin",
+      "bytes": 5561805,
+      "mtime_ns": 1794463757251214148
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/parent-int64.bin",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/parent-int64.bin",
+      "bytes": 44494440,
+      "mtime_ns": 1794463757143216318
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/public-input-texts.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/public-input-texts.jsonl",
+      "bytes": 851192716,
+      "mtime_ns": 1794463180366787264
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/validation-roster.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/validation-roster.jsonl",
+      "bytes": 7195869,
+      "mtime_ns": 1794463757107217042
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/DATA_READY.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/DATA_READY.json",
+      "bytes": 7019,
+      "mtime_ns": 1794211378886428287
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/DISTILLATION_TARGETS_READY.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/DISTILLATION_TARGETS_READY.json",
+      "bytes": 9163,
+      "mtime_ns": 1794222404073341702
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/complete.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/complete.json",
+      "bytes": 3817,
+      "mtime_ns": 1794237132667466469
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/README.md",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/README.md",
+      "bytes": 5204,
+      "mtime_ns": 1794237132443471063
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/adapter_config.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/adapter_config.json",
+      "bytes": 1143,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/adapter_model.safetensors",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/adapter_model.safetensors",
+      "bytes": 80800744,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/added_tokens.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/added_tokens.json",
+      "bytes": 707,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/chat_template.jinja",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/chat_template.jinja",
+      "bytes": 4168,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/config.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/config.json",
+      "bytes": 1566,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/merges.txt",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1794237132591468028
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/special_tokens_map.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/special_tokens_map.json",
+      "bytes": 613,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/tokenizer.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1794237132659466634
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/tokenizer_config.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/tokenizer_config.json",
+      "bytes": 5404,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/vocab.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1794237132547468931
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/TRAINING_COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/TRAINING_COMPLETE.json",
+      "bytes": 4221,
+      "mtime_ns": 1794237136131395431
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/config.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/config.json",
+      "bytes": 4354,
+      "mtime_ns": 1794211378886428287
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/effective-targets.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/effective-targets.npy",
+      "bytes": 5001360,
+      "mtime_ns": 1794222403421354859
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/plan/relations.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/plan/relations.npy",
+      "bytes": 58480,
+      "mtime_ns": 1794222404073341702
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/plan/teacher_relation_target.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/plan/teacher_relation_target.npy",
+      "bytes": 14716,
+      "mtime_ns": 1794222404073341702
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/arts_candidate.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_candidate.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677539620565
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/arts_group.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_group.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677555620285
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/arts_length.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_length.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677559620215
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/arts_source.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_source.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677547620425
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/arts_state.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_state.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677531620705
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/arts_target.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_target.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677543620496
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/knowledge_candidate.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_candidate.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676963630660
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/knowledge_group.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_group.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676979630379
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/knowledge_length.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_length.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676983630310
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/knowledge_source.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_source.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676975630450
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/knowledge_state.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_state.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676955630800
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/knowledge_target.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_target.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676967630590
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_candidate.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_candidate.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378858428853
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_group.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_group.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378870428611
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_length.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_length.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378870428611
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_source.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_source.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378862428773
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_state.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_state.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378858428853
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_target.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_target.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378862428773
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/retrieval_candidate.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_candidate.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677327624281
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/retrieval_group.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_group.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677355623790
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/retrieval_length.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_length.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677363623650
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/retrieval_source.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_source.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677343624001
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/retrieval_state.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_state.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677319624421
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/retrieval_target.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_target.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677335624141
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/tools_candidate.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_candidate.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677423622598
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/tools_group.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_group.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677439622318
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/tools_length.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_length.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677443622248
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/tools_source.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_source.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677435622388
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/tools_state.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_state.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677419622669
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/tools_target.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_target.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677427622528
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109/official-gsm8k-rebuild.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/official-gsm8k-rebuild.json",
+      "bytes": 408,
+      "mtime_ns": 1794210885496406318
+    },
+    {
+      "path": "/tmp/opencode/jev-five-dimension-distilled-20261109/official-suite-import-verified.log",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/official-suite-import-verified.log",
+      "bytes": 1053,
+      "mtime_ns": 1794210888028355140
+    },
+    {
+      "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/BINDING.json",
+      "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/BINDING.json",
+      "bytes": 126180,
+      "mtime_ns": 1794411436840073558
+    },
+    {
+      "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/COMPLETE.json",
+      "bytes": 2572,
+      "mtime_ns": 1794414979238531739
+    },
+    {
+      "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runtime-frozen/fused_kernels.py",
+      "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runtime-frozen/fused_kernels.py",
+      "bytes": 6646,
+      "mtime_ns": 1794411436608078081
+    },
+    {
+      "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runtime-frozen/kernel_engine.py",
+      "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runtime-frozen/kernel_engine.py",
+      "bytes": 11362,
+      "mtime_ns": 1794411436608078081
+    },
+    {
+      "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runtime-frozen/kernel_model.py",
+      "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runtime-frozen/kernel_model.py",
+      "bytes": 6725,
+      "mtime_ns": 1794411436608078081
+    },
+    {
+      "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runtime-frozen/kernel_runtime.py",
+      "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runtime-frozen/kernel_runtime.py",
+      "bytes": 9128,
+      "mtime_ns": 1794411436608078081
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/DATA_BINDING.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/DATA_BINDING.json",
+      "bytes": 40090,
+      "mtime_ns": 1794234359336291751
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/DATA_READY.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/DATA_READY.json",
+      "bytes": 2472,
+      "mtime_ns": 1794234359336291751
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/DISTILLATION_TARGETS_READY.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/DISTILLATION_TARGETS_READY.json",
+      "bytes": 11408,
+      "mtime_ns": 1794234359324291998
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/GENERIC_SOURCES.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/GENERIC_SOURCES.json",
+      "bytes": 7910,
+      "mtime_ns": 1794234358328312525
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/README.md",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/README.md",
+      "bytes": 5204,
+      "mtime_ns": 1794256580454677015
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/adapter_config.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/adapter_config.json",
+      "bytes": 1174,
+      "mtime_ns": 1794256580554674977
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/adapter_model.safetensors",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/adapter_model.safetensors",
+      "bytes": 80800744,
+      "mtime_ns": 1794256580554674977
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/added_tokens.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/added_tokens.json",
+      "bytes": 707,
+      "mtime_ns": 1794256580558674895
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/chat_template.jinja",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/chat_template.jinja",
+      "bytes": 4168,
+      "mtime_ns": 1794256580558674895
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/config.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/config.json",
+      "bytes": 1566,
+      "mtime_ns": 1794256580558674895
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/merges.txt",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1794256580622673590
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/special_tokens_map.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/special_tokens_map.json",
+      "bytes": 613,
+      "mtime_ns": 1794256580558674895
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/tokenizer.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1794256580686672286
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/tokenizer_config.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/tokenizer_config.json",
+      "bytes": 5404,
+      "mtime_ns": 1794256580558674895
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/vocab.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/JOINT_HYBRID/final/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1794256580578674487
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/OFFICIAL_INPUT_BINDING.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/OFFICIAL_INPUT_BINDING.json",
+      "bytes": 26646,
+      "mtime_ns": 1794232495482680766
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/OFFICIAL_SNAPSHOT.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/OFFICIAL_SNAPSHOT.json",
+      "bytes": 7820,
+      "mtime_ns": 1794256604026196522
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/PARENT_BINDING.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/PARENT_BINDING.json",
+      "bytes": 14320,
+      "mtime_ns": 1794237160154902758
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/STORAGE_OWNER.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/STORAGE_OWNER.json",
+      "bytes": 389,
+      "mtime_ns": 1794234359324291998
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/decision_engine.py",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/decision_engine.py",
+      "bytes": 8695,
+      "mtime_ns": 1794233768348475785
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/joint_control.py",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/joint_control.py",
+      "bytes": 6992,
+      "mtime_ns": 1794232495470681010
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/joint_data.py",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/joint_data.py",
+      "bytes": 5869,
+      "mtime_ns": 1794232495470681010
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/prepare_joint.py",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/prepare_joint.py",
+      "bytes": 20134,
+      "mtime_ns": 1794233768348475785
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/requirements-inference.txt",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/requirements-inference.txt",
+      "bytes": 253,
+      "mtime_ns": 1794232495470681010
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/run_joint.py",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/run_joint.py",
+      "bytes": 6956,
+      "mtime_ns": 1794232495470681010
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/run_official_joint.py",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/run_official_joint.py",
+      "bytes": 12984,
+      "mtime_ns": 1794233768348475785
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/train_joint.py",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/code/train_joint.py",
+      "bytes": 31072,
+      "mtime_ns": 1794233768348475785
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/config.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/config.json",
+      "bytes": 5177,
+      "mtime_ns": 1794234359324291998
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/.gitignore",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/.gitignore",
+      "bytes": 113,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/LICENSE",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/LICENSE",
+      "bytes": 1075,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/README.md",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/README.md",
+      "bytes": 31394,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/__init__.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/__init__.py",
+      "bytes": 20,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/__main__.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/__main__.py",
+      "bytes": 75,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/cli.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/cli.py",
+      "bytes": 16044,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/constants.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/constants.py",
+      "bytes": 1781,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/benchmarks.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/benchmarks.json",
+      "bytes": 42564,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/chance-baselines.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/chance-baselines.json",
+      "bytes": 33280,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/index-0.2.1.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/index-0.2.1.json",
+      "bytes": 12709,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/index-0.2.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/index-0.2.json",
+      "bytes": 11544,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/index-0.3.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/index-0.3.json",
+      "bytes": 11243,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/index-panel.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/index-panel.json",
+      "bytes": 13494,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/release-v2.1/bright-subset.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/release-v2.1/bright-subset.json",
+      "bytes": 29792,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/release-v2.1/home-appliances-subset.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/release-v2.1/home-appliances-subset.json",
+      "bytes": 12318,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/release-v2.1/toolret-subset.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/release-v2.1/toolret-subset.json",
+      "bytes": 114666,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/release-v2/acos-subset.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/release-v2/acos-subset.json",
+      "bytes": 178739,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/release-v2/retrieval-subsets.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/release-v2/retrieval-subsets.json",
+      "bytes": 59202,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/data/vision-0.3.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/data/vision-0.3.json",
+      "bytes": 12832,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/editions.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/editions.py",
+      "bytes": 7695,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/engines/__init__.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/engines/__init__.py",
+      "bytes": 954,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/engines/base.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/engines/base.py",
+      "bytes": 2992,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/engines/http.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/engines/http.py",
+      "bytes": 2072,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/engines/transformers_engine.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/engines/transformers_engine.py",
+      "bytes": 9282,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/hf_job.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/hf_job.py",
+      "bytes": 5081,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/pipeline.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/pipeline.py",
+      "bytes": 7532,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/runner.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/runner.py",
+      "bytes": 5363,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/scoring/__init__.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/scoring/__init__.py",
+      "bytes": 0,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/scoring/added.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/scoring/added.py",
+      "bytes": 2691,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/scoring/index.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/scoring/index.py",
+      "bytes": 11049,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/scoring/index02.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/scoring/index02.py",
+      "bytes": 6189,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/scoring/metrics.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/scoring/metrics.py",
+      "bytes": 5357,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/scoring/report.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/scoring/report.py",
+      "bytes": 11876,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/__init__.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/__init__.py",
+      "bytes": 0,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/__init__.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/__init__.py",
+      "bytes": 0,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/acquire.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/acquire.py",
+      "bytes": 12328,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/adapters_added.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/adapters_added.py",
+      "bytes": 13766,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/adapters_creative.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/adapters_creative.py",
+      "bytes": 11309,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/adapters_mechanical.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/adapters_mechanical.py",
+      "bytes": 11896,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/adapters_retrieval.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/adapters_retrieval.py",
+      "bytes": 10827,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/adapters_scored.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/adapters_scored.py",
+      "bytes": 25559,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/adapters_selection.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/adapters_selection.py",
+      "bytes": 11136,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/freeze.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/freeze.py",
+      "bytes": 5383,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/gsm8k_v3.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/gsm8k_v3.py",
+      "bytes": 8103,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/home_appliance.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/home_appliance.py",
+      "bytes": 15458,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/layout.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/layout.py",
+      "bytes": 4155,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/normalize_direct.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/normalize_direct.py",
+      "bytes": 5704,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/normalize_text.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/normalize_text.py",
+      "bytes": 23087,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/rebuild.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/rebuild.py",
+      "bytes": 5414,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/build/release_v2.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/build/release_v2.py",
+      "bytes": 2665,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/download.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/download.py",
+      "bytes": 2349,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/io.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/io.py",
+      "bytes": 5214,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/suite/sample.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/suite/sample.py",
+      "bytes": 1515,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/vision/__init__.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/vision/__init__.py",
+      "bytes": 0,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/vision/build.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/vision/build.py",
+      "bytes": 26084,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/vision/convert.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/vision/convert.py",
+      "bytes": 7792,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/vision/engines.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/vision/engines.py",
+      "bytes": 16398,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/vision/images.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/vision/images.py",
+      "bytes": 3346,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/vision/rows.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/vision/rows.py",
+      "bytes": 4643,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/vision/run.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/vision/run.py",
+      "bytes": 6367,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/vision/score.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/vision/score.py",
+      "bytes": 2855,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/decision_index/vision/spec.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index/vision/spec.py",
+      "bytes": 1588,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/docs/edition-0.1.md",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/docs/edition-0.1.md",
+      "bytes": 8577,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/docs/engines.md",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/docs/engines.md",
+      "bytes": 6465,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/docs/format.md",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/docs/format.md",
+      "bytes": 4186,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/docs/suite.md",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/docs/suite.md",
+      "bytes": 21159,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/docs/vision.md",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/docs/vision.md",
+      "bytes": 14838,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/hub/0.2.1/manifest.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/hub/0.2.1/manifest.json",
+      "bytes": 27050,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/hub/0.2/manifest.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/hub/0.2/manifest.json",
+      "bytes": 24228,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/hub/0.3/manifest.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/hub/0.3/manifest.json",
+      "bytes": 28132,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/hub/excluded-questions.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/hub/excluded-questions.json",
+      "bytes": 663020,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/hub/manifest.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/hub/manifest.json",
+      "bytes": 4260777,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/pyproject.toml",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/pyproject.toml",
+      "bytes": 973,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/decision-index/scripts/prepare_hub_upload.py",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/scripts/prepare_hub_upload.py",
+      "bytes": 2806,
+      "mtime_ns": 1794210609000000000
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/effective-targets.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/effective-targets.npy",
+      "bytes": 6669096,
+      "mtime_ns": 1794234358448310051
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-original-label-provenance.parquet",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-original-label-provenance.parquet",
+      "bytes": 2378479,
+      "mtime_ns": 1794234358328312525
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-tokens/MANIFEST.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-tokens/MANIFEST.json",
+      "bytes": 315,
+      "mtime_ns": 1794234358328312525
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-tokens/prefix_ids.bin",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-tokens/prefix_ids.bin",
+      "bytes": 354786800,
+      "mtime_ns": 1794234356932341295
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-tokens/prefix_offsets.bin",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-tokens/prefix_offsets.bin",
+      "bytes": 3335480,
+      "mtime_ns": 1794234358000319284
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-tokens/suffix_ids.bin",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-tokens/suffix_ids.bin",
+      "bytes": 10529984,
+      "mtime_ns": 1794234357960320109
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-tokens/suffix_offsets.bin",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/generic-tokens/suffix_offsets.bin",
+      "bytes": 3335480,
+      "mtime_ns": 1794234358016318955
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/LICENSE",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/LICENSE",
+      "bytes": 11343,
+      "mtime_ns": 1793344465555256329
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/README.md",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/README.md",
+      "bytes": 13965,
+      "mtime_ns": 1793344464819271548
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/config.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/config.json",
+      "bytes": 726,
+      "mtime_ns": 1793344466179243427
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/configuration.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/configuration.json",
+      "bytes": 73,
+      "mtime_ns": 1793344465447258563
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/generation_config.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/generation_config.json",
+      "bytes": 239,
+      "mtime_ns": 1793344464911269646
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/merges.txt",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1793344465403259472
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/model.safetensors",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/model.safetensors",
+      "bytes": 1503300328,
+      "mtime_ns": 1793344598912499173
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/tokenizer.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1793344466091245247
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/tokenizer_config.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/tokenizer_config.json",
+      "bytes": 9732,
+      "mtime_ns": 1793344466987226720
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/vocab.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1793344466823230111
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-suite-0.3-verified/added-rows.jsonl.gz",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/official-suite-0.3-verified/added-rows.jsonl.gz",
+      "bytes": 10892541,
+      "mtime_ns": 1794210885584404539
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-suite-0.3-verified/excluded-questions.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/official-suite-0.3-verified/excluded-questions.json",
+      "bytes": 663020,
+      "mtime_ns": 1794210885584404539
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-suite-0.3-verified/gsm8k-rows.jsonl.gz",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/official-suite-0.3-verified/gsm8k-rows.jsonl.gz",
+      "bytes": 636343,
+      "mtime_ns": 1794210885584404539
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-suite-0.3-verified/manifest.json",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/official-suite-0.3-verified/manifest.json",
+      "bytes": 28132,
+      "mtime_ns": 1794210885584404539
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-suite-0.3-verified/selected-rows.jsonl.gz",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109/official-suite-0.3-verified/selected-rows.jsonl.gz",
+      "bytes": 71281743,
+      "mtime_ns": 1794210885580404620
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/README.md",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/README.md",
+      "bytes": 5204,
+      "mtime_ns": 1794237132443471063
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/adapter_config.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/adapter_config.json",
+      "bytes": 1143,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/adapter_model.safetensors",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/adapter_model.safetensors",
+      "bytes": 80800744,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/added_tokens.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/added_tokens.json",
+      "bytes": 707,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/chat_template.jinja",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/chat_template.jinja",
+      "bytes": 4168,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/config.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/config.json",
+      "bytes": 1566,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/merges.txt",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1794237132591468028
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/special_tokens_map.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/special_tokens_map.json",
+      "bytes": 613,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/tokenizer.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1794237132659466634
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/tokenizer_config.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/tokenizer_config.json",
+      "bytes": 5404,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/vocab.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/parent-frozen/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1794237132547468931
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/PLAN_READY.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/PLAN_READY.json",
+      "bytes": 305,
+      "mtime_ns": 1794234359324291998
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/macro_offsets.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/macro_offsets.npy",
+      "bytes": 104344,
+      "mtime_ns": 1794234359320292081
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/order.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/order.npy",
+      "bytes": 6669096,
+      "mtime_ns": 1794234359320292081
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/relation_tag.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/relation_tag.npy",
+      "bytes": 6669096,
+      "mtime_ns": 1794234359320292081
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/relations.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/relations.npy",
+      "bytes": 58480,
+      "mtime_ns": 1794234359320292081
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/teacher_relation_target.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/plan/teacher_relation_target.npy",
+      "bytes": 14716,
+      "mtime_ns": 1794234359324291998
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/SELECTION.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/SELECTION.json",
+      "bytes": 2472,
+      "mtime_ns": 1794234359324291998
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/TRAINING_READY.json",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/TRAINING_READY.json",
+      "bytes": 2472,
+      "mtime_ns": 1794234359324291998
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/arts_candidate.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_candidate.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677539620565
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/arts_group.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_group.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677555620285
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/arts_length.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_length.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677559620215
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/arts_source.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_source.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677547620425
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/arts_state.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_state.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677531620705
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/arts_target.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/arts_target.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677543620496
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_candidate.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_candidate.npy",
+      "bytes": 1667864,
+      "mtime_ns": 1794234358372311618
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_group.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_group.npy",
+      "bytes": 1667864,
+      "mtime_ns": 1794234358372311618
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_length.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_length.npy",
+      "bytes": 1667864,
+      "mtime_ns": 1794234358376311535
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_source.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_source.npy",
+      "bytes": 1667864,
+      "mtime_ns": 1794234358372311618
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_state.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_state.npy",
+      "bytes": 1667864,
+      "mtime_ns": 1794234358368311700
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_target.npy",
+      "resolved": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/generic_target.npy",
+      "bytes": 1667864,
+      "mtime_ns": 1794234358372311618
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/knowledge_candidate.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_candidate.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676963630660
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/knowledge_group.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_group.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676979630379
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/knowledge_length.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_length.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676983630310
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/knowledge_source.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_source.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676975630450
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/knowledge_state.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_state.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676955630800
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/knowledge_target.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/knowledge_target.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678676967630590
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/language_candidate.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_candidate.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378858428853
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/language_group.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_group.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378870428611
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/language_length.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_length.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378870428611
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/language_source.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_source.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378862428773
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/language_state.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_state.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378858428853
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/language_target.npy",
+      "resolved": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/pool/pairs/language_target.npy",
+      "bytes": 1001360,
+      "mtime_ns": 1794211378862428773
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/retrieval_candidate.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_candidate.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677327624281
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/retrieval_group.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_group.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677355623790
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/retrieval_length.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_length.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677363623650
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/retrieval_source.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_source.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677343624001
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/retrieval_state.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_state.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677319624421
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/retrieval_target.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/retrieval_target.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677335624141
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/tools_candidate.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_candidate.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677423622598
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/tools_group.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_group.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677439622318
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/tools_length.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_length.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677443622248
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/tools_source.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_source.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677435622388
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/tools_state.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_state.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677419622669
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/pool/pairs/tools_target.npy",
+      "resolved": "/home/dev/assumeengage/cache/pair-training/fresh-qwen-1m-20261103/pairs/tools_target.npy",
+      "bytes": 1000128,
+      "mtime_ns": 1793678677427622528
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/DATA_READY.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/DATA_READY.json",
+      "bytes": 6798,
+      "mtime_ns": 1794418181587195047
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/SOURCE_BINDING.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/SOURCE_BINDING.json",
+      "bytes": 90244,
+      "mtime_ns": 1794418160155625376
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/README.md",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/README.md",
+      "bytes": 5204,
+      "mtime_ns": 1794237132443471063
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/adapter_config.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/adapter_config.json",
+      "bytes": 1143,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/adapter_model.safetensors",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/adapter_model.safetensors",
+      "bytes": 80800744,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/added_tokens.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/added_tokens.json",
+      "bytes": 707,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/chat_template.jinja",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/chat_template.jinja",
+      "bytes": 4168,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/config.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/config.json",
+      "bytes": 1566,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/merges.txt",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1794237132591468028
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/special_tokens_map.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/special_tokens_map.json",
+      "bytes": 613,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/tokenizer.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1794237132659466634
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/tokenizer_config.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/tokenizer_config.json",
+      "bytes": 5404,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/vocab.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1794237132547468931
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/rows/shard-0.jsonl",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/rows/shard-0.jsonl",
+      "bytes": 148052267,
+      "mtime_ns": 1794418178847250061
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/rows/shard-1.jsonl",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/rows/shard-1.jsonl",
+      "bytes": 145639264,
+      "mtime_ns": 1794418179431238336
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/rows/shard-2.jsonl",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/rows/shard-2.jsonl",
+      "bytes": 147258701,
+      "mtime_ns": 1794418180099224924
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/rows/shard-3.jsonl",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/rows/shard-3.jsonl",
+      "bytes": 147288207,
+      "mtime_ns": 1794418180839210065
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/config.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/config.json",
+      "bytes": 5670,
+      "mtime_ns": 1794418163467558873
+    }
+  ],
+  "old_audit": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2",
+  "purpose": "new complete native-coordinate/license census, no old graph reconstruction"
+}

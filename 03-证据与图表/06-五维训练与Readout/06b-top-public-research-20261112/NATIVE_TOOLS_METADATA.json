@@ -1,0 +1,36 @@
+{
+  "observed_date": "2026-11-12",
+  "scope": "Low-priority read-only source/kind/split metadata census; no target/state/model values used, not model performance. Counts before full training quality/context admission.",
+  "typed_original_train_tools_under_old_domain_registry": {
+    "rows": 100001,
+    "kind_counts": {"noul": 35367, "choice": 37684, "score": 26950},
+    "sources": {
+      "procedural-typed-decisions/taxonomy_routing": {"choice": 6668, "noul": 6668, "score": 6668},
+      "procedural-typed-decisions/policy_under_uncertainty": {"noul": 6667, "choice": 13334},
+      "procedural-typed-decisions/record_aggregation": {"score": 6950, "choice": 4350, "noul": 8700},
+      "procedural-typed-decisions/state_perturbation": {"noul": 6666, "choice": 6666, "score": 6666},
+      "procedural-typed-decisions/policy_applicability": {"noul": 6666, "choice": 6666, "score": 6666}
+    },
+    "does_not_describe_entire_old_joint_global_tools_pool": true
+  },
+  "browser_native_choice_train_views_currently_language": {
+    "mind2web/action": 816,
+    "mind2web/dom-element": 780,
+    "weblinx/action": 1000,
+    "weblinx/dom-element": 1000,
+    "websrc/element": 1000,
+    "websrc/yesno": 1000
+  },
+  "eligible_validation_case_metadata_preview": {
+    "some_choice_or_noul_fields_by_old_domain": {"arts": 574, "retrieval": 302, "knowledge": 1451, "language": 5417, "tools": 187},
+    "all_fields_choice_or_noul_by_old_domain": {"arts": 574, "retrieval": 283, "knowledge": 1379, "language": 5321, "tools": 40},
+    "browser_views_eligible_under_current_conservative_policy": 0,
+    "final_selection_holdout_admitted": false
+  },
+  "interpretation_limits": [
+    "Typed-corpus Tools proxy is dominated by procedural tasks; this is not evidence that the existing global-pool model saw no real function-call training.",
+    "Do not modify the old global domain override file; any new task ontology must be an independently versioned registry shared by both comparison arms.",
+    "Native score targets cannot be silently treated as a mutually-exclusive probability distribution; preserve case identity and report any unknown-field masks.",
+    "These metadata counts are not public scores, blind validation performance, or proof of BFCL/API-Bank representativeness."
+  ]
+}

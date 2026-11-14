@@ -1,0 +1,25 @@
+{
+  "scope": "actual60candidate-rank-cache autograd-topology rootcause isolation",
+  "total_only": {
+    "loss_equal": true,
+    "coefficient_bytes_equal": true,
+    "unequal_values": 0,
+    "max_abs_difference": 0.0
+  },
+  "component_terms_without_component_grads": {
+    "loss_equal": true,
+    "coefficient_bytes_equal": true,
+    "unequal_values": 0,
+    "max_abs_difference": 0.0
+  },
+  "component_terms_then_component_grads_then_total": {
+    "loss_equal": true,
+    "coefficient_bytes_equal": true,
+    "unequal_values": 0,
+    "max_abs_difference": 0.0
+  },
+  "model_forward_calls": 0,
+  "optimizer_steps": 0,
+  "authorization_created": false,
+  "CUDA_initialized": false
+}

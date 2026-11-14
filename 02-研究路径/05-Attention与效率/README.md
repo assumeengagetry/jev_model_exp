@@ -1,5 +1,9 @@
 # Attention与效率 · 研究路径
 
+## 2026-11-11新增
+
+- [推理调度与计算内核v2执行计划](2026-11-11-inference-kernel-runtime-v2.md) · [进度与边界记录](inference-kernel-runtime-20261111/progress.md)。执行源码遵循当前库外归档约定。
+
 ## 2026-11-10新增
 
 - [共享前缀＋Graph实际实施计划](2026-11-10-inference-prefix-graphs.md)，对应[已完成的完整public结果](../../01-研究结论/05-Attention与效率/inference-prefix-graphs-20261110/README.md)。

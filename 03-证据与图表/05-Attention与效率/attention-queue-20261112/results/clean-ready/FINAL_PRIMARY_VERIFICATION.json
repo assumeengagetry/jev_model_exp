@@ -1,0 +1,351 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-12T12:07:38.642891+00:00",
+  "DATA_READY": true,
+  "counts": {
+    "train": {
+      "cases": 24600,
+      "domains": {
+        "arts": 4971,
+        "knowledge": 4976,
+        "language": 4950,
+        "retrieval": 4937,
+        "tools": 4766
+      }
+    },
+    "select": {
+      "cases": 375,
+      "domains": {
+        "arts": 75,
+        "knowledge": 75,
+        "language": 75,
+        "retrieval": 75,
+        "tools": 75
+      }
+    },
+    "confirm": {
+      "cases": 250,
+      "domains": {
+        "arts": 50,
+        "knowledge": 50,
+        "language": 50,
+        "retrieval": 50,
+        "tools": 50
+      }
+    }
+  },
+  "actual_retained_fields": 48571,
+  "known_fields": 42678,
+  "unknown_fields_retained_no_forward": 5893,
+  "exposures": {
+    "42": {
+      "cases": 56912,
+      "updates": 3557,
+      "logical_pair_tokens": 99824365,
+      "domains": {
+        "arts": 19963675,
+        "language": 19955655,
+        "knowledge": 19967465,
+        "retrieval": 19978138,
+        "tools": 19959432
+      },
+      "observations": [
+        {
+          "cap": 10000000,
+          "cases": 5840,
+          "logical_pair_tokens": 9988659,
+          "macro_updates": 365
+        },
+        {
+          "cap": 30000000,
+          "cases": 17952,
+          "logical_pair_tokens": 29985465,
+          "macro_updates": 1122
+        },
+        {
+          "cap": 100000000,
+          "cases": 56912,
+          "logical_pair_tokens": 99824365,
+          "macro_updates": 3557
+        }
+      ]
+    },
+    "43": {
+      "cases": 56912,
+      "updates": 3557,
+      "logical_pair_tokens": 99824365,
+      "domains": {
+        "tools": 19959432,
+        "language": 19955655,
+        "arts": 19963675,
+        "retrieval": 19978138,
+        "knowledge": 19967465
+      },
+      "observations": [
+        {
+          "cap": 10000000,
+          "cases": 6112,
+          "logical_pair_tokens": 9988224,
+          "macro_updates": 382
+        },
+        {
+          "cap": 30000000,
+          "cases": 17456,
+          "logical_pair_tokens": 29990840,
+          "macro_updates": 1091
+        },
+        {
+          "cap": 100000000,
+          "cases": 56912,
+          "logical_pair_tokens": 99824365,
+          "macro_updates": 3557
+        }
+      ]
+    }
+  },
+  "seed42_43_same_multiset": true,
+  "actual_preparation_bytes": 2439673916,
+  "runtime": {
+    "cpu_affinity": [
+      172,
+      173,
+      174,
+      175
+    ],
+    "elapsed_seconds": 623.7405486158095,
+    "limits": {
+      "arrow_batch_rows": 256,
+      "candidate_cases_per_domain": 5000,
+      "cpus": 4,
+      "disk_bytes": 21474836480,
+      "free_reserve_bytes": 26843545600,
+      "max_anchor_roots": 512,
+      "max_candidate_fields": 1000000,
+      "rss_bytes": 8589934592,
+      "wall_seconds": 7200
+    },
+    "own_bytes_before_final_receipts": 2439660855,
+    "own_bytes_measurement_scope": "before_DATA_READY_and_COMPLETE; final_total_in_COMPLETE",
+    "peak_rss_bytes": 815398912
+  },
+  "mandatory_raw_token_readback": {
+    "all_old_root_siblings_retained": true,
+    "complete": true,
+    "dev_ready": true,
+    "exact_full_pair_cross_split_isolation": true,
+    "known_K1_zero_field_CE_gradient_fields": 0,
+    "known_fields_retokenized": 42678,
+    "model_run": false,
+    "old_roster_identity_gate_applied_to_every_dev_field": true,
+    "output_component_counts": {
+      "confirm:arts": 50,
+      "confirm:knowledge": 50,
+      "confirm:language": 50,
+      "confirm:retrieval": 50,
+      "confirm:tools": 50,
+      "select:arts": 75,
+      "select:knowledge": 75,
+      "select:language": 75,
+      "select:retrieval": 75,
+      "select:tools": 75,
+      "train:arts": 4971,
+      "train:knowledge": 4976,
+      "train:language": 4950,
+      "train:retrieval": 4937,
+      "train:tools": 4766
+    },
+    "recognized_native_closure_pairs_directly_verified": 28202,
+    "retained_original_fields_directly_reread": 48571,
+    "schedules": {
+      "42": {
+        "actual_forward_tokens": null,
+        "cases": 56912,
+        "family_case_exposures": {
+          "[\"ai2_arc/arc-challenge/challenge\"]": 830,
+          "[\"ai2_arc/arc-easy/challenge\"]": 742,
+          "[\"arct\"]": 774,
+          "[\"cicero\"]": 1254,
+          "[\"cloth\"]": 1056,
+          "[\"commonsense_qa\"]": 709,
+          "[\"corr2cause\"]": 1187,
+          "[\"cosmos_qa\"]": 805,
+          "[\"cycic_multiplechoice\"]": 1167,
+          "[\"dynasent/r1_votes\"]": 1236,
+          "[\"dynasent/r2_votes\"]": 1196,
+          "[\"fig-qa\"]": 777,
+          "[\"fol-nli\"]": 1200,
+          "[\"goal-step-wikihow/goal\"]": 1184,
+          "[\"goal-step-wikihow/order\"]": 1196,
+          "[\"goal-step-wikihow/step\"]": 1232,
+          "[\"google_wellformed_query\"]": 1198,
+          "[\"helpsteer3/edit_quality\"]": 1045,
+          "[\"helpsteer3/feedback\"]": 975,
+          "[\"helpsteer3/preference\"]": 1025,
+          "[\"hh-rlhf/harmless-base\"]": 1036,
+          "[\"hh-rlhf/helpful-base\"]": 1023,
+          "[\"hh-rlhf/helpful-online\"]": 1102,
+          "[\"hh-rlhf/helpful-rejection-sampled\"]": 1000,
+          "[\"intentgrasp/all\"]": 462,
+          "[\"lex_glue/case_hold\"]": 1194,
+          "[\"logical-entailment\"]": 793,
+          "[\"lonli\"]": 1197,
+          "[\"math_qa\"]": 792,
+          "[\"medmcqa\"]": 774,
+          "[\"medqa-usmle-4-options-hf\"]": 818,
+          "[\"moral_stories/full\"]": 1145,
+          "[\"mscinli\"]": 1198,
+          "[\"multilingual/massive\"]": 418,
+          "[\"multilingual/mtop\"]": 392,
+          "[\"naturallogic\"]": 764,
+          "[\"paradise\"]": 1220,
+          "[\"procedural-typed-decisions/arithmetic\"]": 760,
+          "[\"procedural-typed-decisions/entity_belief_tracking\"]": 785,
+          "[\"procedural-typed-decisions/event_state_reconstruction\"]": 1204,
+          "[\"procedural-typed-decisions/evidence_sufficiency\"]": 411,
+          "[\"procedural-typed-decisions/multi_view_adjudication\"]": 766,
+          "[\"procedural-typed-decisions/needle_retrieval\"]": 444,
+          "[\"procedural-typed-decisions/partial_observation_calibration\"]": 1156,
+          "[\"procedural-typed-decisions/policy_applicability\"]": 479,
+          "[\"procedural-typed-decisions/policy_under_uncertainty\"]": 445,
+          "[\"procedural-typed-decisions/record_aggregation\"]": 399,
+          "[\"procedural-typed-decisions/state_perturbation\"]": 532,
+          "[\"procedural-typed-decisions/table_lookup\"]": 417,
+          "[\"procedural-typed-decisions/taxonomy_routing\"]": 500,
+          "[\"prost\"]": 1125,
+          "[\"proto_qa/proto_qa\"]": 760,
+          "[\"qasc\"]": 710,
+          "[\"quail\"]": 1203,
+          "[\"ruletaker\"]": 734,
+          "[\"snli\"]": 1197,
+          "[\"social_i_qa\"]": 762,
+          "[\"spartqa-mchoice\"]": 718,
+          "[\"summarize_from_feedback/comparisons\"]": 1051,
+          "[\"unli\"]": 1178,
+          "[\"wanli\"]": 1124,
+          "[\"wikimedqa/medwiki\"]": 752,
+          "[\"wnut_17/wnut_17\"]": 1184
+        },
+        "logical_pair_tokens": 99824365,
+        "observations": [
+          {
+            "cap": 10000000,
+            "cases": 5840,
+            "logical_pair_tokens": 9988659,
+            "macro_updates": 365
+          },
+          {
+            "cap": 30000000,
+            "cases": 17952,
+            "logical_pair_tokens": 29985465,
+            "macro_updates": 1122
+          },
+          {
+            "cap": 100000000,
+            "cases": 56912,
+            "logical_pair_tokens": 99824365,
+            "macro_updates": 3557
+          }
+        ],
+        "static_two_pass_forward_tokens": 199648730
+      },
+      "43": {
+        "actual_forward_tokens": null,
+        "cases": 56912,
+        "family_case_exposures": {
+          "[\"ai2_arc/arc-challenge/challenge\"]": 830,
+          "[\"ai2_arc/arc-easy/challenge\"]": 742,
+          "[\"arct\"]": 774,
+          "[\"cicero\"]": 1254,
+          "[\"cloth\"]": 1056,
+          "[\"commonsense_qa\"]": 709,
+          "[\"corr2cause\"]": 1187,
+          "[\"cosmos_qa\"]": 805,
+          "[\"cycic_multiplechoice\"]": 1167,
+          "[\"dynasent/r1_votes\"]": 1236,
+          "[\"dynasent/r2_votes\"]": 1196,
+          "[\"fig-qa\"]": 777,
+          "[\"fol-nli\"]": 1200,
+          "[\"goal-step-wikihow/goal\"]": 1184,
+          "[\"goal-step-wikihow/order\"]": 1196,
+          "[\"goal-step-wikihow/step\"]": 1232,
+          "[\"google_wellformed_query\"]": 1198,
+          "[\"helpsteer3/edit_quality\"]": 1045,
+          "[\"helpsteer3/feedback\"]": 975,
+          "[\"helpsteer3/preference\"]": 1025,
+          "[\"hh-rlhf/harmless-base\"]": 1036,
+          "[\"hh-rlhf/helpful-base\"]": 1023,
+          "[\"hh-rlhf/helpful-online\"]": 1102,
+          "[\"hh-rlhf/helpful-rejection-sampled\"]": 1000,
+          "[\"intentgrasp/all\"]": 462,
+          "[\"lex_glue/case_hold\"]": 1194,
+          "[\"logical-entailment\"]": 793,
+          "[\"lonli\"]": 1197,
+          "[\"math_qa\"]": 792,
+          "[\"medmcqa\"]": 774,
+          "[\"medqa-usmle-4-options-hf\"]": 818,
+          "[\"moral_stories/full\"]": 1145,
+          "[\"mscinli\"]": 1198,
+          "[\"multilingual/massive\"]": 418,
+          "[\"multilingual/mtop\"]": 392,
+          "[\"naturallogic\"]": 764,
+          "[\"paradise\"]": 1220,
+          "[\"procedural-typed-decisions/arithmetic\"]": 760,
+          "[\"procedural-typed-decisions/entity_belief_tracking\"]": 785,
+          "[\"procedural-typed-decisions/event_state_reconstruction\"]": 1204,
+          "[\"procedural-typed-decisions/evidence_sufficiency\"]": 411,
+          "[\"procedural-typed-decisions/multi_view_adjudication\"]": 766,
+          "[\"procedural-typed-decisions/needle_retrieval\"]": 444,
+          "[\"procedural-typed-decisions/partial_observation_calibration\"]": 1156,
+          "[\"procedural-typed-decisions/policy_applicability\"]": 479,
+          "[\"procedural-typed-decisions/policy_under_uncertainty\"]": 445,
+          "[\"procedural-typed-decisions/record_aggregation\"]": 399,
+          "[\"procedural-typed-decisions/state_perturbation\"]": 532,
+          "[\"procedural-typed-decisions/table_lookup\"]": 417,
+          "[\"procedural-typed-decisions/taxonomy_routing\"]": 500,
+          "[\"prost\"]": 1125,
+          "[\"proto_qa/proto_qa\"]": 760,
+          "[\"qasc\"]": 710,
+          "[\"quail\"]": 1203,
+          "[\"ruletaker\"]": 734,
+          "[\"snli\"]": 1197,
+          "[\"social_i_qa\"]": 762,
+          "[\"spartqa-mchoice\"]": 718,
+          "[\"summarize_from_feedback/comparisons\"]": 1051,
+          "[\"unli\"]": 1178,
+          "[\"wanli\"]": 1124,
+          "[\"wikimedqa/medwiki\"]": 752,
+          "[\"wnut_17/wnut_17\"]": 1184
+        },
+        "logical_pair_tokens": 99824365,
+        "observations": [
+          {
+            "cap": 10000000,
+            "cases": 6112,
+            "logical_pair_tokens": 9988224,
+            "macro_updates": 382
+          },
+          {
+            "cap": 30000000,
+            "cases": 17456,
+            "logical_pair_tokens": 29990840,
+            "macro_updates": 1091
+          },
+          {
+            "cap": 100000000,
+            "cases": 56912,
+            "logical_pair_tokens": 99824365,
+            "macro_updates": 3557
+          }
+        ],
+        "static_two_pass_forward_tokens": 199648730
+      }
+    },
+    "scope": "actual original-coordinate/input/target/token/exposure readback, exact reviewed membership only",
+    "seed42_43_same_multiset_verified": true,
+    "train_ready": true,
+    "unknown_fields_retained_no_forward": 5893,
+    "unrestored_native_sibling_veto_pairs_verified": 0
+  },
+  "model_run": false,
+  "scope": "declared finite native snapshot and exact reviewed representation membership, not universal semantic/pretraining exclusion"
+}

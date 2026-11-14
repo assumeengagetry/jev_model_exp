@@ -1,0 +1,60 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-12T06:09:17.750214+00:00",
+  "elapsed_seconds": 608.7725604781881,
+  "code_binding": {
+    "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/CODE_BINDING.json",
+    "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/CODE_BINDING.json",
+    "bytes": 37753,
+    "mtime_ns": 1794463088348629555
+  },
+  "source_binding": {
+    "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/SOURCE_BINDING.json",
+    "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/SOURCE_BINDING.json",
+    "bytes": 95011,
+    "mtime_ns": 1794463182374747051
+  },
+  "files": [
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/case-graph.sqlite3",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/case-graph.sqlite3",
+      "bytes": 4636049408,
+      "mtime_ns": 1794463700528353786
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/validation-roster.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/validation-roster.jsonl",
+      "bytes": 7195869,
+      "mtime_ns": 1794463757107217042
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/parent-int64.bin",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/parent-int64.bin",
+      "bytes": 44494440,
+      "mtime_ns": 1794463757143216318
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/flags-uint8.bin",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/flags-uint8.bin",
+      "bytes": 5561805,
+      "mtime_ns": 1794463757251214148
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/SUMMARY.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/SUMMARY.json",
+      "bytes": 5032,
+      "mtime_ns": 1794463757743204261
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/RUNTIME.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-validation-audit-v2/RUNTIME.json",
+      "bytes": 272,
+      "mtime_ns": 1794463148975415870
+    }
+  ],
+  "final_free_scratch_bytes": 147990560768,
+  "own_file_bytes_before_receipt": 5544658796,
+  "model_run": false,
+  "public_score": null,
+  "final_selection_holdout_admitted": false
+}

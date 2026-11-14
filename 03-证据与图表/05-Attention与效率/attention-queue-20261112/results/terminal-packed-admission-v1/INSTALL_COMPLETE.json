@@ -1,0 +1,68 @@
+{
+  "D_confirm_opened": false,
+  "Torch_imported": false,
+  "budget": {
+    "active_old_controller_untouched": "/tmp/opencode/jev-clean-followup-staged-20261112-v2",
+    "all_old_files_retained": true,
+    "free_bytes": 163106312192,
+    "new_remaining_bytes": 5368627986,
+    "new_total_cap_bytes": 5368709120,
+    "new_usage": {
+      "cap_used_bytes": 81134,
+      "future_deduction_bytes": 81134
+    },
+    "old_arm_cap_bytes": 26843545600,
+    "old_completion_budget_release": false,
+    "old_evidence_bytes": 5368709120,
+    "old_remaining_bytes": {
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": 16575531957,
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": 18302598736
+    },
+    "old_usage": {
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": {
+        "cap_used_bytes": 10268013643,
+        "future_deduction_bytes": 10268013643
+      },
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": {
+        "cap_used_bytes": 8540946864,
+        "future_deduction_bytes": 8540946864
+      }
+    },
+    "required_free_bytes": 67090304279,
+    "shared_floor_bytes": 21474836480,
+    "system_wide_reservation": false
+  },
+  "complete": true,
+  "config": {
+    "bytes": 1079028,
+    "mtime_ns": 1794513153404335658,
+    "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/config.json",
+    "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/config.json"
+  },
+  "exact_byte_readback": true,
+  "main_reviewed_deployment_ready": true,
+  "model_forward_calls": 0,
+  "public_run": false,
+  "root": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1",
+  "source_binding": {
+    "bytes": 262055,
+    "mtime_ns": 1794513153392335900,
+    "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/SOURCE_SNAPSHOT.json",
+    "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/SOURCE_SNAPSHOT.json"
+  },
+  "source_files": [
+    {
+      "bytes": 42193,
+      "mtime_ns": 1794513153092341957,
+      "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/consumer.py",
+      "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/consumer.py"
+    },
+    {
+      "bytes": 38413,
+      "mtime_ns": 1794513153092341957,
+      "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/ops.py",
+      "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/ops.py"
+    }
+  ],
+  "workers_launched": false
+}

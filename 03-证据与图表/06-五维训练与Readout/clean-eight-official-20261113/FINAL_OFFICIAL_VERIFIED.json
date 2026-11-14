@@ -1,0 +1,523 @@
+{
+  "checked_utc": "2026-11-13T22:29:03.653023+00:00",
+  "root": "/home/dev/assumeengage/runs/jev-public-eight-fourway-20261113-v1",
+  "complete": true,
+  "all_eight_all_ok": true,
+  "all_original_order_payload_and_shard_bytes_independently_checked": true,
+  "no_model_or_evaluator_rerun": true,
+  "frozen_source_pins_and_bytes_unchanged": true,
+  "official_requests_per_weight": 140620,
+  "official_scored_per_weight": 140178,
+  "official_excluded_per_weight": 442,
+  "total_executed": 1124960,
+  "total_scored": 1121424,
+  "original_global_leases": {
+    "0": {
+      "same_original_inode": true,
+      "same_original_bytes": true,
+      "EXNB_available_after_actual_exit": true
+    },
+    "1": {
+      "same_original_inode": true,
+      "same_original_bytes": true,
+      "EXNB_available_after_actual_exit": true
+    },
+    "2": {
+      "same_original_inode": true,
+      "same_original_bytes": true,
+      "EXNB_available_after_actual_exit": true
+    },
+    "3": {
+      "same_original_inode": true,
+      "same_original_bytes": true,
+      "EXNB_available_after_actual_exit": true
+    }
+  },
+  "manager_exact_dead": true,
+  "all32_children_actual_wait_exit0_and_exact_dead": true,
+  "canonical_weight_proofs_passed": 32,
+  "started_utc": "2026-11-13T07:46:28.100458+00:00",
+  "completed_utc": "2026-11-13T22:24:31.528708+00:00",
+  "total_schedule_wall_seconds": 52683.42825,
+  "sum_weight_wall_seconds": 52671.05352627882,
+  "best": {
+    "arm": "C_P_BCE",
+    "decision_index": 14.42
+  },
+  "models": [
+    {
+      "arm": "C_P_CE",
+      "decision_index": 12.95,
+      "trained_layout": "packed",
+      "consumer_mode": "causal",
+      "executed": 140620,
+      "scored": 140178,
+      "status_counts": {
+        "ok": 140620
+      },
+      "scored_status_counts": {
+        "ok": 140178
+      },
+      "all_ok": true,
+      "wall_seconds": 6196.18221681891,
+      "wall_hms": "01:43:16",
+      "official_request_latency_ms": {
+        "median": 72.4,
+        "p95": 464.7,
+        "mean": 172.3
+      },
+      "original_order_full_payload_and_exact_shard_bytes_independently_checked": true,
+      "four_canonical393_proofs": [
+        {
+          "shard": 0,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 1,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 2,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 3,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        }
+      ],
+      "numeric_admission_note": "Original packed scientific evidence retained; this measurement is not production admission.",
+      "production_admission_performed": false
+    },
+    {
+      "arm": "JPAIR_P_BCE_RANK",
+      "decision_index": 13.6,
+      "trained_layout": "packed",
+      "consumer_mode": "causal",
+      "executed": 140620,
+      "scored": 140178,
+      "status_counts": {
+        "ok": 140620
+      },
+      "scored_status_counts": {
+        "ok": 140178
+      },
+      "all_ok": true,
+      "wall_seconds": 6238.4253916949965,
+      "wall_hms": "01:43:58",
+      "official_request_latency_ms": {
+        "median": 72.7,
+        "p95": 465.1,
+        "mean": 172.9
+      },
+      "original_order_full_payload_and_exact_shard_bytes_independently_checked": true,
+      "four_canonical393_proofs": [
+        {
+          "shard": 0,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 1,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 2,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 3,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        }
+      ],
+      "numeric_admission_note": "Original packed scientific evidence retained; this measurement is not production admission.",
+      "production_admission_performed": false
+    },
+    {
+      "arm": "C_P_BCE",
+      "decision_index": 14.42,
+      "trained_layout": "packed",
+      "consumer_mode": "causal",
+      "executed": 140620,
+      "scored": 140178,
+      "status_counts": {
+        "ok": 140620
+      },
+      "scored_status_counts": {
+        "ok": 140178
+      },
+      "all_ok": true,
+      "wall_seconds": 6197.25609339308,
+      "wall_hms": "01:43:17",
+      "official_request_latency_ms": {
+        "median": 72.5,
+        "p95": 464.9,
+        "mean": 172.5
+      },
+      "original_order_full_payload_and_exact_shard_bytes_independently_checked": true,
+      "four_canonical393_proofs": [
+        {
+          "shard": 0,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 1,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 2,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 3,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        }
+      ],
+      "numeric_admission_note": "Original packed scientific evidence retained; this measurement is not production admission.",
+      "production_admission_performed": false
+    },
+    {
+      "arm": "C_D_CE",
+      "decision_index": 13.07,
+      "trained_layout": "dense",
+      "consumer_mode": "causal",
+      "executed": 140620,
+      "scored": 140178,
+      "status_counts": {
+        "ok": 140620
+      },
+      "scored_status_counts": {
+        "ok": 140178
+      },
+      "all_ok": true,
+      "wall_seconds": 6223.086296475958,
+      "wall_hms": "01:43:43",
+      "official_request_latency_ms": {
+        "median": 72.8,
+        "p95": 464.6,
+        "mean": 172.8
+      },
+      "original_order_full_payload_and_exact_shard_bytes_independently_checked": true,
+      "four_canonical393_proofs": [
+        {
+          "shard": 0,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 1,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 2,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 3,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        }
+      ],
+      "numeric_admission_note": "SCIENTIFIC ONLY: dense-trained to packed; original numeric admission FAILED (34/375 cases); tolerance unchanged; not production/numerical-equivalence admission.",
+      "production_admission_performed": false
+    },
+    {
+      "arm": "C_D_BCE",
+      "decision_index": 12.83,
+      "trained_layout": "dense",
+      "consumer_mode": "causal",
+      "executed": 140620,
+      "scored": 140178,
+      "status_counts": {
+        "ok": 140620
+      },
+      "scored_status_counts": {
+        "ok": 140178
+      },
+      "all_ok": true,
+      "wall_seconds": 6189.959639317822,
+      "wall_hms": "01:43:10",
+      "official_request_latency_ms": {
+        "median": 72.3,
+        "p95": 464.4,
+        "mean": 172.1
+      },
+      "original_order_full_payload_and_exact_shard_bytes_independently_checked": true,
+      "four_canonical393_proofs": [
+        {
+          "shard": 0,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 1,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 2,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 3,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        }
+      ],
+      "numeric_admission_note": "SCIENTIFIC ONLY: dense-trained to packed; original numeric admission FAILED (34/375 cases); tolerance unchanged; not production/numerical-equivalence admission.",
+      "production_admission_performed": false
+    },
+    {
+      "arm": "BI_P_CE",
+      "decision_index": 3.09,
+      "trained_layout": "packed",
+      "consumer_mode": "bidirectional",
+      "executed": 140620,
+      "scored": 140178,
+      "status_counts": {
+        "ok": 140620
+      },
+      "scored_status_counts": {
+        "ok": 140178
+      },
+      "all_ok": true,
+      "wall_seconds": 6458.265030340059,
+      "wall_hms": "01:47:38",
+      "official_request_latency_ms": {
+        "median": 72.1,
+        "p95": 484.6,
+        "mean": 178.6
+      },
+      "original_order_full_payload_and_exact_shard_bytes_independently_checked": true,
+      "four_canonical393_proofs": [
+        {
+          "shard": 0,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 1,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 2,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 3,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        }
+      ],
+      "numeric_admission_note": "Original packed scientific evidence retained; this measurement is not production admission.",
+      "production_admission_performed": false
+    },
+    {
+      "arm": "PB_P_CE",
+      "decision_index": 2.59,
+      "trained_layout": "packed",
+      "consumer_mode": "prefix_block",
+      "executed": 140620,
+      "scored": 140178,
+      "status_counts": {
+        "ok": 140620
+      },
+      "scored_status_counts": {
+        "ok": 140178
+      },
+      "all_ok": true,
+      "wall_seconds": 7576.84415752301,
+      "wall_hms": "02:06:17",
+      "official_request_latency_ms": {
+        "median": 91.1,
+        "p95": 547.3,
+        "mean": 210.8
+      },
+      "original_order_full_payload_and_exact_shard_bytes_independently_checked": true,
+      "four_canonical393_proofs": [
+        {
+          "shard": 0,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 1,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 2,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 3,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        }
+      ],
+      "numeric_admission_note": "Original packed scientific evidence retained; this measurement is not production admission.",
+      "production_admission_performed": false
+    },
+    {
+      "arm": "STATE_NL_PB_P_CE",
+      "decision_index": 1.97,
+      "trained_layout": "packed",
+      "consumer_mode": "prefix_block",
+      "executed": 140620,
+      "scored": 140178,
+      "status_counts": {
+        "ok": 140620
+      },
+      "scored_status_counts": {
+        "ok": 140178
+      },
+      "all_ok": true,
+      "wall_seconds": 7591.034700714983,
+      "wall_hms": "02:06:31",
+      "official_request_latency_ms": {
+        "median": 91.2,
+        "p95": 547.9,
+        "mean": 211.2
+      },
+      "original_order_full_payload_and_exact_shard_bytes_independently_checked": true,
+      "four_canonical393_proofs": [
+        {
+          "shard": 0,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 1,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 2,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        },
+        {
+          "shard": 3,
+          "keys_compared": 393,
+          "weights_unchanged": true,
+          "native_realT_counters_complete": true,
+          "helper_flags_restored": true,
+          "hooks_remaining": 0
+        }
+      ],
+      "numeric_admission_note": "Original packed scientific evidence retained; this measurement is not production admission.",
+      "production_admission_performed": false
+    }
+  ],
+  "GPU_process_snapshot": "",
+  "storage_migration_of_remaining_old_frozen_dependencies": "not performed by this score audit; separate previously authorized follow-up, no score/input/source modification"
+}

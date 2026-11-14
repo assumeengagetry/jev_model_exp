@@ -1,0 +1,74 @@
+{
+  "stage": "first_wave_exited",
+  "arms": {
+    "C_D_BCE": {
+      "gpu": 0,
+      "process": {
+        "pid": 698850,
+        "starttime": "141818512",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "paused_at_cursor1",
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42",
+      "exit_code": 75,
+      "first_macro_committed": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/first-actual-macro/COMPLETE.json",
+      "checkpoint_markers": [
+        "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000000-s00001/COMPLETE.json",
+        "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      ]
+    },
+    "C_P_BCE": {
+      "gpu": 1,
+      "process": {
+        "pid": 698860,
+        "starttime": "141818527",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "paused_at_cursor1",
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42",
+      "exit_code": 75,
+      "first_macro_committed": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/first-actual-macro/COMPLETE.json",
+      "checkpoint_markers": [
+        "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000000-s00001/COMPLETE.json",
+        "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      ]
+    },
+    "C_D_CE": {
+      "gpu": 2,
+      "process": {
+        "pid": 698863,
+        "starttime": "141818542",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "paused_at_cursor1",
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42",
+      "exit_code": 75,
+      "first_macro_committed": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/first-actual-macro/COMPLETE.json",
+      "checkpoint_markers": [
+        "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000000-s00001/COMPLETE.json",
+        "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      ]
+    },
+    "C_P_CE": {
+      "gpu": 3,
+      "process": {
+        "pid": 698866,
+        "starttime": "141818556",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "paused_at_cursor1",
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42",
+      "exit_code": 75,
+      "first_macro_committed": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/first-actual-macro/COMPLETE.json",
+      "checkpoint_markers": [
+        "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000000-s00001/COMPLETE.json",
+        "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      ]
+    }
+  },
+  "execution_complete": true,
+  "all_paused_at_cursor1": true,
+  "automatic_continuation": false,
+  "primary_actual_macro_review_required": true,
+  "utc": "2026-11-12T12:57:53.816463+00:00"
+}

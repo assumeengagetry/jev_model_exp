@@ -1,0 +1,82 @@
+{
+  "complete": true,
+  "prepared_scan_complete": true,
+  "ready": false,
+  "allow_new_state_boundary_training": false,
+  "actual_original_and_sidecar_counts_verified": {
+    "train": {
+      "cases": 24600,
+      "fields": 47427,
+      "boundary_unavailable": 28676,
+      "known_fields": 41674,
+      "complete_candidates": 332663,
+      "logical_pair_tokens_once": 99607907,
+      "exact_state_boundary": 12998,
+      "masked_unknown_no_forward": 5753
+    },
+    "select": {
+      "cases": 375,
+      "fields": 705,
+      "exact_state_boundary": 188,
+      "known_fields": 615,
+      "complete_candidates": 5190,
+      "logical_pair_tokens_once": 1554484,
+      "boundary_unavailable": 427,
+      "masked_unknown_no_forward": 90
+    }
+  },
+  "primary_domain_cases": {
+    "train": {
+      "arts": 4971,
+      "knowledge": 4976,
+      "language": 4950,
+      "retrieval": 4937,
+      "tools": 4766
+    },
+    "select": {
+      "arts": 75,
+      "knowledge": 75,
+      "language": 75,
+      "retrieval": 75,
+      "tools": 75
+    }
+  },
+  "unavailable_known_field_reasons": {
+    "train:crossing_bpe": 28676,
+    "select:crossing_bpe": 427
+  },
+  "independent_full_prefix_ids_and_exact_character_offset_cut_verified": true,
+  "full_known_candidate_lengths_EOS_and_available_rows_reconstruction_verified": true,
+  "every_unknown_preserved_without_tokenization_or_candidate_reinterpretation": true,
+  "source_config_data_outputs_stat_and_source_bytes_verified": true,
+  "prepared_completion": {
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v1/prepared-01/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v1/prepared-01/COMPLETE.json",
+    "bytes": 1535,
+    "mtime_ns": 1794492180122535737
+  },
+  "producer_source": {
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v1/prepare_boundaries.py",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v1/prepare_boundaries.py",
+    "bytes": 18861,
+    "mtime_ns": 1794492079440666486
+  },
+  "primary_analysis_source": {
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v1/verify_prepared.py",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v1/verify_prepared.py",
+    "bytes": 9845,
+    "mtime_ns": 1794492206717973068
+  },
+  "config": {
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v1/projection-config.json",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v1/projection-config.json",
+    "bytes": 34109,
+    "mtime_ns": 1794492079444666402
+  },
+  "D_confirm_opened": false,
+  "model_run": false,
+  "torch_imported": false,
+  "public_run": false,
+  "actual_seconds": 47.503090291051194,
+  "verified_utc": "2026-11-12T14:04:14.262108+00:00"
+}

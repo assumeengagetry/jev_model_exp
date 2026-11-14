@@ -1,0 +1,11 @@
+{
+  "supported": false,
+  "prefix_length": 333,
+  "candidate_count": 2,
+  "suffix_lengths": [
+    11,
+    12
+  ],
+  "numerical_contract": "raw two-class logits, same frozen contract",
+  "cache_rejected": true
+}

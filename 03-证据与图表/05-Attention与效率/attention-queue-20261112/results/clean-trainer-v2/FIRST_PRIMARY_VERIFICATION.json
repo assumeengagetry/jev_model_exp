@@ -1,0 +1,270 @@
+{
+  "D_confirm_opened": false,
+  "D_select_opened": false,
+  "all_four_formal_macro0_verified": true,
+  "arms": {
+    "C_D_BCE": {
+      "393_actual_deltas_and_Adam_states_verified": true,
+      "393_raw_and_clipped_gradients_finite": true,
+      "actual_393_fp32_before_equal_shared_fresh_init": true,
+      "actual_cached_macro_loss_and_coefficients_recomputed_exactly": true,
+      "actual_completed_backward_real_tokens": 20947,
+      "actual_completed_forward_real_tokens": 41894,
+      "cached_logits_margins_replay_bitwise_equal": true,
+      "latest_cursor1_checkpoint_weights_match_actual_after": true,
+      "logical_pair_tokens_consumed": 20947,
+      "loss": 1.5607420206069946,
+      "macro0_consumed_exactly_once": true,
+      "preclip_l2": 140.72386169433594,
+      "resume_pin": {
+        "bytes": 535133,
+        "mtime_ns": 1794488271379768582,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "runtime": {
+        "backward_counter_scope": "autograd native backward invoked by each replay wave; not separately instrumented",
+        "execution": "native-FA3-full-row-no-SDPA-no-fork",
+        "forward": {
+          "train_first.attempted_real_tokens": 20947,
+          "train_first.attempted_tokenwise_rows_per_operator": 32696,
+          "train_first.attempted_waves": 3,
+          "train_first.completed_native_FA3_calls": 84,
+          "train_first.completed_real_tokens": 20947,
+          "train_first.completed_tokenwise_rows_per_operator": 32696,
+          "train_first.completed_waves": 3,
+          "train_replay.attempted_real_tokens": 20947,
+          "train_replay.attempted_tokenwise_rows_per_operator": 32696,
+          "train_replay.attempted_waves": 3,
+          "train_replay.backward_real_tokens": 20947,
+          "train_replay.completed_backward_waves": 3,
+          "train_replay.completed_native_FA3_calls": 84,
+          "train_replay.completed_real_tokens": 20947,
+          "train_replay.completed_tokenwise_rows_per_operator": 32696,
+          "train_replay.completed_waves": 3
+        },
+        "layout": "dense",
+        "mode": "causal",
+        "native_forward_calls": {
+          "attempted_calls": 168,
+          "attempted_query_tokens": 1173032,
+          "completed_calls": 168,
+          "completed_causal_calls": 168,
+          "completed_key_tokens": 1173032,
+          "completed_query_tokens": 1173032
+        },
+        "prefix_cache": false
+      },
+      "used_lr": 1.869158878504673e-07
+    },
+    "C_D_CE": {
+      "393_actual_deltas_and_Adam_states_verified": true,
+      "393_raw_and_clipped_gradients_finite": true,
+      "actual_393_fp32_before_equal_shared_fresh_init": true,
+      "actual_cached_macro_loss_and_coefficients_recomputed_exactly": true,
+      "actual_completed_backward_real_tokens": 20947,
+      "actual_completed_forward_real_tokens": 41894,
+      "cached_logits_margins_replay_bitwise_equal": true,
+      "latest_cursor1_checkpoint_weights_match_actual_after": true,
+      "logical_pair_tokens_consumed": 20947,
+      "loss": 1.1574784517288208,
+      "macro0_consumed_exactly_once": true,
+      "preclip_l2": 7.2549214363098145,
+      "resume_pin": {
+        "bytes": 535119,
+        "mtime_ns": 1794488270563785362,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "runtime": {
+        "backward_counter_scope": "autograd native backward invoked by each replay wave; not separately instrumented",
+        "execution": "native-FA3-full-row-no-SDPA-no-fork",
+        "forward": {
+          "train_first.attempted_real_tokens": 20947,
+          "train_first.attempted_tokenwise_rows_per_operator": 32696,
+          "train_first.attempted_waves": 3,
+          "train_first.completed_native_FA3_calls": 84,
+          "train_first.completed_real_tokens": 20947,
+          "train_first.completed_tokenwise_rows_per_operator": 32696,
+          "train_first.completed_waves": 3,
+          "train_replay.attempted_real_tokens": 20947,
+          "train_replay.attempted_tokenwise_rows_per_operator": 32696,
+          "train_replay.attempted_waves": 3,
+          "train_replay.backward_real_tokens": 20947,
+          "train_replay.completed_backward_waves": 3,
+          "train_replay.completed_native_FA3_calls": 84,
+          "train_replay.completed_real_tokens": 20947,
+          "train_replay.completed_tokenwise_rows_per_operator": 32696,
+          "train_replay.completed_waves": 3
+        },
+        "layout": "dense",
+        "mode": "causal",
+        "native_forward_calls": {
+          "attempted_calls": 168,
+          "attempted_query_tokens": 1173032,
+          "completed_calls": 168,
+          "completed_causal_calls": 168,
+          "completed_key_tokens": 1173032,
+          "completed_query_tokens": 1173032
+        },
+        "prefix_cache": false
+      },
+      "used_lr": 1.869158878504673e-07
+    },
+    "C_P_BCE": {
+      "393_actual_deltas_and_Adam_states_verified": true,
+      "393_raw_and_clipped_gradients_finite": true,
+      "actual_393_fp32_before_equal_shared_fresh_init": true,
+      "actual_cached_macro_loss_and_coefficients_recomputed_exactly": true,
+      "actual_completed_backward_real_tokens": 20947,
+      "actual_completed_forward_real_tokens": 41894,
+      "cached_logits_margins_replay_bitwise_equal": true,
+      "latest_cursor1_checkpoint_weights_match_actual_after": true,
+      "logical_pair_tokens_consumed": 20947,
+      "loss": 1.5607420206069946,
+      "macro0_consumed_exactly_once": true,
+      "preclip_l2": 140.72378540039062,
+      "resume_pin": {
+        "bytes": 535134,
+        "mtime_ns": 1794488268751822621,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "runtime": {
+        "backward_counter_scope": "autograd native backward invoked by each replay wave; not separately instrumented",
+        "execution": "native-FA3-full-row-no-SDPA-no-fork",
+        "forward": {
+          "train_first.attempted_real_tokens": 20947,
+          "train_first.attempted_tokenwise_rows_per_operator": 20947,
+          "train_first.attempted_waves": 3,
+          "train_first.completed_native_FA3_calls": 84,
+          "train_first.completed_real_tokens": 20947,
+          "train_first.completed_tokenwise_rows_per_operator": 20947,
+          "train_first.completed_waves": 3,
+          "train_replay.attempted_real_tokens": 20947,
+          "train_replay.attempted_tokenwise_rows_per_operator": 20947,
+          "train_replay.attempted_waves": 3,
+          "train_replay.backward_real_tokens": 20947,
+          "train_replay.completed_backward_waves": 3,
+          "train_replay.completed_native_FA3_calls": 84,
+          "train_replay.completed_real_tokens": 20947,
+          "train_replay.completed_tokenwise_rows_per_operator": 20947,
+          "train_replay.completed_waves": 3
+        },
+        "layout": "packed",
+        "mode": "causal",
+        "native_forward_calls": {
+          "attempted_calls": 168,
+          "attempted_query_tokens": 1173032,
+          "completed_calls": 168,
+          "completed_causal_calls": 168,
+          "completed_key_tokens": 1173032,
+          "completed_query_tokens": 1173032
+        },
+        "prefix_cache": false
+      },
+      "used_lr": 1.869158878504673e-07
+    },
+    "C_P_CE": {
+      "393_actual_deltas_and_Adam_states_verified": true,
+      "393_raw_and_clipped_gradients_finite": true,
+      "actual_393_fp32_before_equal_shared_fresh_init": true,
+      "actual_cached_macro_loss_and_coefficients_recomputed_exactly": true,
+      "actual_completed_backward_real_tokens": 20947,
+      "actual_completed_forward_real_tokens": 41894,
+      "cached_logits_margins_replay_bitwise_equal": true,
+      "latest_cursor1_checkpoint_weights_match_actual_after": true,
+      "logical_pair_tokens_consumed": 20947,
+      "loss": 1.1574784517288208,
+      "macro0_consumed_exactly_once": true,
+      "preclip_l2": 7.254909515380859,
+      "resume_pin": {
+        "bytes": 535120,
+        "mtime_ns": 1794488270887778699,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "runtime": {
+        "backward_counter_scope": "autograd native backward invoked by each replay wave; not separately instrumented",
+        "execution": "native-FA3-full-row-no-SDPA-no-fork",
+        "forward": {
+          "train_first.attempted_real_tokens": 20947,
+          "train_first.attempted_tokenwise_rows_per_operator": 20947,
+          "train_first.attempted_waves": 3,
+          "train_first.completed_native_FA3_calls": 84,
+          "train_first.completed_real_tokens": 20947,
+          "train_first.completed_tokenwise_rows_per_operator": 20947,
+          "train_first.completed_waves": 3,
+          "train_replay.attempted_real_tokens": 20947,
+          "train_replay.attempted_tokenwise_rows_per_operator": 20947,
+          "train_replay.attempted_waves": 3,
+          "train_replay.backward_real_tokens": 20947,
+          "train_replay.completed_backward_waves": 3,
+          "train_replay.completed_native_FA3_calls": 84,
+          "train_replay.completed_real_tokens": 20947,
+          "train_replay.completed_tokenwise_rows_per_operator": 20947,
+          "train_replay.completed_waves": 3
+        },
+        "layout": "packed",
+        "mode": "causal",
+        "native_forward_calls": {
+          "attempted_calls": 168,
+          "attempted_query_tokens": 1173032,
+          "completed_calls": 168,
+          "completed_causal_calls": 168,
+          "completed_key_tokens": 1173032,
+          "completed_query_tokens": 1173032
+        },
+        "prefix_cache": false
+      },
+      "used_lr": 1.869158878504673e-07
+    }
+  },
+  "complete": true,
+  "next_macro_index": 1,
+  "public_run": false,
+  "repeat_macro0_allowed": false,
+  "resume": {
+    "C_D_BCE": {
+      "checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000001-s00002",
+      "complete": {
+        "bytes": 535133,
+        "mtime_ns": 1794488271379768582,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "pin_file": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-resume-pin.json"
+    },
+    "C_D_CE": {
+      "checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000001-s00002",
+      "complete": {
+        "bytes": 535119,
+        "mtime_ns": 1794488270563785362,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "pin_file": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-resume-pin.json"
+    },
+    "C_P_BCE": {
+      "checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000001-s00002",
+      "complete": {
+        "bytes": 535134,
+        "mtime_ns": 1794488268751822621,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "pin_file": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-resume-pin.json"
+    },
+    "C_P_CE": {
+      "checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000001-s00002",
+      "complete": {
+        "bytes": 535120,
+        "mtime_ns": 1794488270887778699,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "pin_file": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-resume-pin.json"
+    }
+  },
+  "same_fresh_init_and_same_complete_case_micro_exposure": true
+}

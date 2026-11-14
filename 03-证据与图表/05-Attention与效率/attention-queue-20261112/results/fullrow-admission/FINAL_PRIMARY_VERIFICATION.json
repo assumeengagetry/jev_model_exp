@@ -1,0 +1,157 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-12T12:19:36.789950+00:00",
+  "modes": {
+    "causal": {
+      "all_128_logits_and_393_gradients_bitwise_equal": true,
+      "all_28_layers_realT_verified": true,
+      "same_native_dense_to_packed_logits_max_abs": 0.0,
+      "same_native_393_gradients_and_actual_steps_original_contract_pass": true,
+      "old_original_overall_complete": false,
+      "prefix_cached_serve_approved": false
+    },
+    "bidirectional": {
+      "all_128_logits_and_393_gradients_bitwise_equal": true,
+      "all_28_layers_realT_verified": true,
+      "same_native_dense_to_packed_logits_max_abs": 0.0,
+      "same_native_393_gradients_and_actual_steps_original_contract_pass": true,
+      "old_original_overall_complete": false,
+      "prefix_cached_serve_approved": false
+    },
+    "prefix_block": {
+      "all_128_logits_and_393_gradients_bitwise_equal": true,
+      "all_28_layers_realT_verified": true,
+      "same_native_dense_to_packed_logits_max_abs": 0.0,
+      "same_native_393_gradients_and_actual_steps_original_contract_pass": true,
+      "old_original_overall_complete": false,
+      "prefix_cached_serve_approved": false
+    }
+  },
+  "allow_training": true,
+  "admission_scope": "full-row native-FA3 scientific training only; not official serving, prefix-cache or geometry-invariant numerics",
+  "precision": {
+    "allow_tf32": true,
+    "allow_bf16_reduced_precision_reduction": true
+  },
+  "core_code_files": [
+    {
+      "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+      "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/__init__.py",
+      "bytes": 353,
+      "mtime_ns": 1794478843092492117
+    },
+    {
+      "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+      "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/fork.py",
+      "bytes": 4613,
+      "mtime_ns": 1794478843092492117
+    },
+    {
+      "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+      "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/layout.py",
+      "bytes": 11475,
+      "mtime_ns": 1794478843092492117
+    },
+    {
+      "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+      "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/model.py",
+      "bytes": 9558,
+      "mtime_ns": 1794478843092492117
+    },
+    {
+      "path": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+      "resolved": "/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask/runtime.py",
+      "bytes": 7589,
+      "mtime_ns": 1794478843092492117
+    }
+  ],
+  "evidence_files": [
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/RUN.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/RUN.json",
+      "bytes": 2259,
+      "mtime_ns": 1794485927407670900
+    },
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/CODE_BINDING.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/CODE_BINDING.json",
+      "bytes": 15131,
+      "mtime_ns": 1794485911823989624
+    },
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/DEPENDENCIES.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/DEPENDENCIES.json",
+      "bytes": 152570,
+      "mtime_ns": 1794485911863988806
+    },
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/causal/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/causal/COMPLETE.json",
+      "bytes": 384,
+      "mtime_ns": 1794485925471710494
+    },
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/causal/VJP_COMPARISON.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/causal/VJP_COMPARISON.json",
+      "bytes": 53579,
+      "mtime_ns": 1794485925447710985
+    },
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/causal/METRICS.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/causal/METRICS.json",
+      "bytes": 1281527,
+      "mtime_ns": 1794485925415711640
+    },
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/bidirectional/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/bidirectional/COMPLETE.json",
+      "bytes": 391,
+      "mtime_ns": 1794485925959700514
+    },
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/bidirectional/VJP_COMPARISON.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/bidirectional/VJP_COMPARISON.json",
+      "bytes": 53579,
+      "mtime_ns": 1794485925931701087
+    },
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/bidirectional/METRICS.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/bidirectional/METRICS.json",
+      "bytes": 1281523,
+      "mtime_ns": 1794485925895701823
+    },
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/prefix_block/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/prefix_block/COMPLETE.json",
+      "bytes": 390,
+      "mtime_ns": 1794485925991699860
+    },
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/prefix_block/VJP_COMPARISON.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/prefix_block/VJP_COMPARISON.json",
+      "bytes": 53579,
+      "mtime_ns": 1794485925963700432
+    },
+    {
+      "path": "/tmp/opencode/jev-fullrow-admission-20261112-v1/prefix_block/METRICS.json",
+      "resolved": "/tmp/opencode/jev-fullrow-admission-20261112-v1/prefix_block/METRICS.json",
+      "bytes": 1281525,
+      "mtime_ns": 1794485925931701087
+    },
+    {
+      "path": "/tmp/opencode/jev-padding-precision-20261112-v2/FINAL_PRIMARY_VERIFICATION.json",
+      "resolved": "/tmp/opencode/jev-padding-precision-20261112-v2/FINAL_PRIMARY_VERIFICATION.json",
+      "bytes": 9386,
+      "mtime_ns": 1794485758271130339
+    }
+  ],
+  "limitations": [
+    "existing solo/mixed frozen tolerance failures remain failures; original HF reproduces them",
+    "same-geometry proof covers original real128pair four-micro cohort and fixed equal-row/P/S neighbor pair, not all possible inputs",
+    "fresh init and first actual formal macro must still verify exact two-pass replay, 393 finite gradients and actual optimizer evidence",
+    "D_confirm/public and official single-GPU latency are not admitted by this file",
+    "prefix_block cached fork is still unaccepted; use full-row native for dev until separate serving admission"
+  ],
+  "weight_updates_in_new_probe": 0,
+  "public_score": null
+}

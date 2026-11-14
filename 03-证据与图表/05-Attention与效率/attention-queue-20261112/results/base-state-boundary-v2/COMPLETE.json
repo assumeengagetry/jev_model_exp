@@ -1,0 +1,46 @@
+{
+  "D_confirm_opened": false,
+  "boundary_policy": "state-plus-one-existing-newline-v2",
+  "complete": true,
+  "config": {
+    "bytes": 35287,
+    "mtime_ns": 1794492949294713160,
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v2/projection-config.json",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v2/projection-config.json"
+  },
+  "files": [
+    {
+      "bytes": 34533,
+      "mtime_ns": 1794493051640613535,
+      "path": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/PREPARATION.json",
+      "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/PREPARATION.json"
+    },
+    {
+      "bytes": 357007,
+      "mtime_ns": 1794493001125649919,
+      "path": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/select-boundaries.jsonl",
+      "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/select-boundaries.jsonl"
+    },
+    {
+      "bytes": 23488644,
+      "mtime_ns": 1794493000433664115,
+      "path": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/train-boundaries.jsonl",
+      "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/train-boundaries.jsonl"
+    },
+    {
+      "bytes": 0,
+      "mtime_ns": 1794492951122675664,
+      "path": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/unavailable-known-fields.jsonl",
+      "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/unavailable-known-fields.jsonl"
+    }
+  ],
+  "model_run": false,
+  "ready": true,
+  "source": {
+    "bytes": 19094,
+    "mtime_ns": 1794492949294713160,
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepare_boundaries.py",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepare_boundaries.py"
+  },
+  "version": "base-state-boundary-fixed-separator-v2"
+}

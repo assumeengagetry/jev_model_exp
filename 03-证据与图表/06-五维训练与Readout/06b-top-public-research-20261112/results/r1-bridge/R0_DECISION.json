@@ -1,0 +1,589 @@
+{
+  "advance_r1": true,
+  "r0_all_condition_rows_verified": 18750,
+  "paired_kd_step0_rows": {
+    "A": 1250,
+    "B": 1250,
+    "C": 1250
+  },
+  "r0_files": [
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/COMPLETE.json",
+      "bytes": 2400,
+      "mtime_ns": 1794458082574342447
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/SUMMARY.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/SUMMARY.json",
+      "bytes": 72578,
+      "mtime_ns": 1794458082570342529
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/SOURCE_BINDING.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/SOURCE_BINDING.json",
+      "bytes": 90606,
+      "mtime_ns": 1794457813695838058
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/DATA_READY.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/DATA_READY.json",
+      "bytes": 15214,
+      "mtime_ns": 1794457820823692391
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/CODE_BINDING.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/CODE_BINDING.json",
+      "bytes": 104306,
+      "mtime_ns": 1794457799484128489
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/data/diagnostic.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/data/diagnostic.jsonl",
+      "bytes": 6237974,
+      "mtime_ns": 1794457820787693126
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/adapter_config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/adapter_config.json",
+      "bytes": 1174,
+      "mtime_ns": 1794424559101739350
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/adapter_model.safetensors",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/adapter_model.safetensors",
+      "bytes": 80800744,
+      "mtime_ns": 1794424559097739432
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/added_tokens.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/added_tokens.json",
+      "bytes": 707,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/chat_template.jinja",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/chat_template.jinja",
+      "bytes": 4168,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/config.json",
+      "bytes": 1566,
+      "mtime_ns": 1794424559101739350
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/merges.txt",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1794237132591468028
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/special_tokens_map.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/special_tokens_map.json",
+      "bytes": 613,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/tokenizer.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1794237132659466634
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/tokenizer_config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/tokenizer_config.json",
+      "bytes": 5404,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/vocab.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_final/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1794237132547468931
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/adapter_config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/adapter_config.json",
+      "bytes": 1174,
+      "mtime_ns": 1794419235130152544
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/adapter_model.safetensors",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/adapter_model.safetensors",
+      "bytes": 80800744,
+      "mtime_ns": 1794419235130152544
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/added_tokens.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/added_tokens.json",
+      "bytes": 707,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/chat_template.jinja",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/chat_template.jinja",
+      "bytes": 4168,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/config.json",
+      "bytes": 1566,
+      "mtime_ns": 1794419235134152464
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/merges.txt",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1794237132591468028
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/special_tokens_map.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/special_tokens_map.json",
+      "bytes": 613,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/tokenizer.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1794237132659466634
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/tokenizer_config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/tokenizer_config.json",
+      "bytes": 5404,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/vocab.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step0/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1794237132547468931
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/adapter_config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/adapter_config.json",
+      "bytes": 1174,
+      "mtime_ns": 1794419644785979378
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/adapter_model.safetensors",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/adapter_model.safetensors",
+      "bytes": 80800744,
+      "mtime_ns": 1794419644785979378
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/added_tokens.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/added_tokens.json",
+      "bytes": 707,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/chat_template.jinja",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/chat_template.jinja",
+      "bytes": 4168,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/config.json",
+      "bytes": 1566,
+      "mtime_ns": 1794419644785979378
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/merges.txt",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1794237132591468028
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/special_tokens_map.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/special_tokens_map.json",
+      "bytes": 613,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/tokenizer.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1794237132659466634
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/tokenizer_config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/tokenizer_config.json",
+      "bytes": 5404,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/vocab.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/high_step1000/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1794237132547468931
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/adapter_config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/adapter_config.json",
+      "bytes": 1143,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/adapter_model.safetensors",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/adapter_model.safetensors",
+      "bytes": 80800744,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/added_tokens.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/added_tokens.json",
+      "bytes": 707,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/chat_template.jinja",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/chat_template.jinja",
+      "bytes": 4168,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/config.json",
+      "bytes": 1566,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/merges.txt",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1794237132591468028
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/special_tokens_map.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/special_tokens_map.json",
+      "bytes": 613,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/tokenizer.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1794237132659466634
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/tokenizer_config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/tokenizer_config.json",
+      "bytes": 5404,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/vocab.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/kd/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1794237132547468931
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/adapter_config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/adapter_config.json",
+      "bytes": 1174,
+      "mtime_ns": 1794256580554674977
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/adapter_model.safetensors",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/adapter_model.safetensors",
+      "bytes": 80800744,
+      "mtime_ns": 1794256580554674977
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/added_tokens.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/added_tokens.json",
+      "bytes": 707,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/chat_template.jinja",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/chat_template.jinja",
+      "bytes": 4168,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/config.json",
+      "bytes": 1566,
+      "mtime_ns": 1794256580558674895
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/merges.txt",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/merges.txt",
+      "bytes": 1671853,
+      "mtime_ns": 1794237132591468028
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/special_tokens_map.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/special_tokens_map.json",
+      "bytes": 613,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/tokenizer.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/tokenizer.json",
+      "bytes": 11422654,
+      "mtime_ns": 1794237132659466634
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/tokenizer_config.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/tokenizer_config.json",
+      "bytes": 5404,
+      "mtime_ns": 1794237132527469341
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/vocab.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/models/old_joint/vocab.json",
+      "bytes": 2776833,
+      "mtime_ns": 1794237132547468931
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/A.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/A.jsonl",
+      "bytes": 564454,
+      "mtime_ns": 1794457886742345205
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/B.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/B.jsonl",
+      "bytes": 610452,
+      "mtime_ns": 1794457961140824610
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/C.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/C.jsonl",
+      "bytes": 731894,
+      "mtime_ns": 1794457961140824610
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/METRICS.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/METRICS.json",
+      "bytes": 12007,
+      "mtime_ns": 1794457961456818151
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/RUNTIME.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/RUNTIME.json",
+      "bytes": 7612,
+      "mtime_ns": 1794457961460818069
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/COMPLETE.json",
+      "bytes": 1948,
+      "mtime_ns": 1794457961480817660
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/A.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/A.jsonl",
+      "bytes": 572768,
+      "mtime_ns": 1794457886006360248
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/B.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/B.jsonl",
+      "bytes": 618700,
+      "mtime_ns": 1794457961648814227
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/C.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/C.jsonl",
+      "bytes": 741302,
+      "mtime_ns": 1794457961648814227
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/METRICS.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/METRICS.json",
+      "bytes": 11946,
+      "mtime_ns": 1794457961988807277
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/RUNTIME.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/RUNTIME.json",
+      "bytes": 7619,
+      "mtime_ns": 1794457961996807114
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/COMPLETE.json",
+      "bytes": 2026,
+      "mtime_ns": 1794457962016806705
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/A.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/A.jsonl",
+      "bytes": 574454,
+      "mtime_ns": 1794457886570348721
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/B.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/B.jsonl",
+      "bytes": 620452,
+      "mtime_ns": 1794457961048826490
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/C.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/C.jsonl",
+      "bytes": 741894,
+      "mtime_ns": 1794457961048826490
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/METRICS.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/METRICS.json",
+      "bytes": 12007,
+      "mtime_ns": 1794457961372819868
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/RUNTIME.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/RUNTIME.json",
+      "bytes": 7620,
+      "mtime_ns": 1794457961376819786
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/COMPLETE.json",
+      "bytes": 2036,
+      "mtime_ns": 1794457961404819214
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/A.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/A.jsonl",
+      "bytes": 600299,
+      "mtime_ns": 1794457887054338830
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/B.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/B.jsonl",
+      "bytes": 647467,
+      "mtime_ns": 1794457962244802045
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/C.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/C.jsonl",
+      "bytes": 747026,
+      "mtime_ns": 1794457962244802045
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/METRICS.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/METRICS.json",
+      "bytes": 12346,
+      "mtime_ns": 1794457962680793134
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/RUNTIME.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/RUNTIME.json",
+      "bytes": 7620,
+      "mtime_ns": 1794457962684793052
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/COMPLETE.json",
+      "bytes": 2069,
+      "mtime_ns": 1794457962704792644
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/A.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/A.jsonl",
+      "bytes": 568336,
+      "mtime_ns": 1794458000724015541
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/B.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/B.jsonl",
+      "bytes": 616955,
+      "mtime_ns": 1794458076018476459
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/C.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/C.jsonl",
+      "bytes": 738335,
+      "mtime_ns": 1794458076018476459
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/METRICS.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/METRICS.json",
+      "bytes": 12194,
+      "mtime_ns": 1794458076338469918
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/RUNTIME.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/RUNTIME.json",
+      "bytes": 7618,
+      "mtime_ns": 1794458076346469755
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/COMPLETE.json",
+      "bytes": 2037,
+      "mtime_ns": 1794458076370469264
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/inference/fused_kernels.py",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/inference/fused_kernels.py",
+      "bytes": 6646,
+      "mtime_ns": 1794457799480128571
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/inference/kernel_engine.py",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/inference/kernel_engine.py",
+      "bytes": 11362,
+      "mtime_ns": 1794457799480128571
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/inference/kernel_model.py",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/inference/kernel_model.py",
+      "bytes": 6725,
+      "mtime_ns": 1794457799480128571
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/inference/kernel_runtime.py",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/inference/kernel_runtime.py",
+      "bytes": 9128,
+      "mtime_ns": 1794457799480128571
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/prepare_r0.py",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/prepare_r0.py",
+      "bytes": 9953,
+      "mtime_ns": 1794457799480128571
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/r0_metrics.py",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/r0_metrics.py",
+      "bytes": 3071,
+      "mtime_ns": 1794457799480128571
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/r0_worker.py",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/r0_worker.py",
+      "bytes": 15790,
+      "mtime_ns": 1794457799480128571
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/research_common.py",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/research_common.py",
+      "bytes": 5626,
+      "mtime_ns": 1794457799480128571
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/run_r0.py",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/code/run_r0.py",
+      "bytes": 9720,
+      "mtime_ns": 1794457799480128571
+    }
+  ],
+  "observations": {
+    "high_final_C_normalized_nll": 1.0033159580744144,
+    "high_final_C_balanced_target_mass": 0.3532047215998871,
+    "old_joint_C_balanced_target_mass": 0.6778790953634981
+  },
+  "interpretation": "FP32 reduces residual ties/order sensitivity but does not restore discrimination; proceed same-four-rank LR2e-5 bridge, not a unique-cause or new-public claim.",
+  "decision_rule_scope": "Post-R0 engineering interpretation of already inspected diagnostics; not a preregistered significance test.",
+  "created_utc": "2026-11-12T05:07:54.841799+00:00"
+}

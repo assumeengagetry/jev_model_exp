@@ -1,0 +1,166 @@
+{
+  "393_initial_tensors_bitwise_equal_old_v2": true,
+  "B_exactly_zero": true,
+  "CUDA_initialized": false,
+  "D_confirm_opened": false,
+  "active_served_parameters": 616237056,
+  "actual_saved_fp32_tensor_keys": 393,
+  "analysis_source": {
+    "bytes": 3758,
+    "mtime_ns": 1794497542457047160,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/fresh-compare-analysis.py",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/fresh-compare-analysis.py"
+  },
+  "bootstrap_source": {
+    "bytes": 10888,
+    "mtime_ns": 1794497532677246281,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/ops/freeze_fresh.py",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/ops/freeze_fresh.py"
+  },
+  "complete": true,
+  "construction": {
+    "active_head_shape": [
+      2,
+      1024
+    ],
+    "alpha": 64,
+    "bias": "none",
+    "dropout": 0.0,
+    "eos": 151645,
+    "id2label": {
+      "0": "not_match",
+      "1": "match"
+    },
+    "loader_attention": "eager-construction-only",
+    "modules_to_save": [
+      "score"
+    ],
+    "num_labels": 2,
+    "pad": 151643,
+    "r": 32,
+    "stock": "/home/dev/assumeengage/models/Qwen3-0.6B",
+    "stock_dtype": "torch.bfloat16",
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "task_type": "SEQ_CLS",
+    "trainable_dtype": "torch.float32"
+  },
+  "deployment": {
+    "bytes": 195714,
+    "mtime_ns": 1794497532681246199,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/DEPLOYMENT.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/DEPLOYMENT.json"
+  },
+  "final_config": {
+    "bytes": 10925,
+    "mtime_ns": 1794497543905017678,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/seed42.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/seed42.json"
+  },
+  "head_shape": [
+    2,
+    1024
+  ],
+  "independently_generated_before_old_oracle_load": true,
+  "lora_pairs": 196,
+  "model_forward_calls": 0,
+  "new_init_complete": {
+    "bytes": 3126,
+    "mtime_ns": 1794497541565065322,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/init-seed42/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/init-seed42/COMPLETE.json"
+  },
+  "new_manifest": {
+    "bytes": 297795,
+    "mtime_ns": 1794497541145073873,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/init-seed42/FRESH_MANIFEST.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/init-seed42/FRESH_MANIFEST.json"
+  },
+  "old_oracle_complete": {
+    "bytes": 2892,
+    "mtime_ns": 1794488239728419454,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/init-seed42/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/init-seed42/COMPLETE.json"
+  },
+  "old_oracle_manifest": {
+    "bytes": 241750,
+    "mtime_ns": 1794488239292428419,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/init-seed42/FRESH_MANIFEST.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/init-seed42/FRESH_MANIFEST.json"
+  },
+  "old_project_trained_adapter_head_optimizer_teacher_loaded": false,
+  "optimizer_steps": 0,
+  "public_run": false,
+  "trainable_parameters": 20187136,
+  "trainer_files": [
+    {
+      "bytes": 18622,
+      "mtime_ns": 1794497532673246363,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/bindings.py",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/bindings.py"
+    },
+    {
+      "bytes": 13047,
+      "mtime_ns": 1794497532673246363,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/fresh_init.py",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/fresh_init.py"
+    },
+    {
+      "bytes": 13943,
+      "mtime_ns": 1794497532673246363,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/case_runtime.py",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/case_runtime.py"
+    },
+    {
+      "bytes": 8119,
+      "mtime_ns": 1794497532673246363,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/objectives.py",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/objectives.py"
+    },
+    {
+      "bytes": 15779,
+      "mtime_ns": 1794497532673246363,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/model_runtime.py",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/model_runtime.py"
+    },
+    {
+      "bytes": 14908,
+      "mtime_ns": 1794497532673246363,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/checkpoints.py",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/checkpoints.py"
+    },
+    {
+      "bytes": 24679,
+      "mtime_ns": 1794497532673246363,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/train_case.py",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/train_case.py"
+    },
+    {
+      "bytes": 13001,
+      "mtime_ns": 1794497532673246363,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/evaluate_native_dev.py",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/evaluate_native_dev.py"
+    },
+    {
+      "bytes": 22178,
+      "mtime_ns": 1794497532677246281,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/state_boundaries.py",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/source/state_boundaries.py"
+    }
+  ],
+  "training_launched": false,
+  "archive_kind": "aggregate-view-trainer-sourcebytes-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/FRESH_PRIMARY_VERIFICATION.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/FRESH_PRIMARY_VERIFICATION.json",
+    "bytes": 197992,
+    "mtime_ns": 1794497543985016049
+  }
+}

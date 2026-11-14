@@ -1,0 +1,101 @@
+{
+  "execution_complete": true,
+  "workers": {
+    "tf32-1-bf16red-1": {
+      "gpu": 0,
+      "process": {
+        "pid": 695819,
+        "starttime": "141506477",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "executed",
+      "exit_code": 0,
+      "receipt": {
+        "execution_complete": true,
+        "tf32": true,
+        "bf16_reduction": true,
+        "modes": [
+          "causal",
+          "bidirectional",
+          "prefix_block"
+        ],
+        "learning_updates": 0,
+        "public_scored": false,
+        "elapsed_seconds": 5.726696002995595
+      }
+    },
+    "tf32-0-bf16red-1": {
+      "gpu": 1,
+      "process": {
+        "pid": 695822,
+        "starttime": "141506493",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "executed",
+      "exit_code": 0,
+      "receipt": {
+        "execution_complete": true,
+        "tf32": false,
+        "bf16_reduction": true,
+        "modes": [
+          "causal",
+          "bidirectional",
+          "prefix_block"
+        ],
+        "learning_updates": 0,
+        "public_scored": false,
+        "elapsed_seconds": 5.752129544969648
+      }
+    },
+    "tf32-1-bf16red-0": {
+      "gpu": 2,
+      "process": {
+        "pid": 695825,
+        "starttime": "141506513",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "executed",
+      "exit_code": 0,
+      "receipt": {
+        "execution_complete": true,
+        "tf32": true,
+        "bf16_reduction": false,
+        "modes": [
+          "causal",
+          "bidirectional",
+          "prefix_block"
+        ],
+        "learning_updates": 0,
+        "public_scored": false,
+        "elapsed_seconds": 5.664115346968174
+      }
+    },
+    "tf32-0-bf16red-0": {
+      "gpu": 3,
+      "process": {
+        "pid": 695835,
+        "starttime": "141506530",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "executed",
+      "exit_code": 0,
+      "receipt": {
+        "execution_complete": true,
+        "tf32": false,
+        "bf16_reduction": false,
+        "modes": [
+          "causal",
+          "bidirectional",
+          "prefix_block"
+        ],
+        "learning_updates": 0,
+        "public_scored": false,
+        "elapsed_seconds": 5.590630508959293
+      }
+    }
+  },
+  "all_executed": true,
+  "new_public_score": null,
+  "learning_updates": 0,
+  "utc": "2026-11-12T12:05:39.093949+00:00"
+}

@@ -1,0 +1,85 @@
+{
+  "automatic_resume": false,
+  "cleanup": [],
+  "complete": false,
+  "error": "Known old BI/PB + BOTH new arms + evidence/shared floor cannot fit: {\"free_bytes\": 115269525504, \"outstanding\": {\"/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42\": 25944813841, \"/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42\": 25944728926, \"/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42\": 18332086689, \"/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42\": 19314210903}, \"required_bytes\": 116379385959}",
+  "error_type": "RuntimeError",
+  "owner": {
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+    "pid": 735518,
+    "starttime": "143180023"
+  },
+  "partial_preserved": true,
+  "public_run": false,
+  "traceback": "Traceback (most recent call last):\n  File \"/tmp/opencode/jev-clean-trainer-20261112-followup-v1/ops/side_queue.py\", line 843, in run\n    authorization = self.approval(bindings, pin(ROOT / 'PRIMARY_READY.json'))\n  File \"/tmp/opencode/jev-clean-trainer-20261112-followup-v1/ops/side_queue.py\", line 659, in approval\n    self.guard()\n  File \"/tmp/opencode/jev-clean-trainer-20261112-followup-v1/ops/side_queue.py\", line 356, in guard\n    return disk_budget(self.disk_done)\n  File \"/tmp/opencode/jev-clean-trainer-20261112-followup-v1/ops/side_queue.py\", line 215, in disk_budget\n    require(free >= required, 'Known old BI/PB + BOTH new arms + evidence/shared floor cannot fit: ' +\n  File \"/tmp/opencode/jev-clean-trainer-20261112-followup-v1/ops/side_queue.py\", line 41, in require\n    raise RuntimeError(message)\nRuntimeError: Known old BI/PB + BOTH new arms + evidence/shared floor cannot fit: {\"free_bytes\": 115269525504, \"outstanding\": {\"/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42\": 25944813841, \"/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42\": 25944728926, \"/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42\": 18332086689, \"/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42\": 19314210903}, \"required_bytes\": 116379385959}\n",
+  "workers": [
+    {
+      "actual_wait_complete": true,
+      "arm": "STATE_NL_PB_P_CE",
+      "created": true,
+      "exit_code": 75,
+      "gpu": 2,
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42",
+      "phase": "first",
+      "process": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 735550,
+        "starttime": "143180743"
+      },
+      "uuid": "GPU-16c2eecc-d93f-08f7-e1b0-13d23ffd23d0",
+      "wait_error": null,
+      "wait_note": null
+    },
+    {
+      "actual_wait_complete": true,
+      "arm": "JPAIR_P_BCE_RANK",
+      "created": true,
+      "exit_code": 75,
+      "gpu": 3,
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42",
+      "phase": "first",
+      "process": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 735559,
+        "starttime": "143180855"
+      },
+      "uuid": "GPU-52480c01-119c-f065-33d8-cb016eac9c39",
+      "wait_error": null,
+      "wait_note": null
+    },
+    {
+      "actual_wait_complete": true,
+      "arm": "STATE_NL_PB_P_CE",
+      "created": true,
+      "exit_code": 0,
+      "gpu": null,
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42",
+      "phase": "primary",
+      "process": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 735673,
+        "starttime": "143184149"
+      },
+      "uuid": null,
+      "wait_error": null,
+      "wait_note": null
+    },
+    {
+      "actual_wait_complete": true,
+      "arm": "JPAIR_P_BCE_RANK",
+      "created": true,
+      "exit_code": 0,
+      "gpu": null,
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42",
+      "phase": "primary",
+      "process": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 735738,
+        "starttime": "143185890"
+      },
+      "uuid": null,
+      "wait_error": null,
+      "wait_note": null
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "incomplete_reasons": [],
+  "minimum_legal_compiled_cases_per_domain": 2500,
+  "train_ready": true,
+  "verification": {
+    "bytes": 6215,
+    "mtime_ns": 1794484736756033349,
+    "path": "/tmp/opencode/jev-clean-origin-20261112-v1/prepared-01/FINAL_VERIFICATION.json",
+    "resolved": "/tmp/opencode/jev-clean-origin-20261112-v1/prepared-01/FINAL_VERIFICATION.json"
+  }
+}

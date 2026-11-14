@@ -1,0 +1,1715 @@
+{
+  "models": {
+    "kd": {
+      "conditions": {
+        "A": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.6347796473021792,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.7143239557845098,
+              "target_mass_at_argmax": 0.6859999999999999,
+              "margin_centered_rms": 1.060065450120643,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.7
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.0426056759601712,
+              "target_mass_at_argmax": 0.66,
+              "margin_centered_rms": 0.7117829132080078,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.66
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 0.751855852007933,
+              "target_mass_at_argmax": 0.5993598069680975,
+              "margin_centered_rms": 0.8145221655564922,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.6020408163265306
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.8521789921678576,
+              "target_mass_at_argmax": 0.5769422285782244,
+              "margin_centered_rms": 0.8788477632286732,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.5888888888888889
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.4900135546819804,
+              "target_mass_at_argmax": 0.66,
+              "margin_centered_rms": 1.708004880339685,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.66
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.3655258818686149,
+              "target_mass_at_argmax": 0.8443764410433287,
+              "margin_centered_rms": 2.8228924649093967,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.8491620111731844
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.8248954970575919,
+              "target_mass_at_argmax": 0.5311111111111111,
+              "margin_centered_rms": 1.390359054661424,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.56
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.7161159012149539,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 0.879299684085309,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.864140523634648,
+              "target_mass_at_argmax": 0.5666666666666667,
+              "margin_centered_rms": 0.7429573886208544,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.5666666666666667
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.5745934530256628,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 1.5303670975397887,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.23189991853918418,
+              "target_mass_at_argmax": 0.8636684027182805,
+              "margin_centered_rms": 3.0360818101915497,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.8888888888888888
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.9933333333333333,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        },
+        "B": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.6338080108046895,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.7131524564251586,
+              "target_mass_at_argmax": 0.6709999999999999,
+              "margin_centered_rms": 1.0582744829527737,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.6842105263157895
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.040261283958973,
+              "target_mass_at_argmax": 0.65,
+              "margin_centered_rms": 0.7146009063720703,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.65
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 0.7505132426438103,
+              "target_mass_at_argmax": 0.5993598069680975,
+              "margin_centered_rms": 0.8147382914961392,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.6020408163265306
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.8505664334575482,
+              "target_mass_at_argmax": 0.5769422285782244,
+              "margin_centered_rms": 0.8770997407299034,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.5888888888888889
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.4922394297802964,
+              "target_mass_at_argmax": 0.665,
+              "margin_centered_rms": 1.7051161143472542,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.665
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.36256849171663386,
+              "target_mass_at_argmax": 0.8443764410433287,
+              "margin_centered_rms": 2.821493419282155,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.8491620111731844
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.825684497289502,
+              "target_mass_at_argmax": 0.5311111111111111,
+              "margin_centered_rms": 1.3886191803570422,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.56
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.7158416433655959,
+              "target_mass_at_argmax": 0.6333333333333333,
+              "margin_centered_rms": 0.8788131740871886,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6333333333333333
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.8662779845001582,
+              "target_mass_at_argmax": 0.5666666666666667,
+              "margin_centered_rms": 0.7428799249390511,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.5666666666666667
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.5710056500049886,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 1.5357131192775026,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.2205303677075195,
+              "target_mass_at_argmax": 0.8636684027182805,
+              "margin_centered_rms": 3.029547742264387,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.8888888888888888
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.9866666666666667,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        },
+        "C": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.6338164669674365,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.7131590245752348,
+              "target_mass_at_argmax": 0.6709999999999999,
+              "margin_centered_rms": 1.058576487389787,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.6842105263157895
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.0403047915309858,
+              "target_mass_at_argmax": 0.65,
+              "margin_centered_rms": 0.714800672903657,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.65
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 0.7505408430640514,
+              "target_mass_at_argmax": 0.5993598069680975,
+              "margin_centered_rms": 0.8149362017172234,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.6020408163265306
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.8505305530731734,
+              "target_mass_at_argmax": 0.5769422285782244,
+              "margin_centered_rms": 0.877290900682319,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.5888888888888889
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.4922719442103019,
+              "target_mass_at_argmax": 0.665,
+              "margin_centered_rms": 1.7053439443251088,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.665
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.3625799699144213,
+              "target_mass_at_argmax": 0.8443764410433287,
+              "margin_centered_rms": 2.8218981071657536,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.8491620111731844
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.8258146687348424,
+              "target_mass_at_argmax": 0.5311111111111111,
+              "margin_centered_rms": 1.3886811026145331,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.56
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.716227955729959,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 0.8789624368780219,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.8664539003198757,
+              "target_mass_at_argmax": 0.5666666666666667,
+              "margin_centered_rms": 0.7430995343349008,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.5666666666666667
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.5710459596435867,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 1.5361170078256783,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.2203757648419262,
+              "target_mass_at_argmax": 0.8636684027182805,
+              "margin_centered_rms": 3.0298921609355474,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.8888888888888888
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.9933333333333333,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        }
+      },
+      "comparisons": {
+        "A_B": {
+          "dev_argmax_disagreement": 0.008181818181818182,
+          "candidate_mean_abs_margin_delta": 0.02427199371275943
+        },
+        "B_C": {
+          "dev_argmax_disagreement": 0.0018181818181818182,
+          "candidate_mean_abs_margin_delta": 0.004557504443770395
+        }
+      },
+      "worker_elapsed_seconds": 115.4908673230093
+    },
+    "old_joint": {
+      "conditions": {
+        "A": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.6184994999412444,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.7574308599086023,
+              "target_mass_at_argmax": 0.6809999999999999,
+              "margin_centered_rms": 1.3391295156158745,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.6947368421052632
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.0256751742719914,
+              "target_mass_at_argmax": 0.71,
+              "margin_centered_rms": 1.0182156372070312,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.71
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 0.7388343514259459,
+              "target_mass_at_argmax": 0.5793598069680975,
+              "margin_centered_rms": 0.9960682862624722,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.5816326530612245
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.8081249530935604,
+              "target_mass_at_argmax": 0.5896592288060646,
+              "margin_centered_rms": 1.0952028625101697,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.6055555555555555
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.5042610282863512,
+              "target_mass_at_argmax": 0.66,
+              "margin_centered_rms": 1.9310415564412102,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.66
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.2838463069917624,
+              "target_mass_at_argmax": 0.8643764410433286,
+              "margin_centered_rms": 3.0135148250107604,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.8715083798882681
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.8815215469671738,
+              "target_mass_at_argmax": 0.5644444444444444,
+              "margin_centered_rms": 1.618535495100159,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.7351658030273528,
+              "target_mass_at_argmax": 0.6333333333333333,
+              "margin_centered_rms": 1.0537881700273874,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6333333333333333
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.9629344374687114,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 0.952102839511865,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.534916233320838,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 1.7779997031878214,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.1647154547294073,
+              "target_mass_at_argmax": 0.9303350693849471,
+              "margin_centered_rms": 3.2779966371280604,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.9629629629629629
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.98,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        },
+        "B": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.6188540159997911,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.7612073277010115,
+              "target_mass_at_argmax": 0.6809999999999999,
+              "margin_centered_rms": 1.339831455218557,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.6947368421052632
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.0230624916991515,
+              "target_mass_at_argmax": 0.71,
+              "margin_centered_rms": 1.0162841796875,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.71
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 0.7381337587896643,
+              "target_mass_at_argmax": 0.5893598069680975,
+              "margin_centered_rms": 0.9954787667211806,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.5918367346938775
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.8087456701793444,
+              "target_mass_at_argmax": 0.5996592288060646,
+              "margin_centered_rms": 1.092722318033661,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.6166666666666667
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.5055395087884299,
+              "target_mass_at_argmax": 0.655,
+              "margin_centered_rms": 1.928700660883452,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.655
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.28064381454050513,
+              "target_mass_at_argmax": 0.8693764410433286,
+              "margin_centered_rms": 3.0097180979668328,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.8770949720670391
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.8752325457341493,
+              "target_mass_at_argmax": 0.5644444444444444,
+              "margin_centered_rms": 1.620835102479551,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.7368458599575898,
+              "target_mass_at_argmax": 0.6333333333333333,
+              "margin_centered_rms": 1.0514089014103576,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6333333333333333
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.9655787616145555,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 0.9482024357365426,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.5380750675034804,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 1.7736661938290712,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.1600992863937788,
+              "target_mass_at_argmax": 0.9303350693849471,
+              "margin_centered_rms": 3.278140512886671,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.9629629629629629
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.98,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        },
+        "C": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.6188039494591445,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.7610864190985087,
+              "target_mass_at_argmax": 0.6809999999999999,
+              "margin_centered_rms": 1.3396568728865206,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.6947368421052632
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.0231200895453672,
+              "target_mass_at_argmax": 0.71,
+              "margin_centered_rms": 1.016098594367504,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.71
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 0.7381630097808228,
+              "target_mass_at_argmax": 0.5843598069680975,
+              "margin_centered_rms": 0.9954852581918694,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.5867346938775511
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.8086934735749622,
+              "target_mass_at_argmax": 0.5996592288060646,
+              "margin_centered_rms": 1.092771738902411,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.6166666666666667
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.5054487243116838,
+              "target_mass_at_argmax": 0.655,
+              "margin_centered_rms": 1.9286581421132976,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.655
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.2806281205297448,
+              "target_mass_at_argmax": 0.8693764410433286,
+              "margin_centered_rms": 3.009631234650828,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.8770949720670391
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.8752339917625225,
+              "target_mass_at_argmax": 0.5644444444444444,
+              "margin_centered_rms": 1.6209712766592033,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.7369208147538658,
+              "target_mass_at_argmax": 0.6333333333333333,
+              "margin_centered_rms": 1.0509369352814917,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6333333333333333
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.9655263119522393,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 0.9479336346010941,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.5378064603209849,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 1.7738922811437818,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.16017376471206188,
+              "target_mass_at_argmax": 0.9303350693849471,
+              "margin_centered_rms": 3.278124997358262,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.9629629629629629
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.98,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        }
+      },
+      "comparisons": {
+        "A_B": {
+          "dev_argmax_disagreement": 0.01090909090909091,
+          "candidate_mean_abs_margin_delta": 0.027784950114150046
+        },
+        "B_C": {
+          "dev_argmax_disagreement": 0.0009090909090909091,
+          "candidate_mean_abs_margin_delta": 0.004630348483428103
+        }
+      },
+      "worker_elapsed_seconds": 115.81822630413808
+    },
+    "high_step0": {
+      "conditions": {
+        "A": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.6347796473021792,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.7143239557845098,
+              "target_mass_at_argmax": 0.6859999999999999,
+              "margin_centered_rms": 1.060065450120643,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.7
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.0426056759601712,
+              "target_mass_at_argmax": 0.66,
+              "margin_centered_rms": 0.7117829132080078,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.66
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 0.751855852007933,
+              "target_mass_at_argmax": 0.5993598069680975,
+              "margin_centered_rms": 0.8145221655564922,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.6020408163265306
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.8521789921678576,
+              "target_mass_at_argmax": 0.5769422285782244,
+              "margin_centered_rms": 0.8788477632286732,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.5888888888888889
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.4900135546819804,
+              "target_mass_at_argmax": 0.66,
+              "margin_centered_rms": 1.708004880339685,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.66
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.3655258818686149,
+              "target_mass_at_argmax": 0.8443764410433287,
+              "margin_centered_rms": 2.8228924649093967,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.8491620111731844
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.8248954970575919,
+              "target_mass_at_argmax": 0.5311111111111111,
+              "margin_centered_rms": 1.390359054661424,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.56
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.7161159012149539,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 0.879299684085309,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.864140523634648,
+              "target_mass_at_argmax": 0.5666666666666667,
+              "margin_centered_rms": 0.7429573886208544,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.5666666666666667
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.5745934530256628,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 1.5303670975397887,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.23189991853918418,
+              "target_mass_at_argmax": 0.8636684027182805,
+              "margin_centered_rms": 3.0360818101915497,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.8888888888888888
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.9933333333333333,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        },
+        "B": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.6338080108046895,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.7131524564251586,
+              "target_mass_at_argmax": 0.6709999999999999,
+              "margin_centered_rms": 1.0582744829527737,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.6842105263157895
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.040261283958973,
+              "target_mass_at_argmax": 0.65,
+              "margin_centered_rms": 0.7146009063720703,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.65
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 0.7505132426438103,
+              "target_mass_at_argmax": 0.5993598069680975,
+              "margin_centered_rms": 0.8147382914961392,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.6020408163265306
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.8505664334575482,
+              "target_mass_at_argmax": 0.5769422285782244,
+              "margin_centered_rms": 0.8770997407299034,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.5888888888888889
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.4922394297802964,
+              "target_mass_at_argmax": 0.665,
+              "margin_centered_rms": 1.7051161143472542,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.665
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.36256849171663386,
+              "target_mass_at_argmax": 0.8443764410433287,
+              "margin_centered_rms": 2.821493419282155,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.8491620111731844
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.825684497289502,
+              "target_mass_at_argmax": 0.5311111111111111,
+              "margin_centered_rms": 1.3886191803570422,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.56
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.7158416433655959,
+              "target_mass_at_argmax": 0.6333333333333333,
+              "margin_centered_rms": 0.8788131740871886,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6333333333333333
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.8662779845001582,
+              "target_mass_at_argmax": 0.5666666666666667,
+              "margin_centered_rms": 0.7428799249390511,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.5666666666666667
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.5710056500049886,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 1.5357131192775026,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.2205303677075195,
+              "target_mass_at_argmax": 0.8636684027182805,
+              "margin_centered_rms": 3.029547742264387,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.8888888888888888
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.9866666666666667,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        },
+        "C": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.6338164669674365,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.7131590245752348,
+              "target_mass_at_argmax": 0.6709999999999999,
+              "margin_centered_rms": 1.058576487389787,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.6842105263157895
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.0403047915309858,
+              "target_mass_at_argmax": 0.65,
+              "margin_centered_rms": 0.714800672903657,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.65
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 0.7505408430640514,
+              "target_mass_at_argmax": 0.5993598069680975,
+              "margin_centered_rms": 0.8149362017172234,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.6020408163265306
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.8505305530731734,
+              "target_mass_at_argmax": 0.5769422285782244,
+              "margin_centered_rms": 0.877290900682319,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.5888888888888889
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.4922719442103019,
+              "target_mass_at_argmax": 0.665,
+              "margin_centered_rms": 1.7053439443251088,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.665
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.3625799699144213,
+              "target_mass_at_argmax": 0.8443764410433287,
+              "margin_centered_rms": 2.8218981071657536,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.8491620111731844
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.8258146687348424,
+              "target_mass_at_argmax": 0.5311111111111111,
+              "margin_centered_rms": 1.3886811026145331,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.56
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.716227955729959,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 0.8789624368780219,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.8664539003198757,
+              "target_mass_at_argmax": 0.5666666666666667,
+              "margin_centered_rms": 0.7430995343349008,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.5666666666666667
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.5710459596435867,
+              "target_mass_at_argmax": 0.6,
+              "margin_centered_rms": 1.5361170078256783,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.6
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.2203757648419262,
+              "target_mass_at_argmax": 0.8636684027182805,
+              "margin_centered_rms": 3.0298921609355474,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.8888888888888888
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.9933333333333333,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        }
+      },
+      "comparisons": {
+        "A_B": {
+          "dev_argmax_disagreement": 0.008181818181818182,
+          "candidate_mean_abs_margin_delta": 0.02427199371275943
+        },
+        "B_C": {
+          "dev_argmax_disagreement": 0.0018181818181818182,
+          "candidate_mean_abs_margin_delta": 0.004557504443770395
+        }
+      },
+      "worker_elapsed_seconds": 114.9939854349941
+    },
+    "high_step1000": {
+      "conditions": {
+        "A": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.9987155441597135,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 1.003128021363465,
+              "target_mass_at_argmax": 0.424,
+              "margin_centered_rms": 0.04725856128862199,
+              "uniform_within_1e6": 0.075,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.4368421052631579
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 0.9999861244396461,
+              "target_mass_at_argmax": 0.52,
+              "margin_centered_rms": 0.0003515625,
+              "uniform_within_1e6": 0.26,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.52
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 1.0031159045876963,
+              "target_mass_at_argmax": 0.3697870178524514,
+              "margin_centered_rms": 0.0074152485252670765,
+              "uniform_within_1e6": 0.125,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.37244897959183676
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.9980803610283036,
+              "target_mass_at_argmax": 0.47004077119393534,
+              "margin_centered_rms": 0.0184157566859665,
+              "uniform_within_1e6": 0.15,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.4777777777777778
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.9989917353379569,
+              "target_mass_at_argmax": 0.22,
+              "margin_centered_rms": 0.00608986870079242,
+              "uniform_within_1e6": 0.15,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.22
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.9902616984811461,
+              "target_mass_at_argmax": 0.3567368332388094,
+              "margin_centered_rms": 0.029236008093228114,
+              "uniform_within_1e6": 0.205,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.35195530726256985
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 1.0423804001600125,
+              "target_mass_at_argmax": 0.2777777777777778,
+              "margin_centered_rms": 0.05654063399301347,
+              "uniform_within_1e6": 0.13333333333333333,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.32
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.9993849568297075,
+              "target_mass_at_argmax": 0.36666666666666664,
+              "margin_centered_rms": 0.0019680582305717244,
+              "uniform_within_1e6": 0.06666666666666667,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.36666666666666664
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 1.007350302328312,
+              "target_mass_at_argmax": 0.3,
+              "margin_centered_rms": 0.0107078161390551,
+              "uniform_within_1e6": 0.2,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.3
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.9883300971772208,
+              "target_mass_at_argmax": 0.06666666666666667,
+              "margin_centered_rms": 0.012165822279104175,
+              "uniform_within_1e6": 0.1,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.06666666666666667
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.9889106472977399,
+              "target_mass_at_argmax": 0.3348954900600822,
+              "margin_centered_rms": 0.054825711324611566,
+              "uniform_within_1e6": 0.23333333333333334,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.37037037037037035
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.6533333333333333,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        },
+        "B": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.9987497422627246,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 1.0032090765569723,
+              "target_mass_at_argmax": 0.42700000000000005,
+              "margin_centered_rms": 0.04727508385678486,
+              "uniform_within_1e6": 0.1,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.4421052631578947
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.0001446301000168,
+              "target_mass_at_argmax": 0.42,
+              "margin_centered_rms": 0.00037353515625,
+              "uniform_within_1e6": 0.26,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.42
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 1.0032149335281293,
+              "target_mass_at_argmax": 0.2797295465880835,
+              "margin_centered_rms": 0.007339964372487811,
+              "uniform_within_1e6": 0.145,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.28061224489795916
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.9982086813161238,
+              "target_mass_at_argmax": 0.41843512415785694,
+              "margin_centered_rms": 0.018372178914385907,
+              "uniform_within_1e6": 0.155,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.4166666666666667
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.9989480702689946,
+              "target_mass_at_argmax": 0.215,
+              "margin_centered_rms": 0.006083335658108091,
+              "uniform_within_1e6": 0.155,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.215
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.9901679496434035,
+              "target_mass_at_argmax": 0.3702342634751259,
+              "margin_centered_rms": 0.029263553060213207,
+              "uniform_within_1e6": 0.195,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.3687150837988827
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 1.0418787175157638,
+              "target_mass_at_argmax": 0.3111111111111111,
+              "margin_centered_rms": 0.05676938387801937,
+              "uniform_within_1e6": 0.16666666666666666,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.36
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.9997779470231781,
+              "target_mass_at_argmax": 0.36666666666666664,
+              "margin_centered_rms": 0.0018613139871402464,
+              "uniform_within_1e6": 0.13333333333333333,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.36666666666666664
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 1.007532394874793,
+              "target_mass_at_argmax": 0.26666666666666666,
+              "margin_centered_rms": 0.010945350459038616,
+              "uniform_within_1e6": 0.16666666666666666,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.26666666666666666
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.988469276830143,
+              "target_mass_at_argmax": 0.13333333333333333,
+              "margin_centered_rms": 0.012170077839666572,
+              "uniform_within_1e6": 0.03333333333333333,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.13333333333333333
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.9888149272889116,
+              "target_mass_at_argmax": 0.3348954900600822,
+              "margin_centered_rms": 0.05481097880120826,
+              "uniform_within_1e6": 0.16666666666666666,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.37037037037037035
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.66,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        },
+        "C": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 0.9987379555327595,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 1.003155329030128,
+              "target_mass_at_argmax": 0.43700000000000006,
+              "margin_centered_rms": 0.047091256754392116,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.45263157894736844
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.0000660239231622,
+              "target_mass_at_argmax": 0.51,
+              "margin_centered_rms": 0.0002415628358721733,
+              "uniform_within_1e6": 0.02,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.51
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 1.0031923998064065,
+              "target_mass_at_argmax": 0.2797295465880835,
+              "margin_centered_rms": 0.0071079505790328954,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.28061224489795916
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 0.9982201356326046,
+              "target_mass_at_argmax": 0.4703888705966835,
+              "margin_centered_rms": 0.018199836911091605,
+              "uniform_within_1e6": 0.005,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.4666666666666667
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 0.9989420003898042,
+              "target_mass_at_argmax": 0.22,
+              "margin_centered_rms": 0.0059096399728667155,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.22
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.9901799128048542,
+              "target_mass_at_argmax": 0.4080796932388094,
+              "margin_centered_rms": 0.029049415011987278,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.4134078212290503
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 1.0417547455535447,
+              "target_mass_at_argmax": 0.42444444444444446,
+              "margin_centered_rms": 0.05670292713697099,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.48
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 0.9997857853748644,
+              "target_mass_at_argmax": 0.23333333333333334,
+              "margin_centered_rms": 0.001774984279352759,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.23333333333333334
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 1.007271454837755,
+              "target_mass_at_argmax": 0.43333333333333335,
+              "margin_centered_rms": 0.010871192049647276,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.43333333333333335
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 0.9884279830735846,
+              "target_mass_at_argmax": 0.13333333333333333,
+              "margin_centered_rms": 0.011946932536331351,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.13333333333333333
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.9887805303739265,
+              "target_mass_at_argmax": 0.36822882339341556,
+              "margin_centered_rms": 0.054614962996019395,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.4074074074074074
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.9533333333333334,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        }
+      },
+      "comparisons": {
+        "A_B": {
+          "dev_argmax_disagreement": 0.3509090909090909,
+          "candidate_mean_abs_margin_delta": 0.0012795870144399336
+        },
+        "B_C": {
+          "dev_argmax_disagreement": 0.3281818181818182,
+          "candidate_mean_abs_margin_delta": 0.001038036161209081
+        }
+      },
+      "worker_elapsed_seconds": 116.0633602810558
+    },
+    "high_final": {
+      "conditions": {
+        "A": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 1.0032525741262073,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.9940911165504298,
+              "target_mass_at_argmax": 0.456,
+              "margin_centered_rms": 0.13645595302831667,
+              "uniform_within_1e6": 0.12,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.45789473684210524
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.0000637866658497,
+              "target_mass_at_argmax": 0.52,
+              "margin_centered_rms": 0.0004351806640625,
+              "uniform_within_1e6": 0.84,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.52
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 1.0082142057454058,
+              "target_mass_at_argmax": 0.2654856690370631,
+              "margin_centered_rms": 0.10693421832926825,
+              "uniform_within_1e6": 0.245,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.2653061224489796
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 1.0032561614924607,
+              "target_mass_at_argmax": 0.40652648547964965,
+              "margin_centered_rms": 0.0852617589270515,
+              "uniform_within_1e6": 0.285,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.40555555555555556
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 1.0113157776332269,
+              "target_mass_at_argmax": 0.25,
+              "margin_centered_rms": 0.140214053862737,
+              "uniform_within_1e6": 0.235,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.25
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.9993856092095128,
+              "target_mass_at_argmax": 0.3385462684129876,
+              "margin_centered_rms": 0.06854209809817138,
+              "uniform_within_1e6": 0.45,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.3240223463687151
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.9959437948113404,
+              "target_mass_at_argmax": 0.29333333333333333,
+              "margin_centered_rms": 0.1533205655434219,
+              "uniform_within_1e6": 0.13333333333333333,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.32
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 1.036438274362035,
+              "target_mass_at_argmax": 0.36666666666666664,
+              "margin_centered_rms": 0.09643490107932225,
+              "uniform_within_1e6": 0.2,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.36666666666666664
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.9893718010070838,
+              "target_mass_at_argmax": 0.3,
+              "margin_centered_rms": 0.09980281253488708,
+              "uniform_within_1e6": 0.26666666666666666,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.3
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 1.010045303805475,
+              "target_mass_at_argmax": 0.23333333333333334,
+              "margin_centered_rms": 0.1329260936133004,
+              "uniform_within_1e6": 0.1,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.23333333333333334
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.9713335802666082,
+              "target_mass_at_argmax": 0.46822520671328677,
+              "margin_centered_rms": 0.05081461615623568,
+              "uniform_within_1e6": 0.5333333333333333,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.48148148148148145
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.5,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        },
+        "B": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 1.0032915045454325,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.9942051006410138,
+              "target_mass_at_argmax": 0.4756666666666667,
+              "margin_centered_rms": 0.13638839168021885,
+              "uniform_within_1e6": 0.125,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.47368421052631576
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.0003573855272372,
+              "target_mass_at_argmax": 0.48,
+              "margin_centered_rms": 0.00048095703125,
+              "uniform_within_1e6": 0.85,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.48
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 1.008191935457448,
+              "target_mass_at_argmax": 0.27548566903706306,
+              "margin_centered_rms": 0.10683706761862675,
+              "uniform_within_1e6": 0.23,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.2755102040816326
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 1.0032246922836041,
+              "target_mass_at_argmax": 0.3985264854796497,
+              "margin_centered_rms": 0.08528643996656049,
+              "uniform_within_1e6": 0.275,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.4
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 1.0113252560373385,
+              "target_mass_at_argmax": 0.26,
+              "margin_centered_rms": 0.14009707724429799,
+              "uniform_within_1e6": 0.235,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.26
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.9995105383077576,
+              "target_mass_at_argmax": 0.3443176984129876,
+              "margin_centered_rms": 0.06855053113611097,
+              "uniform_within_1e6": 0.465,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.329608938547486
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.995595594874605,
+              "target_mass_at_argmax": 0.2822222222222222,
+              "margin_centered_rms": 0.1533221518216622,
+              "uniform_within_1e6": 0.13333333333333333,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.28
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 1.0365008708803072,
+              "target_mass_at_argmax": 0.36666666666666664,
+              "margin_centered_rms": 0.09655310245406983,
+              "uniform_within_1e6": 0.2,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.36666666666666664
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.989387930356563,
+              "target_mass_at_argmax": 0.3333333333333333,
+              "margin_centered_rms": 0.09922903691921556,
+              "uniform_within_1e6": 0.3,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.3333333333333333
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 1.0104275988107625,
+              "target_mass_at_argmax": 0.2,
+              "margin_centered_rms": 0.13264093569357632,
+              "uniform_within_1e6": 0.13333333333333333,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.2
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.9716046965435743,
+              "target_mass_at_argmax": 0.46822520671328677,
+              "margin_centered_rms": 0.05090050140083139,
+              "uniform_within_1e6": 0.6,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.48148148148148145
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.52,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        },
+        "C": {
+          "questions": 1250,
+          "dev_questions": 1100,
+          "reverse_questions": 150,
+          "task_balanced_dev_normalized_nll": 1.0033159580744144,
+          "by_split_domain": {
+            "dev/arts": {
+              "questions": 200,
+              "normalized_nll": 0.9941721742416064,
+              "target_mass_at_argmax": 0.4736666666666667,
+              "margin_centered_rms": 0.1363431591691576,
+              "uniform_within_1e6": 0.08,
+              "onehot_target_questions": 190,
+              "onehot_argmax_accuracy": 0.4789473684210526
+            },
+            "dev/generic": {
+              "questions": 100,
+              "normalized_nll": 1.000248232335758,
+              "target_mass_at_argmax": 0.49,
+              "margin_centered_rms": 0.0005406998842954635,
+              "uniform_within_1e6": 0.44,
+              "onehot_target_questions": 100,
+              "onehot_argmax_accuracy": 0.49
+            },
+            "dev/knowledge": {
+              "questions": 200,
+              "normalized_nll": 1.00826411394557,
+              "target_mass_at_argmax": 0.2851356690370631,
+              "margin_centered_rms": 0.10689309476084106,
+              "uniform_within_1e6": 0.14,
+              "onehot_target_questions": 196,
+              "onehot_argmax_accuracy": 0.2857142857142857
+            },
+            "dev/language": {
+              "questions": 200,
+              "normalized_nll": 1.0033645931255348,
+              "target_mass_at_argmax": 0.42276237352127205,
+              "margin_centered_rms": 0.08511499614594908,
+              "uniform_within_1e6": 0.155,
+              "onehot_target_questions": 180,
+              "onehot_argmax_accuracy": 0.42777777777777776
+            },
+            "dev/retrieval": {
+              "questions": 200,
+              "normalized_nll": 1.011293970517484,
+              "target_mass_at_argmax": 0.26,
+              "margin_centered_rms": 0.1400806305996199,
+              "uniform_within_1e6": 0.145,
+              "onehot_target_questions": 200,
+              "onehot_argmax_accuracy": 0.26
+            },
+            "dev/tools": {
+              "questions": 200,
+              "normalized_nll": 0.9994849385418767,
+              "target_mass_at_argmax": 0.3244588987744334,
+              "margin_centered_rms": 0.06847412809179612,
+              "uniform_within_1e6": 0.325,
+              "onehot_target_questions": 179,
+              "onehot_argmax_accuracy": 0.29608938547486036
+            },
+            "reverse/arts": {
+              "questions": 30,
+              "normalized_nll": 0.9954921724823476,
+              "target_mass_at_argmax": 0.29333333333333333,
+              "margin_centered_rms": 0.15305182614841512,
+              "uniform_within_1e6": 0.0,
+              "onehot_target_questions": 25,
+              "onehot_argmax_accuracy": 0.28
+            },
+            "reverse/knowledge": {
+              "questions": 30,
+              "normalized_nll": 1.0365858525404705,
+              "target_mass_at_argmax": 0.36666666666666664,
+              "margin_centered_rms": 0.0968982847321795,
+              "uniform_within_1e6": 0.13333333333333333,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.36666666666666664
+            },
+            "reverse/language": {
+              "questions": 30,
+              "normalized_nll": 0.9893413605278567,
+              "target_mass_at_argmax": 0.5,
+              "margin_centered_rms": 0.09889232269316175,
+              "uniform_within_1e6": 0.1,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.5
+            },
+            "reverse/retrieval": {
+              "questions": 30,
+              "normalized_nll": 1.0103087446060952,
+              "target_mass_at_argmax": 0.26666666666666666,
+              "margin_centered_rms": 0.13279505182668822,
+              "uniform_within_1e6": 0.06666666666666667,
+              "onehot_target_questions": 30,
+              "onehot_argmax_accuracy": 0.26666666666666666
+            },
+            "reverse/tools": {
+              "questions": 30,
+              "normalized_nll": 0.9715652733884178,
+              "target_mass_at_argmax": 0.6015585400466201,
+              "margin_centered_rms": 0.05092208727978632,
+              "uniform_within_1e6": 0.5,
+              "onehot_target_questions": 27,
+              "onehot_argmax_accuracy": 0.6296296296296297
+            }
+          },
+          "reverse_mapped_argmax_agreement": 0.84,
+          "scope": "Internal complete native-distribution diagnosis; dev excludes reverse; historical trunk exposure not excluded; not official Index or complete linked-case accuracy."
+        }
+      },
+      "comparisons": {
+        "A_B": {
+          "dev_argmax_disagreement": 0.07818181818181819,
+          "candidate_mean_abs_margin_delta": 0.0021318251586395958
+        },
+        "B_C": {
+          "dev_argmax_disagreement": 0.23,
+          "candidate_mean_abs_margin_delta": 0.0016979889187657277
+        }
+      },
+      "worker_elapsed_seconds": 112.38556444901042
+    }
+  },
+  "scope": "R0 internal mechanism diagnosis, not Public Index"
+}

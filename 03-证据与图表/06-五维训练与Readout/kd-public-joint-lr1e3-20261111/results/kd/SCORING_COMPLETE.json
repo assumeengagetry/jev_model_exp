@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "stage": "kd",
+  "results": {
+    "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/results.jsonl",
+    "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/results.jsonl",
+    "bytes": 627482418,
+    "mtime_ns": 1794419169659457087
+  },
+  "binding_file": {
+    "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/BINDING.json",
+    "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/BINDING.json",
+    "bytes": 4914,
+    "mtime_ns": 1794418217922465518
+  },
+  "files": [
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/scores.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/scores.json",
+      "bytes": 32056,
+      "mtime_ns": 1794419211322626916
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/benchmark-summary.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/benchmark-summary.json",
+      "bytes": 34950,
+      "mtime_ns": 1794419190263046542
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/index.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/index.json",
+      "bytes": 10023,
+      "mtime_ns": 1794419198878874864
+    }
+  ]
+}

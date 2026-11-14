@@ -1,0 +1,397 @@
+{
+  "engine": "kernel_engine:KernelPairClassifierEngine",
+  "engine_options": {
+    "model": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/model",
+    "base_model": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model",
+    "max_microbatch_pairs": 32,
+    "max_microbatch_tokens": 32768,
+    "graph_reserved_gib": 32
+  },
+  "model_source": {
+    "checkpoint": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/model",
+    "base_model": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model",
+    "kind": "same frozen binary classifier, unmerged LoRA, preserved FP32 saved head",
+    "rendering": "candidate-pair-v1",
+    "readout": "logit(match)-logit(not_match), full field softmax",
+    "truncation": false,
+    "option_filtering": false,
+    "teacher_used_for_inference": false,
+    "lora_merged": false,
+    "cross_request_prediction_cache": false,
+    "numerical_equivalence": "same model/scoring; output drift pending full actual-public comparison",
+    "scheduling": "cross-field full batching or token-exact common-prefix fork"
+  },
+  "checkpoint": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/model",
+  "base_model": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model",
+  "kind": "same frozen binary classifier, unmerged LoRA, preserved FP32 saved head",
+  "rendering": "candidate-pair-v1",
+  "readout": "logit(match)-logit(not_match), full field softmax",
+  "truncation": false,
+  "option_filtering": false,
+  "teacher_used_for_inference": false,
+  "lora_merged": false,
+  "cross_request_prediction_cache": false,
+  "numerical_equivalence": "same model/scoring; output drift pending full actual-public comparison",
+  "scheduling": "cross-field full batching or token-exact common-prefix fork",
+  "device": "cuda:0",
+  "max_microbatch_pairs": 32,
+  "max_microbatch_tokens": 32768,
+  "installation": {
+    "lora_projections": 196,
+    "base": "original BF16",
+    "saved_adapter_head": "retained FP32, never merged",
+    "autocast_execution_copies": "persistent BF16; same conversion as old autocast",
+    "fused": [
+      "rms",
+      "qk_norm_rope",
+      "silu_up",
+      "lora_scale_add",
+      "shared_prefix_attention"
+    ]
+  },
+  "sealed_graph_shapes": [
+    [
+      "full",
+      1,
+      32
+    ],
+    [
+      "full",
+      2,
+      32
+    ],
+    [
+      "full",
+      4,
+      32
+    ],
+    [
+      "full",
+      8,
+      32
+    ],
+    [
+      "full",
+      16,
+      32
+    ],
+    [
+      "full",
+      32,
+      32
+    ],
+    [
+      "full",
+      1,
+      64
+    ],
+    [
+      "full",
+      2,
+      64
+    ],
+    [
+      "full",
+      4,
+      64
+    ],
+    [
+      "full",
+      8,
+      64
+    ],
+    [
+      "full",
+      16,
+      64
+    ],
+    [
+      "full",
+      32,
+      64
+    ],
+    [
+      "full",
+      1,
+      128
+    ],
+    [
+      "full",
+      2,
+      128
+    ],
+    [
+      "full",
+      4,
+      128
+    ],
+    [
+      "full",
+      8,
+      128
+    ],
+    [
+      "full",
+      16,
+      128
+    ],
+    [
+      "full",
+      32,
+      128
+    ],
+    [
+      "full",
+      1,
+      256
+    ],
+    [
+      "full",
+      2,
+      256
+    ],
+    [
+      "full",
+      4,
+      256
+    ],
+    [
+      "full",
+      8,
+      256
+    ],
+    [
+      "full",
+      16,
+      256
+    ],
+    [
+      "full",
+      32,
+      256
+    ],
+    [
+      "prefix",
+      64
+    ],
+    [
+      "prefix",
+      128
+    ],
+    [
+      "prefix",
+      256
+    ],
+    [
+      "prefix",
+      512
+    ],
+    [
+      "prefix",
+      1024
+    ],
+    [
+      "prefix",
+      2048
+    ],
+    [
+      "prefix",
+      4096
+    ],
+    [
+      "prefix",
+      8192
+    ],
+    [
+      "fork",
+      1,
+      8
+    ],
+    [
+      "fork",
+      2,
+      8
+    ],
+    [
+      "fork",
+      4,
+      8
+    ],
+    [
+      "fork",
+      8,
+      8
+    ],
+    [
+      "fork",
+      16,
+      8
+    ],
+    [
+      "fork",
+      32,
+      8
+    ],
+    [
+      "fork",
+      1,
+      32
+    ],
+    [
+      "fork",
+      2,
+      32
+    ],
+    [
+      "fork",
+      4,
+      32
+    ],
+    [
+      "fork",
+      8,
+      32
+    ],
+    [
+      "fork",
+      16,
+      32
+    ],
+    [
+      "fork",
+      32,
+      32
+    ],
+    [
+      "fork",
+      1,
+      128
+    ],
+    [
+      "fork",
+      2,
+      128
+    ],
+    [
+      "fork",
+      4,
+      128
+    ],
+    [
+      "fork",
+      8,
+      128
+    ],
+    [
+      "fork",
+      16,
+      128
+    ],
+    [
+      "fork",
+      32,
+      128
+    ],
+    [
+      "fork",
+      1,
+      512
+    ],
+    [
+      "fork",
+      2,
+      512
+    ],
+    [
+      "fork",
+      4,
+      512
+    ],
+    [
+      "fork",
+      8,
+      512
+    ],
+    [
+      "fork",
+      16,
+      512
+    ],
+    [
+      "fork",
+      32,
+      512
+    ],
+    [
+      "full",
+      1,
+      512
+    ],
+    [
+      "full",
+      2,
+      512
+    ],
+    [
+      "full",
+      4,
+      512
+    ],
+    [
+      "full",
+      8,
+      512
+    ],
+    [
+      "full",
+      16,
+      512
+    ],
+    [
+      "full",
+      32,
+      512
+    ],
+    [
+      "full",
+      1,
+      1024
+    ],
+    [
+      "full",
+      2,
+      1024
+    ],
+    [
+      "full",
+      4,
+      1024
+    ],
+    [
+      "full",
+      8,
+      1024
+    ],
+    [
+      "full",
+      16,
+      1024
+    ]
+  ],
+  "graph_startup_seconds": 10.413875209866092,
+  "graph_counts_including_official_warmup": {},
+  "reserved_gib": 13.00390625,
+  "prefix_capacity": 40960,
+  "prefix_fork": "direct read-only KV, no repeat/cat/dense mask",
+  "host_staging_lifetime": "unique pinned tensors held until final request D2H",
+  "full_attention": "native causal Flash/GQA, right padding only",
+  "loaded_seconds": 17.750341047998518,
+  "frozen_corpus_sha256": "a80af4becf5c5add037453fc96849181608b6d428954b5a8203cdf381ef6b231",
+  "rows_path": [
+    "/tmp/opencode/jev-joint-generic-continuation-20261109/official-suite-0.3-verified/selected-rows.jsonl.gz",
+    "/tmp/opencode/jev-joint-generic-continuation-20261109/official-suite-0.3-verified/added-rows.jsonl.gz",
+    "/tmp/opencode/jev-joint-generic-continuation-20261109/official-suite-0.3-verified/gsm8k-rows.jsonl.gz"
+  ],
+  "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+  "latency": "Full in-process request including all fields/candidates; kernelJIT and sealed graph startup in model loading."
+}

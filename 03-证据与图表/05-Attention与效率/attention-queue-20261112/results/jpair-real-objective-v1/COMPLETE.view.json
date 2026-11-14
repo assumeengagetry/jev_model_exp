@@ -1,0 +1,80 @@
+{
+  "complete": true,
+  "scope": "new-objective-on-complete-actual-control-macro0-saved-margins-only",
+  "source_files": [
+    {
+      "path": "/tmp/opencode/jev-jpair-objective-real-macro-20261112-v1/source/bindings.py",
+      "resolved": "/tmp/opencode/jev-jpair-objective-real-macro-20261112-v1/source/bindings.py",
+      "bytes": 17068,
+      "mtime_ns": 1794495027328123692
+    },
+    {
+      "path": "/tmp/opencode/jev-jpair-objective-real-macro-20261112-v1/source/objectives.py",
+      "resolved": "/tmp/opencode/jev-jpair-objective-real-macro-20261112-v1/source/objectives.py",
+      "bytes": 8119,
+      "mtime_ns": 1794495027328123692
+    }
+  ],
+  "actual_saved_control_macro": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/first-actual-macro/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/first-actual-macro/COMPLETE.json",
+    "bytes": 535406,
+    "mtime_ns": 1794488263643927658
+  },
+  "cases": 16,
+  "known_fields": 19,
+  "candidates": 60,
+  "independent_loss_and_total_coef_bitwise_equal": true,
+  "bookkeeping": {
+    "cases": 16,
+    "known_fields": 19,
+    "known_candidates": 60,
+    "K1_fields": 0,
+    "hard_positive_candidates": 18,
+    "hard_negative_candidates": 40,
+    "soft_candidates": 2,
+    "rank_active_fields": 18,
+    "rank_zero_fields": 1,
+    "rank_zero_no_positive_fields": 1,
+    "rank_zero_no_negative_fields": 0,
+    "rank_zero_K1_fields": 0,
+    "rank_zero_soft_only_fields": 0,
+    "no_rank_cases": 1,
+    "macro_bce_loss": 1.5607420206069946,
+    "macro_rank_loss": 1.0335379838943481,
+    "macro_total_loss": 2.5942800045013428,
+    "margin_bce_l2": 0.09897064530849253,
+    "margin_bce_maxabs": 0.030394483357667923,
+    "margin_rank_l2": 0.17982236240919924,
+    "margin_rank_maxabs": 0.052429020404815674,
+    "margin_total_l2": 0.2526782261770188,
+    "margin_total_maxabs": 0.062254756689071655,
+    "margin_rank_over_bce_l2": 1.816926239580343,
+    "margin_rank_over_bce_maxabs": 1.7249518535273565,
+    "margin_total_over_bce_l2": 2.55306232862702,
+    "margin_total_over_bce_maxabs": 2.04822552686575
+  },
+  "model_forward_calls": 0,
+  "optimizer_steps": 0,
+  "new_training_exposure_consumed": false,
+  "formal_new_arm_macro0_admitted": false,
+  "D_confirm_opened": false,
+  "public_run": false,
+  "remaining_runtime_gaps": [
+    "new-arm fresh identity and actual formal macro0/replay/393gradient/actualupdate",
+    "unobserved target hard/soft/zero-rank branches are not covered by this saved macro"
+  ],
+  "archive_kind": "aggregate-view-sourcebytes-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-jpair-objective-real-macro-20261112-v1/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-jpair-objective-real-macro-20261112-v1/COMPLETE.json",
+    "bytes": 36191,
+    "mtime_ns": 1794495029400081445
+  },
+  "executed_analysis_source": {
+    "path": "/tmp/opencode/jev-jpair-objective-real-macro-20261112-v1/admit_objective.py",
+    "resolved": "/tmp/opencode/jev-jpair-objective-real-macro-20261112-v1/admit_objective.py",
+    "bytes": 4749,
+    "mtime_ns": 1794495027328123692
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "execution_complete": true,
+  "all_paused_at_cursor1": true,
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/FORMAL_FIRST_WAVE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/FORMAL_FIRST_WAVE.json",
+    "bytes": 1556812,
+    "mtime_ns": 1794501898184055734
+  },
+  "scope": "two actual formal macros paused; external primaries passed; resource controller later blocked, no authorization/resume",
+  "arms": {
+    "JPAIR_P_BCE_RANK": {
+      "report": {
+        "bytes": 3779437,
+        "mtime_ns": 1794501929067417631,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/JPAIR_P_BCE_RANK/FIRST_PRIMARY_VERIFICATION.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/JPAIR_P_BCE_RANK/FIRST_PRIMARY_VERIFICATION.json"
+      },
+      "complete": {
+        "bytes": 772662,
+        "mtime_ns": 1794501888308259793,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "next_macro_index": 1,
+      "repeat_macro0_allowed": false
+    },
+    "STATE_NL_PB_P_CE": {
+      "report": {
+        "bytes": 3778749,
+        "mtime_ns": 1794501914099726884,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/STATE_NL_PB_P_CE/FIRST_PRIMARY_VERIFICATION.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/STATE_NL_PB_P_CE/FIRST_PRIMARY_VERIFICATION.json"
+      },
+      "complete": {
+        "bytes": 772717,
+        "mtime_ns": 1794501895840104165,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "next_macro_index": 1,
+      "repeat_macro0_allowed": false
+    }
+  }
+}

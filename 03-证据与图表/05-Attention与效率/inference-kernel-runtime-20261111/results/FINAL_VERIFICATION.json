@@ -1,0 +1,24 @@
+{
+  "observed_utc": "2026-11-11T16:41:13.362678+00:00",
+  "scope": "direct read-only completion/provenance validation; no model/test/extra hash",
+  "checks": {
+    "completed_output_files_receipt_verified": true,
+    "full140620executed_ok": true,
+    "full140178scored_ok": true,
+    "original_assets_unchanged": true,
+    "v1_assets_unchanged": true,
+    "new_source_bytes_unchanged": true,
+    "new_frozen_source_bytes_unchanged": true,
+    "actual_runtime_unchanged": true,
+    "original_comparison140620": true,
+    "v1_comparison140620": true,
+    "original_logical_token_counts_equal": true,
+    "v1_logical_token_counts_equal": true
+  },
+  "compiled_kernel_versions": {
+    "_rms": 1,
+    "_pointwise": 2,
+    "_norm_rope": 2,
+    "_fork_attention": 1
+  }
+}

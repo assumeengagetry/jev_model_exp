@@ -1,0 +1,18 @@
+{
+  "accepted_components": {
+    "train:arts": 4971,
+    "train:knowledge": 4976,
+    "train:language": 4950,
+    "train:retrieval": 4937,
+    "train:tools": 4766,
+    "validation:arts": 310,
+    "validation:knowledge": 846,
+    "validation:language": 1635,
+    "validation:retrieval": 226,
+    "validation:tools": 179
+  },
+  "nonexclusive_rejected_components": {
+    "excluded_membership_flags:32": 412,
+    "reject_whole_case_unrenderable_or_pair_context>8192": 3
+  }
+}

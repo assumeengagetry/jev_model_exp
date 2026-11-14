@@ -1,0 +1,12 @@
+{
+  "complete": false,
+  "macro": 0,
+  "pairs": 128,
+  "scope": "same-weight causal backend mechanism, not mask retraining or quality gain",
+  "first_production_call_timed": true,
+  "cold_cache_claim": false,
+  "inductor_cache": "/tmp/opencode/jev-flex-20261112-v1/inductor-cache",
+  "triton_cache": "/tmp/opencode/jev-flex-20261112-v1/triton-cache",
+  "public_score": null,
+  "clean_ranking": false
+}

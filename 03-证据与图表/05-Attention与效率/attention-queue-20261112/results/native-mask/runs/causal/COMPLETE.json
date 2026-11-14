@@ -1,0 +1,13 @@
+{
+  "complete": false,
+  "mode": "causal",
+  "actual_macro": 0,
+  "pairs": 128,
+  "real_tokens": 45216,
+  "training_layout_pass": true,
+  "isolation_pass": false,
+  "prefix_pass": true,
+  "four_rank_training_verified": false,
+  "new_public_score": null,
+  "clean_training": false
+}

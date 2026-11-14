@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "bytes": 1184209,
+      "mtime_ns": 1794509137205069481,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/D_select-cap30000000-m0001122/SUMMARY.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/D_select-cap30000000-m0001122/SUMMARY.json"
+    },
+    {
+      "bytes": 678831,
+      "mtime_ns": 1794509137197069643,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/D_select-cap30000000-m0001122/case-metrics.jsonl",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/D_select-cap30000000-m0001122/case-metrics.jsonl"
+    }
+  ],
+  "node": {
+    "cap": 30000000,
+    "cases": 17952,
+    "logical_pair_tokens": 29985465,
+    "macro_updates": 1122
+  },
+  "archive_kind": "aggregate-view-repeated-scope-elided",
+  "elided_keys": [
+    "scope",
+    "checkpoint_identity"
+  ],
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/D_select-cap30000000-m0001122/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/D_select-cap30000000-m0001122/COMPLETE.json",
+    "bytes": 1175284,
+    "mtime_ns": 1794509137217069239
+  },
+  "bound_arm": "STATE_NL_PB_P_CE",
+  "independent_primary": {
+    "path": "/tmp/opencode/jev-followup-select-analysis-20261112-v1/FOLLOWUP_SELECT_PRIMARY-cap30000000.json",
+    "resolved": "/tmp/opencode/jev-followup-select-analysis-20261112-v1/FOLLOWUP_SELECT_PRIMARY-cap30000000.json",
+    "bytes": 233752,
+    "mtime_ns": 1794509216199488396
+  }
+}

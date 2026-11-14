@@ -1,0 +1,38 @@
+{
+  "observed_utc": "2026-11-11T15:38:36.045265+00:00",
+  "scope": "preserved interrupted production attempt1 only; not a full public score, not reused by bounded-JIT run",
+  "requests": 1942,
+  "status_counts": {
+    "ok": 1942
+  },
+  "datasets": {
+    "BFCL": 1694,
+    "ToolRet": 248
+  },
+  "comparisons": {
+    "original": {
+      "fields": 11962,
+      "choice_changes": 50,
+      "token_count_mismatches": 0,
+      "mean_probability_delta": 0.004230412533335342,
+      "max_probability_delta": 0.17821141186760764,
+      "first500_old_mean_ms": 70.9616218758747,
+      "first500_new_mean_ms": 7.102977071888745
+    },
+    "v1": {
+      "fields": 11962,
+      "choice_changes": 59,
+      "token_count_mismatches": 0,
+      "mean_probability_delta": 0.0041212788403942125,
+      "max_probability_delta": 0.1774556048035984,
+      "first500_old_mean_ms": 15.16053571831435,
+      "first500_new_mean_ms": 7.102977071888745
+    }
+  },
+  "compiled_kernel_versions": {
+    "_rms": 1,
+    "_pointwise": 2,
+    "_norm_rope": 586,
+    "_fork_attention": 4
+  }
+}

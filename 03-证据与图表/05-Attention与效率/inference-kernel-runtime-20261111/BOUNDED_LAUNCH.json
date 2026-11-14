@@ -1,0 +1,22 @@
+{
+  "launched_utc": "2026-11-11T15:37:16.611951+00:00",
+  "pid": 651097,
+  "starttime": "134137935",
+  "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+  "root": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit",
+  "deployment": {
+    "observed_utc": "2026-11-11T15:37:16.610503+00:00",
+    "source_bytes_equal": true,
+    "files": [
+      "compare_results.py",
+      "fused_kernels.py",
+      "kernel_engine.py",
+      "kernel_model.py",
+      "kernel_runtime.py",
+      "run_public.py"
+    ],
+    "jit_fix": "runtime S/strides with do_not_specialize; same kernel arithmetic",
+    "no_partial_reuse": true
+  },
+  "uploaded": false
+}

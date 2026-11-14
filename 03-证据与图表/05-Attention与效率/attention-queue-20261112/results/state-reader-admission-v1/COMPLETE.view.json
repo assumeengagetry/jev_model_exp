@@ -1,0 +1,97 @@
+{
+  "D_confirm_opened": false,
+  "actual_formal_exposure_train_lookups_with_repeat": 16,
+  "actual_full_roster_counts": {
+    "select": {
+      "cases": 375,
+      "complete_candidates": 5190,
+      "exact_state_boundary": 615,
+      "fields": 705,
+      "known_fields": 615,
+      "logical_pair_tokens_once": 1554484,
+      "masked_unknown_no_forward": 90
+    },
+    "train": {
+      "cases": 24600,
+      "complete_candidates": 332663,
+      "exact_state_boundary": 41674,
+      "fields": 47427,
+      "known_fields": 41674,
+      "logical_pair_tokens_once": 99607907,
+      "masked_unknown_no_forward": 5753
+    }
+  },
+  "actual_indexed_cases": {
+    "select": 375,
+    "train": 24600
+  },
+  "actual_seconds": 16.838594273896888,
+  "actual_select_lookups": 375,
+  "actual_stored_offsets_and_fresh_cut_lists_verified": true,
+  "boundary_policy": "state-plus-one-existing-newline-v2",
+  "complete": true,
+  "executed_analysis_source": {
+    "bytes": 4232,
+    "mtime_ns": 1794495869611013906,
+    "path": "/tmp/opencode/jev-state-reader-admission-20261112-v1/admit_reader.py",
+    "resolved": "/tmp/opencode/jev-state-reader-admission-20261112-v1/admit_reader.py"
+  },
+  "lossless_rows_candidates_EOS_unknown_and_coordinates_verified": true,
+  "model_forward_calls": 0,
+  "model_run": false,
+  "new_arm_training_admitted": false,
+  "original_config": {
+    "bytes": 11634,
+    "mtime_ns": 1794488242160369443,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/seed42.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/seed42.json"
+  },
+  "prepared_complete": {
+    "bytes": 1598,
+    "mtime_ns": 1794493051644613453,
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/COMPLETE.json"
+  },
+  "prepared_primary": {
+    "bytes": 2635,
+    "mtime_ns": 1794493172514133108,
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v2/FINAL_PRIMARY_VERIFICATION.json",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v2/FINAL_PRIMARY_VERIFICATION.json"
+  },
+  "public_run": false,
+  "scope": "full-original-train-select-state-v2-reader-admission",
+  "source_files": [
+    {
+      "bytes": 17068,
+      "mtime_ns": 1794495869611013906,
+      "path": "/tmp/opencode/jev-state-reader-admission-20261112-v1/source/bindings.py",
+      "resolved": "/tmp/opencode/jev-state-reader-admission-20261112-v1/source/bindings.py"
+    },
+    {
+      "bytes": 12206,
+      "mtime_ns": 1794495869611013906,
+      "path": "/tmp/opencode/jev-state-reader-admission-20261112-v1/source/case_runtime.py",
+      "resolved": "/tmp/opencode/jev-state-reader-admission-20261112-v1/source/case_runtime.py"
+    },
+    {
+      "bytes": 22178,
+      "mtime_ns": 1794495869611013906,
+      "path": "/tmp/opencode/jev-state-reader-admission-20261112-v1/source/state_boundaries.py",
+      "resolved": "/tmp/opencode/jev-state-reader-admission-20261112-v1/source/state_boundaries.py"
+    }
+  ],
+  "sustained_guards_executed": true,
+  "tokenizer_run": false,
+  "torch_imported": false,
+  "unexecuted_branches": [
+    "manufactured malformed/missing/extra/mutated-pin failures not injected",
+    "new integrated trainer/fresh/formal macro0 not yet executed"
+  ],
+  "archive_kind": "aggregate-view-sourcebytes-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-state-reader-admission-20261112-v1/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-state-reader-admission-20261112-v1/COMPLETE.json",
+    "bytes": 71473,
+    "mtime_ns": 1794495886482672399
+  }
+}

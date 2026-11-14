@@ -1,0 +1,66 @@
+{
+  "source_space": "multimodalart/jev-decision-index",
+  "source_commit": "44626fbe70223a2b92dffcab72a864178321a5d1",
+  "generated_utc": "2026-11-11T14:28:34Z",
+  "label": "Decision Index 0.4.1",
+  "source_urls": {
+    "public_and_full": "https://huggingface.co/spaces/multimodalart/jev-decision-index/raw/44626fbe70223a2b92dffcab72a864178321a5d1/data/v03.json",
+    "model_metadata": "https://huggingface.co/spaces/multimodalart/jev-decision-index/raw/44626fbe70223a2b92dffcab72a864178321a5d1/data/index.json",
+    "public_rules": "https://github.com/apolinario/decision-index/blob/25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d/README.md"
+  },
+  "primary_agent_direct_json_join": {
+    "v03_entries": 298,
+    "metadata_entries_including_jev": 298,
+    "filter": "0 < meta.served_params <= 700000000; rank by v03.pub",
+    "filtered_entries": 44,
+    "independent_parameter_audit_of_every_model": false
+  },
+  "main_public_reference": {
+    "engine": "gliclass-v4.1-edge",
+    "name": "GLiClass v4.1 edge (0.4B)",
+    "served_params_in_board_metadata": 439790596,
+    "public_index": 51.99,
+    "full_score": 32.47,
+    "base_model": "microsoft/deberta-v3-large",
+    "model_url": "https://huggingface.co/knowledgator/gliclass-v4.1-edge",
+    "classification": "Strongest public entry among the 44 known-parameter entries selected from this fixed snapshot; not a proof about unknown/private model sizes or future submissions."
+  },
+  "intermediate_reference": {
+    "engine": "sieve-0.8b",
+    "served_params_estimated": 590000000,
+    "public_index": 32.26,
+    "base_model": "Qwen/Qwen3.5-0.8B-Base",
+    "note": "First 16 of 24 backbone layers; cross-base reference, not current <=0.7B leader."
+  },
+  "near_family_reference": {
+    "engine": "decision-2.0-kai-0.6b",
+    "public_index": 16.68,
+    "base_model": "Qwen/Qwen3-0.6B-Base",
+    "note": "Not the same direct initialization as the local ModelScope Qwen/Qwen3-0.6B snapshot; beating it is not a formal rank claim."
+  },
+  "larger_optional_reference": {
+    "engine": "pku-kcl-meteor-0.8b",
+    "public_index": 58.77,
+    "main_weight_parameters": 852985920,
+    "note": "Outside the primary <=0.7B parameter budget."
+  },
+  "unknown_parameter_entries_at_or_above_main_reference": [
+    {"engine": "jev-1.13.0", "public_index": 57.96},
+    {"engine": "jev", "public_index": 60.7}
+  ],
+  "version_and_rank_boundary": {
+    "public_edition": "0.3",
+    "public_unchanged_for_0_4_board": true,
+    "public_execution_requests": 140620,
+    "public_scoreable_requests": 140178,
+    "benchmarks_executed_or_reported": 43,
+    "benchmarks_in_public_index": 37,
+    "areas": 5,
+    "full_uses_public_weight": 0,
+    "full_private_same_skills_weight": 0.6,
+    "full_private_new_domains_weight": 0.4,
+    "full_requires_private_equating": true,
+    "official_rank_reachable_by_local_public_alone": false,
+    "publication_authorized": false
+  }
+}

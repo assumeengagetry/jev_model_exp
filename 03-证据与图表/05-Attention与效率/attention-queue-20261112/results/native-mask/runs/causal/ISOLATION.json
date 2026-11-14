@@ -1,0 +1,23 @@
+{
+  "mixed": {
+    "pass": false,
+    "relative_l2": 0.029548448461678187,
+    "max_abs": 0.03125,
+    "cosine": 0.9999541541162253,
+    "reference_rms": 0.934782030126626
+  },
+  "reversed": {
+    "pass": false,
+    "relative_l2": 0.029548448461678187,
+    "max_abs": 0.03125,
+    "cosine": 0.9999541541162253,
+    "reference_rms": 0.934782030126626
+  },
+  "replaced_neighbor": {
+    "pass": false,
+    "relative_l2": 0.029548448461678187,
+    "max_abs": 0.03125,
+    "cosine": 0.9999541541162253,
+    "reference_rms": 0.934782030126626
+  }
+}

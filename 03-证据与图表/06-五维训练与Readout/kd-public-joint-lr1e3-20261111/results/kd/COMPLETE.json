@@ -1,0 +1,254 @@
+{
+  "complete": true,
+  "stage": "kd",
+  "binding": {
+    "stage": "kd",
+    "engine": "experiment_engine:ExperimentPairClassifierEngine",
+    "model": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen",
+    "model_files": [
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/README.md",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/README.md",
+        "bytes": 5204,
+        "mtime_ns": 1794237132443471063
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/adapter_config.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/adapter_config.json",
+        "bytes": 1143,
+        "mtime_ns": 1794237132527469341
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/adapter_model.safetensors",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/adapter_model.safetensors",
+        "bytes": 80800744,
+        "mtime_ns": 1794237132527469341
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/added_tokens.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/added_tokens.json",
+        "bytes": 707,
+        "mtime_ns": 1794237132527469341
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/chat_template.jinja",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/chat_template.jinja",
+        "bytes": 4168,
+        "mtime_ns": 1794237132527469341
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/config.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/config.json",
+        "bytes": 1566,
+        "mtime_ns": 1794237132527469341
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/merges.txt",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/merges.txt",
+        "bytes": 1671853,
+        "mtime_ns": 1794237132591468028
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/special_tokens_map.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/special_tokens_map.json",
+        "bytes": 613,
+        "mtime_ns": 1794237132527469341
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/tokenizer.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/tokenizer.json",
+        "bytes": 11422654,
+        "mtime_ns": 1794237132659466634
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/tokenizer_config.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/tokenizer_config.json",
+        "bytes": 5404,
+        "mtime_ns": 1794237132527469341
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/vocab.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen/vocab.json",
+        "bytes": 2776833,
+        "mtime_ns": 1794237132547468931
+      }
+    ],
+    "base_model": "/tmp/opencode/jev-joint-generic-continuation-20261109/official-frozen/base-model",
+    "input_binding": {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/DATA_READY.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/DATA_READY.json",
+      "bytes": 6798,
+      "mtime_ns": 1794418181587195047
+    },
+    "source_binding": {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/SOURCE_BINDING.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/SOURCE_BINDING.json",
+      "bytes": 90244,
+      "mtime_ns": 1794418160155625376
+    },
+    "code_binding": {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/CODE_BINDING.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/CODE_BINDING.json",
+      "bytes": 131170,
+      "mtime_ns": 1794418143983950105
+    },
+    "runtime": {
+      "gpus": [
+        "0, GPU-43241aa5-89e9-5b7e-a5dc-bd4909f1d291, NVIDIA H800 NVL, 590.44.01, 95830",
+        "1, GPU-e1f6e14d-5cb2-3c33-6da8-63bffdca174b, NVIDIA H800 NVL, 590.44.01, 95830",
+        "2, GPU-16c2eecc-d93f-08f7-e1b0-13d23ffd23d0, NVIDIA H800 NVL, 590.44.01, 95830",
+        "3, GPU-52480c01-119c-f065-33d8-cb016eac9c39, NVIDIA H800 NVL, 590.44.01, 95830"
+      ],
+      "python": "3.11.18 (main, Oct 26 2026, 11:35:17) [GCC 15.3.0]",
+      "packages": {
+        "torch": "2.9.1",
+        "transformers": "4.57.6",
+        "peft": "0.18.1",
+        "triton": "3.5.1",
+        "numpy": "2.4.6",
+        "safetensors": "0.8.0"
+      }
+    },
+    "gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "options": {
+      "device": "cuda:0",
+      "max_microbatch_pairs": 32,
+      "max_microbatch_tokens": 32768,
+      "graph_reserved_gib": 32,
+      "experiment_stage": "kd"
+    },
+    "scope": "complete official public0.3; four disjoint full-request runner shards, then original scorer; not latency admission"
+  },
+  "files": [
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/results.jsonl",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/results.jsonl",
+      "bytes": 627482418,
+      "mtime_ns": 1794419169659457087
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/scores.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/scores.json",
+      "bytes": 32056,
+      "mtime_ns": 1794419211322626916
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/benchmark-summary.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/benchmark-summary.json",
+      "bytes": 34950,
+      "mtime_ns": 1794419190263046542
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/index.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/index.json",
+      "bytes": 10023,
+      "mtime_ns": 1794419198878874864
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/environment.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/environment.json",
+      "bytes": 6523,
+      "mtime_ns": 1794419211938614642
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/BINDING.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/BINDING.json",
+      "bytes": 4914,
+      "mtime_ns": 1794418217922465518
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/SCORING_COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/SCORING_COMPLETE.json",
+      "bytes": 1334,
+      "mtime_ns": 1794419211934614722
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/0/results.jsonl",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/0/results.jsonl",
+      "bytes": 157966051,
+      "mtime_ns": 1794419135644134888
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/0/environment.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/0/environment.json",
+      "bytes": 6507,
+      "mtime_ns": 1794418245417913519
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/0/status.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/0/status.json",
+      "bytes": 199,
+      "mtime_ns": 1794419136108125643
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/1/results.jsonl",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/1/results.jsonl",
+      "bytes": 155348465,
+      "mtime_ns": 1794419131596215550
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/1/environment.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/1/environment.json",
+      "bytes": 6508,
+      "mtime_ns": 1794418245641909022
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/1/status.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/1/status.json",
+      "bytes": 199,
+      "mtime_ns": 1794419132040206702
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/2/results.jsonl",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/2/results.jsonl",
+      "bytes": 157175024,
+      "mtime_ns": 1794419133384179921
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/2/environment.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/2/environment.json",
+      "bytes": 6508,
+      "mtime_ns": 1794418246157898663
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/2/status.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/2/status.json",
+      "bytes": 199,
+      "mtime_ns": 1794419133872170198
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/3/results.jsonl",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/3/results.jsonl",
+      "bytes": 156992878,
+      "mtime_ns": 1794419144995948539
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/3/environment.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/3/environment.json",
+      "bytes": 6506,
+      "mtime_ns": 1794418246145898905
+    },
+    {
+      "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/3/status.json",
+      "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/workers/3/status.json",
+      "bytes": 199,
+      "mtime_ns": 1794419145447939533
+    }
+  ],
+  "public_index": 24.38,
+  "executed_requests": 140620,
+  "scored_requests": 140178,
+  "counts": {
+    "ok": 140620
+  },
+  "parallel_wall_seconds_including_load_warmup_and_scoring": 994.2381256660447,
+  "latency_is_official_admission": false,
+  "private_full_score": null,
+  "completed_utc": "2026-11-11T17:46:52.164166+00:00",
+  "uploaded": false
+}

@@ -1,0 +1,30 @@
+{
+  "observed_utc": "2026-11-12T05:09:56.472232+00:00",
+  "root": "/tmp/opencode/jev-06b-research-20261112-r1-bridge",
+  "launched_utc": "2026-11-12T05:08:50.435599+00:00",
+  "stage": "training_bridge_lr2e5",
+  "source_files_deployed_equal": 11,
+  "bound_source_files": 426,
+  "world_size": 4,
+  "global_batch": 128,
+  "peak_learning_rate": 0.00002,
+  "actual_step": 120,
+  "total_steps": 13026,
+  "pairs_seen": 15360,
+  "effective_tokens": 3743059,
+  "relations_seen": 44,
+  "oom_retries": 0,
+  "deterministic_fa3_backward_executed": true,
+  "sdpa_fallback": false,
+  "initial_observation": {
+    "step": 0,
+    "maximum_rank_parameter_difference": 0.0,
+    "head_difference_row_norm": 0.8081766963005066
+  },
+  "registered_torchrun_parent_matches_all_four_rank_owners": true,
+  "gpu_memory_mib_at_read": [42540, 40425, 40421, 40421],
+  "gpu_utilization_percent_at_read": [100, 93, 91, 100],
+  "new_kd_public_inference": false,
+  "new_bridge_public_score": null,
+  "scope": "Real training progress and startup-node observation only, not final training/public or proof of parameter equality at every macro."
+}

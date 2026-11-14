@@ -1,0 +1,205 @@
+{
+  "automatic_retry": false,
+  "candidate_ready_is_not_production_ready": true,
+  "data_root": "/tmp/opencode/jev-clean-origin-20261112-v1/prepared-01",
+  "frozen_candidates": {
+    "bytes": 37044,
+    "mtime_ns": 1794517053881585813,
+    "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/FROZEN_CANDIDATES.json",
+    "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/FROZEN_CANDIDATES.json"
+  },
+  "identity_guard_policy": "flat-history-bounded-hot-v1",
+  "main_reviewed": true,
+  "public_roles": [
+    "baseline",
+    "challenger"
+  ],
+  "renderer_source": {
+    "bytes": 3069,
+    "mtime_ns": 1793365839389246426,
+    "path": "/home/dev/assumeengage/scripts/pair_data_common.py",
+    "resolved": "/home/dev/assumeengage/scripts/pair_data_common.py"
+  },
+  "resources": {
+    "fixed_future_bytes": 21474836480,
+    "free_reserve_bytes": 21474836480,
+    "grace_seconds": 900,
+    "guard_seconds": 15,
+    "max_output_bytes": 21474836480
+  },
+  "root": "/tmp/opencode/jev-clean-final-eval-20261112-v1",
+  "sdk_root": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index",
+  "source_binding": {
+    "bytes": 1802947,
+    "mtime_ns": 1794521902949975890,
+    "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/SOURCE_SNAPSHOT.json",
+    "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/SOURCE_SNAPSHOT.json"
+  },
+  "source_files": [
+    {
+      "bytes": 44784,
+      "mtime_ns": 1794521901666002525,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/common.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/common.py"
+    },
+    {
+      "bytes": 30846,
+      "mtime_ns": 1794521901670002442,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/backend.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/backend.py"
+    },
+    {
+      "bytes": 61547,
+      "mtime_ns": 1794521901670002442,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/evaluate.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/evaluate.py"
+    },
+    {
+      "bytes": 43844,
+      "mtime_ns": 1794521901674002358,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/ops.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/ops.py"
+    }
+  ],
+  "stock_directory": "/home/dev/assumeengage/models/Qwen3-0.6B",
+  "suite_root": "/tmp/opencode/jev-five-dimension-distilled-20261109/official-suite-0.3-verified",
+  "training": false,
+  "version": "clean-final-consumer-v1",
+  "archive_kind": "config-aggregate-view-repeated-reference-records-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/config.json",
+    "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/config.json",
+    "bytes": 47824,
+    "mtime_ns": 1794521902973975393
+  },
+  "producers": {
+    "baseline": {
+      "arm": "C_P_CE",
+      "checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00043",
+      "complete": {
+        "bytes": 1017188,
+        "mtime_ns": 1794495637615707251,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/COMPLETE.json"
+      },
+      "config_path": "/tmp/opencode/jev-clean-trainer-20261112-v2/seed42.json",
+      "metadata": {
+        "bytes": 984271,
+        "mtime_ns": 1794495637219715258,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00043/CHECKPOINT.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00043/CHECKPOINT.json"
+      },
+      "own_scope": {
+        "bytes": 533386,
+        "mtime_ns": 1794488247088268105,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/OWN_SCOPE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/OWN_SCOPE.json"
+      },
+      "producer_config": {
+        "bytes": 11634,
+        "mtime_ns": 1794488242160369443,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/seed42.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/seed42.json"
+      },
+      "response_name": "qwen3-0.6b-clean-C_P_CE-seed42-m3557",
+      "root": "/tmp/opencode/jev-clean-trainer-20261112-v2",
+      "terminal": {
+        "bytes": 535123,
+        "mtime_ns": 1794495637563708302,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00043/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00043/COMPLETE.json"
+      }
+    },
+    "challenger": {
+      "arm": "JPAIR_P_BCE_RANK",
+      "checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0003557-s00043",
+      "complete": {
+        "bytes": 1256328,
+        "mtime_ns": 1794513433486681152,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/COMPLETE.json"
+      },
+      "config_path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/seed42.json",
+      "metadata": {
+        "bytes": 1277920,
+        "mtime_ns": 1794513432930692375,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0003557-s00043/CHECKPOINT.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0003557-s00043/CHECKPOINT.json"
+      },
+      "own_scope": {
+        "bytes": 770699,
+        "mtime_ns": 1794501870056636929,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/OWN_SCOPE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/OWN_SCOPE.json"
+      },
+      "producer_config": {
+        "bytes": 10925,
+        "mtime_ns": 1794497543905017678,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/seed42.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/seed42.json"
+      },
+      "response_name": "qwen3-0.6b-clean-JPAIR_P_BCE_RANK-seed42-m3557",
+      "root": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1",
+      "terminal": {
+        "bytes": 772665,
+        "mtime_ns": 1794513433414682605,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0003557-s00043/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0003557-s00043/COMPLETE.json"
+      }
+    }
+  },
+  "predecessor_devices": {
+    "0": {
+      "lease_inode": [
+        73400370,
+        1141083378
+      ],
+      "lease_path": "/tmp/opencode/jev-owned-h800-leases-20261112/gpu0.lock",
+      "original_owner": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 746922,
+        "starttime": "144324625"
+      },
+      "uuid": "GPU-43241aa5-89e9-5b7e-a5dc-bd4909f1d291"
+    },
+    "1": {
+      "lease_inode": [
+        73400370,
+        1141083385
+      ],
+      "lease_path": "/tmp/opencode/jev-owned-h800-leases-20261112/gpu1.lock",
+      "original_owner": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 746922,
+        "starttime": "144324625"
+      },
+      "uuid": "GPU-e1f6e14d-5cb2-3c33-6da8-63bffdca174b"
+    },
+    "2": {
+      "lease_inode": [
+        73400370,
+        1141032671
+      ],
+      "lease_path": "/tmp/opencode/jev-owned-h800-leases-20261112/gpu2.lock",
+      "original_owner": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 735518,
+        "starttime": "143180023"
+      },
+      "uuid": "GPU-16c2eecc-d93f-08f7-e1b0-13d23ffd23d0"
+    },
+    "3": {
+      "lease_inode": [
+        73400370,
+        1141032672
+      ],
+      "lease_path": "/tmp/opencode/jev-owned-h800-leases-20261112/gpu3.lock",
+      "original_owner": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 735518,
+        "starttime": "143180023"
+      },
+      "uuid": "GPU-52480c01-119c-f065-33d8-cb016eac9c39"
+    }
+  }
+}

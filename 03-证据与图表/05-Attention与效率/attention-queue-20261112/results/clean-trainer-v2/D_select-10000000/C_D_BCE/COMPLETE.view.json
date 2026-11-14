@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "bytes": 890137,
+      "mtime_ns": 1794489485966736799,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/SUMMARY.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/SUMMARY.json"
+    },
+    {
+      "bytes": 654038,
+      "mtime_ns": 1794489485958736965,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl"
+    }
+  ],
+  "node": {
+    "cap": 10000000,
+    "cases": 5840,
+    "logical_pair_tokens": 9988659,
+    "macro_updates": 365
+  },
+  "archive_kind": "aggregate-view-with-repeated-scope-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+    "bytes": 881504,
+    "mtime_ns": 1794489485974736633
+  },
+  "elided_keys": [
+    "scope",
+    "checkpoint_identity"
+  ],
+  "bound_arm": "C_D_BCE",
+  "bound_config": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/seed42.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/seed42.json",
+    "bytes": 11634,
+    "mtime_ns": 1794488242160369443
+  },
+  "independent_primary_verification": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/D_SELECT_PRIMARY-cap10000000.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/D_SELECT_PRIMARY-cap10000000.json",
+    "bytes": 36824,
+    "mtime_ns": 1794490047907101258
+  }
+}

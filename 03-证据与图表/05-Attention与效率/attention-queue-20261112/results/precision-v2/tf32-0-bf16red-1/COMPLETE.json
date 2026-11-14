@@ -1,0 +1,13 @@
+{
+  "execution_complete": true,
+  "tf32": false,
+  "bf16_reduction": true,
+  "modes": [
+    "causal",
+    "bidirectional",
+    "prefix_block"
+  ],
+  "learning_updates": 0,
+  "public_scored": false,
+  "elapsed_seconds": 5.752129544969648
+}

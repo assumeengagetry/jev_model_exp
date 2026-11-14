@@ -1,0 +1,31 @@
+{
+  "source_byte_readback": true,
+  "source_files": [
+    "bindings.py",
+    "fresh_init.py",
+    "case_runtime.py",
+    "objectives.py",
+    "model_runtime.py",
+    "checkpoints.py",
+    "train_case.py",
+    "evaluate_native_dev.py"
+  ],
+  "data_commit": {
+    "path": "/tmp/opencode/jev-clean-origin-20261112-v1/prepared-01/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-origin-20261112-v1/prepared-01/COMPLETE.json",
+    "bytes": 399,
+    "mtime_ns": 1794484736760033267
+  },
+  "allow_training_mechanism_only": true,
+  "model_run": false,
+  "fresh_init_run": false,
+  "review_disposition": "primary reads origin/VJP/optimizer/precision reports without changing old outcomes; independent trainer review required before execution",
+  "native_import": "installed flash_attn3 wrapper inside dedicated frozen package, all package files pinned; actual first formal macro validates loader",
+  "checkpoint_policy": "all retained, every100macros plus first/observations/final/pause; no eviction",
+  "free_space_at_deploy": {
+    "total": 955909828608,
+    "used": 802191339520,
+    "free": 153718489088
+  },
+  "utc": "2026-11-12T12:50:18.836684+00:00"
+}

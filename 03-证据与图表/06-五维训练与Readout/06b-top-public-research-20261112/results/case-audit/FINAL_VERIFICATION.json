@@ -1,0 +1,20 @@
+{
+  "verified_utc": "2026-11-12T06:11:59.473695+00:00",
+  "complete": true,
+  "actual_validation_rows_verified_against_original_state_and_native_group": 15550,
+  "eligible_rows_by_domain": {
+    "arts": 640,
+    "retrieval": 547,
+    "knowledge": 1920,
+    "language": 7063,
+    "tools": 600
+  },
+  "eligible_components": 8336,
+  "source_bound_files": 323,
+  "graph_parent_and_root_flags_consistent": true,
+  "roster_counts_and_rejection_reasons_recomputed": true,
+  "model_run": false,
+  "test_target_columns_read": false,
+  "D_select_or_D_confirm_admitted": false,
+  "scope": "Exact original-case audit artifacts verified under declared conservative provenance policy; not semantic-near-duplicate/pretraining exclusion proof and not model selection yet."
+}

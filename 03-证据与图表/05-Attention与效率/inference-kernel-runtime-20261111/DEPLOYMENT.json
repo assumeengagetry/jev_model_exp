@@ -1,0 +1,33 @@
+{
+  "observed_utc": "2026-11-11T15:20:37.761247+00:00",
+  "root": "/tmp/opencode/jev-inference-kernels-20261111",
+  "source_bytes_equal": true,
+  "files": [
+    {
+      "name": "compare_results.py",
+      "bytes": 5321
+    },
+    {
+      "name": "fused_kernels.py",
+      "bytes": 6696
+    },
+    {
+      "name": "kernel_engine.py",
+      "bytes": 11360
+    },
+    {
+      "name": "kernel_model.py",
+      "bytes": 6725
+    },
+    {
+      "name": "kernel_runtime.py",
+      "bytes": 9128
+    },
+    {
+      "name": "run_public.py",
+      "bytes": 15295
+    }
+  ],
+  "model_loaded": false,
+  "public_launched": false
+}

@@ -1,0 +1,82 @@
+{
+  "D_confirm_opened": false,
+  "boundary_contract": "unique-exact-token-split-at-original-state-character-end; no rounding/filtering/retokenization",
+  "complete_scan_and_readback": true,
+  "config": {
+    "bytes": 34109,
+    "mtime_ns": 1794492079444666402,
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v1/projection-config.json",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v1/projection-config.json"
+  },
+  "counts": {
+    "select": {
+      "boundary_unavailable": 427,
+      "cases": 375,
+      "complete_candidates": 5190,
+      "exact_state_boundary": 188,
+      "fields": 705,
+      "known_fields": 615,
+      "logical_pair_tokens_once": 1554484,
+      "masked_unknown_no_forward": 90
+    },
+    "train": {
+      "boundary_unavailable": 28676,
+      "cases": 24600,
+      "complete_candidates": 332663,
+      "exact_state_boundary": 12998,
+      "fields": 47427,
+      "known_fields": 41674,
+      "logical_pair_tokens_once": 99607907,
+      "masked_unknown_no_forward": 5753
+    }
+  },
+  "elapsed_seconds": 100.63394487206824,
+  "model_run": false,
+  "peak_rss_bytes": 201367552,
+  "primary_domain_cases": {
+    "select": {
+      "arts": 75,
+      "knowledge": 75,
+      "language": 75,
+      "retrieval": 75,
+      "tools": 75
+    },
+    "train": {
+      "arts": 4971,
+      "knowledge": 4976,
+      "language": 4950,
+      "retrieval": 4937,
+      "tools": 4766
+    }
+  },
+  "public_run": false,
+  "readback": {
+    "select_cases": 375,
+    "select_fields": 705,
+    "train_cases": 24600,
+    "train_fields": 47427
+  },
+  "ready": false,
+  "same_original_pair_tokens_and_lengths_verified": true,
+  "source": {
+    "bytes": 18861,
+    "mtime_ns": 1794492079440666486,
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v1/prepare_boundaries.py",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v1/prepare_boundaries.py"
+  },
+  "target_used_for_cut": false,
+  "unavailable_known_field_reasons": {
+    "select:crossing_bpe": 427,
+    "train:crossing_bpe": 28676
+  },
+  "unknown_raw_not_tokenized_or_forwarded": true,
+  "utc": "2026-11-12T14:03:00.126263+00:00",
+  "version": "base-state-boundary-v1",
+  "archive_kind": "aggregate-view-source-bytes-and-repeated-input-pins-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v1/prepared-01/PREPARATION.json",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v1/prepared-01/PREPARATION.json",
+    "bytes": 33588,
+    "mtime_ns": 1794492180122535737
+  }
+}

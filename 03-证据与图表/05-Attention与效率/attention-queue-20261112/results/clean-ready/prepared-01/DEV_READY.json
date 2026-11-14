@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "confirm_per_domain": 50,
+  "dev_ready": true,
+  "incomplete_reasons": [],
+  "select_per_domain": 75,
+  "verification": {
+    "bytes": 6215,
+    "mtime_ns": 1794484736756033349,
+    "path": "/tmp/opencode/jev-clean-origin-20261112-v1/prepared-01/FINAL_VERIFICATION.json",
+    "resolved": "/tmp/opencode/jev-clean-origin-20261112-v1/prepared-01/FINAL_VERIFICATION.json"
+  }
+}

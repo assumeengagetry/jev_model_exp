@@ -1,0 +1,360 @@
+{
+  "complete": true,
+  "cursor": {
+    "cases": 56912,
+    "logical_pair_tokens": 99824365,
+    "macro_updates": 3557
+  },
+  "actual_runtime": {
+    "backward_counter_scope": "autograd native backward invoked by each replay wave; not separately instrumented",
+    "execution": "native-FA3-full-row-no-SDPA-no-fork",
+    "forward": {
+      "dev_select.attempted_real_tokens": 4663452,
+      "dev_select.attempted_tokenwise_rows_per_operator": 4663452,
+      "dev_select.attempted_waves": 1407,
+      "dev_select.completed_native_FA3_calls": 39396,
+      "dev_select.completed_real_tokens": 4663452,
+      "dev_select.completed_tokenwise_rows_per_operator": 4663452,
+      "dev_select.completed_waves": 1407,
+      "train_first.attempted_real_tokens": 99824365,
+      "train_first.attempted_tokenwise_rows_per_operator": 99824365,
+      "train_first.attempted_waves": 16977,
+      "train_first.completed_native_FA3_calls": 475356,
+      "train_first.completed_real_tokens": 99824365,
+      "train_first.completed_tokenwise_rows_per_operator": 99824365,
+      "train_first.completed_waves": 16977,
+      "train_replay.attempted_real_tokens": 99824365,
+      "train_replay.attempted_tokenwise_rows_per_operator": 99824365,
+      "train_replay.attempted_waves": 16977,
+      "train_replay.backward_real_tokens": 99824365,
+      "train_replay.completed_backward_waves": 16977,
+      "train_replay.completed_native_FA3_calls": 475356,
+      "train_replay.completed_real_tokens": 99824365,
+      "train_replay.completed_tokenwise_rows_per_operator": 99824365,
+      "train_replay.completed_waves": 16977
+    },
+    "layout": "packed",
+    "mode": "causal",
+    "native_forward_calls": {
+      "attempted_calls": 990108,
+      "attempted_query_tokens": 5720741096,
+      "completed_calls": 990108,
+      "completed_causal_calls": 990108,
+      "completed_key_tokens": 5720741096,
+      "completed_query_tokens": 5720741096
+    },
+    "prefix_cache": false
+  },
+  "observations": [
+    10000000,
+    30000000,
+    100000000
+  ],
+  "final_checkpoint": {
+    "bytes": 535123,
+    "mtime_ns": 1794495637563708302,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00043/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00043/COMPLETE.json"
+  },
+  "checkpoints": [
+    {
+      "bytes": 535117,
+      "mtime_ns": 1794488257716049557,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000000-s00001/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000000-s00001/COMPLETE.json"
+    },
+    {
+      "bytes": 535120,
+      "mtime_ns": 1794488270887778699,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794488801888862851,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000100-s00003/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000100-s00003/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794488995648881274,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000200-s00004/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000200-s00004/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794489185576964611,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000300-s00005/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000300-s00005/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794489309750389482,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00006/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00006/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794489360625334722,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00007/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00007/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794489422860044672,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000400-s00008/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000400-s00008/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794489605712255777,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000500-s00009/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000500-s00009/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794489794040355543,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000600-s00010/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000600-s00010/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794489988384332877,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000700-s00011/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000700-s00011/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794490174648479418,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000800-s00012/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000800-s00012/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794490354220766140,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000900-s00013/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000900-s00013/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794490532237086649,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001000-s00014/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001000-s00014/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794490727641049534,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001100-s00015/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001100-s00015/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794490771028153383,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001122-s00016/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001122-s00016/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794490814667252114,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001122-s00017/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001122-s00017/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794490965448138727,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001200-s00018/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001200-s00018/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794491173199850599,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001300-s00019/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001300-s00019/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794491376495574300,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001400-s00020/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001400-s00020/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794491580075250948,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001500-s00021/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001500-s00021/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794491766903287689,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001600-s00022/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001600-s00022/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794491973238915210,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001700-s00023/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001700-s00023/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794492172122705001,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001800-s00024/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001800-s00024/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794492356594860810,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001900-s00025/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0001900-s00025/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794492555778780738,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002000-s00026/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002000-s00026/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794492760914576286,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002100-s00027/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002100-s00027/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794492949182715457,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002200-s00028/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002200-s00028/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794493151938555389,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002300-s00029/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002300-s00029/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794493338082734293,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002400-s00030/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002400-s00030/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794493529722798603,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002500-s00031/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002500-s00031/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794493728602712410,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002600-s00032/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002600-s00032/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794493926510644437,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002700-s00033/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002700-s00033/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794494111114848416,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002800-s00034/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002800-s00034/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794494317954593524,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002900-s00035/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0002900-s00035/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794494525834342073,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003000-s00036/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003000-s00036/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794494711106568633,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003100-s00037/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003100-s00037/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794494900446710329,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003200-s00038/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003200-s00038/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794495102434592151,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003300-s00039/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003300-s00039/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794495291074744206,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003400-s00040/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003400-s00040/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794495481278867209,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003500-s00041/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003500-s00041/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794495594420580562,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00042/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00042/COMPLETE.json"
+    },
+    {
+      "bytes": 535123,
+      "mtime_ns": 1794495637563708302,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00043/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00043/COMPLETE.json"
+    }
+  ],
+  "first_actual_macro": {
+    "bytes": 535390,
+    "mtime_ns": 1794488268119835617,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/first-actual-macro/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/first-actual-macro/COMPLETE.json"
+  },
+  "D_select": [
+    {
+      "bytes": 881499,
+      "mtime_ns": 1794489358001389118,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/COMPLETE.json"
+    },
+    {
+      "bytes": 881508,
+      "mtime_ns": 1794495636143737013,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap100000000-m0003557/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap100000000-m0003557/COMPLETE.json"
+    },
+    {
+      "bytes": 881503,
+      "mtime_ns": 1794490813047285569,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap30000000-m0001122/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap30000000-m0001122/COMPLETE.json"
+    }
+  ],
+  "all_checkpoints_retained": true,
+  "public_run": false,
+  "D_confirm_opened": false,
+  "archive_kind": "aggregate-view-private-schedule-and-repeated-scope-elided",
+  "elided_keys": [
+    "scope",
+    "schedule"
+  ],
+  "bound_arm": "C_P_CE",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/COMPLETE.json",
+    "bytes": 1017188,
+    "mtime_ns": 1794495637615707251
+  }
+}

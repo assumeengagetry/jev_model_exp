@@ -1,0 +1,13 @@
+{
+  "execution_complete": true,
+  "numeric_acceptance": false,
+  "modes": [
+    "causal",
+    "prefix_block"
+  ],
+  "elapsed_seconds": 3.3460197129752487,
+  "peak_memory_bytes": 1502660608,
+  "new_public_score": null,
+  "whole_serving_admitted": false,
+  "wholegroup_candidates_preserved": 2
+}

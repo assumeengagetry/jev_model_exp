@@ -1,0 +1,15 @@
+{
+  "DATA_READY": true,
+  "complete": true,
+  "data_ready": {
+    "bytes": 12662,
+    "mtime_ns": 1794484736760033267,
+    "path": "/tmp/opencode/jev-clean-origin-20261112-v1/prepared-01/DATA_READY.json",
+    "resolved": "/tmp/opencode/jev-clean-origin-20261112-v1/prepared-01/DATA_READY.json"
+  },
+  "dev_ready": true,
+  "final_receipt_budget_verified": true,
+  "model_run": false,
+  "own_bytes_including_final_receipts": 2439673916,
+  "train_ready": true
+}

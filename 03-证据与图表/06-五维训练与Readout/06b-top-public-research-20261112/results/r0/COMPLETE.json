@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "models": [
+    "kd",
+    "old_joint",
+    "high_step0",
+    "high_step1000",
+    "high_final"
+  ],
+  "conditions": [
+    "A",
+    "B",
+    "C"
+  ],
+  "questions_per_condition_per_model": 1250,
+  "total_complete_condition_rows": 18750,
+  "code_binding": {
+    "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/CODE_BINDING.json",
+    "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/CODE_BINDING.json",
+    "bytes": 104306,
+    "mtime_ns": 1794457799484128489
+  },
+  "data_ready": {
+    "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/DATA_READY.json",
+    "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/DATA_READY.json",
+    "bytes": 15214,
+    "mtime_ns": 1794457820823692391
+  },
+  "model_receipts": [
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/kd/COMPLETE.json",
+      "bytes": 1948,
+      "mtime_ns": 1794457961480817660
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/old_joint/COMPLETE.json",
+      "bytes": 2026,
+      "mtime_ns": 1794457962016806705
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step0/COMPLETE.json",
+      "bytes": 2036,
+      "mtime_ns": 1794457961404819214
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_step1000/COMPLETE.json",
+      "bytes": 2069,
+      "mtime_ns": 1794457962704792644
+    },
+    {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/runs/high_final/COMPLETE.json",
+      "bytes": 2037,
+      "mtime_ns": 1794458076370469264
+    }
+  ],
+  "summary": {
+    "path": "/tmp/opencode/jev-06b-research-20261112-r0-v2/SUMMARY.json",
+    "resolved": "/tmp/opencode/jev-06b-research-20261112-r0-v2/SUMMARY.json",
+    "bytes": 72578,
+    "mtime_ns": 1794458082570342529
+  },
+  "completed_utc": "2026-11-12T04:34:42.577955+00:00",
+  "new_public_score": null,
+  "weight_updates": 0
+}

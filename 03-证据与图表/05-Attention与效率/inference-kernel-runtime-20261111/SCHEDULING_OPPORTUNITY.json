@@ -1,0 +1,357 @@
+{
+  "scope": "read-only logical scheduling bounds from actual completed v1 outputs; ignoring length/token budgets and prefix startup; not measured throughput or ETA",
+  "counts": {
+    "requests": 140620,
+    "fields": 323259,
+    "candidates": 2506535,
+    "multi_field_requests": 19766,
+    "field_separate_min_waves": 362271,
+    "request_batched_min_waves": 185378
+  },
+  "benchmarks": {
+    "ACOS": {
+      "requests": 1565,
+      "fields": 91092,
+      "candidates": 182184,
+      "multi_field_requests": 1565,
+      "field_separate_min_waves": 91092,
+      "request_batched_min_waves": 5860
+    },
+    "ToolRet": {
+      "requests": 1013,
+      "fields": 30047,
+      "candidates": 60094,
+      "multi_field_requests": 1007,
+      "field_separate_min_waves": 30047,
+      "request_batched_min_waves": 1940
+    },
+    "PhishNChips phishing decisions": {
+      "requests": 2000,
+      "fields": 18000,
+      "candidates": 36000,
+      "multi_field_requests": 2000,
+      "field_separate_min_waves": 18000,
+      "request_batched_min_waves": 2000
+    },
+    "SATA-Bench": {
+      "requests": 1650,
+      "fields": 15517,
+      "candidates": 31034,
+      "multi_field_requests": 1650,
+      "field_separate_min_waves": 15517,
+      "request_batched_min_waves": 1650
+    },
+    "RouterBench": {
+      "requests": 10000,
+      "fields": 20000,
+      "candidates": 220000,
+      "multi_field_requests": 10000,
+      "field_separate_min_waves": 20000,
+      "request_batched_min_waves": 10000
+    },
+    "BRIGHT": {
+      "requests": 307,
+      "fields": 9824,
+      "candidates": 19648,
+      "multi_field_requests": 307,
+      "field_separate_min_waves": 9824,
+      "request_batched_min_waves": 614
+    },
+    "iSarcasmEval": {
+      "requests": 4600,
+      "fields": 11600,
+      "candidates": 23200,
+      "multi_field_requests": 1400,
+      "field_separate_min_waves": 11600,
+      "request_batched_min_waves": 4600
+    },
+    "BFCL": {
+      "requests": 1694,
+      "fields": 4768,
+      "candidates": 9536,
+      "multi_field_requests": 1037,
+      "field_separate_min_waves": 4768,
+      "request_batched_min_waves": 1697
+    },
+    "ContractNLI": {
+      "requests": 123,
+      "fields": 2091,
+      "candidates": 6273,
+      "multi_field_requests": 123,
+      "field_separate_min_waves": 2091,
+      "request_batched_min_waves": 246
+    },
+    "Home appliance simulator": {
+      "requests": 88,
+      "fields": 1590,
+      "candidates": 4220,
+      "multi_field_requests": 88,
+      "field_separate_min_waves": 1590,
+      "request_batched_min_waves": 176
+    },
+    "FinEntity": {
+      "requests": 979,
+      "fields": 2129,
+      "candidates": 6387,
+      "multi_field_requests": 589,
+      "field_separate_min_waves": 2129,
+      "request_batched_min_waves": 982
+    },
+    "API-Bank": {
+      "requests": 508,
+      "fields": 508,
+      "candidates": 26924,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 1016,
+      "request_batched_min_waves": 1016
+    },
+    "BANKING77": {
+      "requests": 3080,
+      "fields": 3080,
+      "candidates": 237160,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 9240,
+      "request_batched_min_waves": 9240
+    },
+    "CLINC150+OOS": {
+      "requests": 5500,
+      "fields": 5500,
+      "candidates": 830500,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 27500,
+      "request_batched_min_waves": 27500
+    },
+    "SGD/SGD-X": {
+      "requests": 2500,
+      "fields": 2500,
+      "candidates": 7233,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 2500,
+      "request_batched_min_waves": 2500
+    },
+    "ANLI": {
+      "requests": 3200,
+      "fields": 3200,
+      "candidates": 9600,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 3200,
+      "request_batched_min_waves": 3200
+    },
+    "BPoMP": {
+      "requests": 5000,
+      "fields": 5000,
+      "candidates": 10000,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 5000,
+      "request_batched_min_waves": 5000
+    },
+    "Humicroedit": {
+      "requests": 2628,
+      "fields": 2628,
+      "candidates": 5256,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 2628,
+      "request_batched_min_waves": 2628
+    },
+    "POP909-CL": {
+      "requests": 2000,
+      "fields": 2000,
+      "candidates": 258000,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 10000,
+      "request_batched_min_waves": 10000
+    },
+    "cfcolor": {
+      "requests": 5000,
+      "fields": 5000,
+      "candidates": 10000,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 5000,
+      "request_batched_min_waves": 5000
+    },
+    "MMLU": {
+      "requests": 14042,
+      "fields": 14042,
+      "candidates": 56168,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 14042,
+      "request_batched_min_waves": 14042
+    },
+    "GPQA Diamond": {
+      "requests": 198,
+      "fields": 198,
+      "candidates": 792,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 198,
+      "request_batched_min_waves": 198
+    },
+    "ARC-Easy": {
+      "requests": 2376,
+      "fields": 2376,
+      "candidates": 9501,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 2376,
+      "request_batched_min_waves": 2376
+    },
+    "ARC-Challenge": {
+      "requests": 1172,
+      "fields": 1172,
+      "candidates": 4687,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 1172,
+      "request_batched_min_waves": 1172
+    },
+    "WinoGrande": {
+      "requests": 1267,
+      "fields": 1267,
+      "candidates": 2534,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 1267,
+      "request_batched_min_waves": 1267
+    },
+    "HellaSwag": {
+      "requests": 10042,
+      "fields": 10042,
+      "candidates": 40168,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 10042,
+      "request_batched_min_waves": 10042
+    },
+    "ChessBench": {
+      "requests": 5000,
+      "fields": 5000,
+      "candidates": 147635,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 7344,
+      "request_batched_min_waves": 7344
+    },
+    "MuSR": {
+      "requests": 756,
+      "fields": 756,
+      "candidates": 2198,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 756,
+      "request_batched_min_waves": 756
+    },
+    "SimpleBench": {
+      "requests": 10,
+      "fields": 10,
+      "candidates": 60,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 10,
+      "request_batched_min_waves": 10
+    },
+    "Amazon ESCI": {
+      "requests": 5000,
+      "fields": 5000,
+      "candidates": 20000,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 5000,
+      "request_batched_min_waves": 5000
+    },
+    "VAST": {
+      "requests": 3006,
+      "fields": 3006,
+      "candidates": 9018,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 3006,
+      "request_batched_min_waves": 3006
+    },
+    "NLI4CT": {
+      "requests": 5500,
+      "fields": 5500,
+      "candidates": 11000,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 5500,
+      "request_batched_min_waves": 5500
+    },
+    "CRUXEval": {
+      "requests": 570,
+      "fields": 570,
+      "candidates": 1824,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 570,
+      "request_batched_min_waves": 570
+    },
+    "CLadder": {
+      "requests": 5000,
+      "fields": 5000,
+      "candidates": 10000,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 5000,
+      "request_batched_min_waves": 5000
+    },
+    "HLE": {
+      "requests": 513,
+      "fields": 513,
+      "candidates": 3576,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 513,
+      "request_batched_min_waves": 513
+    },
+    "Habermas Machine": {
+      "requests": 1676,
+      "fields": 1676,
+      "candidates": 6311,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 1676,
+      "request_batched_min_waves": 1676
+    },
+    "MMLU-Pro": {
+      "requests": 12032,
+      "fields": 12032,
+      "candidates": 113990,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 12032,
+      "request_batched_min_waves": 12032
+    },
+    "BBH fixed-option tasks": {
+      "requests": 5507,
+      "fields": 5507,
+      "candidates": 24710,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 5507,
+      "request_batched_min_waves": 5507
+    },
+    "When2Call MCQ": {
+      "requests": 3652,
+      "fields": 3652,
+      "candidates": 14608,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 3652,
+      "request_batched_min_waves": 3652
+    },
+    "New Yorker caption matching": {
+      "requests": 528,
+      "fields": 528,
+      "candidates": 2640,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 528,
+      "request_batched_min_waves": 528
+    },
+    "RAGTruth response-level hallucination": {
+      "requests": 2700,
+      "fields": 2700,
+      "candidates": 5400,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 2700,
+      "request_batched_min_waves": 2700
+    },
+    "HoVer claim verification": {
+      "requests": 4000,
+      "fields": 4000,
+      "candidates": 8000,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 4000,
+      "request_batched_min_waves": 4000
+    },
+    "GSM8K": {
+      "requests": 2638,
+      "fields": 2638,
+      "candidates": 18466,
+      "multi_field_requests": 0,
+      "field_separate_min_waves": 2638,
+      "request_batched_min_waves": 2638
+    }
+  }
+}

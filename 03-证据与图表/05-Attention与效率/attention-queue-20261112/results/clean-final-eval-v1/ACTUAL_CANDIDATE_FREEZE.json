@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "frozen_candidates": {
+    "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/FROZEN_CANDIDATES.json",
+    "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/FROZEN_CANDIDATES.json",
+    "bytes": 37044,
+    "mtime_ns": 1794517053881585813
+  },
+  "selected": {
+    "baseline": {
+      "id": "C_P_CE",
+      "metrics": {
+        "mass": 0.5959548960942077,
+        "NLL": 1.1938659447435902,
+        "Brier": 0.540697694823891
+      },
+      "terminal_complete": {
+        "bytes": 535123,
+        "mtime_ns": 1794495637563708302,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00043/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0003557-s00043/COMPLETE.json"
+      }
+    },
+    "challenger": {
+      "id": "JPAIR_P_BCE_RANK",
+      "metrics": {
+        "mass": 0.612437066811008,
+        "NLL": 1.1480786374313288,
+        "Brier": 0.5336581557492333
+      },
+      "terminal_complete": {
+        "bytes": 772665,
+        "mtime_ns": 1794513433414682605,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0003557-s00043/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0003557-s00043/COMPLETE.json"
+      }
+    }
+  },
+  "ineligible_dense_conversions": [
+    "C_D_BCE-packed",
+    "C_D_CE-packed"
+  ],
+  "consumer_ready": false,
+  "D_confirm_opened": false,
+  "public_run": false,
+  "model_forward_calls": 0
+}

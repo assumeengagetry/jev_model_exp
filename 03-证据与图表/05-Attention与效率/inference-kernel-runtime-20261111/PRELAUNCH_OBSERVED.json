@@ -1,0 +1,43 @@
+{
+  "observed_utc": "2026-11-11T15:22:21.377998+00:00",
+  "original_complete": true,
+  "original_public_index": 24.97,
+  "v1_complete": true,
+  "v1_public_index": 24.99,
+  "v1_model_matches_original": true,
+  "historical_official_inputs_match": true,
+  "gpu": "index, memory.used [MiB], utilization.gpu [%]\n0, 0 MiB, 0 %\n1, 0 MiB, 0 %\n2, 0 MiB, 0 %\n3, 0 MiB, 0 %\n",
+  "protected_files": [
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/OFFICIAL_COMPLETE.json",
+      "bytes": 48622,
+      "mtime_ns": 1794290285055111377
+    },
+    {
+      "path": "/tmp/opencode/jev-joint-generic-continuation-20261109/OFFICIAL_SNAPSHOT.json",
+      "bytes": 7820,
+      "mtime_ns": 1794256604026196522
+    },
+    {
+      "path": "/tmp/opencode/jev-inference-prefix-graphs-20261110/COMPLETE.json",
+      "bytes": 1307,
+      "mtime_ns": 1794317866795383406
+    },
+    {
+      "path": "/tmp/opencode/jev-inference-prefix-graphs-20261110/BINDING.json",
+      "bytes": 105873,
+      "mtime_ns": 1794305626711230982
+    },
+    {
+      "path": "/tmp/opencode/jev-inference-prefix-graphs-20261110/runs/public-prefix-graphs-v1/scores.json",
+      "bytes": 32079,
+      "mtime_ns": 1794317845987805944
+    },
+    {
+      "path": "/tmp/opencode/jev-inference-prefix-graphs-20261110/runs/public-prefix-graphs-v1/results.jsonl",
+      "bytes": 627983215,
+      "mtime_ns": 1794317802868681602
+    }
+  ],
+  "new_public_launched": false
+}

@@ -1,0 +1,41 @@
+{
+  "after": {
+    "active_requires_grad_true": 393,
+    "all_grad_None": true,
+    "keys_compared": 393,
+    "method": "pure dtype-preserving CPU bytes; no reload/digest",
+    "shape_dtype_bytes_equal": true
+  },
+  "backward_calls": 0,
+  "before": {
+    "active_requires_grad_true": 393,
+    "all_grad_None": true,
+    "keys_compared": 393,
+    "method": "pure dtype-preserving CPU bytes; no reload/digest",
+    "shape_dtype_bytes_equal": true
+  },
+  "loaded_once": {
+    "all_tensors_bitwise_equal": true,
+    "comparison": "torch.equal on dtype-preserving byte views per key; no digest",
+    "exact_keys_compared": 393
+  },
+  "optimizer_created": false,
+  "post_eval_reload": false,
+  "weights_unchanged": true,
+  "audit": {
+    "saved_key_count": 393,
+    "lora_pairs": 196,
+    "trainable_tensors": 393,
+    "trainable_parameters": 20187136,
+    "active_served_parameters": 616237056,
+    "physical_registered_parameters": 616239104,
+    "unused_registered_parameters": 2048
+  },
+  "archive_kind": "weight-identity-view-per-key-shape-metadata-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/WEIGHTS.json",
+    "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/WEIGHTS.json",
+    "bytes": 102388,
+    "mtime_ns": 1794513363316097633
+  }
+}

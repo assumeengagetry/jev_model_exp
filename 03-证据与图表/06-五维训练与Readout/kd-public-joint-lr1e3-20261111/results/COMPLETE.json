@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "kd_public_index": 24.38,
+  "joint_lr1e3_public_index": 0.81,
+  "kd_public_receipt": {
+    "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/COMPLETE.json",
+    "bytes": 10666,
+    "mtime_ns": 1794419212158610258
+  },
+  "training_receipt": {
+    "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/TRAINING_COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/TRAINING_COMPLETE.json",
+    "bytes": 11879,
+    "mtime_ns": 1794424559249736296
+  },
+  "joint_public_receipt": {
+    "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/joint_lr1e3/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/joint_lr1e3/COMPLETE.json",
+    "bytes": 11355,
+    "mtime_ns": 1794425557745180349
+  },
+  "uploaded": false,
+  "private_full_score": null,
+  "completed_utc": "2026-11-11T19:32:40.855623+00:00"
+}

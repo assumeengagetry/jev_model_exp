@@ -1,0 +1,32 @@
+{
+  "ready": true,
+  "target_macro": 0,
+  "target_and_cache_positions": [
+    32,
+    33
+  ],
+  "neighbor_sources": [
+    {
+      "macro": 0,
+      "position": 7,
+      "dataset_index": 197992
+    },
+    {
+      "macro": 0,
+      "position": 9,
+      "dataset_index": 501876
+    }
+  ],
+  "neighbors_global_positions": [
+    7,
+    9
+  ],
+  "neighbor_geometry": {
+    "row_length": 340,
+    "prefix_length": 337,
+    "suffix_length": 3
+  },
+  "selected_by_input_metadata_only": true,
+  "synthetic_tokens": false,
+  "model_run": false
+}

@@ -1,0 +1,134 @@
+{
+  "complete": true,
+  "checked_utc": "2026-11-12T18:02:03.054899+00:00",
+  "exact_controller_live": true,
+  "actual_resume_admission": {
+    "STATE_NL_PB_P_CE": {
+      "gpu": 2,
+      "uuid": "GPU-16c2eecc-d93f-08f7-e1b0-13d23ffd23d0",
+      "exact_worker_live": true,
+      "worker": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 741861,
+        "starttime": "143632998"
+      },
+      "macro0_starts": 1,
+      "explicit_resumes": 1,
+      "restored_cursor": {
+        "cases": 16,
+        "logical_pair_tokens": 20947,
+        "macro_updates": 1
+      },
+      "latest_updated_cursor": {
+        "cases": 800,
+        "logical_pair_tokens": 1217745,
+        "macro_updates": 50
+      },
+      "resume_checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/checkpoint-m0000001-s00002",
+      "resume_complete": {
+        "bytes": 772717,
+        "mtime_ns": 1794501895840104165,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "capacity_reserved": true,
+      "admission_budget": {
+        "admitted": [],
+        "arm_cap_bytes": 26843545600,
+        "candidate": [
+          "STATE_NL_PB_P_CE"
+        ],
+        "evidence_bytes": 5368709120,
+        "fits": true,
+        "free_bytes": 157050576896,
+        "outstanding_bytes": {
+          "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": 0,
+          "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": 25944728926,
+          "/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42": 0,
+          "/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42": 0
+        },
+        "pending_unreserved": [
+          "STATE_NL_PB_P_CE",
+          "JPAIR_P_BCE_RANK"
+        ],
+        "projection_only": true,
+        "required_free_bytes": 52788274526,
+        "retained_bytes": {
+          "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": 898731759,
+          "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": 898816674,
+          "/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42": 10969676192,
+          "/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42": 10969676860
+        },
+        "shared_floor_bytes": 21474836480,
+        "system_wide_reservation": false
+      }
+    },
+    "JPAIR_P_BCE_RANK": {
+      "gpu": 3,
+      "uuid": "GPU-52480c01-119c-f065-33d8-cb016eac9c39",
+      "exact_worker_live": true,
+      "worker": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 741889,
+        "starttime": "143633666"
+      },
+      "macro0_starts": 1,
+      "explicit_resumes": 1,
+      "restored_cursor": {
+        "cases": 16,
+        "logical_pair_tokens": 20947,
+        "macro_updates": 1
+      },
+      "latest_updated_cursor": {
+        "cases": 1008,
+        "logical_pair_tokens": 1595242,
+        "macro_updates": 63
+      },
+      "resume_checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0000001-s00002",
+      "resume_complete": {
+        "bytes": 772662,
+        "mtime_ns": 1794501888308259793,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "capacity_reserved": true,
+      "admission_budget": {
+        "admitted": [
+          "STATE_NL_PB_P_CE"
+        ],
+        "arm_cap_bytes": 26843545600,
+        "candidate": [
+          "JPAIR_P_BCE_RANK"
+        ],
+        "evidence_bytes": 5368709120,
+        "fits": true,
+        "free_bytes": 157050073088,
+        "outstanding_bytes": {
+          "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": 25944813841,
+          "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": 25944728926,
+          "/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42": 0,
+          "/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42": 0
+        },
+        "pending_unreserved": [
+          "JPAIR_P_BCE_RANK"
+        ],
+        "projection_only": true,
+        "required_free_bytes": 78733088367,
+        "retained_bytes": {
+          "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": 898731759,
+          "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": 898816674,
+          "/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42": 10969676192,
+          "/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42": 10969676860
+        },
+        "shared_floor_bytes": 21474836480,
+        "system_wide_reservation": false
+      }
+    }
+  },
+  "observer": "inotify incremental ledger stream + exact pidfd; no progress polling",
+  "GPU_snapshot": "0, 0, 0\n1, 0, 0\n2, 36, 55433\n3, 69, 58641\n",
+  "model_or_queue_started_by_observer": false,
+  "old_queue_restarted": false,
+  "D_confirm_opened": false,
+  "public_run": false
+}

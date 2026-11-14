@@ -1,5 +1,9 @@
 # Attention与效率 · 研究结论
 
+## 2026-11-11完成
+
+- [保留同一权重和评分的调度/内核v2](inference-kernel-runtime-20261111/README.md)：完整public24.91、57m16.6s，比v1再快3.538×，比原始快9.780×；未达半小时，有数值漂移。
+
 ## 2026-11-10新增
 
 - [同joint final共享前缀＋CUDA Graph完整public结果](inference-prefix-graphs-20261110/README.md)：24.99、整套2.765×、输出漂移及调度退步。

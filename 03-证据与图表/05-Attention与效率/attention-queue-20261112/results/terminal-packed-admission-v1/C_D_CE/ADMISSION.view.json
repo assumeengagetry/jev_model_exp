@@ -1,0 +1,82 @@
+{
+  "D_confirm_opened": false,
+  "EOS": 151645,
+  "all_raw_retained": true,
+  "automatic_retry": false,
+  "coverage_complete": true,
+  "elapsed_seconds": 55.618570629972965,
+  "eligible_packed_candidate": false,
+  "eligible_scope": "this-fixed-checkpoint-full375-select-only",
+  "environment": {
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "gpu_name": "NVIDIA H800 NVL",
+    "precision": {
+      "allow_bf16_reduced_precision_reduction": true,
+      "autocast_cache_enabled": true,
+      "cublas_workspace_config": ":4096:8",
+      "cudnn_allow_tf32": true,
+      "float32_matmul_precision": "high",
+      "matmul_allow_tf32": true
+    },
+    "prefix_cache": false,
+    "versions": {
+      "cuda_build": "12.8",
+      "peft": "0.18.1",
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.6"
+    },
+    "visible_device": "GPU-e1f6e14d-5cb2-3c33-6da8-63bffdca174b",
+    "world_size": 1
+  },
+  "execution_complete": true,
+  "expected_micro_waves": 469,
+  "full_public_or_global_geometry_equivalence": false,
+  "head_all_tokens_before_eos": true,
+  "native_calls_per_wave": 28,
+  "new_learning_tokens": 0,
+  "no_training": true,
+  "numerical_acceptance": false,
+  "official_latency_claim": false,
+  "prefix_serving_admitted": false,
+  "public_run": false,
+  "real_tokens": 1554484,
+  "runtime": {
+    "backward_counter_scope": "autograd native backward invoked by each replay wave; not separately instrumented",
+    "execution": "native-FA3-full-row-no-SDPA-no-fork",
+    "forward": {
+      "dev_select.attempted_real_tokens": 1554484,
+      "dev_select.attempted_tokenwise_rows_per_operator": 1554484,
+      "dev_select.attempted_waves": 469,
+      "dev_select.completed_native_FA3_calls": 13132,
+      "dev_select.completed_real_tokens": 1554484,
+      "dev_select.completed_tokenwise_rows_per_operator": 1554484,
+      "dev_select.completed_waves": 469
+    },
+    "layout": "packed",
+    "mode": "causal",
+    "native_forward_calls": {
+      "attempted_calls": 13132,
+      "attempted_query_tokens": 43525552,
+      "completed_calls": 13132,
+      "completed_causal_calls": 13132,
+      "completed_key_tokens": 43525552,
+      "completed_query_tokens": 43525552
+    },
+    "prefix_cache": false
+  },
+  "source_review_is_not_runtime_proof": true,
+  "weights_unchanged": true,
+  "winner_selected": false,
+  "archive_kind": "aggregate-view-private-case-or-repeated-scope-elided",
+  "elided_keys": [
+    "scope"
+  ],
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/ADMISSION.json",
+    "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/ADMISSION.json",
+    "bytes": 603523,
+    "mtime_ns": 1794513363324097472
+  }
+}

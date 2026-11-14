@@ -1,0 +1,48 @@
+{
+  "observed_date": "2026-11-12",
+  "scope": "Read-only exact input-case intersection following the actual historical state converter; no public gold labels, predictions, model execution, score adjustment, or extra content hashes.",
+  "actual_selected_historical_sources": {
+    "overnight/xlam": {"pairs": 36092, "unique_input_ids": 27763},
+    "native/glaive": {"pairs": 52463, "unique_input_ids": 49880}
+  },
+  "public_toolret_input_inventory": {"execution_requests": 1013, "unique_normalized_query_values": 936},
+  "initial_non_equivalent_whole_state_lookup": {
+    "xlam_matches": 0,
+    "glaive_matches": 0,
+    "cannot_prove_no_case_exposure": true,
+    "reason": "Historical xLAM state is a JSON object with request and available_tools; comparing the entire serialized state with a plain public query misses the request field."
+  },
+  "actual_xlam_converter": {
+    "file": "/home/dev/assumeengage/scripts/prepare-overnight-pairs.py",
+    "relevant_lines": "116-129",
+    "state_fields": ["request", "available_tools"],
+    "request_origin": "original xLAM row.query",
+    "labels_origin": "annotated answer function names; unchosen candidates were treated as non-positive in the historical converter"
+  },
+  "corrected_semantic_field_intersection": {
+    "actual_selected_xlam_input_ids_parsed": 27763,
+    "structured_request_fields_found": 27763,
+    "parse_failures": 0,
+    "unique_public_toolret_queries_exactly_equal_to_selected_training_request": 94,
+    "affected_public_execution_requests": 98
+  },
+  "what_is_established": [
+    "Actually selected project fine-tuning inputs exposed the exact normalized wording of these public ToolRet queries.",
+    "The historical best24.91 and four-rank bridge24.67 share this ancestor training pool; they cannot be presented as certified unexposed public-ranking baselines.",
+    "A zero whole-state comparison was a representation mismatch, not negative evidence of exposure."
+  ],
+  "what_is_not_established": [
+    "Candidate catalog, tool-schema, label or full original case equality has not been exhaustively compared.",
+    "Some queries may be generic or repeated; the count alone is not proof of benchmark gaming or that the whole Public Index is inflated.",
+    "Which matched requests entered ToolRet's scoreable-query subset, and their exact score contribution, have not been quantified.",
+    "No adjusted clean score or absence of other legacy overlaps is claimed."
+  ],
+  "engineering_decision": {
+    "preserve_all_historical_models_and_scores": true,
+    "promote_old_lineage_as_clean_sota": false,
+    "new_ranking_branch_from_project_untuned_stock_base_with_fresh_lora_and_head": true,
+    "reuse_legacy_trained_adapter_head_or_teacher_label_cache": false,
+    "new_data_requires_symmetric_case_input_decontamination_and_grouped_holdout": true,
+    "base_pretraining_exposure_proved_absent": false
+  }
+}

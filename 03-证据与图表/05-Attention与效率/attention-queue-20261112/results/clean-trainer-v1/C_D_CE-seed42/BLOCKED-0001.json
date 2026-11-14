@@ -1,0 +1,12 @@
+{
+  "automatic_resume": false,
+  "complete": false,
+  "cursor_last_full_macro": {
+    "cases": 0,
+    "logical_pair_tokens": 0,
+    "macro_updates": 0
+  },
+  "error": "'base_model.model.score.modules_to_save.default.weight'",
+  "error_type": "KeyError",
+  "partial_preserved": true
+}

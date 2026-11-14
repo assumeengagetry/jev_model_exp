@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "scope": "one-time actualsaved-macro coefficient mismatch diagnosis only",
+  "reports": {
+    "STATE_NL_PB_P_CE": {
+      "saved_loss": 1.410884141921997,
+      "primary_report_loss": 1.410884141921997,
+      "producer_recomputed_loss": 1.410884141921997,
+      "primary_function_recomputed_loss": 1.410884141921997,
+      "MAIN_expression_loss": 1.410884141921997,
+      "producer_vs_saved": {
+        "dtype_shape_equal": true,
+        "bytes_equal": true,
+        "unequal_values": 0,
+        "max_abs_difference": 0.0,
+        "relative_l2": 0.0
+      },
+      "primary_vs_saved": {
+        "dtype_shape_equal": true,
+        "bytes_equal": true,
+        "unequal_values": 0,
+        "max_abs_difference": 0.0,
+        "relative_l2": 0.0
+      },
+      "MAIN_vs_saved": {
+        "dtype_shape_equal": true,
+        "bytes_equal": true,
+        "unequal_values": 0,
+        "max_abs_difference": 0.0,
+        "relative_l2": 0.0
+      },
+      "cache_margins_dtype": "torch.float32",
+      "cache_coefficients_dtype": "torch.float32"
+    },
+    "JPAIR_P_BCE_RANK": {
+      "saved_loss": 2.5942800045013428,
+      "primary_report_loss": 2.5942800045013428,
+      "producer_recomputed_loss": 2.5942800045013428,
+      "primary_function_recomputed_loss": 2.5942800045013428,
+      "MAIN_expression_loss": 2.5942800045013428,
+      "producer_vs_saved": {
+        "dtype_shape_equal": true,
+        "bytes_equal": true,
+        "unequal_values": 0,
+        "max_abs_difference": 0.0,
+        "relative_l2": 0.0
+      },
+      "primary_vs_saved": {
+        "dtype_shape_equal": true,
+        "bytes_equal": true,
+        "unequal_values": 0,
+        "max_abs_difference": 0.0,
+        "relative_l2": 0.0
+      },
+      "MAIN_vs_saved": {
+        "dtype_shape_equal": true,
+        "bytes_equal": false,
+        "unequal_values": 12,
+        "max_abs_difference": 3.725290298461914e-09,
+        "relative_l2": 4.2346671139488095e-08
+      },
+      "cache_margins_dtype": "torch.float32",
+      "cache_coefficients_dtype": "torch.float32"
+    }
+  },
+  "model_forward_calls": 0,
+  "optimizer_steps": 0,
+  "CUDA_initialized": false,
+  "authorization_created": false
+}

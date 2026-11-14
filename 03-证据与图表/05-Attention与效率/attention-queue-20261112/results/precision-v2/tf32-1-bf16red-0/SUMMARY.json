@@ -1,0 +1,974 @@
+{
+  "tf32": true,
+  "bf16_reduction": false,
+  "modes": {
+    "causal": {
+      "packed_solo_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 6.922797431401551e-05,
+          "max_abs": 0.00390625,
+          "bitwise_equal": false
+        },
+        "eos_hidden": {
+          "pass": false,
+          "relative_rms": 0.021188054425150413,
+          "max_abs": 0.126953125,
+          "bitwise_equal": false
+        },
+        "logits": {
+          "pass": false,
+          "relative_rms": 0.029548448461678187,
+          "max_abs": 0.03125,
+          "bitwise_equal": false
+        }
+      },
+      "packed_same_geometry_neighbor": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      },
+      "hf_solo_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 6.922797431401551e-05,
+          "max_abs": 0.00390625,
+          "bitwise_equal": false
+        },
+        "eos_hidden": {
+          "pass": false,
+          "relative_rms": 0.021188054425150413,
+          "max_abs": 0.126953125,
+          "bitwise_equal": false
+        },
+        "logits": {
+          "pass": false,
+          "relative_rms": 0.029548448461678187,
+          "max_abs": 0.03125,
+          "bitwise_equal": false
+        }
+      },
+      "hf_same_geometry_neighbor": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      },
+      "dense_packed_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      },
+      "hf_packed_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      },
+      "prefix_full_fork": {
+        "raw": {
+          "pass": true,
+          "relative_rms": 0.004673254367529041,
+          "max_abs": 0.0078125,
+          "bitwise_equal": false
+        },
+        "margin": {
+          "pass": true,
+          "relative_rms": 0.004026729558588678,
+          "max_abs": 0.01171875,
+          "bitwise_equal": false
+        }
+      }
+    },
+    "bidirectional": {
+      "packed_solo_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 5.362632703912781e-05,
+          "max_abs": 0.001953125,
+          "bitwise_equal": false
+        },
+        "eos_hidden": {
+          "pass": false,
+          "relative_rms": 0.04052778964659249,
+          "max_abs": 1.3125,
+          "bitwise_equal": false
+        },
+        "logits": {
+          "pass": false,
+          "relative_rms": 0.02325477670256584,
+          "max_abs": 0.140625,
+          "bitwise_equal": false
+        }
+      },
+      "packed_same_geometry_neighbor": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      },
+      "hf_solo_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 5.362632703912781e-05,
+          "max_abs": 0.001953125,
+          "bitwise_equal": false
+        },
+        "eos_hidden": {
+          "pass": false,
+          "relative_rms": 0.04052778964659249,
+          "max_abs": 1.3125,
+          "bitwise_equal": false
+        },
+        "logits": {
+          "pass": false,
+          "relative_rms": 0.02325477670256584,
+          "max_abs": 0.140625,
+          "bitwise_equal": false
+        }
+      },
+      "hf_same_geometry_neighbor": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      },
+      "dense_packed_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      },
+      "hf_packed_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      }
+    },
+    "prefix_block": {
+      "packed_solo_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 8.129935396599436e-05,
+          "max_abs": 0.00390625,
+          "bitwise_equal": false
+        },
+        "eos_hidden": {
+          "pass": false,
+          "relative_rms": 0.043991826801907295,
+          "max_abs": 0.6015625,
+          "bitwise_equal": false
+        },
+        "logits": {
+          "pass": false,
+          "relative_rms": 0.01264372740908929,
+          "max_abs": 0.009765625,
+          "bitwise_equal": false
+        }
+      },
+      "packed_same_geometry_neighbor": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      },
+      "hf_solo_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 8.129935396599436e-05,
+          "max_abs": 0.00390625,
+          "bitwise_equal": false
+        },
+        "eos_hidden": {
+          "pass": false,
+          "relative_rms": 0.043991826801907295,
+          "max_abs": 0.6015625,
+          "bitwise_equal": false
+        },
+        "logits": {
+          "pass": false,
+          "relative_rms": 0.01264372740908929,
+          "max_abs": 0.009765625,
+          "bitwise_equal": false
+        }
+      },
+      "hf_same_geometry_neighbor": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      },
+      "dense_packed_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      },
+      "hf_packed_mixed": {
+        "cos": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "sin": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "input_norm0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "q_projection0": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "attention_context": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "layer0_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "eos_hidden": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        },
+        "logits": {
+          "pass": true,
+          "relative_rms": 0.0,
+          "max_abs": 0.0,
+          "bitwise_equal": true
+        }
+      },
+      "prefix_full_fork": {
+        "raw": {
+          "pass": false,
+          "relative_rms": 0.032095370265032515,
+          "max_abs": 0.0380859375,
+          "bitwise_equal": false
+        },
+        "margin": {
+          "pass": false,
+          "relative_rms": 0.051974725782878026,
+          "max_abs": 0.0615234375,
+          "bitwise_equal": false
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 5.458640509052202,
+  "native_attention": {
+    "attention": "flash_attention_3",
+    "attention_implementation": "flash_attn3_hopper",
+    "attention_provider": "kernels-community/flash-attn3",
+    "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+    "sdpa_fallback": false,
+    "fa3_forward_calls": 1064,
+    "fa3_backward_calls": 0,
+    "actual_training_kernel_executed": false,
+    "torch_deterministic_algorithms": true,
+    "fa3_deterministic_forward_calls": 1064,
+    "fa3_deterministic_backward_calls": 0,
+    "actual_deterministic_fa3_backward_executed": false,
+    "cublas_workspace_config": ":4096:8",
+    "attention_current_process": {
+      "attention": "flash_attention_3",
+      "attention_implementation": "flash_attn3_hopper",
+      "attention_provider": "kernels-community/flash-attn3",
+      "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+      "sdpa_fallback": false,
+      "fa3_forward_calls": 1064,
+      "fa3_backward_calls": 0,
+      "actual_training_kernel_executed": false,
+      "torch_deterministic_algorithms": true,
+      "fa3_deterministic_forward_calls": 1064,
+      "fa3_deterministic_backward_calls": 0,
+      "actual_deterministic_fa3_backward_executed": false,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+  },
+  "learning_updates": 0,
+  "new_public_score": null
+}

@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "bytes": 1184136,
+      "mtime_ns": 1794513431542720393,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/D_select-cap100000000-m0003557/SUMMARY.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/D_select-cap100000000-m0003557/SUMMARY.json"
+    },
+    {
+      "bytes": 665019,
+      "mtime_ns": 1794513431530720634,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/D_select-cap100000000-m0003557/case-metrics.jsonl",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/D_select-cap100000000-m0003557/case-metrics.jsonl"
+    }
+  ],
+  "node": {
+    "cap": 100000000,
+    "cases": 56912,
+    "logical_pair_tokens": 99824365,
+    "macro_updates": 3557
+  },
+  "archive_kind": "aggregate-view-repeated-scope-elided",
+  "elided_keys": [
+    "scope",
+    "checkpoint_identity"
+  ],
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/D_select-cap100000000-m0003557/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/D_select-cap100000000-m0003557/COMPLETE.json",
+    "bytes": 1175234,
+    "mtime_ns": 1794513431550720232
+  },
+  "bound_arm": "JPAIR_P_BCE_RANK",
+  "independent_primary": {
+    "path": "/tmp/opencode/jev-followup-select-analysis-20261112-v1/FOLLOWUP_SELECT_PRIMARY-cap100000000.json",
+    "resolved": "/tmp/opencode/jev-followup-select-analysis-20261112-v1/FOLLOWUP_SELECT_PRIMARY-cap100000000.json",
+    "bytes": 233795,
+    "mtime_ns": 1794515237374223529
+  }
+}

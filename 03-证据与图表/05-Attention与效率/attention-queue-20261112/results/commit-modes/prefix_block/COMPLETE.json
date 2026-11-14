@@ -1,0 +1,13 @@
+{
+  "execution_complete": true,
+  "numerical_acceptance": false,
+  "mode": "prefix_block",
+  "commit": "2e334fb76c4cd4826df37424450b2734101db9f8",
+  "actual_macro": 0,
+  "pairs": 128,
+  "strict_deterministic_fa3_backward": true,
+  "public_score": null,
+  "training_quality_gain": null,
+  "native_forward_calls": 224,
+  "native_backward_calls": 224
+}

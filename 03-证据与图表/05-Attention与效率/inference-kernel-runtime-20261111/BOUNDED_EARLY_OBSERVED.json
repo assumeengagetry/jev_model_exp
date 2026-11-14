@@ -1,0 +1,89 @@
+{
+  "observed_utc": "2026-11-11T15:39:53.819015+00:00",
+  "scope": "actual bounded-JIT production snapshot; no extra model forward; early matched cases not full-suite ETA",
+  "coordinator": {
+    "stage": "running_full_public_0.3",
+    "updated_utc": "2026-11-11T15:37:17.294583+00:00",
+    "coordinator": {
+      "pid": 651097,
+      "starttime": "134137935",
+      "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+    },
+    "complete": false,
+    "run": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runs/public-kernel-v2"
+  },
+  "runner": {
+    "time": "2026-11-11T15:39:53.544476+00:00",
+    "event": "progress",
+    "engine": "kernel_engine:KernelPairClassifierEngine",
+    "completed": 1830,
+    "counts": {
+      "ok": 1830
+    },
+    "elapsed_seconds": 134.6
+  },
+  "compiled_kernel_versions": {
+    "_rms": 1,
+    "_pointwise": 2,
+    "_norm_rope": 2,
+    "_fork_attention": 1
+  },
+  "norm_rope_ir_has_runtime_S": true,
+  "startup": {
+    "loaded_seconds": 17.750341047998518,
+    "graphs": 67,
+    "reserved_gib": 13.00390625
+  },
+  "sample_requests": 1831,
+  "sample_statuses": {
+    "ok": 1831
+  },
+  "sample_datasets": {
+    "BFCL": 1694,
+    "ToolRet": 137
+  },
+  "comparisons": {
+    "original": {
+      "fields": 8947,
+      "choice_changes": 34,
+      "token_count_mismatches": 0,
+      "mean_probability_delta": 0.004218788323383831,
+      "max_probability_delta": 0.17821141186760764,
+      "first500_old_mean_ms": 70.9616218758747,
+      "first500_new_mean_ms": 7.183561524841934,
+      "matched_tasks": {
+        "BFCL": {
+          "requests": 1694,
+          "old_seconds": 203.6328390482813,
+          "new_seconds": 38.623143011238426
+        },
+        "ToolRet": {
+          "requests": 137,
+          "old_seconds": 296.76130802487023,
+          "new_seconds": 95.57165381475352
+        }
+      }
+    },
+    "v1": {
+      "fields": 8947,
+      "choice_changes": 43,
+      "token_count_mismatches": 0,
+      "mean_probability_delta": 0.004206186602322796,
+      "max_probability_delta": 0.1774556048035984,
+      "first500_old_mean_ms": 15.16053571831435,
+      "first500_new_mean_ms": 7.183561524841934,
+      "matched_tasks": {
+        "BFCL": {
+          "requests": 1694,
+          "old_seconds": 223.04994438635185,
+          "new_seconds": 38.623143011238426
+        },
+        "ToolRet": {
+          "requests": 137,
+          "old_seconds": 141.31547368853353,
+          "new_seconds": 95.57165381475352
+        }
+      }
+    }
+  }
+}

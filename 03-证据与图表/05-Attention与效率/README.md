@@ -1,5 +1,11 @@
 # Attention与效率 · 证据与图表
 
+## 2026-11-11完成
+
+- [内核v2原生分数](inference-kernel-runtime-20261111/results/scores.json) · [直接完成/来源核验](inference-kernel-runtime-20261111/results/FINAL_VERIFICATION.json) · [全任务耗时审计](inference-kernel-runtime-20261111/results/TIMING_AUDIT.json)。
+- [相对原始输出](inference-kernel-runtime-20261111/results/COMPARISON.json) · [相对v1输出](inference-kernel-runtime-20261111/results/COMPARISON_V1.json) · [完成回执](inference-kernel-runtime-20261111/results/COMPLETE.json)。
+- [初版部署](inference-kernel-runtime-20261111/DEPLOYMENT.json) · [有界JIT版启动](inference-kernel-runtime-20261111/BOUNDED_LAUNCH.json) · [历史首批观察](inference-kernel-runtime-20261111/BOUNDED_EARLY_OBSERVED.json)；不与最终全量结果混淆。
+
 ## 2026-11-10新增
 
 - [加速版原生分数](inference-prefix-graphs-20261110/results/scores.json)、[全量输出对比聚合](inference-prefix-graphs-20261110/results/COMPARISON.json)、[直接完成核验](inference-prefix-graphs-20261110/results/FINAL_VERIFICATION.json)。

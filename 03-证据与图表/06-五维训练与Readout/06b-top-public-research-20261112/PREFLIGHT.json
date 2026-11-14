@@ -1,0 +1,91 @@
+{
+  "scope": "Read-only reconnaissance before a new research design is approved; no new GPU experiment, model construction/forward/backward, training, public scorer run, test-file target reading, or extra model/corpus hash.",
+  "resource_observed_utc": "2026-11-12T02:48:47.155169+00:00",
+  "resource": {
+    "free_h800_gpus": 4,
+    "compute_processes": 0,
+    "scratch_free_gib": 249.03,
+    "cpu_affinity_count": 176,
+    "occupancy_must_be_rechecked_before_launch": true
+  },
+  "served_parameter_header_accounting": {
+    "base_sequence_classifier_backbone": 596049920,
+    "lora": 20185088,
+    "active_score": 2048,
+    "total_logical_served_parameters": 616237056,
+    "unused_stored_lm_head_parameters_excluded": 155582464,
+    "direct_download_repo": "Qwen/Qwen3-0.6B",
+    "download_source": "ModelScope",
+    "download_revision": "master",
+    "immutable_hf_revision_equivalence_proved": false
+  },
+  "validation_inventory": {
+    "original_native_dev_rows": 15550,
+    "native_dev_rows_without_missing_group_id": 15550,
+    "domains_before_exposure_gate": {
+      "knowledge": 2552,
+      "language": 10733,
+      "retrieval": 890,
+      "tools": 600,
+      "arts": 775
+    },
+    "existing_readout_holdout_scope": "Internal adaptation holdout; historical trunk exposure is not excluded",
+    "existing_readout_dev_questions": 1100,
+    "existing_readout_reverse_questions": 150
+  },
+  "validation_exposure_reconnaissance": {
+    "observed_utc": "2026-11-12T02:58:42.843889+00:00",
+    "elapsed_seconds": 29.478885245043784,
+    "selected_task_unique_states_scanned": 818069,
+    "selected_task_unique_groups_scanned": 763252,
+    "selected_generic_original_rows_scanned": 416934,
+    "validation_rows_matching_selected_training_raw_state": 107,
+    "validation_rows_matching_selected_training_source_group": 0,
+    "source_group_lookup_comparable_to_native_case_groups": false,
+    "source_group_zero_match_is_independence_evidence": false,
+    "later_encoding_discovery": "Actual global source names use typed_full/, and original_group_id for typed pairs is normalized row_id/native id rather than raw native group_id. The preliminary zero-match lookup compared non-equivalent identifiers; it cannot prove case isolation. Exact-state107 and public-state150 observations remain valid, but remaining inventory is still not admitted.",
+    "validation_rows_matching_full_public_raw_state": 150,
+    "blocked_after_validation_state_group_closure": 257,
+    "remaining_candidate_rows_by_domain": {
+      "knowledge": 2542,
+      "language": 10561,
+      "retrieval": 858,
+      "tools": 600,
+      "arts": 732
+    },
+    "independent_validation_admitted": false,
+    "remaining_uncertainty": "Historical dedup may discard alternative source/group identities; source aliases, sibling-case closure and semantic near-duplicates have not been comprehensively excluded. Remaining inventory is not automatically an independent holdout."
+  },
+  "saved_parameter_statistics": {
+    "observed_utc": "2026-11-12T03:00:10.133804+00:00",
+    "snapshots_read": 6,
+    "tensor_keys_per_snapshot": 393,
+    "all_read_saved_tensors_finite": true,
+    "kd_final": {
+      "head_difference_row_norm": 0.8081766963005066,
+      "lora_a_norm_ratio_to_kd": 1.0,
+      "lora_b_norm_ratio_to_kd": 1.0,
+      "head_relative_delta_from_kd": 0.0
+    },
+    "old_joint_final": {
+      "head_difference_row_norm": 0.8083430528640747,
+      "lora_a_norm_ratio_to_kd": 1.0061371947973206,
+      "lora_b_norm_ratio_to_kd": 1.0452172866743408,
+      "head_relative_delta_from_kd": 0.02752460539340973
+    },
+    "high_lr_step1000": {
+      "head_difference_row_norm": 0.1763448864221573,
+      "lora_a_norm_ratio_to_kd": 1.3618663594572102,
+      "lora_b_norm_ratio_to_kd": 2.711301729844101,
+      "head_relative_delta_from_kd": 0.6495574712753296
+    },
+    "high_lr_final": {
+      "head_difference_row_norm": 0.24075396358966827,
+      "lora_a_norm_ratio_to_kd": 1.6484419059098585,
+      "lora_b_norm_ratio_to_kd": 3.565746547001929,
+      "head_relative_delta_from_kd": 0.6869556903839111
+    },
+    "causal_failure_mechanism_proved": false,
+    "note": "Parameter norms describe existing saved weights only, not forward quality, the exact failure step, or attribution solely to learning rate."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "DATA_READY": false,
+  "stage": "native_coordinate_metadata_only",
+  "native_rows": {
+    "train": 2529342,
+    "validation": 15550
+  },
+  "source_count": 667,
+  "permission_combinations": 667,
+  "elapsed_seconds": 59.01195408287458,
+  "files": [
+    {
+      "path": "/tmp/opencode/jev-clean-census-20261112-v1/native-coordinates.sqlite3",
+      "resolved": "/tmp/opencode/jev-clean-census-20261112-v1/native-coordinates.sqlite3",
+      "bytes": 165883904,
+      "mtime_ns": 1794475103008725243
+    },
+    {
+      "path": "/tmp/opencode/jev-clean-census-20261112-v1/INVENTORY.json",
+      "resolved": "/tmp/opencode/jev-clean-census-20261112-v1/INVENTORY.json",
+      "bytes": 458576,
+      "mtime_ns": 1794475103192721516
+    },
+    {
+      "path": "/tmp/opencode/jev-clean-census-20261112-v1/SOURCE_BINDING.json",
+      "resolved": "/tmp/opencode/jev-clean-census-20261112-v1/SOURCE_BINDING.json",
+      "bytes": 94935,
+      "mtime_ns": 1794475044225915966
+    }
+  ],
+  "semantic_input_filter_complete": false,
+  "clean_training_admitted": false,
+  "model_run": false,
+  "utc": "2026-11-12T09:18:23.217380+00:00"
+}

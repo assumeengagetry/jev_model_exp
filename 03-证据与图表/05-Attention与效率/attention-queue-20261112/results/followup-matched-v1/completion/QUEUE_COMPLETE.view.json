@@ -1,0 +1,74 @@
+{
+  "D_confirm_opened": false,
+  "all_completed": true,
+  "authorization": {
+    "bytes": 1545202,
+    "mtime_ns": 1794506338729476264,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json"
+  },
+  "execution_complete": true,
+  "manifest": {
+    "bytes": 36635667,
+    "mtime_ns": 1794506180204650656,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json"
+  },
+  "owner": {
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+    "pid": 741840,
+    "starttime": "143631476"
+  },
+  "production": false,
+  "public_run": false,
+  "published": false,
+  "scope": "limited-full-row-scientific-only",
+  "serve": false,
+  "winner_selected": false,
+  "workers": [
+    {
+      "actual_wait_complete": true,
+      "arm": "STATE_NL_PB_P_CE",
+      "created": true,
+      "exit_code": 0,
+      "gpu": 2,
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42",
+      "phase": "resume",
+      "process": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 741861,
+        "starttime": "143632998"
+      },
+      "uuid": "GPU-16c2eecc-d93f-08f7-e1b0-13d23ffd23d0",
+      "wait_error": null,
+      "wait_note": null
+    },
+    {
+      "actual_wait_complete": true,
+      "arm": "JPAIR_P_BCE_RANK",
+      "created": true,
+      "exit_code": 0,
+      "gpu": 3,
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42",
+      "phase": "resume",
+      "process": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 741889,
+        "starttime": "143633666"
+      },
+      "uuid": "GPU-52480c01-119c-f065-33d8-cb016eac9c39",
+      "wait_error": null,
+      "wait_note": null
+    }
+  ],
+  "archive_kind": "completed-controller-view-repeated-arm-scopes-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/QUEUE_COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/QUEUE_COMPLETE.json",
+    "bytes": 1546879,
+    "mtime_ns": 1794515117404651267
+  },
+  "elided_keys": [
+    "arms"
+  ]
+}

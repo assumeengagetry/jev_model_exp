@@ -1,0 +1,71 @@
+{
+  "owner": {
+    "pid": 750043,
+    "starttime": "145193429",
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+  },
+  "root": "/tmp/opencode/jev-clean-final-eval-20261112-v1",
+  "launched_utc": "2026-11-12T22:19:51.555125+00:00",
+  "system_python": "/usr/bin/python3",
+  "frozen_candidates": {
+    "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/FROZEN_CANDIDATES.json",
+    "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/FROZEN_CANDIDATES.json",
+    "bytes": 37044,
+    "mtime_ns": 1794517053881585813
+  },
+  "config": {
+    "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/config.json",
+    "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/config.json",
+    "bytes": 47824,
+    "mtime_ns": 1794521902973975393
+  },
+  "source_binding": {
+    "bytes": 1802947,
+    "mtime_ns": 1794521902949975890,
+    "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/SOURCE_SNAPSHOT.json",
+    "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/SOURCE_SNAPSHOT.json"
+  },
+  "source_files": [
+    {
+      "bytes": 44784,
+      "mtime_ns": 1794521901666002525,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/common.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/common.py"
+    },
+    {
+      "bytes": 30846,
+      "mtime_ns": 1794521901670002442,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/backend.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/backend.py"
+    },
+    {
+      "bytes": 61547,
+      "mtime_ns": 1794521901670002442,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/evaluate.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/evaluate.py"
+    },
+    {
+      "bytes": 43844,
+      "mtime_ns": 1794521901674002358,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/ops.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/ops.py"
+    }
+  ],
+  "MAIN_actual_source_bytes_readback": true,
+  "one_shot_only": true,
+  "no_automatic_restart": true,
+  "roles": [
+    "baseline",
+    "challenger"
+  ],
+  "stage_order": [
+    "codec",
+    "confirm",
+    "confirm-analysis",
+    "public-prepare",
+    "baseline-public",
+    "challenger-public"
+  ],
+  "no_new_training": true,
+  "synthetic_warmup": false
+}

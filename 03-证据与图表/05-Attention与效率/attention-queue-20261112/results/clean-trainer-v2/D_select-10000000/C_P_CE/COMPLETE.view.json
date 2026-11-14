@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "bytes": 890125,
+      "mtime_ns": 1794489357949390196,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/SUMMARY.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/SUMMARY.json"
+    },
+    {
+      "bytes": 662656,
+      "mtime_ns": 1794489357929390611,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl"
+    }
+  ],
+  "node": {
+    "cap": 10000000,
+    "cases": 5840,
+    "logical_pair_tokens": 9988659,
+    "macro_updates": 365
+  },
+  "archive_kind": "aggregate-view-with-repeated-scope-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+    "bytes": 881499,
+    "mtime_ns": 1794489358001389118
+  },
+  "elided_keys": [
+    "scope",
+    "checkpoint_identity"
+  ],
+  "bound_arm": "C_P_CE",
+  "bound_config": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/seed42.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/seed42.json",
+    "bytes": 11634,
+    "mtime_ns": 1794488242160369443
+  },
+  "independent_primary_verification": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/D_SELECT_PRIMARY-cap10000000.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/D_SELECT_PRIMARY-cap10000000.json",
+    "bytes": 36824,
+    "mtime_ns": 1794490047907101258
+  }
+}

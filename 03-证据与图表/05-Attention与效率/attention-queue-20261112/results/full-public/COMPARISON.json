@@ -1,0 +1,54 @@
+{
+  "complete": false,
+  "coverage_complete": true,
+  "numerical_acceptance": false,
+  "counts": {
+    "requests": 140620,
+    "fields": 323259,
+    "numeric_contract_violations": 14801,
+    "choice_flips": 378,
+    "requests_with_choice_flips": 376,
+    "outside_band_choice_flips": 21
+  },
+  "public_index": {
+    "dense": 24.71,
+    "packed": 24.7
+  },
+  "max_abs_probability_difference": 0.15196348304197838,
+  "mean_abs_probability_difference": 0.00016199834736818156,
+  "max_abs_margin_difference": 0.486328125,
+  "worst_margin_relative_rms": 3.4393703337504853,
+  "latency": {
+    "dense": {
+      "field": "model_request_wall_ms",
+      "count": 140620,
+      "mean_ms": 118.27952088824412,
+      "p80_ms": 148.14346954226494
+    },
+    "packed": {
+      "field": "model_request_wall_ms",
+      "count": 140620,
+      "mean_ms": 101.97512636215265,
+      "p80_ms": 129.17426698841155
+    }
+  },
+  "timing": {
+    "dense": {
+      "parallel_pipeline_seconds": 4263.021410312969,
+      "single_gpu_admission": false
+    },
+    "packed": {
+      "parallel_pipeline_seconds": 3705.3197448081337,
+      "single_gpu_admission": false
+    }
+  },
+  "prediction_differences": {
+    "path": "/tmp/opencode/jev-padding-free-20261112-v3/PREDICTION_DIFFERENCES.jsonl",
+    "resolved": "/tmp/opencode/jev-padding-free-20261112-v3/PREDICTION_DIFFERENCES.jsonl",
+    "bytes": 395593,
+    "mtime_ns": 1794481478946781507
+  },
+  "interpretation": "same-weight layout/numerics diagnostic, not training improvement or clean ranking",
+  "new_training_score": null,
+  "official_single_gpu_latency_admission": false
+}

@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "verified_rows": 2544892,
+  "distinct_final_root_flag_pairs_verified": 1868994,
+  "missing_group_coordinates_preserved": 0,
+  "source_bindings_verified": 332,
+  "stage": "native-coordinate-metadata-only",
+  "DATA_READY": false,
+  "semantic_input_filter_complete": false,
+  "license_review_complete": false,
+  "clean_training_admitted": false,
+  "model_run": false
+}

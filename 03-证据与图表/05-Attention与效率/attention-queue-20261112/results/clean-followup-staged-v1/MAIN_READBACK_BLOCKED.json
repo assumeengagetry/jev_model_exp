@@ -1,0 +1,9 @@
+{
+  "authorization_created": false,
+  "automatic_retry": false,
+  "complete": false,
+  "error": "MAIN independent actual loss/coef mismatch",
+  "error_type": "RuntimeError",
+  "partial_preserved": true,
+  "traceback": "Traceback (most recent call last):\n  File \"/tmp/opencode/jev-clean-followup-staged-20261112-v1/source/main_readback.py\", line 201, in main\n    direct_readback(inputs)\n  File \"/tmp/opencode/jev-clean-followup-staged-20261112-v1/source/main_readback.py\", line 91, in direct_readback\n    need(equal(coef, cache['coefficients']) and float(objective.detach()) == cache['objective'] == report['independent_objective'],\n  File \"/tmp/opencode/jev-clean-followup-staged-20261112-v1/source/staged_queue.py\", line 40, in need\n    raise RuntimeError(message)\nRuntimeError: MAIN independent actual loss/coef mismatch\n"
+}

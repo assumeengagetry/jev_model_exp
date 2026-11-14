@@ -1,0 +1,78 @@
+{
+  "D_confirm_opened": false,
+  "boundary_contract": "unique-exact-token-split-after-state-plus-one-existing-newline; no rounding/filtering/retokenization",
+  "boundary_policy": "state-plus-one-existing-newline-v2",
+  "complete_scan_and_readback": true,
+  "config": {
+    "bytes": 35287,
+    "mtime_ns": 1794492949294713160,
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v2/projection-config.json",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v2/projection-config.json"
+  },
+  "counts": {
+    "select": {
+      "cases": 375,
+      "complete_candidates": 5190,
+      "exact_state_boundary": 615,
+      "fields": 705,
+      "known_fields": 615,
+      "logical_pair_tokens_once": 1554484,
+      "masked_unknown_no_forward": 90
+    },
+    "train": {
+      "cases": 24600,
+      "complete_candidates": 332663,
+      "exact_state_boundary": 41674,
+      "fields": 47427,
+      "known_fields": 41674,
+      "logical_pair_tokens_once": 99607907,
+      "masked_unknown_no_forward": 5753
+    }
+  },
+  "elapsed_seconds": 102.29800955811515,
+  "model_run": false,
+  "peak_rss_bytes": 201121792,
+  "primary_domain_cases": {
+    "select": {
+      "arts": 75,
+      "knowledge": 75,
+      "language": 75,
+      "retrieval": 75,
+      "tools": 75
+    },
+    "train": {
+      "arts": 4971,
+      "knowledge": 4976,
+      "language": 4950,
+      "retrieval": 4937,
+      "tools": 4766
+    }
+  },
+  "public_run": false,
+  "readback": {
+    "select_cases": 375,
+    "select_fields": 705,
+    "train_cases": 24600,
+    "train_fields": 47427
+  },
+  "ready": true,
+  "same_original_pair_tokens_and_lengths_verified": true,
+  "source": {
+    "bytes": 19094,
+    "mtime_ns": 1794492949294713160,
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepare_boundaries.py",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepare_boundaries.py"
+  },
+  "target_used_for_cut": false,
+  "unavailable_known_field_reasons": {},
+  "unknown_raw_not_tokenized_or_forwarded": true,
+  "utc": "2026-11-12T14:17:31.643630+00:00",
+  "version": "base-state-boundary-fixed-separator-v2",
+  "archive_kind": "aggregate-view-source-bytes-and-repeated-input-pins-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/PREPARATION.json",
+    "resolved": "/tmp/opencode/jev-base-state-boundary-20261112-v2/prepared-01/PREPARATION.json",
+    "bytes": 34533,
+    "mtime_ns": 1794493051640613535
+  }
+}

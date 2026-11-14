@@ -2,6 +2,17 @@
 
 这里集中保存研究结论、研究路径，以及支撑结论的表格、图和精简证据。整理日期：2026-11-09。
 
+## 最新完整报告：clean 八臂训练与官方评测（2026-11-13 完成）
+
+- **[从给定资料到八臂官方评测：完整学习报告](01-研究结论/06-五维训练与Readout/clean-eight-official-20261113/REPORT.md)**：19 章，解释 padding-free、attention、Base/Jina-inspired 改动、数据和损失、两遍 VJP、推理优化、四卡分片及失败边界。
+- 八个终端权重均完整执行 **140620** 条、官方计分 **140178** 条，全部 `ok`；本轮最高 **C_P_BCE = 14.42**，最终四卡逐模型队列耗时 **14h38m03s**。这是新 clean 分支，不与下方旧权重 24.91 混称同一模型；两个 dense-trained 臂保留转换数值准入失败限制。
+- [344 行逐 benchmark 表](03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/official-benchmarks.csv) · [40 行五域表](03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/official-areas.csv) · [官方汇总及独立全量核验](03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/README.md)。未发布权重、私有样本或逐请求预测，没有 private Full／生产准入结论。
+
+## 历史推理后端（2026-11-11，旧权重）
+
+- [同权重、同评分的调度与融合内核v2完整结果](01-研究结论/05-Attention与效率/inference-kernel-runtime-20261111/README.md)：**Public24.91、完整推理57m16.6s**，较上一版再快3.538×、较原始快9.780×；仍未达30分钟，不是逐位无损加速。
+- 140620执行/140178计分全部ok，原始24.97与v124.99结果均保留；[完成核验](03-证据与图表/05-Attention与效率/inference-kernel-runtime-20261111/results/FINAL_VERIFICATION.json)及两份全量输出差异已归档。无上传或private Full结论。
+
 ## 当前方案与近期结果（截至2026-11-10）
 
 **从头读：[当前方案完整说明](02-研究路径/06-五维训练与Readout/current-scheme-20261110/README.md)。** 按没有参与过对话、没有AI帮助也能理解的标准，分别写清任务、模型、数据、Teacher、损失、两段训练、正式推理、计分和人工复现缺口。

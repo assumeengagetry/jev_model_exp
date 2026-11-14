@@ -1,0 +1,54 @@
+{
+  "Torch_imported": false,
+  "candidate_binding": {
+    "bytes": 37044,
+    "mtime_ns": 1794517053881585813,
+    "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/FROZEN_CANDIDATES.json",
+    "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/FROZEN_CANDIDATES.json"
+  },
+  "historical_nested_pins_recursively_verified": false,
+  "identity_guard_policy": "flat-history-bounded-hot-v1",
+  "model_or_roster_payloads_opened": false,
+  "root": "/tmp/opencode/jev-clean-final-eval-20261112-v1",
+  "source_files": [
+    {
+      "bytes": 44784,
+      "mtime_ns": 1794521901666002525,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/common.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/common.py"
+    },
+    {
+      "bytes": 30846,
+      "mtime_ns": 1794521901670002442,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/backend.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/backend.py"
+    },
+    {
+      "bytes": 61547,
+      "mtime_ns": 1794521901670002442,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/evaluate.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/evaluate.py"
+    },
+    {
+      "bytes": 43844,
+      "mtime_ns": 1794521901674002358,
+      "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/ops.py",
+      "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/source/ops.py"
+    }
+  ],
+  "version": "clean-final-source-snapshot-v1",
+  "archive_kind": "source-identity-aggregate-view-bodies-and-repeated-pins-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-final-eval-20261112-v1/SOURCE_SNAPSHOT.json",
+    "resolved": "/tmp/opencode/jev-clean-final-eval-20261112-v1/SOURCE_SNAPSHOT.json",
+    "bytes": 1802947,
+    "mtime_ns": 1794521902949975890
+  },
+  "static_pin_count": 569,
+  "startup_receipt_pin_count": 38,
+  "exact_source_count": 109,
+  "exact_source_decoded_bytes": 1206155,
+  "canonical_SDK_root": "/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index",
+  "SDK_file_count": 60,
+  "suite_stat_file_count": 5
+}

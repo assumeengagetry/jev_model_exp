@@ -1,0 +1,19 @@
+{
+  "scope": "single-factor realcached-macro rootcause: BCE/rank forward node creation order",
+  "MAIN_rank_before_BCE": {
+    "loss_equal": true,
+    "coefficient_bytes_equal": false,
+    "unequal_values": 12,
+    "max_abs_difference": 3.725290298461914e-09
+  },
+  "producer_and_primary_BCE_before_rank": {
+    "loss_equal": true,
+    "coefficient_bytes_equal": true,
+    "unequal_values": 0,
+    "max_abs_difference": 0.0
+  },
+  "model_forward_calls": 0,
+  "optimizer_steps": 0,
+  "authorization_created": false,
+  "CUDA_initialized": false
+}

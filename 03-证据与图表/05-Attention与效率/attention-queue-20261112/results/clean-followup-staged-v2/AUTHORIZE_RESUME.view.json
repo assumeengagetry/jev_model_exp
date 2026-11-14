@@ -1,0 +1,98 @@
+{
+  "D_confirm_opened": false,
+  "accepted_resource_blocker": {
+    "bytes": 3685,
+    "mtime_ns": 1794502258112621433,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/QUEUE_BLOCKED.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/QUEUE_BLOCKED.json"
+  },
+  "authorize_resume": true,
+  "control_root": "/tmp/opencode/jev-clean-followup-staged-20261112-v2",
+  "data_root": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1",
+  "main_review": {
+    "bytes": 1686490,
+    "mtime_ns": 1794506205328147687,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MAIN_DIRECT_ACTUAL_REVIEW.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MAIN_DIRECT_ACTUAL_REVIEW.json"
+  },
+  "next_macro_index": 1,
+  "primary_ready": {
+    "bytes": 1556757,
+    "mtime_ns": 1794501930219393830,
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/PRIMARY_READY.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/PRIMARY_READY.json"
+  },
+  "public_run": false,
+  "repeat_macro0_allowed": false,
+  "version": "staged-external-main-resume-v1",
+  "arms": {
+    "JPAIR_P_BCE_RANK": {
+      "checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0000001-s00002",
+      "complete": {
+        "bytes": 772662,
+        "mtime_ns": 1794501888308259793,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "ledger": {
+        "bytes": 476856,
+        "mtime_ns": 1794501888312259711,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/ledger.jsonl",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/ledger.jsonl"
+      },
+      "next_macro_index": 1,
+      "pin_file": {
+        "bytes": 306,
+        "mtime_ns": 1794501928983419367,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/JPAIR_P_BCE_RANK/RESUME_COMPLETE_PIN.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/JPAIR_P_BCE_RANK/RESUME_COMPLETE_PIN.json"
+      },
+      "repeat_macro0_allowed": false,
+      "report": {
+        "bytes": 3779437,
+        "mtime_ns": 1794501929067417631,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/JPAIR_P_BCE_RANK/FIRST_PRIMARY_VERIFICATION.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/JPAIR_P_BCE_RANK/FIRST_PRIMARY_VERIFICATION.json"
+      }
+    },
+    "STATE_NL_PB_P_CE": {
+      "checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/checkpoint-m0000001-s00002",
+      "complete": {
+        "bytes": 772717,
+        "mtime_ns": 1794501895840104165,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+      },
+      "ledger": {
+        "bytes": 476071,
+        "mtime_ns": 1794501895844104083,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/ledger.jsonl",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42/ledger.jsonl"
+      },
+      "next_macro_index": 1,
+      "pin_file": {
+        "bytes": 306,
+        "mtime_ns": 1794501914015728620,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/STATE_NL_PB_P_CE/RESUME_COMPLETE_PIN.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/STATE_NL_PB_P_CE/RESUME_COMPLETE_PIN.json"
+      },
+      "repeat_macro0_allowed": false,
+      "report": {
+        "bytes": 3778749,
+        "mtime_ns": 1794501914099726884,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/STATE_NL_PB_P_CE/FIRST_PRIMARY_VERIFICATION.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/STATE_NL_PB_P_CE/FIRST_PRIMARY_VERIFICATION.json"
+      }
+    }
+  },
+  "archive_kind": "external-MAIN-authorization-view-repeated-scope-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json",
+    "bytes": 1545202,
+    "mtime_ns": 1794506338729476264
+  },
+  "elided_keys": [
+    "arms.*.scope"
+  ]
+}

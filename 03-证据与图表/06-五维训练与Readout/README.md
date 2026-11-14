@@ -1,5 +1,10 @@
 # 五维训练与Readout · 证据与图表
 
+## 2026-11-13 八臂完整官方评测
+
+- [证据入口与范围](clean-eight-official-20261113/README.md) · [官方八模型汇总](clean-eight-official-20261113/SCORES.json) · [独立全量核验](clean-eight-official-20261113/FINAL_OFFICIAL_VERIFIED.json)。
+- [344 行逐 benchmark 表](clean-eight-official-20261113/official-benchmarks.csv) · [40 行五域表](clean-eight-official-20261113/official-areas.csv) · [完整学习报告](../../01-研究结论/06-五维训练与Readout/clean-eight-official-20261113/REPORT.md)。不含权重、原始样本或逐请求预测。
+
 ## 2026-11-10新增证据
 
 - [当前模型／两段训练实际配置与终点](current-scheme-20261110/CURRENT_STATE.json) · [库外源码清单](current-scheme-20261110/SOURCE_MANIFEST.json)。

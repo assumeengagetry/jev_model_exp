@@ -1,0 +1,84 @@
+{
+  "complete_original_scan": true,
+  "validation_rows": 15550,
+  "selected_task_unique_states": 818069,
+  "selected_generic_raw_rows": 416934,
+  "public_input_requests": 140620,
+  "native_scan_rows": {
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00000-of-00013.parquet": 191963,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00001-of-00013.parquet": 191970,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00002-of-00013.parquet": 191960,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00003-of-00013.parquet": 191946,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00004-of-00013.parquet": 191937,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00005-of-00013.parquet": 191961,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00006-of-00013.parquet": 191924,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00007-of-00013.parquet": 191941,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00008-of-00013.parquet": 191939,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00009-of-00013.parquet": 191907,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00010-of-00013.parquet": 191947,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00011-of-00013.parquet": 191908,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-00012-of-00013.parquet": 192003,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-tasksource-addition-167c5ad6fb79.parquet": 5596,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/train-webinstruct-05e8b528d68c.parquet": 28440,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/validation-00000-of-00001.parquet": 14977,
+    "/home/dev/assumeengage/datasets/tasksource-jev-typed-decisions-ms/full/validation-tasksource-addition-167c5ad6fb79.parquet": 573
+  },
+  "graph_nodes": 5561805,
+  "validation_historical_case_connected": 107,
+  "validation_public_case_connected": 5,
+  "public_requests_with_provided_input_text_shared_with_history": 21786,
+  "public_requests_with_input_text_history_connected_after_native_case_closure": 21786,
+  "public_history_overlap_interpretation": "Conservative provided-input-text association can include shared option/label descriptions; it is not proof of identical full question/case/gold training or benchmark gaming. Input texts within a public request are not unioned together.",
+  "rejection_reason_counts_nonexclusive": {
+    "historical_finetuning_case_exposure": 107,
+    "missing_original_identity": 149,
+    "public_input_case_connected": 5,
+    "historical_family_without_reconstructed_native_group": 4306,
+    "unverified_possible_historical_parent_view": 166,
+    "known_unreconstructed_parent_source_view": 87,
+    "connected_to_quarantined_family_component": 1
+  },
+  "eligible_rows_by_domain": {
+    "arts": 640,
+    "retrieval": 547,
+    "knowledge": 1920,
+    "language": 7063,
+    "tools": 600
+  },
+  "eligible_rows": 10770,
+  "eligible_components": 8336,
+  "uncertain_historical_families_quarantined": 328,
+  "missing_original_group_families_quarantined": 0,
+  "actual_validation_quarantine_rows": 4560,
+  "actual_validation_quarantine_components": 3923,
+  "native_group_keys_scanned_for_component_quarantine": 2049582,
+  "component_roots_with_provenance_taint": 585064,
+  "explicit_quarantine_parent_views": {
+    "anli": [
+      "anli/a1",
+      "anli/a2",
+      "anli/a3"
+    ]
+  },
+  "source_family_policy": "casefold + conventional split suffix removal; only weblinx/mind2web/websrc explicit variant-family joins; ANLI rounds remain distinct",
+  "quarantine_view_policy": "Explicit known native/anli -> anli/a1,a2,a3; unresolved uncertain-parent namespace descendants rejected as unknown, never merged into a shared group namespace.",
+  "public_input_view_fields": [
+    "state",
+    "questions.*.instructions",
+    "questions.*.criteria.values"
+  ],
+  "public_projection_requests": 140620,
+  "public_projection_text_entries": 5854755,
+  "public_original_state_types": {
+    "dict": 115532,
+    "str": 25088
+  },
+  "public_empty_canonical_states_handled_by_other_provided_inputs": 3226,
+  "official_projection_may_parse_other_row_fields": true,
+  "public_gold_used_by_audit_logic": false,
+  "candidate_policy": "No historical/public/forbidden/incomplete case connection, native group present, no unverified historical same-family case provenance.",
+  "D_select_or_D_confirm_materialized": false,
+  "model_run": false,
+  "test_targets_read": false,
+  "scope": "Exact original native-case audit of project finetuning exposure; semantic near-duplicates/unidentified aliases and base-pretraining exposure not proved absent."
+}

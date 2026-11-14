@@ -1,0 +1,959 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-12T13:27:27.908306+00:00",
+  "version": "independent-committed-select-analysis-v1",
+  "frozen_node": {
+    "cap": 10000000,
+    "cases": 5840,
+    "logical_pair_tokens": 9988659,
+    "macro_updates": 365
+  },
+  "arms": {
+    "C_D_BCE": {
+      "node": {
+        "cap": 10000000,
+        "cases": 5840,
+        "logical_pair_tokens": 9988659,
+        "macro_updates": 365
+      },
+      "case_balanced_five_domain_means": {
+        "mass": 0.4754056282131701,
+        "NLL": 1.1893012353611847,
+        "normalized_NLL": 0.914221087699832,
+        "Brier": 0.5864355014188256,
+        "coverage": 1.0,
+        "coverage_adjusted_mass": 0.4754056282131701
+      },
+      "per_domain": {
+        "knowledge": {
+          "mass": 0.4689096973402543,
+          "NLL": 1.1220018001015803,
+          "normalized_NLL": 0.9037832742199307,
+          "Brier": 0.5795780017995157,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.4689096973402543
+        },
+        "language": {
+          "mass": 0.42591958340276626,
+          "NLL": 1.0312485071268291,
+          "normalized_NLL": 0.9008724096879585,
+          "Brier": 0.549640030979154,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.42591958340276626
+        },
+        "retrieval": {
+          "mass": 0.48,
+          "NLL": 1.8096765532725079,
+          "normalized_NLL": 0.8068256810360714,
+          "Brier": 0.7004931684537478,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.48
+        },
+        "tools": {
+          "mass": 0.46886552698949685,
+          "NLL": 1.2232908483774547,
+          "normalized_NLL": 0.9482231070915708,
+          "Brier": 0.5823542893849427,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.46886552698949685
+        },
+        "arts": {
+          "mass": 0.5333333333333333,
+          "NLL": 0.7602884679275516,
+          "normalized_NLL": 1.011400966463629,
+          "Brier": 0.5201120164767677,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.5333333333333333
+        }
+      },
+      "coverage": {
+        "known_fields": 615,
+        "supported_known_fields": 615,
+        "forwarded_complete_candidates": 5190,
+        "complete_onehot_case_exact_supported": 259,
+        "cases": 375,
+        "cases_with_all_known_fields_supported": 375,
+        "cases_with_any_supported_known_field": 375,
+        "unknown_fields_retained_no_forward": 90
+      },
+      "complete_onehot_case_exact": 0.44015444015444016,
+      "complete_onehot_case_exact_denominator": 259,
+      "complete_onehot_case_exact_count": 114,
+      "maximum_independent_field_metric_absolute_error": 8.881784197001252e-16,
+      "actual_training_real_forward_tokens": 19977318,
+      "actual_training_backward_real_tokens": 9988659,
+      "actual_training_tokenwise_rows_per_operator_two_passes": 26812992,
+      "D_select_real_tokens": 1554484,
+      "D_select_tokenwise_rows_per_operator": 1586320,
+      "D_select_waves": 469,
+      "D_select_wall_seconds_in_training_ledger": 47.74830444413237,
+      "pre_dev_checkpoint": {
+        "bytes": 535135,
+        "mtime_ns": 1794489438239725908,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000365-s00006/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000365-s00006/COMPLETE.json"
+      },
+      "post_dev_checkpoint": {
+        "bytes": 535135,
+        "mtime_ns": 1794489487638702151,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000365-s00007/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000365-s00007/COMPLETE.json"
+      },
+      "loss_layout_mode_seed_and_common_fresh_scope_verified": true,
+      "complete_candidate_order_and_unknown_skip_verified": true,
+      "independent_raw_logits_margin_field_case_domain_metrics_verified": true
+    },
+    "C_P_BCE": {
+      "node": {
+        "cap": 10000000,
+        "cases": 5840,
+        "logical_pair_tokens": 9988659,
+        "macro_updates": 365
+      },
+      "case_balanced_five_domain_means": {
+        "mass": 0.4968982522131702,
+        "NLL": 1.2002228904994903,
+        "normalized_NLL": 0.9085093322147924,
+        "Brier": 0.5840132656103354,
+        "coverage": 1.0,
+        "coverage_adjusted_mass": 0.4968982522131702
+      },
+      "per_domain": {
+        "knowledge": {
+          "mass": 0.505576364006921,
+          "NLL": 1.1203978905808132,
+          "normalized_NLL": 0.8924670138015269,
+          "Brier": 0.574956007662363,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.505576364006921
+        },
+        "language": {
+          "mass": 0.4456049256249885,
+          "NLL": 1.010338154880511,
+          "normalized_NLL": 0.8789693147545548,
+          "Brier": 0.5375523769875188,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.4456049256249885
+        },
+        "retrieval": {
+          "mass": 0.5288888888888889,
+          "NLL": 1.8899388236918762,
+          "normalized_NLL": 0.8246893693212551,
+          "Brier": 0.7109690816833706,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.5288888888888889
+        },
+        "tools": {
+          "mass": 0.4644210825450525,
+          "NLL": 1.233407782439247,
+          "normalized_NLL": 0.9531257930687859,
+          "Brier": 0.584743548552322,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.4644210825450525
+        },
+        "arts": {
+          "mass": 0.54,
+          "NLL": 0.7470318009050037,
+          "normalized_NLL": 0.9932951701278386,
+          "Brier": 0.5118453131661027,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.54
+        }
+      },
+      "coverage": {
+        "known_fields": 615,
+        "supported_known_fields": 615,
+        "forwarded_complete_candidates": 5190,
+        "complete_onehot_case_exact_supported": 259,
+        "cases": 375,
+        "cases_with_all_known_fields_supported": 375,
+        "cases_with_any_supported_known_field": 375,
+        "unknown_fields_retained_no_forward": 90
+      },
+      "complete_onehot_case_exact": 0.4671814671814672,
+      "complete_onehot_case_exact_denominator": 259,
+      "complete_onehot_case_exact_count": 121,
+      "maximum_independent_field_metric_absolute_error": 8.881784197001252e-16,
+      "actual_training_real_forward_tokens": 19977318,
+      "actual_training_backward_real_tokens": 9988659,
+      "actual_training_tokenwise_rows_per_operator_two_passes": 19977318,
+      "D_select_real_tokens": 1554484,
+      "D_select_tokenwise_rows_per_operator": 1554484,
+      "D_select_waves": 469,
+      "D_select_wall_seconds_in_training_ledger": 47.44150712387636,
+      "pre_dev_checkpoint": {
+        "bytes": 535136,
+        "mtime_ns": 1794489305090486101,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000365-s00006/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000365-s00006/COMPLETE.json"
+      },
+      "post_dev_checkpoint": {
+        "bytes": 535136,
+        "mtime_ns": 1794489355849433731,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000365-s00007/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000365-s00007/COMPLETE.json"
+      },
+      "loss_layout_mode_seed_and_common_fresh_scope_verified": true,
+      "complete_candidate_order_and_unknown_skip_verified": true,
+      "independent_raw_logits_margin_field_case_domain_metrics_verified": true
+    },
+    "C_D_CE": {
+      "node": {
+        "cap": 10000000,
+        "cases": 5840,
+        "logical_pair_tokens": 9988659,
+        "macro_updates": 365
+      },
+      "case_balanced_five_domain_means": {
+        "mass": 0.5387655984936573,
+        "NLL": 1.0677630039074804,
+        "normalized_NLL": 0.8785622763173693,
+        "Brier": 0.5537759034431742,
+        "coverage": 1.0,
+        "coverage_adjusted_mass": 0.5387655984936573
+      },
+      "per_domain": {
+        "knowledge": {
+          "mass": 0.5274282151180321,
+          "NLL": 1.0676405236050364,
+          "normalized_NLL": 0.8707483666167697,
+          "Brier": 0.5614348988585238,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.5274282151180321
+        },
+        "language": {
+          "mass": 0.5087267656249885,
+          "NLL": 0.9883662783340292,
+          "normalized_NLL": 0.8717589920931899,
+          "Brier": 0.5354541411354335,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.5087267656249885
+        },
+        "retrieval": {
+          "mass": 0.5644444444444445,
+          "NLL": 1.2996973315150395,
+          "normalized_NLL": 0.6798211125986441,
+          "Brier": 0.5690947266873354,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.5644444444444445
+        },
+        "tools": {
+          "mass": 0.48656190061415494,
+          "NLL": 1.2160916313819614,
+          "normalized_NLL": 0.9499570272272677,
+          "Brier": 0.5815671085065426,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.48656190061415494
+        },
+        "arts": {
+          "mass": 0.6066666666666667,
+          "NLL": 0.7670192547013346,
+          "normalized_NLL": 1.020525883050975,
+          "Brier": 0.5213286420280355,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.6066666666666667
+        }
+      },
+      "coverage": {
+        "known_fields": 615,
+        "supported_known_fields": 615,
+        "forwarded_complete_candidates": 5190,
+        "complete_onehot_case_exact_supported": 259,
+        "cases": 375,
+        "cases_with_all_known_fields_supported": 375,
+        "cases_with_any_supported_known_field": 375,
+        "unknown_fields_retained_no_forward": 90
+      },
+      "complete_onehot_case_exact": 0.525096525096525,
+      "complete_onehot_case_exact_denominator": 259,
+      "complete_onehot_case_exact_count": 136,
+      "maximum_independent_field_metric_absolute_error": 8.881784197001252e-16,
+      "actual_training_real_forward_tokens": 19977318,
+      "actual_training_backward_real_tokens": 9988659,
+      "actual_training_tokenwise_rows_per_operator_two_passes": 26812992,
+      "D_select_real_tokens": 1554484,
+      "D_select_tokenwise_rows_per_operator": 1586320,
+      "D_select_waves": 469,
+      "D_select_wall_seconds_in_training_ledger": 46.947418625000864,
+      "pre_dev_checkpoint": {
+        "bytes": 535121,
+        "mtime_ns": 1794489424568009272,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000365-s00006/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000365-s00006/COMPLETE.json"
+      },
+      "post_dev_checkpoint": {
+        "bytes": 535121,
+        "mtime_ns": 1794489473099003459,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000365-s00007/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000365-s00007/COMPLETE.json"
+      },
+      "loss_layout_mode_seed_and_common_fresh_scope_verified": true,
+      "complete_candidate_order_and_unknown_skip_verified": true,
+      "independent_raw_logits_margin_field_case_domain_metrics_verified": true
+    },
+    "C_P_CE": {
+      "node": {
+        "cap": 10000000,
+        "cases": 5840,
+        "logical_pair_tokens": 9988659,
+        "macro_updates": 365
+      },
+      "case_balanced_five_domain_means": {
+        "mass": 0.5208058596659346,
+        "NLL": 1.0740614145134422,
+        "normalized_NLL": 0.8868218951973299,
+        "Brier": 0.5574684268505276,
+        "coverage": 1.0,
+        "coverage_adjusted_mass": 0.5208058596659346
+      },
+      "per_domain": {
+        "knowledge": {
+          "mass": 0.49409488178469874,
+          "NLL": 1.0794087895295101,
+          "normalized_NLL": 0.8844621192750437,
+          "Brier": 0.5690525280865915,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.49409488178469874
+        },
+        "language": {
+          "mass": 0.4685862500694329,
+          "NLL": 1.0152151057110677,
+          "normalized_NLL": 0.893971599024167,
+          "Brier": 0.547244697829408,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.4685862500694329
+        },
+        "retrieval": {
+          "mass": 0.5422222222222222,
+          "NLL": 1.3005603726114499,
+          "normalized_NLL": 0.6868427053802432,
+          "Brier": 0.5720289908862423,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.5422222222222222
+        },
+        "tools": {
+          "mass": 0.4924592775866527,
+          "NLL": 1.2051383901174249,
+          "normalized_NLL": 0.9432990478348016,
+          "Brier": 0.5768963215730673,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.4924592775866527
+        },
+        "arts": {
+          "mass": 0.6066666666666667,
+          "NLL": 0.7699844145977589,
+          "normalized_NLL": 1.025534004472394,
+          "Brier": 0.5221195958773286,
+          "coverage": 1.0,
+          "coverage_adjusted_mass": 0.6066666666666667
+        }
+      },
+      "coverage": {
+        "known_fields": 615,
+        "supported_known_fields": 615,
+        "forwarded_complete_candidates": 5190,
+        "complete_onehot_case_exact_supported": 259,
+        "cases": 375,
+        "cases_with_all_known_fields_supported": 375,
+        "cases_with_any_supported_known_field": 375,
+        "unknown_fields_retained_no_forward": 90
+      },
+      "complete_onehot_case_exact": 0.4980694980694981,
+      "complete_onehot_case_exact_denominator": 259,
+      "complete_onehot_case_exact_count": 129,
+      "maximum_independent_field_metric_absolute_error": 1.5543122344752192e-15,
+      "actual_training_real_forward_tokens": 19977318,
+      "actual_training_backward_real_tokens": 9988659,
+      "actual_training_tokenwise_rows_per_operator_two_passes": 19977318,
+      "D_select_real_tokens": 1554484,
+      "D_select_tokenwise_rows_per_operator": 1554484,
+      "D_select_waves": 469,
+      "D_select_wall_seconds_in_training_ledger": 48.29738913709298,
+      "pre_dev_checkpoint": {
+        "bytes": 535122,
+        "mtime_ns": 1794489309750389482,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00006/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00006/COMPLETE.json"
+      },
+      "post_dev_checkpoint": {
+        "bytes": 535122,
+        "mtime_ns": 1794489360625334722,
+        "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00007/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00007/COMPLETE.json"
+      },
+      "loss_layout_mode_seed_and_common_fresh_scope_verified": true,
+      "complete_candidate_order_and_unknown_skip_verified": true,
+      "independent_raw_logits_margin_field_case_domain_metrics_verified": true
+    }
+  },
+  "paired_case_contrasts": {
+    "CE_minus_BCE_dense": {
+      "weights": {
+        "C_D_CE": 1,
+        "C_D_BCE": -1
+      },
+      "paired_cases": 375,
+      "metric_deltas": {
+        "mass": 0.06335997028048716,
+        "NLL": -0.12153823145370453,
+        "normalized_NLL": -0.03565881138246285,
+        "Brier": -0.03265959797565139,
+        "coverage": 0.0,
+        "coverage_adjusted_mass": 0.06335997028048716
+      },
+      "per_domain": {
+        "knowledge": {
+          "mass": 0.05851851777777778,
+          "NLL": -0.054361276496544,
+          "normalized_NLL": -0.03303490760316099,
+          "Brier": -0.018143102940991876,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.05851851777777778
+        },
+        "language": {
+          "mass": 0.08280718222222222,
+          "NLL": -0.04288222879279991,
+          "normalized_NLL": -0.0291134175947686,
+          "Brier": -0.014185889843720588,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.08280718222222222
+        },
+        "retrieval": {
+          "mass": 0.08444444444444445,
+          "NLL": -0.5099792217574683,
+          "normalized_NLL": -0.1270045684374273,
+          "Brier": -0.1313984417664123,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.08444444444444445
+        },
+        "tools": {
+          "mass": 0.017696373624658045,
+          "NLL": -0.007199216995493496,
+          "normalized_NLL": 0.0017339201356968619,
+          "Brier": -0.0007871808784000017,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.017696373624658045
+        },
+        "arts": {
+          "mass": 0.07333333333333333,
+          "NLL": 0.006730786773783034,
+          "normalized_NLL": 0.009124916587345766,
+          "Brier": 0.0012166255512678055,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.07333333333333333
+        }
+      },
+      "mass_case_positive_negative_equal": {
+        "positive": 64,
+        "negative": 39,
+        "equal_within_1e-12": 272
+      },
+      "mass_stratified_case_standard_error": 0.020164039458616542,
+      "field_argmax_disagreements": 172,
+      "cases_with_field_argmax_disagreement": 140,
+      "mass_paired_case_stratified_bootstrap_95pct_percentile_interval": [
+        0.023638782011687055,
+        0.1035710827782435
+      ]
+    },
+    "CE_minus_BCE_packed": {
+      "weights": {
+        "C_P_CE": 1,
+        "C_P_BCE": -1
+      },
+      "paired_cases": 375,
+      "metric_deltas": {
+        "mass": 0.0239076074527645,
+        "NLL": -0.12616147598604793,
+        "normalized_NLL": -0.02168743701746242,
+        "Brier": -0.02654483875980794,
+        "coverage": 0.0,
+        "coverage_adjusted_mass": 0.0239076074527645
+      },
+      "per_domain": {
+        "knowledge": {
+          "mass": -0.011481482222222223,
+          "NLL": -0.04098910105130304,
+          "normalized_NLL": -0.008004894526483347,
+          "Brier": -0.005903479575771452,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": -0.011481482222222223
+        },
+        "language": {
+          "mass": 0.022981324444444447,
+          "NLL": 0.004876950830556623,
+          "normalized_NLL": 0.015002284269612195,
+          "Brier": 0.009692320841889172,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.022981324444444447
+        },
+        "retrieval": {
+          "mass": 0.013333333333333334,
+          "NLL": -0.5893784510804262,
+          "normalized_NLL": -0.1378466639410119,
+          "Brier": -0.1389400907971284,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.013333333333333334
+        },
+        "tools": {
+          "mass": 0.028038195041600263,
+          "NLL": -0.02826939232182226,
+          "normalized_NLL": -0.009826745233984328,
+          "Brier": -0.007847226979254872,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.028038195041600263
+        },
+        "arts": {
+          "mass": 0.06666666666666667,
+          "NLL": 0.022952613692755232,
+          "normalized_NLL": 0.03223883434455526,
+          "Brier": 0.01027428271122586,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.06666666666666667
+        }
+      },
+      "mass_case_positive_negative_equal": {
+        "positive": 48,
+        "negative": 37,
+        "equal_within_1e-12": 290
+      },
+      "mass_stratified_case_standard_error": 0.01799462061201525,
+      "field_argmax_disagreements": 135,
+      "cases_with_field_argmax_disagreement": 118,
+      "mass_paired_case_stratified_bootstrap_95pct_percentile_interval": [
+        -0.011401588358683315,
+        0.05823526586353891
+      ]
+    },
+    "packed_minus_dense_BCE": {
+      "weights": {
+        "C_P_BCE": 1,
+        "C_D_BCE": -1
+      },
+      "paired_cases": 375,
+      "metric_deltas": {
+        "mass": 0.021492624000000002,
+        "NLL": 0.010921655138305437,
+        "normalized_NLL": -0.00571175548503982,
+        "Brier": -0.002422235808490161,
+        "coverage": 0.0,
+        "coverage_adjusted_mass": 0.021492624000000002
+      },
+      "per_domain": {
+        "knowledge": {
+          "mass": 0.03666666666666667,
+          "NLL": -0.0016039095207671453,
+          "normalized_NLL": -0.011316260418403659,
+          "Brier": -0.0046219941371528255,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.03666666666666667
+        },
+        "language": {
+          "mass": 0.01968534222222222,
+          "NLL": -0.020910352246318244,
+          "normalized_NLL": -0.021903094933403682,
+          "Brier": -0.012087653991635272,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.01968534222222222
+        },
+        "retrieval": {
+          "mass": 0.04888888888888889,
+          "NLL": 0.08026227041936813,
+          "normalized_NLL": 0.017863688285183758,
+          "Brier": 0.01047591322962294,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.04888888888888889
+        },
+        "tools": {
+          "mass": -0.0044444444444444444,
+          "NLL": 0.010116934061792418,
+          "normalized_NLL": 0.004902685977214971,
+          "Brier": 0.002389259167379422,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": -0.0044444444444444444
+        },
+        "arts": {
+          "mass": 0.006666666666666667,
+          "NLL": -0.013256667022547977,
+          "normalized_NLL": -0.018105796335790486,
+          "Brier": -0.008266703310665069,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.006666666666666667
+        }
+      },
+      "mass_case_positive_negative_equal": {
+        "positive": 40,
+        "negative": 29,
+        "equal_within_1e-12": 306
+      },
+      "mass_stratified_case_standard_error": 0.01673694162721647,
+      "field_argmax_disagreements": 109,
+      "cases_with_field_argmax_disagreement": 97,
+      "mass_paired_case_stratified_bootstrap_95pct_percentile_interval": [
+        -0.011556412444444445,
+        0.053703541333333334
+      ]
+    },
+    "packed_minus_dense_CE": {
+      "weights": {
+        "C_P_CE": 1,
+        "C_D_CE": -1
+      },
+      "paired_cases": 375,
+      "metric_deltas": {
+        "mass": -0.017959738827722668,
+        "NLL": 0.00629841060596205,
+        "normalized_NLL": 0.008259618879960611,
+        "Brier": 0.003692523407353292,
+        "coverage": 0.0,
+        "coverage_adjusted_mass": -0.017959738827722668
+      },
+      "per_domain": {
+        "knowledge": {
+          "mass": -0.03333333333333333,
+          "NLL": 0.01176826592447381,
+          "normalized_NLL": 0.01371375265827398,
+          "Brier": 0.007617629228067598,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": -0.03333333333333333
+        },
+        "language": {
+          "mass": -0.040140515555555555,
+          "NLL": 0.026848827377038288,
+          "normalized_NLL": 0.022212606930977114,
+          "Brier": 0.011790556693974488,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": -0.040140515555555555
+        },
+        "retrieval": {
+          "mass": -0.02222222222222222,
+          "NLL": 0.0008630410964102746,
+          "normalized_NLL": 0.007021592781599173,
+          "Brier": 0.002934264198906836,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": -0.02222222222222222
+        },
+        "tools": {
+          "mass": 0.005897376972497774,
+          "NLL": -0.010953241264536347,
+          "normalized_NLL": -0.00665797939246622,
+          "Brier": -0.0046707869334754485,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.005897376972497774
+        },
+        "arts": {
+          "mass": 0.0,
+          "NLL": 0.0029651598964242193,
+          "normalized_NLL": 0.005008121421419011,
+          "Brier": 0.0007909538492929869,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.0
+        }
+      },
+      "mass_case_positive_negative_equal": {
+        "positive": 20,
+        "negative": 25,
+        "equal_within_1e-12": 330
+      },
+      "mass_stratified_case_standard_error": 0.012535033393119626,
+      "field_argmax_disagreements": 58,
+      "cases_with_field_argmax_disagreement": 54,
+      "mass_paired_case_stratified_bootstrap_95pct_percentile_interval": [
+        -0.043079445333333334,
+        0.006453704296296296
+      ]
+    },
+    "CE_minus_BCE_average_over_layouts": {
+      "weights": {
+        "C_D_CE": 0.5,
+        "C_P_CE": 0.5,
+        "C_D_BCE": -0.5,
+        "C_P_BCE": -0.5
+      },
+      "paired_cases": 375,
+      "metric_deltas": {
+        "mass": 0.04363378886662583,
+        "NLL": -0.12384985371987625,
+        "normalized_NLL": -0.028673124199962634,
+        "Brier": -0.029602218367729666,
+        "coverage": 0.0,
+        "coverage_adjusted_mass": 0.04363378886662583
+      },
+      "per_domain": {
+        "knowledge": {
+          "mass": 0.02351851777777778,
+          "NLL": -0.047675188773923516,
+          "normalized_NLL": -0.020519901064822165,
+          "Brier": -0.012023291258381667,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.02351851777777778
+        },
+        "language": {
+          "mass": 0.052894253333333335,
+          "NLL": -0.019002638981121645,
+          "normalized_NLL": -0.0070555666625782025,
+          "Brier": -0.0022467845009157086,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.052894253333333335
+        },
+        "retrieval": {
+          "mass": 0.048888888888888885,
+          "NLL": -0.5496788364189473,
+          "normalized_NLL": -0.13242561618921958,
+          "Brier": -0.13516926628177037,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.048888888888888885
+        },
+        "tools": {
+          "mass": 0.022867284333129154,
+          "NLL": -0.01773430465865788,
+          "normalized_NLL": -0.004046412549143732,
+          "Brier": -0.004317203928827437,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.022867284333129154
+        },
+        "arts": {
+          "mass": 0.07,
+          "NLL": 0.014841700233269133,
+          "normalized_NLL": 0.020681875465950517,
+          "Brier": 0.0057454541312468325,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.07
+        }
+      },
+      "mass_case_positive_negative_equal": {
+        "positive": 69,
+        "negative": 54,
+        "equal_within_1e-12": 252
+      },
+      "mass_stratified_case_standard_error": 0.015981371052501987,
+      "mass_paired_case_stratified_bootstrap_95pct_percentile_interval": [
+        0.01290259683145492,
+        0.07539223253760022
+      ]
+    },
+    "loss_by_layout_interaction": {
+      "weights": {
+        "C_P_CE": 1,
+        "C_D_CE": -1,
+        "C_P_BCE": -1,
+        "C_D_BCE": 1
+      },
+      "paired_cases": 375,
+      "metric_deltas": {
+        "mass": -0.039452362827722666,
+        "NLL": -0.004623244532343388,
+        "normalized_NLL": 0.01397137436500043,
+        "Brier": 0.0061147592158434525,
+        "coverage": 0.0,
+        "coverage_adjusted_mass": -0.039452362827722666
+      },
+      "per_domain": {
+        "knowledge": {
+          "mass": -0.07,
+          "NLL": 0.013372175445240957,
+          "normalized_NLL": 0.025030013076677637,
+          "Brier": 0.012239623365220425,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": -0.07
+        },
+        "language": {
+          "mass": -0.059825857777777776,
+          "NLL": 0.04775917962335653,
+          "normalized_NLL": 0.044115701864380796,
+          "Brier": 0.02387821068560976,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": -0.059825857777777776
+        },
+        "retrieval": {
+          "mass": -0.07111111111111111,
+          "NLL": -0.07939922932295786,
+          "normalized_NLL": -0.010842095503584585,
+          "Brier": -0.0075416490307161025,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": -0.07111111111111111
+        },
+        "tools": {
+          "mass": 0.010341821416942218,
+          "NLL": -0.021070175326328766,
+          "normalized_NLL": -0.01156066536968119,
+          "Brier": -0.007060046100854871,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": 0.010341821416942218
+        },
+        "arts": {
+          "mass": -0.006666666666666667,
+          "NLL": 0.016221826918972195,
+          "normalized_NLL": 0.023113917757209494,
+          "Brier": 0.009057657159958054,
+          "coverage": 0.0,
+          "coverage_adjusted_mass": -0.006666666666666667
+        }
+      },
+      "mass_case_positive_negative_equal": {
+        "positive": 39,
+        "negative": 54,
+        "equal_within_1e-12": 282
+      },
+      "mass_stratified_case_standard_error": 0.020956450883845387,
+      "mass_paired_case_stratified_bootstrap_95pct_percentile_interval": [
+        -0.08017060859259259,
+        0.0019075666537588134
+      ]
+    }
+  },
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20261112,
+    "unit": "whole case, paired across all four arms, stratified by five primary domains",
+    "interval_scope": "descriptive single-seed intermediate D_select uncertainty only; not multiplicity-adjusted and not training-seed uncertainty"
+  },
+  "source_receipt_files": [
+    {
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+      "bytes": 881504,
+      "mtime_ns": 1794489485974736633
+    },
+    {
+      "bytes": 890137,
+      "mtime_ns": 1794489485966736799,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/SUMMARY.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/SUMMARY.json"
+    },
+    {
+      "bytes": 654038,
+      "mtime_ns": 1794489485958736965,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl"
+    },
+    {
+      "bytes": 535135,
+      "mtime_ns": 1794489438239725908,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000365-s00006/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000365-s00006/COMPLETE.json"
+    },
+    {
+      "bytes": 535135,
+      "mtime_ns": 1794489487638702151,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000365-s00007/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_BCE-seed42/checkpoint-m0000365-s00007/COMPLETE.json"
+    },
+    {
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+      "bytes": 881505,
+      "mtime_ns": 1794489352521502723
+    },
+    {
+      "bytes": 890077,
+      "mtime_ns": 1794489352465503883,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/D_select-cap10000000-m0000365/SUMMARY.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/D_select-cap10000000-m0000365/SUMMARY.json"
+    },
+    {
+      "bytes": 653673,
+      "mtime_ns": 1794489352445504298,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl"
+    },
+    {
+      "bytes": 535136,
+      "mtime_ns": 1794489305090486101,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000365-s00006/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000365-s00006/COMPLETE.json"
+    },
+    {
+      "bytes": 535136,
+      "mtime_ns": 1794489355849433731,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000365-s00007/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_BCE-seed42/checkpoint-m0000365-s00007/COMPLETE.json"
+    },
+    {
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+      "bytes": 881498,
+      "mtime_ns": 1794489471503036534
+    },
+    {
+      "bytes": 890127,
+      "mtime_ns": 1794489471491036783,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/D_select-cap10000000-m0000365/SUMMARY.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/D_select-cap10000000-m0000365/SUMMARY.json"
+    },
+    {
+      "bytes": 656499,
+      "mtime_ns": 1794489471483036949,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl"
+    },
+    {
+      "bytes": 535121,
+      "mtime_ns": 1794489424568009272,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000365-s00006/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000365-s00006/COMPLETE.json"
+    },
+    {
+      "bytes": 535121,
+      "mtime_ns": 1794489473099003459,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000365-s00007/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_D_CE-seed42/checkpoint-m0000365-s00007/COMPLETE.json"
+    },
+    {
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/COMPLETE.json",
+      "bytes": 881499,
+      "mtime_ns": 1794489358001389118
+    },
+    {
+      "bytes": 890125,
+      "mtime_ns": 1794489357949390196,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/SUMMARY.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/SUMMARY.json"
+    },
+    {
+      "bytes": 662656,
+      "mtime_ns": 1794489357929390611,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/D_select-cap10000000-m0000365/case-metrics.jsonl"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794489309750389482,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00006/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00006/COMPLETE.json"
+    },
+    {
+      "bytes": 535122,
+      "mtime_ns": 1794489360625334722,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00007/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/C_P_CE-seed42/checkpoint-m0000365-s00007/COMPLETE.json"
+    }
+  ],
+  "original_select_roster": {
+    "bytes": 3887645,
+    "mtime_ns": 1794484561183627863,
+    "path": "/tmp/opencode/jev-clean-origin-20261112-v1/prepared-01/data/select.jsonl",
+    "resolved": "/tmp/opencode/jev-clean-origin-20261112-v1/prepared-01/data/select.jsonl"
+  },
+  "analysis_source": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/verify_select_node.py",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/verify_select_node.py",
+    "bytes": 19336,
+    "mtime_ns": 1794490044843164650
+  },
+  "model_forward_calls": 0,
+  "optimizer_steps": 0,
+  "evaluator_started": false,
+  "D_confirm_opened": false,
+  "public_run": false,
+  "winner_selected": false,
+  "training_source_or_config_modified": false,
+  "limitations": [
+    "10M is intermediate; do not change frozen LR/exposure or choose winner yet",
+    "D_select target mass is not Public Index and cannot be compared numerically to51.99",
+    "one training seed; paired-case intervals do not cover training-seed variability or prove numerical equivalence",
+    "tools dev mainly procedural, not BFCL/real-tool generalization",
+    "fullrow scientific training/dev only; no cached-serving or official latency admission"
+  ]
+}

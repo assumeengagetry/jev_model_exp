@@ -1,0 +1,38 @@
+{
+  "complete": false,
+  "single_gpu_actual_macro": true,
+  "four_rank_update_verified": false,
+  "macro": 0,
+  "pairs": 128,
+  "native_attention": {
+    "attention": "flash_attention_3",
+    "attention_implementation": "flash_attn3_hopper",
+    "attention_provider": "kernels-community/flash-attn3",
+    "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+    "sdpa_fallback": false,
+    "fa3_forward_calls": 672,
+    "fa3_backward_calls": 336,
+    "actual_training_kernel_executed": true,
+    "torch_deterministic_algorithms": true,
+    "fa3_deterministic_forward_calls": 672,
+    "fa3_deterministic_backward_calls": 336,
+    "actual_deterministic_fa3_backward_executed": true,
+    "cublas_workspace_config": ":4096:8",
+    "attention_current_process": {
+      "attention": "flash_attention_3",
+      "attention_implementation": "flash_attn3_hopper",
+      "attention_provider": "kernels-community/flash-attn3",
+      "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+      "sdpa_fallback": false,
+      "fa3_forward_calls": 672,
+      "fa3_backward_calls": 336,
+      "actual_training_kernel_executed": true,
+      "torch_deterministic_algorithms": true,
+      "fa3_deterministic_forward_calls": 672,
+      "fa3_deterministic_backward_calls": 336,
+      "actual_deterministic_fa3_backward_executed": true,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+  }
+}

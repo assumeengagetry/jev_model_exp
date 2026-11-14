@@ -1,0 +1,76 @@
+{
+  "execution_complete": true,
+  "workers": {
+    "causal": {
+      "gpu": 0,
+      "process": {
+        "pid": 696408,
+        "starttime": "141585481",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "executed",
+      "exit_code": 0,
+      "receipt": {
+        "execution_complete": true,
+        "same_geometry_content_isolation_pass": true,
+        "original_target_rows": 128,
+        "original_target_tokens": 45216,
+        "mode": "causal",
+        "all_393_gradients_bitwise_equal": true,
+        "weight_updates": 0,
+        "elapsed_seconds": 13.373709534993395,
+        "fullrow_only": true,
+        "old_solo_mixed_failure_regraded": false,
+        "prefix_cache_serving_admitted": false
+      }
+    },
+    "bidirectional": {
+      "gpu": 1,
+      "process": {
+        "pid": 696414,
+        "starttime": "141585495",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "executed",
+      "exit_code": 0,
+      "receipt": {
+        "execution_complete": true,
+        "same_geometry_content_isolation_pass": true,
+        "original_target_rows": 128,
+        "original_target_tokens": 45216,
+        "mode": "bidirectional",
+        "all_393_gradients_bitwise_equal": true,
+        "weight_updates": 0,
+        "elapsed_seconds": 13.720556017011404,
+        "fullrow_only": true,
+        "old_solo_mixed_failure_regraded": false,
+        "prefix_cache_serving_admitted": false
+      }
+    },
+    "prefix_block": {
+      "gpu": 2,
+      "process": {
+        "pid": 696420,
+        "starttime": "141585514",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "executed",
+      "exit_code": 0,
+      "receipt": {
+        "execution_complete": true,
+        "same_geometry_content_isolation_pass": true,
+        "original_target_rows": 128,
+        "original_target_tokens": 45216,
+        "mode": "prefix_block",
+        "all_393_gradients_bitwise_equal": true,
+        "weight_updates": 0,
+        "elapsed_seconds": 13.558457762002945,
+        "fullrow_only": true,
+        "old_solo_mixed_failure_regraded": false,
+        "prefix_cache_serving_admitted": false
+      }
+    }
+  },
+  "all_accepted": true,
+  "utc": "2026-11-12T12:18:47.410477+00:00"
+}

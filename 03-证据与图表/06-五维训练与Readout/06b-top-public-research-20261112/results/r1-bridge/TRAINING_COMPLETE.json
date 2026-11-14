@@ -1,0 +1,276 @@
+{
+  "complete": true,
+  "checkpoint": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final",
+  "training": {
+    "complete": true,
+    "model": "JOINT_BRIDGE",
+    "scope": {
+      "DATA_READY.json": {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/DATA_READY.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/DATA_READY.json",
+        "bytes": 6320,
+        "mtime_ns": 1794460080521554274
+      },
+      "SOURCE_BINDING.json": {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/SOURCE_BINDING.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/SOURCE_BINDING.json",
+        "bytes": 124342,
+        "mtime_ns": 1794460074885669396
+      },
+      "CODE_BINDING.json": {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/CODE_BINDING.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/CODE_BINDING.json",
+        "bytes": 141309,
+        "mtime_ns": 1794460058370006747
+      },
+      "train/config.json": {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/config.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/config.json",
+        "bytes": 5718,
+        "mtime_ns": 1794460074929668497
+      },
+      "KD_PUBLIC_REFERENCE.json": {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/KD_PUBLIC_REFERENCE.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/KD_PUBLIC_REFERENCE.json",
+        "bytes": 382,
+        "mtime_ns": 1794460074881669478
+      },
+      "R0_DECISION.json": {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/R0_DECISION.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/R0_DECISION.json",
+        "bytes": 25682,
+        "mtime_ns": 1794460074881669478
+      }
+    },
+    "pairs_seen": 1667242,
+    "pool_pairs": 1667242,
+    "effective_tokens": 458731913,
+    "optimizer_steps": 13026,
+    "relations_seen": 3647,
+    "seen_domains": {
+      "knowledge": 250000,
+      "retrieval": 250000,
+      "tools": 250000,
+      "arts": 250000,
+      "language": 250308,
+      "generic": 416934
+    },
+    "learning_rate": 2e-05,
+    "global_effective_batch": 128,
+    "world_size": 4,
+    "epochs": 1,
+    "seed": 42,
+    "student_parent": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final",
+    "parent_snapshot": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/kd-frozen",
+    "elapsed_seconds": 5304.10406956193,
+    "micro_token_budget_final": 16384,
+    "oom_retries": 0,
+    "gradient_checkpointing": false,
+    "attention_by_rank": [
+      {
+        "attention": "flash_attention_3",
+        "attention_implementation": "flash_attn3_hopper",
+        "attention_provider": "kernels-community/flash-attn3",
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false,
+        "fa3_forward_calls": 470316,
+        "fa3_backward_calls": 470316,
+        "actual_training_kernel_executed": true,
+        "torch_deterministic_algorithms": true,
+        "fa3_deterministic_forward_calls": 470316,
+        "fa3_deterministic_backward_calls": 470316,
+        "actual_deterministic_fa3_backward_executed": true,
+        "cublas_workspace_config": ":4096:8",
+        "attention_current_process": {
+          "attention": "flash_attention_3",
+          "attention_implementation": "flash_attn3_hopper",
+          "attention_provider": "kernels-community/flash-attn3",
+          "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+          "sdpa_fallback": false,
+          "fa3_forward_calls": 470316,
+          "fa3_backward_calls": 470316,
+          "actual_training_kernel_executed": true,
+          "torch_deterministic_algorithms": true,
+          "fa3_deterministic_forward_calls": 470316,
+          "fa3_deterministic_backward_calls": 470316,
+          "actual_deterministic_fa3_backward_executed": true,
+          "cublas_workspace_config": ":4096:8"
+        },
+        "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+      },
+      {
+        "attention": "flash_attention_3",
+        "attention_implementation": "flash_attn3_hopper",
+        "attention_provider": "kernels-community/flash-attn3",
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false,
+        "fa3_forward_calls": 470596,
+        "fa3_backward_calls": 470596,
+        "actual_training_kernel_executed": true,
+        "torch_deterministic_algorithms": true,
+        "fa3_deterministic_forward_calls": 470596,
+        "fa3_deterministic_backward_calls": 470596,
+        "actual_deterministic_fa3_backward_executed": true,
+        "cublas_workspace_config": ":4096:8",
+        "attention_current_process": {
+          "attention": "flash_attention_3",
+          "attention_implementation": "flash_attn3_hopper",
+          "attention_provider": "kernels-community/flash-attn3",
+          "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+          "sdpa_fallback": false,
+          "fa3_forward_calls": 470596,
+          "fa3_backward_calls": 470596,
+          "actual_training_kernel_executed": true,
+          "torch_deterministic_algorithms": true,
+          "fa3_deterministic_forward_calls": 470596,
+          "fa3_deterministic_backward_calls": 470596,
+          "actual_deterministic_fa3_backward_executed": true,
+          "cublas_workspace_config": ":4096:8"
+        },
+        "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+      },
+      {
+        "attention": "flash_attention_3",
+        "attention_implementation": "flash_attn3_hopper",
+        "attention_provider": "kernels-community/flash-attn3",
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false,
+        "fa3_forward_calls": 470372,
+        "fa3_backward_calls": 470372,
+        "actual_training_kernel_executed": true,
+        "torch_deterministic_algorithms": true,
+        "fa3_deterministic_forward_calls": 470372,
+        "fa3_deterministic_backward_calls": 470372,
+        "actual_deterministic_fa3_backward_executed": true,
+        "cublas_workspace_config": ":4096:8",
+        "attention_current_process": {
+          "attention": "flash_attention_3",
+          "attention_implementation": "flash_attn3_hopper",
+          "attention_provider": "kernels-community/flash-attn3",
+          "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+          "sdpa_fallback": false,
+          "fa3_forward_calls": 470372,
+          "fa3_backward_calls": 470372,
+          "actual_training_kernel_executed": true,
+          "torch_deterministic_algorithms": true,
+          "fa3_deterministic_forward_calls": 470372,
+          "fa3_deterministic_backward_calls": 470372,
+          "actual_deterministic_fa3_backward_executed": true,
+          "cublas_workspace_config": ":4096:8"
+        },
+        "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+      },
+      {
+        "attention": "flash_attention_3",
+        "attention_implementation": "flash_attn3_hopper",
+        "attention_provider": "kernels-community/flash-attn3",
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false,
+        "fa3_forward_calls": 469504,
+        "fa3_backward_calls": 469504,
+        "actual_training_kernel_executed": true,
+        "torch_deterministic_algorithms": true,
+        "fa3_deterministic_forward_calls": 469504,
+        "fa3_deterministic_backward_calls": 469504,
+        "actual_deterministic_fa3_backward_executed": true,
+        "cublas_workspace_config": ":4096:8",
+        "attention_current_process": {
+          "attention": "flash_attention_3",
+          "attention_implementation": "flash_attn3_hopper",
+          "attention_provider": "kernels-community/flash-attn3",
+          "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+          "sdpa_fallback": false,
+          "fa3_forward_calls": 469504,
+          "fa3_backward_calls": 469504,
+          "actual_training_kernel_executed": true,
+          "torch_deterministic_algorithms": true,
+          "fa3_deterministic_forward_calls": 469504,
+          "fa3_deterministic_backward_calls": 469504,
+          "actual_deterministic_fa3_backward_executed": true,
+          "cublas_workspace_config": ":4096:8"
+        },
+        "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+      }
+    ],
+    "actual_deterministic_fa3_backward_executed": true,
+    "all_ranks_parameters_identical": true,
+    "maximum_rank_parameter_difference": 0.0,
+    "observation_file": {
+      "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/observations.jsonl",
+      "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/observations.jsonl",
+      "bytes": 6631,
+      "mtime_ns": 1794465450332214481
+    },
+    "gradient_reduction": "NCCL FP32 SUM after actual global macro normalization",
+    "final_files": [
+      {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/README.md",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/README.md",
+        "bytes": 5204,
+        "mtime_ns": 1794465450708206735
+      },
+      {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/adapter_config.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/adapter_config.json",
+        "bytes": 1174,
+        "mtime_ns": 1794465450804204757
+      },
+      {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/adapter_model.safetensors",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/adapter_model.safetensors",
+        "bytes": 80800744,
+        "mtime_ns": 1794465450804204757
+      },
+      {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/added_tokens.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/added_tokens.json",
+        "bytes": 707,
+        "mtime_ns": 1794465450808204675
+      },
+      {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/chat_template.jinja",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/chat_template.jinja",
+        "bytes": 4168,
+        "mtime_ns": 1794465450804204757
+      },
+      {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/config.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/config.json",
+        "bytes": 1566,
+        "mtime_ns": 1794465450804204757
+      },
+      {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/merges.txt",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/merges.txt",
+        "bytes": 1671853,
+        "mtime_ns": 1794465450872203357
+      },
+      {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/special_tokens_map.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/special_tokens_map.json",
+        "bytes": 613,
+        "mtime_ns": 1794465450808204675
+      },
+      {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/tokenizer.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/tokenizer.json",
+        "bytes": 11422654,
+        "mtime_ns": 1794465450940201955
+      },
+      {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/tokenizer_config.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/tokenizer_config.json",
+        "bytes": 5404,
+        "mtime_ns": 1794465450804204757
+      },
+      {
+        "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/vocab.json",
+        "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/train/JOINT_BRIDGE/final/vocab.json",
+        "bytes": 2776833,
+        "mtime_ns": 1794465450828204263
+      }
+    ]
+  },
+  "completed_utc": "2026-11-12T06:37:30.962089+00:00",
+  "uploaded": false
+}

@@ -1,0 +1,22 @@
+{
+  "role": "evaluation_only",
+  "reason": "Training finalized; original monitor reported an external GPU PID before any public began. Rank-exit snapshot race is possible, not uniquely proved.",
+  "historical_trigger_pid_logged": false,
+  "original_pipeline": {
+    "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/PIPELINE.json",
+    "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/PIPELINE.json",
+    "bytes": 526,
+    "mtime_ns": 1794465453788143285
+  },
+  "historical_external_occupancy_excluded": false,
+  "original_stop": {
+    "path": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/NO_AUTOMATIC_RESUME",
+    "resolved": "/tmp/opencode/jev-06b-research-20261112-r1-bridge/NO_AUTOMATIC_RESUME",
+    "bytes": 120,
+    "mtime_ns": 1794465453320152926
+  },
+  "resume_old_root": false,
+  "retrain": false,
+  "reuse_prior_predictions": false,
+  "created_utc": "2026-11-12T06:54:32.734233+00:00"
+}

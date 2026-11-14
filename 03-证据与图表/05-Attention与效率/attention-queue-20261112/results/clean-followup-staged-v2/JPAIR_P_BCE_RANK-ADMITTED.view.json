@@ -1,0 +1,107 @@
+{
+  "arm": "JPAIR_P_BCE_RANK",
+  "authorization": {
+    "bytes": 1545202,
+    "mtime_ns": 1794506338729476264,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json"
+  },
+  "budget": {
+    "admitted": [
+      "STATE_NL_PB_P_CE"
+    ],
+    "arm_cap_bytes": 26843545600,
+    "candidate": [
+      "JPAIR_P_BCE_RANK"
+    ],
+    "evidence_bytes": 5368709120,
+    "fits": true,
+    "free_bytes": 157050073088,
+    "outstanding_bytes": {
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": 25944813841,
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": 25944728926,
+      "/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42": 0,
+      "/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42": 0
+    },
+    "pending_unreserved": [
+      "JPAIR_P_BCE_RANK"
+    ],
+    "projection_only": true,
+    "required_free_bytes": 78733088367,
+    "retained_bytes": {
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": 898731759,
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": 898816674,
+      "/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42": 10969676192,
+      "/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42": 10969676860
+    },
+    "shared_floor_bytes": 21474836480,
+    "system_wide_reservation": false
+  },
+  "capacity_reserved": true,
+  "gpu": 3,
+  "lease": {
+    "bytes": 2072,
+    "mtime_ns": 1794506390444440316,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/gpu3-SUCCESSOR.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/gpu3-SUCCESSOR.json"
+  },
+  "manifest": {
+    "bytes": 36635667,
+    "mtime_ns": 1794506180204650656,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json"
+  },
+  "next_macro_index": 1,
+  "owner": {
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+    "pid": 741840,
+    "starttime": "143631476"
+  },
+  "repeat_macro0_allowed": false,
+  "source": {
+    "bytes": 52406,
+    "mtime_ns": 1794506177816698461,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/source/staged_queue.py",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/source/staged_queue.py"
+  },
+  "uuid": "GPU-52480c01-119c-f065-33d8-cb016eac9c39",
+  "binding": {
+    "checkpoint": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0000001-s00002",
+    "complete": {
+      "bytes": 772662,
+      "mtime_ns": 1794501888308259793,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0000001-s00002/COMPLETE.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/checkpoint-m0000001-s00002/COMPLETE.json"
+    },
+    "ledger": {
+      "bytes": 476856,
+      "mtime_ns": 1794501888312259711,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/ledger.jsonl",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42/ledger.jsonl"
+    },
+    "next_macro_index": 1,
+    "pin_file": {
+      "bytes": 306,
+      "mtime_ns": 1794501928983419367,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/JPAIR_P_BCE_RANK/RESUME_COMPLETE_PIN.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/JPAIR_P_BCE_RANK/RESUME_COMPLETE_PIN.json"
+    },
+    "repeat_macro0_allowed": false,
+    "report": {
+      "bytes": 3779437,
+      "mtime_ns": 1794501929067417631,
+      "path": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/JPAIR_P_BCE_RANK/FIRST_PRIMARY_VERIFICATION.json",
+      "resolved": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/primary/JPAIR_P_BCE_RANK/FIRST_PRIMARY_VERIFICATION.json"
+    }
+  },
+  "archive_kind": "admission-view-repeated-scope-elided",
+  "original_artifact": {
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/JPAIR_P_BCE_RANK-ADMITTED.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/JPAIR_P_BCE_RANK-ADMITTED.json",
+    "bytes": 774211,
+    "mtime_ns": 1794506390692435349
+  },
+  "elided_keys": [
+    "binding.scope"
+  ]
+}

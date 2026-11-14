@@ -1,0 +1,62 @@
+{
+  "complete": true,
+  "public_index": 24.91,
+  "original_public_index": 24.97,
+  "previous_accelerated_public_index": 24.99,
+  "score_file": {
+    "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runs/public-kernel-v2/scores.json",
+    "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runs/public-kernel-v2/scores.json",
+    "bytes": 32040,
+    "mtime_ns": 1794414937415355638
+  },
+  "run_status": {
+    "time": "2026-11-11T16:34:55.537636+00:00",
+    "event": "complete",
+    "engine": "kernel_engine:KernelPairClassifierEngine",
+    "completed": 140620,
+    "counts": {
+      "ok": 140620
+    },
+    "elapsed_seconds": 3436.6
+  },
+  "results_file": {
+    "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runs/public-kernel-v2/results.jsonl",
+    "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runs/public-kernel-v2/results.jsonl",
+    "bytes": 628468055,
+    "mtime_ns": 1794414895068189697
+  },
+  "status_file": {
+    "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runs/public-kernel-v2/status.json",
+    "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runs/public-kernel-v2/status.json",
+    "bytes": 194,
+    "mtime_ns": 1794414895536180481
+  },
+  "run_binding_file": {
+    "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runs/public-kernel-v2/CHECKPOINT_BINDING.json",
+    "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/runs/public-kernel-v2/CHECKPOINT_BINDING.json",
+    "bytes": 126180,
+    "mtime_ns": 1794411437292064747
+  },
+  "binding_file": {
+    "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/BINDING.json",
+    "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/BINDING.json",
+    "bytes": 126180,
+    "mtime_ns": 1794411436840073558
+  },
+  "comparison_file": {
+    "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/COMPARISON.json",
+    "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/COMPARISON.json",
+    "bytes": 14437,
+    "mtime_ns": 1794414961062889811
+  },
+  "comparison_v1_file": {
+    "path": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/COMPARISON_V1.json",
+    "resolved": "/tmp/opencode/jev-inference-kernels-20261111-bounded-jit/COMPARISON_V1.json",
+    "bytes": 14453,
+    "mtime_ns": 1794414979086534733
+  },
+  "pipeline_wall_seconds_including_load_and_scoring": 3505.2575578871183,
+  "completed_utc": "2026-11-11T16:36:19.244220+00:00",
+  "private_full_score": null,
+  "uploaded": false
+}

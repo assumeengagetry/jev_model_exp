@@ -1,0 +1,37 @@
+{
+  "authorization": {
+    "bytes": 1545202,
+    "mtime_ns": 1794506338729476264,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/AUTHORIZE_RESUME.json"
+  },
+  "control_root": "/tmp/opencode/jev-clean-followup-staged-20261112-v2",
+  "data_root": "/tmp/opencode/jev-clean-trainer-20261112-followup-v1",
+  "launched_utc": "2026-11-12T17:59:32.026063+00:00",
+  "main_review": {
+    "bytes": 1686490,
+    "mtime_ns": 1794506205328147687,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MAIN_DIRECT_ACTUAL_REVIEW.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MAIN_DIRECT_ACTUAL_REVIEW.json"
+  },
+  "manifest": {
+    "bytes": 36635667,
+    "mtime_ns": 1794506180204650656,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/MANIFEST.json"
+  },
+  "no_automatic_restart": true,
+  "only_explicit_cursor1_resume": true,
+  "owner": {
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+    "pid": 741840,
+    "starttime": "143631476"
+  },
+  "source": {
+    "bytes": 52406,
+    "mtime_ns": 1794506177816698461,
+    "path": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/source/staged_queue.py",
+    "resolved": "/tmp/opencode/jev-clean-followup-staged-20261112-v2/source/staged_queue.py"
+  },
+  "system_python": "/usr/bin/python3"
+}

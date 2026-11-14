@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "actual_saved_fp32_tensor_keys": 393,
+  "actual_lora_pairs": 196,
+  "all_B_exactly_zero": true,
+  "head_shape": [
+    2,
+    1024
+  ],
+  "active_served_parameters": 616237056,
+  "trainable_parameters": 20187136,
+  "base_origin": "/home/dev/assumeengage/models/Qwen3-0.6B",
+  "model_forward_calls": 0,
+  "historical_project_adapter_or_teacher_loaded": false,
+  "init_complete": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/init-seed42/COMPLETE.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/init-seed42/COMPLETE.json",
+    "bytes": 2892,
+    "mtime_ns": 1794488239728419454
+  },
+  "final_config": {
+    "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/seed42.json",
+    "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/seed42.json",
+    "bytes": 11634,
+    "mtime_ns": 1794488242160369443
+  }
+}

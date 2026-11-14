@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "layout": "packed",
+  "executed_requests": 140620,
+  "scored_requests": 140178,
+  "counts": {
+    "ok": 140620
+  },
+  "public_index": 24.7,
+  "official_single_gpu_latency_admission": false,
+  "clean_ranking_candidate": false,
+  "files": [
+    {
+      "path": "/tmp/opencode/jev-padding-free-20261112-v3/eval/packed/results.jsonl",
+      "resolved": "/tmp/opencode/jev-padding-free-20261112-v3/eval/packed/results.jsonl",
+      "bytes": 623772697,
+      "mtime_ns": 1794481418296016053
+    },
+    {
+      "path": "/tmp/opencode/jev-padding-free-20261112-v3/eval/packed/scores.json",
+      "resolved": "/tmp/opencode/jev-padding-free-20261112-v3/eval/packed/scores.json",
+      "bytes": 32071,
+      "mtime_ns": 1794481459915168889
+    },
+    {
+      "path": "/tmp/opencode/jev-padding-free-20261112-v3/eval/packed/benchmark-summary.json",
+      "resolved": "/tmp/opencode/jev-padding-free-20261112-v3/eval/packed/benchmark-summary.json",
+      "bytes": 34875,
+      "mtime_ns": 1794481438787598940
+    },
+    {
+      "path": "/tmp/opencode/jev-padding-free-20261112-v3/eval/packed/index.json",
+      "resolved": "/tmp/opencode/jev-padding-free-20261112-v3/eval/packed/index.json",
+      "bytes": 10022,
+      "mtime_ns": 1794481447423423157
+    }
+  ],
+  "completed_utc": "2026-11-12T11:04:20.545858+00:00"
+}

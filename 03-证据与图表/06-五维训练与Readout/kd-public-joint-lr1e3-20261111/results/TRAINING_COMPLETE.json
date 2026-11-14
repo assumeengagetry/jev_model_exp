@@ -1,0 +1,262 @@
+{
+  "complete": true,
+  "checkpoint": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final",
+  "training": {
+    "complete": true,
+    "model": "JOINT_LR1E3",
+    "scope": {
+      "DATA_READY.json": {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/DATA_READY.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/DATA_READY.json",
+        "bytes": 6798,
+        "mtime_ns": 1794418181587195047
+      },
+      "SOURCE_BINDING.json": {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/SOURCE_BINDING.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/SOURCE_BINDING.json",
+        "bytes": 90244,
+        "mtime_ns": 1794418160155625376
+      },
+      "CODE_BINDING.json": {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/CODE_BINDING.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/CODE_BINDING.json",
+        "bytes": 131170,
+        "mtime_ns": 1794418143983950105
+      },
+      "train/config.json": {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/config.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/config.json",
+        "bytes": 5670,
+        "mtime_ns": 1794418163467558873
+      },
+      "eval/kd/COMPLETE.json": {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/eval/kd/COMPLETE.json",
+        "bytes": 10666,
+        "mtime_ns": 1794419212158610258
+      }
+    },
+    "pairs_seen": 1667242,
+    "pool_pairs": 1667242,
+    "effective_tokens": 458731913,
+    "optimizer_steps": 13026,
+    "relations_seen": 3647,
+    "seen_domains": {
+      "knowledge": 250000,
+      "retrieval": 250000,
+      "tools": 250000,
+      "arts": 250000,
+      "language": 250308,
+      "generic": 416934
+    },
+    "learning_rate": 0.001,
+    "global_effective_batch": 128,
+    "world_size": 4,
+    "epochs": 1,
+    "seed": 42,
+    "student_parent": "/tmp/opencode/jev-five-dimension-distilled-20261109-v2/KD_HYBRID/final",
+    "parent_snapshot": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/kd-frozen",
+    "elapsed_seconds": 5324.349455240881,
+    "micro_token_budget_final": 16384,
+    "oom_retries": 0,
+    "gradient_checkpointing": false,
+    "attention_by_rank": [
+      {
+        "attention": "flash_attention_3",
+        "attention_implementation": "flash_attn3_hopper",
+        "attention_provider": "kernels-community/flash-attn3",
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false,
+        "fa3_forward_calls": 470316,
+        "fa3_backward_calls": 470316,
+        "actual_training_kernel_executed": true,
+        "torch_deterministic_algorithms": true,
+        "fa3_deterministic_forward_calls": 470316,
+        "fa3_deterministic_backward_calls": 470316,
+        "actual_deterministic_fa3_backward_executed": true,
+        "cublas_workspace_config": ":4096:8",
+        "attention_current_process": {
+          "attention": "flash_attention_3",
+          "attention_implementation": "flash_attn3_hopper",
+          "attention_provider": "kernels-community/flash-attn3",
+          "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+          "sdpa_fallback": false,
+          "fa3_forward_calls": 470316,
+          "fa3_backward_calls": 470316,
+          "actual_training_kernel_executed": true,
+          "torch_deterministic_algorithms": true,
+          "fa3_deterministic_forward_calls": 470316,
+          "fa3_deterministic_backward_calls": 470316,
+          "actual_deterministic_fa3_backward_executed": true,
+          "cublas_workspace_config": ":4096:8"
+        },
+        "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+      },
+      {
+        "attention": "flash_attention_3",
+        "attention_implementation": "flash_attn3_hopper",
+        "attention_provider": "kernels-community/flash-attn3",
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false,
+        "fa3_forward_calls": 470596,
+        "fa3_backward_calls": 470596,
+        "actual_training_kernel_executed": true,
+        "torch_deterministic_algorithms": true,
+        "fa3_deterministic_forward_calls": 470596,
+        "fa3_deterministic_backward_calls": 470596,
+        "actual_deterministic_fa3_backward_executed": true,
+        "cublas_workspace_config": ":4096:8",
+        "attention_current_process": {
+          "attention": "flash_attention_3",
+          "attention_implementation": "flash_attn3_hopper",
+          "attention_provider": "kernels-community/flash-attn3",
+          "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+          "sdpa_fallback": false,
+          "fa3_forward_calls": 470596,
+          "fa3_backward_calls": 470596,
+          "actual_training_kernel_executed": true,
+          "torch_deterministic_algorithms": true,
+          "fa3_deterministic_forward_calls": 470596,
+          "fa3_deterministic_backward_calls": 470596,
+          "actual_deterministic_fa3_backward_executed": true,
+          "cublas_workspace_config": ":4096:8"
+        },
+        "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+      },
+      {
+        "attention": "flash_attention_3",
+        "attention_implementation": "flash_attn3_hopper",
+        "attention_provider": "kernels-community/flash-attn3",
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false,
+        "fa3_forward_calls": 470372,
+        "fa3_backward_calls": 470372,
+        "actual_training_kernel_executed": true,
+        "torch_deterministic_algorithms": true,
+        "fa3_deterministic_forward_calls": 470372,
+        "fa3_deterministic_backward_calls": 470372,
+        "actual_deterministic_fa3_backward_executed": true,
+        "cublas_workspace_config": ":4096:8",
+        "attention_current_process": {
+          "attention": "flash_attention_3",
+          "attention_implementation": "flash_attn3_hopper",
+          "attention_provider": "kernels-community/flash-attn3",
+          "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+          "sdpa_fallback": false,
+          "fa3_forward_calls": 470372,
+          "fa3_backward_calls": 470372,
+          "actual_training_kernel_executed": true,
+          "torch_deterministic_algorithms": true,
+          "fa3_deterministic_forward_calls": 470372,
+          "fa3_deterministic_backward_calls": 470372,
+          "actual_deterministic_fa3_backward_executed": true,
+          "cublas_workspace_config": ":4096:8"
+        },
+        "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+      },
+      {
+        "attention": "flash_attention_3",
+        "attention_implementation": "flash_attn3_hopper",
+        "attention_provider": "kernels-community/flash-attn3",
+        "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+        "sdpa_fallback": false,
+        "fa3_forward_calls": 469504,
+        "fa3_backward_calls": 469504,
+        "actual_training_kernel_executed": true,
+        "torch_deterministic_algorithms": true,
+        "fa3_deterministic_forward_calls": 469504,
+        "fa3_deterministic_backward_calls": 469504,
+        "actual_deterministic_fa3_backward_executed": true,
+        "cublas_workspace_config": ":4096:8",
+        "attention_current_process": {
+          "attention": "flash_attention_3",
+          "attention_implementation": "flash_attn3_hopper",
+          "attention_provider": "kernels-community/flash-attn3",
+          "attention_build": "build/torch29-cxx11-cu128-x86_64-linux",
+          "sdpa_fallback": false,
+          "fa3_forward_calls": 469504,
+          "fa3_backward_calls": 469504,
+          "actual_training_kernel_executed": true,
+          "torch_deterministic_algorithms": true,
+          "fa3_deterministic_forward_calls": 469504,
+          "fa3_deterministic_backward_calls": 469504,
+          "actual_deterministic_fa3_backward_executed": true,
+          "cublas_workspace_config": ":4096:8"
+        },
+        "attention_evidence_source": "committed_checkpoint_cumulative_plus_current_process"
+      }
+    ],
+    "actual_deterministic_fa3_backward_executed": true,
+    "gradient_reduction": "NCCL FP32 SUM after actual global macro normalization",
+    "final_files": [
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/README.md",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/README.md",
+        "bytes": 5204,
+        "mtime_ns": 1794424559001741413
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/adapter_config.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/adapter_config.json",
+        "bytes": 1174,
+        "mtime_ns": 1794424559101739350
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/adapter_model.safetensors",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/adapter_model.safetensors",
+        "bytes": 80800744,
+        "mtime_ns": 1794424559097739432
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/added_tokens.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/added_tokens.json",
+        "bytes": 707,
+        "mtime_ns": 1794424559101739350
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/chat_template.jinja",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/chat_template.jinja",
+        "bytes": 4168,
+        "mtime_ns": 1794424559101739350
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/config.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/config.json",
+        "bytes": 1566,
+        "mtime_ns": 1794424559101739350
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/merges.txt",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/merges.txt",
+        "bytes": 1671853,
+        "mtime_ns": 1794424559165738029
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/special_tokens_map.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/special_tokens_map.json",
+        "bytes": 613,
+        "mtime_ns": 1794424559101739350
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/tokenizer.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/tokenizer.json",
+        "bytes": 11422654,
+        "mtime_ns": 1794424559229736708
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/tokenizer_config.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/tokenizer_config.json",
+        "bytes": 5404,
+        "mtime_ns": 1794424559101739350
+      },
+      {
+        "path": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/vocab.json",
+        "resolved": "/tmp/opencode/jev-kd-public-joint-lr1e3-20261111/train/JOINT_LR1E3/final/vocab.json",
+        "bytes": 2776833,
+        "mtime_ns": 1794424559121738937
+      }
+    ]
+  },
+  "completed_utc": "2026-11-11T19:15:59.253655+00:00",
+  "uploaded": false
+}

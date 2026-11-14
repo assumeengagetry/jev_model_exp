@@ -1,0 +1,147 @@
+{
+  "execution_complete": true,
+  "workers": {
+    "BI_P_CE": {
+      "gpu": 0,
+      "process": {
+        "pid": 725556,
+        "starttime": "142683426",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "completed",
+      "resumed_cursor": 0,
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42",
+      "exit_code": 0,
+      "actual_completion": {
+        "cursor": {
+          "cases": 56912,
+          "logical_pair_tokens": 99824365,
+          "macro_updates": 3557
+        },
+        "observations": [
+          10000000,
+          30000000,
+          100000000
+        ],
+        "actual_runtime": {
+          "backward_counter_scope": "autograd native backward invoked by each replay wave; not separately instrumented",
+          "execution": "native-FA3-full-row-no-SDPA-no-fork",
+          "forward": {
+            "dev_select.attempted_real_tokens": 4663452,
+            "dev_select.attempted_tokenwise_rows_per_operator": 4663452,
+            "dev_select.attempted_waves": 1407,
+            "dev_select.completed_native_FA3_calls": 39396,
+            "dev_select.completed_real_tokens": 4663452,
+            "dev_select.completed_tokenwise_rows_per_operator": 4663452,
+            "dev_select.completed_waves": 1407,
+            "train_first.attempted_real_tokens": 99824365,
+            "train_first.attempted_tokenwise_rows_per_operator": 99824365,
+            "train_first.attempted_waves": 16977,
+            "train_first.completed_native_FA3_calls": 475356,
+            "train_first.completed_real_tokens": 99824365,
+            "train_first.completed_tokenwise_rows_per_operator": 99824365,
+            "train_first.completed_waves": 16977,
+            "train_replay.attempted_real_tokens": 99824365,
+            "train_replay.attempted_tokenwise_rows_per_operator": 99824365,
+            "train_replay.attempted_waves": 16977,
+            "train_replay.backward_real_tokens": 99824365,
+            "train_replay.completed_backward_waves": 16977,
+            "train_replay.completed_native_FA3_calls": 475356,
+            "train_replay.completed_real_tokens": 99824365,
+            "train_replay.completed_tokenwise_rows_per_operator": 99824365,
+            "train_replay.completed_waves": 16977
+          },
+          "layout": "packed",
+          "mode": "bidirectional",
+          "native_forward_calls": {
+            "attempted_calls": 990108,
+            "attempted_query_tokens": 5720741096,
+            "completed_calls": 990108,
+            "completed_key_tokens": 5720741096,
+            "completed_noncausal_calls": 990108,
+            "completed_query_tokens": 5720741096
+          },
+          "prefix_cache": false
+        },
+        "first_actual_macro": {
+          "bytes": 535482,
+          "mtime_ns": 1794496913561839813,
+          "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42/first-actual-macro/COMPLETE.json",
+          "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/BI_P_CE-seed42/first-actual-macro/COMPLETE.json"
+        }
+      }
+    },
+    "PB_P_CE": {
+      "gpu": 1,
+      "process": {
+        "pid": 725559,
+        "starttime": "142683442",
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9"
+      },
+      "state": "completed",
+      "resumed_cursor": 0,
+      "output": "/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42",
+      "exit_code": 0,
+      "actual_completion": {
+        "cursor": {
+          "cases": 56912,
+          "logical_pair_tokens": 99824365,
+          "macro_updates": 3557
+        },
+        "observations": [
+          10000000,
+          30000000,
+          100000000
+        ],
+        "actual_runtime": {
+          "backward_counter_scope": "autograd native backward invoked by each replay wave; not separately instrumented",
+          "execution": "native-FA3-full-row-no-SDPA-no-fork",
+          "forward": {
+            "dev_select.attempted_real_tokens": 4663452,
+            "dev_select.attempted_tokenwise_rows_per_operator": 4663452,
+            "dev_select.attempted_waves": 1407,
+            "dev_select.completed_native_FA3_calls": 78792,
+            "dev_select.completed_real_tokens": 4663452,
+            "dev_select.completed_tokenwise_rows_per_operator": 4663452,
+            "dev_select.completed_waves": 1407,
+            "train_first.attempted_real_tokens": 99824365,
+            "train_first.attempted_tokenwise_rows_per_operator": 99824365,
+            "train_first.attempted_waves": 16977,
+            "train_first.completed_native_FA3_calls": 950712,
+            "train_first.completed_real_tokens": 99824365,
+            "train_first.completed_tokenwise_rows_per_operator": 99824365,
+            "train_first.completed_waves": 16977,
+            "train_replay.attempted_real_tokens": 99824365,
+            "train_replay.attempted_tokenwise_rows_per_operator": 99824365,
+            "train_replay.attempted_waves": 16977,
+            "train_replay.backward_real_tokens": 99824365,
+            "train_replay.completed_backward_waves": 16977,
+            "train_replay.completed_native_FA3_calls": 950712,
+            "train_replay.completed_real_tokens": 99824365,
+            "train_replay.completed_tokenwise_rows_per_operator": 99824365,
+            "train_replay.completed_waves": 16977
+          },
+          "layout": "packed",
+          "mode": "prefix_block",
+          "native_forward_calls": {
+            "attempted_calls": 1980216,
+            "attempted_query_tokens": 5720741096,
+            "completed_calls": 1980216,
+            "completed_key_tokens": 11162236148,
+            "completed_noncausal_calls": 1980216,
+            "completed_query_tokens": 5720741096
+          },
+          "prefix_cache": false
+        },
+        "first_actual_macro": {
+          "bytes": 535471,
+          "mtime_ns": 1794496912637858588,
+          "path": "/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42/first-actual-macro/COMPLETE.json",
+          "resolved": "/tmp/opencode/jev-clean-trainer-20261112-v2/PB_P_CE-seed42/first-actual-macro/COMPLETE.json"
+        }
+      }
+    }
+  },
+  "all_completed": true,
+  "utc": "2026-11-12T17:37:42.757508+00:00"
+}

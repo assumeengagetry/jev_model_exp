@@ -1,0 +1,85 @@
+{
+  "verified_utc": "2026-11-12T07:21:39.616433+00:00",
+  "complete": true,
+  "public_index": 24.67,
+  "raw_index": 43.84,
+  "requests": 140620,
+  "scored_requests": 140178,
+  "excluded_requests": 442,
+  "counts": {
+    "ok": 140620
+  },
+  "full_metadata_payload_model_shard_and_order_match": true,
+  "source_bound_files": 470,
+  "fields": 323259,
+  "logical_candidates": 2506535,
+  "logical_input_tokens": 1556124407,
+  "near_uniform_fields": 2030,
+  "top_tie_fields_k_ge2": 2175,
+  "training": {
+    "pairs_seen": 1667242,
+    "effective_tokens": 458731913,
+    "optimizer_steps": 13026,
+    "relations_seen": 3647,
+    "learning_rate": 2e-05,
+    "world_size": 4,
+    "oom_retries": 0,
+    "elapsed_seconds": 5304.10406956193,
+    "all_ranks_parameters_identical": true
+  },
+  "rank_observation_nodes": [
+    0,
+    1000,
+    2000,
+    3000,
+    4000,
+    5000,
+    6000,
+    7000,
+    8000,
+    9000,
+    10000,
+    11000,
+    12000,
+    13000,
+    13026
+  ],
+  "maximum_rank_parameter_difference_at_nodes": 0.0,
+  "parameter_equality_scope": "Observed at initial/checkpoint/final nodes; not claiming a separately logged check at every macro.",
+  "final_observation": {
+    "step": 13026,
+    "maximum_rank_parameter_difference": 0.0,
+    "all_ranks_parameters_identical": true,
+    "updated_utc": "2026-11-12T06:37:30.242325+00:00",
+    "head_difference_row_norm": 0.8087664246559143,
+    "head_relative_change_from_kd": 0.027941076084971428,
+    "lora_A": {
+      "norm_ratio_to_kd": 1.0060801210192583,
+      "relative_delta_from_kd": 0.08637002823403712
+    },
+    "lora_B": {
+      "norm_ratio_to_kd": 1.0450109999714592,
+      "relative_delta_from_kd": 0.25810005805868674
+    }
+  },
+  "final_adapter_bytes": 80800744,
+  "final_tensor_count": 393,
+  "elapsed_pipeline_seconds": 7354.486114,
+  "training_root_preserved_blocked": true,
+  "old_stop_marker_preserved": true,
+  "original_public_never_started": true,
+  "public_recovery_root": "/tmp/opencode/jev-06b-research-20261112-r1-eval-recovery",
+  "training_root": "/tmp/opencode/jev-06b-research-20261112-r1-bridge",
+  "retrained": false,
+  "public_parallel_pipeline_seconds": 960.9217620629352,
+  "own_processes_exited": true,
+  "gpus_at_read": [
+    "0, 0, 0",
+    "1, 0, 0",
+    "2, 0, 0",
+    "3, 0, 0"
+  ],
+  "private_full_score": null,
+  "uploaded": false,
+  "scope": "Read-only actual complete bridge outputs/source/rank observations verification; no model run, scorer rerun, smoke or additional model/corpus hashes."
+}

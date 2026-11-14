@@ -1,0 +1,232 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-12T12:15:58.273459+00:00",
+  "actual_saved_tensors_directly_verified": true,
+  "flags": {
+    "tf32-1-bf16red-1": {
+      "modes": {
+        "causal": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.03125,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": {
+            "raw": {
+              "pass": true,
+              "relative_rms": 0.005607714758492567,
+              "max_abs": 0.0078125,
+              "bitwise_equal": false
+            },
+            "margin": {
+              "pass": true,
+              "relative_rms": 0.005573360262052067,
+              "max_abs": 0.015625,
+              "bitwise_equal": false
+            }
+          }
+        },
+        "bidirectional": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.140625,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": null
+        },
+        "prefix_block": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.0078125,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": {
+            "raw": {
+              "pass": false,
+              "relative_rms": 0.03171459792662198,
+              "max_abs": 0.03515625,
+              "bitwise_equal": false
+            },
+            "margin": {
+              "pass": false,
+              "relative_rms": 0.05230008067574574,
+              "max_abs": 0.0625,
+              "bitwise_equal": false
+            }
+          }
+        }
+      },
+      "elapsed_seconds": 5.456695738015696
+    },
+    "tf32-0-bf16red-1": {
+      "modes": {
+        "causal": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.03125,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": {
+            "raw": {
+              "pass": true,
+              "relative_rms": 0.005607714758492567,
+              "max_abs": 0.0078125,
+              "bitwise_equal": false
+            },
+            "margin": {
+              "pass": true,
+              "relative_rms": 0.005573360262052067,
+              "max_abs": 0.015625,
+              "bitwise_equal": false
+            }
+          }
+        },
+        "bidirectional": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.140625,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": null
+        },
+        "prefix_block": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.0078125,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": {
+            "raw": {
+              "pass": false,
+              "relative_rms": 0.03171459792662198,
+              "max_abs": 0.03515625,
+              "bitwise_equal": false
+            },
+            "margin": {
+              "pass": false,
+              "relative_rms": 0.05230008067574574,
+              "max_abs": 0.0625,
+              "bitwise_equal": false
+            }
+          }
+        }
+      },
+      "elapsed_seconds": 5.508154059993103
+    },
+    "tf32-1-bf16red-0": {
+      "modes": {
+        "causal": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.03125,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": {
+            "raw": {
+              "pass": true,
+              "relative_rms": 0.004673254367529041,
+              "max_abs": 0.0078125,
+              "bitwise_equal": false
+            },
+            "margin": {
+              "pass": true,
+              "relative_rms": 0.004026729558588678,
+              "max_abs": 0.01171875,
+              "bitwise_equal": false
+            }
+          }
+        },
+        "bidirectional": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.140625,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": null
+        },
+        "prefix_block": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.009765625,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": {
+            "raw": {
+              "pass": false,
+              "relative_rms": 0.032095370265032515,
+              "max_abs": 0.0380859375,
+              "bitwise_equal": false
+            },
+            "margin": {
+              "pass": false,
+              "relative_rms": 0.051974725782878026,
+              "max_abs": 0.0615234375,
+              "bitwise_equal": false
+            }
+          }
+        }
+      },
+      "elapsed_seconds": 5.458640509052202
+    },
+    "tf32-0-bf16red-0": {
+      "modes": {
+        "causal": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.03125,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": {
+            "raw": {
+              "pass": true,
+              "relative_rms": 0.004673254367529041,
+              "max_abs": 0.0078125,
+              "bitwise_equal": false
+            },
+            "margin": {
+              "pass": true,
+              "relative_rms": 0.004026729558588678,
+              "max_abs": 0.01171875,
+              "bitwise_equal": false
+            }
+          }
+        },
+        "bidirectional": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.140625,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": null
+        },
+        "prefix_block": {
+          "same_geometry_neighbor_all_observed_tensors_bitwise_equal": true,
+          "hf_and_packed_solo_mixed_each_bitwise_equal": true,
+          "first_observed_shape_difference": "after attention_context0, before input_layernorm1; not yet isolated to o_proj versus MLP",
+          "solo_mixed_logits_max_abs": 0.009765625,
+          "solo_mixed_original_contract_pass": false,
+          "prefix_full_fork": {
+            "raw": {
+              "pass": false,
+              "relative_rms": 0.032095370265032515,
+              "max_abs": 0.0380859375,
+              "bitwise_equal": false
+            },
+            "margin": {
+              "pass": false,
+              "relative_rms": 0.051974725782878026,
+              "max_abs": 0.0615234375,
+              "bitwise_equal": false
+            }
+          }
+        }
+      },
+      "elapsed_seconds": 5.3849144850391895
+    }
+  },
+  "updates": 0,
+  "all_four_flags_preserve_observed_fullrow_hidden_tensors": true,
+  "conclusion_scope": "this frozen actual macro0 target and equal row/P/S neighbor pair only; no universal absence proof",
+  "old_original_isolation_failures_preserved": true,
+  "automatic_train_or_serve_admission": false
+}

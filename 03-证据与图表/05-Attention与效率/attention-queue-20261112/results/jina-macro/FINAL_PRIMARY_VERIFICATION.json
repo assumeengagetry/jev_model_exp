@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "arms": {
+    "J0": {
+      "actual_logits_replay_bitwise_equal": true,
+      "actual_393_gradient_and_update_groups_finite": true,
+      "coefficients_recomputed_from_actual_cached_margins_and_original_known_targets": true,
+      "coefficient_max_abs_difference": 1.862645149230957e-09,
+      "case_balanced_loss_recomputed": 0.5199816823005676,
+      "field_cu_segments": 19,
+      "candidate_eos_count": 60,
+      "real_tokens": 10342,
+      "all_28_layers_realT": true,
+      "diagnostic_old_weights_only": true
+    },
+    "J1": {
+      "actual_logits_replay_bitwise_equal": true,
+      "actual_393_gradient_and_update_groups_finite": true,
+      "coefficients_recomputed_from_actual_cached_margins_and_original_known_targets": true,
+      "coefficient_max_abs_difference": 9.313225746154785e-10,
+      "case_balanced_loss_recomputed": 0.5127341747283936,
+      "field_cu_segments": 19,
+      "candidate_eos_count": 60,
+      "real_tokens": 10342,
+      "all_28_layers_realT": true,
+      "diagnostic_old_weights_only": true
+    },
+    "J2": {
+      "actual_logits_replay_bitwise_equal": true,
+      "actual_393_gradient_and_update_groups_finite": true,
+      "coefficients_recomputed_from_actual_cached_margins_and_original_known_targets": true,
+      "coefficient_max_abs_difference": 7.450580596923828e-09,
+      "case_balanced_loss_recomputed": 1.3427119255065918,
+      "field_cu_segments": 19,
+      "candidate_eos_count": 60,
+      "real_tokens": 10342,
+      "all_28_layers_realT": true,
+      "diagnostic_old_weights_only": true
+    }
+  },
+  "fresh_clean_training": false,
+  "public_score": null,
+  "unknown_field_gpu_path_exercised_by_this_macro": false,
+  "candidate_order_or_neighbor_robustness_admitted": false,
+  "all_140620_public_coverage_admitted": false
+}

@@ -1,0 +1,143 @@
+{
+  "D_confirm_opened": false,
+  "all_actual_exits_zero": true,
+  "arms": {
+    "C_D_BCE": {
+      "admission": {
+        "bytes": 603529,
+        "mtime_ns": 1794513363328097391,
+        "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_BCE-packed/ADMISSION.json",
+        "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_BCE-packed/ADMISSION.json"
+      },
+      "complete": {
+        "bytes": 605547,
+        "mtime_ns": 1794513363336097229,
+        "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_BCE-packed/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_BCE-packed/COMPLETE.json"
+      },
+      "coverage_complete": true,
+      "eligible_packed_candidate": false,
+      "execution_complete": true,
+      "numerical": {
+        "bytes": 190389,
+        "mtime_ns": 1794513363324097472,
+        "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_BCE-packed/NUMERICAL.json",
+        "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_BCE-packed/NUMERICAL.json"
+      },
+      "numerical_acceptance": false,
+      "quality": {
+        "bytes": 7355,
+        "mtime_ns": 1794513363324097472,
+        "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_BCE-packed/QUALITY.json",
+        "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_BCE-packed/QUALITY.json"
+      },
+      "weights_unchanged": true
+    },
+    "C_D_CE": {
+      "admission": {
+        "bytes": 603523,
+        "mtime_ns": 1794513363324097472,
+        "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/ADMISSION.json",
+        "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/ADMISSION.json"
+      },
+      "complete": {
+        "bytes": 605525,
+        "mtime_ns": 1794513363332097310,
+        "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/COMPLETE.json",
+        "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/COMPLETE.json"
+      },
+      "coverage_complete": true,
+      "eligible_packed_candidate": false,
+      "execution_complete": true,
+      "numerical": {
+        "bytes": 189152,
+        "mtime_ns": 1794513363320097552,
+        "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/NUMERICAL.json",
+        "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/NUMERICAL.json"
+      },
+      "numerical_acceptance": false,
+      "quality": {
+        "bytes": 7305,
+        "mtime_ns": 1794513363320097552,
+        "path": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/QUALITY.json",
+        "resolved": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed/QUALITY.json"
+      },
+      "weights_unchanged": true
+    }
+  },
+  "automatic_retry": false,
+  "execution_complete": true,
+  "numeric_negative_is_complete_scientific_result": true,
+  "owner": {
+    "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+    "pid": 746922,
+    "starttime": "144324625"
+  },
+  "public_run": false,
+  "resource_budget": {
+    "active_old_controller_untouched": "/tmp/opencode/jev-clean-followup-staged-20261112-v2",
+    "all_old_files_retained": true,
+    "free_bytes": 158877511680,
+    "new_remaining_bytes": 5359304151,
+    "new_total_cap_bytes": 5368709120,
+    "new_usage": {
+      "cap_used_bytes": 9404969,
+      "future_deduction_bytes": 9404969
+    },
+    "old_arm_cap_bytes": 26843545600,
+    "old_completion_budget_release": false,
+    "old_evidence_bytes": 5368709120,
+    "old_remaining_bytes": {
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": 16329021731,
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": 18056261451
+    },
+    "old_usage": {
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/JPAIR_P_BCE_RANK-seed42": {
+        "cap_used_bytes": 10514523869,
+        "future_deduction_bytes": 10514523869
+      },
+      "/tmp/opencode/jev-clean-trainer-20261112-followup-v1/STATE_NL_PB_P_CE-seed42": {
+        "cap_used_bytes": 8787284149,
+        "future_deduction_bytes": 8787284149
+      }
+    },
+    "required_free_bytes": 66588132933,
+    "shared_floor_bytes": 21474836480,
+    "system_wide_reservation": false
+  },
+  "winner_selected": false,
+  "workers": [
+    {
+      "actual_wait_complete": true,
+      "arm": "C_D_BCE",
+      "created": true,
+      "exit_code": 0,
+      "gpu": 0,
+      "output": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_BCE-packed",
+      "process": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 746935,
+        "starttime": "144324878"
+      },
+      "uuid": "GPU-43241aa5-89e9-5b7e-a5dc-bd4909f1d291",
+      "wait_error": null,
+      "wait_note": null
+    },
+    {
+      "actual_wait_complete": true,
+      "arm": "C_D_CE",
+      "created": true,
+      "exit_code": 0,
+      "gpu": 1,
+      "output": "/tmp/opencode/jev-terminal-packed-admission-20261112-v1/C_D_CE-packed",
+      "process": {
+        "boot_id": "3c68332a-f3a6-482d-b3ad-5b4b6668dfd9",
+        "pid": 746947,
+        "starttime": "144325040"
+      },
+      "uuid": "GPU-e1f6e14d-5cb2-3c33-6da8-63bffdca174b",
+      "wait_error": null,
+      "wait_note": null
+    }
+  ]
+}
