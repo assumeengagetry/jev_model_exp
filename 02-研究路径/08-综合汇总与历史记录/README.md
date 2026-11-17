@@ -21,6 +21,6 @@
 - [Jev 项目工作量明细台账](cluster-work-inventory-20261102/WORK-LEDGER.md)
 - [实验总规划与当前位置](experiment-roadmap-status-20261029.md)
 - [后续实验：两小时快筛执行约定](experiment-timebox-2h.md)
-- [Jev 决策模型实验工作记录](jev-work-log-20261102.md)
+- [Jev 决策模型实验工作记录（11.17 更新，研究重点简版）](jev-work-log-20261102.md)
 - [Language快筛阶段结论与当前阻塞](lu-progress-20261029T0320Z.md)
 - [全仓PNG图库](png-export-20261105/README.md)
