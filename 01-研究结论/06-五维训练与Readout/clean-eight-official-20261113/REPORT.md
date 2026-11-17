@@ -1,760 +1,468 @@
-# 从给定资料到八臂官方评测：Qwen3-0.6B 改造全过程与学习报告
+# Qwen3-0.6B clean 八臂实验：从你给的材料到官方成绩
 
-> **仓库阅读副本。** 服务器原报告为 `/home/dev/assumeengage/reports/jev-clean-eight-detailed-learning-report-20261113.md`。本副本只增加仓库导航并调整附表链接；原实验事实、公式和数值不变。
+> 2026-11-15 按学习用途重写。实验于 2026-11-12～13 完成，原报告整理于 2026-11-14（服务器原件 `/home/dev/assumeengage/reports/jev-clean-eight-detailed-learning-report-20261113.md`）。
 >
-> 附件：[344 行逐 benchmark 表](../../../03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/official-benchmarks.csv) · [40 行五域表](../../../03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/official-areas.csv) · [官方计分与独立核验](../../../03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/README.md)。
-
-> **实验范围：2026-11-12～2026-11-13；整理日期：2026-11-14（UTC）；报告版本：v1.0（原始来源核实、定点更正后）。** 文件名中的 20261113 指实验完成日。
+> 官方数字已与[证据目录](../../../03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/README.md)里的 `SCORES.json`、`scores/*.json`、[344 行逐 benchmark 表](../../../03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/official-benchmarks.csv)和[40 行五域表](../../../03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/official-areas.csv)逐项核对，保留官方文件的两位小数。本地开发集、训练账本和后端计时来自服务器记录，仓库里只有本文的转述。
 >
-> 本文回答：你之前给出的 padding-free、FlexAttention、Base Labs、Jina reranker 与 attention-mask commit 材料，我分别理解成什么问题，实际修改了什么，为什么这样改，怎样核对，以及最后得到了什么。
->
-> **最终事实：八个新训练终端权重均完成官方 Public 0.3 全量评测；本轮最高 C_P_BCE = 14.42。最终四卡逐模型队列耗时 14 小时 38 分 03 秒。没有达到当时研究设定的 51.99 参考目标，也没有证明新方案优于历史旧谱系。**
+> 八个分支的名字、mask 和 loss 公式在 [EIGHT-ARMS-EXPLAINED.md](EIGHT-ARMS-EXPLAINED.md)，本文不重复。
 
-## 阅读方式与证据等级
+## 结论
 
-- **想先掌握整体：**读第 1、2、9、14、15 节。
-- **想理解为什么这样改模型：**读第 3～8 节，重点看 mask、损失和两遍梯度重放。
-- **想学推理优化与多卡：**读第 10～13 节。
-- **想自己对应源码：**读第 17 节和附录来源表。
-- 本文的“小例子”“伪代码”用于解释概念，**不是实际训练样本或新增实验**；写报告没有运行新模型、重新评分、烟测或计算文件哈希。
+1. **八个新训练的权重都完整跑完了官方 Public 0.3。**每个权重 140,620 条请求全部 `ok`，官方排除 442 条后计分 140,178 条。
+2. **最高的是 `C_P_BCE`，Index 14.42。**离当初设定的参考 51.99 差 37.57 点，冲榜目标没有达到。它也低于旧谱系的 24.91，但两者的起点、数据、预算和后端都不同，不能直接比。
+3. **改 attention 可见性的三个分支分数很低。**五个 causal 分支在 12.83～14.42；全双向和两种两块双向只有 1.97～3.09。
+4. **本地开发集排名和官方排名对不上。**开发集最高的 `C_D_CE`（61.7%）官方排第三；官方第一的 `C_P_BCE` 在开发集排第四。JPAIR 和 STATE_NL 在开发集上都比各自的对照高，官方分数反而更低。
+5. **`C_P_BCE` 领先 `C_P_CE` 的 1.47 点里，约 1.37 点来自 Tools 区域，主要是 BFCL**（case-exact 原始分 0.44 → 0.64）；Knowledge 区域它反而略低。这一条是本次重写时从证据 CSV 补算的，原报告没有。
+6. **packing 去掉了约 25% 的无效计算，但没有改变分数。**在旧权重上做的同权重 A/B：dense 24.71，packed 24.70。
+7. **推理后端的第二版优化让前 1,000 条请求的平均延迟降低约 10%～11%；第一版反而慢了 8%～9%。**
+8. **四卡跑同一个权重后，第一个完整成绩 1 小时 43 分就出来了；八个全部跑完用了 14 小时 38 分。**
+9. 只有 seed 42 一次训练；没有跑 private Full，也没有提交榜单。
 
-本文区分四类陈述：
+## 阅读顺序
 
-1. **材料提出的思路**：外部作者的方法，不等于我已完整复现。
-2. **代码确实实现**：可以在冻结源码中定位，不等于训练或数值验收成功。
-3. **实际观测结果**：有正式日志、保存的中间结果、完成回执或官方计分文件。
-4. **解释性假设**：可以讨论，但没有因果隔离证据时不写成已证实原因。
-
-本报告以现存冻结代码和回执为准。旧计划中的“未训练”“先确认后 public”等文字是历史状态，不能覆盖后续真实完成记录。正文中的 `[M…]` 为材料、`[C…]` 为代码、`[E…]` 为结果证据，完整定位见附录。
-
-## 目录
-
-1. [你的材料与实际改动的对应关系](#c1)
-2. [模型、输入、读出：我们到底在训练什么](#c2)
-3. [Padding-free：去掉的是无效行，不是改变题目](#c3)
-4. [三种 attention 和 Base-inspired 边界](#c4)
-5. [Jina-inspired：哪些做了，哪些没有完整做](#c5)
-6. [数据清理与完整 case：为什么重建训练起点](#c6)
-7. [BCE、Field-CE、JPAIR 的数学区别](#c7)
-8. [训练器与两遍 VJP：显存有界但字段完整](#c8)
-9. [八臂设计、本地开发指标和三个观察点](#c9)
-10. [数值合同、失败结果与有限准入](#c10)
-11. [官方 Public Index 的准确含义](#c11)
-12. [推理后端的逐版修改与真实收益](#c12)
-13. [四卡同模型分片：为什么能更早出首分](#c13)
-14. [八个官方结果、五域分解和实际耗时](#c14)
-15. [能得出的结论与尚未证实的原因](#c15)
-16. [关键失败、纠正和决策变化](#c16)
-17. [按文件阅读代码与复查结果](#c17)
-18. [学习总结、术语和自测问题](#c18)
-19. [附录：材料、代码、回执与边界](#c19)
-
----
-
-<a id="c1"></a>
-## 1. 你的材料与实际改动的对应关系
-
-这次不是把几篇材料“混成一个大模型”，而是拆成若干尽量可归因的变量。
-
-| 输入材料或你的要求 | 我提取的问题 | 实际实施 | 没有冒充完成的部分 |
-|---|---|---|---|
-| 尽量全局 padding-free | 不仅 attention，Embedding/LoRA/MLP 是否仍在计算 pad？ | 建真实 packed 布局，整个主干处理 realT；做 dense/packed 同核对照 | packing 不自动带来学习提分，也不自动逐位等价 |
-| 你 pull 的 `2e334fb76c4cd4826df37424450b2734101db9f8` | causal、bidirectional、prefix_block 是否真的在 H800/FA3 上执行、反传？ | 精确保存该版本；实际三模式机制实验；后续改为同 native FA3 的 packed 执行层 | 该 commit 本身不是完整 padding-free；FA3 与 SDPA 的整模型数值合同没有全部通过 |
-| PyTorch FlexAttention 博客/2.9.1 文档 | 任意可见性是否能用 block metadata 表达而不物化巨大稠密 mask？ | 真实 packed causal 编译/前反向机制实验；另做 Jina 交互组件接线 | 没有把 Flex 替换进最终八模型官方后端，也没有宣称它已数值等价 |
-| Base Labs Mammoth/Elephant 技术报告、vLLM PR | state 与 question 两块双向、但 prefix 不看 suffix，是否可迁移？ | 实现 prefix-block；再单独实现 state＋一个已有换行的精确边界臂 | 不是 Qwen3.5 混合架构、answer-slot LM-head、CE+Brier 和其完整数据配方的复现 |
-| Jina reranker v3 模型卡/源码/论文 | 候选交互和排序目标，哪一部分可以单独迁移？ | J0/J1/J2 真实 macro 接线；八臂中完整训练的是独立 pair 的 BCE＋硬标签排名项 JPAIR | JPAIR 不是完整 Jina，也不是候选列表交互模型；完整 J1 fresh 训练/public 未完成 |
-| 知乎链接 | 其正文方法是否能实际取得？ | 当时 HTTP 403，保留未读取状态 | 不根据标题猜文章内容，不写“已复现知乎方法” |
-| 另一个 session 的推理优化记录 | 哪些工程方法能在本轮数学/realT 边界内复用？ | 词表标量缓存、CPU-owned metadata、autocast 生命周期、请求末 D2H、正确 PEFT helper | 没有直接恢复未准入的 KV fork、融合、padding Graph、量化或 merge |
-| 你要求“八个都测”“先尽快看到一个完整成绩” | 验收目标是全量官方分数，还是小开发集筛选？ | 停止只晋级两候选的旧流程；八臂全测；最终四卡同权重分片、逐模型计分 | 不用开发集百分比冒充 Public Index，不等八个全结束才交首分 |
-
-**外部结果和我们的结果必须分开：**Base 原文给出的 9B、同数据、单次 10k public 样本消融为 causal 44.8 / block-bidirectional 48.6；它不是我们的 0.6B 全量结果。Jina 的 BEIR nDCG 不是 JEV Public Index；它们的训练数据、读出、规模/上下文也不完全相同。材料来源见 `[M1]～[M8]`。
-
-研究最初的 51.99 参考来自当时冻结榜单中公开 served_params≤0.7B 的 GLiClass v4.1 edge 条目。**这是当时参考快照，不是本文重新核验的最新榜单第一名。**本轮 14.42 与该参考相差 37.57 个 Index 点；没有完成冲榜目标。[M9]
-
-<a id="c2"></a>
-## 2. 模型、输入、读出：我们到底在训练什么
-
-### 2.1 不是生成答案的聊天模型路径
-
-本任务把每个候选转成一条“是否匹配”的判别输入，末尾读一个二分类 head。不让模型逐 token 写答案，再从自然语言中解析选项。
-
-层级关系：
-
-```text
-case：一个原生完整题/关联组
- ├─ field 1：一个待回答问题
- │   ├─ candidate 1 → 独立完整 pair → EOS 二分类 logits → margin 1
- │   ├─ candidate 2 → 独立完整 pair → EOS 二分类 logits → margin 2
- │   └─ ...                                      ↓
- │                                     本 field 内 softmax
- └─ field 2：另一个问题，仍有自己的候选和 softmax
-```
-
-**不同 case、field 或 candidate pair 不会仅因物理 packing 而共享 attention。**候选间显式交互是另外的建模变量，不是“把 token 放进同一张量”自然得到的能力。
-
-### 2.2 原始 renderer 保持不变
-
-实际模板的固定部分为：
-
-```text
-Decide whether the candidate is a correct match.
-Input:
-{state}
-Question:
-{question}
-Available criteria:
-{按原规则需要时保留的候选上下文}
-Candidate:
-{candidate}
-```
-
-`Question` 和 `Available criteria` 都按原条件出现，而不是每次必有。`text()` 会对字符串做 `strip()`；非字符串状态按 `ensure_ascii=False, sort_keys=True` 序列化 JSON。
-
-`criteria_context()` 遇到“all/none/both…above”等选项指代，或小候选集的相对比较问题时，保留**原顺序的完整候选上下文**。因此“独立 pair”不等于任何情况下都看不到其它选项文字；但这仍不是 Jina 的多 document 同窗交互。
-
-prefix 与 candidate 分别 tokenize，均不自动添加特殊 token、不截断；candidate 后显式追加真实 EOS **151645**。pad ID 为 **151643**。完整 public 保留全部给定候选，不靠删除候选缩减计算。[C1]
-
-### 2.3 二分类 logits 如何成为字段概率
-
-对于候选 k：
-
-$$z_k=(z_{k,0},z_{k,1}),\qquad m_k=z_{k,1}-z_{k,0}.$$
-
-0 代表 not_match，1 代表 match。最后在同一个 field 的全部候选之间归一化：
-
-$$p_k=\frac{\exp(m_k-\max_jm_j)}{\sum_j\exp(m_j-\max_jm_j)}.$$
-
-**不是把 `sigmoid(m_k)` 直接当作多选候选概率。**BCE 的 sigmoid 是训练代理目标中的二分类概率；最终服务的 choice 分布仍是字段 softmax。二者区别是本轮损失对照的重要动机。
-
-最终读出保留原 tie 规则和候选顺序；`noul` 经过合法映射时对应 Yes./No. 两候选，不按 benchmark ID 切换模型。正式 runner 只把 `state` 与 `questions` 传给 engine，官方 expected/gold 不作为模型输入。[C2,C9,C12]
-
-### 2.4 基座、LoRA 和 head 的精确结构
-
-| 项目 | 实际值 |
+| 想知道 | 读哪里 |
 |---|---|
-| stock 来源 | 原 ModelScope `Qwen/Qwen3-0.6B` 本地资产，不悄悄换另一个 `-Base` 或新 revision |
-| 层数 / hidden / MLP intermediate | 28 / 1024 / 3072 |
-| Q heads / KV heads / head_dim | 16 / 8 / 128，GQA |
-| context 上限 | 40960；训练单 pair 准入上限 8192 |
-| LoRA | r=32，alpha=64，scaling=2，dropout=0，bias=none |
-| target modules | q/k/v/o/gate/up/down 七种投影，每层都覆盖 |
-| LoRA 对数 | 28×7=196 对 A/B |
-| 分类 head | 无偏置 `Linear(1024,2)`，初始化 std=0.02 |
-| trainable | 20,187,136 参数，393 个保存张量 |
-| active served | 616,237,056 参数，约 0.616B |
-| physical registered | 616,239,104；多 2048 是未参与服务的原 score 副本 |
+| 结果和结论 | 上面的结论 → [第 13 节结果](#results) → [第 14 节没解释的问题](#open-questions) |
+| 八个模型各改了什么 | [EIGHT-ARMS-EXPLAINED.md](EIGHT-ARMS-EXPLAINED.md)，再读本文第 1、3～5 节（改动的来历） |
+| 数据和训练 | 第 6～8 节 |
+| 数值一致性、评测规则 | 第 9～10 节 |
+| 推理工程和多卡调度 | 第 11～12 节 |
+| 对照源码 | [第 16 节](#code)和附录 |
 
-LoRA 使用：
+文中的小例子和伪代码只用来解释概念，不是真实样本，也不是另外跑的实验。
 
-$$W_{eff}=W_0+\frac{\alpha}{r}BA=W_0+2BA.$$
+<a id="materials"></a>
+## 1. 你给的材料，各变成了什么改动
 
-stock BF16 参数冻结；LoRA A/B 和活动 head 的规范参数以 FP32 保存、训练。B 初始化精确为零，意味着一开始 LoRA 增量为零；head 则是新的随机分类头。393＝196×2＋1，不是393层。
+这次没有把几份材料混成一个大模型，而是拆成可以单独归因的变量。
 
-实际投影形状不是全都 1024×1024：
-
-| 投影 | 原权重 `[out,in]` | LoRA A | LoRA B |
+| 材料或要求 | 想回答的问题 | 实际做了什么 | 没有做到的 |
 |---|---|---|---|
-| q | `[2048,1024]` | `[32,1024]` | `[2048,32]` |
-| k、v | `[1024,1024]` | `[32,1024]` | `[1024,32]` |
-| o | `[1024,2048]` | `[32,2048]` | `[1024,32]` |
-| gate、up | `[3072,1024]` | `[32,1024]` | `[3072,32]` |
-| down | `[1024,3072]` | `[32,3072]` | `[1024,32]` |
+| 尽量全局 padding-free | 不只是 attention，Embedding、LoRA、MLP 是不是也在算 padding？ | 建真正的 packed 布局，整个主干只算真实 token；在同一个 kernel 上做 dense / packed 对照 | packing 本身不提分，也不和 dense 逐位相同 |
+| 你给的 commit `2e334fb`（本仓库 attention-mask-modes 补丁） | causal、bidirectional、prefix_block 能否在 H800 / FA3 上真跑、真反传？ | 原样保留该版本做三模式机制实验；之后改成同一个 native FA3 的 packed 执行层 | 该 commit 本身不是完整 padding-free；FA3 对 SDPA 的整模型数值对照没有全部通过 |
+| PyTorch FlexAttention 博客和 2.9.1 文档 | 任意可见性能否不建巨大的稠密 mask？ | packed causal 的编译和前反向机制实验；接好 Jina 交互组件 | 没有进入最终官方后端，数值对照没有全部通过 |
+| Base Labs 的 Mammoth / Elephant 报告和 vLLM PR | state 与 question 两块双向、prefix 不看 suffix，能否迁移过来？ | 实现 PB；另做把分界放在 state 后的 STATE_NL | 不是 Qwen3.5 混合架构、answer-slot LM head、CE+Brier 和原数据配方的复现 |
+| Jina reranker v3 模型卡、源码和论文 | 候选交互和排序目标，哪部分能单独迁移？ | J0 / J1 / J2 机制接线；八臂里完整训练的只有排序目标 JPAIR | 候选同窗交互的 J1 没有完整训练和官方评测 |
+| 知乎文章 | 正文方法能否拿到？ | 当时 HTTP 403，没读到正文 | 没有凭标题猜内容 |
+| 另一个 session 的推理优化记录 | 哪些工程手段能复用？ | 词表长度缓存、CPU 端元数据、autocast 生命周期、请求末一次回传、正确的 PEFT helper | 没有恢复未通过数值核对的 KV fork、融合算子、padding Graph、量化和 merge |
+| 你要求"八个都测""先尽快看到一个完整成绩" | 验收看全量官方分数，还是小开发集？ | 停掉只晋级两个候选的旧流程；八个全测；四卡同权重分片，逐个计分 | — |
 
-Q 输出维度是 16×128=2048，虽然 hidden 为1024。不要用“hidden/头数”替代实际 config 的 `head_dim`。旧 causal-LM 磁盘资产中未使用的词表 LM head，不计入当前二分类服务参数。[C3,E2]
+外部数字不能和我们的直接比：
 
-### 2.5 实际运行环境
+- Base 原文在 9B、同数据、10k 条 public 样本上的消融：causal 44.8，block-bidirectional 48.6。这不是 0.6B 的全量结果。
+- Jina 报告的是 BEIR 上的 nDCG，不是 JEV Public Index。
+- 51.99 是当时冻结榜单上 served_params ≤ 0.7B 的 GLiClass v4.1 edge，不是重新核对过的最新第一名。
 
-下面来自最终正式分片保存的environment，而不是凭安装命令推测：
+<a id="task"></a>
+## 2. 任务形状和运行环境
 
-| 项目 | 已保存运行值 |
+每个候选变成一条独立的"是否匹配"输入，在 EOS 位置读一个二分类 head；同一个 field 的候选 margin 做 softmax 得到概率。模型不生成文本，也不从文本里解析答案。官方 runner 只把 `state` 和 `questions` 交给模型，gold 不作为输入。模板、margin 和 softmax 的细节见 [EIGHT-ARMS 第 4 节](EIGHT-ARMS-EXPLAINED.md#readout)。
+
+不同 case、field、候选的 pair 之间没有 attention 连接，物理上放进同一个张量也一样。候选之间的显式交互是另一个建模变量。
+
+官方评测时保存的运行环境：
+
+| 项目 | 值 |
 |---|---|
-| GPU | 四张 NVIDIA H800 NVL；每worker独占一个确切UUID |
-| PyTorch | 2.9.1+cu128 |
-| CUDA build | 12.8 |
-| Transformers | 4.57.6 |
-| PEFT | 0.18.1 |
-| Attention | 原有冻结native FA3实现，未安装/替换另一套后端 |
-| deterministic algorithms | true；cudnn deterministic=true、benchmark=false |
-| world_size | 每worker为1，不是四卡DDP训练 |
-| prefix_cache | false |
+| GPU | 四张 NVIDIA H800 NVL，每个 worker 独占一张 |
+| PyTorch / CUDA | 2.9.1+cu128 / 12.8 |
+| Transformers / PEFT | 4.57.6 / 0.18.1 |
+| attention | 冻结的 native FA3，没有换别的后端 |
+| 确定性 | deterministic algorithms 开；cudnn deterministic 开、benchmark 关 |
+| world_size | 每个 worker 都是 1，不是四卡 DDP |
+| prefix cache | 关 |
 
-历史Flex组件文档记录Triton3.5.1，但最终environment没有单列该版本；本文不把历史文档当作一次新的运行时Triton版本审计。精度flags见第8.4节，source身份见附录。stock下载记录为ModelScope revision master，不代表已核实等同某个HF不可变commit。[C3,C9,E9]
+原模型来自 ModelScope `Qwen/Qwen3-0.6B`，下载记录的 revision 是 master，没有核对它等同于 HF 上的哪个 commit。
 
-### 2.6 保存精度、计算精度、读出精度是三回事
+<a id="padding-free"></a>
+## 3. Padding-free：去掉的是无效计算
 
-- **规范参数**：LoRA/head FP32，不 merge、不量化、不在评测期间更新。
-- **forward**：BF16 autocast，使用原 Qwen3/PEFT 运算。**head 参数是 FP32，并不代表 head GEMM 全程 FP32。**
-- **head 的形状合同**：先对所有实际 token 行做 head，再 gather EOS logits；不是先 gather EOS hidden 再用较小矩阵做 head。
-- **margin**：head logits 转 FP32 后做 `z1-z0`。
-- **最终字段归一化**：开发指标用 FP64，正式服务以 Python 双精度 `math.exp/math.fsum` 归一化。不是把整个 backbone 改成 FP64。
+### 3.1 只在 attention 里去掉 padding 不够
 
-数学上“先挑行再做线性层”等于“先做线性层再挑行”；浮点库的 GEMM 选择和舍入却可能随矩阵形状变化。因此本轮保留 head-all-realT 的操作边界。[C2,C4,C9,M10]
+旧的 collate 构建 `[B, ceil(maxL/8)*8]` 的张量。FA3 wrapper 虽然在 attention 内部去掉了 padding，但 Embedding、Norm、QKV/LoRA、MLP 和 head 仍在处理 padding 行。例子见 [EIGHT-ARMS 第 5 节](EIGHT-ARMS-EXPLAINED.md#layouts)。
 
-<a id="c3"></a>
-## 3. Padding-free：去掉的是无效行，不是改变题目
-
-### 3.1 为什么只在 attention 里 unpad 不够
-
-旧 collate 构建 `[B,ceil(maxL/8)*8]`。即使 FA3 wrapper 在 attention 内去掉 pad，Embedding、Norm、QKV/LoRA、MLP 和 head 仍可能处理无效行。
-
-教学例子：三条长度为4、2、5的序列：
+### 3.2 改成了什么
 
 ```text
-dense（暂不考虑8对齐）         packed
-A A A A _                    A A A A | B B | C C C C C
-B B _ _ _                    共11个实际token
-C C C C C
-15行，其中4行无效
+flat_ids[T]                                 T = 所有 pair 的真实长度之和
+  ↓ embedding
+hidden[T, 1024]
+  ↓ 每层：Norm / QKV+LoRA / QK norm / RoPE
+native FA3 varlen（用 cu 划分每条 pair）
+  ↓ o+LoRA / residual / Norm / MLP+LoRA / residual
+所有真实 token 过 head → 取各自 EOS 的 logits → margin → 字段 softmax
 ```
 
-实际旧实现还向8对齐，这个例子可能变成24个 tokenwise 行。区别应计算在各算子的真实输入上，而不是只看 attention 里是否使用 varlen。
+位置在每条 pair 内从 0 重新开始，不能用全局偏移当 RoPE 位置。`cu = [0, L1, L1+L2, …]` 是序列边界；EOS 下标是每条序列最后一个真实 token。"全局 padding-free"指的是没有假 token 进入这些模块，不是指硬件 tile 或显存分配器没有任何对齐。
 
-### 3.2 真正改成什么张量
+### 3.3 为什么 packed 不顺便把 batch 加大
+
+四个基础分支用同一套 micro 规划（按长度稳定排序、每个 micro 最多 32 条、按 dense 补齐后的 16,384 token 预算）。如果 packed 同时把 micro 加大，就既改了布局又改了浮点计算的形状。"同样曝光下的学习质量""同样 GPU 时间能多学多少""吞吐"是三个不同的问题，要分开比。
+
+两遍前向合计，逐 token 模块的输入行数 dense 为 266.5M，packed 为 199.6M，少了约 25%。行数少不等于同比例的墙钟提速。
+
+### 3.4 旧权重上的同权重 A/B
+
+在旧谱系的同一个权重上，分别用 dense 和 packed 推理跑完整 public：
+
+| | dense | packed |
+|---|---:|---:|
+| Public Index | 24.71 | 24.70 |
+| 平均每条请求 | 约 118 ms | 约 102 ms |
+| 四卡完整流程 | 4263 s | 3705 s |
+
+两边都是 140,620 条执行、140,178 条计分、全部 ok，分数没有变化。但逐题看并不等价：14,801 条请求超出数值容差，376 条请求里有 378 个 field 的选项翻转，其中 21 个是带外翻转。总分只差 0.01，不代表每题的概率都一样。这组旧权重有已知的历史数据暴露，它的分数不能当作 clean 分数。
+
+<a id="base"></a>
+## 4. Attention 改动的来历：借鉴 Base
+
+三种 mask 的定义、矩阵和 PB 在 FA3 上的两次调用见 [EIGHT-ARMS 第 6 节](EIGHT-ARMS-EXPLAINED.md#masks)。这里讲分界是怎么来的。
+
+### 4.1 PB 的分界和 Base 原文不同
 
 ```text
-flat_ids[T]
-   ↓ embedding
-hidden[T,1024]
-   ↓ 每层 Norm / QKV+LoRA / QK norm / RoPE
-native FA3 varlen（由 cu 划分每条独立 pair）
-   ↓ o+LoRA / residual / Norm / MLP+LoRA / residual
-所有实际token head → 各自真实EOS logits → margin → 字段softmax
+本项目的 PB：P = 固定说明 + state + Question + 必要的 criteria + "Candidate:"    S = 当前候选 + EOS
+Base 原文：  P = system + state                                               S = question + 全部选项 + answer-slot
 ```
 
-`T=sum(length_i)`。位置在每条 pair 内重置为0…L−1，不能直接用全局 flatten offset 当 RoPE 位置。`cu=[0,L1,L1+L2,…]` 是序列边界；EOS offsets 为各序列最后的真实 token，不能落到 pad 或下一条序列中。
+Base 还用了 Qwen3.5 的 GDN / attention 混合结构、选项字母的 LM head 和 CE+Brier 配方；本项目是 28 层全 attention 的 Qwen3-0.6B，每个候选一条独立 pair，EOS 二分类 head，LoRA 训练。只迁移 mask 或分界，不算复现 Base。
 
-“全局 padding-free”不表示没有任何硬件 tile、allocator 对齐或 metadata 容量冗余。要求是**业务 token 行**不送假 token 进入 Embedding/LoRA/MLP 等算子。[C4,M1]
+### 4.2 分界放在 state 最后一个字符：没法精确切
 
-### 3.3 为何保持同 micro，而不是立即把 batch 加大
+最初想让 P 截止在 `模板头 + state` 的最后一个字符。但 BPE 可能把 state 末尾的标点和后面的换行编成一个 token，字符位置不一定落在 token 边界上。CPU 上完整检查后发现：训练集 41,674 个有标签 field 中 28,676 个、开发集 615 个中 427 个都跨了这个边界（约七成）。这一版判为不可用，没有训练；也没有四舍五入切点、删题或悄悄退回旧分界。这是"不改 token 就无法精确实现这个分界"的准备失败，不是 Base 方法训练失败。
 
-四个基础臂的 micro 规划使用共同规则：stable length、max32 pairs、向8对齐的共同 padded-admission 预算16384。packed 实际执行仍只计算 realT；共同规划中的 padding 预算不等于真的补齐 token。
+### 4.3 最终的 STATE_NL
 
-这样是为了先隔离“布局”变量。若 packed 一边改变 micro 构成、一边增大 batch，再与 dense 比学习质量，就同时改变了浮点几何和执行划分。等曝光质量、等 GPU 时间多训练、吞吐三类问题应分别比较。
-
-原四臂记录中，两遍 forward 的 tokenwise 输入行数为 dense **266,503,232**、packed **199,648,730**。这说明计算行数减少；**不直接等于相同比例的墙钟加速或提分。**[C5,E3]
-
-### 3.4 已做的固定权重实验与结论
-
-历史旧谱系的同权重完整 public A/B：dense **24.71**，packed **24.70**；每臂全量140620/140178、全ok，没有提分。该轮 mean request 从约118.28ms到101.98ms，四卡 pipeline 从4263.02s到3705.32s，是该次实验的效率观察。
-
-但原逐题数值合同有14801个请求违约、378个 field choice翻转（376个请求）、其中21个带外翻转。总分只差0.01，**不意味着所有概率或预测等价**。这组旧模型有已知历史输入暴露，不能作为新 clean 模型分数。[E4]
-
-<a id="c4"></a>
-## 4. 三种 attention 和 Base-inspired 边界
-
-### 4.1 Causal、BI、PB 的区别
-
-以下 row=query、column=key；1表示允许注意力。以两段 P/S 各2个 token 为教学例子：
+模板里 state 后面本来就有一个换行。新规则统一把它归入 P：
 
 ```text
-causal            full bidirectional      prefix-block
-1 0 | 0 0         1 1 | 1 1               1 1 | 0 0
-1 1 | 0 0         1 1 | 1 1               1 1 | 0 0
-----+----         ----+----               ----+----
-1 1 | 1 0         1 1 | 1 1               1 1 | 1 1
-1 1 | 1 1         1 1 | 1 1               1 1 | 1 1
+P = 模板头 + state + 那个原有的 '\n'
+S = 其余的 Question / criteria / "Candidate:" / 候选 / EOS
 ```
 
-- **Causal**：同一 pair 内 `key_position<=query_position`。
-- **BI**：整条 pair 内全双向。这里 BI 是 bidirectional，**不是 bi-encoder 双塔**。
-- **PB**：P 内双向，P 不看 S；S 看完整 P 和完整 S。**S 内也是双向**，不同于“P双向、S因果”的通常 prefix-LM。
-- 所有模式都受序列 owner/cu 隔离约束；不是把不同候选或 case 全连起来。
+没有新增换行，没有重新分词，完整 `input_ids` 不变，只是把一个已有的分隔符划给 P。所有训练和开发样本用同一规则，不逐题挑容易成功的版本。用 tokenizer 的 offset 找到精确的 token 边界后无损重切（`newP = oldP[:cut]`，`newS = oldP[cut:] + oldS`），并核对每条 pair 的 ID、EOS、长度、位置、slot、micro 和监督都不变。全部 41,674 / 615 个 field 都能精确切开，才训练 `STATE_NL_PB_P_CE`。
 
-注意：causal 下，最后 EOS 本来就能读到之前整条 pair。改双向主要改变的是多层内部各 token 如何相互编码，不只是“让 EOS 多看到一些前面的字”。[C4]
+### 4.4 为什么最后没有加回 prefix KV cache
 
-### 4.2 原生 FA3 怎样实现 PB
+- causal 的 prefix 不读后文，在满足原数值要求时可以复用。
+- BI 的 prefix 会读 suffix，候选一变，深层的 prefix 表示就变了，不能缓存。
+- PB 的 prefix 不读 suffix，但 prefix 内部双向，只能复用**完整且完全相同**的 P 块，不能像 causal 那样按最长公共前缀命中。
+- STATE_NL 改了 P 的定义，原来针对 Candidate 分界做的缓存验证不能直接套用。
 
-同一层只投影一次 Q/K/V，然后做：
+本轮 prefix-block 的 full / paged / fork 缓存路径都有没解决的数值失败，所以八个分支统一用不带缓存的整行 native FA3。代价是每个候选都要重算一遍 prefix。
 
-```python
-out_P = attention(Q_P, K_P, V_P, causal=False)
-out_S = attention(Q_S, K_full_row, V_full_row, causal=False)
-out = scatter_back_to_original_positions(out_P, out_S)
-```
+<a id="jina"></a>
+## 5. 借鉴 Jina：做了哪些，没做哪些
 
-P/S query indices 互斥且穷尽。第二个调用对 S 的每个 query 做一次覆盖完整 P+S 的 softmax；**不是分别对 P、S 做 attention 再把两个 softmax 输出相加**。
+### 5.1 Jina v3 本身是什么
 
-所以 causal/BI 每个 micro-wave 有28次 native attention 调用，PB为56次；但不是整个28层模型跑两遍，QKV/MLP并未因此整体复制一遍。[C4,C9]
+核对固定版本的源码和模型卡：Jina v3 基于 Qwen3-0.6B，**保持 causal**；多个文档按顺序放在同一个窗口里，query 在开头和末尾各出现一次；后面的文档能读前面的，末尾的 query 能读全部文档；文档和 query 末端的 hidden 经共享 projector 后算 cosine 分数。
 
-### 4.3 原 PB 的分界与 Base 原文不同
+模型卡写 projector 是 1024→512→256，固定版本的源码实际是 1024→512→512，本文以源码为准（没有加载权重核对）。它的 131K 上下文、特殊 token 和读出方式都不能不经训练直接搬过来。本轮没有下载 Jina 权重；它的 CC-BY-NC-4.0 许可也不因为"借鉴思路"而变成可商用。
 
-当前模板的原 PB：
+### 5.2 拆成 J0 / J1 / J2
+
+- **J0**：布局、位置和后端都匹配、但候选互相隔离的控制组。
+- **J1**：同一 field 的候选按原顺序在一个窗口里 causal 可见；保留 EOS head 和原 BCE，只研究交互。
+- **J2**：attention 同 J0，只加排序目标。
+
+三者都用 prefix-once 布局，在同一个 Flex 后端上比较，避免"J0 用 FA3、J1 用 Flex"时分不清变化来自交互还是换了 kernel。
+
+实际做了一次真实 macro 的接线（16 个 case、19 个有标签 field、60 个候选）：三组两遍 logits 逐位一致，393 组梯度和更新都是有限值；物理 token 10,342，逻辑 pair token 20,947。这次加载的是历史诊断权重，只用来验证机制，不是新训练的结果。
+
+### 5.3 八臂里的 JPAIR 是哪一部分
+
+`JPAIR_P_BCE_RANK` 保持独立 pair、causal、native FA3 和 EOS head，只把目标改成 BCE＋硬标签排序项。它能回答"固定数据、初始化和曝光时，这个组合目标有没有收益"，不能回答"完整的 Jina 方法是否更好"。J1 的完整训练、候选换序实验和超过 40,960 token 的 field 都没有做。
+
+<a id="data"></a>
+## 6. 数据：为什么重建起点，怎样清理
+
+### 6.1 为什么不沿用旧权重
+
+之前较好的 joint 模型 Public 约 24.91，但历史上选进训练的 xLAM 和 ToolRet 之间有 94 条完全相同的请求，涉及 98 条执行请求；旧的 case 图也没有对称地拆开 JSON 里的 `request` 包装。所以旧谱系还能做机制和效率诊断，但不能当新对照的起点。
+
+新八臂全部从原模型出发，用 seed 42 重新生成 LoRA 和 head，没有加载项目历史上的 adapter、head、optimizer 或旧 Teacher 标签缓存。也正因如此，新结果低于 24.91 不能只归因于清理：起点、监督、数据范围、预算和后端都变了。
+
+### 6.2 为什么不能只按文件去重
+
+一个原始 case 可能有多个 field、变体或派生视图。如果一个 field 进了训练、兄弟 field 进了开发集，文本不完全相同也可能共享同一个任务内容。
+
+实际做法：完整的原始坐标普查、组件和兄弟字段闭包、来源和输入形状的白名单、许可核对、只看输入的负向成员检查，以及对已知 JSON `request` 包装的对称拆包。兄弟坐标不明或来源未决时，不能只删掉那一个麻烦的 field 就放行整个 case。源码里的禁止标记：
 
 ```text
-P = 固定说明 + state + Question + 必要criteria + Candidate标头
-S = 当前candidate + EOS
+所有 split 都禁止：PUBLIC | FORBIDDEN | INCOMPLETE | UNKNOWN
+训练集另外禁止：  NATIVE_DEV
+开发集另外禁止：  HISTORY
 ```
 
-Base 原文：
+只带 HISTORY 标记的合法训练 case 可以用来从头训练，但不能进开发集。所以"clean"不等于"训练样本从未在本项目历史中出现过"。public 输入只用来做负向排除，public 的 gold 从未用于训练。
 
-```text
-P = system + state
-S = question + 全部options + answer-slot
-```
+### 6.3 最终冻结的数据
 
-Base 还使用 Qwen3.5 的混合 GDN/attention 结构、option-letter LM head 和 CE+Brier 配方；本项目是28层全 attention Qwen3-0.6B、每候选独立 pair、EOS二类head、LoRA。**只迁移 mask 或切点，不能说完整复现 Base。**[M3,M4]
-
-### 4.4 严格 state 字符末尾为什么失败
-
-最初定义 P 截止在 `HEADER + text(state)` 的最后字符；不能用字符串长度猜 token 数，因为 BPE token 可能跨过这个字符切点，例如把末尾标点和后面的换行编码为同一个 token。
-
-实际完整 CPU 投影发现：train 的41674个 known field 中28676跨界，select 的615中427跨界。因此这个严格版本 `ready=false`，**没有启动该严格版本的学习训练**。没有取整、删题或偷偷回退 Candidate 边界。
-
-这是“不能在不改 token 的前提下精确实现这个边界”的准备失败，不是“Base 方法已经训练失败”。[E5]
-
-### 4.5 最终 STATE_NL 改了什么
-
-原 renderer 在 state 后本来就追加一个 LF。新独立版本统一定义：
-
-```text
-P_text = HEADER + text(state) + 一个原来就存在的 '\n'
-S      = 原来的其余Question/criteria/Candidate/candidate/EOS
-```
-
-它没有新增换行、重分词或改变完整 input_ids，只把既有分隔符归入 P。全部 train/select 用同一规则，不能逐题在两种边界间挑容易成功的版本。
-
-sidecar 以原 tokenizer offset 验证精确 token 边界，再无损重切：`newP=oldP[:cut]`、`newS=oldP[cut:]+oldS`。重拼后每个完整 pair 的 ID、EOS、长度、position、slot、micro 和监督必须不变。v2 全部41674/615 known field精确可切，才训练 `STATE_NL_PB_P_CE`。[C6,E5]
-
-### 4.6 为什么最终没有直接加回 prefix KV cache
-
-- Causal 的前缀表示不读未来，可以在满足原合同的条件下复用。
-- BI 的 P 会读取 S，S一变，深层 P 表示也会变，不能缓存成 immutable prefix。
-- PB 的 P 不读 S，但 P 内双向，必须复用**完整且完全相同的 P block**；不能像 causal 一样把任意最长公共 token 前缀视为相同深层 KV。
-- STATE 改了 P 的定义，原 Candidate-P 的 cache/邻居证据不能自动覆盖新边界。
-
-本轮 prefix-block full/paged、fork 等路径存在未解决的数值合同失败，最终八臂统一使用 full-row native FA3，不启用这些 cache。它增加了重复前缀计算成本，但避免拿未准入的快路径冒充同一个已核实函数。[M1,M3,E6]
-
-<a id="c5"></a>
-## 5. Jina-inspired：哪些做了，哪些没有完整做
-
-### 5.1 Jina v3 并不是“换成双向 attention”
-
-固定源码/模型卡核实：Jina v3 基于 Qwen3-0.6B，保持 causal，多 document 顺序同窗，query在开头和末尾各一次；后面的 document 能读前面的，末端 query 能读全部 document。document/query 的末端 hidden 经共享 projector 后做 cosine 打分。
-
-模型卡说 projector 1024→512→256，但固定 revision 源码实际为 **1024→512→512**，本文以源码构造为准，**没有加载其权重来核对 checkpoint 的 projector 张量**。源码还显式 `use_cache=False`。它的131K上下文、special-token 语义与读出，不能无训练地移植给本项目。
-
-本轮没有下载 Jina 权重来代答；CC-BY-NC-4.0 的来源边界也没有因“借鉴思路”变成任意商用许可。[M5]
-
-### 5.2 拆成 J0/J1/J2 的理由
-
-- **J0**：匹配布局、位置和 backend 的候选隔离控制。
-- **J1**：同 field 候选按原顺序 causal 可见，保留 EOS head 与原 BCE，研究 interaction-only。
-- **J2**：attention 与 J0 一致，只加 ranking objective。
-
-机制组件采用 prefix-once 布局，在同 Flex backend 下比较，而不是 J0用FA3、J1用Flex。否则变化既可能来自交互，也可能来自位置、模板或换 kernel。
-
-已实际做的是：一组真实16-case/19-known-field/60-candidate macro的 J0/J1/J2 接线；每臂两遍 logits 逐位一致、393组梯度/实际更新 finite；physical realT10342，逻辑 pair token20947。该次载的是历史诊断权重，仅用于机制接线，**不是 fresh 完整训练结果**。[M6,E6]
-
-### 5.3 八臂中完整训练的 JPAIR 是哪个部分
-
-最终 `JPAIR_P_BCE_RANK` 保持原独立 pair、causal、native FA3 和 EOS head，只把目标改为 **BCE＋硬标签集合 ranking**。它没有加入 J1 的候选同窗交互，也没有改成 projector/cosine 读出。
-
-因此能回答的是：“固定数据/初始化/曝光下，这个组合目标是否有收益？”不能回答“完整 Jina 是否优于原方法”。完整 J1 的 fresh匹配训练、候选换序与>40960物理field的全覆盖等，仍不能填成已完成。
-
-<a id="c6"></a>
-## 6. 数据清理与完整 case：为什么重建训练起点
-
-### 6.1 为什么不继续沿旧 joint 权重做所有对照
-
-之前较优 joint 的 Public 约24.91，但历史 selected xLAM 与 ToolRet 发现94个完全同文请求，涉及98条执行请求；旧 case 图没有对称解析 JSON `request` 包装。因此旧谱系仍能做机制/效率诊断，却不能直接作为新 clean 对照的起点。
-
-新八臂统一使用原 stock，重新生成同 seed42 的 LoRA/head；没有加载项目历史已训练 adapter、head、optimizer 或旧 Teacher 标签缓存。后续 STATE/JPAIR 也是先独立生成 fresh，再把393个初始张量与共同起点逐字节核对，不是从已经训练的 causal 模型继续换 mask。[M9,C3,E2]
-
-**这也意味着新结果低于旧24.91，不能只归因于 packing 或清理：起点、监督、数据范围、预算与后端均有差异，不是单变量实验。**
-
-### 6.2 为什么不能只按 train/dev 文件名去重
-
-一个原生 case 可能包含多个字段、变体或派生 view。若某一字段进训练、兄弟字段进开发集，文本不完全相同也可能共享同一任务内容。
-
-实际采用：完整 native 坐标 census、component/sibling闭包、source/input-shape正向白名单、许可核实、input-only负向 membership，以及已知 JSON request 的对称解包。未知兄弟坐标或未决来源，不能仅删除那个麻烦字段就放行整个 case。
-
-实际源码中的禁止位很具体：
-
-```text
-所有split：PUBLIC | FORBIDDEN | INCOMPLETE | UNKNOWN
-train另外禁止：NATIVE_DEV
-validation另外禁止：HISTORY
-```
-
-**HISTORY alone 的合法 native train case 可以由 fresh stock 重新训练；但不能进入“历史未见”dev。**因此不能把“clean-origin”说成“所有训练样本从未在本项目历史里出现”。公共输入仅用于负向排除，不把 public gold拿来训练。[C7]
-
-### 6.3 最终冻结库存
-
-| split | case数 | field数 | known | unknown |
+| split | case | field | 有标签 | 无标签 |
 |---|---:|---:|---:|---:|
-| train | 24600 | 47427 | 41674 | 5753 |
-| D_select | 375 | 705 | 615 | 90 |
-| D_confirm | 250 | 439 | 389 | 50 |
+| train | 24,600 | 47,427 | 41,674 | 5,753 |
+| D_select（开发） | 375 | 705 | 615 | 90 |
+| D_confirm（确认） | 250 | 439 | 389 | 50 |
 
-训练五域case数：Knowledge4976、Language4950、Retrieval4937、Tools4766、Arts4971。select每域75，confirm每域50。tools 主要是 procedural来源，不能称为原生BFCL训练或真实工具使用泛化证明。
+训练集五个领域的 case 数：Knowledge 4,976、Language 4,950、Retrieval 4,937、Tools 4,766、Arts 4,971。开发集每个领域 75 个，确认集每个领域 50 个。Tools 的训练数据主要来自程序化生成的来源，不是原生 BFCL 训练，也不能证明真实工具使用的泛化。
 
-`choice`保留完整原options与原q；合法 `noul` 按已证明的语义方向展开为 Yes./No. 和 `[q,1-q]`；分数方向不明或非法目标的字段保留 raw/unknown，`target=None`，不 tokenize/forward、不造全零负例。同一 case 其它合法字段保留。
+- `choice` 保留完整的原选项和原目标分布 q。
+- 合法的 `noul` 按已证明的语义方向展开成 Yes. / No. 两个候选，目标是 `[q, 1−q]`。
+- 分数方向不明或目标不合法的 field 记为无标签（`target=None`），不分词、不前向，也不造成全零的负例；同一 case 的其它合法 field 照常保留。
+- 有标签 / 无标签只影响训练和开发集的监督。**正式评测不读 gold，所有问题和候选都要回答。**
 
-**这里的known/unknown仅指训练与开发监督编译。正式public服务不读取gold或这些监督mask，仍须回答全部给定question和candidate，不能借unknown政策删减官方输入。**
+训练 pair 超过 8,192 token 时整个 case 都不进训练，不截断、不删候选。开发集保留完整原题，本次开发集的有标签 field 全部在 40,960 的上限内。
 
-训练 pair 超8192时拒绝整个训练case，不截断、不删候选；开发集保留原完整题，超过共同40960能力时应明确unsupported/coverage，而不能模型跑后再补容易的题。本次八臂 select 的已知字段均覆盖完整。[C1,C7,E1]
+### 6.4 100M 曝光量是怎样排的
 
-### 6.4 100M 不是“把24600题各看一遍”
+- 每个领域的逻辑 pair token 上限是 20M。
+- 每个 family 的权重是其合法 case 数的平方根，family 内均匀抽 case。
+- data seed 20261112 冻结了曝光序列；训练 seed 42 和 43 只改变顺序、不重新抽样。本轮只训练了 seed 42。
+- 每次更新取 16 个完整 case；预算尾部放不下一个完整 macro 就停，不临时挑短 case 凑满。
 
-- 每域逻辑 pair-token ceiling 为20M。
-- family 权重为合法case数的平方根，family内均匀抽case。
-- data seed20261112冻结曝光多重集；训练seed42/43只改变冻结顺序，不重新抽样。本轮完整八臂实际仅训练了seed42。
-- 16-case macro不能在预算尾部完整放入就停止，不临时挑短case补满。
+实际消费了 56,912 次 case 出现，涉及 17,622 个不同 case，最多的重复 17 次。不是 24,600 个 case 各看相同次数。八个分支用同一个曝光流。
 
-实际消费56912次 case occurrence，涉及17622个不同case，最多重复17次；并不是24600个case恰好平均循环同样次数。八臂使用同一曝光流。[C7,E1]
+### 6.5 clean 证明到什么程度
 
-### 6.5 clean 的证据边界
+证明了：声明范围内的来源和形状准入、完整的坐标和组件、已知的请求包装、精确的表示，以及完整 pair 的跨 split 检查。没有证明：所有来源的语义近重复、未知别名、Qwen 预训练时的数据暴露都不存在。许可检查也只覆盖声明的范围。
 
-已证明的是声明范围的 source/shape 准入、完整坐标/组件、已知请求包装、精确表示及完整 pair 跨split检查。没有证明全来源的所有语义近重复、未知别名或 Qwen预训练暴露绝不存在。许可检查也不是一份无限范围法律审计。[C7]
+<a id="training"></a>
+## 7. 训练流程
 
-<a id="c7"></a>
-## 7. BCE、Field-CE、JPAIR 的数学区别
+### 7.1 为什么要两遍前向
 
-设一个 macro 有 C=16个完整case；case c 有 F_c个known field，field f 有 K_f个完整候选，监督 q_k∈[0,1]。合法分布允许1e-6和误差，但**不事后重新归一化q**。
+field-CE 和排序项的分母需要同一个 field 的全部候选。如果一半候选在 micro 1、一半在 micro 2，各自 softmax 再平均，就已经不是原来的目标了。可是把一个大 macro 的全部激活一直留在显存里又会 OOM。所以用两遍前向加 margin 的 VJP（向量—雅可比积）。
 
-### 7.1 BCE：每个候选是一个软二分类
-
-$$B_{cf}=-\frac1{K_f}\sum_k[q_k\log\sigma(m_k)+(1-q_k)\log(1-\sigma(m_k))].$$
-
-实际调用 `binary_cross_entropy_with_logits(...,reduction='mean')`，比先 sigmoid 再取log更稳定。BCE促使每个候选自身的二分类概率 `sigmoid(m_k)` 接近标签 `q_k`，从而约束margin的绝对标尺；不是让 `m_k=q_k`。独立考察一个候选：
-
-$$\frac{\partial B_{cf}}{\partial m_k}=\frac{\sigma(m_k)-q_k}{K_f}.$$
-
-软标签0<q_k<1的无约束最优margin为 `log(q_k/(1-q_k))`；硬标签1/0的损失下确界分别在margin趋向正/负无穷时取得。实际共享网络、正则化、有限训练和梯度clip当然会限制它们。
-
-### 7.2 Field-CE：完整字段内候选竞争
-
-$$CE_{cf}=-\sum_kq_k\log\operatorname{softmax}(m)_k.$$
-
-这里没有额外 `1/K_f`。对所有margin加同一个常数不改变softmax/CE，但会改变BCE。BCE与CE不仅“函数名字”不同，候选数的尺度和概率空间也不同。
-
-CE的梯度为 `p_j*sum(q)-q_j`；目标和恰好1时是熟悉的 `p_j-q_j`。不重新归一化q，就应保留这一实际细节。K=1时CE梯度为0，但该known字段仍在分母里；这是实现合同，实际已准入库存中 known K1为0，不冒称覆盖了实际不存在的分支。[C8]
-
-### 7.3 case/field 归一化必须固定
-
-两种目标都采用：
-
-$$L=\frac1C\sum_c\frac1{F_c}\sum_{f\in known(c)}L_{cf}.$$
-
-BCE已经在field内平均候选；CE使用完整分布和式。然后字段平均、case平均。不能把每个micro再平均一次，也不能因为某些field没有rank信号，就用更小的active分母重算。
-
-这样每个case的权重相同，字段多的case不会天然支配目标；但并不等于每个token或每个候选全局等权。
-
-### 7.4 JPAIR 的精确定义
-
-在**原始Python q**上定义：`P={k:q_k==1}`，`N={k:q_k==0}`，`H=P∪N`。
-
-$$R_{cf}=\begin{cases}
-\log\sum_{k\in H}e^{m_k}-\log\sum_{k\in P}e^{m_k},&P,N均非空,\\
-0,&否则.
-\end{cases}$$
-
-$$L_{JPAIR}=\frac1C\sum_c\frac1{F_c}\sum_f(B_{cf}+R_{cf}).$$
-
-固定λ=1、τ=1。soft标签只进BCE，不进rank；无正/无负/纯软字段的rank为0，但仍保留原field分母。先在原host q判硬标签，是为防止近1的soft q转FP32后被舍入成精确1。
-
-它是**正例集合的logsumexp排名概率损失**，不是所有正负margin差值的RankNet平均。严格one-hot、K≥2时R就是同一field的CE，所以硬标签上可理解为BCE＋CE，而非凭空出现的全新目标；当前合法schema也不表达多个q=1的归一分布。[C8]
-
-### 7.5 为什么不能把改进只归为“排序方向”
-
-加rank会同时改变梯度方向、尺度与clip行为。真实训练记账显示rank-active字段约91%，全程所比较臂的记录中clip factor<1均为100%；JPAIR的margin总系数/BCE系数L2比均值约3.3008。
-
-这是**margin层的系数尺度**，不是参数梯度分量范数比。正式macro0中组合目标与BCE目标loss数值大小也不能直接比较成“质量变好/变坏”。本轮只能回答固定组合目标的净结果，不能独立证明排序方向就是原因。[E3]
-
-<a id="c8"></a>
-## 8. 训练器与两遍 VJP：显存有界但字段完整
-
-### 8.1 为什么不把一个字段的候选随micro任意拆开算CE
-
-字段softmax分母需要同一field的全部候选。若一半候选在micro1、一半在micro2，分别softmax再平均，训练的已经不是原完整field目标。
-
-又不能为了保留一个大macro的所有候选激活，强行把整图一直驻显存直到OOM。因此采用两遍margin VJP（向量—雅可比积）。
-
-### 8.2 实际执行流程
+### 7.2 实际流程
 
 ```python
-# 说明性伪代码，不是另外运行的测试
-# 同一个macro，更新前的同一份权重
-m_first = no_grad_forward_all_micros()          # 第一遍：保留完整margin/slot
-coef = autograd_d_loss_d_margin(m_first)       # 全field、全case的固定分母
+# 说明性伪代码：同一个 macro，更新前的同一份权重
+m_first = no_grad_forward_all_micros()          # 第一遍：只保存每个候选的 margin
+coef = autograd_d_loss_d_margin(m_first)        # 在完整 field 和 case 上算 dL/dm，包含全部分母
 
 optimizer.zero_grad()
 for micro in exactly_the_same_micro_plan:
-    m_replay = forward_with_grad(micro)         # 第二遍：逐micro留图
-    require_replay_exact(m_replay, m_first)     # logits/margins逐位核对
+    m_replay = forward_with_grad(micro)         # 第二遍：逐个 micro 留计算图
+    require_replay_exact(m_replay, m_first)     # 两遍的 logits / margin 必须逐位相同
     (m_replay * stop_gradient(coef_for_micro)).sum().backward()
 
 clip_grad_norm_(trainable_parameters, 1.0)
-optimizer.step()                               # 全macro仅一次
+optimizer.step()                                # 每个 macro 只更新一次
 ```
 
-链式法则：
+依据是链式法则：
 
 $$\nabla_\theta L=\sum_k\frac{\partial L}{\partial m_k}\nabla_\theta m_k.$$
 
-只要两遍同权重、同输入/顺序/几何、dropout=0且实际replay一致，就可先拿到完整目标的 `dL/dm`，再分micro累计参数梯度。**不能再除以micro数、case数或虚构的DDP world size。**每个训练臂是独立单GPU模型，不是四臂一起做四rank梯度归约。[C5,C8]
+只要两遍用同一份权重、同样的输入、顺序和形状，dropout 为 0，并且实际重放逐位一致，就可以先拿到完整目标的 dL/dm，再分 micro 累加参数梯度。分母已经在 coef 里了，第二遍不能再除以 micro 数、case 数或 DDP world size。每个分支是单卡独立训练，不是四个分支一起做四 rank 的梯度归约。
 
-### 8.3 为什么训练不能照搬推理的跨请求no_grad缓存
+### 7.3 训练不能照搬推理的 autocast 缓存
 
-第一遍无梯度、第二遍需要梯度。如果跨两遍保留由no_grad阶段产生的autocast权重缓存，可能污染可微路径。因此训练保留相互独立的autocast作用域；后面介绍的“worker终生no_grad＋autocast cache”只用于**没有optimizer/backward的推理**，不能原样抄进训练器。[C5,C9]
+第一遍无梯度，第二遍要梯度。如果两遍之间保留了无梯度阶段生成的 autocast 权重缓存，可能污染可微路径。所以训练时两遍用各自独立的 autocast 作用域；第 11.4 节讲的"worker 全程 no_grad 加 autocast 缓存"只适用于没有 backward 的推理。
 
-### 8.4 冻结训练参数
+### 7.4 训练参数
 
-| 参数 | 实际设置 |
+| 参数 | 值 |
 |---|---|
-| 完整case/macro | 16 |
-| micro | stable length，max32 pairs，共同padded-admission16384，pad_multiple8 |
-| AdamW | fused，LR峰值2e-5，weight_decay0.01，β=(0.9,0.999)，eps=1e-8 |
-| 梯度clip | global norm1 |
-| scheduler | 3%线性warmup，107 calls；之后cosine到0 |
-| LoRA/head | FP32规范参数；BF16 autocast forward；dropout0 |
-| 数值flags | matmul/cudnn TF32=true，BF16 reduced-precision reduction=true，float32 matmul precision=high |
-| 关键环境 | `CUBLAS_WORKSPACE_CONFIG=:4096:8`，严格FA3 deterministic |
-| checkpoint | step0、首macro、每100macro、观察点、final/pause，实际各43份，均保留 |
+| macro | 16 个完整 case |
+| micro | 按长度稳定排序，最多 32 条 pair，共同的补齐预算 16,384 token，按 8 对齐 |
+| 优化器 | fused AdamW，峰值 LR 2e-5，weight decay 0.01，β = (0.9, 0.999)，eps 1e-8 |
+| 梯度 clip | 全局范数 1.0 |
+| 学习率 | 前 3%（107 步）线性 warmup，之后 cosine 降到 0 |
+| 精度 | LoRA / head 以 FP32 保存；BF16 autocast 前向；dropout 0 |
+| 数值设置 | matmul / cudnn TF32 开；BF16 reduced-precision reduction 开；float32 matmul precision = high |
+| 环境 | `CUBLAS_WORKSPACE_CONFIG=:4096:8`，FA3 严格确定性 |
+| checkpoint | 第 0 步、第一个 macro、每 100 个 macro、观察点和终点，每个分支 43 个，全部保留 |
 
-这些flags沿冻结机制与匹配对照保留，没有把“改精度”夹在loss/mask比较中。开关曾被实际研究，但没有证明它们解释了所有几何漂移。[C5,E2,E3]
+这些数值设置在所有分支里保持不变，没有把"改精度"夹进 loss 或 mask 的比较里。
 
-### 8.5 预算账本，避免“100M”误读
+学习率公式（t = 1…3557，w = 107，η = 2e-5）：
 
-| 名义观察cap | 实际逻辑pair tokens | case occurrences | optimizer calls |
+$$lr_t=\begin{cases}\eta\,t/w, & t\le w\\[2pt] \dfrac\eta2\left[1+\cos\left(\pi\dfrac{t-w}{3557-w}\right)\right], & t>w\end{cases}$$
+
+### 7.5 预算账本
+
+| 名义上限 | 实际逻辑 pair token | case 出现次数 | optimizer step |
 |---|---:|---:|---:|
-| 10M | 9,988,659 | 5,840 | 365 |
-| 30M | 29,985,465 | 17,952 | 1122 |
-| 100M终点 | **99,824,365** | **56,912** | **3557** |
+| 10M | 9.99M | 5,840 | 365 |
+| 30M | 29.99M | 17,952 | 1,122 |
+| 100M（终点） | **99.82M** | **56,912** | **3,557** |
 
-逻辑token只对一次完整pair输入计账，包含每个候选重复的prefix和真实EOS。两遍训练forward实际输入 **199,648,730 real tokens**；反传覆盖99,824,365；dense还承担额外pad的tokenwise行。
+逻辑 token 对每条完整 pair 只记一次，包括每个候选重复的 prefix 和 EOS。两遍前向实际输入 199.6M 个真实 token，反向覆盖 99.8M；dense 分支还要多算 padding 行。
 
-**3557次optimizer.step不等于3557次非零学习率更新。**最后一次used_lr=0，仍计算梯度、推进Adam状态和曝光，实际只有3556次LR>0。八臂全部一样；没有把最后一个零LR macro丢掉来美化账本。
+3,557 次 step 里只有 3,556 次 LR 大于 0：最后一步 LR 为 0，仍计算梯度、更新 Adam 状态、计入曝光。八个分支都一样，没有为了账本好看把最后一步去掉。第一个 macro 只消费一次，保存完两遍输出、系数、393 组梯度、Adam 状态和 checkpoint 后暂停再续跑；后来的资源失败和控制器替换都没有重做它。
 
-正式macro0只消费一次，保存first/replay、coef、393组梯度/clip/delta、Adam与checkpoint证据后，cursor1暂停并显式续跑。后续资源失败和外部控制器替换没有偷偷重做macro0。[C5,E2,E3]
+<a id="dev"></a>
+## 8. 本地开发集：指标和三个观察点
 
-<a id="c9"></a>
-## 9. 八臂设计、本地开发指标和三个观察点
+### 8.1 主指标：argmax 目标质量（mass）
 
-### 9.1 八个名字怎样读
+$$M=\frac15\sum_d\frac1{|D_d|}\sum_{c\in D_d}\frac1{F_c}\sum_{f\in known(c)}q_{cf,\arg\max_km_{cfk}}$$
 
-| 臂 | attention | 训练tokenwise布局 | 训练目标 | 主要匹配对照 |
-|---|---|---|---|---|
-| C_D_BCE | causal | dense | BCE | 与C_P_BCE只改布局；与C_D_CE只改目标 |
-| C_P_BCE | causal | packed | BCE | packed因果BCE控制 |
-| C_D_CE | causal | dense | Field-CE | dense目标对照 |
-| C_P_CE | causal | packed | Field-CE | BI/PB的causal控制 |
-| BI_P_CE | full bidirectional | packed | Field-CE | 与C_P_CE改可见性 |
-| PB_P_CE | Candidate边界prefix-block | packed | Field-CE | 与C_P_CE改可见性 |
-| STATE_NL_PB_P_CE | state＋LF边界prefix-block | packed | Field-CE | 与PB_P_CE只改分界 |
-| JPAIR_P_BCE_RANK | causal | packed | BCE＋hard rank | 与C_P_BCE改目标 |
+模型选中哪个候选，这个 field 就得到该候选的目标值；先在 case 内平均，再在每个领域内平均，最后五个领域等权平均。例：q = [0.7, 0.3]，模型选第一个，贡献 0.7。它不是 `sum(q·p)`，只有 one-hot 时才等于正确率。另外还报 NLL、Brier、NLL / log K 和覆盖率；所有 field 都有标签且都是 one-hot 的 case 只有 259 个，在这 259 个上另报 case 全对率。
 
-D/P分别是dense/packed；C是causal；CE不是“输出两个类别的普通CE”，而是本报告第7节完整field的候选分布CE。
+### 8.2 三个观察点的结果
 
-原四个C臂是布局×目标的2×2对照。BI/PB从同fresh起点另训，不从训练完的causal warm-start。STATE/JPAIR是在看到10M/30M后提出的**探索臂**，不能事后称八臂全部预注册。[C3,C5,C6,C8]
+每次都是完整的 375 个 case、615 个有标签 field、5,190 个候选；90 个无标签 field 不前向。数字来自训练时保存的 logits 和 margin，之后在 CPU 上独立回算核对过。
 
-### 9.2 开发集主指标到底算什么
-
-D_select主指标是五域case等权的“argmax target mass”：
-
-$$M=\frac15\sum_d\frac1{|D_d|}\sum_{c\in D_d}\frac1{F_c}\sum_{f\in known(c)}q_{cf,\arg\max_km_{cfk}}.$$
-
-本次已知字段都支持，因此这里F_c与实际supported分母相同；未知字段仍不进入监督/指标分母。若有不支持字段，还需另报coverage和按原known分母计零的敏感性，不能只报被挑出的易题。
-
-教学例子：q=[0.7,0.3]，模型选第一个，字段贡献为0.7；不是 `sum(q*p)`，也不一定是0/1准确率。只有one-hot时才像字段正确率。另报NLL、Brier sum、NLL/logK及覆盖。完整one-hot case-exact只对259个全部字段known且one-hot的case计算，不能把259子集分母写成375。
-
-### 9.3 三节点完整结果——这里的数字是本地mass百分比
-
-| 臂 | 10M mass% | 30M mass% | 100M mass% |
+| 分支 | 10M | 30M | 100M |
 |---|---:|---:|---:|
-| C_D_BCE | 47.5406 | 53.9882 | 56.4260 |
-| C_P_BCE | 49.6898 | 53.1384 | 57.5694 |
-| C_D_CE | 53.8766 | 54.8894 | 61.6935 |
-| C_P_CE | 52.0806 | 55.6754 | 59.5955 |
-| BI_P_CE | 37.5653 | 43.4677 | 48.1857 |
-| PB_P_CE | 41.1644 | 41.0244 | 43.2434 |
-| STATE_NL_PB_P_CE | 40.7510 | 41.6300 | 44.3620 |
-| JPAIR_P_BCE_RANK | 50.9312 | 55.7496 | 61.2437 |
+| `C_D_BCE` | 47.5% | 54.0% | 56.4% |
+| `C_P_BCE` | 49.7% | 53.1% | 57.6% |
+| `C_D_CE` | 53.9% | 54.9% | 61.7% |
+| `C_P_CE` | 52.1% | 55.7% | 59.6% |
+| `BI_P_CE` | 37.6% | 43.5% | 48.2% |
+| `PB_P_CE` | 41.2% | 41.0% | 43.2% |
+| `STATE_NL_PB_P_CE` | 40.8% | 41.6% | 44.4% |
+| `JPAIR_P_BCE_RANK` | 50.9% | 55.7% | 61.2% |
 
-每次都是完整375case、615known field、5190候选；90unknown保留、不forward。训练时已保存实际logits/margins；后续独立CPU分析从保存输出回算，不额外跑模型。最大指标差约1.89e-15量级。[C5,E3]
+### 8.3 观察
 
-几个不能漏掉的观察：
+- 四个基础分支从 30M 到 100M，mass 都上升，NLL 都变差；Brier 有三个变差，只有 `C_P_BCE` 从 0.58 降到 0.57。不同指标的走向不一致。
+- packed 相对 dense 的高低随 loss 和观察点变化，看不出"去掉 padding 就更会做题"。
+- 100M 时 JPAIR 比 `C_P_CE` 高 1.6 个百分点，case bootstrap 区间 [−1.9, +5.1]；STATE_NL 比 PB 高 1.1 个百分点，区间 [−3.8, +6.0]。两个区间都跨过 0。
+- 这里的 bootstrap 是在同一次训练的固定输出上，对每个领域 75 个完整 case 有放回重采样 10,000 次，不是训练 seed 的置信区间，也没有做多重比较校正。
 
-- 四基础臂从30M到100M，mass均上升、NLL均变差；Brier在其中三臂变差，C_P_BCE则从0.5816323764降到0.5733636277，是改善。因此不能挑单一指标说质量单调改善。
-- Packing相对dense的mass方向随loss和观察点变化，没有稳定“去padding就更会做题”的结论。
-- 100M时JPAIR比C_P_CE高1.6482个百分点，描述性case区间约[-1.9076,+5.1159]；STATE比PB高1.1186个百分点，区间约[-3.7838,+5.9899]。两者都不能称已确认稳定提升。
-- 这些case-bootstrap只是在同一训练seed的固定输出上，对五域各75个**完整case**有放回重采样，10000次；不是训练seed的置信区间，也没有多重比较校正。
+开发集的 61.7% 和官方 Index 不是一个东西，不能拿来和 51.99 比。第 13 节会看到两者排名并不一致，原因之一是算法不同：开发集五个领域等权，官方区域权重不等，而且官方用各任务原生指标、机会校正和覆盖率。
 
-**本地61.69%不等于Public Index61.69，更不能拿来宣称超过51.99。**后面的正式结果会显示开发集排名与官方排名并不一致。
+### 8.4 D_confirm 为什么没有结论
 
-### 9.4 D_confirm为什么没有被写成“确认通过”
+后期曾定下"`C_P_CE` 作基线、JPAIR 作挑战者"的两候选确认流程。实际两个目录各只跑了 215 / 250 个 case，没有完整的汇总。你后来明确要求八个权重全部直接跑官方评测，于是停掉了这个流程，保留了不完整的结果。之前"最多两个候选、先确认再 public"的安排和你要验收全部权重的目标不一致，这是流程上的纠正。所以本轮没有 D_confirm 结论。
 
-最初后期制定了baseline=C_P_CE、challenger=JPAIR的两候选确认流程。实际confirm两个目录各只有215条case-metrics，没有完整250条的COMPLETE/SUMMARY。你后来明确要求优先八个权重全部直接跑官方，我停止并保留该partial，没有把它冒充完整确认。
+<a id="numerics"></a>
+## 9. 数值一致性：哪些通过，哪些失败
 
-这也是流程上的纠正：**我先前的“最多两个候选、先确认再public”安排，与当时你要验收全部已训练权重的目标不一致。**最终按你的新要求测全八臂，不再让自建确认成为官方测分前的冗长关卡；因此本轮没有独立完成的D_confirm结论。[E8]
-
-<a id="c10"></a>
-## 10. 数值合同、失败结果与有限准入
-
-### 10.1 为什么“能跑”和“等价”不是一件事
-
-需要区分：
+### 9.1 "能跑"和"等价"是两回事
 
 ```text
-能解析/语法通过
-  ≠ GPU确实执行和反传
-  ≠ 输出/梯度与参考在原容差内
-  ≠ 换batch几何时逐位相同
-  ≠ 学习质量提高
-  ≠ 全量官方分数提高
-  ≠ 生产/官方latency准入
+语法通过
+  ≠ GPU 上真的执行和反传了
+  ≠ 输出和梯度在容差内
+  ≠ 换了 batch 形状仍逐位相同
+  ≠ 学得更好
+  ≠ 官方分数更高
+  ≠ 生产或官方 latency 准入
 ```
 
-同一数学式在不同batch、kernel、切片或GEMM形状下，不保证bitwise相同。反过来，数值不同也不自动证明跨样本内容泄漏。PyTorch数值文档明确讨论了这些边界。[M10]
+同一个数学式在不同 batch、kernel、切片或矩阵形状下，不保证逐位相同；反过来，数值不同也不能证明发生了跨样本泄漏。
 
-### 10.2 冻结容差不是看到结果后再定
+### 9.2 容差事先冻结
 
-| 对象 | 原冻结判据 |
+| 对象 | 判据 |
 |---|---|
-| hidden/logits或margin的RMS误差 | ≤0.01×max(reference RMS,1e-3) |
-| 最大绝对误差 | ≤0.02＋0.02×maxabs(reference) |
-| macro loss | ≤1e-3×(1＋abs(reference loss)) |
-| 每组梯度/实际更新L2误差 | ≤0.02×norm(reference)＋1e-7×sqrt(numel) |
-| 非近零梯度/更新方向 | cosine≥0.999，近零组单独记账 |
-| choice敏感带 | reference top1−top2 gap≤0.04＋0.04×maxabs(reference field margins) |
+| hidden / logits / margin 的 RMS 误差 | ≤ 0.01 × max(参考 RMS, 1e-3) |
+| 最大绝对误差 | ≤ 0.02 + 0.02 × 参考的最大绝对值 |
+| macro loss | ≤ 1e-3 × (1 + 参考 loss 的绝对值) |
+| 每组梯度 / 更新的 L2 误差 | ≤ 0.02 × 参考范数 + 1e-7 × sqrt(元素数) |
+| 非近零的梯度 / 更新方向 | cosine ≥ 0.999，近零组单独记 |
+| 选项敏感带 | 参考的 top1 − top2 差 ≤ 0.04 + 0.04 × 该 field margin 的最大绝对值 |
 
-“带内flip”表示该field对规定数值漂移敏感，不代表这个flip可以称作预测等价。K1没有top2，不制造假gap。[M1,C11]
+落在敏感带内的选项翻转叫"带内翻转"，说明这个 field 对规定范围内的数值漂移很敏感，不能因此算作预测等价；敏感带外的叫"带外翻转"。只有一个候选的 field 没有 top2，不造假的差值。
 
-### 10.3 实际失败怎样保留
+### 9.3 实际的失败
 
-- PF v1真实macro失败，保留；修正版本不回写v1为通过。
-- exact commit的FA3对SDPA三模式均未过整模型合同，连causal基线也有漂移，不能只责怪新mask。
-- Flex causal实际compiled、forward/backward、393组梯度和一步更新都执行了，但logits/gradient/update没有全部过原合同；没有装成最终官方后端。
-- 同native FA3、同macro几何的dense/packed布局对照通过原梯度/更新容差；换同几何真实邻居的目标输出/VJP逐位不变，支持有限的内容隔离判断。
-- solo/mixed形状稳定性、prefix-block fork/paged等失败保留；没有因此签发“任意几何、任意缓存都等价”。
+- padding-free 第一版在真实 macro 上没过，保留记录；修正版没有回写成"第一版通过"。
+- commit `2e334fb` 的 FA3 对 SDPA，三种模式都没过整模型对照，连 causal 也有漂移，所以不能只怪新 mask。
+- Flex causal 编译、前向、反向、393 组梯度和一步更新都执行了，但 logits、梯度、更新没有全部过容差，没有用作最终后端。
+- 同一个 native FA3、同一个 macro 形状下的 dense / packed 对照，梯度和更新都在容差内；换成同形状的真实邻居样本时，目标输出和 VJP 逐位不变，支持"内容互相隔离"这一有限判断。
+- 单独跑与混合跑的形状稳定性、prefix-block 的 fork / paged 缓存，都有失败，保留记录。
 
-后续允许的是**full-row科学训练**：相同实际FA3、明确输入/位置/边界和有限证据下跑匹配学习对照；不是把所有早期失败变成通过。[E4,E6]
+所以后来允许的是"整行科学训练"：在同一个 FA3、明确的输入、位置和分界下做匹配的学习对照。这不等于把早期失败都改成通过。
 
-### 10.4 训练完的dense权重迁移packed仍有失败
+dense 训练的两个权重迁移到 packed 推理也有失败（各 34 / 375 个 case），见 [EIGHT-ARMS 第 9 节](EIGHT-ARMS-EXPLAINED.md#dagger)。
 
-这一步没有重新训练，也没有重跑dense参考，只拿已保存的原dense终点开发结果，对同一终端权重的新packed消费者做完整375case比较：
+<a id="index"></a>
+## 10. 官方 Public Index 怎么算
 
-| dense训练权重→packed推理 | 数值失败case | choice变化 | 带外flip | 最大概率差 |
-|---|---:|---:|---:|---:|
-| C_D_CE | **34/375** | 0 | 0 | 0.0762880 |
-| C_D_BCE | **34/375** | 1 | 0 | 0.1104917 |
+### 10.1 这次固定的东西
 
-两者numerical_acceptance=false，393参数前后字节未变。CE虽然argmax没变，raw logits/probabilities仍违约，不能说等价。
+- public suite 版本 **0.3**；执行并报告 43 个 benchmark，其中 37 个进入 Index。
+- 每个权重完整执行 140,620 条，官方排除 442 条，计分 140,178 条。
+- MMLU、ARC-Easy、ARC-Challenge、SimpleBench、RouterBench、SGD 这 6 个照常执行和显示，但不进 Index；不能因为它们分数高就推断 headline 高。
+- 复用已严格验证过的 suite 和排除清单。SDK 来源声明的 revision 是 `25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d`，冻结的 SDK 文件本身不是 git checkout。
+- 模板、候选、EOS、FP32 margin 和双精度字段归一化都不变；没有按对错重试、删候选、混入旧预测、按题路由或挑 checkpoint。
+- 原生的 unsupported、abstained、普通 error 会按 SDK 规则受覆盖率惩罚。本次八个分支恰好全部 ok，不是事先删掉了非 ok 的结果。
 
-你要求八个全部测后，仍对两者测完整packed官方分数，但配置和报告一直保留 **scientific only / 原数值准入失败**。官方完成、全ok不会反向抹去这项限制；也不能从其public差异单独归因dense/packed训练布局优劣。[C11,E7]
+### 10.2 Index 不是统一的准确率
 
-<a id="c11"></a>
-## 11. 官方 Public Index 的准确含义
+每个 benchmark 先按自己的原生指标算分，可能是 accuracy、macro-F1、nDCG、整个 case 全对等。BFCL 的 case 全对和"单个 field 对了一半"不是一回事。然后做机会校正：
 
-### 11.1 这次固定了哪些东西
+$$r_b=\text{原生分数（经覆盖率调整）},\qquad s_b=\operatorname{clip}_{[0,1]}\frac{r_b-c_b}{1-c_b}.$$
 
-- public suite edition **0.3**；执行/报告43个benchmark，其中37个进入Index。
-- 每权重完整执行140620条；按官方排除442条，计分140178条。
-- MMLU、ARC-Easy、ARC-Challenge、SimpleBench、RouterBench、SGD这6个benchmark仍执行/展示，但不计入本次Index；不能只因常见任务分数高就推断headline高。
-- 复用已经实际严格验证的Suite及exclusions receipt，不反复导出/哈希语料。
-- SDK来源声明revision `25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d`；冻结SDK资产本身不是git checkout，不能把这串字当一次新的git核验。
-- 原renderer、候选、EOS、FP32margin→双精度field归一化不变；无按正确性重试、删候选、混旧预测、按题路由或回选public checkpoint。
+例：四选一，机会水平 0.25，原始分 0.40，skill = (0.40 − 0.25) / (1 − 0.25) = 0.20。这个 20 是相对机会水平的提升，不是 20% 的准确率。机会基线按任务结构定义，不一定是 1/K；已经在指标内部给失败组记零的 track 类任务，不再重复乘覆盖率。具体以冻结的 SDK 为准。
 
-原生unsupported/abstained/普通error按SDK状态保留并受官方coverage惩罚；设备错误和“五次error且尚无success”的SDK原生门槛仍可中止。**本次最终八臂刚好全部ok，不是靠预先把非ok删除。**[C12,E9]
+### 10.3 五个区域怎样汇总
 
-### 11.2 为何Index不是统一accuracy
+区域内 gold★ benchmark 权重 1.2，其余 1.0，归一化后对 skill 加权平均得到区域分 $S_a$。五个区域的权重和 benchmark 数：
 
-各benchmark先按自己的原生指标计算，可能是accuracy、macro-F1、每review F1、retrieval nDCG、整case所有字段全对等。BFCL的case-exact和单字段对一半不是同一件事。
+| 区域 | 权重 $w_a$ | 进入 Index 的 benchmark |
+|---|---:|---:|
+| Knowledge & Reasoning | 0.258494 | 11 |
+| Language Understanding | 0.258494 | 9 |
+| Retrieval & Classification | 0.200229 | 6 |
+| Tools & Automation | 0.182783 | 5 |
+| Arts & Human Taste | 0.100000 | 6 |
 
-常见chance路径（chance c_b<1）可概括为：
+（benchmark 数是本次重写时从官方 `scores.json` 读出的。）
 
-$$r_b=\text{native score经coverage调整},\qquad
-s_b=\operatorname{clip}_{[0,1]}\frac{r_b-c_b}{1-c_b}.$$
+$$\text{Public Index}=100\sum_aw_aS_a=\texttt{balanced\_skill}.$$
 
-旧track-scored路径已在metric内部给失败/不完整组计零，**不能再重复乘一次coverage**。机会基线可能按query/track/case和任务结构定义，不是所有任务都统一1/K。历史loss-rule分支也有自己的baseline/best换算；具体以冻结SDK为准。[C12]
+这是加权算术平均，不是几何平均。SDK 另外报告 `breadth_skill`（一种几何平均）和用原始分代替 skill 的 `raw_index`，两者都不是 headline。SDK 中间有舍入，用已经四舍五入的展示值重算出略不同的数字是正常的。
 
-教学例子：四选一机会水平0.25，raw=0.40，skill=(0.40−0.25)/(1−0.25)=0.20。这个20只说明该任务相对机会水平的提升，不是该任务accuracy20%。
+### 10.4 Public 0.3 和榜单的 Full 0.4
 
-### 11.3 五域怎样汇总
+固定版本的 kit README 写明：0.4 榜仍接受不变的 public 0.3；0.4 的 text Full 由 60% 私有同技能集和 40% 私有新领域组成，**public 不计入 Full**。旧 0.3 时代 Full 是 20% public + 50% + 30%，不能套到 0.4。
 
-区域内gold★ benchmark权重1.2，其余1.0，归一化后求skill加权平均S_a；五区域权重：
+本地没有跑 private Full，没有上传或参榜。四卡 H800 的墙钟和本地延迟也不是维护方在单卡 RTX PRO 6000 上的官方 latency 验收。
 
-| 区域 | w_a |
-|---|---:|
-| Knowledge & Reasoning | 0.258494 |
-| Language Understanding | 0.258494 |
-| Retrieval & Classification | 0.200229 |
-| Tools & Automation | 0.182783 |
-| Arts & Human Taste | 0.100000 |
+<a id="backend"></a>
+## 11. 推理后端的优化
 
-本次headline准确地说是：
+### 11.1 两个"v2"不是一回事
 
-$$\boxed{Public\ Index=100\sum_aw_a S_a=balanced\_skill}.$$
+- 历史的 `inference-kernel-runtime` v2：旧权重，用了 prefix 缓存、融合算子和 CUDA Graph，单卡跑完 57 分 16.6 秒，Index 24.91；它有概率漂移和 3,814 个选项变化。
+- 本轮的 `public-eight-opt-v2`：新八权重、整行 native FA3 后端，优化了 CPU 端元数据、缓存和输入类型转换；之后的四卡调度复用它。
 
-不是几何平均。SDK另报：
+两者权重不同、方案不同。57 分钟不能当本轮的预计时间，也不能当"老师的 4B 半小时跑完"的本地证明，那边的硬件、卡数和候选工作量没有同条件记录。
 
-$$breadth\_skill=\frac{100}{0.9}\left[\prod_a(0.1+0.9S_a)^{w_a}-0.1\right],$$
+### 11.2 词表长度只查一次（v1 之前就已完成）
 
-以及使用raw而非skill的`balanced_raw/raw_index`，但二者都不是本次headline。SDK还有中间舍入与末端两位舍入，不应拿已经四舍五入的展示表重算一个略不同数字就认定bug。[C12]
+旧的推理代码在逐 token 检查时反复调用 `len(tokenizer)`。改成初始化时调用一次，保存含新增 token 的长度 151,669，之后只读这个整数。安装版的 FastTokenizer `__len__` 会调用 `get_vocab_size(with_added_tokens=True)`；没有重新剖析它的 Rust 内部开销。这项改动在 public-eight-v1 里已经有了，不算 opt-v1 / v2 的收益。注意 embedding 的 `vocab_size` 是 151,936，和 tokenizer 长度不是同一个数。
 
-### 11.4 Public 0.3与榜单Full 0.4不要混淆
+### 11.3 元数据在 CPU 上生成和校验
 
-固定kit README明确：0.4榜仍接受未改变的public0.3；**0.4 text Full由60%私有same-skills＋40%私有new-domains组成，public不计入Full。**旧0.3时代Full曾是20%public＋50%＋30%，不能把旧比例套到当前0.4规则。
+旧的通用 layout 校验会把 `cu`、真实下标、EOS 位置、position 等 CUDA 张量读回 CPU 检查。新的私有构造器只接受本 worker 内部生成的 Pair：
 
-本地没有运行private Full，没有上传、提交参榜或获维护方正式排名。四卡H800墙钟与本地request latency，也不是维护方单进程单卡RTX PRO 6000上的官方latency验收。[M8]
+1. 在 CPU 上检查：整数类型、ID 范围、P / S 非空、真实 EOS、完整长度 ≤ 40,960、int32 累计边界。
+2. 用这份已检查的数据一次生成 `cu`、行内位置、EOS 和真实下标。
+3. GPU 上仍检查 shape、dtype、device、连续性；PB 的 P / S 划分互斥且覆盖全部。
+4. 生成私有的 BoundMask，绑定具体的 batch、模式、角色和无缓存状态；核心代码仍拒绝来源不对的输入。
 
-<a id="c12"></a>
-## 12. 推理后端的逐版修改与真实收益
+校验没有删掉，只是放到了数据的可信来源处，省掉了"刚传上 GPU 又读回来"。
 
-### 12.1 先分清两个名字里的“v2”
+### 11.4 autocast 缓存贯穿 worker 的整个生命周期
 
-- 历史`inference-kernel-runtime` v2：旧权重、prefix/fusion/Graph方案，完整单卡57分16.6秒，Index24.91；有概率漂移与3814个choice变化。
-- 本轮`public-eight-opt-v2`：新八权重的full-row native FA3后端，CPU元数据/缓存/输入cast优化；随后fourway调度复用它的完整PublicEngine。
-
-二者不是同一个v2，也不是同一权重。57分钟不能直接作为本轮ETA或老师4B半小时的本地证明。老师的硬件、卡数和实际候选工作量没有同条件本地记录。[E10]
-
-### 12.2 词表长度只查询一次——早于opt-v1
-
-旧最终消费者在逐token检查中重复调用`len(tokenizer)`。最终初始化只调用一次，保存含added tokens的长度151669；encode/请求校验只读一个整数。
-
-本次读到的安装版FastTokenizer `__len__`委托给`get_vocab_size(with_added_tokens=True)`。**能确定的是热循环重复调用被一次缓存取代；本文没有重新剖析Rust内部，不把“每次一定复制完整15万词表”写成本次独立证实的实现细节。**这一修正已经在原public-eight-v1中存在，不再重复算成opt-v1/v2的新收益。
-
-模型embedding config的vocab_size151936与tokenizer含新增项的长度151669不是同一指标，不能混用。[C9,C13]
-
-### 12.3 CPU-owned metadata：不再“刚传上去又读回来检查”
-
-旧通用layout校验会把cu、real_indices、EOS、positions等CUDA张量读回CPU。新私有构造器只接受本worker内部的Pair：
-
-1. 在CPU验证整数非bool、ID范围、非空P/S、真实EOS、完整长度≤40960和int32累计边界。
-2. 从这份已经验证的数据一次生成cu、行内position、真实EOS和real indices。
-3. GPU仍检查shape、dtype、device、contiguity；PB的P/S分区互斥且穷尽。
-4. 生成私有BoundMask，绑定确切batch/mode/role/full/no-cache；原core仍拒绝错误owner。
-
-这不是把“任何外部CUDA张量”都当可信输入，也不是删除所有校验，而是让校验发生在数据的可信来源处。[C9]
-
-### 12.4 Worker生命周期的autocast cache
-
-原每micro退出最外层autocast，PyTorch会清空cast cache。对不可变FP32 LoRA/head，下一micro或请求可能再次做执行dtype转换。
-
-最终顺序：加载→GPU move→audit→393 pure-before比较，之后才进入长期：
+原来每个 micro 结束都退出最外层 autocast，PyTorch 会清空类型转换缓存；不变的 FP32 LoRA 和 head 在下一个 micro 又要重新转一次。改成加载、移到 GPU、审计、393 个张量的初始比对都完成后，进入长期作用域：
 
 ```text
 no_grad
   └─ BF16 autocast(cache_enabled=True)
-       └─ 官方PEFT helper
-            └─ 普通LoRA actual-input guards
+       └─ 官方 PEFT helper
+            └─ 普通 LoRA 的实际输入检查
 ```
 
-原每波嵌套autocast保留。规范参数不永久转BF16，不手写BF16权重副本，不替换PEFT.forward，不改requires_grad标志；所有forward位于no_grad，grad必须始终None。[C9,M11]
+原来每个 micro 内嵌套的 autocast 保留。规范参数不永久转成 BF16，不手写 BF16 副本，不替换 PEFT 的 forward。缓存要求权重、adapter、设备和执行状态都不变，否则可能用到过期的转换结果；推理期间没有任何更新参数的接口，另有版本、指针和槽位检查，结束后再逐字节比对权重。
 
-缓存意味着必须保证权重、adapter、设备和执行状态不变，否则可能复用过期执行转换。推理期没有optimizer/参数更新API；版本/指针/槽位守卫和结束后纯byte比较共同防护。
+### 11.5 opt-v1 为什么反而变慢
 
-### 12.5 Opt-v1为什么反而慢
+opt-v1 除了上面的元数据、缓存和请求末回传，还在每条请求上构建整个模型的递归身份快照（参数和模块名、dtype、device、adapter 和缩放等）。同样的前 1,000 条正式请求，四个模型的平均延迟从约 104 ms 变成约 113 ms，慢了 8%～9%。这是速度回归。没有做单项计时，所以不能确定每一项各占几毫秒。
 
-opt-v1除了上述元数据、lifetime cache、请求末D2H，还在每请求构造整模型递归身份快照：参数/模块名字、dtype/device字符串、adapter/scaling等。
+于是只做一次窄修正：请求热路径改用冷启动时缓存的对象、模块槽位、版本、data_ptr、梯度标志、eval 状态和 adapter 引用检查；完整的递归身份检查只在启动和关闭时做。
 
-同样的前1000条真实正式请求，四模型平均从约104ms变为113ms，只有约0.92×：**这是速度回归，不能称优化成功。**这个观察说明组合方案退步，但没有单项计时实验把某一项确定归因成几毫秒。
+### 11.6 PEFT helper：先写错了名字
 
-因此只做一次窄纠正：请求热路径用冷启动缓存的对象/模块槽位/版本/data_ptr/gradflag/eval/adapter引用检查，完整递归身份保留在启动/关闭；原source/resource周期守卫仍保留。[C9,E11]
-
-### 12.6 PEFT helper的接口名纠正及数值理由
-
-**我最初简报写错了`disable_lora_input_dtype_casting`这个名字**，opt-v1按当时范围没有接入。实际安装的PEFT0.18.1支持：
+**我最初的简报写错了接口名 `disable_lora_input_dtype_casting`**，所以 opt-v1 没有接入。查看已安装的 PEFT 0.18.1 源码，正确的是：
 
 ```python
 from peft.helpers import disable_input_dtype_casting
@@ -762,246 +470,236 @@ with disable_input_dtype_casting(model, active=True):
     ...
 ```
 
-原普通LoRA中可出现：
+普通 LoRA 里会出现 `BF16 激活 → 转成 LoRA A 权重的 FP32 → 再进 BF16 autocast 的 Linear`，在限定条件下这个来回转换是多余的。不是无条件关闭所有转换：
 
-```text
-BF16 activation → 对齐FP32 LoRA A权重dtype → BF16 autocast Linear
-```
+- 冷启动时必须正好有 196 个普通 PEFT Linear，default adapter，r32 / alpha64 / 缩放 2，未 merge，没有 DoRA、变体、bias 或 dropout。
+- 每层的输入检查确认输入是 BF16 或 FP32、在 CUDA 上、属于当前线程和请求，并且处于 eval、no_grad、BF16 autocast 和 helper 生效状态。
+- helper 只临时改变类型转换标志，不改 LoRA 的缩放、加法、形状或参数。
 
-BF16值扩为FP32再转回BF16，在限定情形下是冗余往返；FP32输入的第一次对齐本来就是no-op。不是无条件关闭所有输入转换：
+退出时按后进先出：移除 hook → helper 恢复标志 → 检查已恢复 → 退出 autocast 和 no_grad。
 
-- 冷启动必须恰好196个普通PEFT Linear、default adapter、r32/alpha64/scaling2、未merge、无DoRA/variant/bias/dropout。
-- 每层actual pre-hook检查输入为BF16或FP32、CUDA、所属线程/请求、eval、no_grad、BF16 autocast/cache与helper flag。
-- helper只暂时改变cast flag；不改LoRA的scale/add、矩阵形状或规范参数。
+### 11.7 请求末一次回传
 
-退出时按LIFO：移除hooks→helper finally恢复flags→检查恢复→退出autocast/no_grad。stack先摘除再关闭，防止异常路径重复退出。[C9,C13,M12]
+每个 micro 按原来的 slot 把 FP32 margin 写进同一个 GPU 结果包，同时记录 logits 和 margin 是否有限、margin 等式是否成立。请求结束时一次把结果包传回 CPU，验证后才记为成功。"一次回传"只指结果包，SDK 原有的请求前后同步、启动和结束时的权重比对都还在。
 
-### 12.7 请求末统一D2H：到底统一了什么
+### 11.8 opt-v2 的效果
 
-各micro仍按原Pair.slot把FP32margin写入同一GPU packet，并携带logits finite、margin finite及margin等式flags。请求末一次传回结果packet，验证后才记成功wave/token/pair。
+同样是每个模型的前 1,000 条正式请求，平均延迟（ms）：
 
-这里的“一次D2H”指**结果packet**，不是宣称整个进程只有一次GPU→CPU操作或SDK不再同步。SDK原有请求前后`synchronize`、启动/结束权重比较等仍保留。
-
-原native completed_calls只表示调用返回，pre-hook次数只表示输入检查，不是GPU已完成。最终还要对齐成功D2H/finite检查、196×waves、28或56×waves和realT计数；传输完成与整个请求成功也分开记账。[C9,C12]
-
-### 12.8 Opt-v2测到了什么
-
-同一正式前1000条/模型，四组如下：
-
-| 模型 | 原版mean ms | opt-v1 | opt-v2 | opt-v2/原版加速 |
+| 模型 | 原版 | opt-v1 | opt-v2 | 原版 / opt-v2 |
 |---|---:|---:|---:|---:|
-| C_P_CE | 104.4867 | 113.5560 | 93.1935 | 1.1212× |
-| JPAIR | 104.2620 | 113.1289 | 93.6781 | 1.1130× |
-| C_P_BCE | 104.6491 | 112.8668 | 93.1189 | 1.1238× |
-| C_D_CE | 104.1226 | 112.9861 | 93.7962 | 1.1101× |
+| `C_P_CE` | 104.5 | 113.6 | 93.2 | 1.12× |
+| `JPAIR_P_BCE_RANK` | 104.3 | 113.1 | 93.7 | 1.11× |
+| `C_P_BCE` | 104.6 | 112.9 | 93.1 | 1.12× |
+| `C_D_CE` | 104.1 | 113.0 | 93.8 | 1.11× |
 
-各组与两个基线比较，1000个answers完全一致，choice变化0、最大概率差0、usage变化0。只是被动比较现有正式输出，没有新增模型推理。
+和两个基线相比，1,000 个答案完全一致：选项变化 0，最大概率差 0，usage 变化 0。这是对已有正式输出的被动比较，没有另跑模型。前 1,000 条偏短，后面的长上下文和多候选请求更慢，所以这不是全语料的提速比例。helper 和请求热路径检查是同时改的，没有分别测各自的贡献。
 
-**这是首批约1.11～1.12×的结果，不是全语料比例或全量逐位等价证明。**前1000条主要偏短，后续长上下文/多候选更慢。guard与helper同时改动，没有独立ablation可说各贡献多少。[E11]
+### 11.9 为什么不把旧的快路径全搬回来
 
-### 12.9 为什么不把旧快路径全搬回来
+历史 57 分钟的后端还用了 prefix KV、融合的 Norm / RoPE / MLP / LoRA 小算子、Graph 和有界 JIT；它的 Index 从 24.99 变成 24.91，有 3,814 个 field 选项变化，不是无损的参考。本轮明确不恢复：padding / 假 token Graph、未通过核对的 prefix 缓存、改变运算边界的融合、LoRA merge、量化和新的 micro 预算。跨 field 合批早就有了，不算本次收益。优化到 opt-v2 为止，之后只改了调度。
 
-历史57分钟后端还用了prefix KV、融合Norm/RoPE/MLP/LoRA小算子、Graph和有界JIT。它同时有Index24.99→24.91及3814个field choice变化；不是无损参考。
+<a id="scheduling"></a>
+## 12. 四卡调度：同一个权重分四片
 
-本轮明确不恢复：padding/fake-token Graph、未准入prefix cache、改变运算边界的fusion、LoRA merge、量化、新micro预算。跨field合批早已有，不能当本次新增收益。优化在opt-v2收束；随后变化只涉及调度。[E10,E11]
+### 12.1 两种并行解决不同的问题
 
-<a id="c13"></a>
-## 13. 四卡同模型分片：为什么能更早出首分
-
-### 13.1 两种并行回答不同目标
-
-起初四张卡分别跑四个不同权重，八个分两波。你明确希望“尽快先看到一个完整官方成绩”后，改成四张卡加载同一权重的四个独立副本，依次评完八个。
-
-假设各模型单卡完整耗时都为T，且完全理想均衡：
+起初四张卡各跑一个不同的权重，八个分两波。你希望"尽快先看到一个完整官方成绩"后，改成四张卡各加载同一个权重的独立副本，八个依次评。假设每个模型单卡要 T，且完全均衡：
 
 | 方式 | 第一个完整成绩 | 八个全部结束 |
 |---|---:|---:|
-| 四卡各不同模型，两波 | T | 2T |
-| 四卡同模型分片，八个串行 | T/4 | 8×T/4＝2T |
+| 四卡各跑不同模型，两波 | T | 2T |
+| 四卡同模型分片，八个依次 | T / 4 | 8 × T / 4 = 2T |
 
-所以主要改善**首分等待**，不能把八模型总耗时直接除4。实际还受CPU/I/O、长短题、模式、加载和波次末尾等待影响；本次旧两波运行没有完整结束，**没有最终总吞吐4倍对照证据**。
+所以改善的主要是**等第一个成绩的时间**，八个的总时间不会变成四分之一。实际还受 CPU、I/O、长短题、模式、加载和尾部等待影响；旧的两波方案没有跑完，没有总吞吐的对照数据。
 
-### 13.2 不是tensor parallel，也不是DDP训练
+### 12.2 不是 tensor parallel，也不是 DDP
 
-0.6B完整模型已经能放进单卡，每张卡独立处理请求，不把一条请求的28层模型拆成四段通信；也没有四rank梯度归约。每个worker看到自己的单物理GPU UUID映射为CUDA:0，仍是独立模型进程。[C10]
+0.6B 的完整模型单卡放得下，每张卡独立处理自己的请求，不把一条请求的 28 层拆到四张卡上通信，也没有梯度归约。每个 worker 把自己那张物理 GPU 映射为 CUDA:0，是独立的模型进程。
 
-### 13.3 精确分片规则
+### 12.3 怎样分片
 
-原始官方140620行，ordinal从0开始：
+官方的 140,620 行按原顺序编号（从 0 开始），用未修改的 SDK 原生 `keep` 接口交错分配：
 
 ```text
-GPU0: 0,4,8,12,...
-GPU1: 1,5,9,13,...
-GPU2: 2,6,10,14,...
-GPU3: 3,7,11,15,...
+GPU0: 0, 4, 8, 12, ...
+GPU1: 1, 5, 9, 13, ...
+GPU2: 2, 6, 10, 14, ...
+GPU3: 3, 7, 11, 15, ...
 ```
 
-使用未改SDK的native `keep`接口；冻结版本对每个原始row按原顺序调用一次keep。每worker须完整遍历140620行，恰好选35155行。交错分片使不同任务/长短序列较均匀，不另跑模型估算题目难度，也不读取gold决定分配。
+每个 worker 遍历全部 140,620 行，正好选出 35,155 行。交错分配让不同任务和长短请求大致均匀，不需要先估难度，也不读 gold。参数保持 `limit=None, resume=False, warm=False`。**SDK 的 `resume=False` 不会覆盖旧结果，底层仍以追加模式打开文件**，所以新的根目录和每个分片的输出目录都必须是新建的，不能往旧的半成品里续写。
 
-保持`limit=None,resume=False,warm=False`。**SDK的resume=False并不保证覆盖旧results，底层仍以append打开；因此新root和每个shard输出目录必须排他新建。**这也是为什么不能向已有partial随便续写。[C10,C12]
+### 12.4 只在四片都完整后才计分
 
-### 13.4 只在全量恢复后计分
+四个子进程都实际等待退出、退出码 0、各 35,155 条完整、来源 / 配置 / 权重证明都通过后：
 
-每个shard都有唯一arm-shard grant、log、OWNER/EXIT、输出目录和393 after-proof；shard COMPLETE本身不是Public分数。
+1. 按原编号 `% 4` 从对应分片依次读取原始 JSONL 字节。
+2. 交错写回完整的 140,620 行，而不是把四个文件简单拼接。
+3. 检查唯一的 run_id、完整的内容、官方元数据、模型名、状态、usage 和有限的延迟，并确认四个流都恰好读完。
+4. 对这个完整文件调用一次原 SDK 的 `score_run`，必须得到版本 0.3、140,178 条计分和有限的 Index。
+5. 立即写入 `FIRST_OFFICIAL_SCORE.json`，然后才启动下一个权重；最后汇总八个。
 
-四个child全部实际wait、exit0、35155完整、同source/config/权重证明通过后：
+计分在所有 GPU 分片退出后、在一个只用标准库和冻结 SDK 的管理进程里进行，它明确拒绝导入 Torch，不会顺带再跑推理。
 
-1. 按原ordinal `%4`，从对应shard读取下一行原始JSONL字节。
-2. 交错写回全部140620行，不是把四个文件简单concatenate。
-3. 检查唯一run_id、完整payload、官方metadata、model、status、usage与finite latency，四个stream均恰好耗尽。
-4. 对这个完整文件调用一次原SDK `score_run`；必须得到edition0.3、140178 scored和有限Index。
-5. 立即提交`FIRST_OFFICIAL_SCORE.json`，然后才启动下一个权重；最终再汇总八个。
+### 12.5 安全地替换正在运行的版本
 
-计分在所有GPU分片退出后的SYSTEM管理进程里进行；实际调用链只需标准库和冻结SDK资源，明确拒绝意外导入Torch，不借大模型环境另跑推理。[C10]
+旧版本一直运行，直到新源码审查完、独占安装好、CPU 准备完成、实际字节读回核对过、并确认 0 个 worker 和 0 个模型在跑，才给旧版本写 STOP。接替前还要核实：旧进程的 PID / 启动时间 / boot 身份、唯一的终止状态、所有子进程都实际等待并退出、四张卡没有未知占用、全局 lease 文件的 inode 和内容不变且能拿到排他锁。不能靠删除或改写 lease 文件来"解锁"。所有新增的缓存、临时文件、日志和结果都在 `/home/dev/assumeengage`；保留 80 GiB 输出上限和 100 GiB 剩余空间的门槛。
 
-### 13.5 安全切换不靠“看起来已经没进程”
+### 12.6 被中止的运行
 
-旧版保持运行，直到新源码审查、排他安装、CPU prepare、实际字节readback和0worker/0模型安装回执齐备。MAIN才写旧版STOP。
+public-eight-v1、opt-v1、opt-v2 前三次运行都是因为主动 STOP 被接替，半成品保留，Index 为空；不是因为答题结果不好而重试。最终的四卡运行没有接用任何旧的半成品，每个权重的 140,620 条都在新目录里独立完成。
 
-接替必须核实：旧PID/starttime/boot身份、唯一terminal、所有创建过的子进程actual wait/exit/死亡；四卡无未知占用；原global lease **inode与bytes不变**、UUID一致、`LOCK_EX|LOCK_NB`可取得。不能删/truncate/重写旧lease来“解锁”。Popen/信号登记、pidfd、parent-death guard与异常actual-wait barrier沿用，lease关闭严格晚于actual waits。
+之前给过的 20～30 小时是早期的粗估，不是测量，不能拿它和 14 小时 38 分相除来说提速了多少。
 
-全部新增cache/tmp/log/结果在`/home/dev/assumeengage`。独立80GiB输出cap与固定100GiB free门槛保留，不拿已用输出抵扣未来reserve，也不冒称操作系统级磁盘配额或对任意同UID进程的强认证。[C10]
+<a id="results"></a>
+## 13. 官方结果
 
-### 13.6 中止记录怎样理解
+### 13.1 八个权重
 
-原public-eight-v1、opt-v1、opt-v2前三次都因明确记录的主动STOP被接替，partial保留、Index为null；不是按答题正确性重试，也不是把不理想预测偷偷换掉。最终fourway没有接用任何旧partial，全部140620/权重在新namespace独立完成。
+| 分支 | 训练布局 / attention | 官方 Index | raw_index | 完整耗时 | 平均每条请求 |
+|---|---|---:|---:|---:|---:|
+| `C_P_BCE` | packed / causal | **14.42** | 35.28 | 1:43:17 | 172.5 ms |
+| `JPAIR_P_BCE_RANK` | packed / causal | 13.60 | 35.05 | 1:43:58 | 172.9 ms |
+| `C_D_CE` † | dense / causal | 13.07 | 34.78 | 1:43:43 | 172.8 ms |
+| `C_P_CE` | packed / causal | 12.95 | 34.47 | 1:43:16 | 172.3 ms |
+| `C_D_BCE` † | dense / causal | 12.83 | 33.87 | 1:43:10 | 172.1 ms |
+| `BI_P_CE` | packed / 全双向 | 3.09 | 25.01 | 1:47:38 | 178.6 ms |
+| `PB_P_CE` | packed / 两块双向 | 2.59 | 25.09 | 2:06:17 | 210.8 ms |
+| `STATE_NL_PB_P_CE` | packed / 两块双向 | 1.97 | 24.77 | 2:06:31 | 211.2 ms |
 
-此前20～30小时是早期低置信度排期估计，不是已测完整baseline；**不能拿它与14h38相除来宣称实际speedup**。老师4B半小时的参考也没有等条件本地测量，不能承诺照搬。[E11,E12]
+- 所有权重**都用 packed 推理**；"dense"指训练布局。带 † 的两个有 dense → packed 的迁移偏差（[EIGHT-ARMS 第 9 节](EIGHT-ARMS-EXPLAINED.md#dagger)）。
+- raw_index 用原始分代替 skill 计算，也不是总体准确率。
+- 平均每条请求的延迟是本次重写时从 `SCORES.json` 补的。PB 两个分支比 causal 慢约 22%，和它们每层两次 attention 调用相符；没有做计时拆分。
+- 每个权重执行 140,620 条、排除 442 条、计分 140,178 条，全部 ok，覆盖率 1。八个合计执行 1,124,960 条，计分 1,121,424 条。
 
-<a id="c14"></a>
-## 14. 八个官方结果、五域分解和实际耗时
+**all ok 只表示每条请求都按协议执行成功，不是 140,620 题全对，也不是生产准入。**
 
-### 14.1 最终权威结果
+时间线（UTC）：2026-11-13 07:46:28 开始，22:24:31 结束，合计 **14 小时 38 分 03 秒**，不含之前中止的尝试。第一个完成的是 `C_P_CE`，用了约 1 小时 43 分，之后自动启动 JPAIR。
 
-| 权重 | 训练布局 / attention | 官方Index | raw_index（也不是总体准确率） | 四卡完整耗时 |
-|---|---|---:|---:|---:|
-| `C_P_CE` | packed / causal | **12.95** | 34.47 | 1:43:16 |
-| `JPAIR_P_BCE_RANK` | packed / causal | **13.60** | 35.05 | 1:43:58 |
-| `C_P_BCE` | packed / causal | **14.42** | 35.28 | 1:43:17 |
-| `C_D_CE` | dense / causal | **13.07** | 34.78 | 1:43:43 |
-| `C_D_BCE` | dense / causal | **12.83** | 33.87 | 1:43:10 |
-| `BI_P_CE` | packed / bidirectional | **3.09** | 25.01 | 1:47:38 |
-| `PB_P_CE` | packed / prefix_block | **2.59** | 25.09 | 2:06:17 |
-| `STATE_NL_PB_P_CE` | packed / prefix_block | **1.97** | 24.77 | 2:06:31 |
+完成后的独立核验：32 个 worker 都退出码 0 并被实际等待，管理进程已退出；32 份 393 张量的前后字节一致，helper 标志已恢复、hook 为 0，native 调用和真实 token 计数对得上；八个完整结果逐条核对了原顺序、完整输入、元数据和分片原始字节；源码固定点未变，四个 lease 文件的 inode 和内容未变且退出后能拿到排他锁，GPU 进程快照为空。
 
-**所有模型的consumer均为packed。**两个dense行指训练布局，不是正式评测时仍dense；它们保留第10.4节的34/375原数值失败限制。
+### 13.2 五个区域
 
-每模型140620执行、442排除、140178计分，全ok、coverage1。总执行 **1,124,960**，总计分 **1,121,424**。
+各区域的官方 skill × 100（不是区域准确率）：
 
-最终四卡逐模型队列时间（UTC）：
-
-- 开始：2026-11-13 07:46:28.100458。
-- 完成：2026-11-13 22:24:31.528708。
-- 合计：**52683.42825秒＝14小时38分03.428秒**，不包括之前中止尝试。
-- 首个C_P_CE：约1小时43分16秒；之后自动启动JPAIR。
-
-32个worker均exit0并actual-wait，manager已退出；32份规范393张量before/after字节一致、未重载掩盖变更，helper flags恢复、hooks=0、native/realT计数通过。独立最终验收逐条对照八个完整结果的原序/完整输入/metadata和shard原始bytes；源pin和小源码bytes未变，四原lease inode/bytes未变且退出后EXNB可取，GPU进程快照为空。[E9,E12]
-
-**all-ok只是协议/执行成功，不是140620题全答对，也不是生产准入。**
-
-### 14.2 五区域skill分解
-
-下表为各area的官方skill×100，不是area accuracy；取自官方文件已舍入area值。
-
-| 权重 | Knowledge | Language | Retrieval | Tools | Arts |
+| 分支 | Knowledge | Language | Retrieval | Tools | Arts |
 |---|---:|---:|---:|---:|---:|
-| `C_P_CE` | 5.26 | 9.22 | 19.74 | 24.92 | 7.03 |
+| `C_P_BCE` | 4.82 | 9.54 | 20.19 | **32.42** | 7.35 |
 | `JPAIR_P_BCE_RANK` | 6.19 | 9.21 | 21.05 | 25.86 | 6.82 |
-| `C_P_BCE` | 4.82 | 9.54 | 20.19 | 32.42 | 7.35 |
-| `C_D_CE` | 5.63 | 9.10 | 20.21 | 24.62 | 7.16 |
-| `C_D_BCE` | 5.36 | 9.12 | 15.04 | 29.49 | 6.83 |
+| `C_D_CE` † | 5.63 | 9.10 | 20.21 | 24.62 | 7.16 |
+| `C_P_CE` | 5.26 | 9.22 | 19.74 | 24.92 | 7.03 |
+| `C_D_BCE` † | 5.36 | 9.12 | 15.04 | 29.49 | 6.83 |
 | `BI_P_CE` | 1.10 | 1.16 | 2.66 | 8.60 | 4.07 |
 | `PB_P_CE` | 0.74 | 0.62 | 3.40 | 5.77 | 5.01 |
 | `STATE_NL_PB_P_CE` | 0.93 | 0.65 | 1.69 | 5.17 | 2.77 |
 
-C_P_BCE相对C_P_CE的Tools区域从24.92到32.42，是总Index差异的重要组成；但它Knowledge从5.26到4.82，并非五域都提高。不能只看“总分较高”就概括成所有能力普遍提高。
+所有分支在 Knowledge 和 Language 上都很低（causal 分支 4.8～9.5），分数主要来自 Retrieval 和 Tools。
 
-BI/PB/STATE在Knowledge/Language等区域的机会校正skill接近0。这解释了raw_index约25但headline只有1.97～3.09并不矛盾；**不代表已定位表示、优化或数据方面的唯一致败原因**。
+<a id="tools-gap"></a>
+### 13.3 `C_P_BCE` 的领先来自哪里
 
-另附八模型×43 benchmark的344行CSV，保留native metric/score、index raw/skill/chance、coverage、status与是否进入Index；方便逐项学习，未复制私有逐请求样本。见附录文件索引。
+（本节是重写时用证据 CSV 补算的。）按区域权重拆开 `C_P_BCE` − `C_P_CE` 的 1.47 点：
 
-<a id="c15"></a>
-## 15. 能得出的结论与尚未证实的原因
+| 区域 | 区域 skill 差 × 权重（Index 点） |
+|---|---:|
+| Tools | +1.37 |
+| Retrieval | +0.09 |
+| Language | +0.08 |
+| Arts | +0.03 |
+| Knowledge | −0.11 |
 
-### 15.1 当前证据支持的结论
+Tools 的五个 benchmark：
 
-1. **这组终端模型中，C_P_BCE最高14.42。**不是世界最优，也没有超过当时51.99参考。
-2. packed BCE比packed CE高1.47个Index点；但开发mass反而57.5694%<59.5955%。开发主指标的排序不能代替官方排序。本地mass每域等权20%，官方区域权重并不等权，且使用任务原生指标、机会校正、case/track规则与coverage；两种总体指标本来就不是同一个函数。
-3. JPAIR比CE高0.65点，却比匹配的packed BCE低0.82点；“本地mass较高”没有转成对BCE的官方收益。
-4. STATE本地mass比PB高1.1186个百分点，正式Public却低0.62点。改边界没有在本轮官方口径得到收益。
-5. 当前同基座、fresh LoRA/head、数据、预算和目标下，非causal mask明显低于causal；**不能推广成所有双向模型、完整Base或Jina方法失败**。
-6. packing的明确价值首先是减少无效tokenwise工作；本轮没有稳定学习提分结论。dense→packed准入失败也限制了正式表中对布局的因果解读。
-7. 八臂仅seed42；case-bootstrap不替代训练seed复现，不能把小分差称统计显著或跨seed稳定。
+| benchmark | 指标 | 机会水平 | `C_P_CE` 原始分 / skill | `C_P_BCE` 原始分 / skill |
+|---|---|---:|---:|---:|
+| BFCL | case 全对率 | 0.26 | 0.44 / 0.24 | **0.64 / 0.51** |
+| API-Bank | accuracy | 0.02 | 0.36 / 0.34 | 0.41 / 0.40 |
+| When2Call MCQ | accuracy | 0.25 | 0.42 / 0.22 | 0.43 / 0.24 |
+| ToolRet | nDCG@10 | 0.13 | 0.49 / 0.42 | 0.50 / 0.42 |
+| Home appliance simulator | case 全对率 | 0.00 | 0.00 / 0.00 | 0.00 / 0.00 |
 
-### 15.2 为什么不能直接说“后端坏了”或“数据清理导致掉分”
+所以 `C_P_BCE` 的最高分主要是 BFCL（1,694 条请求）上整题全对率从 0.44 升到 0.64，不是各方面普遍更强；Knowledge 区域它反而低于 `C_P_CE`。为什么 BCE 在 BFCL 上好这么多，本轮没有诊断。
 
-本轮全量输入/输出与权重/计数协议完整，排除了漏题、混预测、未正常完成等执行层解释；但all-ok并不能证明语义函数在任何未对照过的路径都等价。
+### 13.4 为什么 raw 约 25，Index 却只有 2～3
 
-同时，新clean模型与历史24.91模型不同起点、数据/监督、预算和执行路径；原始stock预训练暴露也未完全可知。**多项差异同时存在，不能把分数差单独归给数据清理、loss、packing、dtype或某个kernel。**
+BI、PB、STATE_NL 的 raw_index 在 24.77～25.09，但它们在 Knowledge、Language 等区域的机会校正 skill 接近 0：原始分只比随便猜好一点点，减去机会水平后几乎不剩。所以 raw 约 25 和 headline 只有 1.97～3.09 并不矛盾。这只说明分数低在哪里，不说明为什么低。
 
-### 15.3 值得研究、但尚未证实的假设
+<a id="open-questions"></a>
+## 14. 还没解释的问题
+
+### 14.1 为什么不能直接说"后端坏了"或"数据清理导致掉分"
+
+全量的输入、输出、权重和计数协议都完整，排除了漏题、混入旧预测、没正常跑完这类执行层面的解释；但 all ok 不能证明没对照过的路径在语义上也等价。
+
+新的 clean 模型和历史 24.91 的模型，起点、数据、监督、预算和执行路径都不同，原模型预训练时见过什么也不完全可知。多处差异同时存在，不能把分数差单独归给数据清理、loss、packing、精度或某个 kernel。
+
+### 14.2 值得研究、但还没证实的假设
 
 | 假设 | 相关观察 | 为什么还不是结论 |
 |---|---|---|
-| 因果预训练骨干转非因果，LoRA/预算不足以适应 | BI/PB/STATE在dev与public都低 | 没有同数据的全参/不同适配参数覆盖等隔离对照 |
-| 有限clean训练来源与完整Public任务分布不匹配 | select五域抽样与43任务不同，tools主要procedural；dev/Public排名不一致 | 还缺充分逐来源误差与匹配数据消融，不能直接判某来源是原因 |
-| BCE/rank的尺度、clip改变了优化轨迹 | rank改变dL/dmargin尺度，所比较臂clip均频繁 | 未做保持方向/尺度分别控制的实验 |
-| 独立pair读出缺少全候选交互，限制复杂比较 | 与Base answer-slot、Jina listwise的输入/读出差异明确 | J1 fresh完整匹配训练/public未完成 |
-| 数值路径与权重存在敏感交互 | 历史跨形状与dense→packed有失败，前1000后端相同不覆盖全量 | 没有所有权重/全public的独立参考后端成对全量输出证据 |
+| causal 预训练的骨干改成非 causal 后，LoRA 和现有预算不够它适应 | BI / PB / STATE_NL 在开发集和官方都低 | 没有同数据下全参训练或更大适配容量的对照 |
+| clean 训练数据的分布和 Public 任务不匹配 | 开发集五域抽样和 43 个任务不同；Tools 主要是程序化来源；开发集和官方排名不一致 | 缺逐来源的误差分析和匹配数据的消融 |
+| BCE / rank 的梯度尺度和 clip 改变了优化轨迹 | rank 改变了 dL/dm 的尺度；比较的分支都频繁触发 clip | 没有分别控制方向和尺度的实验 |
+| 独立 pair 的读出缺少候选间交互，限制了复杂比较 | 和 Base 的 answer-slot、Jina 的 listwise 输入输出差异明确 | J1 没有完整训练和官方评测 |
+| BCE 在 BFCL 这类整题全对的任务上有优势 | `C_P_BCE` 的领先几乎都来自 BFCL | 单 seed；没有看 BFCL 的逐题错误 |
+| 数值路径和权重之间有敏感的相互作用 | 跨形状和 dense → packed 都有失败；前 1,000 条一致不覆盖全量 | 没有独立参考后端在全部权重、全量 public 上的成对输出 |
 
-这张表是帮助理解的后续研究问题，**不是新的执行授权或已经启动的训练计划**。本次写报告没有新增实验。
+这张表是后续研究问题，不是已经启动的计划。
 
-<a id="c16"></a>
-## 16. 关键失败、纠正和决策变化
+<a id="failures"></a>
+## 15. 过程中的失败和纠正
 
-| 事件 | 实际发生了什么 | 修正/保留方式 | 学习要点 |
+| 事件 | 发生了什么 | 怎样处理 | 要点 |
 |---|---|---|---|
-| PF v1数值失败 | 真实macro未过合同 | 新独立版本修正执行边界，旧失败留存 | 真实运行过≠通过 |
-| FA3/SDPA及Flex对照不全通过 | causal基线也有漂移 | 同native FA3布局与内容隔离分开研究；最终未用Flex | 不把backend差异错归新mask |
-| strict-state BPE跨界 | 28676/41674 train、427/615 select不可精确切 | v1一直notready；另定义统一已有LF归P的v2 | 改定义要显式版本，不用round掩盖 |
-| fresh trainer v1 PEFT setter KeyError | setter原地改写传入mapping；尚无forward/更新 | 传`dict(saved)`保护oracle，独立v2重新封存 | 验证代码不能破坏被比较的原始对象 |
-| followup首macro后磁盘guard失败 | free比规定需求少约1.11GB；0resume/0AUTH | 保留cursor1/partial；新staged controller在容量fit后显式恢复 | 不删checkpoint/降底线凑通过 |
-| staged验证器系数差3.7253e-9 | 主验证图先rank后BCE，producer顺序相反 | 按冻结BCE→rank构图顺序修校验器，未放宽位级门槛 | 浮点/反传累加顺序也能影响末位 |
-| 两候选/confirm-first安排不合用户验收目标 | confirm两臂各215条partial | 按你的明确要求停旧流程，八个都完整public | 内部流程不能代替实际用户目标 |
-| opt-v1提速失败 | 前1000约104→113ms | 仅一次窄纠正为opt-v2，未无休止追新优化 | 要用正式真实输出测，不凭“代码更快”判断 |
-| helper名写错 | 初始简报不存在的接口名导致漏用 | 查已安装0.18.1源码，用正确helper并加实际输入/恢复守卫 | 对照安装版本的真实API |
-| fourway源码生成时缩进错误 | stdlib AST在内存阶段拒绝，尚未部署 | 对完整行统一dedent后生成；最终AST/只读审查通过 | 生成代码应先语法检查，不能碰正在跑的版本 |
-| 三次旧official中止 | 明确STOP接替后端/调度，Index为null | partial不删、不拼新run，actual-wait后再接GPU | 主动停止≠OOM≠答题质量失败 |
-| ETA偏早 | 短前缀不代表长任务分布 | 撤回不可靠承诺，最终按完整实际14h38报告 | 估计不是测量，不能拿粗估算speedup |
+| padding-free 第一版数值失败 | 真实 macro 没过容差 | 新版本修正执行边界，旧失败留档 | 真跑过不等于通过 |
+| FA3 / SDPA 和 Flex 对照没全过 | 连 causal 基线也有漂移 | dense / packed 布局和内容隔离分开研究；最终不用 Flex | 不把后端差异误算到新 mask 头上 |
+| 严格 state 分界跨 BPE token | 训练 28,676 / 41,674、开发 427 / 615 个 field 切不开 | v1 一直不可用；另定义 v2，把已有换行归入 P | 改定义就要显式出新版本，不靠取整掩盖 |
+| 新训练器 v1 的 PEFT setter 报 KeyError | setter 原地改写了传入的映射；还没开始前向和更新 | 改传 `dict(saved)` 保护参考对象，重新封存 v2 | 验证代码不能破坏被比较的原始对象 |
+| 跟进训练第一个 macro 后磁盘检查失败 | 剩余空间比规定少约 1.11 GB | 保留断点；新的分阶段控制器在空间够了之后显式恢复 | 不删 checkpoint、不降门槛来凑通过 |
+| 分阶段验证器系数差 3.7253e-9 | 验证图先算 rank 后算 BCE，生产代码顺序相反 | 按冻结的 BCE → rank 顺序修正验证器，没放宽逐位门槛 | 浮点和反传的累加顺序也会影响末位 |
+| 两候选、先确认的安排不符合验收目标 | 确认集两个分支各只到 215 条 | 按你的要求停掉，八个都跑完整 public | 内部流程不能代替用户的实际目标 |
+| opt-v1 提速失败 | 前 1,000 条约 104 → 113 ms | 只做一次窄修正成 opt-v2 | 要用真实正式输出测，不凭"代码应该更快"判断 |
+| helper 名字写错 | 简报里的接口名不存在，导致漏用 | 查已安装 0.18.1 的源码，换成正确的 helper，加输入和恢复检查 | 以安装版本的真实 API 为准 |
+| 四卡源码生成时缩进错误 | 在内存阶段被 AST 检查拒绝，尚未部署 | 统一去缩进后重新生成，AST 和只读审查通过 | 生成的代码先做语法检查，不碰正在运行的版本 |
+| 三次旧官方运行被中止 | 主动 STOP 接替后端或调度，Index 为空 | 半成品不删、不拼进新运行，实际等待退出后再接管 GPU | 主动停止不等于 OOM，也不等于答题失败 |
+| 预计时间偏早 | 短请求开头不代表长任务的分布 | 撤回不可靠的承诺，最终按实际 14 小时 38 分报告 | 估计不是测量 |
 
-真正实施的是多层证据流程，而不是无限堆门禁：必要的数据身份、资源、原生SDK和完整性检查保留；你明确要求后，没有再扩seed、补训练、额外烟测/自建确认来阻塞正式public。
+你明确要求之后，没有再增加 seed、补训练、额外烟测或自建确认来阻塞正式 public；必要的数据身份、资源、原生 SDK 和完整性检查保留。
 
-<a id="c17"></a>
-## 17. 按文件阅读代码与复查结果
+<a id="code"></a>
+## 16. 怎样读代码和复查结果
 
-### 17.1 建议沿数据流读，不要先陷入manager细节
+### 16.1 沿数据流读
 
-正文路径缩写在附录展开。
+路径缩写见[附录 A](#appendix-paths)。
 
-| 阅读顺序 | 文件/入口 | 要看懂的问题 |
+| 顺序 | 文件 / 入口 | 要看懂的问题 |
 |---|---|---|
-| 1 | `D/case_pairs.py`：`normalized_field / make_case / compile_case` | native case、known/unknown、q顺序、过滤和完整候选怎样确定？ |
-| 2 | `pair_data_common.py:render_pair` | 实际prefix/candidate字符串是什么？为什么不能随便换模板？ |
-| 3 | `T/source/case_runtime.py`：`Pair/slots/micro_plan` | case→field→candidate→slot→micro怎样对应？ |
-| 4 | `PK/layout.py`：`make_batch/TokenBatch` | ids、positions、cu、EOS如何隔离每条序列？ |
-| 5 | `PK/model.py`：`MaskedBackbone` | 原Qwen3/PEFT模块怎样在realT上计算？三种attention怎样分区？ |
-| 6 | `T/source/objectives.py`和`F/source/objectives.py` | loss分母、soft/hard q、rank零项、完整field梯度系数是什么？ |
-| 7 | `T/source/train_case.py` | 两遍forward、exact replay、一次clip/AdamW和cursor推进在哪里？ |
-| 8 | `T/source/evaluate_native_dev.py` | mass/NLL/Brier/coverage及case/domain聚合怎样实现？ |
-| 9 | `P/source/backend.py`：`PublicEngine` | 最终加载、owned batch、autocast/helper、packet、读出和after-proof怎样闭合？ |
-| 10 | `P/source/run_public.py`：`worker/check_results/Manager.finalize_arm` | ordinal分片、原序合并、完整140620验证和官方140178计分如何串联？ |
-| 11 | `SDK/pipeline.py`与`SDK/scoring/index02.py` | 官方headline究竟是哪一个字段，为什么不是accuracy/geometric？ |
-| 12 | `P/FINAL_OFFICIAL_VERIFIED.json` | 哪些运行和完整性陈述已经有实际证据，而不是配置愿望？ |
+| 1 | `D/case_pairs.py`：`normalized_field / make_case / compile_case` | 原始 case、有标签 / 无标签、q 的顺序和完整候选怎样确定？ |
+| 2 | `pair_data_common.py:render_pair` | 实际的 prefix 和候选字符串是什么？ |
+| 3 | `T/source/case_runtime.py`：`Pair / slots / micro_plan` | case → field → 候选 → slot → micro 怎样对应？ |
+| 4 | `PK/layout.py`：`make_batch / TokenBatch` | ids、位置、`cu`、EOS 怎样隔离每条序列？ |
+| 5 | `PK/model.py`：`MaskedBackbone` | 原 Qwen3 / PEFT 模块怎样只在真实 token 上计算？三种 attention 怎样分区？ |
+| 6 | `T/source/objectives.py`、`F/source/objectives.py` | loss 分母、软 / 硬 q、rank 的零项、完整 field 的梯度系数？ |
+| 7 | `T/source/train_case.py` | 两遍前向、逐位重放、一次 clip / AdamW 和断点推进在哪里？ |
+| 8 | `T/source/evaluate_native_dev.py` | mass、NLL、Brier、覆盖率和 case / 领域聚合怎样实现？ |
+| 9 | `P/source/backend.py`：`PublicEngine` | 最终加载、batch、autocast / helper、结果包、读出和事后权重比对怎样闭合？ |
+| 10 | `P/source/run_public.py`：`worker / check_results / Manager.finalize_arm` | 分片、原序合并、140,620 条完整性验证和 140,178 条官方计分怎样串起来？ |
+| 11 | `SDK/pipeline.py`、`SDK/scoring/index02.py` | headline 到底是哪个字段？ |
+| 12 | `P/FINAL_OFFICIAL_VERIFIED.json` | 哪些完整性陈述有实际证据？ |
 
-### 17.2 最终服务输出的细节
+部分源码在仓库里有快照，链接见 [EIGHT-ARMS 第 10 节](EIGHT-ARMS-EXPLAINED.md#sources)。
 
-`choice`返回原candidate key、概率字典；`noul`返回正候选对应概率及概率字典。服务还返回实际producer model名和`usage.input_tokens`，即全部独立完整pair长度之和，包含重复prefix和EOS；raw output为None，没有通过生成文本解析答案。源码没有凭空添加Base式confidence或score-level输出字段。[C9:645–658]
+### 16.2 服务输出
 
-最终一次完整public的四个shard合计真实full-pair token约1,556,124,407。它是大量候选重复prefix后的工作量，不能拿140620当“只有140620个短token”。也不能与每臂99,824,365的**训练逻辑pair-token预算**、两遍forward计数混为同一口径。
+`choice` 返回原候选的 key 和概率字典；`noul` 返回正候选的概率和概率字典。同时返回实际的模型名和 `usage.input_tokens`，即所有独立完整 pair 的长度之和，包含重复的 prefix 和 EOS；raw output 为 None，不从生成文本里解析答案。
 
-### 17.3 只读复查示例
+一次完整 public 的四个分片合计约 1.56B 个真实 pair token，这是每个候选都重复 prefix 之后的工作量，和训练的 99.8M 逻辑 pair token 不是同一个口径。
 
-以下只读取已经存在的官方汇总，不启动模型/训练/评分：
+### 16.3 只读复查
+
+下面只读取已有的官方汇总，不启动模型、训练或计分：
 
 ```python
 from pathlib import Path
@@ -1010,169 +708,140 @@ import json
 root = Path('/home/dev/assumeengage/runs/jev-public-eight-fourway-20261113-v1')
 summary = json.loads((root / 'SCORES.json').read_text())
 for row in summary['models']:
-    print(row['producer_arm'], row['decision_index'],
-          row['executed'], row['scored'], row['status_counts'])
+    print(row['producer_arm'], row['decision_index'], row['executed'], row['scored'], row['status_counts'])
 ```
 
-进一步打开`public/<arm>/scores.json`、`COMPLETE.json`、`shards/<arm>/shard-N/WEIGHTS.json`、`<arm>-shardN-EXIT.json`，可分别看官方分数、聚合身份、393张量纯after-proof、actual-wait/exit记录。
+仓库里有同一个 `SCORES.json` 的副本（[证据目录](../../../03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/README.md)）。服务器上还可以打开 `public/<arm>/scores.json`、`COMPLETE.json`、`shards/<arm>/shard-N/WEIGHTS.json`、`<arm>-shardN-EXIT.json`，分别看官方分数、聚合身份、393 张量的事后比对和退出记录。
 
-**不要直接重启旧manager当复现。**旧root排他、配置/源码/父进程/输入身份都已冻结；同名结果不得覆盖或append。新的正式复现必须有新namespace和重新核对的输入/source/资源绑定，而不是改旧COMPLETE或删除锁文件。
+**不要直接重启旧的管理进程来"复现"。**旧目录是排他的，配置、源码、父进程和输入身份都已冻结，同名结果不能覆盖或追加。正式复现要用新目录，并重新核对输入、源码和资源。
 
-### 17.4 为什么说“可追溯”，不说“空机器一条命令复现”
+### 16.4 可追溯，但不是一条命令就能在空机器上复现
 
-完整复现仍依赖合法原数据、原ModelScope stock/tokenizer、当前环境、prepared case/sidecar、冻结source和native FA3。本文没有公开私有原始样本、checkpoint、optimizer、激活或逐请求预测，没有把不确定许可的数据打包发布。
+完整复现需要合法的原始数据、原 ModelScope 模型和 tokenizer、当前环境、准备好的 case 和分界文件、冻结的源码和 native FA3。私有原始样本、checkpoint、optimizer、激活和逐请求预测都没有公开。部分冻结依赖还在 `/tmp/opencode`，是之前就有的资产；以后迁移要单独做映射和身份核对。
 
-已保存的393张量键、source/stat/byte绑定、数据抽样/曝光账本、checkpoint与官方结果可用于本工作区复查；但不是一份对外发布的独立安装包。
+<a id="lessons"></a>
+## 17. 要点、术语和自测
 
-一些冻结历史依赖仍位于`/tmp/opencode`，它们是之前的既有资产，不是本报告新建文件。后续迁移必须有独立映射和新身份核对；兼容symlink不等于原resolved stat pin仍自动通过。本文没有迁移、清理它们，也没有修改本轮结果。
+### 17.1 最重要的八条
 
-<a id="c18"></a>
-## 18. 学习总结、术语和自测问题
+1. **布局、mask、loss、读出是四件不同的事。**packing 改的是物理表示，mask 决定谁看谁，loss 决定学什么，readout 决定怎样输出。
+2. **完整 case 很重要。**数据隔离、监督分母、bootstrap 和 BFCL 式的整题全对，都不能按拆散的 pair 处理。
+3. **移动一个分界也是模型变化。**STATE_NL 和 PB 的输入 ID 完全相同，但可见性不同。
+4. **参数的存储精度不等于计算精度。**autocast、矩阵形状和后处理精度要分开说清楚。
+5. **数值一致、预测一致、总分相同是三个不同的命题。**选项一个没变也不代表概率等价；总分只差 0.01 也可能有大量逐题变化。
+6. **优化要用真实输出测。**opt-v1 退步了，opt-v2 只在前 1,000 条上有小幅提升；没有单项计时就不编开销占比。
+7. **并行方式服务于目标。**四卡同权重缩短的是等第一个成绩的时间，不会让八个模型的总时间变成四分之一。
+8. **借鉴要标明边界。**"借鉴 Base""借鉴 Jina"不是完整复现；没做完和没通过的部分也要写进报告。
 
-### 18.1 最重要的八条
+### 17.2 小词典
 
-1. **布局不等于模型语义。**packing改变物理表示；mask决定谁看谁；loss决定学什么；readout决定怎样输出，四者不能混称同一种改进。
-2. **完整case很重要。**数据隔离、监督分母、统计重采样、BFCL式case-exact都不能随便按拆散pair处理。
-3. **一处边界也是模型变化。**Candidate-P与state-P即使输入ID不变，可见性图也不同；不能拿一个成功替代另一个失败。
-4. **head存储dtype不等于执行dtype。**autocast、GEMM形状和后处理精度都应单独写清。
-5. **数值一致、预测一致、总分相同是三种不同命题。**零choice flip不证明概率等价，分数差0.01也可伴随大量逐题变化。
-6. **优化必须测真实输出。**opt-v1退步、opt-v2仅在首1000有小幅收益；没有单项因果计时证据就不编开销占比。
-7. **并行方式服务目标。**四卡同权重缩短首分等待；同样总工作量下不自动把八模型总时长缩4倍。
-8. **学术借鉴要标边界。**Base-inspired、Jina-inspired不是完整复现；未完成和未准入项也属于报告内容，不应隐藏。
-
-### 18.2 小词典
-
-| 词 | 在本实验里的含义 |
+| 词 | 在本实验里的意思 |
 |---|---|
-| case / field / candidate | 完整原生关联题 / 一个问题 / 一个备选答案 |
-| pair | 固定prefix＋某candidate＋真实EOS的一条独立模型序列 |
-| realT | 当前波全部真实token行之和，不含业务pad/dummy |
-| cu | 累计序列长度，划分独立attention区间 |
-| margin | match logit−not_match logit，FP32相减 |
-| VJP | 向量—雅可比积：先求dL/dmargin，再分micro反传参数梯度 |
-| macro / micro | 一次optimizer更新的完整16case / 为显存分开的实际执行波 |
-| logical token | 曝光预算对完整候选pair的一次计账，不含第二遍forward倍数 |
-| pure after-proof | 不重新加载权重，直接把评测后状态与原保存张量逐字节比较 |
-| all-ok | 每条响应通过执行/协议，不是每条预测正确 |
-| scientific only | 可以报告完整实际测量，但不等于数值等价或生产准入 |
-| frozen pin | 对源/输入/回执的路径、resolved位置、size/mtime及必要小源码bytes绑定；不是一律内容hash |
-| Index point / 百分点 | 正式Index差值用“Index点”；本地mass百分比之差用“百分点”，不混写 |
+| case / field / candidate | 一道完整的原始关联题 / 其中一个问题 / 一个备选答案 |
+| pair | 固定 prefix ＋ 一个候选 ＋ 真实 EOS 构成的一条独立序列 |
+| realT | 当前这批所有真实 token 的行数，不含 padding |
+| `cu` | 累计序列长度，用来划分各自独立的 attention 区间 |
+| margin | match logit − not_match logit，在 FP32 里相减 |
+| VJP | 向量—雅可比积：先求 dL/dm，再分 micro 反传参数梯度 |
+| macro / micro | 一次 optimizer 更新用的 16 个完整 case / 为了显存切开的实际执行批 |
+| 逻辑 token | 曝光预算对每条完整 pair 记一次，不含第二遍前向 |
+| 事后权重比对 | 不重新加载，直接把评测后的权重和原保存张量逐字节比较 |
+| all ok | 每条响应都按协议执行成功，不是每条都答对 |
+| 仅作科学测量 | 可以报告完整的实测结果，但不代表数值等价或生产准入 |
+| Index 点 / 百分点 | 官方 Index 的差用"Index 点"；本地 mass 的差用"百分点" |
 
-### 18.3 可用来检验自己是否真正理解的问题
+### 17.3 自测问题
 
-- 将三条独立序列直接拼成一条causal序列，为什么不是正确packing？
-- 为什么PB的suffix必须对完整P+S做一次softmax，不能把两个attention输出相加？
-- 为什么完整双向P不能任意复用与另一请求相同的最长公共前缀？
-- BCE的`1/K`与Field-CE没有额外`1/K`，会如何改变不同候选数field的梯度尺度？
-- 为什么JPAIR在one-hot字段上包含CE，又不能把组合收益单独归因“排序方向”？
-- 同样都是FP32 head，为什么先gather EOS再head仍可能改变输出？
-- 为什么SDK scores.complete=true还不够证明原始140620条都执行且all-ok？
-- 为什么D_select每域等权20%的mass排名，不一定与不同区域权重/任务指标/chance校正的官方Index排名一致？
-- 四卡各35155条但简单concatenate，为什么不满足原序完整性？
-- 一张卡显存只占几GB，为什么不代表把同模型拆成四卡就一定更快？
+- 把三条独立序列直接拼成一条 causal 序列，为什么不是正确的 packing？
+- 为什么 PB 的 suffix 要对完整的 P+S 做一次 softmax，不能把两次 attention 的输出相加？
+- 为什么全双向的 prefix 不能按最长公共前缀复用另一个请求的缓存？
+- BCE 有 1/K，field-CE 没有，这会怎样改变不同候选数的 field 的梯度大小？
+- 为什么 JPAIR 在 one-hot field 上包含了 CE，又不能把收益单独归因于"排序"？
+- 同样是 FP32 head，为什么先取 EOS 再过 head 可能改变输出？
+- 为什么 SDK 的 `scores.complete=true` 还不足以证明 140,620 条都执行且全部 ok？
+- 为什么开发集五域等权的 mass 排名，不一定和官方 Index 排名一致？
+- 四个分片各 35,155 条，直接拼接为什么不满足原顺序的完整性？
+- 一张卡只占几 GB 显存，为什么不代表把同一个模型拆到四张卡上一定更快？
 
-这些问题分别对应“数据结构、attention数学、目标概率空间、浮点计算、评测指标、调度目标”。如果能用自己的话回答，已掌握本轮改造的主要逻辑。
+如果能用自己的话回答这些问题，就掌握了本轮改造的主要逻辑：数据结构、attention 的数学、目标的概率空间、浮点计算、评测指标和调度目标。
 
-<a id="c19"></a>
-## 19. 附录：材料、代码、回执与边界
+<a id="appendix"></a>
+## 附录
 
-### 19.1 实际目录缩写
+<a id="appendix-paths"></a>
+### A. 服务器路径缩写
 
-| 缩写 | 完整路径 |
+| 缩写 | 路径 |
 |---|---|
-| T | `/tmp/opencode/jev-clean-trainer-20261112-v2` |
-| F | `/tmp/opencode/jev-clean-trainer-20261112-followup-v1` |
-| D | `/tmp/opencode/jev-clean-origin-20261112-v1` |
-| PK | `/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask` |
-| S | `/tmp/opencode/jev-base-state-boundary-20261112-v2` |
-| N | `/tmp/opencode/jev-terminal-packed-admission-20261112-v1` |
-| E | `/tmp/opencode/jev-clean-final-eval-20261112-v1` |
-| P | `/home/dev/assumeengage/runs/jev-public-eight-fourway-20261113-v1` |
+| T | `/tmp/opencode/jev-clean-trainer-20261112-v2`（前六个分支的训练） |
+| F | `/tmp/opencode/jev-clean-trainer-20261112-followup-v1`（STATE_NL 和 JPAIR 的训练） |
+| D | `/tmp/opencode/jev-clean-origin-20261112-v1`（数据准备） |
+| PK | `/tmp/opencode/jev-packed-mask-20261112-v2/code/packed_mask`（布局和 mask 执行层） |
+| S | `/tmp/opencode/jev-base-state-boundary-20261112-v2`（state 分界） |
+| N | `/tmp/opencode/jev-terminal-packed-admission-20261112-v1`（dense → packed 迁移检查） |
+| E | `/tmp/opencode/jev-clean-final-eval-20261112-v1`（被停掉的确认流程） |
+| P | `/home/dev/assumeengage/runs/jev-public-eight-fourway-20261113-v1`（官方评测） |
 | SDK | `/tmp/opencode/jev-five-dimension-distilled-20261109/decision-index/decision_index` |
 | SITE | `/home/dev/assumeengage/envs/jev/lib/python3.11/site-packages` |
-| REPO | 本地研究资料库 `/home/assumeengage/profiler/jev_model_exp`，不是远端安装目录 |
 
-### 19.2 材料来源
+### B. 材料来源
 
-- **[M1] Padding-free设计与执行账本**：REPO下`02-研究路径/05-Attention与效率/2026-11-12-global-padding-free-{design,implementation}.md`、`2026-11-12-attention-experiment-queue.md`。最早设计图含EOS-before-head表述，**本报告已按后续实际实现纠正为head-all-realT**，不机械照抄旧草案。
-- **[M2] 用户commit与三模式实验**：hash `2e334fb76c4cd4826df37424450b2734101db9f8`；REPO下`02-研究路径/05-Attention与效率/2026-11-10-attention-mask-modes/PATCH.md`、`2026-11-12-commit-2e334fb-experiment.md`。
-- **[M3] Base Labs原文**：[Mammoth-1 and Elephant-1](https://labs.baseten.co/articles/mammoth-1-and-elephant-1-frontier-decision-models)，重点2.2/2.3/2.6。原文为9B/27B全参、6.21M数据、Qwen3.5 hybrid、CE+Brier，不能与本轮LoRA配方混同。
-- **[M4] Base输入与边界设计**：[vLLM PR63114](https://github.com/vllm-project/vllm/pull/63114)及[当时固定slot_prompt.py](https://github.com/simon-veitner-redhat/vllm/blob/3eded8038a1c0c55eb981e0d38fd301a1eec62bf/vllm/entrypoints/openai/decisions/slot_prompt.py)；REPO同主题`2026-11-12-base-state-boundary-design.md`、`2026-11-12-base-state-fixed-separator-design.md`。当时PR为open，不代表现成发行能力。
-- **[M5] Jina v3固定资料**：[模型卡](https://huggingface.co/jinaai/jina-reranker-v3/blob/d7d7e73b6ea138ced340b83865931b5dfb6c97aa/README.md)、[modeling.py](https://huggingface.co/jinaai/jina-reranker-v3/blob/d7d7e73b6ea138ced340b83865931b5dfb6c97aa/modeling.py#L67-L109)、[论文v4](https://arxiv.org/html/2509.25085v4)。固定revision `d7d7e73b6ea138ced340b83865931b5dfb6c97aa`；卡/代码projector维度差异见第5节。
-- **[M6] 方法分解及跟进设计**：REPO下`02-研究路径/05-Attention与效率/2026-11-12-flex-block-bidirectional-reranker-design.md`、`2026-11-12-jina-inspired-component-design.md`、`2026-11-12-followup-state-rank-design.md`。
-- **[M7] 当时无法读取的知乎链接**：`https://zhuanlan.zhihu.com/p/1897675709696149020`；本报告不转述未获取正文。
-- **[M8] 官方kit固定规则**：[README固定revision](https://github.com/apolinario/decision-index/blob/25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d/README.md#what-changed-in-04)，第5/13/20/136/138～144行明确0.4与public0.3、Index及Full规则。不要把其中“what changed in0.3”的20%public误套0.4。
-- **[M9] 原研究目标/数据修订**：REPO下`02-研究路径/06-五维训练与Readout/2026-11-12-06b-top-public-research-design.md`、`2026-11-12-r2-complete-case-data-plan.md`、`2026-11-12-clean-case-training-plan.md`。早期warmstart/5M/双seed/只晋级候选等草案被有效修订或后续用户要求取代，本文以实际执行为准。
-- **[M10] 浮点数值边界**：[PyTorch2.9 numerical accuracy](https://docs.pytorch.org/docs/2.9/notes/numerical_accuracy.html)，batched/slice、TF32与BF16 reduction；文档解释风险，不证明本机失败原因。
-- **[M11] Autocast**：[PyTorch2.9 AMP](https://docs.pytorch.org/docs/2.9/amp.html)；具体nesting归零清cache见安装源码`SITE/torch/amp/autocast_mode.py:409–414`。
-- **[M12] 正确PEFT helper**：[0.18.0同系列官方helper文档](https://huggingface.co/docs/peft/v0.18.0/package_reference/helpers)；本机实际版本0.18.1，以`SITE/peft/helpers.py:217–251`源码为权威。Context7查询因额度不可用，回到官方源，没有为此安装或升级依赖。
+- **padding-free 设计和执行记录**：本仓库 [`2026-11-12-global-padding-free-design.md`](../../../02-研究路径/05-Attention与效率/2026-11-12-global-padding-free-design.md)、[`2026-11-12-global-padding-free-implementation.md`](../../../02-研究路径/05-Attention与效率/2026-11-12-global-padding-free-implementation.md)、[`2026-11-12-attention-experiment-queue.md`](../../../02-研究路径/05-Attention与效率/2026-11-12-attention-experiment-queue.md)。最早的设计图写的是"先取 EOS 再过 head"，后来实际实现改成了"所有真实 token 过 head"，本文以实现为准。
+- **你给的 commit 和三模式实验**：`2e334fb76c4cd4826df37424450b2734101db9f8`；本仓库 [PATCH.md](../../../02-研究路径/05-Attention与效率/2026-11-10-attention-mask-modes/PATCH.md) 和 [`2026-11-12-commit-2e334fb-experiment.md`](../../../02-研究路径/05-Attention与效率/2026-11-12-commit-2e334fb-experiment.md)。
+- **Base Labs 原文**：[Mammoth-1 and Elephant-1](https://labs.baseten.co/articles/mammoth-1-and-elephant-1-frontier-decision-models)，重点看 2.2、2.3、2.6 节。原文是 9B / 27B 全参训练、6.21M 条数据、Qwen3.5 混合结构、CE+Brier。
+- **Base 的输入和分界**：[vLLM PR 63114](https://github.com/vllm-project/vllm/pull/63114) 和当时固定的 [slot_prompt.py](https://github.com/simon-veitner-redhat/vllm/blob/3eded8038a1c0c55eb981e0d38fd301a1eec62bf/vllm/entrypoints/openai/decisions/slot_prompt.py)；本仓库 [`2026-11-12-base-state-boundary-design.md`](../../../02-研究路径/05-Attention与效率/2026-11-12-base-state-boundary-design.md)、[`2026-11-12-base-state-fixed-separator-design.md`](../../../02-研究路径/05-Attention与效率/2026-11-12-base-state-fixed-separator-design.md)。当时 PR 还是 open 状态。
+- **Jina v3**：固定 revision `d7d7e73b6ea138ced340b83865931b5dfb6c97aa` 的[模型卡](https://huggingface.co/jinaai/jina-reranker-v3/blob/d7d7e73b6ea138ced340b83865931b5dfb6c97aa/README.md)、[modeling.py](https://huggingface.co/jinaai/jina-reranker-v3/blob/d7d7e73b6ea138ced340b83865931b5dfb6c97aa/modeling.py#L67-L109)、[论文 v4](https://arxiv.org/html/2509.25085v4)。
+- **方法拆分和跟进设计**：本仓库 [`2026-11-12-flex-block-bidirectional-reranker-design.md`](../../../02-研究路径/05-Attention与效率/2026-11-12-flex-block-bidirectional-reranker-design.md)、[`2026-11-12-jina-inspired-component-design.md`](../../../02-研究路径/05-Attention与效率/2026-11-12-jina-inspired-component-design.md)、[`2026-11-12-followup-state-rank-design.md`](../../../02-研究路径/05-Attention与效率/2026-11-12-followup-state-rank-design.md)。
+- **没读到的知乎文章**：`https://zhuanlan.zhihu.com/p/1897675709696149020`。
+- **官方 kit 规则**：固定 revision 的 [README](https://github.com/apolinario/decision-index/blob/25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d/README.md#what-changed-in-04)，第 5、13、20、136、138～144 行写明 0.4、public 0.3、Index 和 Full 的规则。
+- **研究目标和数据修订**：本仓库 [`2026-11-12-06b-top-public-research-design.md`](../../../02-研究路径/06-五维训练与Readout/2026-11-12-06b-top-public-research-design.md)、[`2026-11-12-r2-complete-case-data-plan.md`](../../../02-研究路径/06-五维训练与Readout/2026-11-12-r2-complete-case-data-plan.md)、[`2026-11-12-clean-case-training-plan.md`](../../../02-研究路径/06-五维训练与Readout/2026-11-12-clean-case-training-plan.md)。早期的 warm-start、5M、双 seed、只晋级候选等草案后来被修订或被你的要求取代，本文以实际执行为准。
+- **浮点数值**：[PyTorch 2.9 numerical accuracy](https://docs.pytorch.org/docs/2.9/notes/numerical_accuracy.html)。
+- **autocast**：[PyTorch 2.9 AMP](https://docs.pytorch.org/docs/2.9/amp.html)；嵌套退出时清缓存见安装源码 `SITE/torch/amp/autocast_mode.py:409–414`。
+- **PEFT helper**：[0.18.0 helper 文档](https://huggingface.co/docs/peft/v0.18.0/package_reference/helpers)；本机是 0.18.1，以 `SITE/peft/helpers.py:217–251` 为准。
 
-### 19.3 代码定位
+### C. 代码位置
 
-| 证据ID | 文件与重点行/函数 |
+| 主题 | 文件与行 |
 |---|---|
-| C1 | `/home/dev/assumeengage/scripts/pair_data_common.py:27–44`；`D/case_pairs.py:64–109,226–293`：文本/监督/候选编译 |
-| C2 | `T/source/model_runtime.py:98–126`；`PK/model.py:146–183`；`P/source/backend.py:520–523,645–658`：head、margin和概率读出 |
-| C3 | `T/source/fresh_init.py:14–20,35–146`；`T/init-seed42/FRESH_MANIFEST.json`；`F/FRESH_PRIMARY_VERIFICATION.json`：初态与加载 |
-| C4 | `PK/layout.py:70–109,133–181`、`PK/model.py:73–102,126–183`：realT、隔离、mask与可微core |
-| C5 | `T/source/train_case.py:60–158,254–256`、`checkpoints.py:68–104`、`case_runtime.py`；`T/seed42.json`：训练/replay/optimizer/cursor |
-| C6 | `S/prepare_boundaries.py:101–160`；`F/source/case_runtime.py:195–232`与独立state reader：精确边界 |
-| C7 | `D/case_pairs.py:112–140,296–360`、`D/semantic_taint.py:193–198,242–278`、`D/integration_driver.py:280–304`：准入/曝光 |
-| C8 | `T/source/objectives.py:7–35`；`F/source/objectives.py:7–74,135–146`：真实loss/coef |
-| C9 | `P/source/backend.py:234–729`，特别258–262/295–421/423–539/606–658/692–729：最终完整引擎 |
-| C10 | `P/source/run_public.py`，特别157–196/334–428/464–489/518–624/626–879：分片、进程、资源和计分 |
-| C11 | `N/consumer.py:439–504`及两臂`NUMERICAL.json/QUALITY.json`：terminal迁移负结果 |
-| C12 | `SDK/runner.py:18–23,25–107`、`pipeline.py:13–19,57–118`、`scoring/index02.py:25–106,123–155`、`scoring/index.py:31–116,151–156`、`data/index-0.3.json` |
-| C13 | `SITE/transformers/tokenization_utils_fast.py:287–291`、`SITE/peft/helpers.py:217–251`、`SITE/peft/tuners/tuners_utils.py:1538–1553`、`SITE/peft/tuners/lora/layer.py:793–818` |
+| 文本、监督和候选编译 | `/home/dev/assumeengage/scripts/pair_data_common.py:27–44`；`D/case_pairs.py:64–109, 226–293` |
+| head、margin 和概率读出 | `T/source/model_runtime.py:98–126`；`PK/model.py:146–183`；`P/source/backend.py:520–523, 645–658` |
+| 初始权重和加载 | `T/source/fresh_init.py:14–20, 35–146`；`T/init-seed42/FRESH_MANIFEST.json`；`F/FRESH_PRIMARY_VERIFICATION.json` |
+| 真实 token、隔离、mask 和可微核心 | `PK/layout.py:70–109, 133–181`；`PK/model.py:73–102, 126–183` |
+| 训练、重放、optimizer 和断点 | `T/source/train_case.py:60–158, 254–256`；`checkpoints.py:68–104`；`case_runtime.py`；`T/seed42.json` |
+| 精确分界 | `S/prepare_boundaries.py:101–160`；`F/source/case_runtime.py:195–232` |
+| 数据准入和曝光 | `D/case_pairs.py:112–140, 296–360`；`D/semantic_taint.py:193–198, 242–278`；`D/integration_driver.py:280–304` |
+| loss 和梯度系数 | `T/source/objectives.py:7–35`；`F/source/objectives.py:7–74, 135–146` |
+| 最终推理引擎 | `P/source/backend.py:234–729`，重点 258–262、295–421、423–539、606–658、692–729 |
+| 分片、进程、资源和计分 | `P/source/run_public.py`，重点 157–196、334–428、464–489、518–624、626–879 |
+| dense → packed 迁移 | `N/consumer.py:439–504` 及两个分支的 `NUMERICAL.json`、`QUALITY.json` |
+| 官方计分 | `SDK/runner.py:18–107`；`pipeline.py:13–19, 57–118`；`scoring/index02.py:25–106, 123–155`；`scoring/index.py:31–116, 151–156`；`data/index-0.3.json` |
+| tokenizer 和 PEFT | `SITE/transformers/tokenization_utils_fast.py:287–291`；`SITE/peft/helpers.py:217–251`；`SITE/peft/tuners/tuners_utils.py:1538–1553`；`SITE/peft/tuners/lora/layer.py:793–818` |
 
-JSON多为单行，核查时应按字段名找，不虚构漂亮的JSON内部行号。当前live文件行号与历史其他namespace可能不同，引用前先确认完整路径。
+JSON 文件大多是单行，按字段名查找。行号以当时的冻结文件为准，其它目录的同名文件行号可能不同。
 
-### 19.4 运行证据索引
+### D. 运行证据
 
-- **[E1] 数据/曝光**：`D/prepared-01/AGGREGATES.json`、`FINAL_VERIFICATION.json`、`SEMANTIC_MEMBERSHIP.json`、`data/schedule-seed42.json`；state边界的41674/615等数目来自同一prepared roster。
-- **[E2] fresh与训练完成**：T/F的fresh manifest、每臂`COMPLETE.json`、`ledger.jsonl`、真实checkpoint COMPLETE；每臂43checkpoint。`F/FRESH_PRIMARY_VERIFICATION.json`记录393初态桥接。
-- **[E3] 开发指标**：T/F各臂`D_select-cap{10000000,30000000,100000000}-m{0000365,0001122,0003557}/SUMMARY.json`、保存的case/logits/margins；T的`D_SELECT_PRIMARY-cap*.json`及followup独立CPU回算/尺度报告。未知字段/私有payload不在本文复制。
-- **[E4] 旧同权重PF A/B**：`/tmp/opencode/jev-padding-free-20261112-v3/eval/`，REPO中`03-证据与图表/05-Attention与效率/attention-queue-20261112/results/full-public/`和队列账本聚合。
-- **[E5] state边界**：`/tmp/opencode/jev-base-state-boundary-20261112-v1/`原失败，S的`prepared-01/PREPARATION.json`、`COMPLETE.json`和`FINAL_PRIMARY_VERIFICATION.json`；严格v1 notready没有回写。
-- **[E6] 机制/有限准入**：`/tmp/opencode/jev-fullrow-admission-20261112-v1/FINAL_PRIMARY_VERIFICATION.json`、`/tmp/opencode/jev-attention-2e334fb-20261112-v1/runs/`、`/tmp/opencode/jev-flex-20261112-v1/results/`、`/tmp/opencode/jev-jina-components-20261112-v2/FINAL_PRIMARY_VERIFICATION.json`及REPO聚合。
-- **[E7] dense→packed**：`N/{C_D_BCE,C_D_CE}-packed/{NUMERICAL,QUALITY}.json`与WEIGHTS/COMPLETE；两臂34/375保留为失败。
-- **[E8] 被停止的两候选确认**：`E/confirm/{baseline,challenger}/case-metrics.jsonl`各215条，无完整SUMMARY/COMPLETE；`E/STOP_FINAL.json`保留决策变化。
-- **[E9] 最终官方原件**：P的`config.json`、`SCORES.json`、`public/<arm>/scores.json`、`public/<arm>/COMPLETE.json`及全部`results.jsonl`。
-- **[E10] 另一个session的历史优化**：`/home/dev/assumeengage/reports/jev-inference-prior-session-20261113.md`；REPO的`01-研究结论/05-Attention与效率/inference-kernel-runtime-20261111/README.md`。它不是老师4B实现，也不是本轮权重。
-- **[E11] 本轮opt时间线/前缀比较**：`/home/dev/assumeengage/runs/jev-public-eight-20261113-v1/`、`jev-public-eight-opt-20261113-v1/`、`jev-public-eight-opt-20261113-v2/`的MANAGER_START、BLOCKED及`FIRST_OPTIMIZED_PUBLIC_PROGRESS.json`；对应work目录保留review.diff/report。
-- **[E12] 完整独立验收**：`P/FINAL_OFFICIAL_VERIFIED.json`、`FINAL_OFFICIAL_REPORT.md`、`FIRST_OFFICIAL_SCORE_VERIFIED.json`、COMPLETE、32个`<arm>-shardN-EXIT.json`、32个`shards/<arm>/shard-N/WEIGHTS.json`。全量审计发生在最终验收；本次写报告是读回，不重新调用模型或官方评分器。
-
-### 19.5 本次报告与附表文件
-
-| 文件 | 用途 |
+| 主题 | 位置 |
 |---|---|
-| `REPORT.md` | 本文的仓库阅读副本；服务器原文件名为 `jev-clean-eight-detailed-learning-report-20261113.md` |
-| [official-benchmarks.csv](../../../03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/official-benchmarks.csv) | 8×43＝344行官方逐benchmark结果；原生score/metric、Index raw/skill/chance、coverage/status、是否计入Index |
-| [official-areas.csv](../../../03-证据与图表/06-五维训练与Readout/clean-eight-official-20261113/official-areas.csv) | 8×5＝40行五域raw/skill及skill×100 |
+| 数据和曝光 | `D/prepared-01/AGGREGATES.json`、`FINAL_VERIFICATION.json`、`SEMANTIC_MEMBERSHIP.json`、`data/schedule-seed42.json` |
+| 初始权重和训练完成 | T、F 的初始化清单，各分支的 `COMPLETE.json`、`ledger.jsonl` 和 43 个 checkpoint |
+| 开发集指标 | T、F 各分支 `D_select-cap{10000000,30000000,100000000}-m{0000365,0001122,0003557}/SUMMARY.json`，以及保存的 case、logits、margin |
+| 旧权重的 dense / packed A/B | `/tmp/opencode/jev-padding-free-20261112-v3/eval/`；本仓库 `03-证据与图表/05-Attention与效率/attention-queue-20261112/results/full-public/` |
+| state 分界 | `/tmp/opencode/jev-base-state-boundary-20261112-v1/`（原失败）；S 的 `prepared-01/PREPARATION.json`、`COMPLETE.json`、`FINAL_PRIMARY_VERIFICATION.json` |
+| 机制实验和有限准入 | `/tmp/opencode/jev-fullrow-admission-20261112-v1/`、`jev-attention-2e334fb-20261112-v1/runs/`、`jev-flex-20261112-v1/results/`、`jev-jina-components-20261112-v2/` |
+| dense → packed | `N/{C_D_BCE,C_D_CE}-packed/{NUMERICAL,QUALITY}.json` |
+| 被停掉的确认流程 | `E/confirm/{baseline,challenger}/case-metrics.jsonl`（各 215 条）、`E/STOP_FINAL.json` |
+| 官方原件 | P 的 `config.json`、`SCORES.json`、`public/<arm>/scores.json`、`COMPLETE.json` 和全部 `results.jsonl` |
+| 另一个 session 的历史优化 | `/home/dev/assumeengage/reports/jev-inference-prior-session-20261113.md`；本仓库 [inference-kernel-runtime-20261111](../../05-Attention与效率/inference-kernel-runtime-20261111/README.md) |
+| 本轮优化的时间线和前缀比较 | `/home/dev/assumeengage/runs/` 下的 `jev-public-eight-20261113-v1/`、`jev-public-eight-opt-20261113-v1/`、`jev-public-eight-opt-20261113-v2/` |
+| 完整独立核验 | P 的 `FINAL_OFFICIAL_VERIFIED.json`、`FINAL_OFFICIAL_REPORT.md`、`FIRST_OFFICIAL_SCORE_VERIFIED.json`、32 个 `<arm>-shardN-EXIT.json`、32 个 `shards/<arm>/shard-N/WEIGHTS.json` |
 
-三个服务器原文件同在`/home/dev/assumeengage/reports/`；仓库副本按“01研究结论／03证据与图表”分类，使用上表链接。CSV是从各臂已有官方`scores.json`逐项抄录，不是重新评分；`native_score`量纲由metric决定，`index_raw/index_skill/chance`通常为0～1；展示Index为0～100。未进入Index的6个benchmark也保留，`in_index=false`，不混入headline。
+### E. 本轮没有证明的事
 
-### 19.6 本文有意不声称的内容
-
-- 不是完整Base/Jina/Flex新模型配方全部复现。
-- 不是知乎文章正文实现。
-- 不是“packing或双向attention普遍无用”的证明。
-- 不是已找到本轮低分唯一原因。
-- 不是多seed稳定收益、全量新旧后端bitwise等价、dense/packed等价或production准入。
-- 不是private Full、维护方正式名次、维护方单卡latency验收。
-- 不是对全部源数据语义重复/许可/预训练暴露的无限范围保证。
-- 本次只写新报告与聚合附表，不修改模型、配置、源码、旧报告或原回执，不自动训练、重测、迁移、清理、commit/push、上传或发布。
-
----
-
-### 19.7 最终事实审阅的三项更正
-
-独立只读审阅不是无条件PASS：它指出两处事实/数学表述和一处导航名称问题。主代理按原始SUMMARY、实际loss源码与AST函数列表逐项核实后修正：
-
-1. BCE的匹配对象是sigmoid(margin)，不是margin直接接近q；补充了梯度和soft-label最优logit公式。
-2. 30M→100M四基础臂NLL都变差；Brier只有三臂变差，packed BCE改善，已写明原始数值。
-3. 数据入口名称为normalized_field/make_case/compile_case，不存在make_field别名。
-
-没有修改旧历史报告、源数据、模型或实验回执来迎合新文字。CSV仍直接对应现有官方文件。本次最终化采用一次审阅后的原始来源核实与定点修正，没有让审阅者重新运行模型或评分。
-
-**最终一句话：**这轮把你提供的多种思路拆成了可追溯的布局、attention边界、监督目标和执行调度对照，确实完成了八个fresh模型与全部官方测分；系统完整性和首分等待目标得到实际证据支持，但学习质量并未达到冲榜目标。正确的学习结论，是理解每个变量和证据边界，而不是把所有改动包装成成功提分。
+- 完整复现了 Base、Jina 或 Flex 的配方。
+- 实现了知乎文章的方法。
+- packing 或双向 attention 普遍没用。
+- 找到了本轮低分的原因。
+- 多 seed 稳定、全量新旧后端逐位等价、dense / packed 等价或生产准入。
+- private Full 成绩、维护方名次或维护方单卡 latency 验收。
+- 全部来源数据没有语义重复、许可问题或预训练暴露。
